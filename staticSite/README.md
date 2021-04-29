@@ -1,5 +1,4 @@
 # staticSite
-Test for a static site generator
 
 This code was develop from [The Gitbook Gasty starter](https://www.gatsbyjs.com/starters/hasura/gatsby-gitbook-starter)
 Which is licensed via [MIT](https://github.com/hasura/gatsby-gitbook-starter/blob/master/LICENSE)
