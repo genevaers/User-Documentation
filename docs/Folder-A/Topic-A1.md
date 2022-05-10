@@ -5,14 +5,29 @@ parent: Folder-A
 nav_order: 2
 ---
 
+
+<details open markdown="block">
+<summary>
+CONTENTS OF THIS TOPIC
+</summary>
+1. TOC
+{:toc}  
+</details>
+---
+
 # First heading in Topic A1.
   
- Good stuff.
-  
+Good stuff is written here.
+
+
+
+# Useful Links    
   
 [Topic A2](Topic-A2)
    
 [Topic B](../Topic-B)  
+  
+[Topic C1](../Folder-C/Topic-C1)  
    
 [Home](../index)  
 

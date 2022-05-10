@@ -5,25 +5,27 @@ parent: Folder-C
 nav_order: 2
 ---
 
-Start of Topic C1.   
-  
-  
-  
-  <details open markdown="block">
-  <summary>
-    Contents
-  </summary>
-    {: .text-delta} - TOC  {:toc}  
-  </details>
-  
-  
-  
+
+<details open markdown="block">
+<summary>
+CONTENTS OF THIS TOPIC
+</summary>
+1. TOC
+{:toc}  
+</details>
+---
+
+
 # First heading in Topic C1
 
-  
+
  Surprising stuff.
 
+# Another heading
 
+
+# A Heading  
+  
 
 ## Next heading
 
