@@ -15,7 +15,7 @@ CONTENTS OF THIS TOPIC
 </details>
 ---
 
-# First heading in Topic A2.
+# Title of Topic A2
   
 More good stuff is written here.
 
