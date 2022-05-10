@@ -14,7 +14,7 @@ CONTENTS OF THIS TOPIC
 ---
 
 
-# Topic B first heading.
+# Title of Topic B
 
 This topic is listed after Folder A in the main menu.
 

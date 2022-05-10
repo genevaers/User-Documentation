@@ -16,7 +16,7 @@ CONTENTS OF THIS TOPIC
 ---
 
 
-# First heading in Topic C1
+# Title of Topic C1
 
 
  Surprising stuff.
