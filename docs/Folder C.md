@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Folder-C"
+title: "Folder C"
 nav_order: 6
 has_children: true
 ---
