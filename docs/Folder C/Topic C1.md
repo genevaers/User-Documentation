@@ -1,25 +1,18 @@
 ---
 layout: default
-title: "Topic-C1"
-parent: Folder-C
+title: "Topic C1"
+parent: Folder C
 nav_order: 2
 ---
 
-
-<details open markdown="block">
-<summary>
-CONTENTS OF THIS TOPIC
-</summary>
+# Title of Topic C1
+{: .no_toc}
+TABLE OF CONTENTS 
 1. TOC
 {:toc}  
-</details>
----
 
-
-# Title of Topic C1
-
-
- Surprising stuff.
+# First sub-heading in Topic C1  
+ Surprising stuff.  
 
 # Another heading
 
@@ -44,9 +37,9 @@ CONTENTS OF THIS TOPIC
 
 # Useful Links  
   
-[Topic A2](../Folder-A/Topic-A2)
+[Topic A2](../Folder A/Topic A2)
    
-[Topic B](../Topic-B)  
+[Topic B](../Topic B)  
    
 [Home](../index)  
 
