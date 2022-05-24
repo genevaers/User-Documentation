@@ -1,0 +1,22 @@
+---
+layout: default
+title: "Introduction F09 - Logic Table codes"
+parent: 13 Feature introductions
+nav_order: 08
+---
+
+# Introduction F09 - Logic Table codes
+{: .no_toc}
+TABLE OF CONTENTS 
+1. TOC
+{:toc}  
+
+# What is a Logic Table code?
+To be completed.  
+  
+
+
+# Useful Links
+Next topic: [Introduction F?? - ???](Introduction F?? - ???)  
+Previous topic: [Introduction F08 - XLT File](Introduction F08 - XLT File)  
+

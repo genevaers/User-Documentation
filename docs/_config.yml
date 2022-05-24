@@ -36,6 +36,7 @@ plugins:
   - jekyll-feed
 
 logo: "/images/genevaers-color.png"
+color_scheme: GERSGenlDocs
 
 # Exclude from processing.
 # The following items will not be processed, by default.
