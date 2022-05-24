@@ -18,4 +18,4 @@ For more details, see any of these topics:
 
 ---
 **<u>Next</u>**: [C03 - Modify lookup path](C03 - Modify lookup path)   
-**<u>Previous</u>**: [C01 - Course C Start Here](C01 - Course C Start Here)  
+**<u>Previous</u>**: [C01 - Course C - START HERE](C01 - Course C - START HERE)  

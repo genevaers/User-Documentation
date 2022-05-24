@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "B01 - Course B Start Here"
+title: "B01 - Course B - START HERE"
 parent: 04 Courses in basic skills
 nav_order: 021
 ---
 
-# B01 - Course B Start Here
+# B01 - Course B - START HERE
 
 The report in Course A was almost useless because the report only has "customer number".  In this solution we access the Customer file so that the report displays "customer name".  The technique used is a "lookup path".  Lookup paths are one of the key speed features of this product.
 

@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "C01 - Course C Start Here"
+title: "C01 - Course C - START HERE"
 parent: 04 Courses in basic skills
 nav_order: 041
 ---
 
-# C01 - Course C Start Here
+# C01 - Course C - START HERE
 
 This solution makes a small change to the report in Course B: optimize the lookup path.  The course topics below will cover this.  This small change is a speed technique as we shall see.
 
