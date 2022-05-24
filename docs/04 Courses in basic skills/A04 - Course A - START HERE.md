@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "A04 - Course A Start Here"
+title: "A04 - Course A - START HERE"
 parent: 04 Courses in basic skills
 nav_order: 004
 ---
 
-# A04 - Course A Start Here
+# A04 - Course A - START HERE
 
 Course A reads a Sales file to create the simplest report: **Sales by customer number**.  
 

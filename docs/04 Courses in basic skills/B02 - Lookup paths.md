@@ -18,4 +18,4 @@ For more details, see any of these topics:
 
 ---
 **<u>Next</u>**: [B03 - Define a lookup path](B03 - Define a lookup path)   
-**<u>Previous</u>**: [B01 - Course B Start Here](B01 - Course B Start Here)  
+**<u>Previous</u>**: [B01 - Course B - START HERE](B01 - Course B - START HERE)  

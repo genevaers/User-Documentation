@@ -11,12 +11,12 @@ nav_order: 003
 
 The courses are as follows:
 
-- [Course A](A04 - Course A Start Here) - Read a Sales file to create report: **Sales by customer number**.  
+- [Course A](A04 - Course A - START HERE) - Read a Sales file to create report: **Sales by customer number**.  
   While this report is not useful, this solution teaches beginner aspects of our product.  
   
-- [Course B](B01 - Course B Start Here) - Modify Course A to read a Customer file so report is now: **Sales by Customer name**.
+- [Course B](B01 - Course B - START HERE) - Modify Course A to read a Customer file so report is now: **Sales by Customer name**.
   
-- [Course C](C01 - Course C Start Here) - Modify Course B to run faster.  This is the first speed technique (of many).
+- [Course C](C01 - Course C - START HERE) - Modify Course B to run faster.  This is the first speed technique (of many).
   
 - **<u>Course D</u>** - Modify Course C to read a Product file so report is: **Sales by customer name and product name**.  
   
@@ -24,8 +24,8 @@ The courses are as follows:
   
 - **<u>Course F</u>** - Run both Course D and Course E in parallel.  This is another speed technique.
   
-Let's get started with: [A04 - Course A Start Here](A04 - Course A Start Here).  
+Let's get started with: [A04 - Course A - START HERE](A04 - Course A - START HERE).  
   
 ---
-**<u>Next</u>**: [A04 - Course A Start Here](A04 - Course A Start Here)   
+**<u>Next</u>**: [A04 - Course A - START HERE](A04 - Course A - START HERE)   
 **<u>Previous</u>**: [A02 - Introduction](A02 - Introduction)  

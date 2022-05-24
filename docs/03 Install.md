@@ -7,6 +7,8 @@ nav_order: 03
 
 # 03 Install
 
+The number 03 is a folder number.  
+  
 ## Install our main product demonstration  
   
 See [Demo](https://genevaers.github.io/demo/)  

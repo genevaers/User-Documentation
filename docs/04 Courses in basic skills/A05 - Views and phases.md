@@ -33,4 +33,4 @@ For more details, see any of these topics:
 
 ---
 **<u>Next</u>**: [A06 - Define a report](A06 - Define a report)   
-**<u>Previous</u>**: [A04 - Course A Start Here](A04 - Course A Start Here)  
+**<u>Previous</u>**: [A04 - Course A - START HERE](A04 - Course A - START HERE)  
