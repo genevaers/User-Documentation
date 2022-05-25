@@ -35,7 +35,7 @@ remote_theme: pmarsceill/just-the-docs
 plugins:
   - jekyll-feed
 
-logo: "/images/genevaers-color.png"
+logo: "/images/genevaers-color.svg"
 color_scheme: dark
 # color_scheme: GERSGenlDocs - Ian this attempt at colour changes did not work.
 
