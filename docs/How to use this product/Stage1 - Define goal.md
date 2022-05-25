@@ -9,7 +9,7 @@ nav_order: 1
 This is a goal for a single solution.  You may create many solutions for your company.
 
 ## What most customers do
-[Typical goals](../Typical Goals)
+[Typical goals](../Typical goals)
 
 
 ## My company has a unique goal
