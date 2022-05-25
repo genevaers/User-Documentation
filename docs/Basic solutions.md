@@ -5,7 +5,6 @@ nav_order: 12
 has_children: true
 ---
 # Basic solutions
-The number 12 is the folder number.  
 Below are very simple uses of our product.  Real-life solutions involve more complex examples and combinations of these basic solutions.  
 
 Solutions below refer to topics in folder [Feature introductions](Feature introductions).  
