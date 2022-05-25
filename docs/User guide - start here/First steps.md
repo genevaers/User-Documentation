@@ -21,5 +21,5 @@ See folder [Courses in basic skills](../Courses in basic skills)
 
 # I am ready to use this product in my company
 The link below assumes you have done many of the courses in basic skills above.  
-See folder [How to use this product](../How To Use This Product)  
+See folder [How to use this product](../How to use this product)  
 
