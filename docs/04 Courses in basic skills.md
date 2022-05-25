@@ -13,7 +13,7 @@ The 04 is a folder number.
 To achieve the shortest run times for your solutions needs that much learning.  
 
 This folder of topics assumes you have already done the following:  
-1.  **Read** [02 User guide - start here](../02 User guide - start here)  
+1.  **Read** [02 User guide - start here](02 User guide - start here)  
 1.  **Installed and run the** [Demo](https://genevaers.github.io/demo/).  
 1.  **Installed and run the** [Workbench](https://genevaers.github.io/wb/).  
 
