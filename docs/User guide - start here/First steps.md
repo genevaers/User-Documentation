@@ -7,7 +7,7 @@ nav_order: 1
 
 # First steps
 
-[What is GenevaERS?](What is GenevaERS) - (in less than 140 words).  
+[What is GenevaERS](What is GenevaERS) in less than 140 words.  
 
 Install & run our product on your mainframe using [Demo](https://genevaers.github.io/demo/).  
 Downloading the demo actually installs most of this (free) product.  
