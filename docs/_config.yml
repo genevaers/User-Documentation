@@ -36,7 +36,8 @@ plugins:
   - jekyll-feed
 
 logo: "/images/genevaers-color.png"
-color_scheme: GERSGenlDocs
+color_scheme: dark
+# color_scheme: GERSGenlDocs - Ian this attempt at colour changes did not work.
 
 # Exclude from processing.
 # The following items will not be processed, by default.
