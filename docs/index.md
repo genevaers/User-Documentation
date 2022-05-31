@@ -15,7 +15,7 @@ TABLE OF CONTENTS
 [How this website works](How this website works)  
 [User guide - start here](User guide - start here)  
 [Install](Install)  
-[Courses in basic skills](Courses in basic skills)  
+[Lessons in basic skills](Lessons in basic skills)  
 [How to use this product](How to use this product)  
 [Typical goals](Typical goals)  
 [Basic solutions](Basic solutions)  

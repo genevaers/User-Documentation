@@ -1,15 +1,15 @@
 ---
 layout: default
-title: "A03 - Course Guide"
-parent: Courses in basic skills
+title: "A03 - Lessons Guide"
+parent: Lessons in basic skills
 nav_order: 003
 ---
 
-# A03 - Course Guide
+# A03 - Lessons Guide
 
 **Course A** covers topics <u>A04 to A15</u>.  **Course B** covers topics <u>B01 to B12</u> and so on.
 
-The courses are as follows:
+The lessons are as follows:
 
 - [Course A](A04 - Course A - START HERE) - Read a Sales file to create report: **Sales by customer number**.  
   While this report is not useful, this solution teaches beginner aspects of our product.  
