@@ -8,7 +8,7 @@ has_children: true
 # Lessons in basic skills
 **IMPORTANT:** It will take **at least a week** to learn the basic skills.  
   
-It needs that much learning To achieve the shortest run times for your solutions.  
+It needs that much learning to create solutions using this product with the shortest run times.  
 
 This folder of topics assumes you have already done the following:  
 1.  **Read** [User guide - start here](User guide - start here)  
