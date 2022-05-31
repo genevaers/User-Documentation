@@ -1,13 +1,13 @@
 ---
 layout: default
 title: "A01 - How to learn quickly"
-parent: Courses in basic skills
+parent: Lessons in basic skills
 nav_order: 001
 ---
 
 # A01 - How to learn quickly
 
-During the course, the pattern for you is:
+During the lesson, the pattern for you is:
 1.  **Read introductions** to a few new ideas.  
 1.  **Use the new ideas** in some practical example involving the product.  
   

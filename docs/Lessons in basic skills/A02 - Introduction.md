@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "A02 - Introduction"
-parent: Courses in basic skills
+parent: Lessons in basic skills
 nav_order: 002
 ---
 
