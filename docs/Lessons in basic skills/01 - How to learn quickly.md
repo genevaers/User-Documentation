@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "A01 - How to learn quickly"
+title: "01 - How to learn quickly"
 parent: Lessons in basic skills
 nav_order: 001
 ---
 
-# A01 - How to learn quickly
+# 01 - How to learn quickly
 
 During the lesson, the pattern for you is:
 1.  **Read introductions** to a few new ideas.  
@@ -15,4 +15,4 @@ This is a fast and enjoyable way to learn new skills.
   
 **Important** - the first examples are <u>simple</u> and do **not achieve the great speeds** of our product.  The skills for speed depend on learning a lot of simple skills first.  
   
-Let's get started with [A02 - Introduction](A02 - Introduction).    
+Let's get started with [02 - Introduction](02 - Introduction).    

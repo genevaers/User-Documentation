@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "A02 - Introduction"
+title: "02 - Introduction"
 parent: Lessons in basic skills
 nav_order: 002
 ---
 
-# A02 - Introduction
+# 02 - Introduction
 
 You will use GenevaERS to create **solutions**, where each solution is a <u>batch process that produces a large number of results with a short run time </u>, like the demo of this product.
 
@@ -18,6 +18,6 @@ You prepare each solution as follows:
 It sounds simple but there is a lot of complexity to this product, especially in how tell the workbench what work needs to be done.  The basic skills are about how the batch stream works and how to specify that work in the workbench.
 
 ---
-**<u>Next</u>**: [A03 - Course Guide](A03 - Course Guide)   
-**<u>Previous</u>**: [A01 - How to learn quickly](A01 - How to learn quickly)  
+**<u>Next</u>**: [03 - Lessons Guide](03 - Lessons Guide)   
+**<u>Previous</u>**: [01 - How to learn quickly](01 - How to learn quickly)  
 

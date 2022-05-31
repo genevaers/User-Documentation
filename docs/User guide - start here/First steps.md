@@ -17,7 +17,7 @@ The workbench is key to using this product in your company.
 
 # I want to learn the basics
 It is necesssary to learn a lot of basic skills to use this product.  
-See folder [Courses in basic skills](../Courses in basic skills)  
+See folder [Lessons in basic skills](../Lessons in basic skills)  
 
 # I am ready to use this product in my company
 The link below assumes you have done many of the courses in basic skills above.  
