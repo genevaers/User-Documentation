@@ -2,7 +2,7 @@
 layout: default
 title: "02 - Introduction"
 parent: Lessons in basic skills
-nav_order: 002
+nav_order: 02
 ---
 
 # 02 - Introduction
