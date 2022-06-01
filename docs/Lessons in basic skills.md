@@ -11,7 +11,7 @@ has_children: true
 It needs that much learning to create solutions using this product with the shortest run times.  
 
 This folder of topics assumes you have already done the following:  
-1.  **Read** [User guide - start here](User guide - start here)  
+1.  **Read**  [User guide - start here](User guide - start here)  
 1.  **Installed and run the** [Demo](https://genevaers.github.io/demo/).  
 1.  **Installed and run the** [Workbench](https://genevaers.github.io/wb/).  
 

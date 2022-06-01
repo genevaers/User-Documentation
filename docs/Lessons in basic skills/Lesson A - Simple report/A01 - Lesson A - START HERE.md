@@ -29,7 +29,7 @@ Lesson A consists of these topics:
 - Topic [A04 - Prepare JCL for Lesson A](A04 - Prepare JCL for Lesson A)  
 - Topic [A05 - Run solution for Lesson A](A05 - Run solution for Lesson A)  
 - Topic [A06 - Inside solution for Lesson A](A06 - Inside solution for Lesson A)  
-  Find out how the solutions for Lesson A works.  This knowledge is essetial for later solutions.  
+  See how the solution for Lesson A works.  This knowledge is essential for later lessons.  
 - Topic [A07 - VDP file for Lesson A](A07 - VDP file for Lesson A)  
 - Topic [A08- JLT file for Lesson A](A08 - JLT file for Lesson A)  
 - Topic [A09 - XLT file for Lesson A](A09 - XLT file for Lesson A)  
