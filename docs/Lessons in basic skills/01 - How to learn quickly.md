@@ -2,7 +2,7 @@
 layout: default
 title: "01 - How to learn quickly"
 parent: Lessons in basic skills
-nav_order: 001
+nav_order: 01
 ---
 
 # 01 - How to learn quickly
