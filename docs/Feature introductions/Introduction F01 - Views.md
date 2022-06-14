@@ -32,7 +32,7 @@ Anything you need.  The usual tasks are:
 
 
 # Useful Links
-Did you come here from the Course in basic skills?  Return back: [Course B02 - Views and Phases](../Course in basic skills/Course B02 - Views and Phases)  
+Did you come here from the lesson in basic skills?  Return back: [A02 - Views and Phases](../Lessons in basic skills/Lesson A - Simple report/A02 - Views and Phases)  
   
 Next topic: [Introduction F02 - Phases](Introduction F02 - Phases)  
   
