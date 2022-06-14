@@ -18,5 +18,5 @@ To be completed.
 
 # Useful Links
 Next topic: [Introduction H02 - Tokens](Introduction H02 - Tokens)  
-Previous topic: [Introduction G?? - ???](Introduction G?? - ???)  
+Previous topic: [Introduction G05 - Workbench Control Record](Introduction G05 - Workbench Control Record)  
 

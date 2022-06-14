@@ -16,5 +16,9 @@ TABLE OF CONTENTS
 # How to invoke SR01
 
 # Errors
-See [Errors PE User-Exits](../Errors PE User-Exits)
-
+See [Errors in User-Exits](../Errors in User-Exits)  
+  
+  
+# Useful Links
+Next topic: [Runbook - SR02 Permutation Exploder](Runbook SR02 Permutation Exploder)  
+Previous topic: [Runbook - SMFX SMF Record Flattening](Runbook SMFX SMF Record Flattening)  

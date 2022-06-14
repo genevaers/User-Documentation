@@ -17,5 +17,5 @@ To be completed.
 
 
 # Useful Links
-Next topic: [Introduction G03 - Logical Files](Introduction G03 - Logical Files)  
+Next topic: [Introduction G03 - Workbench View Folder](Introduction G03 - Workbench View Folder)  
 Previous topic: [Introduction G01 - Workbench Environments](Introduction G01 - Workbench Environments)  

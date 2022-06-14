@@ -16,5 +16,11 @@ TABLE OF CONTENTS
 # How to invoke XLFIL
 
 # Errors
-See [Errors PE User-Exits](../Errors PE User-Exits)
+See [Errors in User-Exits](../Errors in User-Exits)  
+  
+  
+# Useful Links
+Next topic: [Runbook - XLST String Concatenator](Runbook XLST String Concatenator)  
+Previous topic: [Runbook - XLEXP Calculate exponential values](Runbook XLEXP Calculate exponential values)  
+
 

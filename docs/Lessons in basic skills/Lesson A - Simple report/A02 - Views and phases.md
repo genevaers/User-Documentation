@@ -24,8 +24,8 @@ To be completed.
 
 # Optional extra details
 For more details, see any of these topics:  
-[Introduction F01 - Views](../13 Feature introductions/Introduction F01 - Views)  
-[Introduction F02 - Phases](../13 Feature introductions/Introduction F02 - Phases)  
+[Introduction F01 - Views](../../Feature introductions/Introduction F01 - Views)  
+[Introduction F02 - Phases](../../Feature introductions/Introduction F02 - Phases)  
 
 
 

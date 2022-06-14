@@ -16,4 +16,9 @@ TABLE OF CONTENTS
 # How to invoke UR40
 
 # Errors
-See [Errors PE Sub-Programs](../Errors PE Sub-Programs)
+See [Errors in Sub-Programs](../Errors in Sub-Programs)  
+  
+  
+# Useful Links
+Next topic: [Runbook - UR45 Table Search](Runbook UR45 Table Search)  
+Previous topic: [Runbook - UR39 GENWRITE](Runbook UR39 GENWRITE) 

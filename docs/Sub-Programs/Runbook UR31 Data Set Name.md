@@ -16,4 +16,9 @@ TABLE OF CONTENTS
 # How to invoke UR31
 
 # Errors
-See [Errors PE Sub-Programs](../Errors PE Sub-Programs)
+See [Errors in Sub-Programs](../Errors in Sub-Programs)  
+  
+  
+# Useful Links
+Next topic: [Runbook - UR32 Dataspace Services](Runbook UR32 Dataspace Services)  
+Previous topic: [Runbook - UR30 DB2 Table Read](Runbook UR30 DB2 Table Read) 

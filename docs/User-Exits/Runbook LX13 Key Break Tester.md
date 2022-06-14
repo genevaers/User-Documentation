@@ -22,4 +22,10 @@ TABLE OF CONTENTS
 
 
 # Errors
-See [Errors PE User-Exits](../Errors PE User-Exits)
+See [Errors in User-Exits](../Errors in User-Exits)  
+  
+  
+# Useful Links
+Next topic: [Runbook - RD15 Lookup Detail File Convert](Runbook RD15 Lookup Detail File Convert)  
+Previous topic: [How to program User-Exits](How to program User-Exits)  
+

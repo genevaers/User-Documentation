@@ -14,7 +14,7 @@ This typically happens when the reporting involves many reference files where:
 1.  With enough layers of reference files the processing can be very slow.  
   
 This is where our product is most useful.  
-Many report programs have the problem of re-reading the same data multiple times - see the example of one million unnecessary reads in:  [What is GenevaERS?](What is GenevaERS)  
+Many report programs have the problem of re-reading the same data multiple times - see the example of one million unnecessary reads in:  [What is GenevaERS?](../User guide - start here/What is GenevaERS)  
 Our product is called **"Single-Pass"** because it can produce multiple complex reports using a single scan of the source data.  
 GenevaERS was used to detect fraud in historical records of airline tickets using just this technique.  
   

@@ -16,4 +16,11 @@ TABLE OF CONTENTS
 # How to invoke UR26
 
 # Errors
-See [Errors PE Sub-Programs](../Errors PE Sub-Programs)
+See [Errors in Sub-Programs](../Errors in Sub-Programs)  
+  
+  
+# Useful Links
+Next topic: [Runbook - UR27 File Extent Table](Runbook UR27 File Extent Table)  
+Previous topic: [Runbook - UR25 Direct Sequential File](Runbook UR25 Direct Sequential File)  
+
+  

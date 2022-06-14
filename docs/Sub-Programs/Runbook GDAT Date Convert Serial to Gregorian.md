@@ -16,4 +16,9 @@ TABLE OF CONTENTS
 # How to invoke GDAT
 
 # Errors
-See [Errors PE Sub-Programs](../Errors PE Sub-Programs)
+See [Errors in Sub-Programs](../Errors in Sub-Programs)  
+  
+  
+# Useful Links
+Next topic: [Runbook - JDAY Date Convert Gregorian to Serial](Runbook JDAY Date Convert Gregorian to Serial)  
+Previous topic: [Runbook - DAYS Date Diff Calculator](Runbook DAYS Date Diff Calculator)  

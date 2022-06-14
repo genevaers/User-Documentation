@@ -20,6 +20,10 @@ Sumbit the JCL to your mainframe.
 # View outputs
 See the DD names for output files in your JCL.
 These are normally extract files.
-In case of errors, see [Errors PE Programs](../Errors PE Programs)
+In case of errors, see [Errors in PE Programs](../Errors in PE Programs)
 
+
+# Useful Links
+Next topic: [Turbocharge PE](C Turbocharge PE)  
+Previous topic: [Create JCL for batch flow](A Create JCL for batch flow)
 

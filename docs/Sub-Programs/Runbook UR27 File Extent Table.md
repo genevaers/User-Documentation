@@ -16,4 +16,10 @@ TABLE OF CONTENTS
 # How to invoke UR27
 
 # Errors
-See [Errors PE Sub-Programs](../Errors PE Sub-Programs)
+See [Errors in Sub-Programs](../Errors in Sub-Programs)  
+  
+  
+# Useful Links
+Next topic: [Runbook - UR28 Relative Block Num Convert](Runbook UR28 Relative Block Num Convert)  
+Previous topic: [Runbook - UR26 Data Set VOLSER List](Runbook UR26 Data Set VOLSER List)  
+

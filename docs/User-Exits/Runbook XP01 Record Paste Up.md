@@ -16,5 +16,9 @@ TABLE OF CONTENTS
 # How to invoke XP01
 
 # Errors
-See [Errors PE User-Exits](../Errors PE User-Exits)
-
+See [Errors in User-Exits](../Errors in User-Exits)  
+  
+  
+# Useful Links
+Next topic: [User-Exits](../User-Exits)  
+Previous topic: [Runbook - XLST String Concatenator](Runbook XLST String Concatenator)  

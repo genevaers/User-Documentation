@@ -53,7 +53,7 @@ TABLE OF CONTENTS
 [Errors in PE Programs](Errors in PE Programs)  
 [Errors in User-Exits](Errors in User-Exits)  
 [Errors in Sub-Programs](Errors in Sub-Programs)  
-[Errors in General Utilities](Errors in General Utilities)  
+[Errors in Run Control Utilities](Errors in Run Control Utilities)  
 [Errors in Workbench](Errors in Workbench)  
   
 ## Reference

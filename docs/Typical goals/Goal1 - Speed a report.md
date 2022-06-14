@@ -6,7 +6,7 @@ nav_order: 1
 ---
 
 # Goal1 - Speed a report
-The best example is given in:  [What is GenevaERS?](What is GenevaERS)  
+The best example is given in:  [What is GenevaERS?](../User guide - start here/What is GenevaERS)  
 Challenge our product with the longest running report in your company.  
 
 # Useful Links

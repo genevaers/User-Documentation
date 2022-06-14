@@ -16,5 +16,9 @@ TABLE OF CONTENTS
 # How to invoke XXTHC
 
 # Errors
-See [Errors PE Sub-Programs](../Errors PE Sub-Programs)
-
+See [Errors in Sub-Programs](../Errors in Sub-Programs)  
+  
+  
+# Useful Links
+Next topic: [Sub-Programs](../Sub-Programs)  
+Previous topic: [Runbook - UR66 COBOL ENQ DEQ](Runbook UR66 COBOL ENQ DEQ) 

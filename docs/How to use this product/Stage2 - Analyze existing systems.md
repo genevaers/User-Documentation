@@ -29,6 +29,6 @@ GenveaERS can create new processing using existing data in your company. In this
 GenevaERS allows you to develop new processing very quickly becuase GenveaERS does most of the programming for you.
 
 # Useful Links
-Next topic: [Stage3 - Design Batch Flows](Stage3 - Design Batch Flows)  
-Previous topic: [Stage1 - Define Goal](Stage1 - Define Goal)  
+Next topic: [Stage3 - Design batch flows](Stage3 - Design batch flows)  
+Previous topic: [Stage1 - Define goal](Stage1 - Define goal)  
 
