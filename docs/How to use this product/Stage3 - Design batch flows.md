@@ -14,7 +14,7 @@ TABLE OF CONTENTS
 
 # Choose a Basic Solution 
 Choose the best fit End-to-End example to guide you to create a batch flow:  
-[Basic Solutions](../Basic Solutions)
+[Basic solutions](../Basic solutions)
 
 # Specify a view for each output file
 What are the output files?  Each output file can have a view to create it.
@@ -30,6 +30,6 @@ For example, the sales file must provide the customere key so that the state (ad
 In other cases, the output total sales field is accumulated from the sales value of each sales item, so the calculation is a simple accumulation.
 
 # Useful Links
-Next topic: [Stage4 - Develop Solution in Workbench](Stage4 - Develop Solution in Workbench)  
-Previous topic: [Stage2 - Analyze Existing Systems](Stage2 - Analyze Existing Systems)  
+Next topic: [Stage4 - Develop solution in workbench](Stage4 - Develop solution in workbench)  
+Previous topic: [Stage2 - Analyze existing systems](Stage2 - Analyze existing systems)  
 

@@ -16,5 +16,11 @@ TABLE OF CONTENTS
 # How to invoke XLST
 
 # Errors
-See [Errors PE User-Exits](../Errors PE User-Exits)
+See [Errors in User-Exits](../Errors in User-Exits)  
+  
+  
+# Useful Links
+Next topic: [Runbook - XP01 Record Paste Up](Runbook XP01 Record Paste Up)  
+Previous topic: [Runbook - XLFIL MR95 File Info Lookup](Runbook XLFIL MR95 File Info Lookup)  
+
 

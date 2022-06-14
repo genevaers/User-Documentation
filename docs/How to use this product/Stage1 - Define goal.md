@@ -24,7 +24,7 @@ Broadly speaking, GenevaERS needs to know:
 Once you have all these details it is easy to create a new system using our product.  
 
 # Useful Links
-Next topic: [Stage2 - Analyze Existing Systems](Stage2 - Analyze Existing Systems)  
+Next topic: [Stage2 - Analyze existing systems](Stage2 - Analyze existing systems)  
 
 
 

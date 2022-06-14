@@ -16,4 +16,9 @@ TABLE OF CONTENTS
 # How to invoke UR35
 
 # Errors
-See [Errors PE Sub-Programs](../Errors PE Sub-Programs)
+See [Errors in Sub-Programs](../Errors in Sub-Programs)  
+  
+  
+# Useful Links
+Next topic: [Runbook - UR39 GENWRITE](Runbook UR39 GENWRITE)  
+Previous topic: [Runbook - UR33 Substitute Symbolic Var](Runbook UR33 Substitute Symbolic Var) 

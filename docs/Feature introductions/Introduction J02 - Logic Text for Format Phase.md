@@ -19,6 +19,5 @@ To be completed.
 
 
 # Useful Links
-Next topic: [Introduction J?? - ???](J?? - ???)  
 Previous topic: [Introduction J01 - Format Phase](Introduction J01 - Format Phase)  
 

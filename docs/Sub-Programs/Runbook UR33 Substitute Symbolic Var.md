@@ -16,4 +16,9 @@ TABLE OF CONTENTS
 # How to invoke UR33
 
 # Errors
-See [Errors PE Sub-Programs](../Errors PE Sub-Programs)
+See [Errors in Sub-Programs](../Errors in Sub-Programs)  
+  
+  
+# Useful Links
+Next topic: [Runbook - UR35 Dynamic Allocation](Runbook UR35 Dynamic Allocation)  
+Previous topic: [Runbook - UR32 Dataspace Services](Runbook UR32 Dataspace Services) 

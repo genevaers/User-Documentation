@@ -16,5 +16,10 @@ TABLE OF CONTENTS
 # How to invoke XLEXP
 
 # Errors
-See [Errors PE User-Exits](../Errors PE User-Exits)
+See [Errors in User-Exits](../Errors in User-Exits)  
+  
+  
+# Useful Links
+Next topic: [Runbook - XLFIL MR95 File Info Lookup](Runbook XLFIL MR95 File Info Lookup)  
+Previous topic: [Runbook - XLENV MR92 Env Info Lookup](Runbook XLENV MR92 Env Info Lookup)  
 

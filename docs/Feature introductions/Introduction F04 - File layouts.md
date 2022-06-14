@@ -17,6 +17,6 @@ To be completed.
 
 
 # Useful Links
-Next topic: [Introduction F05 - Lookups](Introduction F05 - Lookups)  
+Next topic: [Introduction F05 - Lookup Paths](Introduction F05 - Lookup Paths)  
 Previous topic: [Introduction F03 - Files](Introduction F03 - Files)  
 

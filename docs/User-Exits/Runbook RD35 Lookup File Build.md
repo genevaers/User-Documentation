@@ -16,5 +16,9 @@ TABLE OF CONTENTS
 # How to invoke RD35
 
 # Errors
-See [Errors PE User-Exits](../Errors PE User-Exits)
-
+See [Errors in User-Exits](../Errors in User-Exits)  
+  
+  
+# Useful Links
+Next topic: [Runbook - SMFX SMF Record Flattening](Runbook SMFX SMF Record Flattening)  
+Previous topic: [Runbook - RD15 Lookup Detail File Convert](Runbook RD15 Lookup Detail File Convert)  

@@ -12,13 +12,18 @@ TABLE OF CONTENTS
 {:toc}  
 
 # This may already be done
-This may have been done in [Stage 5 - Implement solution](../How to Implement/Stage 5 - Implement solution).  
-If you have JCL, proceed to [Run PE](B Run PE).
-
+This may have been done in [Stage5 - Run solution](../How to use this product/Stage5 - Run solution).  
+If you have JCL, proceed to [Run PE](B Run PE).  
+if you have not yet parepd the JCL, see below.  
+  
 # Create JCL required
 There are two easy ways to create your JCL:
-1. Use a relevant End-to-End Example that suggests the type of JCL you will need.  See [Stage 5 - Implement solution](../How to Implement/Stage 5 - Implement solution).
-2. Copy JCL used for a similar batch stream and modify as required.
+1. Find one of the basic solutions that is similar to your procesing.  See [Basic solutions](../Basic solutions).
+2. Copy the JCL for that batch solution and modify as required.
 
 Once you have the required JCL, proceed to [Run PE](B Run PE).
+  
+  
+# Useful Links
+Next topic: [Run PE](B Run PE)  
 

@@ -16,5 +16,9 @@ TABLE OF CONTENTS
 # How to invoke SMFX
 
 # Errors
-See [Errors PE User-Exits](../Errors PE User-Exits)
-
+See [Errors in User-Exits](../Errors in User-Exits)  
+  
+  
+# Useful Links
+Next topic: [Runbook - SR01 Permutation Exploder Old](Runbook SR01 Permutation Exploder Old)  
+Previous topic: [Runbook - RD35 Lookup File Build](Runbook RD35 Lookup File Build)  

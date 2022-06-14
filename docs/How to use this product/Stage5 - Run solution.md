@@ -13,11 +13,11 @@ TABLE OF CONTENTS
 
 
 # Create JCL for your batch stream
-Create the JCL for your procssing using the topic from [12 Basic solutions](../12 Basic solutions) relevant.  
+Create the JCL for your processing using the relevant topic from [Basic solutions](../Basic solutions) relevant.  
   
 #  Run the batch stream
-See [50 Run Performance Engine (PE)](../Run Performance Engine (PE))  
+See [Run Performance Engine (PE)](../Run Performance Engine (PE))  
   
 # Useful Links
-Previous topic: [Stage4 - Develop Solution in Workbench](Stage4 - Develop Solution in Workbench)  
+Previous topic: [Stage4 - Develop solution in workbench](Stage4 - Develop solution in workbench)  
   

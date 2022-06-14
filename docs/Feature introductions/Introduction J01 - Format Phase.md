@@ -23,5 +23,5 @@ To be completed.
 
 # Useful Links
 Next topic: [Introduction J02 - Logic Text for Format Phase](Introduction J02 - Logic Text for Format Phase)  
-Previous topic: [Introduction H?? - ???](Introduction H?? - ???)  
+Previous topic: [Introduction H10 - Compiler](Introduction H10 - Compiler)  
 
