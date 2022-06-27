@@ -1,4 +1,0 @@
-staticSite/.cache/**
-.vscode/settings.json
-staticSite/node_modules/**
-staticSite/public/**
