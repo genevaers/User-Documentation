@@ -29,7 +29,6 @@ GEM
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (2.0.3)
     ffi (1.15.5)
-    ffi (1.15.5-x64-mingw-ucrt)
     ffi (1.15.5-x64-mingw32)
     ffi (1.15.5-x64-unknown)
     forwardable-extended (2.6.0)
@@ -193,9 +192,11 @@ GEM
       unf (~> 0.1.4)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
+    thread_safe (0.3.6)
     typhoeus (1.4.0)
       ethon (>= 0.9.0)
-    tzinfo (1.0.1)
+    tzinfo (1.2.10)
+      thread_safe (~> 0.1)
     tzinfo-data (1.2022.1)
       tzinfo (>= 1.0.0)
     unf (0.1.4)
@@ -206,8 +207,8 @@ GEM
     webrick (1.7.0)
 
 PLATFORMS
-  x64-mingw-ucrt
   x64-mingw32
+  x64-unknown
   x64-unknown
   x86_64-linux
 
