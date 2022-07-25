@@ -10,7 +10,8 @@ TABLE OF CONTENTS
 {:toc}  
 
 # Layout of screen  
-To be completed.  
+The left of the screen is the sidebar area.
+The main part of the screen displays one topic.  
   
 
 # Folders of topics
