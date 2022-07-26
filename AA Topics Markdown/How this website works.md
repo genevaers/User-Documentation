@@ -10,7 +10,8 @@ TABLE OF CONTENTS
 {:toc}  
 
 # Layout of screen  
-To be completed.  
+This section is not yet documented.
+  
   
 
 # Folders of topics
