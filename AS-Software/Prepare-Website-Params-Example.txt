@@ -6,7 +6,7 @@
  	BigFolder=C:\Git\AA Test
 	WebsiteFolder=C:\Git\AA Test\docs
  	DisplayInfo=Yes 
-	MaxIncludesPerFile=5
-	MaxIncludesDepth=5
-	MaxPathways=10
+	MaxIncludesPerFile=25
+	MaxDepthCommonIncludesCommon=5
+	MaxPathways=200
 	

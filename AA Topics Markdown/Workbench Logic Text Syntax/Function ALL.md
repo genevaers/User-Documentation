@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Dummy"
+title: "Function ALL"
 parent: Workbench Logic Text Syntax
 
 nav_order: 1
 ---
 
 
-Dummy topic to make the folder appear.
+{{ Logic Text\Introduction Function ALL }}
