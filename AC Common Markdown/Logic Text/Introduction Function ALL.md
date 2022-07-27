@@ -26,3 +26,5 @@ See also topic "**Rules for all logic text**".
 
 {{ Logic Text\Example Function ALL ECA }}
 
+
+

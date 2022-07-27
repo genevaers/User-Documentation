@@ -62,6 +62,7 @@ $ScriptVersion = '1.0'
 		Code04.20	Situation no topic files exist
 		Code04.30	Read topic files and setup array sizes and initial values
 		Code04.40	Setup two dimensional arrays for topic files
+		Code04.50   Check all topics do not match any common file names
 
 	Code05.00	Populate common includes array
 		Code05.10  Initialise variables
@@ -410,7 +411,7 @@ $ScriptVersion = '1.0'
 						 Set this parameter higher if the default (20) is not enugh.
 						
 
-	MaxIncludesDepth 	Depth is where one common file includes another common file.
+	MaxDepthCommonIncludesCommon 	Depth is where one common file includes another common file.
 						Set this parameter higher if the default (5) is not enough.
 						See also Overview 1.1 above, point A.
 
@@ -572,7 +573,7 @@ $BigFolder	   	       = "default"
 $WebsiteFolder         = "default"
 $DisplayInfo           = 'Yes' 		# Set to No for a background process.
 $MaxIncludesPerFile    = 20	
-$MaxIncludesDepth 	   = 5
+$MaxDepthCommonIncludesCommon 	   = 5
 $MaxPathways           = 100		# Rows for array to test for circular includes.
 
 # Note: LineEndings are CRLF because this is Jekyll.
@@ -720,8 +721,8 @@ Foreach ($line in $ParamsFileContents) {
 			$OKParamName = $True
 		}
 
-		If ($line[0] -eq 'MaxIncludesDepth') {
-			$MaxIncludesDepth = $line[1].Trim() 
+		If ($line[0] -eq 'MaxDepthCommonIncludesCommon') {
+			$MaxDepthCommonIncludesCommon = $line[1].Trim() 
 		#	$ShowText = 'M01.40C  Parameter DisplayInfo        = ' + $DisplayInfoString 
  		#	Write-Host $ShowText
 			$OKParamName = $True
@@ -820,7 +821,7 @@ $ErrorFileFullPath = $ErrorFileFullPath + 'ERRORS Prepare-Website.txt'
 $ShowText = 'M01.71A  Error file for ' + $ScriptName + '   Version ' + $ScriptVersion
 Out-File -filepath $ErrorFileFullPath  -inputObject $ShowText -force
 
-$ShowText = 'M02.40C  Run Date       ' + $RunDate
+$ShowText = 'M01.71B  Run Date       ' + $RunDate
 Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
 $ShowText = '  '
@@ -876,6 +877,7 @@ If (-not (Test-Path $TopicFolder -PathType container)) {
 	$ShowText = 'M01.81A  ERROR - TopicFolder "' + $TopicFolder
 	$ShowText = $ShowText + '" does not exist. Run terminated.' 
 	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 	
 	$ShowText = 'Errors - see Error file in folder AI Info  '
 	If ($DisplayInfo) { Write-Host $ShowText }
@@ -890,6 +892,7 @@ If (-not (Test-Path $CommonFolder -PathType container)) {
 	$ShowText = 'M01.82A 	ERROR - CommonFolder "' + $SoftwareFolder
 	$ShowText = $ShowText + '" does not exist. Run terminated.' 
 	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 	
 	$ShowText = 'Errors - see Error file in folder AI Info  '
 	If ($DisplayInfo) { Write-Host $ShowText }
@@ -950,6 +953,7 @@ If (-not (Test-Path $SoftwareFolder -PathType container)) {
 	$ShowText = 'M01.85A 	ERROR - SoftwareFolder ' + $SoftwareFolder
 	$ShowText = $ShowText + ' does not exist. Run terminated.' 
 	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 	
 	$ShowText = 'Errors - see Error file in folder AI Info  '
 	If ($DisplayInfo) { Write-Host $ShowText }
@@ -965,6 +969,7 @@ If (-not (Test-Path $WebsiteFolder -PathType container)) {
 	$ShowText = 'M01.86A 	ERROR - WebsiteFolder "' + $WebsiteFolder
 	$ShowText = $ShowText + '" does not exist. Run terminated.' 
 	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
 	$ShowText = 'Errors - see Error file in folder AI Info  '
 	If ($DisplayInfo) { Write-Host $ShowText }
@@ -987,10 +992,12 @@ If ($DisplayInfoString -eq 'Yes') {
 	} else {
 		$DisplayInfo = $true
 		$ShowText = 'M01.90A 	ERROR DisplayInfo must be Yes or No. '
-		Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append 
+		Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 		If ($DisplayInfo) { Write-Host $ShowText }
 		$ShowText = 'M01.90B 	ERROR DisplayInfo is currently "' + $DisplayInfoString + '"' 
 		Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 		
 		$ShowText = 'Errors - see Error file in folder AI Info  '
 		If ($DisplayInfo) { Write-Host $ShowText }
@@ -1006,6 +1013,7 @@ $MaxIncludesPerFile = $MaxIncludesPerFile -as [int]
 If ($MaxIncludesPerFile -isnot [int]) {
 	$ShowText = 'M01.91A 	ERROR MaxIncludesPerFile must be positive whole number. '
 	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append 
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 	
 	$ShowText = 'Errors - see Error file in folder AI Info  '
 	If ($DisplayInfo) { Write-Host $ShowText }
@@ -1015,6 +1023,7 @@ If ($MaxIncludesPerFile -isnot [int]) {
 If ($MaxIncludesPerFile -lt 0) {
 	$ShowText = 'M01.91B 	ERROR MaxIncludesPerFile must be positive whole number. '
 	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append 
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 	
 	$ShowText = 'Errors - see Error file in folder AI Info  '
 	If ($DisplayInfo) { Write-Host $ShowText }
@@ -1023,21 +1032,27 @@ If ($MaxIncludesPerFile -lt 0) {
 } 
 
 
-#	Code01.92	Check $MaxIncludesDepth
+#	Code01.92	Check $MaxDepthCommonIncludesCommon
 #	Check integer and greater than zero
-$MaxIncludesDepth = $MaxIncludesDepth -as [int]
-If ($MaxIncludesDepth -isnot [int]) {
-	$ShowText = 'M01.92A 	ERROR MaxIncludesDepth must be positive whole number. '
-	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append 
+$MaxDepthCommonIncludesCommon = $MaxDepthCommonIncludesCommon -as [int]
+If ($MaxDepthCommonIncludesCommon -isnot [int]) {
+	$ShowText = 'M01.92A  ERROR MaxDepthCommonIncludesCommon must be positive whole number. '
+	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 	
 	$ShowText = 'Errors - see Error file in folder AI Info  '
 	If ($DisplayInfo) { Write-Host $ShowText }
 	
 	Exit
-} 
-If ($MaxIncludesDepth -lt 0) {
-	$ShowText = 'M01.92B 	ERROR MaxIncludesDepth must be positive whole number. '
-	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append 
+}
+
+#	$ShowText = 'M01.92BB  MaxDepthCommonIncludesCommon ' +  $MaxDepthCommonIncludesCommon 
+#	If ($DisplayInfo) { Write-Host $ShowText }
+
+If ($MaxDepthCommonIncludesCommon -lt 1) {
+	$ShowText = 'M01.92B  ERROR MaxDepthCommonIncludesCommon must be positive whole number. '
+	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 	
 	$ShowText = 'Errors - see Error file in folder AI Info  '
 	If ($DisplayInfo) { Write-Host $ShowText }
@@ -1050,7 +1065,8 @@ If ($MaxIncludesDepth -lt 0) {
 $MaxPathways = $MaxPathways -as [int]
 If ($MaxPathways -isnot [int]) {
 	$ShowText = 'M01.93A 	ERROR MaxPathways must be positive whole number. '
-	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append 
+	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 	
 	$ShowText = 'Errors - see Error file in folder AI Info  '
 	If ($DisplayInfo) { Write-Host $ShowText }
@@ -1059,7 +1075,8 @@ If ($MaxPathways -isnot [int]) {
 } 
 If ($MaxPathways -lt 0) {
 	$ShowText = 'M01.93B 	ERROR MaxPathways must be positive whole number. '
-	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append 
+	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 	
 	$ShowText = 'Errors - see Error file in folder AI Info  '
 	If ($DisplayInfo) { Write-Host $ShowText }
@@ -1091,7 +1108,7 @@ Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 $ShowText = 'M02.10G 		MaxIncludesPerFile        ' + $MaxIncludesPerFile
  Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
-$ShowText = 'M02.10H 		MaxIncludesDepth          ' + $MaxIncludesDepth 
+$ShowText = 'M02.10H 		MaxDepthCommonIncludesCommon          ' + $MaxDepthCommonIncludesCommon 
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
 $ShowText = 'M02.10J 		MaxPathways               ' + $MaxPathways 
@@ -1120,7 +1137,7 @@ Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 $ShowText = 'M02.20H 		MaxIncludesPerFile        ' + $MaxIncludesPerFile 
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
-$ShowText = 'M02.20J 		MaxIncludesDepth          ' + $MaxIncludesDepth 
+$ShowText = 'M02.20J 		MaxDepthCommonIncludesCommon          ' + $MaxDepthCommonIncludesCommon 
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
 $ShowText = 'M02.20K 		MaxPathways               ' + $MaxPathways 
@@ -1144,7 +1161,7 @@ Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 #	The sizes of the arrays are determined in Code03.30
 
 $CommonArray = @()					#	Path & Filename of the common file
-$CommonfilenameArray = @()			#	Filename of the common file (must be unique)
+$CommonFilenameArray = @()			#	Filename of the common file (must be unique)
 $CommonPriorityArray = @()			#   Priority of the common file itself
 $NumCommonIncludesArray = @()		#   Number of includes for this common file
 
@@ -1197,7 +1214,7 @@ If ($CommonFilesExist) {
 
 	(Get-ChildItem -Path $CommonFolder -Include *.md -recurse ).Name |
 	Foreach{ 
-		$CommonfilenameArray += $_			# Populates and sizes this Array.
+		$CommonFilenameArray += $_			# Populates and sizes this Array.
 		}
 
 	#	Array CommonArray is fully populated.  The arrays below are the right size but 
@@ -1266,7 +1283,6 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 For ($index1 = 0; $index1 -lt $CommonFilenameArray.length; $index1++) {
 	
 	$ThisFileName = $CommonFilenameArray[$index1]
-	$FoundDuplicateCommonFilename = $False
 	$NextIndex1 = $index1 + 1
 			
 	# 	Check if ThisFileName exists anywhere later in the CommonFilenameArray.
@@ -1325,6 +1341,7 @@ Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 #	The sizes of the arrays are determined in Code04.30
 
 $TopicArray = @()					#	Path & Name of the common file
+$TopicFilenameArray = @()			#	Filename of the topic (must not match a common file)
 $TopicPriorityArray = @()			#   Priority of the topic file itself.
 $NumTopicIncludesArray	= @()		#   Number of includes for this topic file
 
@@ -1378,6 +1395,14 @@ Foreach{
 	$NumTopicIncludesArray += $_		# Sizes this array as for TopicArray.
 	}
 	
+#	Get-ChildItem also sets the size of TopicFileNameArray
+
+(Get-ChildItem -Path $TopicFolder -Include *.md -recurse ).Name |
+Foreach{ 
+	$TopicFilenameArray += $_			# Populates and sizes this Array.
+	}
+
+
 #	Array TopicArray is fully populated.  The other two arrays are the right size 
 #	but have incorrect values.  The other two arrays need sensible initial values.
 
@@ -1430,6 +1455,56 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 
 #	$ShowText = "M4.40A  Initial values setup for 2 dimensional topic array."
 #	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+
+
+#	Code04.50   Check all topics do not match any common file names.
+#				Why?  Because when the includes are actually done, the topic and any includes are
+#				copied to the folder AT Temp.  If a topic and common file have the same name,
+#				one file overwrites the other.  
+
+
+For ($index1 = 0; $index1 -lt $TopicFilenameArray.length; $index1++) {
+	
+	$ThisFileName = $TopicFilenameArray[$index1]
+					
+	# 	Check if ThisFileName exists anywhere later in the CommonFilenameArray.
+
+	For ($index2 = 0; $index2 -lt $CommonFilenameArray.length; $index2++) {
+		If ($CommonFilenameArray[$index2] -eq $ThisFileName) {
+
+			$ShowText = ' '
+			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+			Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+			Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+			$ShowText = 'M04.50A  ERROR - Topic and Common file have the same Filename: ' + $ThisFileName
+			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+			Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+			Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+			
+			$ShowText = 'M04.50B Topic ' + $index1 + ' ' + $TopicArray[$index1]
+			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+			Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+			Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+			
+			$ShowText = 'M04.50C Common '  + $index2 + ' '+ $CommonArray[$index2]
+			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+			Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+			Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+			
+			$ShowText = 'Errors - see Error file in folder AI Info  '
+			If ($DisplayInfo) { Write-Host $ShowText }
+
+			Exit
+			
+		}	#	Found duplicate name
+	
+	}	#  For index2 = next Common file in CommonFilenameArray
+
+}	#  For index1 = Topic file in TopicFilenameArray
 
 
 
@@ -2263,10 +2338,10 @@ Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 #	This is the "master" list of pathways
 #	Thise uses $index3 and $index4
 
-#	Max steps in a pathway is one larger than $MaxIncludesDepth 
+#	Max steps in a pathway is one larger than $MaxDepthCommonIncludesCommon 
 #	because step 0 is the common file and the includes start at 1 (instead of 0)
 
-$MaxStepsInPathway = $MaxIncludesDepth + 1
+$MaxStepsInPathway = $MaxDepthCommonIncludesCommon + 1
 
 $PathwayArray = New-Object 'string[,]' $MaxPathways,$MaxStepsInPathway
 $PathwayLastStepArray = New-Object 'int[]' $MaxPathways
@@ -2302,19 +2377,22 @@ For ($index3 = 0; $index3 -lt $MaxPathways; $index3++) {
 
 #	Code07.20	Generate Pathways from common includes
 #
-#	Each combo of common file and an include is a new simple pathway
-#	Add new simple pathway to NewPathwayArray
-#	Then search for any existing pathways that end in the same common file.
-#	If found, copy pathway to NewPathwayArray and add new step at end.
+#	Each combo of requesting common file (R) and a common include (S) is a new simple pathway
+#	Add new simple pathway (R to S) to NewPathwayArray
+#	Then check Case A - search for any existing pathways that end R.
+#	If found, duplicate that pathway to NewPathwayArray and add S as a new last step.
+#	Then check Case B - search fro any existing pathways that start with S.
+#	if found, create a new pathway that starts with R and the rest of the steps are the pathway found
 #	When done, add NewPathwayArray to PathwayArray
 #
 
 
 
 #   Read each CommonArray and check for includes in CommonIncludesArray.
+#	Where we find an include, create a simple pathway for that include.
 
-$index3 = -1   				#	This is the index of the pathways array.
-$index5 = -1				#   This the incex of the new pathways array
+$index3 = -1   				#	This is the index of the Pathways array.
+$index5 = -1				#   This the incex of the New Pathways array
 $PathwayLastRow = -1		#	Empty - next row will be row zero (first).
 $NewPathwayLastRow = -1		#	Empty - next row will be row zero (first).
 
@@ -2329,17 +2407,13 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 	
 	If ($NumCommonIncludesArray[$index1] -gt 0) {
 
-		$ShowText = 'M07.20B    Found include.  Give NewPathwayArray a single step include.  '
-		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-
-
 		For ($index2 = 0; $index2 -lt $NumCommonIncludesArray[$index1]; $index2++) {
 		
 			#	Code07.21	Read common file and include pair into NewPathwayArray
 			#
 			#   Read new common include into NewPathwayArray which means 
 			#		$CommonArray[$index1] which is step 0
-			#		$CommonIncludesArray[$index1,index2] is step 1
+			#		$CommonIncludesArray[$index1,$index2] is step 1
 			#
 			#   Create new simple row in NewPathwayStapsArray:
 			#		$index5 incremented
@@ -2348,40 +2422,69 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 			#		$NewPathwayArray[$index5,1] = $CommonIncludesArray[$index1,$index2] 
 			#		$NewPathwayLastStepArray[$index5] = 1
 
-			$index5++	#	New simple pathway of common file and incluce
+			If ($index2 -gt 0) {
+
+				# $index2 = 0 does not need a trace blank line here, but after that we do
+				$ShowText = " "
+				Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+				
+				$ShowText = 'M07.21A  Continue checking includes for common ' + $index1 + ' = ' +  $CommonArray[$index1]
+				Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+			}
+
+			$ShowText = 'M07.21B    Found include ' + $CommonIncludesArray[$index1,$index2]
+			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 	
-			$NewPathwayArray[$index5,0] = $CommonArray[$index1]	
-	
-			$ShowText = 'M07.21A        NewPathwayArray start = ' + $NewPathwayArray[$index5,0] 
+
+			$index5++	#	Creates a new pathway that is a simple single step include
+			
+			#	The requesting common file is the common file we are looking at
+
+			$ThisRequestingCommon = $CommonArray[$index1]	
+
+			#	NewPathwayArray step 0 is the requesting common file.
+
+			$NewPathwayArray[$index5,0] = $ThisRequestingCommon
+			
+			#	$ShowText = 'M07.21A       NewPathwayArray index5 = ' + $index5
+			#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+			#	The Common include we are looking at is the include from the CommonIncludesArray
+
+			$ThisCommonInclude = $CommonIncludesArray[$index1,$index2]
+
+			#	This include is the second step of our new pathway, i.e. step 1
+			
+			$NewPathwayArray[$index5,1] = $ThisCommonInclude
+			
+			#	$NewPathwayLastStepArray[$index5] = 1 is already set in that array
+
+			$ShowText = 'M07.21C        NewPathwayArray start = ' + $NewPathwayArray[$index5,0] 
 			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 
-			#	Pathways 0 is common file, so include is step 1
-
-			$NewPathwayArray[$index5,1] = $CommonIncludesArray[$index1,$index2]  
-			#	$NewPathwayLastStepArray[$index5] = 1 is already set in that array
-
-			$ShowText = 'M07.21B                  single step = ' + $NewPathwayArray[$index5,1]
+			$ShowText = 'M07.21D                  single step = ' + $NewPathwayArray[$index5,1]
 			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 		
 			$NewPathwayLastRow = $index5		#	Latest NewPathwawyStpesArray row
 
 			#	Code07.30	Search PathwayArray for relevant existing pahtways to duplicate
 
-			$ShowText = 'M07.30A    Find relevant existing pathways to dupliate and extend.'
+			$ShowText = 'M07.30A    Find Case A or Case B existing pathways to duplicate and extend'
 			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-		
-			# 	Find existing pathway with last step = $NewPathwayArray[$index5,0]
+
+			#	In 07.21 above we added a simple pathway where R includes S.
+			#	R = $NewPathwayArray[$index5,0] = $ThisRequestingCommon
+			#	S = $NewPathwayArray[$index5,1] = $ThisCommonInclude
+			#	Case A - Search for any existing pathways that end R 
 			#	If found, create new pathway that is duplicate and has
 			#			 extra step $NewPathwayArray[$index5,1]
-			#		$index7 = row in PathwayArray
-			#		$index8 = $PathwayLastStepArray[$index7]
-			#		Look for $PathwayArray[$index7,$index8] = $CommonArray[$index1]  
-
-			# 	If Step 3 finds such a row, create new row in NewPathwayStapsArray
-			#		as for step 2 with $index5 incremented as usual
-			#       Evemtually all such steps are exhausted.
-			
+			#		$index3 = row in existing PathwayArray
+			#		$index4 = $PathwayLastStepArray[$index3]
+			#		Look for $PathwayArray[$index7,$index8] = $NewPathwayArray[$index5,0] 
+			#		$index5 = row in New Pathway Array
+			#		$index10 = step in that row of New Pathway Array
 			#
 
 			if ($PathwayLastRow -gt -1) {
@@ -2395,7 +2498,7 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 					#	index4 is last step in that pathway
 					$index4 = $PathwayLastStepArray[$index3]
 				
-					If ($PathwayArray[$index3,$index4] -eq $CommonArray[$index1]){
+					If ($PathwayArray[$index3,$index4] -eq $ThisRequestingCommon){
 
 						# This pahtway has last step same as first step of NewPathway in 07.21 above.
 						#	Duplicate $PathwayArray[$index3, * ] to NewPathwayArray
@@ -2409,8 +2512,11 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 						
 							$NewPathwayArray[$index5,$index10] = $PathwayArray[$index3,$index10]
 
+							#	$ShowText = 'M07.30A       index5 = ' + $index5
+							#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
 							If ($index10 -eq 0){
-								$ShowText = 'M07.30B        NewPathwayArray start ' + $NewPathwayArray[$index5,0] 
+								$ShowText = 'M07.30B        Case A NewPathwayArray start ' + $NewPathwayArray[$index5,0] 
 							} else {
 								$ShowText = 'M07.30C                      step ' + $index10 + '  ' 
 								$ShowText = $Showtext + $NewPathwayArray[$index5,$index10] 
@@ -2434,12 +2540,12 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 							Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 							Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
-							$ShowText = 'M07.30E  Parameter MaxIncludesDepth = ' + $MaxIncludesDepth
+							$ShowText = 'M07.30E  Parameter MaxDepthCommonIncludesCommon = ' + $MaxDepthCommonIncludesCommon
 							Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 							Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 							Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
-							$ShowText = 'M07.30F  This sequence of includes needs an extra step: '
+							$ShowText = 'M07.30F  This sequence of includes needs an extra step '
 							Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 							Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 							Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
@@ -2458,26 +2564,30 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 
 							}
 
-							$ShowText = 'M07.30J        Extra step needed: ' + $CommonIncludesArray[$index1,$index2] 
+							$ShowText = 'M07.30J        Extra step needed: ' + $ThisCommonInclude
 							Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 							Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 							Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
-							$ShowText = 'M07.30K  Please increase parameter MaxIncludesDepth. '
+							$ShowText = 'M07.30K  Please increase parameter MaxDepthCommonIncludesCommon. '
 							Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 							Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 							Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+							
+							$ShowText = 'Errors - see Error file in folder AI Info  '
+							If ($DisplayInfo) { Write-Host $ShowText }
 
 							Exit
 
 						}
 
 
-						$NewPathwayArray[$index5,$index10] = $CommonIncludesArray[$index1,$index2]  
+						$NewPathwayArray[$index5,$index10] = $ThisCommonInclude 
 
 						$NewPathwayLastStepArray[$index5] = $index10	# Set new last step number
 
-						$ShowText = 'M07.30X                  new last ' + $index10 + '  '
+						$ShowText = 'M07.30J                  new last ' + $index10 + '  '
 						$ShowText = $Showtext + $NewPathwayArray[$index5,$index10] 
 						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
@@ -2491,7 +2601,118 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 		
 			}	#   PathwayArray has entries to process
 
-			
+			#	In 07.21 above we added a simple pathway where R includes S.
+			#	R = $NewPathwayArray[$index5,0] = $ThisRequestingCommon
+			#	S = $NewPathwayArray[$index5,1] = $ThisCommonInclude
+			#	Case B - find existing pathway that starts with S.
+			# 	That existing pathway has step 0 = $ThisCommonInclude
+			#	If found, create new pathway that is duplicate and has
+			#			 new start step of $ThisRequestingCommon
+			#			 and all other steps as for the existing pathway found
+			#		$index7 = row in PathwayArray
+			#		Look for $PathwayArray[$index7,0] = $ThisCommonInclude
+			#
+
+			if ($PathwayLastRow -gt -1) {
+
+				# Search PathwayArray
+	
+				$PathwayRowLength =  $PathwayLastRow + 1
+
+				For ($index3 = 0; $index3 -lt $PathwayRowLength; $index3++) {
+		
+					If ($PathwayArray[$index3,0] -eq $ThisCommonInclude){
+
+						#	$ShowText = 'M07.30L     PathwayArray ' + $PathwayArray[$index3,0]
+						#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+						#	$ShowText = 'M07.30M    NewPathwayArray index = 0 ' 
+						#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+						#	$ShowText = 'M07.30N     NewPathwayArray ' +  $NewPathwayArray[0,1]
+						#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+						# This pahtway has first step same as $ThisCommonInclude.
+						#	Create a new pathway with $ThisRequestingCommon as first step
+						#	and the remaining stpes are $PathwayArray[$index3, * ] 
+						#
+						
+						$index5++	#	New pathway
+
+						$NewPathwayArray[$index5,0] = $ThisRequestingCommon
+
+						$ShowText = 'M07.30P        Case B NewPathwayArray start ' + $NewPathwayArray[$Index5,0]
+						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+							
+						$PathwayLastStep = $PathwayLastStepArray[$index3] + 1	
+
+						For ($index10 = 0; $index10 -lt $PathwayLastStep; $index10++) {
+						
+							$StepForNewPathway = $index10 + 1
+
+							#	As we add a step, check if it is too many includes.
+
+							If ($StepForNewPathway -gt ($MaxStepsInPathway - 1)) {
+
+								$ShowText = ' '
+								Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+								Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+								Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+		
+								$ShowText = 'M07.30Q  ERROR - Include depth too far. '
+								Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+								Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+								Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+								$ShowText = 'M07.30R  Parameter MaxDepthCommonIncludesCommon = ' + $MaxDepthCommonIncludesCommon
+								Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+								Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+								Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+								$ShowText = 'M07.30W  Current pathway starts at common  ' + $ThisRequestingCommon
+								Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+								Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+								Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+								$ShowText = 'M07.30T        Extra step is one too many  ' + $PathwayArray[$index3,$index10]
+								Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+								Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+								Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+								$ShowText = 'M07.30U  Please increase parameter MaxDepthCommonIncludesCommon. '
+								Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+								Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+								Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+								$ShowText = 'Errors - see Error file in folder AI Info  '
+								If ($DisplayInfo) { Write-Host $ShowText }
+
+								Exit
+
+							}
+
+							#	$StepForNewPathway is within range, so all is OK.
+
+							$NewPathwayArray[$index5,$StepForNewPathway] = $PathwayArray[$index3,$index10]
+
+							$ShowText = 'M07.30V                      step ' + $StepForNewPathway + '  ' 
+							$ShowText = $Showtext + $NewPathwayArray[$index5,$StepForNewPathway] 
+							Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+						}
+
+
+						$NewPathwayLastStepArray[$index5] = $StepForNewPathway	# Set new last step number
+
+						$NewPathwayLastRow = $index5		#	Latest NewPathwawyStpesArray row
+
+
+						
+					}	#	last step of existing pathway equals common file
+				
+				}	#  For index3 = Pathway
+		
+			}	#   PathwayArray has entries to process
+
 			#
 			#	Code07.40	Check for circular includes in NewPathwayArray
 			#
@@ -2549,6 +2770,9 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 					}
+
+					$ShowText = 'Errors - see Error file in folder AI Info  '
+					If ($DisplayInfo) { Write-Host $ShowText }
 
 					Exit
 
@@ -2613,7 +2837,11 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
 					
+					$ShowText = 'Errors - see Error file in folder AI Info  '
+					If ($DisplayInfo) { Write-Host $ShowText }
+
 					Exit
 
 				}
@@ -3012,7 +3240,7 @@ If ($CommonPriorityMinusOneExists) {
 
 	#	Start a loop to keep calculating priorities until all done, or a false safe stop point.
 
-	$FailSafePriorityLimit = $MaxIncludesDepth + 2		#	This limit should never be reached.
+	$FailSafePriorityLimit = $MaxDepthCommonIncludesCommon + 2		#	This limit should never be reached.
 
 	While ($CommonPriorityMinusOneExists) {
 
@@ -3030,7 +3258,10 @@ If ($CommonPriorityMinusOneExists) {
 			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 			Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 			Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
-		
+
+			$ShowText = 'Errors - see Error file in folder AI Info  '
+			If ($DisplayInfo) { Write-Host $ShowText }
+			
 			Exit
 
 		}	
@@ -3271,6 +3502,11 @@ For ($index12 = 0; $index12 -lt $CommonArray.length; $index12++) {
 If ($CommonPriorityMinusOneExists) {
 	$ShowText = 'M08.40X  ERROR - Still have priority -1 somewhere '
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append 
+
+	$ShowText = 'Errors - see Error file in folder AI Info  '
+	If ($DisplayInfo) { Write-Host $ShowText }
+
 	Exit
 } 
 
@@ -3302,13 +3538,17 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
         $TopicPriorityArray[$index1] = 0
     } else {
         $TopicPriorityArray[$index1] = $TopicsWithIncludesPriority
+
+		# 	Only display the topics with includes
+
+		$ShowText = 'M09.00C      Topic at index ' + $index1 + ' ' + $TopicArray[$index1]
+		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+		$ShowText = 'M09.00D          Priority ' + $TopicPriorityArray[$index1]
+		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
     }
 
-	$ShowText = 'M09.00C      Topic at index ' + $index1 + ' ' + $TopicArray[$index1]
-	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-	$ShowText = 'M09.00D          Priority ' + $TopicPriorityArray[$index1]
-	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-
+	
 }	#  For index1 = topic file in TopicArray
 
 
@@ -3814,6 +4054,10 @@ If (Test-Path -Path $TopicImagesFolder) {
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+	$ShowText = 'Errors - see Error file in folder AI Info  '
+	If ($DisplayInfo) { Write-Host $ShowText }
+
 	Exit
 } 
 
@@ -3857,7 +4101,7 @@ Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 $ShowText = ' '
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
-$ShowText = '================= REPORT SUMMARY ======================='
+$ShowText = '===================================================================='
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
 $ShowText = ' '
@@ -3878,10 +4122,10 @@ $TotalIncludes = $TotalTopicIncludes + $TotalCommonIncludes
 $ShowText = 'M13.00C  Total includes             ' + $TotalIncludes
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
-$ShowText = 'M13.00D  Total includes in topic files   ' + $TotalTopicIncludes
+$ShowText = 'M13.00D  Includes in topic files    ' + $TotalTopicIncludes
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
-$ShowText = 'M13.00E  Total includes in common files  ' + $TotalTopicIncludes
+$ShowText = 'M13.00E  Includes in common files   ' + $TotalCommonIncludes
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
 # The total depth of includes can be worked out for each situatiom.
@@ -3915,13 +4159,13 @@ If ($TotalIncludes -eq 0) {
 
 }	#	If there are includes
 
-$ShowText = 'M13.00F  Total depth of includes ' + $TotalDepthOfIncludes 
+$ShowText = 'M13.00F  Depth from Topics to deepest common includes common      ' + $TotalDepthOfIncludes 
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
 $ShowText = ' '
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
-$ShowText = '========================================================'
+$ShowText = '===================================================================='
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
 $ShowText = ' '
@@ -3929,9 +4173,12 @@ Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
-$ShowText = 'M13.00F  Successful end' 
+$ShowText = 'M13.00Y  Successful end' 
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+$ShowText = 'M13.00Z  No errors ' 
+	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
 $ShowText = 'Successful end' 
 If ($DisplayInfo) { Write-Host $ShowText }
