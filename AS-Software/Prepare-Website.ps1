@@ -563,6 +563,10 @@ Function Find-Filename {
 
 $ShowText = 'M01.00A  Start Prepare-Website' 
 
+#	Powershell default coding is UTF-16 LE but Jekyll requires UTF-8.  This is set below:
+
+$PSDefaultParameterValues['Out-File:Encoding'] = 'utf8'
+
 
 
 #   Code01.01		Setup default values.
@@ -2173,17 +2177,17 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 
 		$TopicFileName = Find-Filename $TopicArray[$index1]
 
-		$ShowText = 'M06.28A  Topic filename = ' +  $TopicFileName
+		$ShowText = 'M06.28A  Topic filename with no includes = ' +  $TopicFileName
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
 
         #   Call Find-Path to find path associated with topic
 
-		$ShowText = 'M06.28B      TopicFolder = ' + $TopicFolder
-		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+		#	$ShowText = 'M06.28B      TopicFolder = ' + $TopicFolder
+		#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
-		$ShowText = 'M06.28C      Topic full path =  ' + $TopicArray[$index1]
-		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+		#	$ShowText = 'M06.28C      Topic full path =  ' + $TopicArray[$index1]
+		#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 		
 			
 		$TopicPath = Find-Path $TopicFolder $TopicArray[$index1]
@@ -2195,12 +2199,12 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
         
 		#	Call Ensure-Folders to make sure Website has the path
 
-		$ShowText = 'M06.28E  Ensure-Folders has Base '  +  $WebsiteFolder
-		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
+		#	$ShowText = 'M06.28E      Path needed above website '  +  $WebsiteFolder
+		#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 		
         $Result = Ensure-Folders   $WebsiteFolder $TopicPath
 
-        $ShowText = 'M06.28F  Result of Ensure-Folders is ' + $Result
+        $ShowText = 'M06.28F      Result of adding path to website is ' + $Result
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
 		#	Copy topic to website folder path
@@ -2211,7 +2215,7 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 
 		Copy-Item -Path $TopicArray[$index1] -Destination $TopicWebsiteFullPath  -Force
 
-		$ShowText = 'M06.28G      Topic copied to website and path ' 
+		$ShowText = 'M06.28G  Topic copied to website and path ' 
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 	}
@@ -2250,12 +2254,13 @@ If (-not $TopicFilesHaveIncludes) {
 		
 	For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 	
-		$ShowText = 'M06.30C  Topic file ' + $index1 + ' = ' +  $TopicArray[$index1]
-		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 				
 		# Displauy of includes
 		
 		If ($NumTopicIncludesArray[$index1] -gt 0) {
+
+			$ShowText = 'M06.30C  Topic file ' + $index1 + ' = ' +  $TopicArray[$index1]
+			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 		
 			$NumberTopicFilesWithIncludes++
 
