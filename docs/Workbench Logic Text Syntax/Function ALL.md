@@ -6,8 +6,6 @@ parent: Workbench Logic Text Syntax
 nav_order: 1
 ---
 
-Eugene comment.
-
 # Syntax: function ALL
 
 ## How do I use ALL? 
