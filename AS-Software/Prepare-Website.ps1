@@ -27,7 +27,7 @@ $ScriptVersion = '1.0'
 	
 	Search on "Codex.x" to find where that coding is actually placed.
 
-	Func00.01	Function Ensure-Folders
+	Func00.01	Function Confirm-Folders
 	Func00.02	Function Find-Path
 	Func00.03	Function Find-Filename
 
@@ -63,6 +63,9 @@ $ScriptVersion = '1.0'
 		Code04.30	Read topic files and setup array sizes and initial values
 		Code04.40	Setup two dimensional arrays for topic files
 		Code04.50   Check all topics do not match any common file names
+		Code04.60   Delete md files under website folder
+		Code04.61	List all folders under the website folder
+		Code04.62	Delete all md files under website folders except underscore folders
 
 	Code05.00	Populate common includes array
 		Code05.10  Initialise variables
@@ -419,11 +422,11 @@ $ScriptVersion = '1.0'
 					Set this parameter higher if an error message instructs you to do so.
  #>
 
-#	Func00.01	Function Ensure-Folders (EF)
+#	Func00.01	Function Confirm-Folders (EF)
 
-Function Ensure-Folders {
+Function Confirm-Folders {
 
-	# 	Function Ensure-Folders is given a base and a path
+	# 	Function Confirm-Folders is given a base and a path
 	#	This functdon ensures that the combination of base+path exists as a folder structure
 	#	This is done by ensuring each folder in the path is added one by one until they are all there.
 
@@ -534,7 +537,7 @@ Function Find-Filename {
 	$FF_FullPath = $a
 	
 	$FF_PositionBackslash = $FF_FullPath.IndexOf("\")
-	If ($PositionBackslash -eq -0) {
+	If ($FF_PositionBackslash -eq -0) {
 
 		#	There is no backslash, so FF_FullPath is purely a filename
 		
@@ -563,6 +566,10 @@ Function Find-Filename {
 
 $ShowText = 'M01.00A  Start Prepare-Website' 
 
+#	Powershell default coding is UTF-16 LE but Jekyll requires UTF-8.  This is set below:
+
+$PSDefaultParameterValues['Out-File:Encoding'] = 'utf8'
+
 
 
 #   Code01.01		Setup default values.
@@ -583,13 +590,13 @@ $MaxPathways           = 100		# Rows for array to test for circular includes.
 
 #Find the script file that is running.
 
-$ScriptFile = $MyInvocation.MyCommand.Path
+#	$ScriptFile = $MyInvocation.MyCommand.Path
 # $ShowText = 'M01.02A  ScriptFile ' + $ScriptFile
 # Write-Host $ShowText
 
 #   Find folder for script.
 
-$ScriptFolder = Split-Path $ScriptFile -Parent
+#	$ScriptFolder = Split-Path $ScriptFile -Parent
 #	$ShowText = 'M01.02B  ScriptFolder ' + $ScriptFolder
 #	Write-Host $ShowText
 
@@ -791,11 +798,12 @@ If (Test-Path -Path $InfoFolder) {
 #	If ($DisplayInfo) { Write-Host $ShowText }
 
 	#  Delete InfoFolder and all sub-folders.
-	Remove-Item -path  $InfoFolder -recurse		
+	Remove-Item $InfoFolder -Recurse	
 #	$ShowText = 'M01.62B 	Deleted Info Folder - ' + $InfoFolder 
 #	If ($DisplayInfo) { Write-Host $ShowText }
 
 } 
+
 
 #  Create new Infofolder.  The "Out-Null" suppresses the Powershell output (too much).
 	
@@ -909,7 +917,7 @@ If (Test-Path -Path $ExpandedCommonFolder) {
 #	If ($DisplayInfo) { Write-Host $ShowText }
 
 	#  Delete ExpandedCommonFolder and all contents
-	Remove-Item -path  $ExpandedCommonFolder -recurse	
+	Remove-Item $ExpandedCommonFolder -Recurse
 #	$ShowText = 'M01.83B 	Deleted ExpandedCommonFolder Folder - ' + $ExpandedCommonFolder
 #	If ($DisplayInfo) { Write-Host $ShowText }	
 }
@@ -932,7 +940,7 @@ If (Test-Path -Path $ExpandedTopicsFolder) {
 #	If ($DisplayInfo) { Write-Host $ShowText }
 
 	#  Delete all files in ExpandedTopicsFolder.
-	Remove-Item -path  $ExpandedTopicsFolder -recurse 
+	Remove-Item  $ExpandedTopicsFolder -Recurse
 #	$ShowText = 'M01.84B 	Deleted ExpandedTopicsFolder Folder - ' + $ExpandedTopicsFolder
 #	If ($DisplayInfo) { Write-Host $ShowText }
 
@@ -1204,7 +1212,7 @@ If ($CommonFilesExist) {
 	#	Get-ChildItem sets the sizes of these one dimentional common arrays
 
 	(Get-ChildItem -Path $CommonFolder -Include *.md -recurse ).FullName |
-	Foreach{ 
+	Foreach-Object{ 
 		$CommonArray += $_ 					# Populates and sizes this Array.
 		$CommonPriorityArray += $_			# Sizes this array as for CommonArray.
 		$NumCommonIncludesArray += $_		# Sizes this array as for CommonArray.
@@ -1213,7 +1221,7 @@ If ($CommonFilesExist) {
 	#	Get-ChildItem also sets the size of CommonFileNameArray
 
 	(Get-ChildItem -Path $CommonFolder -Include *.md -recurse ).Name |
-	Foreach{ 
+	ForEach-Object{ 
 		$CommonFilenameArray += $_			# Populates and sizes this Array.
 		}
 
@@ -1240,7 +1248,7 @@ If ($CommonFilesExist) {
 	For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 		
 		$FileName = $CommonArray[$index1]
-		$ShowText = 'M03.30C  	Index1 ' + $index1 + ' = ' +  $CommonArray[$index1]
+		$ShowText = 'M03.30C  	Index1 ' + $index1 + ' = ' +  $FileName
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 		#	Write-Host $ShowText
 		
@@ -1389,7 +1397,7 @@ If (-not $TopicFilesExist) {
 #	Get-ChildItem sets the sizes of one dimentional topic arrays
 
 (Get-ChildItem -Path $TopicFolder -Include *.md -recurse ).FullName |
-Foreach{ 
+ForEach-Object{ 
 	$TopicArray += $_ 					# Sizes this Array for the topic files that exist.
 	$TopicPriorityArray += $_			# Sizes this array as for TopicArray.
 	$NumTopicIncludesArray += $_		# Sizes this array as for TopicArray.
@@ -1398,7 +1406,7 @@ Foreach{
 #	Get-ChildItem also sets the size of TopicFileNameArray
 
 (Get-ChildItem -Path $TopicFolder -Include *.md -recurse ).Name |
-Foreach{ 
+ForEach-Object{ 
 	$TopicFilenameArray += $_			# Populates and sizes this Array.
 	}
 
@@ -1505,6 +1513,176 @@ For ($index1 = 0; $index1 -lt $TopicFilenameArray.length; $index1++) {
 	}	#  For index2 = next Common file in CommonFilenameArray
 
 }	#  For index1 = Topic file in TopicFilenameArray
+
+
+
+#	Code04.60   Delete md files under website folder
+#
+#	Why is this necessary? 
+#	Let's say topic XYZ.md exists in folder ABC under the website folder.
+#   There will be topic XYZ.md is in folder ABC udner the Topics folder.
+#	If topic XYZ.md is no longer needed, it is deleted from folder ABC under the Topics folder.
+#	How does this result in the same file being deleted from folder ABC under the website folder?
+#	The solution is to delete all md files under the Website folder with a few exceptions.
+#	The exceptions any folder that has first letter underscore (e.g. _post, _sass, _site).
+#
+#	Code04.61	List all folders under the website folder
+#	
+
+$WebsiteSubFoldersArray = @()			#	Path & Name 
+$WebsiteSubFoldersNameArray = @()		#	Name only
+
+(Get-ChildItem -Path $WebsiteFolder -Directory ).FullName |
+ForEach-Object{ 
+	$WebsiteSubFoldersArray += $_ 					# Sizes this Array for the sub-folders
+}
+
+#	Get-ChildItem also sets the size of TopicFileNameArray
+
+(Get-ChildItem -Path $WebsiteFolder -Directory ).Name |
+ForEach-Object{ 
+	$WebsiteSubFoldersNameArray += $_			# Populates and sizes this Array.
+	}
+
+
+
+#	Display $WebsiteSubFoldersArray
+
+$ShowText = ' '
+Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+$ShowText = 'M04.61A  Website sub-folders found '
+Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+
+For ($index1 = 0; $index1 -lt $WebsiteSubFoldersArray.length; $index1++) {
+
+	$ShowText = 'M04.61B  Sub-folder ' + $WebsiteSubFoldersArray[$index1]
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+}	#  For index1 = topic file in $WebsiteSubFoldersArray
+
+
+#	Count md files.
+
+$CountWebsiteMDFilesArray = @()			#	Path & Name 
+
+(Get-ChildItem -Path $WebsiteFolder -Include *.md -recurse ).FullName |
+ForEach-Object{ 
+	$CountWebsiteMDFilesArray += $_ 					# Sizes this Array for the sub-folders
+}
+
+
+$ShowText = 'M04.61C  MD files under Website ' + $CountWebsiteMDFilesArray.length
+Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+#	Display $CountWebsiteMDFilesArray
+
+$ShowText = ' '
+Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+$ShowText = 'M04.61D  Display Website MD files '
+Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+
+For ($index1 = 0; $index1 -lt $CountWebsiteMDFilesArray.length; $index1++) {
+
+	$ShowText = 'M04.61E      MD File ' + $CountWebsiteMDFilesArray[$index1]
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+}	#  For index1 = topic file in $CountWebsiteMDFilesArray
+
+
+
+
+
+#
+#   Code04.62	Delete all md files under website folders except underscore folders
+#
+#	Start with Website folder itself
+#
+
+$MDFilesWebsiteFolder = $WebsiteFolder + '\*.md'
+
+
+Remove-Item $MDFilesWebsiteFolder -Force
+
+$ShowText = 'M04.62A  Deleted md files in Website folder itself ' + $MDFilesWebsiteFolder
+Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+
+
+
+#
+#	Now delete md files in each sub-folder excepting any sub-folder that starts with underscore
+#
+
+For ($index1 = 0; $index1 -lt $WebsiteSubFoldersArray.length; $index1++) {
+
+	$Firstchar = $WebsiteSubFoldersNameArray[$index1].substring(0,1)
+
+	$ShowText = 'M04.62B  Firstchar ' + $Firstchar
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+	If ($Firstchar -ne '_') {
+
+		Remove-Item $WebsiteSubFoldersArray[$index1] -Include *.md -Recurse -Force
+
+		$ShowText = 'M04.62C  Delete md files from ' + $WebsiteSubFoldersArray[$index1]
+		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+	}	#	Firstchar is not underscore
+
+}	#  For index1 = topic file in $WebsiteSubFoldersArray
+
+$ShowText = 'M04.62Z  End Delete md from docs '
+Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+
+#	Code04.63	Check if md files still exist under Website
+
+If (Get-Childitem -Path $WebsiteFolder -Include *.md -recurse) {
+	$WebsiteMDFilesFilesExist = $True
+} else {
+	$WebsiteMDFilesFilesExist = $False
+}	
+
+If ($WebsiteMDFilesFilesExist) {
+
+	$CheckWebsiteMDFilesArray = @()			#	Path & Name 
+
+	(Get-ChildItem -Path $WebsiteFolder -Include *.md -Recurse ).FullName |
+	ForEach-Object{ 
+		$CheckWebsiteMDFilesArray += $_ 					# Sizes this Array for the sub-folders
+	}
+
+	$ShowText = 'M04.63A  MD files left under Website ' + $CheckWebsiteMDFilesArray.length
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+
+	#	Display $CheckWebsiteMDFilesArray
+
+	$ShowText = ' '
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+	$ShowText = 'M04.63B  Check Website MD files still there '
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+
+	For ($index1 = 0; $index1 -lt $CheckWebsiteMDFilesArray.length; $index1++) {
+
+		$ShowText = 'M04.63C      MD File ' + $CheckWebsiteMDFilesArray[$index1]
+		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+	}	#  For index1 = topic file in $CheckWebsiteMDFilesArray
+
+} else {
+
+	$ShowText = 'M04.63D  No more md files under Website '
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+}
+
 
 
 
@@ -2173,17 +2351,17 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 
 		$TopicFileName = Find-Filename $TopicArray[$index1]
 
-		$ShowText = 'M06.28A  Topic filename = ' +  $TopicFileName
+		$ShowText = 'M06.28A  Topic filename with no includes = ' +  $TopicFileName
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
 
         #   Call Find-Path to find path associated with topic
 
-		$ShowText = 'M06.28B      TopicFolder = ' + $TopicFolder
-		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+		#	$ShowText = 'M06.28B      TopicFolder = ' + $TopicFolder
+		#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
-		$ShowText = 'M06.28C      Topic full path =  ' + $TopicArray[$index1]
-		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+		#	$ShowText = 'M06.28C      Topic full path =  ' + $TopicArray[$index1]
+		#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 		
 			
 		$TopicPath = Find-Path $TopicFolder $TopicArray[$index1]
@@ -2193,14 +2371,14 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
         
 		
         
-		#	Call Ensure-Folders to make sure Website has the path
+		#	Call Confirm-Folders to make sure Website has the path
 
-		$ShowText = 'M06.28E  Ensure-Folders has Base '  +  $WebsiteFolder
-		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
+		#	$ShowText = 'M06.28E      Path needed above website '  +  $WebsiteFolder
+		#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 		
-        $Result = Ensure-Folders   $WebsiteFolder $TopicPath
+        $Result = Confirm-Folders   $WebsiteFolder $TopicPath
 
-        $ShowText = 'M06.28F  Result of Ensure-Folders is ' + $Result
+        $ShowText = 'M06.28F      Result of adding path to website is ' + $Result
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
 		#	Copy topic to website folder path
@@ -2211,7 +2389,7 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 
 		Copy-Item -Path $TopicArray[$index1] -Destination $TopicWebsiteFullPath  -Force
 
-		$ShowText = 'M06.28G      Topic copied to website and path ' 
+		$ShowText = 'M06.28G  Topic copied to website and path ' 
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 	}
@@ -2250,12 +2428,13 @@ If (-not $TopicFilesHaveIncludes) {
 		
 	For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 	
-		$ShowText = 'M06.30C  Topic file ' + $index1 + ' = ' +  $TopicArray[$index1]
-		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 				
 		# Displauy of includes
 		
 		If ($NumTopicIncludesArray[$index1] -gt 0) {
+
+			$ShowText = 'M06.30C  Topic file ' + $index1 + ' = ' +  $TopicArray[$index1]
+			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 		
 			$NumberTopicFilesWithIncludes++
 
@@ -3738,7 +3917,7 @@ If ($NeedToDOIncludesProcessed) {
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 		
 		#  Delete InfoFolder and all sub-folders.
-		Remove-Item -path  $TempFolder -recurse		
+		Remove-Item $TempFolder -Recurse		
 		$ShowText = 'M11.10B 	Deleted Temp Folder - ' + $TempFolder 
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 		
@@ -3878,14 +4057,14 @@ If ($NeedToDOIncludesProcessed) {
         
 		
         
-		#	Call Ensure-Folders to make sure ExpandedBase has the path
+		#	Call Confirm-Folders to make sure ExpandedBase has the path
 
-		#	$ShowText = 'M11.40F      Ensure-Folders has Base '  +  $ExpandedBaseFolder
+		#	$ShowText = 'M11.40F      Confirm-Folders has Base '  +  $ExpandedBaseFolder
 		#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 		
-        $Result = Ensure-Folders  $ExpandedBaseFolder $RequestingPath
+        $Result = Confirm-Folders  $ExpandedBaseFolder $RequestingPath
 
-        $ShowText = 'M11.40G      Result of Ensure-Folders for expanded is ' + $Result
+        $ShowText = 'M11.40G      Result of Confirm-Folders for expanded is ' + $Result
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
 		If ($RequestingTopic) {
@@ -3893,9 +4072,9 @@ If ($NeedToDOIncludesProcessed) {
 			#	Expanded topics are copied to the website.
 			#	The website folder must also have the path.
 
-			$Result = Ensure-Folders  $WebsiteFolder $RequestingPath
+			$Result = Confirm-Folders  $WebsiteFolder $RequestingPath
 
-			$ShowText = 'M11.40H      Result of Ensure-Folders for website is ' + $Result
+			$ShowText = 'M11.40H      Result of Confirm-Folders for website is ' + $Result
 			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
 		}
@@ -4012,7 +4191,7 @@ If ($NeedToDOIncludesProcessed) {
 		#	In preparation for next requesting file, empty the Temp Folder.
 
 		#  Delete TempFolder and all sub-folders.
-		Remove-Item -path  $TempFolder -recurse		
+		Remove-Item $TempFolder -Recurse
 		$ShowText = 'M11.70B  Deleted Temp Folder - ' + $TempFolder 
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 	 
@@ -4070,8 +4249,8 @@ If (Test-Path -Path $WebsiteImagesFolder) {
 	$ShowText = 'M12.20A      Found website images folder   ' + $WebsiteImagesFolder 
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 	
-	#  Delete InfoFolder and all sub-folders.
-	Remove-Item -path  $WebsiteImagesFolder -recurse		
+	#  Delete all contents of images folder.
+	Remove-Item $WebsiteImagesFolder -Recurse		
 
 	$ShowText = 'M12.20B      Deleted website images folder ' + $WebsiteImagesFolder 
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
@@ -4079,7 +4258,11 @@ If (Test-Path -Path $WebsiteImagesFolder) {
 	$ShowText = 'M12.20C      Missing website images folder ' + $WebsiteImagesFolder 
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 } 
-	
+
+$ShowText = 'M12.20CC      End deleted all images from   ' + $WebsiteImagesFolder 
+Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
+
+
 #	Code12.30	Copy from AA Images folder to website images folder - all files and folders
 
 Copy-Item -Path $TopicImagesFolder -Destination $WebsiteFolder -Recurse
@@ -4178,7 +4361,7 @@ Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
 $ShowText = 'M13.00Z  No errors ' 
-	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
 $ShowText = 'Successful end' 
 If ($DisplayInfo) { Write-Host $ShowText }
