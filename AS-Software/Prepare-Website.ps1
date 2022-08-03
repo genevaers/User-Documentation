@@ -97,10 +97,12 @@ $ScriptVersion = '1.0'
 		Code07.10	Setup Pathway arrays
 		Code07.20	Generate Pathways from common includes
 		Code07.21	Read common file and include pair into NewPathwayArray
-		Code07.30	Search PathwayArray for relevant existing pahtways to duplicate
-		Code07.40	Check for circular includes in NewPathwayArray
-		Code07.50	Add NewPathwayArray to PathwayArray
-		Code07.60	Display PathwayArray
+		Code07.30	Find extra pathways Case DupAddLast
+		Code07.40   Find extra pathways Case DupAddLastExtend
+		Code07.50   Find extra pathways Case DupAddFirst
+		Code07.60	Check for circular includes in NewPathwayArray
+		Code07.70	Add NewPathwayArray to PathwayArray
+		Code07.90	Display PathwayArray
 
 	Code08.00	Calculate Priorities for common includes
 		Code08.10	Priority 0 for commons that have no includes
@@ -200,29 +202,24 @@ $ScriptVersion = '1.0'
 	
 	D.  The script does not know in advance where the incldes are.  The script scans the folder 
 	    "AC Common Markdown" (and sub-folders) to find any common files and whether they have includes. 
-		The script scans folder "AA Topics Markdown" (and sub-folders) to find any topics that have includes. 
-		If no errors are found, then the includes are procesed in the correct order appropriate.
+		The script also scans folder "AA Topics Markdown" (and sub-folders) to find any topics that have
+		includes. If no errors are found, then the includes are procesed in the correct order appropriate.
 
 		The expanded version of common files are copied to folder "AD Expanded Common" to the same
-		sub-folder as the requesting file has in folder AC.  The expanded common file is used in relvant
-		includes for other common files or for relevant includes for topics.
+		sub-folder as the requesting file has in folder AC.  The expanded common file can be used in 
+		other includes (for common files and/or topics).
 	
-	    The expanded version of topics are copied to folder "AE Expanded Topics" to the same sub folder as
-	    the requesting file has in folder AA.  Topics without includes are copied to the website folder.
-		Topics WITH includes have the expanded version copied to the website folder.
+	    The expanded version of a topic (with includes) is copied to folder "AE Expanded Topics" to the
+		same sub folder as the requesting file has in folder AA.  Those expanded versions are also copied 
+		to the website folder (to the same sub folder again).
+
+		Topics without includes are copied from AA direct to the website folder (to the same sub folder).
 	
-	E.  The actual include (where data is copied from the include file to the requesting file) is
-	    done using a tool called "multimarkdown" - see https://fletcherpenney.net/multimarkdown.
-		The technique is called "file transclusion". 
-		One aspect of multimarkdown must be mentioned - it does not allow blanks in file names
-		and in folder names.  This script gets arounnd this by replacing blanks in filename and
-		foldernames with a backtick, processing the includes using multimarkdown, and then undoing
-		the backticks afterwards.  For this reason, file names and foldernames can have blanks in
-		the names but not backticks.  Backticks are not permitted in any file name or folder name
-		in folders AA and AC.
+	E.  The actual include is done by Code11.00 - mainly in 11.50 and 11.60. 
+		
 	
 	The above points give maximum flexibility on includes while avoiding problems like circular
-	includes and  overwrite of front matter.
+	includes and overwrite of front matter.
 	
 	(Overview2.0)
 
@@ -1520,170 +1517,204 @@ For ($index1 = 0; $index1 -lt $TopicFilenameArray.length; $index1++) {
 #
 #	Why is this necessary? 
 #	Let's say topic XYZ.md exists in folder ABC under the website folder.
-#   There will be topic XYZ.md is in folder ABC udner the Topics folder.
-#	If topic XYZ.md is no longer needed, it is deleted from folder ABC under the Topics folder.
+#   There will be topic XYZ.md is in folder ABC udner the AA Topics folder.
+#	If topic XYZ.md is no longer needed, it is deleted from folder ABC under the AA Topics folder.
 #	How does this result in the same file being deleted from folder ABC under the website folder?
 #	The solution is to delete all md files under the Website folder with a few exceptions.
 #	The exceptions any folder that has first letter underscore (e.g. _post, _sass, _site).
+
+
+$ShowText = ' '
+Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+$ShowText = 'M04.60A  Delete md files under website folder with care '
+Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
 #
 #	Code04.61	List all folders under the website folder
 #	
 
-$WebsiteSubFoldersArray = @()			#	Path & Name 
-$WebsiteSubFoldersNameArray = @()		#	Name only
 
-(Get-ChildItem -Path $WebsiteFolder -Directory ).FullName |
-ForEach-Object{ 
-	$WebsiteSubFoldersArray += $_ 					# Sizes this Array for the sub-folders
-}
-
-#	Get-ChildItem also sets the size of TopicFileNameArray
-
-(Get-ChildItem -Path $WebsiteFolder -Directory ).Name |
-ForEach-Object{ 
-	$WebsiteSubFoldersNameArray += $_			# Populates and sizes this Array.
-	}
-
-
-
-#	Display $WebsiteSubFoldersArray
-
-$ShowText = ' '
-Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-
-$ShowText = 'M04.61A  Website sub-folders found '
-Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-
-
-For ($index1 = 0; $index1 -lt $WebsiteSubFoldersArray.length; $index1++) {
-
-	$ShowText = 'M04.61B  Sub-folder ' + $WebsiteSubFoldersArray[$index1]
+If (Get-Childitem -Path $WebsiteFolder -Directory) {
+	#	There are directories under the WebsiteFolder (normal situation)
+	
+	$ShowText = 'M04.61A  Yes there are website sub-folders '
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
-}	#  For index1 = topic file in $WebsiteSubFoldersArray
-
-
-#	Count md files.
-
-$CountWebsiteMDFilesArray = @()			#	Path & Name 
-
-(Get-ChildItem -Path $WebsiteFolder -Include *.md -recurse ).FullName |
-ForEach-Object{ 
-	$CountWebsiteMDFilesArray += $_ 					# Sizes this Array for the sub-folders
-}
-
-
-$ShowText = 'M04.61C  MD files under Website ' + $CountWebsiteMDFilesArray.length
-Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-
-#	Display $CountWebsiteMDFilesArray
-
-$ShowText = ' '
-Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-
-$ShowText = 'M04.61D  Display Website MD files '
-Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-
-
-For ($index1 = 0; $index1 -lt $CountWebsiteMDFilesArray.length; $index1++) {
-
-	$ShowText = 'M04.61E      MD File ' + $CountWebsiteMDFilesArray[$index1]
-	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-
-}	#  For index1 = topic file in $CountWebsiteMDFilesArray
-
-
-
-
-
-#
-#   Code04.62	Delete all md files under website folders except underscore folders
-#
-#	Start with Website folder itself
-#
-
-$MDFilesWebsiteFolder = $WebsiteFolder + '\*.md'
-
-
-Remove-Item $MDFilesWebsiteFolder -Force
-
-$ShowText = 'M04.62A  Deleted md files in Website folder itself ' + $MDFilesWebsiteFolder
-Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-
-
-
-
-#
-#	Now delete md files in each sub-folder excepting any sub-folder that starts with underscore
-#
-
-For ($index1 = 0; $index1 -lt $WebsiteSubFoldersArray.length; $index1++) {
-
-	$Firstchar = $WebsiteSubFoldersNameArray[$index1].substring(0,1)
-
-	$ShowText = 'M04.62B  Firstchar ' + $Firstchar
-	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-
-	If ($Firstchar -ne '_') {
-
-		Remove-Item $WebsiteSubFoldersArray[$index1] -Include *.md -Recurse -Force
-
-		$ShowText = 'M04.62C  Delete md files from ' + $WebsiteSubFoldersArray[$index1]
-		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-
-	}	#	Firstchar is not underscore
-
-}	#  For index1 = topic file in $WebsiteSubFoldersArray
-
-$ShowText = 'M04.62Z  End Delete md from docs '
-Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-
-
-#	Code04.63	Check if md files still exist under Website
-
-If (Get-Childitem -Path $WebsiteFolder -Include *.md -recurse) {
-	$WebsiteMDFilesFilesExist = $True
+	$WebsiteSubFoldersExist = $True
 } else {
-	$WebsiteMDFilesFilesExist = $False
-}	
-
-If ($WebsiteMDFilesFilesExist) {
-
-	$CheckWebsiteMDFilesArray = @()			#	Path & Name 
-
-	(Get-ChildItem -Path $WebsiteFolder -Include *.md -Recurse ).FullName |
-	ForEach-Object{ 
-		$CheckWebsiteMDFilesArray += $_ 					# Sizes this Array for the sub-folders
-	}
-
-	$ShowText = 'M04.63A  MD files left under Website ' + $CheckWebsiteMDFilesArray.length
-	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-
-
-	#	Display $CheckWebsiteMDFilesArray
+	#	There are NO directories under the WebsiteFolder (maybe a testing situation)
+	$WebsiteSubFoldersExist = $False
 
 	$ShowText = ' '
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
-	$ShowText = 'M04.63B  Check Website MD files still there '
+	$ShowText = 'M04.61A  No Website sub-folders exist, so no delete of md files needed '
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+}	
+
+If ($WebsiteSubFoldersExist) {
+
+	$WebsiteSubFoldersArray = @()			#	Path & Name 
+	$WebsiteSubFoldersNameArray = @()		#	Name only
+
+	(Get-ChildItem -Path $WebsiteFolder -Directory ).FullName |
+	ForEach-Object{ 
+		$WebsiteSubFoldersArray += $_ 					# Sizes this Array for the sub-folders
+	}
+
+	#	Get-ChildItem also sets the size of TopicFileNameArray
+
+	(Get-ChildItem -Path $WebsiteFolder -Directory ).Name |
+	ForEach-Object{ 
+		$WebsiteSubFoldersNameArray += $_			# Populates and sizes this Array.
+	}
+
+
+	#	Display $WebsiteSubFoldersArray
+
+	$ShowText = ' '
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+	$ShowText = 'M04.61B  Found Website sub-folders '
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+	If ($WebsiteSubFoldersArray.length -eq 0) {
+		$WebSiteSubFolders = $False
+		$ShowText = 'M04.61C  NO SUBFOLDERS FOUND ????? '
+		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+		If ($DisplayInfo) { Write-Host $ShowText }
+		Exit
+	} else {
+
+		For ($index1 = 0; $index1 -lt $WebsiteSubFoldersArray.length; $index1++) {
+
+			$ShowText = 'M04.61D  Sub-folder ' + $WebsiteSubFoldersArray[$index1]
+			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+	
+		}	
+	}
+
+	#  For index1 = topic file in $WebsiteSubFoldersArray
+
+	#	Count md files.
+
+	$CountWebsiteMDFilesArray = @()			#	Path & Name 
+
+	(Get-ChildItem -Path $WebsiteFolder -Include *.md -recurse ).FullName |
+	ForEach-Object{ 
+		$CountWebsiteMDFilesArray += $_ 					# Sizes this Array for the sub-folders
+	}
+
+
+	$ShowText = 'M04.61E  MD files under Website ' + $CountWebsiteMDFilesArray.length
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+	#	Display $CountWebsiteMDFilesArray
+
+	$ShowText = ' '
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+	$ShowText = 'M04.61F  Display Website MD files '
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 
-	For ($index1 = 0; $index1 -lt $CheckWebsiteMDFilesArray.length; $index1++) {
+	For ($index1 = 0; $index1 -lt $CountWebsiteMDFilesArray.length; $index1++) {
 
-		$ShowText = 'M04.63C      MD File ' + $CheckWebsiteMDFilesArray[$index1]
+		$ShowText = 'M04.61G      MD File ' + $CountWebsiteMDFilesArray[$index1]
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
-	}	#  For index1 = topic file in $CheckWebsiteMDFilesArray
+	}	#  For index1 = topic file in $CountWebsiteMDFilesArray
 
-} else {
 
-	$ShowText = 'M04.63D  No more md files under Website '
+
+	#
+	#   Code04.62	Delete all md files under website folders except underscore folders
+	#
+	#	Start with Website folder itself
+	#
+
+	$MDFilesWebsiteFolder = $WebsiteFolder + '\*.md'
+
+
+	Remove-Item $MDFilesWebsiteFolder -Force
+
+	$ShowText = 'M04.62A  Deleted md files in Website folder itself ' + $MDFilesWebsiteFolder
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
-}
+
+	#
+	#	Now delete md files in each sub-folder excepting any sub-folder that starts with underscore
+	#
+
+	For ($index1 = 0; $index1 -lt $WebsiteSubFoldersArray.length; $index1++) {
+
+		$Firstchar = $WebsiteSubFoldersNameArray[$index1].substring(0,1)
+
+		$ShowText = 'M04.62B  Firstchar ' + $Firstchar
+		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+		If ($Firstchar -ne '_') {
+
+			Remove-Item $WebsiteSubFoldersArray[$index1] -Include *.md -Recurse -Force
+
+			$ShowText = 'M04.62C  Delete md files from ' + $WebsiteSubFoldersArray[$index1]
+			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+		}	#	Firstchar is not underscore
+
+	}	#  For index1 = topic file in $WebsiteSubFoldersArray
+
+	$ShowText = 'M04.62Z  End Delete md from docs '
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 
+	#	Code04.63	Check if md files still exist under Website
+
+	If (Get-Childitem -Path $WebsiteFolder -Include *.md -recurse) {
+		$WebsiteMDFilesFilesExist = $True
+	} else {
+		$WebsiteMDFilesFilesExist = $False
+	}	
+
+	If ($WebsiteMDFilesFilesExist) {
+
+		$CheckWebsiteMDFilesArray = @()			#	Path & Name 
+
+		(Get-ChildItem -Path $WebsiteFolder -Include *.md -Recurse ).FullName |
+		ForEach-Object{ 	
+			$CheckWebsiteMDFilesArray += $_ 					# Sizes this Array for the sub-folders
+		}
+
+		$ShowText = 'M04.63A  MD files left under Website ' + $CheckWebsiteMDFilesArray.length
+		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+
+		#	Display $CheckWebsiteMDFilesArray
+
+		$ShowText = ' '
+		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+		$ShowText = 'M04.63B  Check Website MD files still there '
+		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+
+		For ($index1 = 0; $index1 -lt $CheckWebsiteMDFilesArray.length; $index1++) {
+
+			$ShowText = 'M04.63C      MD File ' + $CheckWebsiteMDFilesArray[$index1]
+			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+		}	#  For index1 = topic file in $CheckWebsiteMDFilesArray
+
+	} else {
+
+		$ShowText = 'M04.63D  No more md files under Website '
+		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+	}	#	No WebsiteMD files
+
+}	#	There are WebsiteFoller sub-folders
 
 
 #	Code05.00	Populate common includes array
@@ -1846,7 +1877,7 @@ If ($CommonFilesExist) {
 					}	#	Next $index10
 				}	# 	$index2 is above 0 so there is at least one other include to test
 
-				If ($IncludeAlreadyRecorded -eq- $False) {
+				If ($IncludeAlreadyRecorded -eq $False) {
 
 
 					# Code05.26  Test that include points to an existing common file
@@ -2531,7 +2562,10 @@ $PathwayLastStepArray = New-Object 'int[]' $MaxPathways
 $NewPathwayArray = New-Object 'string[,]' $MaxPathways,$MaxStepsInPathway
 $NewPathwayLastStepArray = New-Object 'int[]' $MaxPathways
 
+#	CheckExtend will be used in 07.40.
 
+$CheckExtendArray = New-Object 'string[,]' 1,$MaxStepsInPathway
+$CheckExtendLastStep = -1	#	Dummy value for now	
 
 # 	Set initial values for both Patway arrays.
 # 	For includes set to a dummy string
@@ -2549,6 +2583,11 @@ For ($index3 = 0; $index3 -lt $MaxPathways; $index3++) {
 		$index6 = $index4
 		$NewPathwayArray[$index5,$index6] = "IntialValue" 	# 	Clearly show a bogus value	
 			
+		If ($index3 -eq 0) {	#	Only do this for the one row CheckExtend
+			$CheckExtendArray[0,$index4] = "InitialValue"
+		}
+
+
 	}	#  For index2 = step for that pathway
 
 }	#  For index1 = Pathway
@@ -2556,24 +2595,32 @@ For ($index3 = 0; $index3 -lt $MaxPathways; $index3++) {
 
 #	Code07.20	Generate Pathways from common includes
 #
-#	Each combo of requesting common file (R) and a common include (S) is a new simple pathway
-#	Add new simple pathway (R to S) to NewPathwayArray
-#	Then check Case A - search for any existing pathways that end R.
-#	If found, duplicate that pathway to NewPathwayArray and add S as a new last step.
-#	Then check Case B - search fro any existing pathways that start with S.
-#	if found, create a new pathway that starts with R and the rest of the steps are the pathway found
-#	When done, add NewPathwayArray to PathwayArray
+#	We have some existing pathways in PathwayArray.
+#	Each combo of requesting common file (R) and a common include (S) is a new 2-step pathway (R-S).
+#	That 2-step pathway is added to NewPathwayArray. 
+#	Before we add NewPathayArray to PathwayArray check for more pathways based on that 2-step pathway.
+#	If there are some, add the new pathways in NewPathwayArray.
+#	How do we check for more pathways to add?
+#	First, check Case DupAddLast - search PathwayArray for any existing pathways that end R.
+#	    If found, duplicate that pathway to NewPathwayArray and add S as a new last step.
+#	Second, check Case DupAddLastExtend.  This means we look at each pathway added by DupAddLast 
+#		and look for extensions to this that were not immediately obvious.  We extend where possible.
+#	Finally, check Case DupAddFirst - search PathwayArray for any existing pathways that start with S.
+#		If found, duplicate that pathway to NewPathwayArray so the new one starts with R
+#		and then has the rest of the steps.
+#	When done, add NewPathwayArray to PathwayArray.  This completes adding all the pathways
+#	based on the new 2-step pathway.
 #
 
 
 
 #   Read each CommonArray and check for includes in CommonIncludesArray.
-#	Where we find an include, create a simple pathway for that include.
+#	Where we find an include, create a new 2-step pathway for that include.
 
 $index3 = -1   				#	This is the index of the Pathways array.
 $index5 = -1				#   This the incex of the New Pathways array
-$PathwayLastRow = -1		#	Empty - next row will be row zero (first).
-$NewPathwayLastRow = -1		#	Empty - next row will be row zero (first).
+$PathwayLastRow = -1		#	Empty - next row will be row zero (the first).
+$NewPathwayLastRow = -1		#	Empty - next row will be row zero (the first).
 
 For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 
@@ -2590,20 +2637,21 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 		
 			#	Code07.21	Read common file and include pair into NewPathwayArray
 			#
-			#   Read new common include into NewPathwayArray which means 
+			#   Each new common include is a new 2-step pathway in NewPathwayArray where
 			#		$CommonArray[$index1] which is step 0
 			#		$CommonIncludesArray[$index1,$index2] is step 1
 			#
-			#   Create new simple row in NewPathwayStapsArray:
-			#		$index5 incremented
-			#		$index2 = 0 first time.
+			#   Create the 2-step row in NewPathwayStapsArray as follows:
+			#		$index5 incremented   (a new pathway)
+			#		$index2 = 0 the first time in CommonIncludesArray
 			#		$MewPathwayArray[$index5,0] = $CommonArray[$index1]
 			#		$NewPathwayArray[$index5,1] = $CommonIncludesArray[$index1,$index2] 
 			#		$NewPathwayLastStepArray[$index5] = 1
 
 			If ($index2 -gt 0) {
 
-				# $index2 = 0 does not need a trace blank line here, but after that we do
+				# $index2 above 0 means we have a new include in CommonIncludesArray
+				#	This means a blank line in the trace which spaces the messages out.
 				$ShowText = " "
 				Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 				
@@ -2612,11 +2660,11 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 
 			}
 
-			$ShowText = 'M07.21B    Found include ' + $CommonIncludesArray[$index1,$index2]
+			$ShowText = 'M07.21B                  Found include ' + $CommonIncludesArray[$index1,$index2]
 			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 	
 
-			$index5++	#	Creates a new pathway that is a simple single step include
+			$index5++	#	Creates a new pathway that is 2-steps.
 			
 			#	The requesting common file is the common file we are looking at
 
@@ -2639,53 +2687,96 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 			
 			#	$NewPathwayLastStepArray[$index5] = 1 is already set in that array
 
-			$ShowText = 'M07.21C        NewPathwayArray start = ' + $NewPathwayArray[$index5,0] 
+			$ShowText = 'M07.21C        NewPathwayArray 2-step start = ' + $NewPathwayArray[$index5,0] 
 			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 
-			$ShowText = 'M07.21D                  single step = ' + $NewPathwayArray[$index5,1]
+			$ShowText = 'M07.21D                         single step = ' + $NewPathwayArray[$index5,1]
 			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 		
 			$NewPathwayLastRow = $index5		#	Latest NewPathwawyStpesArray row
 
-			#	Code07.30	Search PathwayArray for relevant existing pahtways to duplicate
 
-			$ShowText = 'M07.30A    Find Case A or Case B existing pathways to duplicate and extend'
+			#
+			#	Code07.30   Find extra pathways Case DupAddLast.
+			#
+
+			$ShowText = 'M07.30A    Begin Case DupAddLast  - Find existing pathways to duplicate'
 			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
-			#	In 07.21 above we added a simple pathway where R includes S.
+			#	"DupAddLast" means we will duplicate existing pathways and insert an extra last step.
+			#	Let's consider an example.  
+			#	We have one existing pathway in our PathwayArray that is A-B.  (This means A includes B.)
+			#	We have a new 2-step pathway in our NewPathwayArray: B-C.
+			#	DupAddLast means we do the following:
+			#   Task 1. Scan PathwayArray for a pathway that ends in B.  We find one (A-B).
+			#	Task 2. Duplicate the existing pathawy and add a new last step of C,
+			#		   meaning we create A-B-C in our NewPathwayArray.
+			#	Task 3. For each Task 2 perform Case DupAddLastExtend.  (See 07.40 for why).
+			#
+			# 	Bottom line: we end up with three pathways: A-B, B-C, and A-B-C.
+			#	The first two pathways were 2-step pathways (simple).  The third is from Case DupAddLast.
+			#	DupAddLast is a typical way new pathways are added.
+			#
+			#	Now the concept is clear, lets' look at the variables involved.
+			#	The new 2-step pathway in NewPathwayArray is R-S.
 			#	R = $NewPathwayArray[$index5,0] = $ThisRequestingCommon
 			#	S = $NewPathwayArray[$index5,1] = $ThisCommonInclude
-			#	Case A - Search for any existing pathways that end R 
+			#	
+			#	DupAddLast Task 1 - search PathwayArray for any existing pathways that end R 
 			#	If found, create new pathway that is duplicate and has
 			#			 extra step $NewPathwayArray[$index5,1]
 			#		$index3 = row in existing PathwayArray
-			#		$index4 = $PathwayLastStepArray[$index3]
-			#		Look for $PathwayArray[$index7,$index8] = $NewPathwayArray[$index5,0] 
+			#		$index4 = $PathwayLastStepArray[$index3]  
+			#		Look for $PathwayArray[$index3,$index4] = $ThisRequestingCommon
 			#		$index5 = row in New Pathway Array
 			#		$index10 = step in that row of New Pathway Array
 			#
 
-			if ($PathwayLastRow -gt -1) {
+			$ShowText = 'M07.30AA       PathwayLastRow ' + $PathwayLastRow
+			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+
+
+			if ($PathwayLastRow -gt -1) {	#	This means there are entries in PathwayArray
 
 				# Search PathwayArray
 	
 				$PathwayRowLength =  $PathwayLastRow + 1
 
+				#	Search PathwayArray
+
 				For ($index3 = 0; $index3 -lt $PathwayRowLength; $index3++) {
 		
+					$ShowText = 'M07.30AB       DupAddLast - Check Existing Pathway ' + $index3
+					$ShowText = $ShowText + ' ' + $PathwayArray[$index3,0]
+					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+
 					#	index4 is last step in that pathway
 					$index4 = $PathwayLastStepArray[$index3]
 				
 					If ($PathwayArray[$index3,$index4] -eq $ThisRequestingCommon){
 
-						# This pahtway has last step same as first step of NewPathway in 07.21 above.
-						#	Duplicate $PathwayArray[$index3, * ] to NewPathwayArray
-						#   and add new last step
+						$ShowText = 'M07.30AC       DupAddLast relevant for ' + $index3
+						$ShowText = $ShowText + ' ' + $PathwayArray[$index3,0]
+						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+	
+						$ShowText = 'M07.30AD               Last step is ' + $index4
+						$ShowText = $ShowText + ' ' + $PathwayArray[$index3,$index4]
+						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
-						$index5++	#	New pathway
+
+						#   This existing pahtway has last step R = $ThisRequestingCommon
+						#	Duplicate this existing pathway into NewPathwayArray and add extra last step.
+						#	$PathwayArray[$index3, * ] copies to new pathway in NewPathwayArray
+						#   and then add new last step of S to that new pathway
+
+						$index5++	#	New pathway in NewPathwayArray
 							
-						$PathwayLastStep = $PathwayLastStepArray[$index3] + 1	
+						$PathwayLastStep = $PathwayLastStepArray[$index3] + 1	# Update as we go
+
+						#	Duplicate existing pathway in PathwayArray to NewPathwayArray
 
 						For ($index10 = 0; $index10 -lt $PathwayLastStep; $index10++) {
 						
@@ -2695,7 +2786,7 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 							#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 							If ($index10 -eq 0){
-								$ShowText = 'M07.30B        Case A NewPathwayArray start ' + $NewPathwayArray[$index5,0] 
+								$ShowText = 'M07.30B        New DupAddLast NewPathwayArray start ' + $NewPathwayArray[$index5,0] 
 							} else {
 								$ShowText = 'M07.30C                      step ' + $index10 + '  ' 
 								$ShowText = $Showtext + $NewPathwayArray[$index5,$index10] 
@@ -2705,6 +2796,7 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 
 						#	Need to add new last step
 						#	$index10 already incremented from the above loop.
+						#	Before we add, we must check if this will exceed the max stesp in a pathway.
 						#   If the new last step is too many, show error
 
 						If ($index10 -gt ($MaxStepsInPathway - 1)) {
@@ -2741,7 +2833,7 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 								Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 								Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
-							}
+							}	#	Next Index11 in step for NewPathwayArray row index5
 
 							$ShowText = 'M07.30J        Extra step needed: ' + $ThisCommonInclude
 							Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
@@ -2759,31 +2851,274 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 
 							Exit
 
-						}
+						}	# Next Index10 is too big for step in NewPathwayArray row
 
+						#	Add new last step S to this pathway in NewPathwayArray
 
 						$NewPathwayArray[$index5,$index10] = $ThisCommonInclude 
 
 						$NewPathwayLastStepArray[$index5] = $index10	# Set new last step number
 
-						$ShowText = 'M07.30J                  new last ' + $index10 + '  '
+						$ShowText = 'M07.30L                  new last ' + $index10 + '  '
 						$ShowText = $Showtext + $NewPathwayArray[$index5,$index10] 
 						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
-						$NewPathwayLastRow = $index5		#	Latest NewPathwawyStpesArray row
+						$NewPathwayLastRow = $index5		#	Latest last row in NewPathwawyStepsArray
 
-
+						#
+						#	Code07.40   Find extra pathways Case DupAddLastExtend
+						#
 						
-					}	#	last step of existing pathway equals common file
+						#	We just finished craeting a new Case DupAddLast pathway.
+						#	In DupAddLast we duplicated a pahtway ending in R and added last step S. 
+						#	Case DupAddLastExtend takes this further.
+						#   For example, the existing pathways are as follwows:
+						#		A-B, B-C, A-B-C, D-E
+						#		A new 2-step pathway in our NewPathwayArray is:
+						#		E-A.
+						#	We obviously need E-A-B and E-A-B-C - see case DupAddFirst below.
+						#	Look at what case DupAddLast does - it creates this patheway:
+						#		D-E-A
+						#	That's a useful pathway. but what about D-E-A-B and D-E-A-B-C?
+						#
+						#	DuppAddLastExtend provides the extra pathways as follows:
+						#	The last DupAddLast entry is D-E-A. Call this "CheckExtend".
+						#	The last step of CheckExtend is currently A.
+						#   Task A. Scan PathwayArray for 2-step pahtway starting CheckExtend last step.
+						#		 We find one (A-B).
+						#	Task B. Duplicate CheckExtend and add new last step of the 2-step found (B).
+						#		 This creates D-E-A-B.
+						#	Task C. Consider the new pathway added the new "CheckExtend".
+						#		Repeat Task A searching PathwayArray for 2-step pathway starting B.
+						#		We find one (B-C).
+						#		Repeat Task B to create new pathway D-E-A-B-C.
+						#		Keep going until no more 2-step pathways relevant in PathwayArray.
+						#	Bottom line: D-E-A-B and D-E-A-B-C are added to NewPathWayArray.
+						#
+						#
+						#	Task A Scan Pathways for 2-step starting at last step of CheckExtend.
+						#
+						#	CheckExtend starts as the current DupAddLast pathway
+						#	Copy latest pathway in NewPathwayArray to CheckExtend
+						#
+
+						$ShowText = 'M07.40A           Begin Case DupAddLastExtend '
+						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+
+
+						$CheckExtendLength = $NewPathwayLastStepArray[$index5] + 1
+						
+
+						For ($index7 = 0; $index7 -lt $CheckExtendLength; $index7++) {
+						
+							$CheckExtendArray[0,$index7] = $NewPathwayArray[$index5,$index7] 
+							$CheckExtendLastStep = $index7
+
+							If ($index7 -eq 0){
+								$ShowText = 'M07.40B           Setup CheckExtend start ' + $NewPathwayArray[$index5,0] 
+							} else {
+								$ShowText = 'M07.40C                      step ' + $index7 + '  ' 
+								$ShowText = $Showtext + $NewPathwayArray[$index5,$index7] 
+							}
+							Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+						}
+						
+						#
+						#	CheckExtend is now latest NewPathwayArray pathway
+						#	We need to keep scanning Pathways for 2-step starting last step CheckExtend.
+						
+						If ($PathwayLastRow -gt -1) {	#	This means there are entries in PathwayArray
+
+							# Checking for DupAddLastExtend keeps going until no more extensions possible.
+
+							Do {
+
+								$ShowText = 'M07.40D           DupAddLastExtend for latest CheckExtend'
+								Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+
+								$KeepChecking = $False		# Will set to True if extension found
+
+								$ExtensionDone = $False		# True if we find a worthwhile extension
+
+								$Index20 = 0				# Index for PathwayArray
+
+								$StillPathwaysToCheck = $True	# False when index20 is above the length
+
+								#	Look for a 2-step pathway to extend pathway CheckExtend
+
+								Do  {
+
+									$ShowText = 'M07.40E           DupAddLastExtend Pathways index20 '  + $index20 
+									Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+									#	Is this pathway 2-steps?
+
+									If ($PathwayLastStepArray[$index20] -eq 1) {
+
+										#	Check first step of pathway = last step of CheckExtend
+
+										If ($PathwayArray[$index20,0] -eq $CheckExtendArray[0,$CheckExtendLastStep]){
+
+											#  Found a 2-step pathwaya to apply to CheckExtend
+											#  Duplicate CheckExtend and add extra step $PathwayArray[$index20,1]
+
+										
+											$index5++	#	New pathway in NewPathwayArray
+
+											$OldExtendLength = $CheckExtendLastStep + 1
+							
+											$NewExtendLastStep = $CheckExtendLastStep + 1
+											$NewLengthExtend = $NewExtendLastStep + 1
+					
+											#	Duplicate existing pathway in PathwayArray to NewPathwayArray
+					
+											For ($index21 = 0; $index21 -lt $OldExtendLength; $index21++) {
+																											
+												$NewPathwayArray[$index5,$index21] = $CheckExtendArray[0,$index21]
+
+												#	$ShowText = 'M07.40A       index5 = ' + $index5
+												#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+												If ($index21 -eq 0){
+													$ShowText = 'M07.40F        Case DupAddLastExtend start ' + $NewPathwayArray[$index5,0] 
+												} else {
+													$ShowText = 'M07.40G                      step ' + $index21 + '  ' 
+													$ShowText = $Showtext + $NewPathwayArray[$index5,$index21] 
+												}
+												Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+											}	# Duplicate pathway steps
+
+											#	Need to add new last step
+											#	$index21 already incremented from the above loop.
+											#	Before we add, we must check if this will exceed the max stesp in a pathway.
+											#   If the new last step is too many, show error
+
+											If ($index21 -gt ($MaxStepsInPathway - 1)) {
+
+												$ShowText = ' '
+												Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+												Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+												Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+		
+												$ShowText = 'M07.40E  ERROR - Include depth too far. '
+												Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+												Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+												Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+												$ShowText = 'M07.40F  Parameter MaxDepthCommonIncludesCommon = ' + $MaxDepthCommonIncludesCommon
+												Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+												Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+												Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+												$ShowText = 'M07.40G  This sequence of includes needs an extra step '
+												Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+												Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+												Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+												For ($index11 = 0; $index11 -lt $PathwayLastStep; $index11++) {
+						
+													If ($index11 -eq 0){
+														$ShowText = 'M07.40H  Start at ' + $NewPathwayArray[$index5,0] 
+													} else {
+														$ShowText = 'M07.40J      Next include at index ' + $index11 + '  ' 
+															$ShowText = $Showtext + $NewPathwayArray[$index5,$index11] 
+													}
+													Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+													Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+													Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+												}
+
+												$ShowText = 'M07.40K        Extra step needed: ' + $ThisCommonInclude
+												Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+												Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+												Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+												$ShowText = 'M07.40L  Please increase parameter MaxDepthCommonIncludesCommon. '
+												Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+												Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+												Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+												$ShowText = 'Errors - see Error file in folder AI Info  '
+												If ($DisplayInfo) { Write-Host $ShowText }
+
+												Exit
+
+											}	# 	Too many steps in pathway
+
+											#	Add new last step from 2-step pathway found
+
+											$NewPathwayArray[$index5,$index21] = $PathwayArray[$index20,1]
+
+											$NewPathwayLastStepArray[$index5] = $index21	# Set new last step number
+
+											$ShowText = 'M07.40M                  new last ' + $index21 + '  '
+											$ShowText = $Showtext + $NewPathwayArray[$index5,$index21] 
+											Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+											$NewPathwayLastRow = $index5		#	Latest last row in NewPathwawyStepsArray
+
+											$ExtensionDone = $True
+
+										}	#	first step of pathway = last step of CheckExtend
+	
+									}	#	Found 2-step pathway		
+
+									$index20++ 	#	Check next row in PathwayArray 
+
+									#	If Index20 goes past LastRow, then signal no more rows to check
+									If ($index20 -gt $PathwayLastRow) {
+
+										$ShowText = 'M07.40W    DupAddLastExtend No more pathways'
+										Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+	
+										$StillPathwaysToCheck = $False
+									}
+
+									#	Do-While check existing pathways for 2-step pathways
+								} While ($StillPathwaysToCheck -and ($ExtensionDone -eq $False	))	
+
+								#	If latest scan of PathwayArray found no exztensions, then stop checking
+								If ($ExtensionDone -eq $False) {
+								
+									$ShowText = 'M07.40X    DupAddLastExtend No extension to stop checking pathways'
+									Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+
+									$KeepChecking = $False
+								}
+
+								#	Do-While Keep Checking
+							} While ($KeepChecking)		
+				
+						}	# PathwaysArray has entries	
+
+					}	#	last step of existing pathway equals common file (start DupAddLast)
 				
 				}	#  For index3 = Pathway
 		
-			}	#   PathwayArray has entries to process
+				$ShowText = 'M07.40Y    Finished Checking Existing Pathways ' 
+				Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
+
+			} else { 
+			 #   PathwayArray has NO entries to process
+
+			$ShowText = 'M07.40Z        No entries in PathwayArray so no duplicate possibilities'
+			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+			}	
+
+
+			#
+			#	Code07.50   Find extra pathways Case DupAddFirst
+			#
 			#	In 07.21 above we added a simple pathway where R includes S.
 			#	R = $NewPathwayArray[$index5,0] = $ThisRequestingCommon
 			#	S = $NewPathwayArray[$index5,1] = $ThisCommonInclude
-			#	Case B - find existing pathway that starts with S.
+			#
+			#	Case DupAddFirst = find existing pathway that starts with S.
 			# 	That existing pathway has step 0 = $ThisCommonInclude
 			#	If found, create new pathway that is duplicate and has
 			#			 new start step of $ThisRequestingCommon
@@ -2791,6 +3126,10 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 			#		$index7 = row in PathwayArray
 			#		Look for $PathwayArray[$index7,0] = $ThisCommonInclude
 			#
+
+			$ShowText = 'M07.50A    Begin DupAddFirst'
+			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
 
 			if ($PathwayLastRow -gt -1) {
 
@@ -2802,13 +3141,13 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 		
 					If ($PathwayArray[$index3,0] -eq $ThisCommonInclude){
 
-						#	$ShowText = 'M07.30L     PathwayArray ' + $PathwayArray[$index3,0]
+						# $ShowText = 'M07.50B     DupAddFirst Found ' + $PathwayArray[$index3,0]
+						# Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+						#	$ShowText = 'M07.50B    NewPathwayArray index = 0 ' 
 						#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
-						#	$ShowText = 'M07.30M    NewPathwayArray index = 0 ' 
-						#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-
-						#	$ShowText = 'M07.30N     NewPathwayArray ' +  $NewPathwayArray[0,1]
+						#	$ShowText = 'M07.50C     NewPathwayArray ' +  $NewPathwayArray[0,1]
 						#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 						# This pahtway has first step same as $ThisCommonInclude.
@@ -2820,7 +3159,7 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 
 						$NewPathwayArray[$index5,0] = $ThisRequestingCommon
 
-						$ShowText = 'M07.30P        Case B NewPathwayArray start ' + $NewPathwayArray[$Index5,0]
+						$ShowText = 'M07.50D        Case DupAddFirst NewPathwayArray start ' + $NewPathwayArray[$Index5,0]
 						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 							
 						$PathwayLastStep = $PathwayLastStepArray[$index3] + 1	
@@ -2838,27 +3177,27 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 								Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 								Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 		
-								$ShowText = 'M07.30Q  ERROR - Include depth too far. '
+								$ShowText = 'M07.50E  ERROR - Include depth too far. '
 								Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 								Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 								Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
-								$ShowText = 'M07.30R  Parameter MaxDepthCommonIncludesCommon = ' + $MaxDepthCommonIncludesCommon
+								$ShowText = 'M07.50E  Parameter MaxDepthCommonIncludesCommon = ' + $MaxDepthCommonIncludesCommon
 								Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 								Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 								Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
-								$ShowText = 'M07.30W  Current pathway starts at common  ' + $ThisRequestingCommon
+								$ShowText = 'M07.50F  Current pathway starts at common  ' + $ThisRequestingCommon
 								Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 								Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 								Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
-								$ShowText = 'M07.30T        Extra step is one too many  ' + $PathwayArray[$index3,$index10]
+								$ShowText = 'M07.50G        Extra step is one too many  ' + $PathwayArray[$index3,$index10]
 								Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 								Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 								Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
-								$ShowText = 'M07.30U  Please increase parameter MaxDepthCommonIncludesCommon. '
+								$ShowText = 'M07.50H  Please increase parameter MaxDepthCommonIncludesCommon. '
 								Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 								Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 								Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
@@ -2874,7 +3213,7 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 
 							$NewPathwayArray[$index5,$StepForNewPathway] = $PathwayArray[$index3,$index10]
 
-							$ShowText = 'M07.30V                      step ' + $StepForNewPathway + '  ' 
+							$ShowText = 'M07.50J                      step ' + $StepForNewPathway + '  ' 
 							$ShowText = $Showtext + $NewPathwayArray[$index5,$StepForNewPathway] 
 							Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 						}
@@ -2890,21 +3229,30 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 				
 				}	#  For index3 = Pathway
 		
-			}	#   PathwayArray has entries to process
-
+			} else { 
+				#   PathwayArray has NO entries to process
+   
+			   $ShowText = 'M07.50K        No entries in PathwayArray so no duplicate possibilities'
+			   Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+			}
+					
 			#
-			#	Code07.40	Check for circular includes in NewPathwayArray
+			#	Code07.60	Check for circular includes in NewPathwayArray
 			#
 			# 	Check for NewPathwayArray[$index9,0] = 
 			#	          NewPathwayArray[$index9,NewPathwayLastRowArray[$index9]]
 			#		This is a circular include.
 			#		If found, signal error and end all processing.		
 
-			#	$ShowText = 'M07.40A  $PathwayLastRow = ' + $PathwayLastRow
+			#	$ShowText = 'M07.60A  $PathwayLastRow = ' + $PathwayLastRow
 			#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 				
-			#	$ShowText = 'M07.40B  $NewPathwayLastRow = ' + $NewPathwayLastRow
+			#	$ShowText = 'M07.60B  $NewPathwayLastRow = ' + $NewPathwayLastRow
 			#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+			$ShowText = 'M07.60A Begin Circular Include check'
+			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
 
 			
 			$NewPathwayRowLength =  $NewPathwayLastRow 
@@ -2922,13 +3270,13 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
-					$ShowText = 'M07.40D  ERROR - Circular include found: '
+					$ShowText = 'M07.60D  ERROR - Circular include found: '
 					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
 
-					#	$ShowText = 'M07.40E  NewPathArray ' + $index5 + ' ' + $index6
+					#	$ShowText = 'M07.60E  NewPathArray ' + $index5 + ' ' + $index6
 					#	$ShowText = $ShowText + ' ' + $NewPathwayArray[$index5,$index6]
 					#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 					#	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
@@ -2941,9 +3289,9 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 					For ($index10 = 0; $index10 -lt $NewPathwayLastStep; $index10++) {
 						
 						If ($index10 -eq 0){
-							$ShowText = 'M07.40F       Start pathway ' + $NewPathwayArray[$index5,0] 
+							$ShowText = 'M07.60F       Start pathway ' + $NewPathwayArray[$index5,0] 
 						} else {
-							$ShowText = 'M07.40G         inc index ' + $index10 +  ' '  + $NewPathwayArray[$index5,$index10] 
+							$ShowText = 'M07.60G         inc index ' + $index10 +  ' '  + $NewPathwayArray[$index5,$index10] 
 						}
 						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
@@ -2963,9 +3311,9 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 
 
 
-			#	Code07.50	Add NewPathwayArray to PathwayArray
+			#	Code07.70	Add NewPathwayArray to PathwayArray
 
-			$ShowText = 'M07.50A    Copy NewPathwayArray to end of PathwayArray' 
+			$ShowText = 'M07.70A    Copy NewPathwayArray to end of PathwayArray' 
 			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 			
 
@@ -2975,10 +3323,10 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 			#						NewPathwayLastRowArray
 			#
 
-			#	$ShowText = 'M07.50B  $PathwayLastRow = ' + $PathwayLastRow
+			#	$ShowText = 'M07.70B  $PathwayLastRow = ' + $PathwayLastRow
 			#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 				
-			#	$ShowText = 'M07.50C  $NewPathwayLastRow = ' + $NewPathwayLastRow
+			#	$ShowText = 'M07.70C  $NewPathwayLastRow = ' + $NewPathwayLastRow
 			#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 			#
@@ -2987,10 +3335,10 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 
 			$index3 = $PathwayLastRow		#  Will increment for new entry
 			
-			#	$ShowText = 'M07.50D  PathwayLastRow ' +  $PathwayLastRow
+			#	$ShowText = 'M07.70D  PathwayLastRow ' +  $PathwayLastRow
 			#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 			
-			#	$ShowText = 'M07.50E  NewPathwayLastRow ' +  $NewPathwayLastRow
+			#	$ShowText = 'M07.70E  NewPathwayLastRow ' +  $NewPathwayLastRow
 			#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 			$NewPathwayRowLength =  $NewPathwayLastRow + 1
@@ -3007,12 +3355,12 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
-					$ShowText = 'M07.50F  ERROR - Too many pathways to check. '
+					$ShowText = 'M07.70F  ERROR - Too many pathways to check. '
 					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
-					$ShowText = 'M07.50G  Please increase parameter MaxPathways. '
+					$ShowText = 'M07.70G  Please increase parameter MaxPathways. '
 					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
@@ -3025,11 +3373,11 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 
 				}
 
-				#	$ShowText = 'M07.50M  PathwayLastRow ' +  $PathwayLastRow
+				#	$ShowText = 'M07.70M  PathwayLastRow ' +  $PathwayLastRow
 				#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 				
 
-				#	$ShowText = 'M07.50N  NewPathwayLastStepArray index ' + $index5 + ' has value ' 
+				#	$ShowText = 'M07.70N  NewPathwayLastStepArray index ' + $index5 + ' has value ' 
 				#	$ShowText = $ShowText + $NewPathwayLastStepArray[$Index5]
 				#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 			
@@ -3042,10 +3390,10 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 					$PathwayLastStepArray[$index3] = $index4
 
 					If ($index4 -eq 0) {
-						$ShowText = 'M07.50P        PathwayArray start ' + $index3 + ' ' + $index4
+						$ShowText = 'M07.70P        PathwayArray start ' + $index3 + ' ' + $index4
 						$ShowText = $ShowText + ' ' +$PathwayArray[$index3,$index4]
 					} else {
-						$ShowText = 'M07.50Q                      step ' + $index3 + ' ' + $index4
+						$ShowText = 'M07.70Q                      step ' + $index3 + ' ' + $index4
 						$ShowText = $ShowText + ' ' +$PathwayArray[$index3,$index4]
 					}
 					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
@@ -3056,7 +3404,7 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 			}	#  For index5 = NewPathway 
 
 			
-			$ShowText = 'M07.50X  NewPathwayArray added to PathwayArray '
+			$ShowText = 'M07.70X  NewPathwayArray added to PathwayArray '
 			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 
@@ -3081,20 +3429,20 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 
 }	#	Index1 = common file
 
-$ShowText = 'M07.50Y  Finished processing of pathways.'
+$ShowText = 'M07.70Y  Finished processing of pathways.'
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
-#	$ShowText = 'M07.50Z  $PathwayLastRow = ' + $PathwayLastRow
+#	$ShowText = 'M07.70Z  $PathwayLastRow = ' + $PathwayLastRow
 #	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 
-#	Code07.60	Display PathwayArray
+#	Code07.90	Display PathwayArray
 
 
 $ShowText = ' '
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
-$ShowText = 'M07.60A  Display pathways'
+$ShowText = 'M07.90A  Display pathways'
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 
@@ -3107,12 +3455,12 @@ if ($PathwayLastRow -gt -1) {
 
 	$PathwayRowLength =  $PathwayLastRow + 1
 
-	#   $ShowText = 'M07.60B  PathwayRowLength = ' + $PathwayRowLength
+	#   $ShowText = 'M07.90B  PathwayRowLength = ' + $PathwayRowLength
 	#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 	For ($index3 = 0; $index3 -lt $PathwayRowLength; $index3++) {
 
-		#	$ShowText = 'M07.60C  PathwayLastStepArray index ' + $index3 + ' has value ' 
+		#	$ShowText = 'M07.90C  PathwayLastStepArray index ' + $index3 + ' has value ' 
 		#	$ShowText = $ShowText + $PathwayLastStepArray[$index3]
 		#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
@@ -3121,9 +3469,9 @@ if ($PathwayLastRow -gt -1) {
 		For ($index4 = 0; $index4 -lt $LastPathwayStep; $index4++) {
 			
 			If($index4 -eq 0){
-				$ShowText = 'M07.60D  PathwayArray ' + $index3 + ' ' + $index4 + ' '	
+				$ShowText = 'M07.90D  PathwayArray ' + $index3 + ' ' + $index4 + ' '	
 			} else {
-				$ShowText = 'M07.60E          Step ' + $index3 + ' ' + $index4 + ' '
+				$ShowText = 'M07.90E          Step ' + $index3 + ' ' + $index4 + ' '
 			}
 			$ShowText = $ShowText + $PathwayArray[$index3,$index4]
 			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
