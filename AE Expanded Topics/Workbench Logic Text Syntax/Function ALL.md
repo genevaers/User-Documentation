@@ -26,7 +26,7 @@ ALL can only be used in **Extract Record Filter** or **Extract Column Assignment
 
 See also topic "**Rules for all logic text**".
 
-## Examples: ALL function in Extract Record Filter { .section}
+## Examples: ALL function in Extract Record Filter 
 
 
 |Example logic text|Meaning|
@@ -55,7 +55,7 @@ SKIPIF({field2} = ALL("-"))
 |
 
 
-## Examples: ALL function in Extract Column Assignment { .section}
+## Examples: ALL function in Extract Column Assignment 
 
 
 |Example logic text|Meaning|
