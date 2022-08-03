@@ -2,9 +2,9 @@
 |Example logic text|Meaning|
 |------------------|-------|
 |```
-|IF (field3} = "Total")
+IF (field3} = "Total")
    THEN COLUMN = ALL("-")
-ENDIF
+ENDIF  Eugene Fix 01
 ```
 |If field3 is "Total" then set the current column to all dashes.|
   
@@ -14,4 +14,3 @@ IF (field4} = ALL("-"))
 ENDIF
 ```
 |If field4 is all dashes, then set the current column to a total of fields 5 and 6.|
-   
