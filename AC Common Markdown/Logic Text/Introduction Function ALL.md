@@ -18,11 +18,11 @@ ALL can only be used in **Extract Record Filter** or **Extract Column Assignment
 
 See also topic "**Rules for all logic text**".
 
-## Examples: ALL function in Extract Record Filter { .section}
+## Examples: ALL function in Extract Record Filter 
 
 {{ Logic Text\Example Function ALL ERF }}
 
-## Examples: ALL function in Extract Column Assignment { .section}
+## Examples: ALL function in Extract Column Assignment 
 
 {{ Logic Text\Example Function ALL ECA }}
 
