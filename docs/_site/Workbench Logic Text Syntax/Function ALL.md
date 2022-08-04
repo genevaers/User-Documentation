@@ -6,8 +6,6 @@ parent: Workbench Logic Text Syntax
 nav_order: 1
 ---
 
-Eugene comment.
-
 # Syntax: function ALL
 
 ## How do I use ALL? 
@@ -28,7 +26,7 @@ ALL can only be used in **Extract Record Filter** or **Extract Column Assignment
 
 See also topic "**Rules for all logic text**".
 
-## Examples: ALL function in Extract Record Filter { .section}
+## Examples: ALL function in Extract Record Filter 
 
 
 |Example logic text|Meaning|
@@ -57,7 +55,7 @@ SKIPIF({field2} = ALL("-"))
 |
 
 
-## Examples: ALL function in Extract Column Assignment { .section}
+## Examples: ALL function in Extract Column Assignment 
 
 
 |Example logic text|Meaning|
@@ -65,16 +63,15 @@ SKIPIF({field2} = ALL("-"))
 |```
 IF (field3} = "Total")
    THEN COLUMN = ALL("-")
-ENDIF
+ENDIF  Eugene Fix 01
 ```
-
 |If field3 is "Total" then set the current column to all dashes.|
+  
 |```
 IF (field4} = ALL("-"))
    THEN COLUMN = (field5} + (field6}
 ENDIF
 ```
-
 |If field4 is all dashes, then set the current column to a total of fields 5 and 6.|
 
 
