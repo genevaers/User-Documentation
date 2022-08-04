@@ -6,8 +6,6 @@ parent: Workbench Logic Text Syntax
 nav_order: 1
 ---
 
-Eugene comment.
-
 # Syntax: function ALL
 
 ## How do I use ALL? 
@@ -65,16 +63,15 @@ SKIPIF({field2} = ALL("-"))
 |```
 IF (field3} = "Total")
    THEN COLUMN = ALL("-")
-ENDIF
+ENDIF  Eugene Fix 01
 ```
-
 |If field3 is "Total" then set the current column to all dashes.|
+  
 |```
 IF (field4} = ALL("-"))
    THEN COLUMN = (field5} + (field6}
 ENDIF
 ```
-
 |If field4 is all dashes, then set the current column to a total of fields 5 and 6.|
 
 
