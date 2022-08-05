@@ -37,6 +37,7 @@ TABLE OF CONTENTS
 [Workbench Logic Text Intro](Workbench Logic Text Intro)  
 [Workbench Logic Text Types](Workbench Logic Text Types)  
 [Workbench Logic Text Syntax](Workbench Logic Text Syntax)  
+[Workbench Logic Text Summary Diagrams](Workbench Logic Text Summary Diagrams)  
   
 ## Performance Engine (PE)
   
