@@ -3269,123 +3269,129 @@
     "url": "http://localhost:4000/GenevaERS-General-Docs/Workbench%20Logic%20Text%20Intro.html",
     "relUrl": "/Workbench%20Logic%20Text%20Intro.html"
   },"545": {
+    "doc": "Workbench Logic Text Summary Diagrams",
+    "title": "Workbench Logic Text Summary Diagrams",
+    "content": "The topics below show only the syntax. ",
+    "url": "http://localhost:4000/GenevaERS-General-Docs/Workbench%20Logic%20Text%20Summary%20Diagrams.html",
+    "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams.html"
+  },"546": {
     "doc": "Workbench Logic Text Syntax",
     "title": "Workbench Logic Text Syntax",
     "content": " ",
     "url": "http://localhost:4000/GenevaERS-General-Docs/Workbench%20Logic%20Text%20Syntax.html",
     "relUrl": "/Workbench%20Logic%20Text%20Syntax.html"
-  },"546": {
+  },"547": {
     "doc": "Workbench Logic Text Types",
     "title": "Workbench Logic Text Types",
     "content": " ",
     "url": "http://localhost:4000/GenevaERS-General-Docs/Workbench%20Logic%20Text%20Types.html",
     "relUrl": "/Workbench%20Logic%20Text%20Types.html"
-  },"547": {
+  },"548": {
     "doc": "Workbench Overviews",
     "title": "Workbench Overviews",
     "content": " ",
     "url": "http://localhost:4000/GenevaERS-General-Docs/Workbench%20Overviews.html",
     "relUrl": "/Workbench%20Overviews.html"
-  },"548": {
+  },"549": {
     "doc": "Workbench Screens",
     "title": "Workbench Screens",
     "content": " ",
     "url": "http://localhost:4000/GenevaERS-General-Docs/Workbench%20Screens.html",
     "relUrl": "/Workbench%20Screens.html"
-  },"549": {
+  },"550": {
     "doc": "Workbench Training",
     "title": "Workbench Training",
     "content": " ",
     "url": "http://localhost:4000/GenevaERS-General-Docs/Workbench%20Training.html",
     "relUrl": "/Workbench%20Training.html"
-  },"550": {
+  },"551": {
     "doc": "Workbench User Guide",
     "title": "Workbench User Guide",
     "content": " ",
     "url": "http://localhost:4000/GenevaERS-General-Docs/Workbench%20User%20Guide.html",
     "relUrl": "/Workbench%20User%20Guide.html"
-  },"551": {
+  },"552": {
     "doc": "Dependency Checker Report screen help",
     "title": "Dependency Checker Report screen help",
     "content": "TABLE OF CONTENTS . | 02 Introduction to a Dependency Checker Report | 05 Errors . | 051 Level 3 Heading . | 0512 Level 4 Heading . | 05123 Level 5 Heading | . | . | . | 10 Action: Generate the report | . ",
     "url": "http://localhost:4000/GenevaERS-General-Docs/Workbench%20Screens/WorkbenchScreenDependencyChecker.html",
     "relUrl": "/Workbench%20Screens/WorkbenchScreenDependencyChecker.html"
-  },"552": {
+  },"553": {
     "doc": "Dependency Checker Report screen help",
     "title": "02 Introduction to a Dependency Checker Report",
     "content": "This report shows the dependencies for one specific metadata item. The report can focus on a metadata items of the following types: . | Logical Record (LR) Field, | Global Field, | Logical File, | Logical Record, | Lookup Path, | Physical File, | User-Exit Routine, | View. | . System and environment administrators can always generate this report for a specific metadata item (that is one of the above types) in any environment. General users can generate this metadata report if the group selected during login has at least the read right to the environment of the metadata item. See your system administrator if you require more rights. ",
     "url": "http://localhost:4000/GenevaERS-General-Docs/Workbench%20Screens/WorkbenchScreenDependencyChecker.html#02-introduction-to-a-dependency-checker-report",
     "relUrl": "/Workbench%20Screens/WorkbenchScreenDependencyChecker.html#02-introduction-to-a-dependency-checker-report"
-  },"553": {
+  },"554": {
     "doc": "Dependency Checker Report screen help",
     "title": "05 Errors",
     "content": " ",
     "url": "http://localhost:4000/GenevaERS-General-Docs/Workbench%20Screens/WorkbenchScreenDependencyChecker.html#05-errors",
     "relUrl": "/Workbench%20Screens/WorkbenchScreenDependencyChecker.html#05-errors"
-  },"554": {
+  },"555": {
     "doc": "Dependency Checker Report screen help",
     "title": "051 Level 3 Heading",
     "content": "0512 Level 4 Heading . 05123 Level 5 Heading . For errors or messages on this screen, see topic “Dependency Checker errors”. For a link, see under Related reference below. ",
     "url": "http://localhost:4000/GenevaERS-General-Docs/Workbench%20Screens/WorkbenchScreenDependencyChecker.html#051-level-3-heading",
     "relUrl": "/Workbench%20Screens/WorkbenchScreenDependencyChecker.html#051-level-3-heading"
-  },"555": {
+  },"556": {
     "doc": "Dependency Checker Report screen help",
     "title": "10 Action: Generate the report",
     "content": " ",
     "url": "http://localhost:4000/GenevaERS-General-Docs/Workbench%20Screens/WorkbenchScreenDependencyChecker.html#10-action-generate-the-report",
     "relUrl": "/Workbench%20Screens/WorkbenchScreenDependencyChecker.html#10-action-generate-the-report"
-  },"556": {
+  },"557": {
     "doc": "Home",
     "title": "GenevaERS General Docs - UNDER CONSTRUCTION",
     "content": "TABLE OF CONTENTS . | Get started | Workbench | Workbench Logic Text | Performance Engine (PE) | Errors | Reference | . ",
     "url": "http://localhost:4000/GenevaERS-General-Docs/#genevaers-general-docs---under-construction",
     "relUrl": "/#genevaers-general-docs---under-construction"
-  },"557": {
+  },"558": {
     "doc": "Home",
     "title": "Get started",
     "content": "How this website works User guide - start here Install Lessons in basic skills How to use this product Typical goals Basic solutions Feature introductions Overall Training Basic Views Training Workbench Training High Speed Techniques Training . ",
     "url": "http://localhost:4000/GenevaERS-General-Docs/#get-started",
     "relUrl": "/#get-started"
-  },"558": {
+  },"559": {
     "doc": "Home",
     "title": "Workbench",
     "content": "Workbench User Guide Workbench Overviews Workbench Screens Workbench Admin Guide . ",
     "url": "http://localhost:4000/GenevaERS-General-Docs/#workbench",
     "relUrl": "/#workbench"
-  },"559": {
+  },"560": {
     "doc": "Home",
     "title": "Workbench Logic Text",
-    "content": "Workbench Logic Text Intro Workbench Logic Text Types Workbench Logic Text Syntax . ",
+    "content": "Workbench Logic Text Intro Workbench Logic Text Types Workbench Logic Text Syntax Workbench Logic Text Summary Diagrams . ",
     "url": "http://localhost:4000/GenevaERS-General-Docs/#workbench-logic-text",
     "relUrl": "/#workbench-logic-text"
-  },"560": {
+  },"561": {
     "doc": "Home",
     "title": "Performance Engine (PE)",
     "content": "Run Performance Engine (PE) PE Checklists PE Programs User-Exits Sub-Programs Run Control Utilities Compiler &amp; Data Types . ",
     "url": "http://localhost:4000/GenevaERS-General-Docs/#performance-engine-pe",
     "relUrl": "/#performance-engine-pe"
-  },"561": {
+  },"562": {
     "doc": "Home",
     "title": "Errors",
     "content": "Errors in PE Programs Errors in User-Exits Errors in Sub-Programs Errors in Run Control Utilities Errors in Workbench . ",
     "url": "http://localhost:4000/GenevaERS-General-Docs/#errors",
     "relUrl": "/#errors"
-  },"562": {
+  },"563": {
     "doc": "Home",
     "title": "Reference",
     "content": "Publications REA Accounting Guide Frequently Asked Questions (FAQ) Index About this website . Updated 28 June, 2022 . ",
     "url": "http://localhost:4000/GenevaERS-General-Docs/#reference",
     "relUrl": "/#reference"
-  },"563": {
+  },"564": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
     "url": "http://localhost:4000/GenevaERS-General-Docs/",
     "relUrl": "/"
-  },"564": {
+  },"565": {
     "doc": "Function ALL",
     "title": "Function ALL",
-    "content": "# Syntax: function ALL ## How do I use ALL? If you provide a text string then ALL can check if all of a field value is that text string \\(repeated\\). ALL is different from REPEAT because REPEAT has a fixed number of repetitions, whereas ALL is flexible and compares with fields of different lengths. ALL can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text. ![(Syntax Legend)](/GenevaERS-General-Docs/images/LTZZ_Syntax_legend.gif) ## Syntax ![(Function ALL)](/GenevaERS-General-Docs/images/LTSF_ALL_01.gif) ## Rules for the syntax ALL can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text. See also topic \"**Rules for all logic text**\". ## Examples: ALL function in Extract Record Filter |Example logic text|Meaning|------------------|-------|``` IF NOT ({field1} = ALL(\"-\")) THEN SELECT ENDIF ``` |Select for output those records with field1 is not equal to all dashes. Skip all other records. This example gives the same result as:``` SKIPIF({field1} = ALL(\"-\")) ``` |``` IF ({field2} = ALL(\"-\")) THEN SKIP ENDIF ``` |Skip for output those records with field2 is equal to all dashes. Select all other records. This example gives the same result as:``` SKIPIF({field2} = ALL(\"-\")) ``` | ## Examples: ALL function in Extract Column Assignment |Example logic text|Meaning|------------------|-------|``` IF (field3} = \"Total\") THEN COLUMN = ALL(\"-\") ENDIF Eugene Fix 01 ``` |If field3 is \"Total\" then set the current column to all dashes.|``` IF (field4} = ALL(\"-\")) THEN COLUMN = (field5} + (field6} ENDIF ``` |If field4 is all dashes, then set the current column to a total of fields 5 and 6.| ",
+    "content": "# Syntax: function ALL ## How do I use ALL? If you provide a text string then ALL can check if all of a field value is that text string \\(repeated\\). ALL is different from REPEAT because REPEAT has a fixed number of repetitions, whereas ALL is flexible and compares with fields of different lengths. ALL can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text. ![(Syntax Legend)](/GenevaERS-General-Docs/images/LTZZ_Syntax_legend.gif) ## Syntax ![(Function ALL)](/GenevaERS-General-Docs/images/LTSF_ALL_01.gif) ## Rules for the syntax ALL can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text. See also topic \"**Rules for all logic text**\". ## Examples: ALL function in Extract Record Filter |Example logic text|Meaning|------------------|-------|IF NOT ({field1} = ALL(\"-\"))THEN SELECTENDIF|Select for output those records with field1 is not equal to all dashes. Skip all other records. This example gives the same result as:SKIPIF({field1} = ALL(\"-\"))|IF ({field2} = ALL(\"-\"))THEN SKIPENDIF|Skip for output those records with field2 is equal to all dashes. Select all other records. This example gives the same result as:SKIPIF({field2} = ALL(\"-\"))| ## Examples: ALL function in Extract Column Assignment |Example logic text|Meaning|------------------|-------|IF (field3} = \"Total\")THEN COLUMN = ALL(\"-\")ENDIF|If field3 is \"Total\" then set the current column to all dashes.|IF (field4} = ALL(\"-\"))THEN COLUMN = (field5} + (field6}ENDIF|If field4 is all dashes, then set the current column to a total of fields 5 and 6.| ",
     "url": "http://localhost:4000/GenevaERS-General-Docs/Workbench%20Logic%20Text%20Syntax/Function%20ALL.html",
     "relUrl": "/Workbench%20Logic%20Text%20Syntax/Function%20ALL.html"
   }

@@ -1,16 +1,6 @@
-
 |Example logic text|Meaning|
 |------------------|-------|
-|```
-IF (field3} = "Total")
-   THEN COLUMN = ALL("-")
-ENDIF  Eugene Fix 01
-```
-|If field3 is "Total" then set the current column to all dashes.|
+|IF (field3} = "Total")<br>THEN COLUMN = ALL("-")<br>ENDIF|If field3 is "Total" then set the current column to all dashes.|
+|IF (field4} = ALL("-"))<br>THEN COLUMN = (field5} + (field6}<br>ENDIF|If field4 is all dashes, then set the current column to a total of fields 5 and 6.|
+
   
-|```
-IF (field4} = ALL("-"))
-   THEN COLUMN = (field5} + (field6}
-ENDIF
-```
-|If field4 is all dashes, then set the current column to a total of fields 5 and 6.|

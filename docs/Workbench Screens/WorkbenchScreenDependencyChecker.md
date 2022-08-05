@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Dependency Checker Report screen help"
-parent: 32 Workbench Screens
+parent: Workbench Screens
 nav_order: 20
 ---
 
