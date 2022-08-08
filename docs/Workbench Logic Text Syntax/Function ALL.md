@@ -44,5 +44,3 @@ See also topic "**Rules for all logic text**".
 
   
 
-
-

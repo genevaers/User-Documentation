@@ -1,8 +1,8 @@
-docs\_site
-docs\sass-cache
-docs\jekyll-cache
-docs\jekyll-metadata
-docs\vendor
+docs\_site\*.*
+docs\sass-cache*.*
+docs\jekyll-cache*.*
+docs\jekyll-metadata*.*
+docs\vendor*.*
 docs\404.html
 docs\DataGenerator.html
 docs\feed.xml
@@ -15,3 +15,6 @@ docs\just-the-docs-default.css
 docs\just-the-docs-light.css
 docs\search-data.json
 docs\welcome-to-jekyll.html
+docs\AI Info\*.*
+docs\AD Expanded Common\*.*
+docs\AE Expanded Topics\*.*
