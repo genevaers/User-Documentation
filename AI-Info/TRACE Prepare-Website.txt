@@ -1,5 +1,5 @@
 ﻿M01.73A  Trace file for Prepare-Website.ps1   Version 1.1
-M01.73C  Run Date       08/09/2022 14:05:00
+M01.73C  Run Date       08/09/2022 14:35:10
   
 M01.83C  Created new ExpandedCommonFolder - C:\Git\GenevaERS-General-Docs\AD-Expanded-Common
 M01.84C  Created new ExpandedTopicsFolder - C:\Git\GenevaERS-General-Docs\AE-Expanded-Topics
@@ -24,7 +24,7 @@ M03.30C  	Index1 4 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text
 M03.30C  	Index1 5 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ECA.md
 M03.30C  	Index1 6 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ERF.md
 M03.30C  	Index1 7 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
-M03.30C  	Index1 8 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M03.30C  	Index1 8 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
 M03.30C  	Index1 9 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Keyboard Shortcuts Logic Text Common.md
 M03.30C  	Index1 10 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Rules for all Logic Text Common.md
 M03.30C  	Index1 11 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function ALL.md
@@ -562,6 +562,7 @@ M05.26E  end =================================================
  
 M05.20A  start read file =====================================
 M05.20B  Read common File 1 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
+M05.27H  CommonIncludesArray(1,0) = C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
 M05.26E  end =================================================
  
 M05.20A  start read file =====================================
@@ -593,7 +594,7 @@ M05.27H  CommonIncludesArray(7,3) = C:\Git\GenevaERS-General-Docs\AC Common Mark
 M05.26E  end =================================================
  
 M05.20A  start read file =====================================
-M05.20B  Read common File 8 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M05.20B  Read common File 8 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
 M05.27H  CommonIncludesArray(8,0) = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
 M05.27H  CommonIncludesArray(8,1) = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function BATCHDATE.md
 M05.27H  CommonIncludesArray(8,2) = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ERF.md
@@ -624,6 +625,7 @@ M05.26E  end =================================================
 M05.30B  Display includes in common files
 M05.30C  Common file 0 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
 M05.30C  Common file 1 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
+M05.30D  	        C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
 M05.30C  Common file 2 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
 M05.30C  Common file 3 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ECA.md
 M05.30C  Common file 4 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ERF.md
@@ -634,7 +636,7 @@ M05.30D  	        C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA
 M05.30D  	        C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function ALL.md
 M05.30D  	        C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ERF.md
 M05.30D  	        C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ECA.md
-M05.30C  Common file 8 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M05.30C  Common file 8 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
 M05.30D  	        C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
 M05.30D  	        C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function BATCHDATE.md
 M05.30D  	        C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ERF.md
@@ -645,7 +647,7 @@ M05.30C  Common file 10 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic
 M05.30C  Common file 11 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function ALL.md
 M05.30C  Common file 12 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function BATCHDATE.md
 M05.30C  Common file 13 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Useful Links\UL Logic Text.md
-M05.30E  3 common files have includes.
+M05.30E  4 common files have includes.
  
 M06.00A  Topic includes 
 M06.00B  Start search for includes in topic files
@@ -2188,6 +2190,19 @@ M07.00B  Start pathway processing.
 M07.20A  Check includes for common 0 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
  
 M07.20A  Check includes for common 1 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
+M07.21B                  Found include C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
+M07.21C      NewPathway 2-step start = C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
+M07.21D                  single step = C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
+M07.30A    Begin ExistingPathDuplAddLast
+M07.30B        PathwayLastRow -1
+M07.48N        No entries in ExistingPathwayArray so no duplicate possibilities
+M07.50A    Begin ExistingPathDuplAddFirst
+M07.53C        No entries in ExistingPathwayArray so no duplicate possibilities
+M07.60A  Begin Circular Include check
+M07.70A  Copy NewPathwayArray to end of ExistingPathwayArray
+M07.70P        ExistingPathwayArray start 0 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
+M07.70Q                      step 0 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
+M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
 M07.20A  Check includes for common 2 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
  
@@ -2204,23 +2219,8 @@ M07.21B                  Found include C:\Git\GenevaERS-General-Docs\AC Common M
 M07.21C      NewPathway 2-step start = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M07.21D                  single step = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
 M07.30A    Begin ExistingPathDuplAddLast
-M07.30B        PathwayLastRow -1
-M07.48N        No entries in ExistingPathwayArray so no duplicate possibilities
-M07.50A    Begin ExistingPathDuplAddFirst
-M07.53C        No entries in ExistingPathwayArray so no duplicate possibilities
-M07.60A  Begin Circular Include check
-M07.70A  Copy NewPathwayArray to end of ExistingPathwayArray
-M07.70P        ExistingPathwayArray start 0 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
-M07.70Q                      step 0 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
-M07.70X  NewPathwayArray added to ExistingPathwayArray 
- 
-M07.21A  Continue checking includes for common 7 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
-M07.21B                  Found include C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function ALL.md
-M07.21C      NewPathway 2-step start = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
-M07.21D                  single step = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function ALL.md
-M07.30A    Begin ExistingPathDuplAddLast
 M07.30B        PathwayLastRow 0
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.48M    Finish ExistingPathDuplAddLast 
 M07.50A    Begin ExistingPathDuplAddFirst
@@ -2228,16 +2228,16 @@ M07.53B    Finish ExistingPathDuplAddFirst
 M07.60A  Begin Circular Include check
 M07.70A  Copy NewPathwayArray to end of ExistingPathwayArray
 M07.70P        ExistingPathwayArray start 1 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
-M07.70Q                      step 1 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function ALL.md
+M07.70Q                      step 1 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
 M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
 M07.21A  Continue checking includes for common 7 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
-M07.21B                  Found include C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ERF.md
+M07.21B                  Found include C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function ALL.md
 M07.21C      NewPathway 2-step start = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
-M07.21D                  single step = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ERF.md
+M07.21D                  single step = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function ALL.md
 M07.30A    Begin ExistingPathDuplAddLast
 M07.30B        PathwayLastRow 1
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
@@ -2247,16 +2247,16 @@ M07.53B    Finish ExistingPathDuplAddFirst
 M07.60A  Begin Circular Include check
 M07.70A  Copy NewPathwayArray to end of ExistingPathwayArray
 M07.70P        ExistingPathwayArray start 2 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
-M07.70Q                      step 2 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ERF.md
+M07.70Q                      step 2 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function ALL.md
 M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
 M07.21A  Continue checking includes for common 7 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
-M07.21B                  Found include C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ECA.md
+M07.21B                  Found include C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ERF.md
 M07.21C      NewPathway 2-step start = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
-M07.21D                  single step = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ECA.md
+M07.21D                  single step = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ERF.md
 M07.30A    Begin ExistingPathDuplAddLast
 M07.30B        PathwayLastRow 2
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
@@ -2268,16 +2268,16 @@ M07.53B    Finish ExistingPathDuplAddFirst
 M07.60A  Begin Circular Include check
 M07.70A  Copy NewPathwayArray to end of ExistingPathwayArray
 M07.70P        ExistingPathwayArray start 3 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
-M07.70Q                      step 3 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ECA.md
+M07.70Q                      step 3 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ERF.md
 M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
-M07.20A  Check includes for common 8 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
-M07.21B                  Found include C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
-M07.21C      NewPathway 2-step start = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
-M07.21D                  single step = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
+M07.21A  Continue checking includes for common 7 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
+M07.21B                  Found include C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ECA.md
+M07.21C      NewPathway 2-step start = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
+M07.21D                  single step = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ECA.md
 M07.30A    Begin ExistingPathDuplAddLast
 M07.30B        PathwayLastRow 3
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
@@ -2290,17 +2290,17 @@ M07.50A    Begin ExistingPathDuplAddFirst
 M07.53B    Finish ExistingPathDuplAddFirst 
 M07.60A  Begin Circular Include check
 M07.70A  Copy NewPathwayArray to end of ExistingPathwayArray
-M07.70P        ExistingPathwayArray start 4 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
-M07.70Q                      step 4 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
+M07.70P        ExistingPathwayArray start 4 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
+M07.70Q                      step 4 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ECA.md
 M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
-M07.21A  Continue checking includes for common 8 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
-M07.21B                  Found include C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function BATCHDATE.md
-M07.21C      NewPathway 2-step start = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
-M07.21D                  single step = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function BATCHDATE.md
+M07.20A  Check includes for common 8 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
+M07.21B                  Found include C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
+M07.21C      NewPathway 2-step start = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
+M07.21D                  single step = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
 M07.30A    Begin ExistingPathDuplAddLast
 M07.30B        PathwayLastRow 4
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
@@ -2308,24 +2308,24 @@ M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 2 C:\Git\GenevaE
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 3 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 4 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 4 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.48M    Finish ExistingPathDuplAddLast 
 M07.50A    Begin ExistingPathDuplAddFirst
 M07.53B    Finish ExistingPathDuplAddFirst 
 M07.60A  Begin Circular Include check
 M07.70A  Copy NewPathwayArray to end of ExistingPathwayArray
-M07.70P        ExistingPathwayArray start 5 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
-M07.70Q                      step 5 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function BATCHDATE.md
+M07.70P        ExistingPathwayArray start 5 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
+M07.70Q                      step 5 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
 M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
-M07.21A  Continue checking includes for common 8 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
-M07.21B                  Found include C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ERF.md
-M07.21C      NewPathway 2-step start = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
-M07.21D                  single step = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ERF.md
+M07.21A  Continue checking includes for common 8 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
+M07.21B                  Found include C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function BATCHDATE.md
+M07.21C      NewPathway 2-step start = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
+M07.21D                  single step = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function BATCHDATE.md
 M07.30A    Begin ExistingPathDuplAddLast
 M07.30B        PathwayLastRow 5
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
@@ -2333,26 +2333,26 @@ M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 2 C:\Git\GenevaE
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 3 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 4 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 4 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.48M    Finish ExistingPathDuplAddLast 
 M07.50A    Begin ExistingPathDuplAddFirst
 M07.53B    Finish ExistingPathDuplAddFirst 
 M07.60A  Begin Circular Include check
 M07.70A  Copy NewPathwayArray to end of ExistingPathwayArray
-M07.70P        ExistingPathwayArray start 6 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
-M07.70Q                      step 6 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ERF.md
+M07.70P        ExistingPathwayArray start 6 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
+M07.70Q                      step 6 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function BATCHDATE.md
 M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
-M07.21A  Continue checking includes for common 8 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
-M07.21B                  Found include C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ECA.md
-M07.21C      NewPathway 2-step start = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
-M07.21D                  single step = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ECA.md
+M07.21A  Continue checking includes for common 8 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
+M07.21B                  Found include C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ERF.md
+M07.21C      NewPathway 2-step start = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
+M07.21D                  single step = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ERF.md
 M07.30A    Begin ExistingPathDuplAddLast
 M07.30B        PathwayLastRow 6
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
@@ -2360,19 +2360,50 @@ M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 2 C:\Git\GenevaE
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 3 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 4 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 4 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.48M    Finish ExistingPathDuplAddLast 
 M07.50A    Begin ExistingPathDuplAddFirst
 M07.53B    Finish ExistingPathDuplAddFirst 
 M07.60A  Begin Circular Include check
 M07.70A  Copy NewPathwayArray to end of ExistingPathwayArray
-M07.70P        ExistingPathwayArray start 7 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
-M07.70Q                      step 7 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ECA.md
+M07.70P        ExistingPathwayArray start 7 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
+M07.70Q                      step 7 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ERF.md
+M07.70X  NewPathwayArray added to ExistingPathwayArray 
+ 
+M07.21A  Continue checking includes for common 8 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
+M07.21B                  Found include C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ECA.md
+M07.21C      NewPathway 2-step start = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
+M07.21D                  single step = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ECA.md
+M07.30A    Begin ExistingPathDuplAddLast
+M07.30B        PathwayLastRow 7
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 2 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 3 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 4 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.48M    Finish ExistingPathDuplAddLast 
+M07.50A    Begin ExistingPathDuplAddFirst
+M07.53B    Finish ExistingPathDuplAddFirst 
+M07.60A  Begin Circular Include check
+M07.70A  Copy NewPathwayArray to end of ExistingPathwayArray
+M07.70P        ExistingPathwayArray start 8 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
+M07.70Q                      step 8 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ECA.md
 M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
 M07.20A  Check includes for common 9 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Keyboard Shortcuts Logic Text Common.md
@@ -2380,8 +2411,8 @@ M07.21B                  Found include C:\Git\GenevaERS-General-Docs\AC Common M
 M07.21C      NewPathway 2-step start = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Keyboard Shortcuts Logic Text Common.md
 M07.21D                  single step = C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
 M07.30A    Begin ExistingPathDuplAddLast
-M07.30B        PathwayLastRow 7
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
+M07.30B        PathwayLastRow 8
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
@@ -2389,21 +2420,23 @@ M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 2 C:\Git\GenevaE
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 3 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 4 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 4 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 8 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.48M    Finish ExistingPathDuplAddLast 
 M07.50A    Begin ExistingPathDuplAddFirst
 M07.53B    Finish ExistingPathDuplAddFirst 
 M07.60A  Begin Circular Include check
 M07.70A  Copy NewPathwayArray to end of ExistingPathwayArray
-M07.70P        ExistingPathwayArray start 8 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Keyboard Shortcuts Logic Text Common.md
-M07.70Q                      step 8 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
+M07.70P        ExistingPathwayArray start 9 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Keyboard Shortcuts Logic Text Common.md
+M07.70Q                      step 9 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
 M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
 M07.20A  Check includes for common 10 = C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Rules for all Logic Text Common.md
@@ -2416,37 +2449,41 @@ M07.20A  Check includes for common 13 = C:\Git\GenevaERS-General-Docs\AC Common 
 M07.70Y  Finished processing of pathways.
  
 M07.90A  Display pathways
-M07.90D  ExistingPathwayArray 0 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
-M07.90E                  Step 0 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
+M07.90D  ExistingPathwayArray 0 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
+M07.90E                  Step 0 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
 M07.90D  ExistingPathwayArray 1 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
-M07.90E                  Step 1 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function ALL.md
+M07.90E                  Step 1 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
 M07.90D  ExistingPathwayArray 2 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
-M07.90E                  Step 2 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ERF.md
+M07.90E                  Step 2 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function ALL.md
 M07.90D  ExistingPathwayArray 3 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
-M07.90E                  Step 3 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ECA.md
-M07.90D  ExistingPathwayArray 4 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
-M07.90E                  Step 4 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
-M07.90D  ExistingPathwayArray 5 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
-M07.90E                  Step 5 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function BATCHDATE.md
-M07.90D  ExistingPathwayArray 6 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
-M07.90E                  Step 6 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ERF.md
-M07.90D  ExistingPathwayArray 7 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
-M07.90E                  Step 7 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ECA.md
-M07.90D  ExistingPathwayArray 8 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Keyboard Shortcuts Logic Text Common.md
-M07.90E                  Step 8 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
+M07.90E                  Step 3 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ERF.md
+M07.90D  ExistingPathwayArray 4 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
+M07.90E                  Step 4 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ECA.md
+M07.90D  ExistingPathwayArray 5 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
+M07.90E                  Step 5 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
+M07.90D  ExistingPathwayArray 6 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
+M07.90E                  Step 6 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function BATCHDATE.md
+M07.90D  ExistingPathwayArray 7 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
+M07.90E                  Step 7 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ERF.md
+M07.90D  ExistingPathwayArray 8 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
+M07.90E                  Step 8 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ECA.md
+M07.90D  ExistingPathwayArray 9 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Keyboard Shortcuts Logic Text Common.md
+M07.90E                  Step 9 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
  
 M08.00A  Priorities for common includes 
 M08.10A  Find commons with no includes
 M08.11A  No includes for common at index 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
+M08.12A      Same included in C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
+M08.12B          verify include is 1 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
+M08.13A          Include priority set to zero 
 M08.12A      Same included in C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Keyboard Shortcuts Logic Text Common.md
 M08.12B          verify include is 9 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
 M08.13A          Include priority set to zero 
-M08.11A  No includes for common at index 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
 M08.11A  No includes for common at index 2 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
 M08.12A      Same included in C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M08.12B          verify include is 7 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
 M08.13A          Include priority set to zero 
-M08.12A      Same included in C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M08.12A      Same included in C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
 M08.12B          verify include is 8 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
 M08.13A          Include priority set to zero 
 M08.11A  No includes for common at index 3 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ECA.md
@@ -2458,11 +2495,11 @@ M08.12A      Same included in C:\Git\GenevaERS-General-Docs\AC Common Markdown\L
 M08.12B          verify include is 7 2 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ERF.md
 M08.13A          Include priority set to zero 
 M08.11A  No includes for common at index 5 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ECA.md
-M08.12A      Same included in C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M08.12A      Same included in C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
 M08.12B          verify include is 8 3 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ECA.md
 M08.13A          Include priority set to zero 
 M08.11A  No includes for common at index 6 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ERF.md
-M08.12A      Same included in C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M08.12A      Same included in C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
 M08.12B          verify include is 8 2 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ERF.md
 M08.13A          Include priority set to zero 
 M08.11A  No includes for common at index 10 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Rules for all Logic Text Common.md
@@ -2471,7 +2508,7 @@ M08.12A      Same included in C:\Git\GenevaERS-General-Docs\AC Common Markdown\L
 M08.12B          verify include is 7 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function ALL.md
 M08.13A          Include priority set to zero 
 M08.11A  No includes for common at index 12 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function BATCHDATE.md
-M08.12A      Same included in C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M08.12A      Same included in C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
 M08.12B          verify include is 8 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function BATCHDATE.md
 M08.13A          Include priority set to zero 
 M08.11A  No includes for common at index 13 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Useful Links\UL Logic Text.md
@@ -2480,8 +2517,9 @@ M08.14B      Common 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keybo
 M08.14C      Priority 0
 M08.14F          Common has no includes 
 M08.14B      Common 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
-M08.14C      Priority 0
-M08.14F          Common has no includes 
+M08.14C      Priority -1
+M08.14D          Include 1 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
+M08.14E          Priority 0
 M08.14B      Common 2 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
 M08.14C      Priority 0
 M08.14F          Common has no includes 
@@ -2507,7 +2545,7 @@ M08.14D          Include 7 2 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Lo
 M08.14E          Priority 0
 M08.14D          Include 7 3 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ECA.md
 M08.14E          Priority 0
-M08.14B      Common 8 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M08.14B      Common 8 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
 M08.14C      Priority -1
 M08.14D          Include 8 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
 M08.14E          Priority 0
@@ -2536,16 +2574,18 @@ M08.14F          Common has no includes
 M08.14X  Still have priority -1 somewhere 
  
 M08.20A  Priority 2 for commons that have all includes at priority = 0 
+M08.21A  Priority 1 for common file 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
 M08.21A  Priority 1 for common file 7 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
-M08.21A  Priority 1 for common file 8 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M08.21A  Priority 1 for common file 8 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
 M08.21A  Priority 1 for common file 9 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Keyboard Shortcuts Logic Text Common.md
 M08.24A  Check for any common priorities still -1 
 M08.24B      Common at index 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
 M08.24C      Priority 0
 M08.24F          Common has no includes 
 M08.24B      Common at index 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
-M08.24C      Priority 0
-M08.24F          Common has no includes 
+M08.24C      Priority 1
+M08.24D          Include 1 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
+M08.24E          Priority 0
 M08.24B      Common at index 2 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
 M08.24C      Priority 0
 M08.24F          Common has no includes 
@@ -2571,7 +2611,7 @@ M08.24D          Include 7 2 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Lo
 M08.24E          Priority 0
 M08.24D          Include 7 3 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ECA.md
 M08.24E          Priority 0
-M08.24B      Common at index 8 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M08.24B      Common at index 8 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
 M08.24C      Priority 1
 M08.24D          Include 8 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
 M08.24E          Priority 0
@@ -2602,11 +2642,11 @@ M08.40A  Check all priorities are gte 0 one last time
 M08.40F      Common at index 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
 M08.40G      Priority 0
 M08.40F      Common at index 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
-M08.40G      Priority 0
+M08.40G      Priority 1
 M08.40M  	Topic has same include at index 143 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
-M08.40N  	Priority of that include is  0
+M08.40N  	Priority of that include is  1
 M08.40M  	Topic has same include at index 152 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
-M08.40N  	Priority of that include is  0
+M08.40N  	Priority of that include is  1
 M08.40F      Common at index 2 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
 M08.40G      Priority 0
 M08.40F      Common at index 3 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ECA.md
@@ -2621,7 +2661,7 @@ M08.40F      Common at index 7 C:\Git\GenevaERS-General-Docs\AC Common Markdown\
 M08.40G      Priority 1
 M08.40M  	Topic has same include at index 146 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M08.40N  	Priority of that include is  1
-M08.40F      Common at index 8 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M08.40F      Common at index 8 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
 M08.40G      Priority 1
 M08.40M  	Topic has same include at index 147 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
 M08.40N  	Priority of that include is  1
@@ -2658,8 +2698,9 @@ M09.00D          Priority 2
   
 M10.00A  Create ToDoIncludes List 
 M10.20A  Target priority =  1
+M10.20B      Requesting common file =  C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
 M10.20B      Requesting common file =  C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
-M10.20B      Requesting common file =  C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M10.20B      Requesting common file =  C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
 M10.20B      Requesting common file =  C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Keyboard Shortcuts Logic Text Common.md
 M10.20M  Target priority is target includes priority =  2
 M10.20N      Requesting topic file =  C:\Git\GenevaERS-General-Docs\AA Topics Markdown\Workbench Admin Guide\Keyboard Shortcuts for Admins.md
@@ -2671,57 +2712,76 @@ M10.20N      Requesting topic file =  C:\Git\GenevaERS-General-Docs\AA Topics Ma
 M10.20X  Created ToDo includes arrays  
 M10.30A  Display ToDo includes in trace
 M10.30B  Priority  1
-M10.30B      Requesting File C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
-M10.30C          Include 0 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
-M10.30C          Include 0 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function ALL.md
-M10.30C          Include 0 2 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ERF.md
-M10.30C          Include 0 3 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ECA.md
+M10.30B      Requesting File C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
+M10.30C          Include 0 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
 M10.30B  Priority  1
-M10.30B      Requesting File C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M10.30B      Requesting File C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M10.30C          Include 1 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
-M10.30C          Include 1 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function BATCHDATE.md
-M10.30C          Include 1 2 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ERF.md
-M10.30C          Include 1 3 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ECA.md
+M10.30C          Include 1 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function ALL.md
+M10.30C          Include 1 2 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ERF.md
+M10.30C          Include 1 3 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ECA.md
+M10.30B  Priority  1
+M10.30B      Requesting File C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
+M10.30C          Include 2 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
+M10.30C          Include 2 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function BATCHDATE.md
+M10.30C          Include 2 2 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ERF.md
+M10.30C          Include 2 3 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ECA.md
 M10.30B  Priority  1
 M10.30B      Requesting File C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Keyboard Shortcuts Logic Text Common.md
-M10.30C          Include 2 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
+M10.30C          Include 3 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
 M10.30B  Priority  2
 M10.30B      Requesting File C:\Git\GenevaERS-General-Docs\AA Topics Markdown\Workbench Admin Guide\Keyboard Shortcuts for Admins.md
-M10.30C          Include 3 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
+M10.30C          Include 4 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
 M10.30B  Priority  2
 M10.30B      Requesting File C:\Git\GenevaERS-General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function ALL.md
-M10.30C          Include 4 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
+M10.30C          Include 5 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M10.30B  Priority  2
 M10.30B      Requesting File C:\Git\GenevaERS-General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function BATCHDATE.md
-M10.30C          Include 5 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M10.30C          Include 6 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
 M10.30B  Priority  2
 M10.30B      Requesting File C:\Git\GenevaERS-General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Keyboard Shortcuts Logic Text.md
-M10.30C          Include 6 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Keyboard Shortcuts Logic Text Common.md
+M10.30C          Include 7 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Keyboard Shortcuts Logic Text Common.md
 M10.30B  Priority  2
 M10.30B      Requesting File C:\Git\GenevaERS-General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Rules for all Logic Text.md
-M10.30C          Include 7 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Rules for all Logic Text Common.md
+M10.30C          Include 8 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Rules for all Logic Text Common.md
 M10.30B  Priority  2
 M10.30B      Requesting File C:\Git\GenevaERS-General-Docs\AA Topics Markdown\Workbench User Guide\Keyboard Shortcuts for General Users.md
-M10.30C          Include 8 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
+M10.30C          Include 9 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
   
 M11.00A  Perform ToDoIncludes List 
 M11.10C  Created new Temp Folder - C:\Git\GenevaERS-General-Docs\AT Temp
  
 M11.20A  Priority  1
 M11.20B  Copy input files to Temp  
+M11.20C      Requesting File C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
+M11.20E      Requesting file is a common file
+M11.20F      Requesting file copied to Temp Folder 
+M11.20G          Include 0 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
+M11.20H          Include comes from AC Common Markdown 
+M11.20K          Copied to Temp Folder 
+M11.40A  Process includes for this requesting file = Keyboard Shortcuts Common.md
+M11.40B      Filename for requesting file = Keyboard Shortcuts Common.md
+M11.40E      Path for requesting file = FAQ
+M11.40G      Result of Confirm-Folders for expanded is SUCCESS
+M11.60A      Include Filename = Keyboard Shortcuts All WB Screens Common.md
+M11.70B  Deleted Temp Folder - C:\Git\GenevaERS-General-Docs\AT Temp
+M11.70C  Created new Temp Folder - C:\Git\GenevaERS-General-Docs\AT Temp
+ 
+M11.20A  Priority  1
+M11.20B  Copy input files to Temp  
 M11.20C      Requesting File C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M11.20E      Requesting file is a common file
 M11.20F      Requesting file copied to Temp Folder 
-M11.20G          Include 0 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
+M11.20G          Include 1 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
 M11.20H          Include comes from AC Common Markdown 
 M11.20K          Copied to Temp Folder 
-M11.20G          Include 0 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function ALL.md
+M11.20G          Include 1 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function ALL.md
 M11.20H          Include comes from AC Common Markdown 
 M11.20K          Copied to Temp Folder 
-M11.20G          Include 0 2 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ERF.md
+M11.20G          Include 1 2 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ERF.md
 M11.20H          Include comes from AC Common Markdown 
 M11.20K          Copied to Temp Folder 
-M11.20G          Include 0 3 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ECA.md
+M11.20G          Include 1 3 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function ALL ECA.md
 M11.20H          Include comes from AC Common Markdown 
 M11.20K          Copied to Temp Folder 
 M11.40A  Process includes for this requesting file = Introduction Function ALL.md
@@ -2737,23 +2797,23 @@ M11.70C  Created new Temp Folder - C:\Git\GenevaERS-General-Docs\AT Temp
  
 M11.20A  Priority  1
 M11.20B  Copy input files to Temp  
-M11.20C      Requesting File C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M11.20C      Requesting File C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function Batchdate.md
 M11.20E      Requesting file is a common file
 M11.20F      Requesting file copied to Temp Folder 
-M11.20G          Include 1 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
+M11.20G          Include 2 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
 M11.20H          Include comes from AC Common Markdown 
 M11.20K          Copied to Temp Folder 
-M11.20G          Include 1 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function BATCHDATE.md
+M11.20G          Include 2 1 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Syntax Function BATCHDATE.md
 M11.20H          Include comes from AC Common Markdown 
 M11.20K          Copied to Temp Folder 
-M11.20G          Include 1 2 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ERF.md
+M11.20G          Include 2 2 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ERF.md
 M11.20H          Include comes from AC Common Markdown 
 M11.20K          Copied to Temp Folder 
-M11.20G          Include 1 3 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ECA.md
+M11.20G          Include 2 3 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Example Function BATCHDATE ECA.md
 M11.20H          Include comes from AC Common Markdown 
 M11.20K          Copied to Temp Folder 
-M11.40A  Process includes for this requesting file = Introduction Function BATCHDATE.md
-M11.40B      Filename for requesting file = Introduction Function BATCHDATE.md
+M11.40A  Process includes for this requesting file = Introduction Function Batchdate.md
+M11.40B      Filename for requesting file = Introduction Function Batchdate.md
 M11.40E      Path for requesting file = Logic Text
 M11.40G      Result of Confirm-Folders for expanded is SUCCESS
 M11.60A      Include Filename = AA Syntax Legend.md
@@ -2768,7 +2828,7 @@ M11.20B  Copy input files to Temp
 M11.20C      Requesting File C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Keyboard Shortcuts Logic Text Common.md
 M11.20E      Requesting file is a common file
 M11.20F      Requesting file copied to Temp Folder 
-M11.20G          Include 2 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
+M11.20G          Include 3 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts All WB Screens Common.md
 M11.20H          Include comes from AC Common Markdown 
 M11.20K          Copied to Temp Folder 
 M11.40A  Process includes for this requesting file = Keyboard Shortcuts Logic Text Common.md
@@ -2784,8 +2844,8 @@ M11.20B  Copy input files to Temp
 M11.20C      Requesting File C:\Git\GenevaERS-General-Docs\AA Topics Markdown\Workbench Admin Guide\Keyboard Shortcuts for Admins.md
 M11.20D      Requesting file is a topic
 M11.20F      Requesting file copied to Temp Folder 
-M11.20G          Include 3 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
-M11.20H          Include comes from AC Common Markdown 
+M11.20G          Include 4 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
+M11.20J          Include comes from AD Expanded Markdown 
 M11.20K          Copied to Temp Folder 
 M11.40A  Process includes for this requesting file = Keyboard Shortcuts for Admins.md
 M11.40B      Filename for requesting file = Keyboard Shortcuts for Admins.md
@@ -2802,7 +2862,7 @@ M11.20B  Copy input files to Temp
 M11.20C      Requesting File C:\Git\GenevaERS-General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function ALL.md
 M11.20D      Requesting file is a topic
 M11.20F      Requesting file copied to Temp Folder 
-M11.20G          Include 4 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
+M11.20G          Include 5 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M11.20J          Include comes from AD Expanded Markdown 
 M11.20K          Copied to Temp Folder 
 M11.40A  Process includes for this requesting file = Function ALL.md
@@ -2820,7 +2880,7 @@ M11.20B  Copy input files to Temp
 M11.20C      Requesting File C:\Git\GenevaERS-General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function BATCHDATE.md
 M11.20D      Requesting file is a topic
 M11.20F      Requesting file copied to Temp Folder 
-M11.20G          Include 5 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
+M11.20G          Include 6 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
 M11.20J          Include comes from AD Expanded Markdown 
 M11.20K          Copied to Temp Folder 
 M11.40A  Process includes for this requesting file = Function BATCHDATE.md
@@ -2838,7 +2898,7 @@ M11.20B  Copy input files to Temp
 M11.20C      Requesting File C:\Git\GenevaERS-General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Keyboard Shortcuts Logic Text.md
 M11.20D      Requesting file is a topic
 M11.20F      Requesting file copied to Temp Folder 
-M11.20G          Include 6 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Keyboard Shortcuts Logic Text Common.md
+M11.20G          Include 7 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Keyboard Shortcuts Logic Text Common.md
 M11.20J          Include comes from AD Expanded Markdown 
 M11.20K          Copied to Temp Folder 
 M11.40A  Process includes for this requesting file = Keyboard Shortcuts Logic Text.md
@@ -2856,7 +2916,7 @@ M11.20B  Copy input files to Temp
 M11.20C      Requesting File C:\Git\GenevaERS-General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M11.20D      Requesting file is a topic
 M11.20F      Requesting file copied to Temp Folder 
-M11.20G          Include 7 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Rules for all Logic Text Common.md
+M11.20G          Include 8 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\Logic Text\Rules for all Logic Text Common.md
 M11.20H          Include comes from AC Common Markdown 
 M11.20K          Copied to Temp Folder 
 M11.40A  Process includes for this requesting file = Rules for all Logic Text.md
@@ -2874,8 +2934,8 @@ M11.20B  Copy input files to Temp
 M11.20C      Requesting File C:\Git\GenevaERS-General-Docs\AA Topics Markdown\Workbench User Guide\Keyboard Shortcuts for General Users.md
 M11.20D      Requesting file is a topic
 M11.20F      Requesting file copied to Temp Folder 
-M11.20G          Include 8 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
-M11.20H          Include comes from AC Common Markdown 
+M11.20G          Include 9 0 C:\Git\GenevaERS-General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
+M11.20J          Include comes from AD Expanded Markdown 
 M11.20K          Copied to Temp Folder 
 M11.40A  Process includes for this requesting file = Keyboard Shortcuts for General Users.md
 M11.40B      Filename for requesting file = Keyboard Shortcuts for General Users.md
