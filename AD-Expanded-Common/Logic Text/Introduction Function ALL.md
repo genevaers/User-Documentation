@@ -1,6 +1,6 @@
 ﻿# Syntax: function ALL
 
-## How do I use ALL? 
+# How do I use ALL? 
 
 If you provide a text string then ALL can check if all of a field value is that text string \(repeated\). ALL is different from REPEAT because REPEAT has a fixed number of repetitions, whereas ALL is flexible and compares with fields of different lengths.
 
@@ -8,17 +8,17 @@ ALL can only be used in **Extract Record Filter** or **Extract Column Assignment
 
 ![(Syntax Legend)](../images/LTZZ_Syntax_legend.gif )
 
-## Syntax 
+# Syntax 
 
 ![(Function ALL)](../images/LTSF_ALL_01.gif )
 
-## Rules for the syntax 
+# Rules for the syntax 
 
 ALL can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
 
-See also topic "**Rules for all logic text**".
+See also topic: [Rules for all Logic Text](Rules for all Logic Text) 
 
-## Examples: ALL function in Extract Record Filter 
+# Examples: ALL function in Extract Record Filter 
 
 
 |Example logic text|Meaning|
@@ -27,7 +27,7 @@ See also topic "**Rules for all logic text**".
 |IF ({field2} = ALL("-"))<br>THEN SKIP<br>ENDIF|Skip for output those records with field2 is equal to all dashes.<br> Select all other records. This example gives the same result as:<br>SKIPIF({field2} = ALL("-"))|
 
 
-## Examples: ALL function in Extract Column Assignment 
+# Examples: ALL function in Extract Column Assignment 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -35,6 +35,4 @@ See also topic "**Rules for all logic text**".
 |IF (field4} = ALL("-"))<br>THEN COLUMN = (field5} + (field6}<br>ENDIF|If field4 is all dashes, then set the current column<br> to a total of fields 5 and 6.|
 
   
-
-
 
