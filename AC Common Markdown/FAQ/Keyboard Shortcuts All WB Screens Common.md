@@ -1,5 +1,4 @@
 
-
 These shortcuts work on all workbench screens **except the Connection screen and the Login screen.**
   
 |Shortcut|Notes|
@@ -8,7 +7,7 @@ These shortcuts work on all workbench screens **except the Connection screen and
 | | |
 |Alt|Jump to the **File** menu.|
 | | |
-|Arrow down|Behavior depends on context.<br>Arrow down has special behavior on these screens:<br> -   New/Edit Logical Record screen \(LR Fields tab\)<br> -   New/Edit View screen \(View Editor tab\)<br>On all other workbench screens, the behavior of Arrow down depends on the position of the cursor, as follows:<br> -   In a multi-line text field \(such as Comments for a Control Record\), Arrow down **jumps to the line below**. If already on the lowest line, then Arrow down has no effect.<br>-   In a list of values Arrow down **highlights the next value below**. If the lowest value in the list is highlighted, then Arrow down has no effect.<br>-   In other types of fields, Arrow down has no effect.|
+|Arrow down|Behavior depends on context.<br>Arrow down has special behavior on these screens:<br> - New/Edit Logical Record screen \(LR Fields tab\)<br> - New/Edit View screen \(View Editor tab\)<br>On all other workbench screens, the behavior of Arrow down depends on the position of the cursor, as follows:<br> - In a multi-line text field \(such as Comments for a Control Record\), Arrow down **jumps to the line below**. If already on the lowest line, then Arrow down has no effect.<br>- In a list of values Arrow down **highlights the next value below**. If the lowest value in the list is highlighted, then Arrow down has no effect.<br>-   In other types of fields, Arrow down has no effect.|
 | | |
 |Arrow left|Behavior depends on context.<br>Arrow left has special behavior on these screens:<br> -   New/Edit Logical Record screen \(LR Fields tab\)<br> -   New/Edit View screen \(View Editor tab\)<br> On all other workbench screens, the behavior of Arrow left depends on the position of the cursor, as follows:<br> -   In a text or numeric field such as a Name field, Arrow left **jumps one character to the left**. In a multi-line text field \(such as Comments for a Control Record\) Arrow left may jump to the right hand end of the line above. If already on the leftmost character on the first line, then Arrow left has no effect.<br> -   In a list of values, Arrow left **highlights the next value above**. If already on the highest value in the list, then Arrow left has no effect.<br> -   In other types of fields, Arrow left has no effect.|
 | | |
