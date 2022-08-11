@@ -1,5 +1,5 @@
 ﻿M01.73A  Trace file for Prepare-Website.ps1   Version 1.1
-M01.73C  Run Date       08/11/2022 15:51:18
+M01.73C  Run Date       08/11/2022 16:55:06
   
 M01.83C  Created new ExpandedCommonFolder - C:\Git\GenevaERS\General-Docs\AD-Expanded-Common
 M01.84C  Created new ExpandedTopicsFolder - C:\Git\GenevaERS\General-Docs\AE-Expanded-Topics
@@ -269,7 +269,7 @@ M04.61D  Sub-folder C:\Git\GenevaERS\General-Docs\docs\Workbench User Guide
 M04.61D  Sub-folder C:\Git\GenevaERS\General-Docs\docs\_posts
 M04.61D  Sub-folder C:\Git\GenevaERS\General-Docs\docs\_sass
 M04.61D  Sub-folder C:\Git\GenevaERS\General-Docs\docs\_site
-M04.61E  MD files under Website 199
+M04.61E  MD files under Website 213
  
 M04.61F  Display Website MD files 
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Basic solutions\Solution S01 - Generate report.md
@@ -417,12 +417,26 @@ M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\User-Exits\Runbook XLST 
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\User-Exits\Runbook XP01 Record Paste Up.md
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Admin Guide\Keyboard Shortcuts for Admins.md
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Intro\Dummy.md
-M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Summary Diagrams\Dummy.md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Summary Diagrams\Diagrams - Extract Column Assignment (ECA)\Dummy.md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Summary Diagrams\Diagrams - Extract Record Format (ERF)\Dummy.md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Summary Diagrams\Diagrams - Format Column Assignment (FCA)\Dummy.md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Summary Diagrams\Diagrams - Format Record Filter (FRF)\Dummy.md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Summary Diagrams\Diagrams - Extract Column Assignment (ECA).md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Summary Diagrams\Diagrams - Extract Record Filter (ERF).md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Summary Diagrams\Diagrams - Format Column Assignment (FCA).md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Summary Diagrams\Diagrams - Format Record Filter (FRF).md
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Syntax\Function ALL.md
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Syntax\Function BATCHDATE.md
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Syntax\Keyboard Shortcuts Logic Text.md
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Syntax\Rules for all Logic Text.md
-M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Types\Dummy.md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Types\Extract Column Assignment (ECA)\Dummy.md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Types\Extract Record Format (ERF)\Dummy.md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Types\Format Column Assignment (FCA)\Dummy.md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Types\Format Record Filter (FRF)\Dummy.md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Types\Extract Column Assignment (ECA).md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Types\Extract Record Filter (ERF).md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Types\Format Column Assignment (FCA).md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Types\Format Record Filter (FRF).md
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Screens\WorkbenchScreenDependencyChecker.md
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench User Guide\Keyboard Shortcuts for General Users.md
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\_site\Workbench Admin Guide\Keyboard Shortcuts for Admins.md
