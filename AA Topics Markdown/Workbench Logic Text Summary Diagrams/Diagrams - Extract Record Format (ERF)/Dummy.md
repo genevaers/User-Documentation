@@ -1,9 +1,10 @@
 ---
 layout: default
 title: "Dummy"
-parent: Workbench Logic Text Types
+parent: Workbench Logic Text Intro
 nav_order: 1
 ---
+
 
 
 
