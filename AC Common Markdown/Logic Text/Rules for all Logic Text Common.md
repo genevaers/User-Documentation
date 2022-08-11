@@ -3,7 +3,7 @@
   
 |Rule 1|Notes|
 |-----|-----|
-|**Extra blanks between keywords<br> and expressions** have no effect.|For example, these IF statements are all the same:<br>IF ({field1}={field2}) THEN COLUMN={field1} ENDIF<br>IF ({field1} = {field2}) THEN<br>COLUMN = {field1} ENDIF<br>   <br>IF<br>  ({field1}<br>           =<br>            {field2})<br>                     THEN<br>                         COLUMN<br>                          =<br >                          {field1}<br>                              ENDIF<br>IF ({field1} = {field2})THEN<br>    COLUMN = {field1}<br>ENDIF<br>  <br>IF ({field1} = {field2})<br>   THEN COLUMN  =  {field1}<br>ENDIF<br>  **WARNING: Extra blanks change text strings**,<br>for example "ABC" and "A B C" are different strings.<br>|
+|**Extra blanks between keywords<br> and expressions** have no effect.|For example, these IF statements are all the same:<br> <br>IF ({field1}={field2}) THEN COLUMN={field1} ENDIF<br>IF ({field1} = {field2}) THEN<br>COLUMN = {field1} ENDIF<br>   <br>IF<br>  ({field1}<br>           =<br>            {field2})<br>                     THEN<br>                         COLUMN<br>                          =<br >                          {field1}<br>                              ENDIF<br>IF ({field1} = {field2})THEN<br>    COLUMN = {field1}<br>ENDIF<br>  <br>IF ({field1} = {field2})<br>   THEN COLUMN  =  {field1}<br>ENDIF<br>  **WARNING: Extra blanks change text strings**,<br>for example "ABC" and "A B C" are different strings.<br>|
   
 # Rule 2 - Continue on next line
   
@@ -15,7 +15,7 @@
   
 |Rule 3|Notes|
 |-----|-----|
-|The **case of keywords**<br> has no effect.|For example, these IF statements are all the same:<br>IF ({FIELD1} >= COL.2)<br>    THEN COLUMN = {FIELD1}<br>    ELSE COLUMN = COL.2 ENDIF<br>  <br>if ({field1} >= col.2)<br>   then column = {field1}<br>   else column = col.2 endif<br>  <br>If ({Field1} >= Col.2)<br>    Then Column = {Field1}<br>    Else Column = Col.2 Endif<br>  <br>**WARNING: Case changes text strings**,<br> for example "ABC" and "abc" are different strings.<br>  <br>|
+|The **case of keywords**<br> has no effect.|For example, these IF statements are all the same:<br> <br>IF ({FIELD1} >= COL.2)<br>    THEN COLUMN = {FIELD1}<br>    ELSE COLUMN = COL.2 ENDIF<br>  <br>if ({field1} >= col.2)<br>   then column = {field1}<br>   else column = col.2 endif<br>  <br>If ({Field1} >= Col.2)<br>    Then Column = {Field1}<br>    Else Column = Col.2 Endif<br>  <br>**WARNING: Case changes text strings**,<br> for example "ABC" and "abc" are different strings.<br>  <br>|
   
 # Rule 4 - Single quote is line comment
   
