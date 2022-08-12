@@ -1,11 +1,15 @@
 ---
 layout: default
 title: "Examples - SELECTIF statements"
-parent: Extract Column Assignment (ECA)
+parent: Extract Record Filter (ERF)
 grand_parent: Workbench Logic Text Types
 nav_order: 2
 ---
 
 # Examples - SELECTIF statements
-
-**UNDER CONSTRUCTION**
+{: .no_toc}
+TABLE OF CONTENTS 
+1. TOC
+{:toc}  
+ 
+# UNDER CONSTRUCTION
