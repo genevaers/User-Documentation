@@ -1,8 +1,8 @@
 ---
 layout: default
 title: "Function BATCHDATE"
-parent: Workbench Logic Text Syntax
-
+parent: Syntax - functions
+grand_parent: Workbench Logic Text Syntax
 nav_order: 2
 ---
 

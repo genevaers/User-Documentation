@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "Function ALL"
-parent: Workbench Logic Text Syntax
+parent: Syntax - functions
+grand_parent: Workbench Logic Text Syntax
 
 nav_order: 1
 ---

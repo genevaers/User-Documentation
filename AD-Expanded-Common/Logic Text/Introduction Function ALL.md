@@ -6,17 +6,17 @@ If you provide a text string then ALL can check if all of a field value is that 
 
 ALL can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
 
-![(Syntax Legend)](../images/LTZZ_Syntax_legend.gif )
+![(Syntax Legend)](../../images/LTZZ_Syntax_legend.gif )
 
 # Syntax 
 
-![(Function ALL)](../images/LTSF_ALL_01.gif )
+![(Function ALL)](../../images/LTSF_ALL_01.gif )
 
 # Rules for the syntax 
 
 ALL can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
 
-See also topic: [Rules for all Logic Text](Rules for all Logic Text) 
+See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
 # Examples: ALL function in Extract Record Filter 
 

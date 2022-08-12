@@ -1,8 +1,8 @@
 ﻿---
 layout: default
 title: "Function BATCHDATE"
-parent: Workbench Logic Text Syntax
-
+parent: Syntax - functions
+grand_parent: Workbench Logic Text Syntax
 nav_order: 2
 ---
 
@@ -16,17 +16,17 @@ The parameter for BATCHDATE is a number of days to add or delete from the defaul
 
 BATCHDATE can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
 
-![(Syntax Legend)](../images/LTZZ_Syntax_legend.gif )
+![(Syntax Legend)](../../images/LTZZ_Syntax_legend.gif )
 
 # Syntax 
 
-![Function BATCHDATE](../images/LTSF_BATCHDATE_01.gif)
+![Function BATCHDATE](../../images/LTSF_BATCHDATE_01.gif)
 
 # Rules for the syntax 
 
 BATCHDATE can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
 
-See also topic: [Rules for all Logic Text](Rules for all Logic Text) 
+See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
 # Examples: BATCHDATE function in Extract Record Filter
 
