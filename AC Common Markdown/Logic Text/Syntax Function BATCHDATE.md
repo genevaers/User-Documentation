@@ -1,1 +1,1 @@
-![Function BATCHDATE](../images/LTSF_BATCHDATE_01.gif)
+![Function BATCHDATE](../../images/LTSF_BATCHDATE_01.gif)
