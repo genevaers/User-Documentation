@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "Dummy"
-parent: Workbench Logic Text Intro
+parent: Diagrams - Format Column Assignment (FCA)
+grand_parent: Workbench Logic Text Summary Diagrams
 nav_order: 1
 ---
 

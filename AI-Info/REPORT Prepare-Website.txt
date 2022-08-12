@@ -1,5 +1,5 @@
 ﻿M01.72A  Report file for Prepare-Website.ps1   Version 1.1
-M01.72C  Run Date       08/11/2022 17:21:52
+M01.72C  Run Date       08/12/2022 17:47:50
   
 M02.10D  Params file                   C:\Users\EUGENEMORROW\Documents\Prepare-Website-Params.txt
 M02.10E 		BigFolder                 C:\Git\GenevaERS\General-Docs

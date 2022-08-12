@@ -1,4 +1,4 @@
-docs\_site\*.*
+docs\_site\*.html
 docs\sass-cache*.*
 docs\jekyll-cache*.*
 docs\jekyll-metadata*.*
@@ -15,6 +15,6 @@ docs\just-the-docs-default.css
 docs\just-the-docs-light.css
 docs\search-data.json
 docs\welcome-to-jekyll.html
-AI-Info\*.*
+AI-Info\*.txt
 AD-Expanded-Common\*.*
 AE-Expanded-Topics\*.*
