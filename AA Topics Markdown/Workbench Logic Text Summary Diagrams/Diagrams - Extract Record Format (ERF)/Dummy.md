@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "Dummy"
-parent: Workbench Logic Text Intro
+parent: Diagrams - Extract Record Filter (ERF)
+grand_parent: Workbench Logic Text Summary Diagrams
 nav_order: 1
 ---
 

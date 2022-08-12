@@ -1,5 +1,5 @@
 ﻿M01.73A  Trace file for Prepare-Website.ps1   Version 1.1
-M01.73C  Run Date       08/11/2022 17:21:52
+M01.73C  Run Date       08/12/2022 17:47:50
   
 M01.83C  Created new ExpandedCommonFolder - C:\Git\GenevaERS\General-Docs\AD-Expanded-Common
 M01.84C  Created new ExpandedTopicsFolder - C:\Git\GenevaERS\General-Docs\AE-Expanded-Topics
