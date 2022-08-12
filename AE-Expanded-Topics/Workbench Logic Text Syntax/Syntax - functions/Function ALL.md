@@ -1,7 +1,8 @@
 ﻿---
 layout: default
 title: "Function ALL"
-parent: Workbench Logic Text Syntax
+parent: Syntax - functions
+grand_parent: Workbench Logic Text Syntax
 
 nav_order: 1
 ---
@@ -24,7 +25,7 @@ ALL can only be used in **Extract Record Filter** or **Extract Column Assignment
 
 ALL can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
 
-See also topic: [Rules for all Logic Text](Rules for all Logic Text) 
+See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
 # Examples: ALL function in Extract Record Filter 
 

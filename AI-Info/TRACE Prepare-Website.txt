@@ -1,5 +1,5 @@
 ﻿M01.73A  Trace file for Prepare-Website.ps1   Version 1.1
-M01.73C  Run Date       08/11/2022 16:55:06
+M01.73C  Run Date       08/12/2022 14:28:26
   
 M01.83C  Created new ExpandedCommonFolder - C:\Git\GenevaERS\General-Docs\AD-Expanded-Common
 M01.84C  Created new ExpandedTopicsFolder - C:\Git\GenevaERS\General-Docs\AE-Expanded-Topics
@@ -187,8 +187,8 @@ M04.30C  	Index1 149 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbenc
 M04.30C  	Index1 150 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Summary Diagrams\Diagrams - Extract Record Filter (ERF).md
 M04.30C  	Index1 151 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Summary Diagrams\Diagrams - Format Column Assignment (FCA).md
 M04.30C  	Index1 152 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Summary Diagrams\Diagrams - Format Record Filter (FRF).md
-M04.30C  	Index1 153 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function ALL.md
-M04.30C  	Index1 154 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function BATCHDATE.md
+M04.30C  	Index1 153 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function ALL.md
+M04.30C  	Index1 154 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function BATCHDATE.md
 M04.30C  	Index1 155 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Keyboard Shortcuts Logic Text.md
 M04.30C  	Index1 156 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M04.30C  	Index1 157 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Extract Column Assignment (ECA)\Dummy.md
@@ -1862,12 +1862,12 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 153 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function ALL.md
+M06.20B  Read topic file 153 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function ALL.md
 M06.27H  TopicIncludesArray(153,0) = C:\Git\GenevaERS\General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M06.27M  end =====================================================
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 154 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function BATCHDATE.md
+M06.20B  Read topic file 154 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function BATCHDATE.md
 M06.27H  TopicIncludesArray(154,0) = C:\Git\GenevaERS\General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
 M06.27M  end =====================================================
  
@@ -2273,9 +2273,9 @@ M06.28G  Topic copied to website and path
 M06.30B  Display includes in topic files
 M06.30C  Topic file 143 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Admin Guide\Keyboard Shortcuts for Admins.md
 M06.30D      Include C:\Git\GenevaERS\General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
-M06.30C  Topic file 153 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function ALL.md
+M06.30C  Topic file 153 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function ALL.md
 M06.30D      Include C:\Git\GenevaERS\General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
-M06.30C  Topic file 154 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function BATCHDATE.md
+M06.30C  Topic file 154 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function BATCHDATE.md
 M06.30D      Include C:\Git\GenevaERS\General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
 M06.30C  Topic file 155 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Keyboard Shortcuts Logic Text.md
 M06.30D      Include C:\Git\GenevaERS\General-Docs\AC Common Markdown\Logic Text\Keyboard Shortcuts Logic Text Common.md
@@ -2786,9 +2786,9 @@ M09.00A  Priorities for topic includes
 M09.00B  Topics with includes get priority 2
 M09.00C      Topic at index 143 C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Admin Guide\Keyboard Shortcuts for Admins.md
 M09.00D          Priority 2
-M09.00C      Topic at index 153 C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function ALL.md
+M09.00C      Topic at index 153 C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function ALL.md
 M09.00D          Priority 2
-M09.00C      Topic at index 154 C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function BATCHDATE.md
+M09.00C      Topic at index 154 C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function BATCHDATE.md
 M09.00D          Priority 2
 M09.00C      Topic at index 155 C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Keyboard Shortcuts Logic Text.md
 M09.00D          Priority 2
@@ -2805,8 +2805,8 @@ M10.20B      Requesting common file =  C:\Git\GenevaERS\General-Docs\AC Common M
 M10.20B      Requesting common file =  C:\Git\GenevaERS\General-Docs\AC Common Markdown\Logic Text\Keyboard Shortcuts Logic Text Common.md
 M10.20M  Target priority is target includes priority =  2
 M10.20N      Requesting topic file =  C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Admin Guide\Keyboard Shortcuts for Admins.md
-M10.20N      Requesting topic file =  C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function ALL.md
-M10.20N      Requesting topic file =  C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function BATCHDATE.md
+M10.20N      Requesting topic file =  C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function ALL.md
+M10.20N      Requesting topic file =  C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function BATCHDATE.md
 M10.20N      Requesting topic file =  C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Keyboard Shortcuts Logic Text.md
 M10.20N      Requesting topic file =  C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M10.20N      Requesting topic file =  C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench User Guide\Keyboard Shortcuts for General Users.md
@@ -2834,10 +2834,10 @@ M10.30B  Priority  2
 M10.30B      Requesting File C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Admin Guide\Keyboard Shortcuts for Admins.md
 M10.30C          Include 4 0 C:\Git\GenevaERS\General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
 M10.30B  Priority  2
-M10.30B      Requesting File C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function ALL.md
+M10.30B      Requesting File C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function ALL.md
 M10.30C          Include 5 0 C:\Git\GenevaERS\General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M10.30B  Priority  2
-M10.30B      Requesting File C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function BATCHDATE.md
+M10.30B      Requesting File C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function BATCHDATE.md
 M10.30C          Include 6 0 C:\Git\GenevaERS\General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
 M10.30B  Priority  2
 M10.30B      Requesting File C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Keyboard Shortcuts Logic Text.md
@@ -2960,7 +2960,7 @@ M11.70C  Created new Temp Folder - C:\Git\GenevaERS\General-Docs\AT Temp
  
 M11.20A  Priority  2
 M11.20B  Copy input files to Temp  
-M11.20C      Requesting File C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function ALL.md
+M11.20C      Requesting File C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function ALL.md
 M11.20D      Requesting file is a topic
 M11.20F      Requesting file copied to Temp Folder 
 M11.20G          Include 5 0 C:\Git\GenevaERS\General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
@@ -2968,7 +2968,7 @@ M11.20J          Include comes from AD Expanded Markdown
 M11.20K          Copied to Temp Folder 
 M11.40A  Process includes for this requesting file = Function ALL.md
 M11.40B      Filename for requesting file = Function ALL.md
-M11.40E      Path for requesting file = Workbench Logic Text Syntax
+M11.40E      Path for requesting file = Workbench Logic Text Syntax\Syntax - functions
 M11.40G      Result of Confirm-Folders for expanded is SUCCESS
 M11.40H      Result of Confirm-Folders for website is SUCCESS
 M11.60A      Include Filename = Introduction Function ALL.md
@@ -2978,7 +2978,7 @@ M11.70C  Created new Temp Folder - C:\Git\GenevaERS\General-Docs\AT Temp
  
 M11.20A  Priority  2
 M11.20B  Copy input files to Temp  
-M11.20C      Requesting File C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function BATCHDATE.md
+M11.20C      Requesting File C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function BATCHDATE.md
 M11.20D      Requesting file is a topic
 M11.20F      Requesting file copied to Temp Folder 
 M11.20G          Include 6 0 C:\Git\GenevaERS\General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
@@ -2986,7 +2986,7 @@ M11.20J          Include comes from AD Expanded Markdown
 M11.20K          Copied to Temp Folder 
 M11.40A  Process includes for this requesting file = Function BATCHDATE.md
 M11.40B      Filename for requesting file = Function BATCHDATE.md
-M11.40E      Path for requesting file = Workbench Logic Text Syntax
+M11.40E      Path for requesting file = Workbench Logic Text Syntax\Syntax - functions
 M11.40G      Result of Confirm-Folders for expanded is SUCCESS
 M11.40H      Result of Confirm-Folders for website is SUCCESS
 M11.60A      Include Filename = Introduction Function BATCHDATE.md
