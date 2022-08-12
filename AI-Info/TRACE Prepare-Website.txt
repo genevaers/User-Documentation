@@ -1,5 +1,5 @@
 ﻿M01.73A  Trace file for Prepare-Website.ps1   Version 1.1
-M01.73C  Run Date       08/12/2022 18:29:57
+M01.73C  Run Date       08/13/2022 08:14:46
   
 M01.83C  Created new ExpandedCommonFolder - C:\Git\GenevaERS\General-Docs\AD-Expanded-Common
 M01.84C  Created new ExpandedTopicsFolder - C:\Git\GenevaERS\General-Docs\AE-Expanded-Topics
@@ -198,7 +198,7 @@ M04.30C  	Index1 160 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbenc
 M04.30C  	Index1 161 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - SELECT, SELECTIF SKIP & SKIPIF statements.md
 M04.30C  	Index1 162 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - string comparison.md
 M04.30C  	Index1 163 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - WRITE statements.md
-M04.30C  	Index1 164 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Extract Column Assignment (ECA)\Dummy.md
+M04.30C  	Index1 164 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Extract Column Assignment (ECA)\Introduction - Extract Column Assignment (ECA).md
 M04.30C  	Index1 165 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Extract Record Format (ERF)\Dummy.md
 M04.30C  	Index1 166 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Format Column Assignment (FCA)\Dummy.md
 M04.30C  	Index1 167 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Format Record Filter (FRF)\Dummy.md
@@ -1952,9 +1952,9 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 164 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Extract Column Assignment (ECA)\Dummy.md
+M06.20B  Read topic file 164 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Extract Column Assignment (ECA)\Introduction - Extract Column Assignment (ECA).md
 M06.27M  end =====================================================
-M06.28A  Topic filename with no includes = Dummy.md
+M06.28A  Topic filename with no includes = Introduction - Extract Column Assignment (ECA).md
 M06.28D  Path for topic = Workbench Logic Text Types\Extract Column Assignment (ECA)
 M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
