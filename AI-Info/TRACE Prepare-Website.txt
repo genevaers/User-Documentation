@@ -1,5 +1,5 @@
 ﻿M01.73A  Trace file for Prepare-Website.ps1   Version 1.1
-M01.73C  Run Date       08/12/2022 18:01:05
+M01.73C  Run Date       08/12/2022 18:29:57
   
 M01.83C  Created new ExpandedCommonFolder - C:\Git\GenevaERS\General-Docs\AD-Expanded-Common
 M01.84C  Created new ExpandedTopicsFolder - C:\Git\GenevaERS\General-Docs\AE-Expanded-Topics
@@ -33,7 +33,7 @@ M03.30C  	Index1 13 = C:\Git\GenevaERS\General-Docs\AC Common Markdown\Useful Li
   
 M04.00A  Topic files 
 M04.10A  Start search for topic files
-M04.30B  Found 208 topic files.
+M04.30B  Found 213 topic files.
 M04.30C  	Index1 0 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Basic solutions\Solution S01 - Generate report.md
 M04.30C  	Index1 1 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Basic solutions\Solution S02 - Update file.md
 M04.30C  	Index1 2 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Basic solutions\Solution S03 - Access data in a reference file.md
@@ -187,61 +187,66 @@ M04.30C  	Index1 149 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbenc
 M04.30C  	Index1 150 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Summary Diagrams\Diagrams - Extract Record Filter (ERF).md
 M04.30C  	Index1 151 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Summary Diagrams\Diagrams - Format Column Assignment (FCA).md
 M04.30C  	Index1 152 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Summary Diagrams\Diagrams - Format Record Filter (FRF).md
-M04.30C  	Index1 153 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function ALL.md
-M04.30C  	Index1 154 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function BATCHDATE.md
+M04.30C  	Index1 153 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function ALL.md
+M04.30C  	Index1 154 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function BATCHDATE.md
 M04.30C  	Index1 155 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Keyboard Shortcuts Logic Text.md
 M04.30C  	Index1 156 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M04.30C  	Index1 157 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - COLUMN & Col.nnn statements.md
-M04.30C  	Index1 158 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax -functions.md
-M04.30C  	Index1 159 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Extract Column Assignment (ECA)\Dummy.md
-M04.30C  	Index1 160 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Extract Record Format (ERF)\Dummy.md
-M04.30C  	Index1 161 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Format Column Assignment (FCA)\Dummy.md
-M04.30C  	Index1 162 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Format Record Filter (FRF)\Dummy.md
-M04.30C  	Index1 163 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Extract Column Assignment (ECA).md
-M04.30C  	Index1 164 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Extract Record Filter (ERF).md
-M04.30C  	Index1 165 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Format Column Assignment (FCA).md
-M04.30C  	Index1 166 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Format Record Filter (FRF).md
-M04.30C  	Index1 167 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Screens\WorkbenchScreenDependencyChecker.md
-M04.30C  	Index1 168 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench User Guide\Keyboard Shortcuts for General Users.md
-M04.30C  	Index1 169 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\About this website.md
-M04.30C  	Index1 170 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Basic solutions.md
-M04.30C  	Index1 171 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Basic Views Training.md
-M04.30C  	Index1 172 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Compiler & Data Types.md
-M04.30C  	Index1 173 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Errors in PE Programs.md
-M04.30C  	Index1 174 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Errors in Run Control Utilities.md
-M04.30C  	Index1 175 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Errors in Sub-Programs.md
-M04.30C  	Index1 176 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Errors in User-Exits.md
-M04.30C  	Index1 177 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Errors in Workbench.md
-M04.30C  	Index1 178 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Feature introductions.md
-M04.30C  	Index1 179 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Frequently Asked Questions (FAQ).md
-M04.30C  	Index1 180 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\High Speed Techniques Training.md
-M04.30C  	Index1 181 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\How this website works.md
-M04.30C  	Index1 182 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\How to use this product.md
-M04.30C  	Index1 183 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\index.md
-M04.30C  	Index1 184 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Install.md
-M04.30C  	Index1 185 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Lessons in basic skills.md
-M04.30C  	Index1 186 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Overall Training.md
-M04.30C  	Index1 187 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Checklists.md
-M04.30C  	Index1 188 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Programs.md
-M04.30C  	Index1 189 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Publications.md
-M04.30C  	Index1 190 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\REA Accounting Guide.md
-M04.30C  	Index1 191 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\README.md
-M04.30C  	Index1 192 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Run Control Utilities.md
-M04.30C  	Index1 193 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Run Performance Engine (PE).md
-M04.30C  	Index1 194 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Sub-Programs.md
-M04.30C  	Index1 195 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Typical goals.md
-M04.30C  	Index1 196 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\User guide - start here.md
-M04.30C  	Index1 197 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\User-Exits.md
-M04.30C  	Index1 198 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Website Index.md
-M04.30C  	Index1 199 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Admin Guide.md
-M04.30C  	Index1 200 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Intro.md
-M04.30C  	Index1 201 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Summary Diagrams.md
-M04.30C  	Index1 202 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax.md
-M04.30C  	Index1 203 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types.md
-M04.30C  	Index1 204 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Overviews.md
-M04.30C  	Index1 205 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Screens.md
-M04.30C  	Index1 206 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Training.md
-M04.30C  	Index1 207 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench User Guide.md
+M04.30C  	Index1 158 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions.md
+M04.30C  	Index1 159 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - IF statements.md
+M04.30C  	Index1 160 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - lookup paths.md
+M04.30C  	Index1 161 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - SELECT, SELECTIF SKIP & SKIPIF statements.md
+M04.30C  	Index1 162 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - string comparison.md
+M04.30C  	Index1 163 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - WRITE statements.md
+M04.30C  	Index1 164 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Extract Column Assignment (ECA)\Dummy.md
+M04.30C  	Index1 165 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Extract Record Format (ERF)\Dummy.md
+M04.30C  	Index1 166 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Format Column Assignment (FCA)\Dummy.md
+M04.30C  	Index1 167 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Format Record Filter (FRF)\Dummy.md
+M04.30C  	Index1 168 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Extract Column Assignment (ECA).md
+M04.30C  	Index1 169 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Extract Record Filter (ERF).md
+M04.30C  	Index1 170 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Format Column Assignment (FCA).md
+M04.30C  	Index1 171 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Format Record Filter (FRF).md
+M04.30C  	Index1 172 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Screens\WorkbenchScreenDependencyChecker.md
+M04.30C  	Index1 173 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench User Guide\Keyboard Shortcuts for General Users.md
+M04.30C  	Index1 174 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\About this website.md
+M04.30C  	Index1 175 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Basic solutions.md
+M04.30C  	Index1 176 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Basic Views Training.md
+M04.30C  	Index1 177 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Compiler & Data Types.md
+M04.30C  	Index1 178 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Errors in PE Programs.md
+M04.30C  	Index1 179 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Errors in Run Control Utilities.md
+M04.30C  	Index1 180 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Errors in Sub-Programs.md
+M04.30C  	Index1 181 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Errors in User-Exits.md
+M04.30C  	Index1 182 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Errors in Workbench.md
+M04.30C  	Index1 183 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Feature introductions.md
+M04.30C  	Index1 184 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Frequently Asked Questions (FAQ).md
+M04.30C  	Index1 185 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\High Speed Techniques Training.md
+M04.30C  	Index1 186 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\How this website works.md
+M04.30C  	Index1 187 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\How to use this product.md
+M04.30C  	Index1 188 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\index.md
+M04.30C  	Index1 189 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Install.md
+M04.30C  	Index1 190 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Lessons in basic skills.md
+M04.30C  	Index1 191 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Overall Training.md
+M04.30C  	Index1 192 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Checklists.md
+M04.30C  	Index1 193 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Programs.md
+M04.30C  	Index1 194 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Publications.md
+M04.30C  	Index1 195 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\REA Accounting Guide.md
+M04.30C  	Index1 196 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\README.md
+M04.30C  	Index1 197 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Run Control Utilities.md
+M04.30C  	Index1 198 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Run Performance Engine (PE).md
+M04.30C  	Index1 199 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Sub-Programs.md
+M04.30C  	Index1 200 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Typical goals.md
+M04.30C  	Index1 201 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\User guide - start here.md
+M04.30C  	Index1 202 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\User-Exits.md
+M04.30C  	Index1 203 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Website Index.md
+M04.30C  	Index1 204 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Admin Guide.md
+M04.30C  	Index1 205 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Intro.md
+M04.30C  	Index1 206 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Summary Diagrams.md
+M04.30C  	Index1 207 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax.md
+M04.30C  	Index1 208 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types.md
+M04.30C  	Index1 209 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Overviews.md
+M04.30C  	Index1 210 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Screens.md
+M04.30C  	Index1 211 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Training.md
+M04.30C  	Index1 212 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench User Guide.md
  
 M04.60A  Delete md files under website folder with care 
 M04.61A  Yes there are website sub-folders 
@@ -271,7 +276,7 @@ M04.61D  Sub-folder C:\Git\GenevaERS\General-Docs\docs\Workbench User Guide
 M04.61D  Sub-folder C:\Git\GenevaERS\General-Docs\docs\_posts
 M04.61D  Sub-folder C:\Git\GenevaERS\General-Docs\docs\_sass
 M04.61D  Sub-folder C:\Git\GenevaERS\General-Docs\docs\_site
-M04.61E  MD files under Website 213
+M04.61E  MD files under Website 220
  
 M04.61F  Display Website MD files 
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Basic solutions\Solution S01 - Generate report.md
@@ -427,10 +432,17 @@ M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Sum
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Summary Diagrams\Diagrams - Extract Record Filter (ERF).md
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Summary Diagrams\Diagrams - Format Column Assignment (FCA).md
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Summary Diagrams\Diagrams - Format Record Filter (FRF).md
-M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Syntax\Function ALL.md
-M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Syntax\Function BATCHDATE.md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Syntax\Syntax - functions\Function ALL.md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Syntax\Syntax - functions\Function BATCHDATE.md
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Syntax\Keyboard Shortcuts Logic Text.md
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Syntax\Rules for all Logic Text.md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Syntax\Syntax - COLUMN & Col.nnn statements.md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Syntax\Syntax - functions.md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Syntax\Syntax - IF statements.md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Syntax\Syntax - lookup paths.md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Syntax\Syntax - SELECT, SELECTIF SKIP & SKIPIF statements.md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Syntax\Syntax - string comparison.md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Syntax\Syntax - WRITE statements.md
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Types\Extract Column Assignment (ECA)\Dummy.md
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Types\Extract Record Format (ERF)\Dummy.md
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Types\Format Column Assignment (FCA)\Dummy.md
@@ -442,8 +454,8 @@ M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Logic Text Typ
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench Screens\WorkbenchScreenDependencyChecker.md
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\Workbench User Guide\Keyboard Shortcuts for General Users.md
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\_site\Workbench Admin Guide\Keyboard Shortcuts for Admins.md
-M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\_site\Workbench Logic Text Syntax\Function ALL.md
-M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\_site\Workbench Logic Text Syntax\Function BATCHDATE.md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\_site\Workbench Logic Text Syntax\Syntax - functions\Function ALL.md
+M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\_site\Workbench Logic Text Syntax\Syntax - functions\Function BATCHDATE.md
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\_site\Workbench Logic Text Syntax\Keyboard Shortcuts Logic Text.md
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\_site\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M04.61G      MD File C:\Git\GenevaERS\General-Docs\docs\_site\Workbench User Guide\Keyboard Shortcuts for General Users.md
@@ -538,8 +550,8 @@ M04.63A  MD files left under Website 7
  
 M04.63B  Check Website MD files still there 
 M04.63C      MD File C:\Git\GenevaERS\General-Docs\docs\_site\Workbench Admin Guide\Keyboard Shortcuts for Admins.md
-M04.63C      MD File C:\Git\GenevaERS\General-Docs\docs\_site\Workbench Logic Text Syntax\Function ALL.md
-M04.63C      MD File C:\Git\GenevaERS\General-Docs\docs\_site\Workbench Logic Text Syntax\Function BATCHDATE.md
+M04.63C      MD File C:\Git\GenevaERS\General-Docs\docs\_site\Workbench Logic Text Syntax\Syntax - functions\Function ALL.md
+M04.63C      MD File C:\Git\GenevaERS\General-Docs\docs\_site\Workbench Logic Text Syntax\Syntax - functions\Function BATCHDATE.md
 M04.63C      MD File C:\Git\GenevaERS\General-Docs\docs\_site\Workbench Logic Text Syntax\Keyboard Shortcuts Logic Text.md
 M04.63C      MD File C:\Git\GenevaERS\General-Docs\docs\_site\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M04.63C      MD File C:\Git\GenevaERS\General-Docs\docs\_site\Workbench User Guide\Keyboard Shortcuts for General Users.md
@@ -1864,12 +1876,12 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 153 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function ALL.md
+M06.20B  Read topic file 153 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function ALL.md
 M06.27H  TopicIncludesArray(153,0) = C:\Git\GenevaERS\General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M06.27M  end =====================================================
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 154 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function BATCHDATE.md
+M06.20B  Read topic file 154 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function BATCHDATE.md
 M06.27H  TopicIncludesArray(154,0) = C:\Git\GenevaERS\General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
 M06.27M  end =====================================================
  
@@ -1892,15 +1904,55 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 158 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax -functions.md
+M06.20B  Read topic file 158 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions.md
 M06.27M  end =====================================================
-M06.28A  Topic filename with no includes = Syntax -functions.md
+M06.28A  Topic filename with no includes = Syntax - functions.md
 M06.28D  Path for topic = Workbench Logic Text Syntax
 M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 159 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Extract Column Assignment (ECA)\Dummy.md
+M06.20B  Read topic file 159 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - IF statements.md
+M06.27M  end =====================================================
+M06.28A  Topic filename with no includes = Syntax - IF statements.md
+M06.28D  Path for topic = Workbench Logic Text Syntax
+M06.28F      Result of adding path to website is SUCCESS
+M06.28G  Topic copied to website and path 
+ 
+M06.20A  start read file =========================================
+M06.20B  Read topic file 160 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - lookup paths.md
+M06.27M  end =====================================================
+M06.28A  Topic filename with no includes = Syntax - lookup paths.md
+M06.28D  Path for topic = Workbench Logic Text Syntax
+M06.28F      Result of adding path to website is SUCCESS
+M06.28G  Topic copied to website and path 
+ 
+M06.20A  start read file =========================================
+M06.20B  Read topic file 161 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - SELECT, SELECTIF SKIP & SKIPIF statements.md
+M06.27M  end =====================================================
+M06.28A  Topic filename with no includes = Syntax - SELECT, SELECTIF SKIP & SKIPIF statements.md
+M06.28D  Path for topic = Workbench Logic Text Syntax
+M06.28F      Result of adding path to website is SUCCESS
+M06.28G  Topic copied to website and path 
+ 
+M06.20A  start read file =========================================
+M06.20B  Read topic file 162 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - string comparison.md
+M06.27M  end =====================================================
+M06.28A  Topic filename with no includes = Syntax - string comparison.md
+M06.28D  Path for topic = Workbench Logic Text Syntax
+M06.28F      Result of adding path to website is SUCCESS
+M06.28G  Topic copied to website and path 
+ 
+M06.20A  start read file =========================================
+M06.20B  Read topic file 163 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - WRITE statements.md
+M06.27M  end =====================================================
+M06.28A  Topic filename with no includes = Syntax - WRITE statements.md
+M06.28D  Path for topic = Workbench Logic Text Syntax
+M06.28F      Result of adding path to website is SUCCESS
+M06.28G  Topic copied to website and path 
+ 
+M06.20A  start read file =========================================
+M06.20B  Read topic file 164 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Extract Column Assignment (ECA)\Dummy.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Dummy.md
 M06.28D  Path for topic = Workbench Logic Text Types\Extract Column Assignment (ECA)
@@ -1908,7 +1960,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 160 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Extract Record Format (ERF)\Dummy.md
+M06.20B  Read topic file 165 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Extract Record Format (ERF)\Dummy.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Dummy.md
 M06.28D  Path for topic = Workbench Logic Text Types\Extract Record Format (ERF)
@@ -1916,7 +1968,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 161 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Format Column Assignment (FCA)\Dummy.md
+M06.20B  Read topic file 166 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Format Column Assignment (FCA)\Dummy.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Dummy.md
 M06.28D  Path for topic = Workbench Logic Text Types\Format Column Assignment (FCA)
@@ -1924,7 +1976,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 162 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Format Record Filter (FRF)\Dummy.md
+M06.20B  Read topic file 167 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Format Record Filter (FRF)\Dummy.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Dummy.md
 M06.28D  Path for topic = Workbench Logic Text Types\Format Record Filter (FRF)
@@ -1932,7 +1984,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 163 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Extract Column Assignment (ECA).md
+M06.20B  Read topic file 168 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Extract Column Assignment (ECA).md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Extract Column Assignment (ECA).md
 M06.28D  Path for topic = Workbench Logic Text Types
@@ -1940,7 +1992,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 164 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Extract Record Filter (ERF).md
+M06.20B  Read topic file 169 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Extract Record Filter (ERF).md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Extract Record Filter (ERF).md
 M06.28D  Path for topic = Workbench Logic Text Types
@@ -1948,7 +2000,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 165 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Format Column Assignment (FCA).md
+M06.20B  Read topic file 170 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Format Column Assignment (FCA).md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Format Column Assignment (FCA).md
 M06.28D  Path for topic = Workbench Logic Text Types
@@ -1956,7 +2008,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 166 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Format Record Filter (FRF).md
+M06.20B  Read topic file 171 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types\Format Record Filter (FRF).md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Format Record Filter (FRF).md
 M06.28D  Path for topic = Workbench Logic Text Types
@@ -1964,7 +2016,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 167 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Screens\WorkbenchScreenDependencyChecker.md
+M06.20B  Read topic file 172 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Screens\WorkbenchScreenDependencyChecker.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = WorkbenchScreenDependencyChecker.md
 M06.28D  Path for topic = Workbench Screens
@@ -1972,12 +2024,12 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 168 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench User Guide\Keyboard Shortcuts for General Users.md
-M06.27H  TopicIncludesArray(168,0) = C:\Git\GenevaERS\General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
+M06.20B  Read topic file 173 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench User Guide\Keyboard Shortcuts for General Users.md
+M06.27H  TopicIncludesArray(173,0) = C:\Git\GenevaERS\General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
 M06.27M  end =====================================================
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 169 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\About this website.md
+M06.20B  Read topic file 174 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\About this website.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = About this website.md
 M06.28D  Path for topic = 
@@ -1985,7 +2037,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 170 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Basic solutions.md
+M06.20B  Read topic file 175 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Basic solutions.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Basic solutions.md
 M06.28D  Path for topic = 
@@ -1993,7 +2045,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 171 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Basic Views Training.md
+M06.20B  Read topic file 176 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Basic Views Training.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Basic Views Training.md
 M06.28D  Path for topic = 
@@ -2001,7 +2053,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 172 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Compiler & Data Types.md
+M06.20B  Read topic file 177 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Compiler & Data Types.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Compiler & Data Types.md
 M06.28D  Path for topic = 
@@ -2009,7 +2061,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 173 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Errors in PE Programs.md
+M06.20B  Read topic file 178 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Errors in PE Programs.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Errors in PE Programs.md
 M06.28D  Path for topic = 
@@ -2017,7 +2069,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 174 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Errors in Run Control Utilities.md
+M06.20B  Read topic file 179 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Errors in Run Control Utilities.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Errors in Run Control Utilities.md
 M06.28D  Path for topic = 
@@ -2025,7 +2077,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 175 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Errors in Sub-Programs.md
+M06.20B  Read topic file 180 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Errors in Sub-Programs.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Errors in Sub-Programs.md
 M06.28D  Path for topic = 
@@ -2033,7 +2085,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 176 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Errors in User-Exits.md
+M06.20B  Read topic file 181 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Errors in User-Exits.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Errors in User-Exits.md
 M06.28D  Path for topic = 
@@ -2041,7 +2093,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 177 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Errors in Workbench.md
+M06.20B  Read topic file 182 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Errors in Workbench.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Errors in Workbench.md
 M06.28D  Path for topic = 
@@ -2049,7 +2101,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 178 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Feature introductions.md
+M06.20B  Read topic file 183 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Feature introductions.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Feature introductions.md
 M06.28D  Path for topic = 
@@ -2057,7 +2109,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 179 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Frequently Asked Questions (FAQ).md
+M06.20B  Read topic file 184 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Frequently Asked Questions (FAQ).md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Frequently Asked Questions (FAQ).md
 M06.28D  Path for topic = 
@@ -2065,7 +2117,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 180 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\High Speed Techniques Training.md
+M06.20B  Read topic file 185 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\High Speed Techniques Training.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = High Speed Techniques Training.md
 M06.28D  Path for topic = 
@@ -2073,7 +2125,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 181 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\How this website works.md
+M06.20B  Read topic file 186 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\How this website works.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = How this website works.md
 M06.28D  Path for topic = 
@@ -2081,7 +2133,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 182 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\How to use this product.md
+M06.20B  Read topic file 187 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\How to use this product.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = How to use this product.md
 M06.28D  Path for topic = 
@@ -2089,7 +2141,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 183 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\index.md
+M06.20B  Read topic file 188 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\index.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = index.md
 M06.28D  Path for topic = 
@@ -2097,7 +2149,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 184 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Install.md
+M06.20B  Read topic file 189 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Install.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Install.md
 M06.28D  Path for topic = 
@@ -2105,7 +2157,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 185 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Lessons in basic skills.md
+M06.20B  Read topic file 190 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Lessons in basic skills.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Lessons in basic skills.md
 M06.28D  Path for topic = 
@@ -2113,7 +2165,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 186 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Overall Training.md
+M06.20B  Read topic file 191 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Overall Training.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Overall Training.md
 M06.28D  Path for topic = 
@@ -2121,7 +2173,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 187 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Checklists.md
+M06.20B  Read topic file 192 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Checklists.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = PE Checklists.md
 M06.28D  Path for topic = 
@@ -2129,7 +2181,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 188 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Programs.md
+M06.20B  Read topic file 193 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Programs.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = PE Programs.md
 M06.28D  Path for topic = 
@@ -2137,7 +2189,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 189 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Publications.md
+M06.20B  Read topic file 194 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Publications.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Publications.md
 M06.28D  Path for topic = 
@@ -2145,7 +2197,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 190 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\REA Accounting Guide.md
+M06.20B  Read topic file 195 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\REA Accounting Guide.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = REA Accounting Guide.md
 M06.28D  Path for topic = 
@@ -2153,7 +2205,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 191 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\README.md
+M06.20B  Read topic file 196 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\README.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = README.md
 M06.28D  Path for topic = 
@@ -2161,7 +2213,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 192 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Run Control Utilities.md
+M06.20B  Read topic file 197 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Run Control Utilities.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Run Control Utilities.md
 M06.28D  Path for topic = 
@@ -2169,7 +2221,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 193 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Run Performance Engine (PE).md
+M06.20B  Read topic file 198 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Run Performance Engine (PE).md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Run Performance Engine (PE).md
 M06.28D  Path for topic = 
@@ -2177,7 +2229,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 194 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Sub-Programs.md
+M06.20B  Read topic file 199 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Sub-Programs.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Sub-Programs.md
 M06.28D  Path for topic = 
@@ -2185,7 +2237,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 195 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Typical goals.md
+M06.20B  Read topic file 200 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Typical goals.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Typical goals.md
 M06.28D  Path for topic = 
@@ -2193,7 +2245,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 196 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\User guide - start here.md
+M06.20B  Read topic file 201 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\User guide - start here.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = User guide - start here.md
 M06.28D  Path for topic = 
@@ -2201,7 +2253,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 197 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\User-Exits.md
+M06.20B  Read topic file 202 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\User-Exits.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = User-Exits.md
 M06.28D  Path for topic = 
@@ -2209,7 +2261,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 198 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Website Index.md
+M06.20B  Read topic file 203 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Website Index.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Website Index.md
 M06.28D  Path for topic = 
@@ -2217,7 +2269,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 199 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Admin Guide.md
+M06.20B  Read topic file 204 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Admin Guide.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Workbench Admin Guide.md
 M06.28D  Path for topic = 
@@ -2225,7 +2277,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 200 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Intro.md
+M06.20B  Read topic file 205 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Intro.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Workbench Logic Text Intro.md
 M06.28D  Path for topic = 
@@ -2233,7 +2285,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 201 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Summary Diagrams.md
+M06.20B  Read topic file 206 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Summary Diagrams.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Workbench Logic Text Summary Diagrams.md
 M06.28D  Path for topic = 
@@ -2241,7 +2293,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 202 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax.md
+M06.20B  Read topic file 207 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Workbench Logic Text Syntax.md
 M06.28D  Path for topic = 
@@ -2249,7 +2301,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 203 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types.md
+M06.20B  Read topic file 208 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Types.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Workbench Logic Text Types.md
 M06.28D  Path for topic = 
@@ -2257,7 +2309,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 204 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Overviews.md
+M06.20B  Read topic file 209 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Overviews.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Workbench Overviews.md
 M06.28D  Path for topic = 
@@ -2265,7 +2317,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 205 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Screens.md
+M06.20B  Read topic file 210 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Screens.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Workbench Screens.md
 M06.28D  Path for topic = 
@@ -2273,7 +2325,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 206 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Training.md
+M06.20B  Read topic file 211 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Training.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Workbench Training.md
 M06.28D  Path for topic = 
@@ -2281,7 +2333,7 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 207 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench User Guide.md
+M06.20B  Read topic file 212 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench User Guide.md
 M06.27M  end =====================================================
 M06.28A  Topic filename with no includes = Workbench User Guide.md
 M06.28D  Path for topic = 
@@ -2291,15 +2343,15 @@ M06.28G  Topic copied to website and path
 M06.30B  Display includes in topic files
 M06.30C  Topic file 143 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Admin Guide\Keyboard Shortcuts for Admins.md
 M06.30D      Include C:\Git\GenevaERS\General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
-M06.30C  Topic file 153 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function ALL.md
+M06.30C  Topic file 153 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function ALL.md
 M06.30D      Include C:\Git\GenevaERS\General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
-M06.30C  Topic file 154 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function BATCHDATE.md
+M06.30C  Topic file 154 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function BATCHDATE.md
 M06.30D      Include C:\Git\GenevaERS\General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
 M06.30C  Topic file 155 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Keyboard Shortcuts Logic Text.md
 M06.30D      Include C:\Git\GenevaERS\General-Docs\AC Common Markdown\Logic Text\Keyboard Shortcuts Logic Text Common.md
 M06.30C  Topic file 156 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M06.30D      Include C:\Git\GenevaERS\General-Docs\AC Common Markdown\Logic Text\Rules for all Logic Text Common.md
-M06.30C  Topic file 168 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench User Guide\Keyboard Shortcuts for General Users.md
+M06.30C  Topic file 173 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench User Guide\Keyboard Shortcuts for General Users.md
 M06.30D      Include C:\Git\GenevaERS\General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
 M06.30E  6 topic files have includes.
  
@@ -2764,7 +2816,7 @@ M08.40F      Common at index 1 C:\Git\GenevaERS\General-Docs\AC Common Markdown\
 M08.40G      Priority 1
 M08.40M  	Topic has same include at index 143 0 C:\Git\GenevaERS\General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
 M08.40N  	Priority of that include is  1
-M08.40M  	Topic has same include at index 168 0 C:\Git\GenevaERS\General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
+M08.40M  	Topic has same include at index 173 0 C:\Git\GenevaERS\General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
 M08.40N  	Priority of that include is  1
 M08.40F      Common at index 2 C:\Git\GenevaERS\General-Docs\AC Common Markdown\Logic Text\AA Syntax Legend.md
 M08.40G      Priority 0
@@ -2804,15 +2856,15 @@ M09.00A  Priorities for topic includes
 M09.00B  Topics with includes get priority 2
 M09.00C      Topic at index 143 C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Admin Guide\Keyboard Shortcuts for Admins.md
 M09.00D          Priority 2
-M09.00C      Topic at index 153 C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function ALL.md
+M09.00C      Topic at index 153 C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function ALL.md
 M09.00D          Priority 2
-M09.00C      Topic at index 154 C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function BATCHDATE.md
+M09.00C      Topic at index 154 C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function BATCHDATE.md
 M09.00D          Priority 2
 M09.00C      Topic at index 155 C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Keyboard Shortcuts Logic Text.md
 M09.00D          Priority 2
 M09.00C      Topic at index 156 C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M09.00D          Priority 2
-M09.00C      Topic at index 168 C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench User Guide\Keyboard Shortcuts for General Users.md
+M09.00C      Topic at index 173 C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench User Guide\Keyboard Shortcuts for General Users.md
 M09.00D          Priority 2
   
 M10.00A  Create ToDoIncludes List 
@@ -2823,8 +2875,8 @@ M10.20B      Requesting common file =  C:\Git\GenevaERS\General-Docs\AC Common M
 M10.20B      Requesting common file =  C:\Git\GenevaERS\General-Docs\AC Common Markdown\Logic Text\Keyboard Shortcuts Logic Text Common.md
 M10.20M  Target priority is target includes priority =  2
 M10.20N      Requesting topic file =  C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Admin Guide\Keyboard Shortcuts for Admins.md
-M10.20N      Requesting topic file =  C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function ALL.md
-M10.20N      Requesting topic file =  C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function BATCHDATE.md
+M10.20N      Requesting topic file =  C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function ALL.md
+M10.20N      Requesting topic file =  C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function BATCHDATE.md
 M10.20N      Requesting topic file =  C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Keyboard Shortcuts Logic Text.md
 M10.20N      Requesting topic file =  C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M10.20N      Requesting topic file =  C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench User Guide\Keyboard Shortcuts for General Users.md
@@ -2852,10 +2904,10 @@ M10.30B  Priority  2
 M10.30B      Requesting File C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Admin Guide\Keyboard Shortcuts for Admins.md
 M10.30C          Include 4 0 C:\Git\GenevaERS\General-Docs\AC Common Markdown\FAQ\Keyboard Shortcuts Common.md
 M10.30B  Priority  2
-M10.30B      Requesting File C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function ALL.md
+M10.30B      Requesting File C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function ALL.md
 M10.30C          Include 5 0 C:\Git\GenevaERS\General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
 M10.30B  Priority  2
-M10.30B      Requesting File C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function BATCHDATE.md
+M10.30B      Requesting File C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function BATCHDATE.md
 M10.30C          Include 6 0 C:\Git\GenevaERS\General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
 M10.30B  Priority  2
 M10.30B      Requesting File C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Keyboard Shortcuts Logic Text.md
@@ -2978,7 +3030,7 @@ M11.70C  Created new Temp Folder - C:\Git\GenevaERS\General-Docs\AT Temp
  
 M11.20A  Priority  2
 M11.20B  Copy input files to Temp  
-M11.20C      Requesting File C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function ALL.md
+M11.20C      Requesting File C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function ALL.md
 M11.20D      Requesting file is a topic
 M11.20F      Requesting file copied to Temp Folder 
 M11.20G          Include 5 0 C:\Git\GenevaERS\General-Docs\AC Common Markdown\Logic Text\Introduction Function ALL.md
@@ -2986,7 +3038,7 @@ M11.20J          Include comes from AD Expanded Markdown
 M11.20K          Copied to Temp Folder 
 M11.40A  Process includes for this requesting file = Function ALL.md
 M11.40B      Filename for requesting file = Function ALL.md
-M11.40E      Path for requesting file = Workbench Logic Text Syntax
+M11.40E      Path for requesting file = Workbench Logic Text Syntax\Syntax - functions
 M11.40G      Result of Confirm-Folders for expanded is SUCCESS
 M11.40H      Result of Confirm-Folders for website is SUCCESS
 M11.60A      Include Filename = Introduction Function ALL.md
@@ -2996,7 +3048,7 @@ M11.70C  Created new Temp Folder - C:\Git\GenevaERS\General-Docs\AT Temp
  
 M11.20A  Priority  2
 M11.20B  Copy input files to Temp  
-M11.20C      Requesting File C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Function BATCHDATE.md
+M11.20C      Requesting File C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Workbench Logic Text Syntax\Syntax - functions\Function BATCHDATE.md
 M11.20D      Requesting file is a topic
 M11.20F      Requesting file copied to Temp Folder 
 M11.20G          Include 6 0 C:\Git\GenevaERS\General-Docs\AC Common Markdown\Logic Text\Introduction Function BATCHDATE.md
@@ -3004,7 +3056,7 @@ M11.20J          Include comes from AD Expanded Markdown
 M11.20K          Copied to Temp Folder 
 M11.40A  Process includes for this requesting file = Function BATCHDATE.md
 M11.40B      Filename for requesting file = Function BATCHDATE.md
-M11.40E      Path for requesting file = Workbench Logic Text Syntax
+M11.40E      Path for requesting file = Workbench Logic Text Syntax\Syntax - functions
 M11.40G      Result of Confirm-Folders for expanded is SUCCESS
 M11.40H      Result of Confirm-Folders for website is SUCCESS
 M11.60A      Include Filename = Introduction Function BATCHDATE.md
