@@ -794,320 +794,320 @@
     "doc": "Dummy",
     "title": "Dummy",
     "content": "Dummy topic to make the folder appear. ",
-    "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Format%20(ERF)/Dummy.html",
-    "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Format%20(ERF)/Dummy.html"
+    "url": "/Workbench%20Logic%20Text%20Types/Format%20Column%20Assignment%20(FCA)/Dummy.html",
+    "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Column%20Assignment%20(FCA)/Dummy.html"
   },"133": {
     "doc": "Dummy",
     "title": "Dummy",
     "content": "Dummy topic to make the folder appear. ",
-    "url": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Dummy.html",
-    "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Dummy.html"
+    "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Format%20(ERF)/Dummy.html",
+    "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Format%20(ERF)/Dummy.html"
   },"134": {
-    "doc": "Dummy",
-    "title": "Dummy",
-    "content": "Dummy topic to make the folder appear. ",
-    "url": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Dummy.html",
-    "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Dummy.html"
-  },"135": {
-    "doc": "Dummy",
-    "title": "Dummy",
-    "content": "Dummy topic to make the folder appear. ",
-    "url": "/Workbench%20Logic%20Text%20Types/Format%20Column%20Assignment%20(FCA)/Dummy.html",
-    "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Column%20Assignment%20(FCA)/Dummy.html"
-  },"136": {
     "doc": "Dummy",
     "title": "Dummy",
     "content": "Dummy topic to make the folder appear. ",
     "url": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Format%20Record%20Filter%20(FRF)/Dummy.html",
     "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Format%20Record%20Filter%20(FRF)/Dummy.html"
-  },"137": {
+  },"135": {
     "doc": "Dummy",
     "title": "Dummy",
     "content": "Dummy topic to make the folder appear. ",
     "url": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Format%20Column%20Assignment%20(FCA)/Dummy.html",
     "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Format%20Column%20Assignment%20(FCA)/Dummy.html"
-  },"138": {
+  },"136": {
     "doc": "Dummy",
     "title": "Dummy",
     "content": "Dummy topic to make the folder appear. ",
     "url": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Extract%20Record%20Format%20(ERF)/Dummy.html",
     "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Extract%20Record%20Format%20(ERF)/Dummy.html"
-  },"139": {
+  },"137": {
     "doc": "Dummy",
     "title": "Dummy",
     "content": "Dummy topic to make the folder appear. ",
     "url": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Extract%20Column%20Assignment%20(ECA)/Dummy.html",
     "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Extract%20Column%20Assignment%20(ECA)/Dummy.html"
-  },"140": {
+  },"138": {
     "doc": "Dummy",
     "title": "Dummy",
     "content": "Dummy topic to make the folder appear. ",
     "url": "/Workbench%20Logic%20Text%20Intro/Dummy.html",
     "relUrl": "/Workbench%20Logic%20Text%20Intro/Dummy.html"
-  },"141": {
+  },"139": {
+    "doc": "Dummy",
+    "title": "Dummy",
+    "content": "Dummy topic to make the folder appear. ",
+    "url": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Dummy.html",
+    "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Dummy.html"
+  },"140": {
     "doc": "Errors in PE Programs",
     "title": "Errors in PE Programs",
     "content": " ",
     "url": "/Errors%20in%20PE%20Programs.html",
     "relUrl": "/Errors%20in%20PE%20Programs.html"
-  },"142": {
+  },"141": {
     "doc": "Errors in Run Control Utilities",
     "title": "Errors in Run Control Utilities",
     "content": " ",
     "url": "/Errors%20in%20Run%20Control%20Utilities.html",
     "relUrl": "/Errors%20in%20Run%20Control%20Utilities.html"
-  },"143": {
+  },"142": {
     "doc": "Errors in Sub-Programs",
     "title": "Errors in Sub-Programs",
     "content": " ",
     "url": "/Errors%20in%20Sub-Programs.html",
     "relUrl": "/Errors%20in%20Sub-Programs.html"
-  },"144": {
+  },"143": {
     "doc": "Errors in User-Exits",
     "title": "Errors in User-Exits",
     "content": " ",
     "url": "/Errors%20in%20User-Exits.html",
     "relUrl": "/Errors%20in%20User-Exits.html"
-  },"145": {
+  },"144": {
     "doc": "Errors in Workbench",
     "title": "Errors in Workbench",
     "content": " ",
     "url": "/Errors%20in%20Workbench.html",
     "relUrl": "/Errors%20in%20Workbench.html"
-  },"146": {
+  },"145": {
     "doc": "Extract Column Assignment (ECA)",
     "title": "Extract Column Assignment (ECA)",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA).html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA).html"
-  },"147": {
+  },"146": {
     "doc": "Extract Record Filter (ERF)",
     "title": "Extract Record Filter (ERF)",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF).html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF).html"
-  },"148": {
+  },"147": {
     "doc": "Feature introductions",
     "title": "Feature introductions",
     "content": "The features are why our product is so uniquely fast. Our product has a lot of features to handle mainframe batch processing. The introductions are short. There are pointers to more details if needed. Topics here are referenced from folder Basic solutions. Reading these introductions helps you understand the basic solutions. ",
     "url": "/Feature%20introductions.html",
     "relUrl": "/Feature%20introductions.html"
-  },"149": {
+  },"148": {
     "doc": "First steps",
     "title": "First steps",
     "content": "What is GenevaERS in less than 140 words. Install &amp; run our product on your mainframe using Demo. Downloading the demo actually installs most of this (free) product. Alter the demo processing by installing Workbench. The workbench is key to using this product in your company. ",
     "url": "/User%20guide%20-%20start%20here/First%20steps.html",
     "relUrl": "/User%20guide%20-%20start%20here/First%20steps.html"
-  },"150": {
+  },"149": {
     "doc": "First steps",
     "title": "I want to learn the basics",
     "content": "It is necesssary to learn a lot of basic skills to use this product. See folder Lessons in basic skills . ",
     "url": "/User%20guide%20-%20start%20here/First%20steps.html#i-want-to-learn-the-basics",
     "relUrl": "/User%20guide%20-%20start%20here/First%20steps.html#i-want-to-learn-the-basics"
-  },"151": {
+  },"150": {
     "doc": "First steps",
     "title": "I am ready to use this product in my company",
     "content": "The link below assumes you have done many of the courses in basic skills above. See folder How to use this product . ",
     "url": "/User%20guide%20-%20start%20here/First%20steps.html#i-am-ready-to-use-this-product-in-my-company",
     "relUrl": "/User%20guide%20-%20start%20here/First%20steps.html#i-am-ready-to-use-this-product-in-my-company"
-  },"152": {
+  },"151": {
     "doc": "Format Column Assignment (FCA)",
     "title": "Format Column Assignment (FCA)",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Format%20Column%20Assignment%20(FCA).html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Column%20Assignment%20(FCA).html"
-  },"153": {
+  },"152": {
     "doc": "Format Record Filter (FRF)",
     "title": "Format Record Filter (FRF)",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF).html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF).html"
-  },"154": {
+  },"153": {
     "doc": "Frequently Asked Questions (FAQ)",
     "title": "Frequently Asked Questions (FAQ)",
     "content": " ",
     "url": "/Frequently%20Asked%20Questions%20(FAQ).html",
     "relUrl": "/Frequently%20Asked%20Questions%20(FAQ).html"
-  },"155": {
+  },"154": {
     "doc": "GVBLTPRT DD Statements",
     "title": "GVBLTPRT DD Statements",
     "content": "| Type | DD Name | Title | Required? | DSORG | RECFM | LRECL | . | Input | LTPRPARM | GVBLTPRT Parameter File | No | PS | FB | 80 | . |   | LT | Logic Table | Yes | PS | VB | 4004 | . | Output | LTPRTRPT | GVBLTPRT Control Report | Yes | PS | VB | 164 | . |   | LTPRTLOG | GVBLTPRT Log File | Yes | PS | VB | 164 | . ",
     "url": "/Run%20Control%20Utilities/GVBLTPRT%20DD%20Statements.html",
     "relUrl": "/Run%20Control%20Utilities/GVBLTPRT%20DD%20Statements.html"
-  },"156": {
+  },"155": {
     "doc": "GVBLTPRT Parameter File Syntax",
     "title": "GVBLTPRT Parameter File Syntax",
     "content": "Format: LTPRPARM file . ┌─HIDE_DATE_GENERATED=Y─┐ ►►───┼───────────────────────┼──────────────────────────────────────────────────► └─HIDE_DATE_GENERATED=N─┘ ┌─HIDE_LKLR_VALUES=N─┐ ►────┼────────────────────┼─────────────────────────────────────────────────────► └─HIDE_LKLR_VALUES=Y─┘ ┌─HIDE_WRITE_SUFFIX=N─┐ ►────┼─────────────────────┼────────────────────────────────────────────────────► └─HIDE_WRITE_SUFFIX=Y─┘ ┌─REPLACE_0_POS=N─┐ ►────┼─────────────────┼───────────────────────────────────────────────────────►◄ └─REPLACE_0_POS=Y─┘ . ",
     "url": "/Run%20Control%20Utilities/GVBLTPRT%20Parameter%20File%20Syntax.html",
     "relUrl": "/Run%20Control%20Utilities/GVBLTPRT%20Parameter%20File%20Syntax.html"
-  },"157": {
+  },"156": {
     "doc": "GVBMR91 DD Statements",
     "title": "GVBMR91 DD Statements",
     "content": "| Type | DD Name | Title | Required? | DSORG | RECFM | LRECL | . | Input | MR91PARM | GVBMR91 Parameter File | Yes | PS | FB | 80 | . |   | WBXMLS | Workbench XML Member List | No | PS | FB | 80 | . |   | VDPXMLS | VDP XML Member List | No | PS | FB | 80 | . |   | DBFLDRS | Database Folder List | If INPUT_TYPE=DB2 and a DBVIEWS DD statement does not exist | PS | FB | 80 | . |   | DBVIEWS | Database View List | If INPUT_TYPE=DB2 and a DBFLDRS DD statement does not exist | PS | FB | 80 | . |   | RUNVIEWS | Run View List | No | PS | FB | 80 | . |   | WBXMLI | Workbench XML Input Library | If INPUT_TYPE=WBXML | PO | VB | 8192 | . |   | VDPXMLI | VDP XML Input Library | If INPUT_TYPE=VDPXML | PO | VB | 8192 | . |   | VDPXSD | VDP XML Schema Definition | If INPUT_TYPE=VDPXML | PS | VB | 259 | . |   | DSNAOINI | DB2 ODBC Initialization File | If INPUT_TYPE=DB2 | PS | FB | 80 | . | Output | WBXML | Workbench XML Output Library | If OUTPUT_WB_XML=Y | PO | VB | 8192 | . |   | VDPXML | VDP XML Output File | If OUTPUT_VDP_XML=Y | PS | VB | 8192 | . |   | VDP | VDP Output File | If OUTPUT_RUN_CONTROL=Y | PS | VB | 8192 | . |   | JLT | Reference-Phase Logic Table | If OUTPUT_RUN_CONTROL=Y | PS | VB | 8192 | . |   | XLT | Extract-Phase Logic Table | If OUTPUT_RUN_CONTROL=Y | PS | VB | 8192 | . |   | MR91RPT | GVBMR91 Control Report | Yes | PS | VB | 164 | . |   | MR91LOG | GVBMR91 Log File | Yes | PS | VB | 164 | . |   | MR91TRAC | GVBMR91 Trace File | If TRACE=Y | PS | VB | 164 | . ",
     "url": "/Run%20Control%20Utilities/GVBMR91%20DD%20Statements.html",
     "relUrl": "/Run%20Control%20Utilities/GVBMR91%20DD%20Statements.html"
-  },"158": {
+  },"157": {
     "doc": "GVBMR91 Parameter File Syntax",
     "title": "GVBMR91 Parameter File Syntax",
     "content": "Format: MR91PARM file . ►►───┬─INPUT_TYPE=WBXML─────────────────────┬───────────────────────────────────► ├─INPUT_TYPE=VDPXML────────────────────┤ └─INPUT_TYPE=DB2────┤ db2 parameters ├─┘ ┌─OUTPUT_WB_XML_FILES=N─┐ ►────┴───────────────────────┴──────────────────────────────────────────────────► ┌─OUTPUT_VDP_XML_FILE=N─┐ ►────┴───────────────────────┴──────────────────────────────────────────────────► ┌─OUTPUT_RUN_CONTROL_FILES=N─┐ ►────┴────────────────────────────┴─────────────────────────────────────────────► ┌────────────────────────────┐ ▼ │ ►──────┤ selected output-option ├─┴─────────────────────────────────────────────► ►────┤ general options ├───────────────────────────────────────────────────────►◄ . db2 parameters: . ├────DB2_SUBSYSTEM=db2-subsystem────────────────────────────────────────────────► ►────DB2_SCHEMA=db2-schema──────────────────────────────────────────────────────► ►────DB2_ENVIRONMENT_ID=db2-environment-id──────────────────────────────────────┤ . selected output-option: . ├────┬─OUTPUT_WB_XML_FILES=Y──────┬─────────────────────────────────────────────┤ ├─OUTPUT_VDP_XML_FILE=Y──────┤ └─OUTPUT_RUN_CONTROL_FILES=Y─┘ . general options: . ┌─NUMBER_MODE=STANDARD─┐ ►────┼──────────────────────┼───────────────────────────────────────────────────► └─NUMBER_MODE=LARGE────┘ ┌─TRACE=N─┐ ►────┼─────────┼────────────────────────────────────────────────────────────────► └─TRACE=Y─┘ . Format: WBXMLS file . ►►───┬─────────────────┬───────────────────────────────────────────────────────►◄ │ ┌─────────────┐ │ │ ▼ │ │ └───member-name─┴─┘ . Note: If the WBXMLS file is empty, all members are selected. Format: VDPXMLS file . ►►───┬─────────────────┬───────────────────────────────────────────────────────►◄ │ ┌─────────────┐ │ │ ▼ │ │ └───member-name─┴─┘ . Note: If the VDPXMLS file is empty, all members are selected. Format: DBFLDRS file . ►►───┬───────────────┬─────────────────────────────────────────────────────────►◄ │ ┌───────────┐ │ │ ▼ │ │ └───folder-id─┴─┘ . Format: DBVIEWS file . ►►───┬─────────────┬───────────────────────────────────────────────────────────►◄ │ ┌─────────┐ │ │ ▼ │ │ └───view-id─┴─┘ . Note: If INPUT_TYPE=DB2, then the DBVIEWS file is checked. If it is empty or missing, then the DBFLDRS file is checked. If it is empty or missing, then an error is displayed. Format: RUNVIEWS file . ►►───┬─────────────┬───────────────────────────────────────────────────────────►◄ │ ┌─────────┐ │ │ ▼ │ │ └───view-id─┴─┘ . Note: If the RUNVIEWS file is empty, all views are selected. db2-subsystem This is the name of the Db2 subsystem where your metadata resides. (For example, DM12.) . db2-schema This is the name of the Db2 schema where your metadata resides. (For example, GENDEV.) . db2-environment-id This is the environment ID (such as 15) of the location of the GenevaERS views to be selected. ",
     "url": "/Run%20Control%20Utilities/GVBMR91%20Parameter%20File%20Syntax.html",
     "relUrl": "/Run%20Control%20Utilities/GVBMR91%20Parameter%20File%20Syntax.html"
-  },"159": {
+  },"158": {
     "doc": "GVBVDPNL DD Statements",
     "title": "GVBVDPNL DD Statements",
     "content": "| Type | DD Name | Title | Required? | DSORG | RECFM | LRECL | . | Input | VDPNPARM | GVBVDPNL Parameter File | No | PS | FB | 80 | . |   | VDP1 | View Definition Parameter File 1 | Yes | PS | VB | 32756 | . |   | VDP2 | View Definition Parameter File 2 | If COMPARE=Y | PS | VB | 32756 | . | Output | VDPSUM1 | VDP Record Summary Report for VDP1 | Yes | PS | VB | 164 | . |   | VDPSUM2 | VDP Record Summary Report for VDP2 | If COMPARE=Y | PS | VB | 164 | . |   | VDPSUMC | VDP Record Summary Comparison Report | If COMPARE=Y | PS | VB | 164 | . |   | VDPDTL1 | VDP Record Detail Report for VDP1 | Yes | PS | VB | 164 | . |   | VDPDTL2 | VDP Record Detail Report for VDP2 | If COMPARE=Y | PS | VB | 164 | . |   | VIEWRPT1 | View Report for VDP1 | Yes | PS | VB | 164 | . |   | VIEWRPT2 | View Report for VDP2 | If COMPARE=Y | PS | VB | 164 | . |   | VIEWRPTC | View Comparison Report | If COMPARE=Y | PS | VB | 164 | . |   | LOGCRPT1 | View Logic Report for VDP1 | Yes | PS | VB | 324 | . |   | LOGCRPT2 | View Logic Report for VDP2 | If COMPARE=Y | PS | VB | 324 | . |   | LOGCRPTC | View Logic Comparison Report | If COMPARE=Y | PS | VB | 324 | . |   | LRRPT1 | Logical Record Report for VDP1 | Yes | PS | VB | 164 | . |   | LRRPT2 | Logical Record Report for VDP2 | If COMPARE=Y | PS | VB | 164 | . |   | LRRPTC | Logical Record Comparison Report | If COMPARE=Y | PS | VB | 164 | . |   | LPRPT1 | Lookup Path Report for VDP1 | Yes | PS | VB | 164 | . |   | LPRPT2 | Lookup Path Report for VDP2 | If COMPARE=Y | PS | VB | 164 | . |   | LPRPTC | Lookup Path Comparison Report | If COMPARE=Y | PS | VB | 164 | . |   | LFRPT1 | Logical File Report for VDP1 | Yes | PS | VB | 164 | . |   | LFRPT2 | Logical File Report for VDP2 | If COMPARE=Y | PS | VB | 164 | . |   | LFRPTC | Logical File Comparison Report | If COMPARE=Y | PS | VB | 164 | . |   | PFRPT1 | Physical File Report for VDP1 | Yes | PS | VB | 164 | . |   | PFRPT2 | Physical File Report for VDP2 | If COMPARE=Y | PS | VB | 164 | . |   | PFRPTC | Physical File Comparison Report | If COMPARE=Y | PS | VB | 164 | . |   | EXITRPT1 | User Exit Report for VDP1 | Yes | PS | VB | 164 | . |   | EXITRPT2 | User Exit Report for VDP2 | If COMPARE=Y | PS | VB | 164 | . |   | EXITRPTC | User Exit Comparison Report | If COMPARE=Y | PS | VB | 164 | . |   | CRECRPT1 | Control Record Report for VDP1 | Yes | PS | VB | 164 | . |   | CRECRPT2 | Control Record Report for VDP2 | If COMPARE=Y | PS | VB | 164 | . |   | CRECRPTC | Control Record Comparison Report | If COMPARE=Y | PS | VB | 164 | . |   | DDRPT1 | DD Statement Report for VDP1 | Yes | PS | VB | 164 | . |   | DDRPT2 | DD Statement Report for VDP2 | If COMPARE=Y | PS | VB | 164 | . |   | DDRPTC | DD Statement Comparison Report | If COMPARE=Y | PS | VB | 164 | . |   | FMTMPLTS | File Manager Template Library | IF FM_TEMPLATES=Y | PO | VB | 164 | . |   | VDPNLRPT | GVBVDPNL Control Report | Yes | PS | VB | 164 | . |   | VDPNLLOG | GVBVDPNL Log File | Yes | PS | VB | 164 | . ",
     "url": "/Run%20Control%20Utilities/GVBVDPNL%20DD%20Statements.html",
     "relUrl": "/Run%20Control%20Utilities/GVBVDPNL%20DD%20Statements.html"
-  },"160": {
+  },"159": {
     "doc": "GVBVDPNL Parameter File Syntax",
     "title": "GVBVDPNL Parameter File Syntax",
     "content": "Format: VDPNPARM file . ┌─COMPARE=N─┐ ►►───┼───────────┼──────────────────────────────────────────────────────────────► └─COMPARE=Y─┘ ┌─FM_TEMPLATES=N─┐ ►────┼────────────────┼─────────────────────────────────────────────────────────► └─FM_TEMPLATES=Y─┘ ►────┤ metadata-filtering options ├─────────────────────────────────────────────► ┌────────────────────────────┐ ▼ │ ►──────┤ field-inclusion option ├─┴────────────────────────────────────────────►◄ . metadata-filtering options: . ┌─VIEW_IDS=ALL──────────┐ ├────┼───────────────────────┼──────────────────────────────────────────────────► │ ┌─,───────┐ │ │ ▼ │ │ └─VIEW_IDS=───view-id─┴─┘ ┌─LR_IDS=ALL────────┐ ►────┼───────────────────┼──────────────────────────────────────────────────────► │ ┌─,─────┐ │ │ ▼ │ │ └─LR_IDS=───lr-id─┴─┘ ┌─LP_IDS=ALL────────┐ ►────┼───────────────────┼──────────────────────────────────────────────────────► │ ┌─,─────┐ │ │ ▼ │ │ └─LP_IDS=───lp-id─┴─┘ ┌─LF_IDS=ALL────────┐ ►────┼───────────────────┼──────────────────────────────────────────────────────► │ ┌─,─────┐ │ │ ▼ │ │ └─LF_IDS=───lf-id─┴─┘ ┌─PF_IDS=ALL────────┐ ►────┼───────────────────┼──────────────────────────────────────────────────────► │ ┌─,─────┐ │ │ ▼ │ │ └─PF_IDS=───pf-id─┴─┘ ┌─EXIT_IDS=ALL──────────┐ ►────┼───────────────────────┼──────────────────────────────────────────────────► │ ┌─,───────┐ │ │ ▼ │ │ └─EXIT_IDS=───exit-id─┴─┘ ┌─CREC_IDS=ALL──────────┐ ►────┼───────────────────────┼──────────────────────────────────────────────────┤ │ ┌─,───────┐ │ │ ▼ │ │ └─CREC_IDS=───crec-id─┴─┘ . field-inclusion option: . ┌─field-name=B──────────┐ ├────┼───────────────────────┼──────────────────────────────────────────────────┤ ├─field-name=C──────────┤ ├─field-name=D──────────┤ └─field-name=E──────────┘ . Note: field-name must be one of the following: . CREC_BEGIN CREC_END CREC_FISCAL CREC_ID CREC_MAX_FILE CREC_NAME EXIT_EXEC EXIT_ID EXIT_LANG EXIT_NAME EXIT_OPT EXIT_PATH EXIT_TYPE LF_ID LF_NAME LP_CONST LP_CONST_LEN LP_DATE LP_DPS LP_DTYPE LP_ID LP_KEY_LEN LP_KEY_TYPE LP_LR LP_LR_FIELD LP_NAME LP_SCALE LP_SIGNED LP_SRC_LR LP_SYM LP_TRG_LF LP_TRG_LR LP_VAL LP_VAL_LEN LR_FLD_ALIGN LR_FLD_COLNAME LR_FLD_DPS LR_FLD_EFFDATE LR_FLD_FORMAT LR_FLD_ID LR_FLD_KEY LR_FLD_LEN LR_FLD_MASK LR_FLD_NAME LR_FLD_OFFSET LR_FLD_ORDINAL LR_FLD_POS LR_FLD_SCALE LR_FLD_SIGNED LR_FLD_TYPE LR_ID LR_LKP_EXIT LR_LKP_PARMS LR_NAME LR_STATUS LR_TYPE PF_ACCESS PF_BLKSIZE PF_CONN PF_DD PF_DEV_TYPE PF_DSCB PF_DSORG PF_EXP_DT PF_ID PF_IN_DD PF_IN_DSN PF_LRECL PF_MAX_RCLEN PF_NAME PF_NULLS PF_OPTCD PF_OUT_DD PF_OUT_DSN PF_PRM_QTY PF_RCLEN PF_RD_DISP PF_READ_EXIT PF_READ_PARMS PF_RECFM PF_RETN PF_ROW PF_SCND_QTY PF_SQL PF_SYSOUT PF_TABLE PF_TYPE PF_UNIT PF_WR_DISP VIEW_AGGREGATION VIEW_AGGREGATION_LEVEL VIEW_BUFF_SIZE VIEW_COL_ALIGN VIEW_COL_CALC VIEW_COL_DATA_TYPE VIEW_COL_DPS VIEW_COL_EXTAREA VIEW_COL_FRMT VIEW_COL_HDR_ALIGN VIEW_COL_ID VIEW_COL_LEN VIEW_COL_LKP VIEW_COL_LKP_FIELD VIEW_COL_LKP_LR VIEW_COL_LOGIC VIEW_COL_LOGIC_TEXT VIEW_COL_MASK VIEW_COL_NAME VIEW_COL_ORD_POS VIEW_COL_SCALE VIEW_COL_SIGN VIEW_COL_SPACES VIEW_COL_SRC_FIELD VIEW_COL_SRC_ID VIEW_COL_SRC_TYPE VIEW_COL_SRC_VAL VIEW_COL_STRT_POS VIEW_COL_VISIBLE VIEW_CR VIEW_ERROR VIEW_EXIT VIEW_EXIT_PARMS VIEW_EXTR_NUM VIEW_FLD_DELIM VIEW_FOLDER_ID VIEW_FOOTER_CENTRE VIEW_FOOTER_LEFT VIEW_FOOTER_RIGHT VIEW_FORMAT_REC_FILTER VIEW_FRMT_EXIT VIEW_FRMT_EXIT_PARMS VIEW_FRMT_OUT_LIMIT VIEW_GRP_AGG_FUNC VIEW_HEADER_CENTRE VIEW_HEADER_LEFT VIEW_HEADER_RIGHT VIEW_HEADING1 VIEW_HEADING2 VIEW_HEADING3 VIEW_ID VIEW_LOGIC_ID VIEW_LOGIC_NAME VIEW_NAME VIEW_OUT_FRMT VIEW_OUT_LF VIEW_OUT_LIMIT VIEW_OUT_PF VIEW_PAGE_LINES VIEW_PHASE VIEW_REC_AGG_FUNC VIEW_SORT_DATA_TYPE VIEW_SORT_DISP_MODE VIEW_SORT_DPS VIEW_SORT_FOOTER VIEW_SORT_FOOTER_OPT VIEW_SORT_FORMAT VIEW_SORT_HEADER_OPT VIEW_SORT_ID VIEW_SORT_LABEL VIEW_SORT_LEN VIEW_SORT_NUM VIEW_SORT_SEQ VIEW_SORT_SIGNED VIEW_SORT_TITLE_EFF_DT VIEW_SORT_TITLE_EFFTYPE VIEW_SORT_TITLE_FIELD VIEW_SORT_TITLE_LEN VIEW_SORT_TITLE_SRC VIEW_SRC_ID VIEW_SRC_LF VIEW_SRC_LR VIEW_SRC_REC_FILTER VIEW_STATUS VIEW_STR_DELIM VIEW_TRUNC VIEW_WIDTH . ",
     "url": "/Run%20Control%20Utilities/GVBVDPNL%20Parameter%20File%20Syntax.html",
     "relUrl": "/Run%20Control%20Utilities/GVBVDPNL%20Parameter%20File%20Syntax.html"
-  },"161": {
+  },"160": {
     "doc": "Goal1 - Speed a report",
     "title": "Goal1 - Speed a report",
     "content": "The best example is given in: What is GenevaERS? Challenge our product with the longest running report in your company. ",
     "url": "/Typical%20goals/Goal1%20-%20Speed%20a%20report.html",
     "relUrl": "/Typical%20goals/Goal1%20-%20Speed%20a%20report.html"
-  },"162": {
+  },"161": {
     "doc": "Goal1 - Speed a report",
     "title": "Useful Links",
     "content": "Next topic: Goal2 - Speed overnight batch . ",
     "url": "/Typical%20goals/Goal1%20-%20Speed%20a%20report.html#useful-links",
     "relUrl": "/Typical%20goals/Goal1%20-%20Speed%20a%20report.html#useful-links"
-  },"163": {
+  },"162": {
     "doc": "Goal2 - Speed overnight batch",
     "title": "Goal2 - Speed overnight batch",
     "content": "An international financial services company realised that their normal daily batch stream would soon take longer than 24 hours to run. With our product, their batch now runs in a few hours. Use our product for all or part of your batch processing - both the development of a new stream and the running time of the new stream are fast. ",
     "url": "/Typical%20goals/Goal2%20-%20Speed%20overnight%20batch.html",
     "relUrl": "/Typical%20goals/Goal2%20-%20Speed%20overnight%20batch.html"
-  },"164": {
+  },"163": {
     "doc": "Goal2 - Speed overnight batch",
     "title": "Useful Links",
     "content": "Next topic: Goal3 - Make possible complex reports Previous topic: Goal1 - Speed a report . ",
     "url": "/Typical%20goals/Goal2%20-%20Speed%20overnight%20batch.html#useful-links",
     "relUrl": "/Typical%20goals/Goal2%20-%20Speed%20overnight%20batch.html#useful-links"
-  },"165": {
+  },"164": {
     "doc": "Goal3 - Make possible complex reports",
     "title": "Goal3 - Make possible complex reports",
     "content": "At some time, every IT department has told a business team that a certain report is not possible because it would take too long to run. This typically happens when the reporting involves many reference files where: . | A key from a transaction record accesses the first reference file and | A key in the first reference file accesses a second reference file. | With enough layers of reference files the processing can be very slow. | . This is where our product is most useful. Many report programs have the problem of re-reading the same data multiple times - see the example of one million unnecessary reads in: What is GenevaERS? Our product is called “Single-Pass” because it can produce multiple complex reports using a single scan of the source data. GenevaERS was used to detect fraud in historical records of airline tickets using just this technique. If you think some batch process is “impossible”, try our product. ",
     "url": "/Typical%20goals/Goal3%20-%20Make%20possible%20complex%20reports.html",
     "relUrl": "/Typical%20goals/Goal3%20-%20Make%20possible%20complex%20reports.html"
-  },"166": {
+  },"165": {
     "doc": "Goal3 - Make possible complex reports",
     "title": "Useful Links",
     "content": "Next topic: Goal4 - Change annual reports Previous topic: Goal2 - Speed overnight batch . ",
     "url": "/Typical%20goals/Goal3%20-%20Make%20possible%20complex%20reports.html#useful-links",
     "relUrl": "/Typical%20goals/Goal3%20-%20Make%20possible%20complex%20reports.html#useful-links"
-  },"167": {
+  },"166": {
     "doc": "Goal4 - Change annual reports",
     "title": "Goal4 - Change annual reports",
     "content": "Normally, an IT department says “We can’t rerun last year’s Annual Reports to make them more accurate!”. The same usually goes for month-end and quarter-end reports. With our product, customers can rerun these reports whenever they want - it is practical and realistic. ",
     "url": "/Typical%20goals/Goal4%20-%20Change%20annual%20reports.html",
     "relUrl": "/Typical%20goals/Goal4%20-%20Change%20annual%20reports.html"
-  },"168": {
+  },"167": {
     "doc": "Goal4 - Change annual reports",
     "title": "Useful Links",
     "content": "Previous topic: Goal3 - Make possible complex reports . ",
     "url": "/Typical%20goals/Goal4%20-%20Change%20annual%20reports.html#useful-links",
     "relUrl": "/Typical%20goals/Goal4%20-%20Change%20annual%20reports.html#useful-links"
-  },"169": {
+  },"168": {
     "doc": "High Speed Techniques Training",
     "title": "High Speed Techniques Training",
     "content": " ",
     "url": "/High%20Speed%20Techniques%20Training.html",
     "relUrl": "/High%20Speed%20Techniques%20Training.html"
-  },"170": {
+  },"169": {
     "doc": "High Speed Techniques Training",
     "title": "Pipes Training",
     "content": " ",
     "url": "/High%20Speed%20Techniques%20Training.html#pipes-training",
     "relUrl": "/High%20Speed%20Techniques%20Training.html#pipes-training"
-  },"171": {
+  },"170": {
     "doc": "High Speed Techniques Training",
     "title": "Tokens Training",
     "content": " ",
     "url": "/High%20Speed%20Techniques%20Training.html#tokens-training",
     "relUrl": "/High%20Speed%20Techniques%20Training.html#tokens-training"
-  },"172": {
+  },"171": {
     "doc": "High Speed Techniques Training",
     "title": "Common Key Buffer Training",
     "content": " ",
     "url": "/High%20Speed%20Techniques%20Training.html#common-key-buffer-training",
     "relUrl": "/High%20Speed%20Techniques%20Training.html#common-key-buffer-training"
-  },"173": {
+  },"172": {
     "doc": "How this website works",
     "title": "How this website works",
     "content": "TABLE OF CONTENTS . | Layout of screen | Folders of topics | Search for a topic using keywords | . ",
     "url": "/How%20this%20website%20works.html",
     "relUrl": "/How%20this%20website%20works.html"
-  },"174": {
+  },"173": {
     "doc": "How this website works",
     "title": "Layout of screen",
     "content": "This section is not yet documented. ",
     "url": "/How%20this%20website%20works.html#layout-of-screen",
     "relUrl": "/How%20this%20website%20works.html#layout-of-screen"
-  },"175": {
+  },"174": {
     "doc": "How this website works",
     "title": "Folders of topics",
     "content": "To be completed. ",
     "url": "/How%20this%20website%20works.html#folders-of-topics",
     "relUrl": "/How%20this%20website%20works.html#folders-of-topics"
-  },"176": {
+  },"175": {
     "doc": "How this website works",
     "title": "Search for a topic using keywords",
     "content": "To be completed. ",
     "url": "/How%20this%20website%20works.html#search-for-a-topic-using-keywords",
     "relUrl": "/How%20this%20website%20works.html#search-for-a-topic-using-keywords"
-  },"177": {
+  },"176": {
     "doc": "How to program User-Exits",
     "title": "How to program User-Exits",
     "content": "TABLE OF CONTENTS . | Sub Pre-Processing | Sub Post-Processing | Useful Links | . ",
     "url": "/User-Exits/How%20to%20program%20User-Exits.html",
     "relUrl": "/User-Exits/How%20to%20program%20User-Exits.html"
-  },"178": {
+  },"177": {
     "doc": "How to program User-Exits",
     "title": "Sub Pre-Processing",
     "content": " ",
     "url": "/User-Exits/How%20to%20program%20User-Exits.html#sub-pre-processing",
     "relUrl": "/User-Exits/How%20to%20program%20User-Exits.html#sub-pre-processing"
-  },"179": {
+  },"178": {
     "doc": "How to program User-Exits",
     "title": "Sub Post-Processing",
     "content": " ",
     "url": "/User-Exits/How%20to%20program%20User-Exits.html#sub-post-processing",
     "relUrl": "/User-Exits/How%20to%20program%20User-Exits.html#sub-post-processing"
-  },"180": {
+  },"179": {
     "doc": "How to program User-Exits",
     "title": "Useful Links",
     "content": "Next topic: Runbook - LX13 Key Break Tester Previous topic: User-Exits . ",
     "url": "/User-Exits/How%20to%20program%20User-Exits.html#useful-links",
     "relUrl": "/User-Exits/How%20to%20program%20User-Exits.html#useful-links"
-  },"181": {
+  },"180": {
     "doc": "How to use this product",
     "title": "How to use this product",
     "content": "This folder of topics assumes you have already done the following: . | Read User guide - start here | Installed and run the Demo. | Installed and run the Workbench. | Taught yourself using Lessons in basic skills. | . Once you have done all these, the folder of topics below guide you to use GenevaERS in your company. The topics below cover creating a single solution and implementing it. You can create as many solutions as needed. ",
     "url": "/How%20to%20use%20this%20product.html",
     "relUrl": "/How%20to%20use%20this%20product.html"
-  },"182": {
+  },"181": {
     "doc": "Install",
     "title": "Install",
     "content": " ",
     "url": "/Install.html",
     "relUrl": "/Install.html"
-  },"183": {
+  },"182": {
     "doc": "Install",
     "title": "Install our main product demonstration",
     "content": "See Demo . ",
     "url": "/Install.html#install-our-main-product-demonstration",
     "relUrl": "/Install.html#install-our-main-product-demonstration"
-  },"184": {
+  },"183": {
     "doc": "Install",
     "title": "Install Workbench - so you can change the demo",
     "content": "See Workbench . ",
     "url": "/Install.html#install-workbench---so-you-can-change-the-demo",
     "relUrl": "/Install.html#install-workbench---so-you-can-change-the-demo"
+  },"184": {
+    "doc": "Introduction - Extract Column Assignment (ECA)",
+    "title": "Introduction - Extract Column Assignment (ECA)",
+    "content": "UNDER CONSTRUCTION . ",
+    "url": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Introduction%20-%20Extract%20Column%20Assignment%20(ECA).html",
+    "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Introduction%20-%20Extract%20Column%20Assignment%20(ECA).html"
   },"185": {
     "doc": "Introduction F01 - Views",
     "title": "Introduction F01 - Views",
