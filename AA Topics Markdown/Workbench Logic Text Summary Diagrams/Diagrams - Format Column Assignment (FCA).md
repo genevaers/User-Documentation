@@ -1,10 +1,16 @@
 ---
 layout: default
-title: "Diagrams - Format Column Assignment (FCA)"
+title: "Diagrams - Format Column Calculations (FCC)"
 nav_order: 3
-has_children: true
 parent: Workbench Logic Text Summary Diagrams
 
 ---
-# Diagrams - Format Column Assignment (FCA)
-  
+# Diagrams - Format Column Calculations (FCC)
+{: .no_toc}
+TABLE OF CONTENTS 
+1. TOC
+{:toc}  
+ 
+# UNDER CONSTRUCTION
+
+
