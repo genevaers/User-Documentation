@@ -769,51 +769,51 @@
   },"128": {
     "doc": "Diagrams - Extract Column Assignment (ECA)",
     "title": "Diagrams - Extract Column Assignment (ECA)",
-    "content": " ",
+    "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Extract%20Column%20Assignment%20(ECA).html",
     "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Extract%20Column%20Assignment%20(ECA).html"
   },"129": {
+    "doc": "Diagrams - Extract Column Assignment (ECA)",
+    "title": "UNDER CONSTRUCTION",
+    "content": " ",
+    "url": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Extract%20Column%20Assignment%20(ECA).html#under-construction",
+    "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Extract%20Column%20Assignment%20(ECA).html#under-construction"
+  },"130": {
     "doc": "Diagrams - Extract Record Filter (ERF)",
     "title": "Diagrams - Extract Record Filter (ERF)",
-    "content": " ",
+    "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Extract%20Record%20Filter%20(ERF).html",
     "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Extract%20Record%20Filter%20(ERF).html"
-  },"130": {
-    "doc": "Diagrams - Format Column Assignment (FCA)",
-    "title": "Diagrams - Format Column Assignment (FCA)",
+  },"131": {
+    "doc": "Diagrams - Extract Record Filter (ERF)",
+    "title": "UNDER CONSTRUCTION",
     "content": " ",
+    "url": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Extract%20Record%20Filter%20(ERF).html#under-construction",
+    "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Extract%20Record%20Filter%20(ERF).html#under-construction"
+  },"132": {
+    "doc": "Diagrams - Format Column Calculations (FCC)",
+    "title": "Diagrams - Format Column Calculations (FCC)",
+    "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Format%20Column%20Assignment%20(FCA).html",
     "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Format%20Column%20Assignment%20(FCA).html"
-  },"131": {
+  },"133": {
+    "doc": "Diagrams - Format Column Calculations (FCC)",
+    "title": "UNDER CONSTRUCTION",
+    "content": " ",
+    "url": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Format%20Column%20Assignment%20(FCA).html#under-construction",
+    "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Format%20Column%20Assignment%20(FCA).html#under-construction"
+  },"134": {
     "doc": "Diagrams - Format Record Filter (FRF)",
     "title": "Diagrams - Format Record Filter (FRF)",
-    "content": " ",
+    "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Format%20Record%20Filter%20(FRF).html",
     "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Format%20Record%20Filter%20(FRF).html"
-  },"132": {
-    "doc": "Dummy",
-    "title": "Dummy",
-    "content": "Dummy topic to make the folder appear. ",
-    "url": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Format%20Column%20Assignment%20(FCA)/Dummy.html",
-    "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Format%20Column%20Assignment%20(FCA)/Dummy.html"
-  },"133": {
-    "doc": "Dummy",
-    "title": "Dummy",
-    "content": "Dummy topic to make the folder appear. ",
-    "url": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Extract%20Record%20Format%20(ERF)/Dummy.html",
-    "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Extract%20Record%20Format%20(ERF)/Dummy.html"
-  },"134": {
-    "doc": "Dummy",
-    "title": "Dummy",
-    "content": "Dummy topic to make the folder appear. ",
-    "url": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Extract%20Column%20Assignment%20(ECA)/Dummy.html",
-    "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Extract%20Column%20Assignment%20(ECA)/Dummy.html"
   },"135": {
-    "doc": "Dummy",
-    "title": "Dummy",
-    "content": "Dummy topic to make the folder appear. ",
-    "url": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Format%20Record%20Filter%20(FRF)/Dummy.html",
-    "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Format%20Record%20Filter%20(FRF)/Dummy.html"
+    "doc": "Diagrams - Format Record Filter (FRF)",
+    "title": "UNDER CONSTRUCTION",
+    "content": " ",
+    "url": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Format%20Record%20Filter%20(FRF).html#under-construction",
+    "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Format%20Record%20Filter%20(FRF).html#under-construction"
   },"136": {
     "doc": "Dummy",
     "title": "Dummy",
@@ -914,26 +914,26 @@
     "doc": "Examples - IF statements with SELECT",
     "title": "Examples - IF statements with SELECT",
     "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
-    "url": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20IF%20statements%20with%20SELECT.html",
-    "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20IF%20statements%20with%20SELECT.html"
-  },"153": {
-    "doc": "Examples - IF statements with SELECT",
-    "title": "UNDER CONSTRUCTION",
-    "content": " ",
-    "url": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20IF%20statements%20with%20SELECT.html#under-construction",
-    "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20IF%20statements%20with%20SELECT.html#under-construction"
-  },"154": {
-    "doc": "Examples - IF statements with SELECT",
-    "title": "Examples - IF statements with SELECT",
-    "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20IF%20statements%20with%20SELECT.html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20IF%20statements%20with%20SELECT.html"
-  },"155": {
+  },"153": {
     "doc": "Examples - IF statements with SELECT",
     "title": "UNDER CONSTRUCTION",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20IF%20statements%20with%20SELECT.html#under-construction",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20IF%20statements%20with%20SELECT.html#under-construction"
+  },"154": {
+    "doc": "Examples - IF statements with SELECT",
+    "title": "Examples - IF statements with SELECT",
+    "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
+    "url": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20IF%20statements%20with%20SELECT.html",
+    "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20IF%20statements%20with%20SELECT.html"
+  },"155": {
+    "doc": "Examples - IF statements with SELECT",
+    "title": "UNDER CONSTRUCTION",
+    "content": " ",
+    "url": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20IF%20statements%20with%20SELECT.html#under-construction",
+    "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20IF%20statements%20with%20SELECT.html#under-construction"
   },"156": {
     "doc": "Examples - IF statements with SKIP",
     "title": "Examples - IF statements with SKIP",
@@ -986,50 +986,50 @@
     "doc": "Examples - SKIPIF statements",
     "title": "Examples - SKIPIF statements",
     "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
-    "url": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20SKIPIF%20statements.html",
-    "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20SKIPIF%20statements.html"
-  },"165": {
-    "doc": "Examples - SKIPIF statements",
-    "title": "UNDER CONSTRUCTION",
-    "content": " ",
-    "url": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20SKIPIF%20statements.html#under-construction",
-    "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20SKIPIF%20statements.html#under-construction"
-  },"166": {
-    "doc": "Examples - SKIPIF statements",
-    "title": "Examples - SKIPIF statements",
-    "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20SKIPIF%20statements.html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20SKIPIF%20statements.html"
-  },"167": {
+  },"165": {
     "doc": "Examples - SKIPIF statements",
     "title": "UNDER CONSTRUCTION",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20SKIPIF%20statements.html#under-construction",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20SKIPIF%20statements.html#under-construction"
-  },"168": {
-    "doc": "Examples - WRITE statements",
-    "title": "Examples - WRITE statements",
+  },"166": {
+    "doc": "Examples - SKIPIF statements",
+    "title": "Examples - SKIPIF statements",
     "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
-    "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20WRITE%20statements.html",
-    "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20WRITE%20statements.html"
-  },"169": {
-    "doc": "Examples - WRITE statements",
+    "url": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20SKIPIF%20statements.html",
+    "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20SKIPIF%20statements.html"
+  },"167": {
+    "doc": "Examples - SKIPIF statements",
     "title": "UNDER CONSTRUCTION",
     "content": " ",
-    "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20WRITE%20statements.html#under-construction",
-    "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20WRITE%20statements.html#under-construction"
-  },"170": {
+    "url": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20SKIPIF%20statements.html#under-construction",
+    "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20SKIPIF%20statements.html#under-construction"
+  },"168": {
     "doc": "Examples - WRITE statements",
     "title": "Examples - WRITE statements",
     "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Examples%20-%20WRITE%20statements.html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Examples%20-%20WRITE%20statements.html"
-  },"171": {
+  },"169": {
     "doc": "Examples - WRITE statements",
     "title": "UNDER CONSTRUCTION",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Examples%20-%20WRITE%20statements.html#under-construction",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Examples%20-%20WRITE%20statements.html#under-construction"
+  },"170": {
+    "doc": "Examples - WRITE statements",
+    "title": "Examples - WRITE statements",
+    "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
+    "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20WRITE%20statements.html",
+    "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20WRITE%20statements.html"
+  },"171": {
+    "doc": "Examples - WRITE statements",
+    "title": "UNDER CONSTRUCTION",
+    "content": " ",
+    "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20WRITE%20statements.html#under-construction",
+    "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20WRITE%20statements.html#under-construction"
   },"172": {
     "doc": "Extract Column Assignment (ECA)",
     "title": "Extract Column Assignment (ECA)",
