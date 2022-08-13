@@ -1801,8 +1801,18 @@ If ($CommonFilesExist) {
 			# Want to ignore spaces at start of line.
 
 			#	Check for include coding that starts a line with {{
+				
+			
+			$TestFirst2Chars = $line.Trim()
+			If ($TestFirst2Chars.length -lt 2) { $TestFirst2Chars = $TestFirst2Chars + "XX"}
+			
+			$TestFirst2Chars = $TestFirst2Chars.substring(0,2)
+			
+			#	$ShowText =  'M05.20E  TestFirst2Chars = ' + $TestFirst2Chars
+			#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
-			If($line.Trim() -match "{{") {
+
+			If($TestFirst2Chars.substring(0,2) -eq "{{") {
 				
 				# Found an include in this common file.
 				# Code05.21  Housekeeping - set flags and counters.
@@ -2162,7 +2172,16 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 
 		#	Check for include coding that starts a line with {{
 
-		If($line.Trim() -match "{{") {
+		$TestFirst2Chars = $line.Trim()
+		If ($TestFirst2Chars.length -lt 2) { $TestFirst2Chars = $TestFirst2Chars + "XX"}
+		
+		$TestFirst2Chars = $TestFirst2Chars.substring(0,2)
+		
+		#	$ShowText =  'M06.20E  TestFirst2Chars = ' + $TestFirst2Chars
+		#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+
+		If($TestFirst2Chars.substring(0,2) -eq "{{") {
 
 			# Found an include in this topic file.
 
