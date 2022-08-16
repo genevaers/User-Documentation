@@ -1,5 +1,5 @@
 ﻿M01.73A  Trace file for Prepare-Website.ps1   Version 1.1
-M01.73C  Run Date       08/14/2022 20:52:47
+M01.73C  Run Date       08/16/2022 11:01:08
   
 M01.83C  Created new ExpandedCommonFolder - C:\Git\GenevaERS\General-Docs\AD-Expanded-Common
 M01.84C  Created new ExpandedTopicsFolder - C:\Git\GenevaERS\General-Docs\AE-Expanded-Topics
@@ -118,10 +118,10 @@ M04.30C  	Index1 80 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Lessons i
 M04.30C  	Index1 81 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Checklists\A General PE Checklist.md
 M04.30C  	Index1 82 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Checklists\B Checklist for Pipes.md
 M04.30C  	Index1 83 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Checklists\C Checklist for Tokens.md
-M04.30C  	Index1 84 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Programs\A Runbook MR91 Control File Generator.md
-M04.30C  	Index1 85 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Programs\B Runbook MR95R Reference Data.md
-M04.30C  	Index1 86 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Programs\C Runbook MR95E Extract Data.md
-M04.30C  	Index1 87 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Programs\D Runbook MR88 Format Data.md
+M04.30C  	Index1 84 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Programs\Runbook MR88 Format Data.md
+M04.30C  	Index1 85 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Programs\Runbook MR91 Control File Generator.md
+M04.30C  	Index1 86 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Programs\Runbook MR95E Extract Data.md
+M04.30C  	Index1 87 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Programs\Runbook MR95R Reference Data.md
 M04.30C  	Index1 88 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Run Control Utilities\A How to read syntax diagrams.md
 M04.30C  	Index1 89 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Run Control Utilities\GVBLTPRT DD Statements.md
 M04.30C  	Index1 90 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\Run Control Utilities\GVBLTPRT Parameter File Syntax.md
@@ -1423,33 +1423,33 @@ M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 84 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Programs\A Runbook MR91 Control File Generator.md
+M06.20B  Read topic file 84 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Programs\Runbook MR88 Format Data.md
 M06.27M  end =====================================================
-M06.28A  Topic filename with no includes = A Runbook MR91 Control File Generator.md
+M06.28A  Topic filename with no includes = Runbook MR88 Format Data.md
 M06.28D  Path for topic = PE Programs
 M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 85 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Programs\B Runbook MR95R Reference Data.md
+M06.20B  Read topic file 85 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Programs\Runbook MR91 Control File Generator.md
 M06.27M  end =====================================================
-M06.28A  Topic filename with no includes = B Runbook MR95R Reference Data.md
+M06.28A  Topic filename with no includes = Runbook MR91 Control File Generator.md
 M06.28D  Path for topic = PE Programs
 M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 86 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Programs\C Runbook MR95E Extract Data.md
+M06.20B  Read topic file 86 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Programs\Runbook MR95E Extract Data.md
 M06.27M  end =====================================================
-M06.28A  Topic filename with no includes = C Runbook MR95E Extract Data.md
+M06.28A  Topic filename with no includes = Runbook MR95E Extract Data.md
 M06.28D  Path for topic = PE Programs
 M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
  
 M06.20A  start read file =========================================
-M06.20B  Read topic file 87 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Programs\D Runbook MR88 Format Data.md
+M06.20B  Read topic file 87 = C:\Git\GenevaERS\General-Docs\AA Topics Markdown\PE Programs\Runbook MR95R Reference Data.md
 M06.27M  end =====================================================
-M06.28A  Topic filename with no includes = D Runbook MR88 Format Data.md
+M06.28A  Topic filename with no includes = Runbook MR95R Reference Data.md
 M06.28D  Path for topic = PE Programs
 M06.28F      Result of adding path to website is SUCCESS
 M06.28G  Topic copied to website and path 
