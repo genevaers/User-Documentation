@@ -143,1973 +143,1973 @@
     "url": "/Run%20Control%20Utilities/A%20How%20to%20read%20syntax%20diagrams.html#punctuation-etc",
     "relUrl": "/Run%20Control%20Utilities/A%20How%20to%20read%20syntax%20diagrams.html#punctuation-etc"
   },"24": {
-    "doc": "Runbook - MR91 Control File Generator",
-    "title": "Runbook - MR91 Control File Generator",
-    "content": "TABLE OF CONTENTS . | What Program MR91 achieves | Diagram | Inputs | Outputs | Errors | Useful Links | . ",
-    "url": "/PE%20Programs/A%20Runbook%20MR91%20Control%20File%20Generator.html",
-    "relUrl": "/PE%20Programs/A%20Runbook%20MR91%20Control%20File%20Generator.html"
-  },"25": {
-    "doc": "Runbook - MR91 Control File Generator",
-    "title": "What Program MR91 achieves",
-    "content": " ",
-    "url": "/PE%20Programs/A%20Runbook%20MR91%20Control%20File%20Generator.html#what-program-mr91-achieves",
-    "relUrl": "/PE%20Programs/A%20Runbook%20MR91%20Control%20File%20Generator.html#what-program-mr91-achieves"
-  },"26": {
-    "doc": "Runbook - MR91 Control File Generator",
-    "title": "Diagram",
-    "content": " ",
-    "url": "/PE%20Programs/A%20Runbook%20MR91%20Control%20File%20Generator.html#diagram",
-    "relUrl": "/PE%20Programs/A%20Runbook%20MR91%20Control%20File%20Generator.html#diagram"
-  },"27": {
-    "doc": "Runbook - MR91 Control File Generator",
-    "title": "Inputs",
-    "content": " ",
-    "url": "/PE%20Programs/A%20Runbook%20MR91%20Control%20File%20Generator.html#inputs",
-    "relUrl": "/PE%20Programs/A%20Runbook%20MR91%20Control%20File%20Generator.html#inputs"
-  },"28": {
-    "doc": "Runbook - MR91 Control File Generator",
-    "title": "Outputs",
-    "content": " ",
-    "url": "/PE%20Programs/A%20Runbook%20MR91%20Control%20File%20Generator.html#outputs",
-    "relUrl": "/PE%20Programs/A%20Runbook%20MR91%20Control%20File%20Generator.html#outputs"
-  },"29": {
-    "doc": "Runbook - MR91 Control File Generator",
-    "title": "Errors",
-    "content": "See Errors in PE Programs . ",
-    "url": "/PE%20Programs/A%20Runbook%20MR91%20Control%20File%20Generator.html#errors",
-    "relUrl": "/PE%20Programs/A%20Runbook%20MR91%20Control%20File%20Generator.html#errors"
-  },"30": {
-    "doc": "Runbook - MR91 Control File Generator",
-    "title": "Useful Links",
-    "content": "Next topic: Runbook - MR95R Reference Data . ",
-    "url": "/PE%20Programs/A%20Runbook%20MR91%20Control%20File%20Generator.html#useful-links",
-    "relUrl": "/PE%20Programs/A%20Runbook%20MR91%20Control%20File%20Generator.html#useful-links"
-  },"31": {
     "doc": "A01 - Lesson A - START HERE",
     "title": "A01 - Lesson A - START HERE",
     "content": "Lesson A reads a Sales file to create the simplest report: Sales by customer number. The input file is the Sales file which is sorted into customer number order. The output file is a report giving total sales for each customer number. This report is not useful for at least these reasons: . | The report has “customer number” but not “customer name” or any other details of the customer. | The report gives nothing about the products purchased. | . Why bother with this report? For these reasons: . | This simple report teaches the first skills you need in our product. This is a great place to start. | This report is modified in later lessons to be much more useful. With enough modifications, this report can be compared to the reports in the demo of this product. | . Lesson A consists of these topics: . | Topic A02 - Views and phases Any solution requires you know what “views” are and what “phases” are. | Topic A03 - Define a report Learn how to describe a report in the workbench. After reading about the ideas you take action to create the report for Lesson A. | Topic A04 - Prepare JCL for Lesson A | Topic A05 - Run solution for Lesson A | Topic A06 - Inside solution for Lesson A See how the solution for Lesson A works. This knowledge is essential for later lessons. | Topic A07 - VDP file for Lesson A | Topic A08- JLT file for Lesson A | Topic A09 - XLT file for Lesson A | Topic A10 - Logic Table codes for Lesson A | Topic A11 - MR95 Reports for Lesson A | Topic A12 - Lesson A achievements | . Next: A02 - Views and phases . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A01%20-%20Lesson%20A%20-%20START%20HERE.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A01%20-%20Lesson%20A%20-%20START%20HERE.html"
-  },"32": {
+  },"25": {
     "doc": "A02 - Views and phases",
     "title": "A02 - Views and phases",
     "content": "In topic 02 - Introduction we saw a highe level overview of how this product works. This topic gives more details about how this works. ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A02%20-%20Views%20and%20phases.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A02%20-%20Views%20and%20phases.html"
-  },"33": {
+  },"26": {
     "doc": "A02 - Views and phases",
     "title": "Outputs mean a view",
     "content": "Any output of our product is described in a “view”. To be completed. ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A02%20-%20Views%20and%20phases.html#outputs-mean-a-view",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A02%20-%20Views%20and%20phases.html#outputs-mean-a-view"
-  },"34": {
+  },"27": {
     "doc": "A02 - Views and phases",
     "title": "The batch stream has “phases”",
     "content": "To be completed. ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A02%20-%20Views%20and%20phases.html#the-batch-stream-has-phases",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A02%20-%20Views%20and%20phases.html#the-batch-stream-has-phases"
-  },"35": {
+  },"28": {
     "doc": "A02 - Views and phases",
     "title": "Optional extra details",
     "content": "For more details, see any of these topics: Introduction F01 - Views Introduction F02 - Phases . Next: A03 - Define a report Previous: A01 - Lesson A - START HERE . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A02%20-%20Views%20and%20phases.html#optional-extra-details",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A02%20-%20Views%20and%20phases.html#optional-extra-details"
-  },"36": {
+  },"29": {
     "doc": "A03 - Define a report",
     "title": "A03 - Define a report",
     "content": "A view is required for the report itself. To be completed. ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A03%20-%20Define%20a%20report.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A03%20-%20Define%20a%20report.html"
-  },"37": {
+  },"30": {
     "doc": "A03 - Define a report",
     "title": "Define fields in the report",
     "content": "To be completed. ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A03%20-%20Define%20a%20report.html#define-fields-in-the-report",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A03%20-%20Define%20a%20report.html#define-fields-in-the-report"
-  },"38": {
+  },"31": {
     "doc": "A03 - Define a report",
     "title": "Input File",
     "content": "To be completed. ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A03%20-%20Define%20a%20report.html#input-file",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A03%20-%20Define%20a%20report.html#input-file"
-  },"39": {
+  },"32": {
     "doc": "A03 - Define a report",
     "title": "Output File for an extract phase report",
     "content": "To be completed. Next: A04 - Prepare JCL for Lesson A Previous: A02 - Views and phases . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A03%20-%20Define%20a%20report.html#output-file-for-an-extract-phase-report",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A03%20-%20Define%20a%20report.html#output-file-for-an-extract-phase-report"
-  },"40": {
+  },"33": {
     "doc": "A04 - Prepare JCL for Lesson A",
     "title": "A04 - Prepare JCL for Lesson A",
     "content": "To be completed. Next: A05 - Run solution for Lesson A Previous: A03 - Define a report . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A04%20-%20Prepare%20JCL%20for%20Lesson%20A.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A04%20-%20Prepare%20JCL%20for%20Lesson%20A.html"
-  },"41": {
+  },"34": {
     "doc": "A05 - Run solution for Lesson A",
     "title": "A05 - Run solution for Lesson A",
     "content": "To be completed. Next: A06 - Inside solution for Lesson A Previous: A04 - Prepare JCL for Lesson A . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A05%20-%20Run%20solution%20for%20Lesson%20A.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A05%20-%20Run%20solution%20for%20Lesson%20A.html"
-  },"42": {
+  },"35": {
     "doc": "A06 - Inside solution for Lesson A",
     "title": "A06 - Inside solution for Lesson A",
     "content": "To be completed. Next: A07 - VDP file for Lesson A Previous: A05 - Run solution for Lesson A . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A06%20-%20Inside%20solution%20for%20Lesson%20A.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A06%20-%20Inside%20solution%20for%20Lesson%20A.html"
-  },"43": {
+  },"36": {
     "doc": "A07 - VDP file for Lesson A",
     "title": "A07 - VDP file for Lesson A",
     "content": "To be completed. Next: A08 - JLT file for Lesson A Previous: A06 - Inside solution for Lesson A . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A07%20-%20VDP%20file%20for%20Lesson%20A.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A07%20-%20VDP%20file%20for%20Lesson%20A.html"
-  },"44": {
+  },"37": {
     "doc": "A08 - JLT file for Lesson A",
     "title": "A08 - JLT file for Lesson A",
     "content": "To be completed. Next: A09 - XLT file for Lesson A Previous: A07 - VDP file for Lesson A . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A08%20-%20JLT%20file%20for%20Lesson%20A.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A08%20-%20JLT%20file%20for%20Lesson%20A.html"
-  },"45": {
+  },"38": {
     "doc": "A09 - XLT file for Lesson A",
     "title": "A09 - XLT file for Lesson A",
     "content": "To be completed. Next: A10 - Logic Table codes for Lesson A Previous: A08 - JLT file for Lesson A . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A09%20-%20XLT%20file%20for%20Lesson%20A.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A09%20-%20XLT%20file%20for%20Lesson%20A.html"
-  },"46": {
+  },"39": {
     "doc": "A10 - Logic Table codes for Lesson A",
     "title": "A10 - Logic Table codes for Lesson A",
     "content": "To be completed. Next: A11 - MR95 Reports for Lesson A Previous: A09 - XLT file for Lesson A . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A10%20-%20Logic%20Table%20codes%20for%20Lesson%20A.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A10%20-%20Logic%20Table%20codes%20for%20Lesson%20A.html"
-  },"47": {
+  },"40": {
     "doc": "A11 - MR95 Reports for Lesson A",
     "title": "A11 - MR95 Reports for Lesson A",
     "content": "To be completed. ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A11%20-%20MR95%20Reports%20for%20Lesson%20A.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A11%20-%20MR95%20Reports%20for%20Lesson%20A.html"
-  },"48": {
+  },"41": {
     "doc": "A11 - MR95 Reports for Lesson A",
     "title": "MR95R Report in the Reference Phase",
     "content": " ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A11%20-%20MR95%20Reports%20for%20Lesson%20A.html#mr95r-report-in-the-reference-phase",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A11%20-%20MR95%20Reports%20for%20Lesson%20A.html#mr95r-report-in-the-reference-phase"
-  },"49": {
+  },"42": {
     "doc": "A11 - MR95 Reports for Lesson A",
     "title": "MR95E Report in the Extract Phase",
     "content": ". Next: A12 - Lesson A achievements Previous: A10 - Logic Table codes for Lesson A . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A11%20-%20MR95%20Reports%20for%20Lesson%20A.html#mr95e-report-in-the-extract-phase",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A11%20-%20MR95%20Reports%20for%20Lesson%20A.html#mr95e-report-in-the-extract-phase"
-  },"50": {
+  },"43": {
     "doc": "A12 - Lesson A achievements",
     "title": "A12 - Lesson A achievements",
     "content": "To be completed. Previous: A11 - MR95 Reports for Lesson A . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A12%20-%20Lesson%20A%20achievements.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report/A12%20-%20Lesson%20A%20achievements.html"
-  },"51": {
+  },"44": {
     "doc": "About this website",
     "title": "About this website",
     "content": "To be completed. ",
     "url": "/About%20this%20website.html",
     "relUrl": "/About%20this%20website.html"
-  },"52": {
+  },"45": {
     "doc": "Checklist for Pipes",
     "title": "Checklist for Pipes",
     "content": "TABLE OF CONTENTS . | Check Physical File for Pipe | Useful Links | . ",
     "url": "/PE%20Checklists/B%20Checklist%20for%20Pipes.html",
     "relUrl": "/PE%20Checklists/B%20Checklist%20for%20Pipes.html"
-  },"53": {
+  },"46": {
     "doc": "Checklist for Pipes",
     "title": "Check Physical File for Pipe",
     "content": " ",
     "url": "/PE%20Checklists/B%20Checklist%20for%20Pipes.html#check-physical-file-for-pipe",
     "relUrl": "/PE%20Checklists/B%20Checklist%20for%20Pipes.html#check-physical-file-for-pipe"
-  },"54": {
+  },"47": {
     "doc": "Checklist for Pipes",
     "title": "Useful Links",
     "content": "Next topic: Checklist for Tokens Previous topic: General PE Checklist . ",
     "url": "/PE%20Checklists/B%20Checklist%20for%20Pipes.html#useful-links",
     "relUrl": "/PE%20Checklists/B%20Checklist%20for%20Pipes.html#useful-links"
-  },"55": {
+  },"48": {
     "doc": "Run PE",
     "title": "Run PE",
     "content": "TABLE OF CONTENTS . | Checklist before running | Submit the JCL stream | View outputs | Useful Links | . ",
     "url": "/Run%20Performance%20Engine%20(PE)/B%20Run%20PE.html",
     "relUrl": "/Run%20Performance%20Engine%20(PE)/B%20Run%20PE.html"
-  },"56": {
+  },"49": {
     "doc": "Run PE",
     "title": "Checklist before running",
     "content": "Choose a checklist from PE Checklists . ",
     "url": "/Run%20Performance%20Engine%20(PE)/B%20Run%20PE.html#checklist-before-running",
     "relUrl": "/Run%20Performance%20Engine%20(PE)/B%20Run%20PE.html#checklist-before-running"
-  },"57": {
+  },"50": {
     "doc": "Run PE",
     "title": "Submit the JCL stream",
     "content": "Sumbit the JCL to your mainframe. ",
     "url": "/Run%20Performance%20Engine%20(PE)/B%20Run%20PE.html#submit-the-jcl-stream",
     "relUrl": "/Run%20Performance%20Engine%20(PE)/B%20Run%20PE.html#submit-the-jcl-stream"
-  },"58": {
+  },"51": {
     "doc": "Run PE",
     "title": "View outputs",
     "content": "See the DD names for output files in your JCL. These are normally extract files. In case of errors, see Errors in PE Programs . ",
     "url": "/Run%20Performance%20Engine%20(PE)/B%20Run%20PE.html#view-outputs",
     "relUrl": "/Run%20Performance%20Engine%20(PE)/B%20Run%20PE.html#view-outputs"
-  },"59": {
+  },"52": {
     "doc": "Run PE",
     "title": "Useful Links",
     "content": "Next topic: Turbocharge PE Previous topic: Create JCL for batch flow . ",
     "url": "/Run%20Performance%20Engine%20(PE)/B%20Run%20PE.html#useful-links",
     "relUrl": "/Run%20Performance%20Engine%20(PE)/B%20Run%20PE.html#useful-links"
-  },"60": {
-    "doc": "Runbook - MR95R Reference Data",
-    "title": "Runbook - MR95R Reference Data",
-    "content": "TABLE OF CONTENTS . | What Program MR95R achieves | Diagram | Inputs | Outputs | Errors | Useful Links | . ",
-    "url": "/PE%20Programs/B%20Runbook%20MR95R%20Reference%20Data.html",
-    "relUrl": "/PE%20Programs/B%20Runbook%20MR95R%20Reference%20Data.html"
-  },"61": {
-    "doc": "Runbook - MR95R Reference Data",
-    "title": "What Program MR95R achieves",
-    "content": " ",
-    "url": "/PE%20Programs/B%20Runbook%20MR95R%20Reference%20Data.html#what-program-mr95r-achieves",
-    "relUrl": "/PE%20Programs/B%20Runbook%20MR95R%20Reference%20Data.html#what-program-mr95r-achieves"
-  },"62": {
-    "doc": "Runbook - MR95R Reference Data",
-    "title": "Diagram",
-    "content": " ",
-    "url": "/PE%20Programs/B%20Runbook%20MR95R%20Reference%20Data.html#diagram",
-    "relUrl": "/PE%20Programs/B%20Runbook%20MR95R%20Reference%20Data.html#diagram"
-  },"63": {
-    "doc": "Runbook - MR95R Reference Data",
-    "title": "Inputs",
-    "content": " ",
-    "url": "/PE%20Programs/B%20Runbook%20MR95R%20Reference%20Data.html#inputs",
-    "relUrl": "/PE%20Programs/B%20Runbook%20MR95R%20Reference%20Data.html#inputs"
-  },"64": {
-    "doc": "Runbook - MR95R Reference Data",
-    "title": "Outputs",
-    "content": " ",
-    "url": "/PE%20Programs/B%20Runbook%20MR95R%20Reference%20Data.html#outputs",
-    "relUrl": "/PE%20Programs/B%20Runbook%20MR95R%20Reference%20Data.html#outputs"
-  },"65": {
-    "doc": "Runbook - MR95R Reference Data",
-    "title": "Errors",
-    "content": "See Errors in PE Programs . ",
-    "url": "/PE%20Programs/B%20Runbook%20MR95R%20Reference%20Data.html#errors",
-    "relUrl": "/PE%20Programs/B%20Runbook%20MR95R%20Reference%20Data.html#errors"
-  },"66": {
-    "doc": "Runbook - MR95R Reference Data",
-    "title": "Useful Links",
-    "content": "Next topic: Runbook - MR95E Extract Data Previous topic: Runbook - MR91 Control File Generator . ",
-    "url": "/PE%20Programs/B%20Runbook%20MR95R%20Reference%20Data.html#useful-links",
-    "relUrl": "/PE%20Programs/B%20Runbook%20MR95R%20Reference%20Data.html#useful-links"
-  },"67": {
+  },"53": {
     "doc": "B01 - Lesson B - START HERE",
     "title": "B01 - Lesson B - START HERE",
     "content": "The report in Lesson A was almost useless because the report only has “customer number”. In this solution we access the Customer file so that the report displays “customer name”. The technique used is a “lookup path” which is often called “lookup” for short. Lookup paths are one of the key speed features of this product. Lesson B consists of these topics: . | Topic B02 - Lookup paths. We need a feature called “lookup paths”. | Topic B03 - Define a lookup path Define a lookup path for the report in the workbench. | Topic B04 - Prepare JCL for Lesson B | Topic B05 - Run solution for Lesson B | Topic B06 - Inside solution for Lesson B | Topic B07 - VDP file for Lesson B | Topic B08 - JLT file for Lesson B | Topic B09 - XLT file for Lesson B | Topic B10 - Logic Table codes for Lesson B | Topic B11 - MR95 Reports for Lesson B | Topic B12 - Lesson B lessons | . Next: B02 - Lookup Paths . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B01%20-%20Lesson%20B%20-%20START%20HERE.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B01%20-%20Lesson%20B%20-%20START%20HERE.html"
-  },"68": {
+  },"54": {
     "doc": "B02 - Lookup paths",
     "title": "B02 - Lookup paths",
     "content": "To be completed. ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B02%20-%20Lookup%20paths.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B02%20-%20Lookup%20paths.html"
-  },"69": {
+  },"55": {
     "doc": "B02 - Lookup paths",
     "title": "Optional extra details",
     "content": "For more details, see any of these topics: . Next: B03 - Define a lookup path Previous: B01 - Lesson B - START HERE . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B02%20-%20Lookup%20paths.html#optional-extra-details",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B02%20-%20Lookup%20paths.html#optional-extra-details"
-  },"70": {
+  },"56": {
     "doc": "B03 - Define a lookup path",
     "title": "B03 - Define a lookup path",
     "content": "To be completed. ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B03%20-%20Define%20a%20lookup%20path.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B03%20-%20Define%20a%20lookup%20path.html"
-  },"71": {
+  },"57": {
     "doc": "B03 - Define a lookup path",
     "title": "Optional extra details",
     "content": "For more details, see any of these topics: . Next: B04 - Prepare JCL for Lesson B Previous: B02 - Lookup paths . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B03%20-%20Define%20a%20lookup%20path.html#optional-extra-details",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B03%20-%20Define%20a%20lookup%20path.html#optional-extra-details"
-  },"72": {
+  },"58": {
     "doc": "B04 - Prepare JCL for Lesson B",
     "title": "B04 - Prepare JCL for Lesson B",
     "content": "To be completed. Next: B05 - Run solution for Lesson B Previous: B03 - Define a lookup path . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B04%20-%20Prepare%20JCL%20for%20Lesson%20B.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B04%20-%20Prepare%20JCL%20for%20Lesson%20B.html"
-  },"73": {
+  },"59": {
     "doc": "B05 - Run solution for Lesson B",
     "title": "B05 - Run solution for Lesson B",
     "content": "To be completed. Next: B06 - Inside solution for Lesson B Previous: B04 - Prepare JCL for Lesson B . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B05%20-%20Run%20solution%20for%20Lesson%20B.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B05%20-%20Run%20solution%20for%20Lesson%20B.html"
-  },"74": {
+  },"60": {
     "doc": "B06 - Inside solution for Lesson B",
     "title": "B06 - Inside solution for Lesson B",
     "content": "To be completed. Next: B07 - VDP file for Lesson B Previous: B05 - Run solution for Lesson B . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B06%20-%20Inside%20solution%20for%20Lesson%20B.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B06%20-%20Inside%20solution%20for%20Lesson%20B.html"
-  },"75": {
+  },"61": {
     "doc": "B07 - VDP file for Lesson B",
     "title": "B07 - VDP file for Lesson B",
     "content": "To be completed. Next: B08 - JLT file for Lesson B Previous: B06 - Inside solution for Lesson B . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B07%20-%20VDP%20file%20for%20Lesson%20B.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B07%20-%20VDP%20file%20for%20Lesson%20B.html"
-  },"76": {
+  },"62": {
     "doc": "B08 - JLT file for Lesson B",
     "title": "B08 - JLT file for Lesson B",
     "content": "To be completed. Next: B09 - XLT file for Lesson B Previous: B07 - VDP file for Lesson B . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B08%20-%20JLT%20file%20for%20Lesson%20B.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B08%20-%20JLT%20file%20for%20Lesson%20B.html"
-  },"77": {
+  },"63": {
     "doc": "B09 - XLT file for Lesson B",
     "title": "B09 - XLT file for Lesson B",
     "content": "To be completed. Next: B10 - Logic Table codes for Lesson B Previous: B08 - JLT file for Lesson B . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B09%20-%20XLT%20file%20for%20Lesson%20B.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B09%20-%20XLT%20file%20for%20Lesson%20B.html"
-  },"78": {
+  },"64": {
     "doc": "B10 - Logic Table codes for Lesson B",
     "title": "B10 - Logic Table codes for Lesson B",
     "content": "To be completed. Next: B11 - MR95 Reports for Lesson B Previous: B09 - XLT file for Lesson B . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B10%20-%20Logic%20Table%20codes%20for%20Lesson%20B.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B10%20-%20Logic%20Table%20codes%20for%20Lesson%20B.html"
-  },"79": {
+  },"65": {
     "doc": "B11 - MR95 Reports for Lesson B",
     "title": "B11 - MR95 Reports for Lesson B",
     "content": "To be completed. ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B11%20-%20MR95%20Reports%20for%20Lesson%20B.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B11%20-%20MR95%20Reports%20for%20Lesson%20B.html"
-  },"80": {
+  },"66": {
     "doc": "B11 - MR95 Reports for Lesson B",
     "title": "MR95R Report in the Reference Phase",
     "content": " ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B11%20-%20MR95%20Reports%20for%20Lesson%20B.html#mr95r-report-in-the-reference-phase",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B11%20-%20MR95%20Reports%20for%20Lesson%20B.html#mr95r-report-in-the-reference-phase"
-  },"81": {
+  },"67": {
     "doc": "B11 - MR95 Reports for Lesson B",
     "title": "MR95E Report in the Extract Phase",
     "content": ". Next: B12 - Lesson B achievements Previous: B10 - Logic Table codes for Lesson B . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B11%20-%20MR95%20Reports%20for%20Lesson%20B.html#mr95e-report-in-the-extract-phase",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B11%20-%20MR95%20Reports%20for%20Lesson%20B.html#mr95e-report-in-the-extract-phase"
-  },"82": {
+  },"68": {
     "doc": "B12 - Lesson B achievements",
     "title": "B12 - Lesson B lessons",
     "content": "To be completed. Previous: B11 - MR95 Reports for Lesson B . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B12%20-%20Lesson%20B%20achievements.html#b12---lesson-b-lessons",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B12%20-%20Lesson%20B%20achievements.html#b12---lesson-b-lessons"
-  },"83": {
+  },"69": {
     "doc": "B12 - Lesson B achievements",
     "title": "B12 - Lesson B achievements",
     "content": " ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B12%20-%20Lesson%20B%20achievements.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20%20Add%20lookup%20to%20report/B12%20-%20Lesson%20B%20achievements.html"
-  },"84": {
+  },"70": {
     "doc": "Basic Views Training",
     "title": "Basic Views Training",
     "content": " ",
     "url": "/Basic%20Views%20Training.html",
     "relUrl": "/Basic%20Views%20Training.html"
-  },"85": {
+  },"71": {
     "doc": "Basic solutions",
     "title": "Basic solutions",
     "content": "Below are very simple uses of our product. Real-life solutions involve more complex examples and combinations of these basic solutions. Solutions below refer to topics in folder Feature introductions. Reading those introductions helps you understand the solutions here. ",
     "url": "/Basic%20solutions.html",
     "relUrl": "/Basic%20solutions.html"
-  },"86": {
+  },"72": {
     "doc": "Checklist for Tokens",
     "title": "Checklist for Tokens",
     "content": "TABLE OF CONTENTS . | What to check | Useful Links | . ",
     "url": "/PE%20Checklists/C%20Checklist%20for%20Tokens.html",
     "relUrl": "/PE%20Checklists/C%20Checklist%20for%20Tokens.html"
-  },"87": {
+  },"73": {
     "doc": "Checklist for Tokens",
     "title": "What to check",
     "content": " ",
     "url": "/PE%20Checklists/C%20Checklist%20for%20Tokens.html#what-to-check",
     "relUrl": "/PE%20Checklists/C%20Checklist%20for%20Tokens.html#what-to-check"
-  },"88": {
+  },"74": {
     "doc": "Checklist for Tokens",
     "title": "Useful Links",
     "content": "Previous topic: Checklist for Pipes . ",
     "url": "/PE%20Checklists/C%20Checklist%20for%20Tokens.html#useful-links",
     "relUrl": "/PE%20Checklists/C%20Checklist%20for%20Tokens.html#useful-links"
-  },"89": {
-    "doc": "Runbook - MR95E Extract Data",
-    "title": "Runbook - MR95E Extract Data",
-    "content": "TABLE OF CONTENTS . | What Program MR95E achieves | Diagram | Inputs | Outputs | Errors | Useful Links | . ",
-    "url": "/PE%20Programs/C%20Runbook%20MR95E%20Extract%20Data.html",
-    "relUrl": "/PE%20Programs/C%20Runbook%20MR95E%20Extract%20Data.html"
-  },"90": {
-    "doc": "Runbook - MR95E Extract Data",
-    "title": "What Program MR95E achieves",
-    "content": " ",
-    "url": "/PE%20Programs/C%20Runbook%20MR95E%20Extract%20Data.html#what-program-mr95e-achieves",
-    "relUrl": "/PE%20Programs/C%20Runbook%20MR95E%20Extract%20Data.html#what-program-mr95e-achieves"
-  },"91": {
-    "doc": "Runbook - MR95E Extract Data",
-    "title": "Diagram",
-    "content": " ",
-    "url": "/PE%20Programs/C%20Runbook%20MR95E%20Extract%20Data.html#diagram",
-    "relUrl": "/PE%20Programs/C%20Runbook%20MR95E%20Extract%20Data.html#diagram"
-  },"92": {
-    "doc": "Runbook - MR95E Extract Data",
-    "title": "Inputs",
-    "content": " ",
-    "url": "/PE%20Programs/C%20Runbook%20MR95E%20Extract%20Data.html#inputs",
-    "relUrl": "/PE%20Programs/C%20Runbook%20MR95E%20Extract%20Data.html#inputs"
-  },"93": {
-    "doc": "Runbook - MR95E Extract Data",
-    "title": "Outputs",
-    "content": " ",
-    "url": "/PE%20Programs/C%20Runbook%20MR95E%20Extract%20Data.html#outputs",
-    "relUrl": "/PE%20Programs/C%20Runbook%20MR95E%20Extract%20Data.html#outputs"
-  },"94": {
-    "doc": "Runbook - MR95E Extract Data",
-    "title": "Errors",
-    "content": "See Errors in PE Programs . ",
-    "url": "/PE%20Programs/C%20Runbook%20MR95E%20Extract%20Data.html#errors",
-    "relUrl": "/PE%20Programs/C%20Runbook%20MR95E%20Extract%20Data.html#errors"
-  },"95": {
-    "doc": "Runbook - MR95E Extract Data",
-    "title": "Useful Links",
-    "content": "Next topic: Runbook - MR88 Format Data Previous topic: Runbook - MR95R Reference Data . ",
-    "url": "/PE%20Programs/C%20Runbook%20MR95E%20Extract%20Data.html#useful-links",
-    "relUrl": "/PE%20Programs/C%20Runbook%20MR95E%20Extract%20Data.html#useful-links"
-  },"96": {
+  },"75": {
     "doc": "Turbocharge PE",
     "title": "Turbocharge PE",
     "content": "TABLE OF CONTENTS . | What PE output to check | Reports to gather more information | Opporunities to turbocharge GenevaERS | Useful Links | . ",
     "url": "/Run%20Performance%20Engine%20(PE)/C%20Turbocharge%20PE.html",
     "relUrl": "/Run%20Performance%20Engine%20(PE)/C%20Turbocharge%20PE.html"
-  },"97": {
+  },"76": {
     "doc": "Turbocharge PE",
     "title": "What PE output to check",
     "content": " ",
     "url": "/Run%20Performance%20Engine%20(PE)/C%20Turbocharge%20PE.html#what-pe-output-to-check",
     "relUrl": "/Run%20Performance%20Engine%20(PE)/C%20Turbocharge%20PE.html#what-pe-output-to-check"
-  },"98": {
+  },"77": {
     "doc": "Turbocharge PE",
     "title": "Reports to gather more information",
     "content": " ",
     "url": "/Run%20Performance%20Engine%20(PE)/C%20Turbocharge%20PE.html#reports-to-gather-more-information",
     "relUrl": "/Run%20Performance%20Engine%20(PE)/C%20Turbocharge%20PE.html#reports-to-gather-more-information"
-  },"99": {
+  },"78": {
     "doc": "Turbocharge PE",
     "title": "Opporunities to turbocharge GenevaERS",
     "content": " ",
     "url": "/Run%20Performance%20Engine%20(PE)/C%20Turbocharge%20PE.html#opporunities-to-turbocharge-genevaers",
     "relUrl": "/Run%20Performance%20Engine%20(PE)/C%20Turbocharge%20PE.html#opporunities-to-turbocharge-genevaers"
-  },"100": {
+  },"79": {
     "doc": "Turbocharge PE",
     "title": "Useful Links",
     "content": "Previous topic: Run PE . ",
     "url": "/Run%20Performance%20Engine%20(PE)/C%20Turbocharge%20PE.html#useful-links",
     "relUrl": "/Run%20Performance%20Engine%20(PE)/C%20Turbocharge%20PE.html#useful-links"
-  },"101": {
+  },"80": {
     "doc": "C01 - Lesson C - START HERE",
     "title": "C01 - Lesson C - START HERE",
     "content": "This solution makes a small change to the report in Lesson B: optimize the lookup path. The Lesson topics below will cover this. This small change is a speed technique as we shall see. Lesson C consists of these topics: . | Topic C02 - Optimize lookup paths | Topic C03 - Modify lookup path | Topic C04 - Prepare JCL for Lesson C | Topic C05 - Run solution for Lesson C | Topic C06 - Inside solution for Lesson C | Topic C07 - VDP file for Lesson C | Topic C08 - JLT file for Lesson C | Topic C09 - XLT file for Lesson C | Topic C10 - Logic Table codes for Lesson C | Topic C11 - MR95 Reports for Lesson C | Topic C12 - Lesson C lesssons | . Next: C02 - Optimize lookup paths . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C01%20-%20Lesson%20C%20-%20START%20HERE.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C01%20-%20Lesson%20C%20-%20START%20HERE.html"
-  },"102": {
+  },"81": {
     "doc": "C02 - Optimize lookup paths",
     "title": "C02 - Optimize lookup paths",
     "content": "To be completed. ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C02%20-%20Optimize%20lookup%20paths.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C02%20-%20Optimize%20lookup%20paths.html"
-  },"103": {
+  },"82": {
     "doc": "C02 - Optimize lookup paths",
     "title": "Optional extra details",
     "content": "For more details, see any of these topics: . Next: C03 - Modify lookup path Previous: C01 - Lesson C - START HERE . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C02%20-%20Optimize%20lookup%20paths.html#optional-extra-details",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C02%20-%20Optimize%20lookup%20paths.html#optional-extra-details"
-  },"104": {
+  },"83": {
     "doc": "C03 - Modify lookup path",
     "title": "C03 - Modify lookup path",
     "content": "To be completed. ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C03%20-%20Modify%20lookup%20path.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C03%20-%20Modify%20lookup%20path.html"
-  },"105": {
+  },"84": {
     "doc": "C03 - Modify lookup path",
     "title": "Optional extra details",
     "content": "For more details, see any of these topics: . Next: C04 - Prepare JCL for Lesson C Previous: C02 - Optimize lookup paths . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C03%20-%20Modify%20lookup%20path.html#optional-extra-details",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C03%20-%20Modify%20lookup%20path.html#optional-extra-details"
-  },"106": {
+  },"85": {
     "doc": "C04 - Prepare JCL for Lesson C",
     "title": "C04 - Prepare JCL for Lesson C",
     "content": "To be completed. Next: C05 - Run solution for Lesson C Previous: C03 - Modify lookup path . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C04%20-%20Prepare%20JCL%20for%20Lesson%20C.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C04%20-%20Prepare%20JCL%20for%20Lesson%20C.html"
-  },"107": {
+  },"86": {
     "doc": "C05 - Run solution for Lesson C",
     "title": "C05 - Run solution for Lesson C",
     "content": "To be completed. Next: C06 - Inside solution for Lesson C Previous: C04 - Prepare JCL for Lesson C . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C05%20-%20Run%20solution%20for%20Lesson%20C.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C05%20-%20Run%20solution%20for%20Lesson%20C.html"
-  },"108": {
+  },"87": {
     "doc": "C06 - Inside solution for Lesson C",
     "title": "C06 - Inside solution for Lesson C",
     "content": "To be completed. Next: C07 - VDP file for Lesson C Previous: C05 - Run solution for Lesson C . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C06%20-%20Inside%20solution%20for%20Lesson%20C.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C06%20-%20Inside%20solution%20for%20Lesson%20C.html"
-  },"109": {
+  },"88": {
     "doc": "C07 - VDP file for Lesson C",
     "title": "C07 - VDP file for Lesson C",
     "content": "To be completed. Next: C08 - JLT file for Lesson C Previous: C06 - Inside solution for Lesson C . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C07%20-%20VDP%20file%20for%20Lesson%20C.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C07%20-%20VDP%20file%20for%20Lesson%20C.html"
-  },"110": {
+  },"89": {
     "doc": "C08 - JLT file for Lesson C",
     "title": "C08 - JLT file for Lesson C",
     "content": "To be completed. Next: C09 - XLT file for Lesson C Previous: C07 - VDP file for Lesson C . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C08%20-%20JLT%20file%20for%20Lesson%20C.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C08%20-%20JLT%20file%20for%20Lesson%20C.html"
-  },"111": {
+  },"90": {
     "doc": "C09 - XLT file for Lesson C",
     "title": "C09 - XLT file for Lesson C",
     "content": "To be completed. Next: C10 - Logic Table codes for Lesson C Previous: C08 - JLT file for Lesson C . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C09%20-%20XLT%20file%20for%20Lesson%20C.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C09%20-%20XLT%20file%20for%20Lesson%20C.html"
-  },"112": {
+  },"91": {
     "doc": "C10 - Logic Table codes for Lesson C",
     "title": "C10 - Logic Table codes for Lesson C",
     "content": "To be completed. Next: C11 - MR95 Reports for Lesson C Previous: C09 - XLT file for Lesson C . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C10%20-%20Logic%20Table%20codes%20for%20Lesson%20C.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C10%20-%20Logic%20Table%20codes%20for%20Lesson%20C.html"
-  },"113": {
+  },"92": {
     "doc": "C11 - MR95 Reports for Lesson C",
     "title": "C11 - MR95 Reports for Lesson C",
     "content": "To be completed. ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C11%20-%20MR95%20Reports%20for%20Lesson%20C.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C11%20-%20MR95%20Reports%20for%20Lesson%20C.html"
-  },"114": {
+  },"93": {
     "doc": "C11 - MR95 Reports for Lesson C",
     "title": "MR95R Report in the Reference Phase",
     "content": " ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C11%20-%20MR95%20Reports%20for%20Lesson%20C.html#mr95r-report-in-the-reference-phase",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C11%20-%20MR95%20Reports%20for%20Lesson%20C.html#mr95r-report-in-the-reference-phase"
-  },"115": {
+  },"94": {
     "doc": "C11 - MR95 Reports for Lesson C",
     "title": "MR95E Report in the Extract Phase",
     "content": ". Next: C12 - Lesson C achievements Previous: C10 - Logic Table codes for Lesson C . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C11%20-%20MR95%20Reports%20for%20Lesson%20C.html#mr95e-report-in-the-extract-phase",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C11%20-%20MR95%20Reports%20for%20Lesson%20C.html#mr95e-report-in-the-extract-phase"
-  },"116": {
+  },"95": {
     "doc": "C12 - Lesson C achievements",
     "title": "C12 - Lesson C achievements",
     "content": "To be completed. Previous: C11 - MR95 Reports for Lesson C . ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C12%20-%20Lesson%20C%20achievements.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup/C12%20-%20Lesson%20C%20achievements.html"
-  },"117": {
+  },"96": {
     "doc": "Compiler & Data Types",
     "title": "Compiler &amp; Data Types",
     "content": "Reminder: Introduction H10 - Compiler . ",
     "url": "/Compiler%20&%20Data%20Types.html#compiler--data-types",
     "relUrl": "/Compiler%20&%20Data%20Types.html#compiler--data-types"
-  },"118": {
+  },"97": {
     "doc": "Compiler & Data Types",
     "title": "Compiler & Data Types",
     "content": " ",
     "url": "/Compiler%20&%20Data%20Types.html",
     "relUrl": "/Compiler%20&%20Data%20Types.html"
-  },"119": {
+  },"98": {
     "doc": "Compiler Data Type Matrix",
     "title": "Compiler Data Type Matrix",
     "content": "TABLE OF CONTENTS . | ??? | . ",
     "url": "/Compiler%20&%20Data%20Types/Compiler%20Data%20Type%20Matrix.html",
     "relUrl": "/Compiler%20&%20Data%20Types/Compiler%20Data%20Type%20Matrix.html"
-  },"120": {
+  },"99": {
     "doc": "Compiler Data Type Matrix",
     "title": "???",
     "content": " ",
     "url": "/Compiler%20&%20Data%20Types/Compiler%20Data%20Type%20Matrix.html",
     "relUrl": "/Compiler%20&%20Data%20Types/Compiler%20Data%20Type%20Matrix.html"
-  },"121": {
-    "doc": "Runbook - MR88 Format Data",
-    "title": "Runbook - MR88 Format Data",
-    "content": "TABLE OF CONTENTS . | What Program MR88 achieves | Diagram | Inputs | Outputs | Errors | Useful Links | . ",
-    "url": "/PE%20Programs/D%20Runbook%20MR88%20Format%20Data.html",
-    "relUrl": "/PE%20Programs/D%20Runbook%20MR88%20Format%20Data.html"
-  },"122": {
-    "doc": "Runbook - MR88 Format Data",
-    "title": "What Program MR88 achieves",
-    "content": " ",
-    "url": "/PE%20Programs/D%20Runbook%20MR88%20Format%20Data.html#what-program-mr88-achieves",
-    "relUrl": "/PE%20Programs/D%20Runbook%20MR88%20Format%20Data.html#what-program-mr88-achieves"
-  },"123": {
-    "doc": "Runbook - MR88 Format Data",
-    "title": "Diagram",
-    "content": " ",
-    "url": "/PE%20Programs/D%20Runbook%20MR88%20Format%20Data.html#diagram",
-    "relUrl": "/PE%20Programs/D%20Runbook%20MR88%20Format%20Data.html#diagram"
-  },"124": {
-    "doc": "Runbook - MR88 Format Data",
-    "title": "Inputs",
-    "content": " ",
-    "url": "/PE%20Programs/D%20Runbook%20MR88%20Format%20Data.html#inputs",
-    "relUrl": "/PE%20Programs/D%20Runbook%20MR88%20Format%20Data.html#inputs"
-  },"125": {
-    "doc": "Runbook - MR88 Format Data",
-    "title": "Outputs",
-    "content": " ",
-    "url": "/PE%20Programs/D%20Runbook%20MR88%20Format%20Data.html#outputs",
-    "relUrl": "/PE%20Programs/D%20Runbook%20MR88%20Format%20Data.html#outputs"
-  },"126": {
-    "doc": "Runbook - MR88 Format Data",
-    "title": "Errors",
-    "content": "See Errors in PE Programs . ",
-    "url": "/PE%20Programs/D%20Runbook%20MR88%20Format%20Data.html#errors",
-    "relUrl": "/PE%20Programs/D%20Runbook%20MR88%20Format%20Data.html#errors"
-  },"127": {
-    "doc": "Runbook - MR88 Format Data",
-    "title": "Useful Links",
-    "content": "Previous topic: Runbook - MR95E Extract Data . ",
-    "url": "/PE%20Programs/D%20Runbook%20MR88%20Format%20Data.html#useful-links",
-    "relUrl": "/PE%20Programs/D%20Runbook%20MR88%20Format%20Data.html#useful-links"
-  },"128": {
+  },"100": {
     "doc": "Diagrams - Extract Column Assignment (ECA)",
     "title": "Diagrams - Extract Column Assignment (ECA)",
     "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Extract%20Column%20Assignment%20(ECA).html",
     "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Extract%20Column%20Assignment%20(ECA).html"
-  },"129": {
+  },"101": {
     "doc": "Diagrams - Extract Column Assignment (ECA)",
     "title": "UNDER CONSTRUCTION",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Extract%20Column%20Assignment%20(ECA).html#under-construction",
     "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Extract%20Column%20Assignment%20(ECA).html#under-construction"
-  },"130": {
+  },"102": {
     "doc": "Diagrams - Extract Record Filter (ERF)",
     "title": "Diagrams - Extract Record Filter (ERF)",
     "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Extract%20Record%20Filter%20(ERF).html",
     "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Extract%20Record%20Filter%20(ERF).html"
-  },"131": {
+  },"103": {
     "doc": "Diagrams - Extract Record Filter (ERF)",
     "title": "UNDER CONSTRUCTION",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Extract%20Record%20Filter%20(ERF).html#under-construction",
     "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Extract%20Record%20Filter%20(ERF).html#under-construction"
-  },"132": {
+  },"104": {
     "doc": "Diagrams - Format Column Calculations (FCC)",
     "title": "Diagrams - Format Column Calculations (FCC)",
     "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Format%20Column%20Assignment%20(FCA).html",
     "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Format%20Column%20Assignment%20(FCA).html"
-  },"133": {
+  },"105": {
     "doc": "Diagrams - Format Column Calculations (FCC)",
     "title": "UNDER CONSTRUCTION",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Format%20Column%20Assignment%20(FCA).html#under-construction",
     "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Format%20Column%20Assignment%20(FCA).html#under-construction"
-  },"134": {
+  },"106": {
     "doc": "Diagrams - Format Record Filter (FRF)",
     "title": "Diagrams - Format Record Filter (FRF)",
     "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Format%20Record%20Filter%20(FRF).html",
     "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Format%20Record%20Filter%20(FRF).html"
-  },"135": {
+  },"107": {
     "doc": "Diagrams - Format Record Filter (FRF)",
     "title": "UNDER CONSTRUCTION",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Format%20Record%20Filter%20(FRF).html#under-construction",
     "relUrl": "/Workbench%20Logic%20Text%20Summary%20Diagrams/Diagrams%20-%20Format%20Record%20Filter%20(FRF).html#under-construction"
-  },"136": {
+  },"108": {
     "doc": "Dummy",
     "title": "Dummy",
     "content": "Dummy topic to make the folder appear. ",
     "url": "/Workbench%20Logic%20Text%20Intro/Dummy.html",
     "relUrl": "/Workbench%20Logic%20Text%20Intro/Dummy.html"
-  },"137": {
+  },"109": {
     "doc": "Errors in PE Programs",
     "title": "Errors in PE Programs",
     "content": " ",
     "url": "/Errors%20in%20PE%20Programs.html",
     "relUrl": "/Errors%20in%20PE%20Programs.html"
-  },"138": {
+  },"110": {
     "doc": "Errors in Run Control Utilities",
     "title": "Errors in Run Control Utilities",
     "content": " ",
     "url": "/Errors%20in%20Run%20Control%20Utilities.html",
     "relUrl": "/Errors%20in%20Run%20Control%20Utilities.html"
-  },"139": {
+  },"111": {
     "doc": "Errors in Sub-Programs",
     "title": "Errors in Sub-Programs",
     "content": " ",
     "url": "/Errors%20in%20Sub-Programs.html",
     "relUrl": "/Errors%20in%20Sub-Programs.html"
-  },"140": {
+  },"112": {
     "doc": "Errors in User-Exits",
     "title": "Errors in User-Exits",
     "content": " ",
     "url": "/Errors%20in%20User-Exits.html",
     "relUrl": "/Errors%20in%20User-Exits.html"
-  },"141": {
+  },"113": {
     "doc": "Errors in Workbench",
     "title": "Errors in Workbench",
     "content": " ",
     "url": "/Errors%20in%20Workbench.html",
     "relUrl": "/Errors%20in%20Workbench.html"
-  },"142": {
+  },"114": {
     "doc": "Examples - COLUMN & COL.nnn statements",
     "title": "Examples - COLUMN &amp; COL.nnn statements",
     "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Examples%20-%20COLUMN%20&%20COL.nnn%20statements.html#examples---column--colnnn-statements",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Examples%20-%20COLUMN%20&%20COL.nnn%20statements.html#examples---column--colnnn-statements"
-  },"143": {
+  },"115": {
     "doc": "Examples - COLUMN & COL.nnn statements",
     "title": "UNDER CONSTRUCTION",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Examples%20-%20COLUMN%20&%20COL.nnn%20statements.html#under-construction",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Examples%20-%20COLUMN%20&%20COL.nnn%20statements.html#under-construction"
-  },"144": {
+  },"116": {
     "doc": "Examples - COLUMN & COL.nnn statements",
     "title": "Examples - COLUMN & COL.nnn statements",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Examples%20-%20COLUMN%20&%20COL.nnn%20statements.html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Examples%20-%20COLUMN%20&%20COL.nnn%20statements.html"
-  },"145": {
+  },"117": {
     "doc": "Examples - COLUMN statements",
     "title": "Examples - COLUMN statements",
     "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Types/Format%20Column%20Calculations%20(FCC)/Examples%20-%20COLUMN%20statements.html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Column%20Calculations%20(FCC)/Examples%20-%20COLUMN%20statements.html"
-  },"146": {
+  },"118": {
     "doc": "Examples - COLUMN statements",
     "title": "UNDER CONSTRUCTION",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Format%20Column%20Calculations%20(FCC)/Examples%20-%20COLUMN%20statements.html#under-construction",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Column%20Calculations%20(FCC)/Examples%20-%20COLUMN%20statements.html#under-construction"
-  },"147": {
+  },"119": {
     "doc": "Examples - IF statements with COLUMN & COL.nnn",
     "title": "Examples - IF statements with COLUMN &amp; COL.nnn",
     "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Examples%20-%20IF%20statements%20with%20COLUMN%20&%20COL.nnn.html#examples---if-statements-with-column--colnnn",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Examples%20-%20IF%20statements%20with%20COLUMN%20&%20COL.nnn.html#examples---if-statements-with-column--colnnn"
-  },"148": {
+  },"120": {
     "doc": "Examples - IF statements with COLUMN & COL.nnn",
     "title": "UNDER CONSTRUCTION",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Examples%20-%20IF%20statements%20with%20COLUMN%20&%20COL.nnn.html#under-construction",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Examples%20-%20IF%20statements%20with%20COLUMN%20&%20COL.nnn.html#under-construction"
-  },"149": {
+  },"121": {
     "doc": "Examples - IF statements with COLUMN & COL.nnn",
     "title": "Examples - IF statements with COLUMN & COL.nnn",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Examples%20-%20IF%20statements%20with%20COLUMN%20&%20COL.nnn.html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Examples%20-%20IF%20statements%20with%20COLUMN%20&%20COL.nnn.html"
-  },"150": {
+  },"122": {
     "doc": "Examples - IF statements with COLUMN",
     "title": "Examples - IF statements with COLUMN",
     "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Types/Format%20Column%20Calculations%20(FCC)/Examples%20-%20IF%20statements%20with%20COLUMN.html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Column%20Calculations%20(FCC)/Examples%20-%20IF%20statements%20with%20COLUMN.html"
-  },"151": {
+  },"123": {
     "doc": "Examples - IF statements with COLUMN",
     "title": "UNDER CONSTRUCTION",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Format%20Column%20Calculations%20(FCC)/Examples%20-%20IF%20statements%20with%20COLUMN.html#under-construction",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Column%20Calculations%20(FCC)/Examples%20-%20IF%20statements%20with%20COLUMN.html#under-construction"
-  },"152": {
-    "doc": "Examples - IF statements with SELECT",
-    "title": "Examples - IF statements with SELECT",
-    "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
-    "url": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20IF%20statements%20with%20SELECT.html",
-    "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20IF%20statements%20with%20SELECT.html"
-  },"153": {
-    "doc": "Examples - IF statements with SELECT",
-    "title": "UNDER CONSTRUCTION",
-    "content": " ",
-    "url": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20IF%20statements%20with%20SELECT.html#under-construction",
-    "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20IF%20statements%20with%20SELECT.html#under-construction"
-  },"154": {
+  },"124": {
     "doc": "Examples - IF statements with SELECT",
     "title": "Examples - IF statements with SELECT",
     "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20IF%20statements%20with%20SELECT.html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20IF%20statements%20with%20SELECT.html"
-  },"155": {
+  },"125": {
     "doc": "Examples - IF statements with SELECT",
     "title": "UNDER CONSTRUCTION",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20IF%20statements%20with%20SELECT.html#under-construction",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20IF%20statements%20with%20SELECT.html#under-construction"
-  },"156": {
-    "doc": "Examples - IF statements with SKIP",
-    "title": "Examples - IF statements with SKIP",
+  },"126": {
+    "doc": "Examples - IF statements with SELECT",
+    "title": "Examples - IF statements with SELECT",
     "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
-    "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20IF%20statements%20with%20SKIP.html",
-    "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20IF%20statements%20with%20SKIP.html"
-  },"157": {
-    "doc": "Examples - IF statements with SKIP",
+    "url": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20IF%20statements%20with%20SELECT.html",
+    "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20IF%20statements%20with%20SELECT.html"
+  },"127": {
+    "doc": "Examples - IF statements with SELECT",
     "title": "UNDER CONSTRUCTION",
     "content": " ",
-    "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20IF%20statements%20with%20SKIP.html#under-construction",
-    "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20IF%20statements%20with%20SKIP.html#under-construction"
-  },"158": {
+    "url": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20IF%20statements%20with%20SELECT.html#under-construction",
+    "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20IF%20statements%20with%20SELECT.html#under-construction"
+  },"128": {
     "doc": "Examples - IF statements with SKIP",
     "title": "Examples - IF statements with SKIP",
     "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20IF%20statements%20with%20SKIP.html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20IF%20statements%20with%20SKIP.html"
-  },"159": {
+  },"129": {
     "doc": "Examples - IF statements with SKIP",
     "title": "UNDER CONSTRUCTION",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20IF%20statements%20with%20SKIP.html#under-construction",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20IF%20statements%20with%20SKIP.html#under-construction"
-  },"160": {
+  },"130": {
+    "doc": "Examples - IF statements with SKIP",
+    "title": "Examples - IF statements with SKIP",
+    "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
+    "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20IF%20statements%20with%20SKIP.html",
+    "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20IF%20statements%20with%20SKIP.html"
+  },"131": {
+    "doc": "Examples - IF statements with SKIP",
+    "title": "UNDER CONSTRUCTION",
+    "content": " ",
+    "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20IF%20statements%20with%20SKIP.html#under-construction",
+    "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20IF%20statements%20with%20SKIP.html#under-construction"
+  },"132": {
     "doc": "Examples - SELECTIF statements",
     "title": "Examples - SELECTIF statements",
     "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20SELECTIF%20statements.html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20SELECTIF%20statements.html"
-  },"161": {
+  },"133": {
     "doc": "Examples - SELECTIF statements",
     "title": "UNDER CONSTRUCTION",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20SELECTIF%20statements.html#under-construction",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20SELECTIF%20statements.html#under-construction"
-  },"162": {
+  },"134": {
     "doc": "Examples - SELECTIF statements",
     "title": "Examples - SELECTIF statements",
     "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20SELECTIF%20statements.html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20SELECTIF%20statements.html"
-  },"163": {
+  },"135": {
     "doc": "Examples - SELECTIF statements",
     "title": "UNDER CONSTRUCTION",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20SELECTIF%20statements.html#under-construction",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20SELECTIF%20statements.html#under-construction"
-  },"164": {
-    "doc": "Examples - SKIPIF statements",
-    "title": "Examples - SKIPIF statements",
-    "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
-    "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20SKIPIF%20statements.html",
-    "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20SKIPIF%20statements.html"
-  },"165": {
-    "doc": "Examples - SKIPIF statements",
-    "title": "UNDER CONSTRUCTION",
-    "content": " ",
-    "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20SKIPIF%20statements.html#under-construction",
-    "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20SKIPIF%20statements.html#under-construction"
-  },"166": {
+  },"136": {
     "doc": "Examples - SKIPIF statements",
     "title": "Examples - SKIPIF statements",
     "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20SKIPIF%20statements.html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20SKIPIF%20statements.html"
-  },"167": {
+  },"137": {
     "doc": "Examples - SKIPIF statements",
     "title": "UNDER CONSTRUCTION",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20SKIPIF%20statements.html#under-construction",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Examples%20-%20SKIPIF%20statements.html#under-construction"
-  },"168": {
+  },"138": {
+    "doc": "Examples - SKIPIF statements",
+    "title": "Examples - SKIPIF statements",
+    "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
+    "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20SKIPIF%20statements.html",
+    "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20SKIPIF%20statements.html"
+  },"139": {
+    "doc": "Examples - SKIPIF statements",
+    "title": "UNDER CONSTRUCTION",
+    "content": " ",
+    "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20SKIPIF%20statements.html#under-construction",
+    "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20SKIPIF%20statements.html#under-construction"
+  },"140": {
     "doc": "Examples - WRITE statements",
     "title": "Examples - WRITE statements",
     "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Examples%20-%20WRITE%20statements.html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Examples%20-%20WRITE%20statements.html"
-  },"169": {
+  },"141": {
     "doc": "Examples - WRITE statements",
     "title": "UNDER CONSTRUCTION",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Examples%20-%20WRITE%20statements.html#under-construction",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Examples%20-%20WRITE%20statements.html#under-construction"
-  },"170": {
+  },"142": {
     "doc": "Examples - WRITE statements",
     "title": "Examples - WRITE statements",
     "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20WRITE%20statements.html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20WRITE%20statements.html"
-  },"171": {
+  },"143": {
     "doc": "Examples - WRITE statements",
     "title": "UNDER CONSTRUCTION",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20WRITE%20statements.html#under-construction",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Examples%20-%20WRITE%20statements.html#under-construction"
-  },"172": {
+  },"144": {
     "doc": "Extract Column Assignment (ECA)",
     "title": "Extract Column Assignment (ECA)",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA).html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA).html"
-  },"173": {
+  },"145": {
     "doc": "Extract Record Filter (ERF)",
     "title": "Extract Record Filter (ERF)",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF).html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF).html"
-  },"174": {
+  },"146": {
     "doc": "Feature introductions",
     "title": "Feature introductions",
     "content": "The features are why our product is so uniquely fast. Our product has a lot of features to handle mainframe batch processing. The introductions are short. There are pointers to more details if needed. Topics here are referenced from folder Basic solutions. Reading these introductions helps you understand the basic solutions. ",
     "url": "/Feature%20introductions.html",
     "relUrl": "/Feature%20introductions.html"
-  },"175": {
+  },"147": {
     "doc": "First steps",
     "title": "First steps",
     "content": "What is GenevaERS in less than 140 words. Install &amp; run our product on your mainframe using Demo. Downloading the demo actually installs most of this (free) product. Alter the demo processing by installing Workbench. The workbench is key to using this product in your company. ",
     "url": "/User%20guide%20-%20start%20here/First%20steps.html",
     "relUrl": "/User%20guide%20-%20start%20here/First%20steps.html"
-  },"176": {
+  },"148": {
     "doc": "First steps",
     "title": "I want to learn the basics",
     "content": "It is necesssary to learn a lot of basic skills to use this product. See folder Lessons in basic skills . ",
     "url": "/User%20guide%20-%20start%20here/First%20steps.html#i-want-to-learn-the-basics",
     "relUrl": "/User%20guide%20-%20start%20here/First%20steps.html#i-want-to-learn-the-basics"
-  },"177": {
+  },"149": {
     "doc": "First steps",
     "title": "I am ready to use this product in my company",
     "content": "The link below assumes you have done many of the courses in basic skills above. See folder How to use this product . ",
     "url": "/User%20guide%20-%20start%20here/First%20steps.html#i-am-ready-to-use-this-product-in-my-company",
     "relUrl": "/User%20guide%20-%20start%20here/First%20steps.html#i-am-ready-to-use-this-product-in-my-company"
-  },"178": {
+  },"150": {
     "doc": "Format Column Calculations (FCC)",
     "title": "Format Column Calculations (FCC)",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Format%20Column%20Calculations%20(FCC).html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Column%20Calculations%20(FCC).html"
-  },"179": {
+  },"151": {
     "doc": "Format Record Filter (FRF)",
     "title": "Format Record Filter (FRF)",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF).html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF).html"
-  },"180": {
+  },"152": {
     "doc": "Frequently Asked Questions (FAQ)",
     "title": "Frequently Asked Questions (FAQ)",
     "content": " ",
     "url": "/Frequently%20Asked%20Questions%20(FAQ).html",
     "relUrl": "/Frequently%20Asked%20Questions%20(FAQ).html"
-  },"181": {
+  },"153": {
     "doc": "GVBLTPRT DD Statements",
     "title": "GVBLTPRT DD Statements",
     "content": "| Type | DD Name | Title | Required? | DSORG | RECFM | LRECL | . | Input | LTPRPARM | GVBLTPRT Parameter File | No | PS | FB | 80 | . |   | LT | Logic Table | Yes | PS | VB | 4004 | . | Output | LTPRTRPT | GVBLTPRT Control Report | Yes | PS | VB | 164 | . |   | LTPRTLOG | GVBLTPRT Log File | Yes | PS | VB | 164 | . ",
     "url": "/Run%20Control%20Utilities/GVBLTPRT%20DD%20Statements.html",
     "relUrl": "/Run%20Control%20Utilities/GVBLTPRT%20DD%20Statements.html"
-  },"182": {
+  },"154": {
     "doc": "GVBLTPRT Parameter File Syntax",
     "title": "GVBLTPRT Parameter File Syntax",
     "content": "Format: LTPRPARM file . ┌─HIDE_DATE_GENERATED=Y─┐ ►►───┼───────────────────────┼──────────────────────────────────────────────────► └─HIDE_DATE_GENERATED=N─┘ ┌─HIDE_LKLR_VALUES=N─┐ ►────┼────────────────────┼─────────────────────────────────────────────────────► └─HIDE_LKLR_VALUES=Y─┘ ┌─HIDE_WRITE_SUFFIX=N─┐ ►────┼─────────────────────┼────────────────────────────────────────────────────► └─HIDE_WRITE_SUFFIX=Y─┘ ┌─REPLACE_0_POS=N─┐ ►────┼─────────────────┼───────────────────────────────────────────────────────►◄ └─REPLACE_0_POS=Y─┘ . ",
     "url": "/Run%20Control%20Utilities/GVBLTPRT%20Parameter%20File%20Syntax.html",
     "relUrl": "/Run%20Control%20Utilities/GVBLTPRT%20Parameter%20File%20Syntax.html"
-  },"183": {
+  },"155": {
     "doc": "GVBMR91 DD Statements",
     "title": "GVBMR91 DD Statements",
     "content": "| Type | DD Name | Title | Required? | DSORG | RECFM | LRECL | . | Input | MR91PARM | GVBMR91 Parameter File | Yes | PS | FB | 80 | . |   | WBXMLS | Workbench XML Member List | No | PS | FB | 80 | . |   | VDPXMLS | VDP XML Member List | No | PS | FB | 80 | . |   | DBFLDRS | Database Folder List | If INPUT_TYPE=DB2 and a DBVIEWS DD statement does not exist | PS | FB | 80 | . |   | DBVIEWS | Database View List | If INPUT_TYPE=DB2 and a DBFLDRS DD statement does not exist | PS | FB | 80 | . |   | RUNVIEWS | Run View List | No | PS | FB | 80 | . |   | WBXMLI | Workbench XML Input Library | If INPUT_TYPE=WBXML | PO | VB | 8192 | . |   | VDPXMLI | VDP XML Input Library | If INPUT_TYPE=VDPXML | PO | VB | 8192 | . |   | VDPXSD | VDP XML Schema Definition | If INPUT_TYPE=VDPXML | PS | VB | 259 | . |   | DSNAOINI | DB2 ODBC Initialization File | If INPUT_TYPE=DB2 | PS | FB | 80 | . | Output | WBXML | Workbench XML Output Library | If OUTPUT_WB_XML=Y | PO | VB | 8192 | . |   | VDPXML | VDP XML Output File | If OUTPUT_VDP_XML=Y | PS | VB | 8192 | . |   | VDP | VDP Output File | If OUTPUT_RUN_CONTROL=Y | PS | VB | 8192 | . |   | JLT | Reference-Phase Logic Table | If OUTPUT_RUN_CONTROL=Y | PS | VB | 8192 | . |   | XLT | Extract-Phase Logic Table | If OUTPUT_RUN_CONTROL=Y | PS | VB | 8192 | . |   | MR91RPT | GVBMR91 Control Report | Yes | PS | VB | 164 | . |   | MR91LOG | GVBMR91 Log File | Yes | PS | VB | 164 | . |   | MR91TRAC | GVBMR91 Trace File | If TRACE=Y | PS | VB | 164 | . ",
     "url": "/Run%20Control%20Utilities/GVBMR91%20DD%20Statements.html",
     "relUrl": "/Run%20Control%20Utilities/GVBMR91%20DD%20Statements.html"
-  },"184": {
+  },"156": {
     "doc": "GVBMR91 Parameter File Syntax",
     "title": "GVBMR91 Parameter File Syntax",
     "content": "Format: MR91PARM file . ►►───┬─INPUT_TYPE=WBXML─────────────────────┬───────────────────────────────────► ├─INPUT_TYPE=VDPXML────────────────────┤ └─INPUT_TYPE=DB2────┤ db2 parameters ├─┘ ┌─OUTPUT_WB_XML_FILES=N─┐ ►────┴───────────────────────┴──────────────────────────────────────────────────► ┌─OUTPUT_VDP_XML_FILE=N─┐ ►────┴───────────────────────┴──────────────────────────────────────────────────► ┌─OUTPUT_RUN_CONTROL_FILES=N─┐ ►────┴────────────────────────────┴─────────────────────────────────────────────► ┌────────────────────────────┐ ▼ │ ►──────┤ selected output-option ├─┴─────────────────────────────────────────────► ►────┤ general options ├───────────────────────────────────────────────────────►◄ . db2 parameters: . ├────DB2_SUBSYSTEM=db2-subsystem────────────────────────────────────────────────► ►────DB2_SCHEMA=db2-schema──────────────────────────────────────────────────────► ►────DB2_ENVIRONMENT_ID=db2-environment-id──────────────────────────────────────┤ . selected output-option: . ├────┬─OUTPUT_WB_XML_FILES=Y──────┬─────────────────────────────────────────────┤ ├─OUTPUT_VDP_XML_FILE=Y──────┤ └─OUTPUT_RUN_CONTROL_FILES=Y─┘ . general options: . ┌─NUMBER_MODE=STANDARD─┐ ►────┼──────────────────────┼───────────────────────────────────────────────────► └─NUMBER_MODE=LARGE────┘ ┌─TRACE=N─┐ ►────┼─────────┼────────────────────────────────────────────────────────────────► └─TRACE=Y─┘ . Format: WBXMLS file . ►►───┬─────────────────┬───────────────────────────────────────────────────────►◄ │ ┌─────────────┐ │ │ ▼ │ │ └───member-name─┴─┘ . Note: If the WBXMLS file is empty, all members are selected. Format: VDPXMLS file . ►►───┬─────────────────┬───────────────────────────────────────────────────────►◄ │ ┌─────────────┐ │ │ ▼ │ │ └───member-name─┴─┘ . Note: If the VDPXMLS file is empty, all members are selected. Format: DBFLDRS file . ►►───┬───────────────┬─────────────────────────────────────────────────────────►◄ │ ┌───────────┐ │ │ ▼ │ │ └───folder-id─┴─┘ . Format: DBVIEWS file . ►►───┬─────────────┬───────────────────────────────────────────────────────────►◄ │ ┌─────────┐ │ │ ▼ │ │ └───view-id─┴─┘ . Note: If INPUT_TYPE=DB2, then the DBVIEWS file is checked. If it is empty or missing, then the DBFLDRS file is checked. If it is empty or missing, then an error is displayed. Format: RUNVIEWS file . ►►───┬─────────────┬───────────────────────────────────────────────────────────►◄ │ ┌─────────┐ │ │ ▼ │ │ └───view-id─┴─┘ . Note: If the RUNVIEWS file is empty, all views are selected. db2-subsystem This is the name of the Db2 subsystem where your metadata resides. (For example, DM12.) . db2-schema This is the name of the Db2 schema where your metadata resides. (For example, GENDEV.) . db2-environment-id This is the environment ID (such as 15) of the location of the GenevaERS views to be selected. ",
     "url": "/Run%20Control%20Utilities/GVBMR91%20Parameter%20File%20Syntax.html",
     "relUrl": "/Run%20Control%20Utilities/GVBMR91%20Parameter%20File%20Syntax.html"
-  },"185": {
+  },"157": {
     "doc": "GVBVDPNL DD Statements",
     "title": "GVBVDPNL DD Statements",
     "content": "| Type | DD Name | Title | Required? | DSORG | RECFM | LRECL | . | Input | VDPNPARM | GVBVDPNL Parameter File | No | PS | FB | 80 | . |   | VDP1 | View Definition Parameter File 1 | Yes | PS | VB | 32756 | . |   | VDP2 | View Definition Parameter File 2 | If COMPARE=Y | PS | VB | 32756 | . | Output | VDPSUM1 | VDP Record Summary Report for VDP1 | Yes | PS | VB | 164 | . |   | VDPSUM2 | VDP Record Summary Report for VDP2 | If COMPARE=Y | PS | VB | 164 | . |   | VDPSUMC | VDP Record Summary Comparison Report | If COMPARE=Y | PS | VB | 164 | . |   | VDPDTL1 | VDP Record Detail Report for VDP1 | Yes | PS | VB | 164 | . |   | VDPDTL2 | VDP Record Detail Report for VDP2 | If COMPARE=Y | PS | VB | 164 | . |   | VIEWRPT1 | View Report for VDP1 | Yes | PS | VB | 164 | . |   | VIEWRPT2 | View Report for VDP2 | If COMPARE=Y | PS | VB | 164 | . |   | VIEWRPTC | View Comparison Report | If COMPARE=Y | PS | VB | 164 | . |   | LOGCRPT1 | View Logic Report for VDP1 | Yes | PS | VB | 324 | . |   | LOGCRPT2 | View Logic Report for VDP2 | If COMPARE=Y | PS | VB | 324 | . |   | LOGCRPTC | View Logic Comparison Report | If COMPARE=Y | PS | VB | 324 | . |   | LRRPT1 | Logical Record Report for VDP1 | Yes | PS | VB | 164 | . |   | LRRPT2 | Logical Record Report for VDP2 | If COMPARE=Y | PS | VB | 164 | . |   | LRRPTC | Logical Record Comparison Report | If COMPARE=Y | PS | VB | 164 | . |   | LPRPT1 | Lookup Path Report for VDP1 | Yes | PS | VB | 164 | . |   | LPRPT2 | Lookup Path Report for VDP2 | If COMPARE=Y | PS | VB | 164 | . |   | LPRPTC | Lookup Path Comparison Report | If COMPARE=Y | PS | VB | 164 | . |   | LFRPT1 | Logical File Report for VDP1 | Yes | PS | VB | 164 | . |   | LFRPT2 | Logical File Report for VDP2 | If COMPARE=Y | PS | VB | 164 | . |   | LFRPTC | Logical File Comparison Report | If COMPARE=Y | PS | VB | 164 | . |   | PFRPT1 | Physical File Report for VDP1 | Yes | PS | VB | 164 | . |   | PFRPT2 | Physical File Report for VDP2 | If COMPARE=Y | PS | VB | 164 | . |   | PFRPTC | Physical File Comparison Report | If COMPARE=Y | PS | VB | 164 | . |   | EXITRPT1 | User Exit Report for VDP1 | Yes | PS | VB | 164 | . |   | EXITRPT2 | User Exit Report for VDP2 | If COMPARE=Y | PS | VB | 164 | . |   | EXITRPTC | User Exit Comparison Report | If COMPARE=Y | PS | VB | 164 | . |   | CRECRPT1 | Control Record Report for VDP1 | Yes | PS | VB | 164 | . |   | CRECRPT2 | Control Record Report for VDP2 | If COMPARE=Y | PS | VB | 164 | . |   | CRECRPTC | Control Record Comparison Report | If COMPARE=Y | PS | VB | 164 | . |   | DDRPT1 | DD Statement Report for VDP1 | Yes | PS | VB | 164 | . |   | DDRPT2 | DD Statement Report for VDP2 | If COMPARE=Y | PS | VB | 164 | . |   | DDRPTC | DD Statement Comparison Report | If COMPARE=Y | PS | VB | 164 | . |   | FMTMPLTS | File Manager Template Library | IF FM_TEMPLATES=Y | PO | VB | 164 | . |   | VDPNLRPT | GVBVDPNL Control Report | Yes | PS | VB | 164 | . |   | VDPNLLOG | GVBVDPNL Log File | Yes | PS | VB | 164 | . ",
     "url": "/Run%20Control%20Utilities/GVBVDPNL%20DD%20Statements.html",
     "relUrl": "/Run%20Control%20Utilities/GVBVDPNL%20DD%20Statements.html"
-  },"186": {
+  },"158": {
     "doc": "GVBVDPNL Parameter File Syntax",
     "title": "GVBVDPNL Parameter File Syntax",
     "content": "Format: VDPNPARM file . ┌─COMPARE=N─┐ ►►───┼───────────┼──────────────────────────────────────────────────────────────► └─COMPARE=Y─┘ ┌─FM_TEMPLATES=N─┐ ►────┼────────────────┼─────────────────────────────────────────────────────────► └─FM_TEMPLATES=Y─┘ ►────┤ metadata-filtering options ├─────────────────────────────────────────────► ┌────────────────────────────┐ ▼ │ ►──────┤ field-inclusion option ├─┴────────────────────────────────────────────►◄ . metadata-filtering options: . ┌─VIEW_IDS=ALL──────────┐ ├────┼───────────────────────┼──────────────────────────────────────────────────► │ ┌─,───────┐ │ │ ▼ │ │ └─VIEW_IDS=───view-id─┴─┘ ┌─LR_IDS=ALL────────┐ ►────┼───────────────────┼──────────────────────────────────────────────────────► │ ┌─,─────┐ │ │ ▼ │ │ └─LR_IDS=───lr-id─┴─┘ ┌─LP_IDS=ALL────────┐ ►────┼───────────────────┼──────────────────────────────────────────────────────► │ ┌─,─────┐ │ │ ▼ │ │ └─LP_IDS=───lp-id─┴─┘ ┌─LF_IDS=ALL────────┐ ►────┼───────────────────┼──────────────────────────────────────────────────────► │ ┌─,─────┐ │ │ ▼ │ │ └─LF_IDS=───lf-id─┴─┘ ┌─PF_IDS=ALL────────┐ ►────┼───────────────────┼──────────────────────────────────────────────────────► │ ┌─,─────┐ │ │ ▼ │ │ └─PF_IDS=───pf-id─┴─┘ ┌─EXIT_IDS=ALL──────────┐ ►────┼───────────────────────┼──────────────────────────────────────────────────► │ ┌─,───────┐ │ │ ▼ │ │ └─EXIT_IDS=───exit-id─┴─┘ ┌─CREC_IDS=ALL──────────┐ ►────┼───────────────────────┼──────────────────────────────────────────────────┤ │ ┌─,───────┐ │ │ ▼ │ │ └─CREC_IDS=───crec-id─┴─┘ . field-inclusion option: . ┌─field-name=B──────────┐ ├────┼───────────────────────┼──────────────────────────────────────────────────┤ ├─field-name=C──────────┤ ├─field-name=D──────────┤ └─field-name=E──────────┘ . Note: field-name must be one of the following: . CREC_BEGIN CREC_END CREC_FISCAL CREC_ID CREC_MAX_FILE CREC_NAME EXIT_EXEC EXIT_ID EXIT_LANG EXIT_NAME EXIT_OPT EXIT_PATH EXIT_TYPE LF_ID LF_NAME LP_CONST LP_CONST_LEN LP_DATE LP_DPS LP_DTYPE LP_ID LP_KEY_LEN LP_KEY_TYPE LP_LR LP_LR_FIELD LP_NAME LP_SCALE LP_SIGNED LP_SRC_LR LP_SYM LP_TRG_LF LP_TRG_LR LP_VAL LP_VAL_LEN LR_FLD_ALIGN LR_FLD_COLNAME LR_FLD_DPS LR_FLD_EFFDATE LR_FLD_FORMAT LR_FLD_ID LR_FLD_KEY LR_FLD_LEN LR_FLD_MASK LR_FLD_NAME LR_FLD_OFFSET LR_FLD_ORDINAL LR_FLD_POS LR_FLD_SCALE LR_FLD_SIGNED LR_FLD_TYPE LR_ID LR_LKP_EXIT LR_LKP_PARMS LR_NAME LR_STATUS LR_TYPE PF_ACCESS PF_BLKSIZE PF_CONN PF_DD PF_DEV_TYPE PF_DSCB PF_DSORG PF_EXP_DT PF_ID PF_IN_DD PF_IN_DSN PF_LRECL PF_MAX_RCLEN PF_NAME PF_NULLS PF_OPTCD PF_OUT_DD PF_OUT_DSN PF_PRM_QTY PF_RCLEN PF_RD_DISP PF_READ_EXIT PF_READ_PARMS PF_RECFM PF_RETN PF_ROW PF_SCND_QTY PF_SQL PF_SYSOUT PF_TABLE PF_TYPE PF_UNIT PF_WR_DISP VIEW_AGGREGATION VIEW_AGGREGATION_LEVEL VIEW_BUFF_SIZE VIEW_COL_ALIGN VIEW_COL_CALC VIEW_COL_DATA_TYPE VIEW_COL_DPS VIEW_COL_EXTAREA VIEW_COL_FRMT VIEW_COL_HDR_ALIGN VIEW_COL_ID VIEW_COL_LEN VIEW_COL_LKP VIEW_COL_LKP_FIELD VIEW_COL_LKP_LR VIEW_COL_LOGIC VIEW_COL_LOGIC_TEXT VIEW_COL_MASK VIEW_COL_NAME VIEW_COL_ORD_POS VIEW_COL_SCALE VIEW_COL_SIGN VIEW_COL_SPACES VIEW_COL_SRC_FIELD VIEW_COL_SRC_ID VIEW_COL_SRC_TYPE VIEW_COL_SRC_VAL VIEW_COL_STRT_POS VIEW_COL_VISIBLE VIEW_CR VIEW_ERROR VIEW_EXIT VIEW_EXIT_PARMS VIEW_EXTR_NUM VIEW_FLD_DELIM VIEW_FOLDER_ID VIEW_FOOTER_CENTRE VIEW_FOOTER_LEFT VIEW_FOOTER_RIGHT VIEW_FORMAT_REC_FILTER VIEW_FRMT_EXIT VIEW_FRMT_EXIT_PARMS VIEW_FRMT_OUT_LIMIT VIEW_GRP_AGG_FUNC VIEW_HEADER_CENTRE VIEW_HEADER_LEFT VIEW_HEADER_RIGHT VIEW_HEADING1 VIEW_HEADING2 VIEW_HEADING3 VIEW_ID VIEW_LOGIC_ID VIEW_LOGIC_NAME VIEW_NAME VIEW_OUT_FRMT VIEW_OUT_LF VIEW_OUT_LIMIT VIEW_OUT_PF VIEW_PAGE_LINES VIEW_PHASE VIEW_REC_AGG_FUNC VIEW_SORT_DATA_TYPE VIEW_SORT_DISP_MODE VIEW_SORT_DPS VIEW_SORT_FOOTER VIEW_SORT_FOOTER_OPT VIEW_SORT_FORMAT VIEW_SORT_HEADER_OPT VIEW_SORT_ID VIEW_SORT_LABEL VIEW_SORT_LEN VIEW_SORT_NUM VIEW_SORT_SEQ VIEW_SORT_SIGNED VIEW_SORT_TITLE_EFF_DT VIEW_SORT_TITLE_EFFTYPE VIEW_SORT_TITLE_FIELD VIEW_SORT_TITLE_LEN VIEW_SORT_TITLE_SRC VIEW_SRC_ID VIEW_SRC_LF VIEW_SRC_LR VIEW_SRC_REC_FILTER VIEW_STATUS VIEW_STR_DELIM VIEW_TRUNC VIEW_WIDTH . ",
     "url": "/Run%20Control%20Utilities/GVBVDPNL%20Parameter%20File%20Syntax.html",
     "relUrl": "/Run%20Control%20Utilities/GVBVDPNL%20Parameter%20File%20Syntax.html"
-  },"187": {
+  },"159": {
     "doc": "Goal1 - Speed a report",
     "title": "Goal1 - Speed a report",
     "content": "The best example is given in: What is GenevaERS? Challenge our product with the longest running report in your company. ",
     "url": "/Typical%20goals/Goal1%20-%20Speed%20a%20report.html",
     "relUrl": "/Typical%20goals/Goal1%20-%20Speed%20a%20report.html"
-  },"188": {
+  },"160": {
     "doc": "Goal1 - Speed a report",
     "title": "Useful Links",
     "content": "Next topic: Goal2 - Speed overnight batch . ",
     "url": "/Typical%20goals/Goal1%20-%20Speed%20a%20report.html#useful-links",
     "relUrl": "/Typical%20goals/Goal1%20-%20Speed%20a%20report.html#useful-links"
-  },"189": {
+  },"161": {
     "doc": "Goal2 - Speed overnight batch",
     "title": "Goal2 - Speed overnight batch",
     "content": "An international financial services company realised that their normal daily batch stream would soon take longer than 24 hours to run. With our product, their batch now runs in a few hours. Use our product for all or part of your batch processing - both the development of a new stream and the running time of the new stream are fast. ",
     "url": "/Typical%20goals/Goal2%20-%20Speed%20overnight%20batch.html",
     "relUrl": "/Typical%20goals/Goal2%20-%20Speed%20overnight%20batch.html"
-  },"190": {
+  },"162": {
     "doc": "Goal2 - Speed overnight batch",
     "title": "Useful Links",
     "content": "Next topic: Goal3 - Make possible complex reports Previous topic: Goal1 - Speed a report . ",
     "url": "/Typical%20goals/Goal2%20-%20Speed%20overnight%20batch.html#useful-links",
     "relUrl": "/Typical%20goals/Goal2%20-%20Speed%20overnight%20batch.html#useful-links"
-  },"191": {
+  },"163": {
     "doc": "Goal3 - Make possible complex reports",
     "title": "Goal3 - Make possible complex reports",
     "content": "At some time, every IT department has told a business team that a certain report is not possible because it would take too long to run. This typically happens when the reporting involves many reference files where: . | A key from a transaction record accesses the first reference file and | A key in the first reference file accesses a second reference file. | With enough layers of reference files the processing can be very slow. | . This is where our product is most useful. Many report programs have the problem of re-reading the same data multiple times - see the example of one million unnecessary reads in: What is GenevaERS? Our product is called “Single-Pass” because it can produce multiple complex reports using a single scan of the source data. GenevaERS was used to detect fraud in historical records of airline tickets using just this technique. If you think some batch process is “impossible”, try our product. ",
     "url": "/Typical%20goals/Goal3%20-%20Make%20possible%20complex%20reports.html",
     "relUrl": "/Typical%20goals/Goal3%20-%20Make%20possible%20complex%20reports.html"
-  },"192": {
+  },"164": {
     "doc": "Goal3 - Make possible complex reports",
     "title": "Useful Links",
     "content": "Next topic: Goal4 - Change annual reports Previous topic: Goal2 - Speed overnight batch . ",
     "url": "/Typical%20goals/Goal3%20-%20Make%20possible%20complex%20reports.html#useful-links",
     "relUrl": "/Typical%20goals/Goal3%20-%20Make%20possible%20complex%20reports.html#useful-links"
-  },"193": {
+  },"165": {
     "doc": "Goal4 - Change annual reports",
     "title": "Goal4 - Change annual reports",
     "content": "Normally, an IT department says “We can’t rerun last year’s Annual Reports to make them more accurate!”. The same usually goes for month-end and quarter-end reports. With our product, customers can rerun these reports whenever they want - it is practical and realistic. ",
     "url": "/Typical%20goals/Goal4%20-%20Change%20annual%20reports.html",
     "relUrl": "/Typical%20goals/Goal4%20-%20Change%20annual%20reports.html"
-  },"194": {
+  },"166": {
     "doc": "Goal4 - Change annual reports",
     "title": "Useful Links",
     "content": "Previous topic: Goal3 - Make possible complex reports . ",
     "url": "/Typical%20goals/Goal4%20-%20Change%20annual%20reports.html#useful-links",
     "relUrl": "/Typical%20goals/Goal4%20-%20Change%20annual%20reports.html#useful-links"
-  },"195": {
+  },"167": {
     "doc": "High Speed Techniques Training",
     "title": "High Speed Techniques Training",
     "content": " ",
     "url": "/High%20Speed%20Techniques%20Training.html",
     "relUrl": "/High%20Speed%20Techniques%20Training.html"
-  },"196": {
+  },"168": {
     "doc": "High Speed Techniques Training",
     "title": "Pipes Training",
     "content": " ",
     "url": "/High%20Speed%20Techniques%20Training.html#pipes-training",
     "relUrl": "/High%20Speed%20Techniques%20Training.html#pipes-training"
-  },"197": {
+  },"169": {
     "doc": "High Speed Techniques Training",
     "title": "Tokens Training",
     "content": " ",
     "url": "/High%20Speed%20Techniques%20Training.html#tokens-training",
     "relUrl": "/High%20Speed%20Techniques%20Training.html#tokens-training"
-  },"198": {
+  },"170": {
     "doc": "High Speed Techniques Training",
     "title": "Common Key Buffer Training",
     "content": " ",
     "url": "/High%20Speed%20Techniques%20Training.html#common-key-buffer-training",
     "relUrl": "/High%20Speed%20Techniques%20Training.html#common-key-buffer-training"
-  },"199": {
+  },"171": {
     "doc": "How this website works",
     "title": "How this website works",
     "content": "TABLE OF CONTENTS . | Layout of screen | Folders of topics | Search for a topic using keywords | . ",
     "url": "/How%20this%20website%20works.html",
     "relUrl": "/How%20this%20website%20works.html"
-  },"200": {
+  },"172": {
     "doc": "How this website works",
     "title": "Layout of screen",
     "content": "This section is not yet documented. ",
     "url": "/How%20this%20website%20works.html#layout-of-screen",
     "relUrl": "/How%20this%20website%20works.html#layout-of-screen"
-  },"201": {
+  },"173": {
     "doc": "How this website works",
     "title": "Folders of topics",
     "content": "To be completed. ",
     "url": "/How%20this%20website%20works.html#folders-of-topics",
     "relUrl": "/How%20this%20website%20works.html#folders-of-topics"
-  },"202": {
+  },"174": {
     "doc": "How this website works",
     "title": "Search for a topic using keywords",
     "content": "To be completed. ",
     "url": "/How%20this%20website%20works.html#search-for-a-topic-using-keywords",
     "relUrl": "/How%20this%20website%20works.html#search-for-a-topic-using-keywords"
-  },"203": {
+  },"175": {
     "doc": "How to program User-Exits",
     "title": "How to program User-Exits",
     "content": "TABLE OF CONTENTS . | Sub Pre-Processing | Sub Post-Processing | Useful Links | . ",
     "url": "/User-Exits/How%20to%20program%20User-Exits.html",
     "relUrl": "/User-Exits/How%20to%20program%20User-Exits.html"
-  },"204": {
+  },"176": {
     "doc": "How to program User-Exits",
     "title": "Sub Pre-Processing",
     "content": " ",
     "url": "/User-Exits/How%20to%20program%20User-Exits.html#sub-pre-processing",
     "relUrl": "/User-Exits/How%20to%20program%20User-Exits.html#sub-pre-processing"
-  },"205": {
+  },"177": {
     "doc": "How to program User-Exits",
     "title": "Sub Post-Processing",
     "content": " ",
     "url": "/User-Exits/How%20to%20program%20User-Exits.html#sub-post-processing",
     "relUrl": "/User-Exits/How%20to%20program%20User-Exits.html#sub-post-processing"
-  },"206": {
+  },"178": {
     "doc": "How to program User-Exits",
     "title": "Useful Links",
     "content": "Next topic: Runbook - LX13 Key Break Tester Previous topic: User-Exits . ",
     "url": "/User-Exits/How%20to%20program%20User-Exits.html#useful-links",
     "relUrl": "/User-Exits/How%20to%20program%20User-Exits.html#useful-links"
-  },"207": {
+  },"179": {
     "doc": "How to use this product",
     "title": "How to use this product",
     "content": "This folder of topics assumes you have already done the following: . | Read User guide - start here | Installed and run the Demo. | Installed and run the Workbench. | Taught yourself using Lessons in basic skills. | . Once you have done all these, the folder of topics below guide you to use GenevaERS in your company. The topics below cover creating a single solution and implementing it. You can create as many solutions as needed. ",
     "url": "/How%20to%20use%20this%20product.html",
     "relUrl": "/How%20to%20use%20this%20product.html"
-  },"208": {
+  },"180": {
     "doc": "Install",
     "title": "Install",
     "content": " ",
     "url": "/Install.html",
     "relUrl": "/Install.html"
-  },"209": {
+  },"181": {
     "doc": "Install",
     "title": "Install our main product demonstration",
     "content": "See Demo . ",
     "url": "/Install.html#install-our-main-product-demonstration",
     "relUrl": "/Install.html#install-our-main-product-demonstration"
-  },"210": {
+  },"182": {
     "doc": "Install",
     "title": "Install Workbench - so you can change the demo",
     "content": "See Workbench . ",
     "url": "/Install.html#install-workbench---so-you-can-change-the-demo",
     "relUrl": "/Install.html#install-workbench---so-you-can-change-the-demo"
-  },"211": {
+  },"183": {
     "doc": "Introduction - Extract Column Assignment (ECA)",
     "title": "Introduction - Extract Column Assignment (ECA)",
     "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Introduction%20-%20Extract%20Column%20Assignment%20(ECA).html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Introduction%20-%20Extract%20Column%20Assignment%20(ECA).html"
-  },"212": {
+  },"184": {
     "doc": "Introduction - Extract Column Assignment (ECA)",
     "title": "UNDER CONSTRUCTION",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Introduction%20-%20Extract%20Column%20Assignment%20(ECA).html#under-construction",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Column%20Assignment%20(ECA)/Introduction%20-%20Extract%20Column%20Assignment%20(ECA).html#under-construction"
-  },"213": {
+  },"185": {
     "doc": "Introduction - Extract Record Filter (ERF)",
     "title": "Introduction - Extract Record Filter (ERF)",
     "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Introduction%20-%20Extract%20Record%20Filter%20(ERF).html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Introduction%20-%20Extract%20Record%20Filter%20(ERF).html"
-  },"214": {
+  },"186": {
     "doc": "Introduction - Extract Record Filter (ERF)",
     "title": "UNDER CONSTRUCTION",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Introduction%20-%20Extract%20Record%20Filter%20(ERF).html#under-construction",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Extract%20Record%20Filter%20(ERF)/Introduction%20-%20Extract%20Record%20Filter%20(ERF).html#under-construction"
-  },"215": {
+  },"187": {
     "doc": "Introduction - Format Column Calculations (FCC)",
     "title": "Introduction - Format Column Calculations (FCC)",
     "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Types/Format%20Column%20Calculations%20(FCC)/Introduction%20-%20Format%20Column%20Calculations%20(FCC).html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Column%20Calculations%20(FCC)/Introduction%20-%20Format%20Column%20Calculations%20(FCC).html"
-  },"216": {
+  },"188": {
     "doc": "Introduction - Format Column Calculations (FCC)",
     "title": "UNDER CONSTRUCTION",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Format%20Column%20Calculations%20(FCC)/Introduction%20-%20Format%20Column%20Calculations%20(FCC).html#under-construction",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Column%20Calculations%20(FCC)/Introduction%20-%20Format%20Column%20Calculations%20(FCC).html#under-construction"
-  },"217": {
+  },"189": {
     "doc": "Introduction - Format Record Filter (FRF)",
     "title": "Introduction - Format Record Filter (FRF)",
     "content": "TABLE OF CONTENTS . | UNDER CONSTRUCTION | . ",
     "url": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Introduction%20-%20Format%20Record%20Filter%20(FRF).html",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Introduction%20-%20Format%20Record%20Filter%20(FRF).html"
-  },"218": {
+  },"190": {
     "doc": "Introduction - Format Record Filter (FRF)",
     "title": "UNDER CONSTRUCTION",
     "content": " ",
     "url": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Introduction%20-%20Format%20Record%20Filter%20(FRF).html#under-construction",
     "relUrl": "/Workbench%20Logic%20Text%20Types/Format%20Record%20Filter%20(FRF)/Introduction%20-%20Format%20Record%20Filter%20(FRF).html#under-construction"
-  },"219": {
+  },"191": {
     "doc": "Introduction F01 - Views",
     "title": "Introduction F01 - Views",
     "content": "TABLE OF CONTENTS . | What is a view? | What happens to a view? | What can a view do for you? | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20F01%20-%20Views.html",
     "relUrl": "/Feature%20introductions/Introduction%20F01%20-%20Views.html"
-  },"220": {
+  },"192": {
     "doc": "Introduction F01 - Views",
     "title": "What is a view?",
     "content": "A view is how you tell our product the processing you require to be done. You create a view in the “workbench” part of our product. It is called a view because the main part of a view is a like a spreadsheet - you define the output fields and the input source and calculations or whatever it is you need done. ",
     "url": "/Feature%20introductions/Introduction%20F01%20-%20Views.html#what-is-a-view",
     "relUrl": "/Feature%20introductions/Introduction%20F01%20-%20Views.html#what-is-a-view"
-  },"221": {
+  },"193": {
     "doc": "Introduction F01 - Views",
     "title": "What happens to a view?",
     "content": ". | Workbench creates a view and other informatioin. All this information is called metadata. | Start phase - creates ?? | Reference phase - the view reads the relevant files once and creates working files. | Extract phase - reads the working files and creates your results. | Format phase (optional) - may further improve your results. | . ",
     "url": "/Feature%20introductions/Introduction%20F01%20-%20Views.html#what-happens-to-a-view",
     "relUrl": "/Feature%20introductions/Introduction%20F01%20-%20Views.html#what-happens-to-a-view"
-  },"222": {
+  },"194": {
     "doc": "Introduction F01 - Views",
     "title": "What can a view do for you?",
     "content": "Anything you need. The usual tasks are: . | Access data in reference files. For example, use a customer key to access customer details. | Update files | Create reports | Whatever mainframe processing you require. For example a SQL query can be done in a view. | . ",
     "url": "/Feature%20introductions/Introduction%20F01%20-%20Views.html#what-can-a-view-do-for-you",
     "relUrl": "/Feature%20introductions/Introduction%20F01%20-%20Views.html#what-can-a-view-do-for-you"
-  },"223": {
+  },"195": {
     "doc": "Introduction F01 - Views",
     "title": "Useful Links",
     "content": "Did you come here from the lesson in basic skills? Return back: A02 - Views and phases . Next topic: Introduction F02 - Phases . Workbench screens: Workbench User Guide Training: Basic Views Training . ",
     "url": "/Feature%20introductions/Introduction%20F01%20-%20Views.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20F01%20-%20Views.html#useful-links"
-  },"224": {
+  },"196": {
     "doc": "Introduction F02 - Phases",
     "title": "Introduction F02 - Phases",
     "content": "TABLE OF CONTENTS . | Phases | Start Phase | Reference Phase | Extract Phase | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20F02%20-%20Phases.html",
     "relUrl": "/Feature%20introductions/Introduction%20F02%20-%20Phases.html"
-  },"225": {
+  },"197": {
     "doc": "Introduction F02 - Phases",
     "title": "Phases",
     "content": "The product has these phases of processing: . | Start | Reference | Extract | Format | . Why learn about phases? Because the are always in the given order. If you want something to happen in a later phase, you may need to do something in an earlier phase as preparation. As you learn about the phases and other introductions, you will see how they fit together. ",
     "url": "/Feature%20introductions/Introduction%20F02%20-%20Phases.html#phases",
     "relUrl": "/Feature%20introductions/Introduction%20F02%20-%20Phases.html#phases"
-  },"226": {
+  },"198": {
     "doc": "Introduction F02 - Phases",
     "title": "Start Phase",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20F02%20-%20Phases.html#start-phase",
     "relUrl": "/Feature%20introductions/Introduction%20F02%20-%20Phases.html#start-phase"
-  },"227": {
+  },"199": {
     "doc": "Introduction F02 - Phases",
     "title": "Reference Phase",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20F02%20-%20Phases.html#reference-phase",
     "relUrl": "/Feature%20introductions/Introduction%20F02%20-%20Phases.html#reference-phase"
-  },"228": {
+  },"200": {
     "doc": "Introduction F02 - Phases",
     "title": "Extract Phase",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20F02%20-%20Phases.html#extract-phase",
     "relUrl": "/Feature%20introductions/Introduction%20F02%20-%20Phases.html#extract-phase"
-  },"229": {
+  },"201": {
     "doc": "Introduction F02 - Phases",
     "title": "Useful Links",
     "content": "Next topic: Introduction F03 - Files Previous topic: Introduction F01 - Views . ",
     "url": "/Feature%20introductions/Introduction%20F02%20-%20Phases.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20F02%20-%20Phases.html#useful-links"
-  },"230": {
+  },"202": {
     "doc": "Introduction F03 - Files",
     "title": "Introduction F03 - Files",
     "content": "TABLE OF CONTENTS . | Physical Files and Logical Files | Logcical Records | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20F03%20-%20Files.html",
     "relUrl": "/Feature%20introductions/Introduction%20F03%20-%20Files.html"
-  },"231": {
+  },"203": {
     "doc": "Introduction F03 - Files",
     "title": "Physical Files and Logical Files",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20F03%20-%20Files.html#physical-files-and-logical-files",
     "relUrl": "/Feature%20introductions/Introduction%20F03%20-%20Files.html#physical-files-and-logical-files"
-  },"232": {
+  },"204": {
     "doc": "Introduction F03 - Files",
     "title": "Logcical Records",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20F03%20-%20Files.html#logcical-records",
     "relUrl": "/Feature%20introductions/Introduction%20F03%20-%20Files.html#logcical-records"
-  },"233": {
+  },"205": {
     "doc": "Introduction F03 - Files",
     "title": "Useful Links",
     "content": "Next topic: Introduction F04 - File layouts Previous topic: Introduction F02 - Phases . ",
     "url": "/Feature%20introductions/Introduction%20F03%20-%20Files.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20F03%20-%20Files.html#useful-links"
-  },"234": {
+  },"206": {
     "doc": "Introduction F04 - File layouts",
     "title": "Introduction F04 - File layouts",
     "content": "TABLE OF CONTENTS . | Logical Records | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20F04%20-%20File%20layouts.html",
     "relUrl": "/Feature%20introductions/Introduction%20F04%20-%20File%20layouts.html"
-  },"235": {
+  },"207": {
     "doc": "Introduction F04 - File layouts",
     "title": "Logical Records",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20F04%20-%20File%20layouts.html#logical-records",
     "relUrl": "/Feature%20introductions/Introduction%20F04%20-%20File%20layouts.html#logical-records"
-  },"236": {
+  },"208": {
     "doc": "Introduction F04 - File layouts",
     "title": "Useful Links",
     "content": "Next topic: Introduction F05 - Lookup Paths Previous topic: Introduction F03 - Files . ",
     "url": "/Feature%20introductions/Introduction%20F04%20-%20File%20layouts.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20F04%20-%20File%20layouts.html#useful-links"
-  },"237": {
+  },"209": {
     "doc": "Introduction F05 - Lookup Paths",
     "title": "Introduction F05 - Lookup Paths",
     "content": "TABLE OF CONTENTS . | What is a Lookup Path? | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20F05%20-%20Lookup%20Paths.html",
     "relUrl": "/Feature%20introductions/Introduction%20F05%20-%20Lookup%20Paths.html"
-  },"238": {
+  },"210": {
     "doc": "Introduction F05 - Lookup Paths",
     "title": "What is a Lookup Path?",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20F05%20-%20Lookup%20Paths.html#what-is-a-lookup-path",
     "relUrl": "/Feature%20introductions/Introduction%20F05%20-%20Lookup%20Paths.html#what-is-a-lookup-path"
-  },"239": {
+  },"211": {
     "doc": "Introduction F05 - Lookup Paths",
     "title": "Useful Links",
     "content": "Next topic: Introduction F06 - VDP File Previous topic: Introduction F04 - File Layouts . ",
     "url": "/Feature%20introductions/Introduction%20F05%20-%20Lookup%20Paths.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20F05%20-%20Lookup%20Paths.html#useful-links"
-  },"240": {
+  },"212": {
     "doc": "Introduction F06 - VDP File",
     "title": "Introduction F06 - VDP File",
     "content": "TABLE OF CONTENTS . | What is a VDP File? | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20F06%20-%20VDP%20File.html",
     "relUrl": "/Feature%20introductions/Introduction%20F06%20-%20VDP%20File.html"
-  },"241": {
+  },"213": {
     "doc": "Introduction F06 - VDP File",
     "title": "What is a VDP File?",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20F06%20-%20VDP%20File.html#what-is-a-vdp-file",
     "relUrl": "/Feature%20introductions/Introduction%20F06%20-%20VDP%20File.html#what-is-a-vdp-file"
-  },"242": {
+  },"214": {
     "doc": "Introduction F06 - VDP File",
     "title": "Useful Links",
     "content": "Next topic: Introduction F07 - JLT File Previous topic: Introduction F05 - Lookup Paths . ",
     "url": "/Feature%20introductions/Introduction%20F06%20-%20VDP%20File.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20F06%20-%20VDP%20File.html#useful-links"
-  },"243": {
+  },"215": {
     "doc": "Introduction F07 - JLT File",
     "title": "Introduction F07 - JLT File",
     "content": "TABLE OF CONTENTS . | What is a JLT File? | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20F07%20-%20JLT%20File.html",
     "relUrl": "/Feature%20introductions/Introduction%20F07%20-%20JLT%20File.html"
-  },"244": {
+  },"216": {
     "doc": "Introduction F07 - JLT File",
     "title": "What is a JLT File?",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20F07%20-%20JLT%20File.html#what-is-a-jlt-file",
     "relUrl": "/Feature%20introductions/Introduction%20F07%20-%20JLT%20File.html#what-is-a-jlt-file"
-  },"245": {
+  },"217": {
     "doc": "Introduction F07 - JLT File",
     "title": "Useful Links",
     "content": "Next topic: Introduction F08 - XLT File Previous topic: Introduction F06 - VDP File . ",
     "url": "/Feature%20introductions/Introduction%20F07%20-%20JLT%20File.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20F07%20-%20JLT%20File.html#useful-links"
-  },"246": {
+  },"218": {
     "doc": "Introduction F08 - XLT File",
     "title": "Introduction F08 - XLT File",
     "content": "TABLE OF CONTENTS . | What is an XLT File? | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20F08%20-%20XLT%20File.html",
     "relUrl": "/Feature%20introductions/Introduction%20F08%20-%20XLT%20File.html"
-  },"247": {
+  },"219": {
     "doc": "Introduction F08 - XLT File",
     "title": "What is an XLT File?",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20F08%20-%20XLT%20File.html#what-is-an-xlt-file",
     "relUrl": "/Feature%20introductions/Introduction%20F08%20-%20XLT%20File.html#what-is-an-xlt-file"
-  },"248": {
+  },"220": {
     "doc": "Introduction F08 - XLT File",
     "title": "Useful Links",
     "content": "Next topic: Introduction F09 - Logic Table codes Previous topic: Introduction F07 - JLT File . ",
     "url": "/Feature%20introductions/Introduction%20F08%20-%20XLT%20File.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20F08%20-%20XLT%20File.html#useful-links"
-  },"249": {
+  },"221": {
     "doc": "Introduction F09 - Logic Table codes",
     "title": "Introduction F09 - Logic Table codes",
     "content": "TABLE OF CONTENTS . | What is a Logic Table code? | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20F09%20-%20Logic%20Table%20codes.html",
     "relUrl": "/Feature%20introductions/Introduction%20F09%20-%20Logic%20Table%20codes.html"
-  },"250": {
+  },"222": {
     "doc": "Introduction F09 - Logic Table codes",
     "title": "What is a Logic Table code?",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20F09%20-%20Logic%20Table%20codes.html#what-is-a-logic-table-code",
     "relUrl": "/Feature%20introductions/Introduction%20F09%20-%20Logic%20Table%20codes.html#what-is-a-logic-table-code"
-  },"251": {
+  },"223": {
     "doc": "Introduction F09 - Logic Table codes",
     "title": "Useful Links",
     "content": "Next topic: Introduction F20 - Parallel running Previous topic: Introduction F08 - XLT File . ",
     "url": "/Feature%20introductions/Introduction%20F09%20-%20Logic%20Table%20codes.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20F09%20-%20Logic%20Table%20codes.html#useful-links"
-  },"252": {
+  },"224": {
     "doc": "Introduction F20 - Parallel running",
     "title": "Introduction F20 - Parallel running",
     "content": "TABLE OF CONTENTS . | Parallel running in this context | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20F20%20-%20Parallel%20running.html",
     "relUrl": "/Feature%20introductions/Introduction%20F20%20-%20Parallel%20running.html"
-  },"253": {
+  },"225": {
     "doc": "Introduction F20 - Parallel running",
     "title": "Parallel running in this context",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20F20%20-%20Parallel%20running.html#parallel-running-in-this-context",
     "relUrl": "/Feature%20introductions/Introduction%20F20%20-%20Parallel%20running.html#parallel-running-in-this-context"
-  },"254": {
+  },"226": {
     "doc": "Introduction F20 - Parallel running",
     "title": "Useful Links",
     "content": "Next topic: Introduction G01 - Workbench Environments Previous topic: Introduction F09 - Logic Table codes . ",
     "url": "/Feature%20introductions/Introduction%20F20%20-%20Parallel%20running.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20F20%20-%20Parallel%20running.html#useful-links"
-  },"255": {
+  },"227": {
     "doc": "Introduction G01 - Workbench Environments",
     "title": "Introduction G01 - Workbench Environments",
     "content": "TABLE OF CONTENTS . | Workbench data always belongs to an environment | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20G01%20-%20Workbench%20Environments.html",
     "relUrl": "/Feature%20introductions/Introduction%20G01%20-%20Workbench%20Environments.html"
-  },"256": {
+  },"228": {
     "doc": "Introduction G01 - Workbench Environments",
     "title": "Workbench data always belongs to an environment",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20G01%20-%20Workbench%20Environments.html#workbench-data-always-belongs-to-an-environment",
     "relUrl": "/Feature%20introductions/Introduction%20G01%20-%20Workbench%20Environments.html#workbench-data-always-belongs-to-an-environment"
-  },"257": {
+  },"229": {
     "doc": "Introduction G01 - Workbench Environments",
     "title": "Useful Links",
     "content": "Next topic: Introduction G02 - Workbench Users and Groups Previous topic: Introduction F20 - Parallel running . ",
     "url": "/Feature%20introductions/Introduction%20G01%20-%20Workbench%20Environments.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20G01%20-%20Workbench%20Environments.html#useful-links"
-  },"258": {
+  },"230": {
     "doc": "Introduction G02 - Workbench Users and Groups",
     "title": "Introduction G02 - Workbench Users and Groups",
     "content": "TABLE OF CONTENTS . | Workbench users have access from a group | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20G02%20-%20Workbench%20Users%20and%20Groups.html",
     "relUrl": "/Feature%20introductions/Introduction%20G02%20-%20Workbench%20Users%20and%20Groups.html"
-  },"259": {
+  },"231": {
     "doc": "Introduction G02 - Workbench Users and Groups",
     "title": "Workbench users have access from a group",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20G02%20-%20Workbench%20Users%20and%20Groups.html#workbench-users-have-access-from-a-group",
     "relUrl": "/Feature%20introductions/Introduction%20G02%20-%20Workbench%20Users%20and%20Groups.html#workbench-users-have-access-from-a-group"
-  },"260": {
+  },"232": {
     "doc": "Introduction G02 - Workbench Users and Groups",
     "title": "Useful Links",
     "content": "Next topic: Introduction G03 - Workbench View Folder Previous topic: Introduction G01 - Workbench Environments . ",
     "url": "/Feature%20introductions/Introduction%20G02%20-%20Workbench%20Users%20and%20Groups.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20G02%20-%20Workbench%20Users%20and%20Groups.html#useful-links"
-  },"261": {
+  },"233": {
     "doc": "Introduction G03 - Workbench View Folder",
     "title": "Introduction G03 - Workbench View Folder",
     "content": "TABLE OF CONTENTS . | What a View Folder is | Define a view folder in the workbench | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20G03%20-%20Workbench%20View%20Folder.html",
     "relUrl": "/Feature%20introductions/Introduction%20G03%20-%20Workbench%20View%20Folder.html"
-  },"262": {
+  },"234": {
     "doc": "Introduction G03 - Workbench View Folder",
     "title": "What a View Folder is",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20G03%20-%20Workbench%20View%20Folder.html#what-a-view-folder-is",
     "relUrl": "/Feature%20introductions/Introduction%20G03%20-%20Workbench%20View%20Folder.html#what-a-view-folder-is"
-  },"263": {
+  },"235": {
     "doc": "Introduction G03 - Workbench View Folder",
     "title": "Define a view folder in the workbench",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20G03%20-%20Workbench%20View%20Folder.html#define-a-view-folder-in-the-workbench",
     "relUrl": "/Feature%20introductions/Introduction%20G03%20-%20Workbench%20View%20Folder.html#define-a-view-folder-in-the-workbench"
-  },"264": {
+  },"236": {
     "doc": "Introduction G03 - Workbench View Folder",
     "title": "Useful Links",
     "content": "Next topic: Introduction G04 - Workbench Global Field Previous topic: Introduction G02 - Workbench Users and Groups . ",
     "url": "/Feature%20introductions/Introduction%20G03%20-%20Workbench%20View%20Folder.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20G03%20-%20Workbench%20View%20Folder.html#useful-links"
-  },"265": {
+  },"237": {
     "doc": "Introduction G04 - Workbench Global Field",
     "title": "Introduction G04 - Workbench Global Field",
     "content": "TABLE OF CONTENTS . | What a global field is | Define a global field in the workbench | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20G04%20-%20Workbench%20Global%20Field.html",
     "relUrl": "/Feature%20introductions/Introduction%20G04%20-%20Workbench%20Global%20Field.html"
-  },"266": {
+  },"238": {
     "doc": "Introduction G04 - Workbench Global Field",
     "title": "What a global field is",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20G04%20-%20Workbench%20Global%20Field.html#what-a-global-field-is",
     "relUrl": "/Feature%20introductions/Introduction%20G04%20-%20Workbench%20Global%20Field.html#what-a-global-field-is"
-  },"267": {
+  },"239": {
     "doc": "Introduction G04 - Workbench Global Field",
     "title": "Define a global field in the workbench",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20G04%20-%20Workbench%20Global%20Field.html#define-a-global-field-in-the-workbench",
     "relUrl": "/Feature%20introductions/Introduction%20G04%20-%20Workbench%20Global%20Field.html#define-a-global-field-in-the-workbench"
-  },"268": {
+  },"240": {
     "doc": "Introduction G04 - Workbench Global Field",
     "title": "Useful Links",
     "content": "Next topic: Introduction G05 - Workbench Control Record Previous topic: Introduction G03 - Workbench View Folder . ",
     "url": "/Feature%20introductions/Introduction%20G04%20-%20Workbench%20Global%20Field.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20G04%20-%20Workbench%20Global%20Field.html#useful-links"
-  },"269": {
+  },"241": {
     "doc": "Introduction G05 - Workbench Control Record",
     "title": "Introduction G05 - Workbench Control Record",
     "content": "TABLE OF CONTENTS . | What a control record is | Define a control record in the workbench | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20G05%20-%20Workbench%20Control%20Record.html",
     "relUrl": "/Feature%20introductions/Introduction%20G05%20-%20Workbench%20Control%20Record.html"
-  },"270": {
+  },"242": {
     "doc": "Introduction G05 - Workbench Control Record",
     "title": "What a control record is",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20G05%20-%20Workbench%20Control%20Record.html#what-a-control-record-is",
     "relUrl": "/Feature%20introductions/Introduction%20G05%20-%20Workbench%20Control%20Record.html#what-a-control-record-is"
-  },"271": {
+  },"243": {
     "doc": "Introduction G05 - Workbench Control Record",
     "title": "Define a control record in the workbench",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20G05%20-%20Workbench%20Control%20Record.html#define-a-control-record-in-the-workbench",
     "relUrl": "/Feature%20introductions/Introduction%20G05%20-%20Workbench%20Control%20Record.html#define-a-control-record-in-the-workbench"
-  },"272": {
+  },"244": {
     "doc": "Introduction G05 - Workbench Control Record",
     "title": "Useful Links",
     "content": "Next topic: Introduction H01 - Pipes Previous topic: Introduction G04 - Workbench Global Field . ",
     "url": "/Feature%20introductions/Introduction%20G05%20-%20Workbench%20Control%20Record.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20G05%20-%20Workbench%20Control%20Record.html#useful-links"
-  },"273": {
+  },"245": {
     "doc": "Introduction H01 - Pipes",
     "title": "Introduction H01 - Pipes",
     "content": "TABLE OF CONTENTS . | Pipes pass data between views in memory | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20H01%20-%20Pipes.html",
     "relUrl": "/Feature%20introductions/Introduction%20H01%20-%20Pipes.html"
-  },"274": {
+  },"246": {
     "doc": "Introduction H01 - Pipes",
     "title": "Pipes pass data between views in memory",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20H01%20-%20Pipes.html#pipes-pass-data-between-views-in-memory",
     "relUrl": "/Feature%20introductions/Introduction%20H01%20-%20Pipes.html#pipes-pass-data-between-views-in-memory"
-  },"275": {
+  },"247": {
     "doc": "Introduction H01 - Pipes",
     "title": "Useful Links",
     "content": "Next topic: Introduction H02 - Tokens Previous topic: Introduction G05 - Workbench Control Record . ",
     "url": "/Feature%20introductions/Introduction%20H01%20-%20Pipes.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20H01%20-%20Pipes.html#useful-links"
-  },"276": {
+  },"248": {
     "doc": "Introduction H02 - Tokens",
     "title": "Introduction H02 - Tokens",
     "content": "TABLE OF CONTENTS . | Token data added to records | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20H02%20-%20Tokens.html",
     "relUrl": "/Feature%20introductions/Introduction%20H02%20-%20Tokens.html"
-  },"277": {
+  },"249": {
     "doc": "Introduction H02 - Tokens",
     "title": "Token data added to records",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20H02%20-%20Tokens.html#token-data-added-to-records",
     "relUrl": "/Feature%20introductions/Introduction%20H02%20-%20Tokens.html#token-data-added-to-records"
-  },"278": {
+  },"250": {
     "doc": "Introduction H02 - Tokens",
     "title": "Useful Links",
     "content": "Next topic: Introduction H03 - ZIIPs Previous topic: Introduction H01 - Pipes . ",
     "url": "/Feature%20introductions/Introduction%20H02%20-%20Tokens.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20H02%20-%20Tokens.html#useful-links"
-  },"279": {
+  },"251": {
     "doc": "Introduction H03 - ZIIPs",
     "title": "Introduction H03 - ZIIPs",
     "content": "TABLE OF CONTENTS . | IBM Hardware ZIIPs technology | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20H03%20-%20ZIIPs.html",
     "relUrl": "/Feature%20introductions/Introduction%20H03%20-%20ZIIPs.html"
-  },"280": {
+  },"252": {
     "doc": "Introduction H03 - ZIIPs",
     "title": "IBM Hardware ZIIPs technology",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20H03%20-%20ZIIPs.html#ibm-hardware-ziips-technology",
     "relUrl": "/Feature%20introductions/Introduction%20H03%20-%20ZIIPs.html#ibm-hardware-ziips-technology"
-  },"281": {
+  },"253": {
     "doc": "Introduction H03 - ZIIPs",
     "title": "Useful Links",
     "content": "Next topic: Introduction H04 - User-Exits Previous topic: Introduction H02 - Tokens . ",
     "url": "/Feature%20introductions/Introduction%20H03%20-%20ZIIPs.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20H03%20-%20ZIIPs.html#useful-links"
-  },"282": {
+  },"254": {
     "doc": "Introduction H04 - User-Exits",
     "title": "Introduction H04 - User-Exits",
     "content": "TABLE OF CONTENTS . | Your company can write User-Exits | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20H04%20-%20User-Exits.html",
     "relUrl": "/Feature%20introductions/Introduction%20H04%20-%20User-Exits.html"
-  },"283": {
+  },"255": {
     "doc": "Introduction H04 - User-Exits",
     "title": "Your company can write User-Exits",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20H04%20-%20User-Exits.html#your-company-can-write-user-exits",
     "relUrl": "/Feature%20introductions/Introduction%20H04%20-%20User-Exits.html#your-company-can-write-user-exits"
-  },"284": {
+  },"256": {
     "doc": "Introduction H04 - User-Exits",
     "title": "Useful Links",
     "content": "Next topic: Introduction H05 - Sub-Programs Previous topic: Introduction H03 - ZIIPs . ",
     "url": "/Feature%20introductions/Introduction%20H04%20-%20User-Exits.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20H04%20-%20User-Exits.html#useful-links"
-  },"285": {
+  },"257": {
     "doc": "Introduction H05 - Sub-Programs",
     "title": "Introduction H05 - Sub-Programs",
     "content": "TABLE OF CONTENTS . | Extra programs you can call | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20H05%20-%20Sub-Programs.html",
     "relUrl": "/Feature%20introductions/Introduction%20H05%20-%20Sub-Programs.html"
-  },"286": {
+  },"258": {
     "doc": "Introduction H05 - Sub-Programs",
     "title": "Extra programs you can call",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20H05%20-%20Sub-Programs.html#extra-programs-you-can-call",
     "relUrl": "/Feature%20introductions/Introduction%20H05%20-%20Sub-Programs.html#extra-programs-you-can-call"
-  },"287": {
+  },"259": {
     "doc": "Introduction H05 - Sub-Programs",
     "title": "Useful Links",
     "content": "Next topic: Introduction H06 - General utilities Previous topic: Introduction H04 - User-Exits . ",
     "url": "/Feature%20introductions/Introduction%20H05%20-%20Sub-Programs.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20H05%20-%20Sub-Programs.html#useful-links"
-  },"288": {
+  },"260": {
     "doc": "Introduction H06 - General utilities",
     "title": "Introduction H06 - General Utilities",
     "content": "TABLE OF CONTENTS . | Useful programs in your JCL | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20H06%20-%20General%20utilities.html#introduction-h06---general-utilities",
     "relUrl": "/Feature%20introductions/Introduction%20H06%20-%20General%20utilities.html#introduction-h06---general-utilities"
-  },"289": {
+  },"261": {
     "doc": "Introduction H06 - General utilities",
     "title": "Useful programs in your JCL",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20H06%20-%20General%20utilities.html#useful-programs-in-your-jcl",
     "relUrl": "/Feature%20introductions/Introduction%20H06%20-%20General%20utilities.html#useful-programs-in-your-jcl"
-  },"290": {
+  },"262": {
     "doc": "Introduction H06 - General utilities",
     "title": "Useful Links",
     "content": "Next topic: Introduction H07 - Run control utilities Previous topic: Introduction H05 - Sub-Programs . ",
     "url": "/Feature%20introductions/Introduction%20H06%20-%20General%20utilities.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20H06%20-%20General%20utilities.html#useful-links"
-  },"291": {
+  },"263": {
     "doc": "Introduction H06 - General utilities",
     "title": "Introduction H06 - General utilities",
     "content": " ",
     "url": "/Feature%20introductions/Introduction%20H06%20-%20General%20utilities.html",
     "relUrl": "/Feature%20introductions/Introduction%20H06%20-%20General%20utilities.html"
-  },"292": {
+  },"264": {
     "doc": "Introduction H07 - Run control utilities",
     "title": "Introduction H07 - Run control utilities",
     "content": "TABLE OF CONTENTS . | LTPRT | VDPNL | MR91 | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20H07%20-%20Run%20control%20utilities.html",
     "relUrl": "/Feature%20introductions/Introduction%20H07%20-%20Run%20control%20utilities.html"
-  },"293": {
+  },"265": {
     "doc": "Introduction H07 - Run control utilities",
     "title": "LTPRT",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20H07%20-%20Run%20control%20utilities.html#ltprt",
     "relUrl": "/Feature%20introductions/Introduction%20H07%20-%20Run%20control%20utilities.html#ltprt"
-  },"294": {
+  },"266": {
     "doc": "Introduction H07 - Run control utilities",
     "title": "VDPNL",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20H07%20-%20Run%20control%20utilities.html#vdpnl",
     "relUrl": "/Feature%20introductions/Introduction%20H07%20-%20Run%20control%20utilities.html#vdpnl"
-  },"295": {
+  },"267": {
     "doc": "Introduction H07 - Run control utilities",
     "title": "MR91",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20H07%20-%20Run%20control%20utilities.html#mr91",
     "relUrl": "/Feature%20introductions/Introduction%20H07%20-%20Run%20control%20utilities.html#mr91"
-  },"296": {
+  },"268": {
     "doc": "Introduction H07 - Run control utilities",
     "title": "Useful Links",
     "content": "Next topic: Introduction H10 - Compiler Previous topic: Introduction H06 - General utilities . ",
     "url": "/Feature%20introductions/Introduction%20H07%20-%20Run%20control%20utilities.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20H07%20-%20Run%20control%20utilities.html#useful-links"
-  },"297": {
+  },"269": {
     "doc": "Introduction H10 - Compiler",
     "title": "Introduction H10 - Compiler",
     "content": "TABLE OF CONTENTS . | What the compiler does | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20H10%20-%20Compiler.html",
     "relUrl": "/Feature%20introductions/Introduction%20H10%20-%20Compiler.html"
-  },"298": {
+  },"270": {
     "doc": "Introduction H10 - Compiler",
     "title": "What the compiler does",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20H10%20-%20Compiler.html#what-the-compiler-does",
     "relUrl": "/Feature%20introductions/Introduction%20H10%20-%20Compiler.html#what-the-compiler-does"
-  },"299": {
+  },"271": {
     "doc": "Introduction H10 - Compiler",
     "title": "Useful Links",
     "content": "Next topic: Introduction J01 - Format Phase Previous topic: Introduction H07 - Run control utilities . ",
     "url": "/Feature%20introductions/Introduction%20H10%20-%20Compiler.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20H10%20-%20Compiler.html#useful-links"
-  },"300": {
+  },"272": {
     "doc": "Introduction J01 - Format Phase",
     "title": "Introduction J01 - Format Phase",
     "content": "TABLE OF CONTENTS . | What a format phase can achieve | How to specify a format phase in a view | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20J01%20-%20Format%20Phase.html",
     "relUrl": "/Feature%20introductions/Introduction%20J01%20-%20Format%20Phase.html"
-  },"301": {
+  },"273": {
     "doc": "Introduction J01 - Format Phase",
     "title": "What a format phase can achieve",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20J01%20-%20Format%20Phase.html#what-a-format-phase-can-achieve",
     "relUrl": "/Feature%20introductions/Introduction%20J01%20-%20Format%20Phase.html#what-a-format-phase-can-achieve"
-  },"302": {
+  },"274": {
     "doc": "Introduction J01 - Format Phase",
     "title": "How to specify a format phase in a view",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20J01%20-%20Format%20Phase.html#how-to-specify-a-format-phase-in-a-view",
     "relUrl": "/Feature%20introductions/Introduction%20J01%20-%20Format%20Phase.html#how-to-specify-a-format-phase-in-a-view"
-  },"303": {
+  },"275": {
     "doc": "Introduction J01 - Format Phase",
     "title": "Useful Links",
     "content": "Next topic: Introduction J02 - Logic Text for Format Phase Previous topic: Introduction H10 - Compiler . ",
     "url": "/Feature%20introductions/Introduction%20J01%20-%20Format%20Phase.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20J01%20-%20Format%20Phase.html#useful-links"
-  },"304": {
+  },"276": {
     "doc": "Introduction J02 - Logic Text for Format Phase",
     "title": "Introduction J02 - Logic Text for Format Phase",
     "content": "TABLE OF CONTENTS . | Types of logic text for the format phase | Useful Links | . ",
     "url": "/Feature%20introductions/Introduction%20J02%20-%20Logic%20Text%20for%20Format%20Phase.html",
     "relUrl": "/Feature%20introductions/Introduction%20J02%20-%20Logic%20Text%20for%20Format%20Phase.html"
-  },"305": {
+  },"277": {
     "doc": "Introduction J02 - Logic Text for Format Phase",
     "title": "Types of logic text for the format phase",
     "content": "To be completed. ",
     "url": "/Feature%20introductions/Introduction%20J02%20-%20Logic%20Text%20for%20Format%20Phase.html#types-of-logic-text-for-the-format-phase",
     "relUrl": "/Feature%20introductions/Introduction%20J02%20-%20Logic%20Text%20for%20Format%20Phase.html#types-of-logic-text-for-the-format-phase"
-  },"306": {
+  },"278": {
     "doc": "Introduction J02 - Logic Text for Format Phase",
     "title": "Useful Links",
     "content": "Previous topic: Introduction J01 - Format Phase . ",
     "url": "/Feature%20introductions/Introduction%20J02%20-%20Logic%20Text%20for%20Format%20Phase.html#useful-links",
     "relUrl": "/Feature%20introductions/Introduction%20J02%20-%20Logic%20Text%20for%20Format%20Phase.html#useful-links"
-  },"307": {
+  },"279": {
     "doc": "Lesson A - Simple report",
     "title": "Lesson A - Simple report",
     "content": " ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20A%20-%20Simple%20report.html"
-  },"308": {
+  },"280": {
     "doc": "Lesson B - Add lookup to report",
     "title": "Lesson B - Add lookup to report",
     "content": " ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20Add%20lookup%20to%20report.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20B%20-%20Add%20lookup%20to%20report.html"
-  },"309": {
+  },"281": {
     "doc": "Lesson C - Speed the lookup",
     "title": "Lesson C - Speed the lookup",
     "content": " ",
     "url": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup.html",
     "relUrl": "/Lessons%20in%20basic%20skills/Lesson%20C%20-%20Speed%20the%20lookup.html"
-  },"310": {
+  },"282": {
     "doc": "Lessons in basic skills",
     "title": "Lessons in basic skills",
     "content": "IMPORTANT: It will take at least a week to learn the basic skills. It needs that much learning to create solutions using this product with the shortest run times. This folder of topics assumes you have already done the following: . | Read User guide - start here | Installed and run the Demo. | Installed and run the Workbench. | . Below are lessons that have letters like A, B, C and so on. Knowledge of JCL and any programming helps. ",
     "url": "/Lessons%20in%20basic%20skills.html",
     "relUrl": "/Lessons%20in%20basic%20skills.html"
-  },"311": {
+  },"283": {
     "doc": "Overall Training",
     "title": "Overall Training",
     "content": " ",
     "url": "/Overall%20Training.html",
     "relUrl": "/Overall%20Training.html"
-  },"312": {
+  },"284": {
     "doc": "PE Checklists",
     "title": "PE Checklists",
     "content": " ",
     "url": "/PE%20Checklists.html",
     "relUrl": "/PE%20Checklists.html"
-  },"313": {
+  },"285": {
     "doc": "PE Programs",
     "title": "PE Programs",
     "content": "Below are the four main programs that produce the results of GenevaERS. ",
     "url": "/PE%20Programs.html",
     "relUrl": "/PE%20Programs.html"
-  },"314": {
+  },"286": {
     "doc": "Publications",
     "title": "Publications",
     "content": " ",
     "url": "/Publications.html",
     "relUrl": "/Publications.html"
-  },"315": {
+  },"287": {
     "doc": "Publications",
     "title": "Balancing Act: A Practical Approach to Business Event Based Insights",
     "content": "Link to this book . ",
     "url": "/Publications.html#balancing-act-a-practical-approach-to-business-event-based-insights",
     "relUrl": "/Publications.html#balancing-act-a-practical-approach-to-business-event-based-insights"
-  },"316": {
+  },"288": {
     "doc": "Publications",
     "title": "Metric Engine: Reinventing Data Supply Chains for Business",
     "content": "Link to this book . ",
     "url": "/Publications.html#metric-engine-reinventing-data-supply-chains-for-business",
     "relUrl": "/Publications.html#metric-engine-reinventing-data-supply-chains-for-business"
-  },"317": {
+  },"289": {
     "doc": "REA Accounting Guide",
     "title": "REA Accounting Guide",
     "content": " ",
     "url": "/REA%20Accounting%20Guide.html",
     "relUrl": "/REA%20Accounting%20Guide.html"
-  },"318": {
+  },"290": {
     "doc": "Run Control Utilities",
     "title": "Run Control Utilities",
     "content": "Reminder: Introduction H07 - Run Control Utilities . ",
     "url": "/Run%20Control%20Utilities.html",
     "relUrl": "/Run%20Control%20Utilities.html"
-  },"319": {
+  },"291": {
     "doc": "Run Performance Engine (PE)",
     "title": "Run Performance Engine (PE)",
     "content": " ",
     "url": "/Run%20Performance%20Engine%20(PE).html",
     "relUrl": "/Run%20Performance%20Engine%20(PE).html"
-  },"320": {
+  },"292": {
     "doc": "Runbook - DAYS Date Diff Calculator",
     "title": "Runbook - DAYS Date Diff Calculator",
     "content": "TABLE OF CONTENTS . | What Sub-Program DAYS achieves | How to invoke DAYS | Errors | Useful Links | . ",
     "url": "/Sub-Programs/Runbook%20DAYS%20Date%20Diff%20Calculator.html",
     "relUrl": "/Sub-Programs/Runbook%20DAYS%20Date%20Diff%20Calculator.html"
-  },"321": {
+  },"293": {
     "doc": "Runbook - DAYS Date Diff Calculator",
     "title": "What Sub-Program DAYS achieves",
     "content": " ",
     "url": "/Sub-Programs/Runbook%20DAYS%20Date%20Diff%20Calculator.html#what-sub-program-days-achieves",
     "relUrl": "/Sub-Programs/Runbook%20DAYS%20Date%20Diff%20Calculator.html#what-sub-program-days-achieves"
-  },"322": {
+  },"294": {
     "doc": "Runbook - DAYS Date Diff Calculator",
     "title": "How to invoke DAYS",
     "content": " ",
     "url": "/Sub-Programs/Runbook%20DAYS%20Date%20Diff%20Calculator.html#how-to-invoke-days",
     "relUrl": "/Sub-Programs/Runbook%20DAYS%20Date%20Diff%20Calculator.html#how-to-invoke-days"
-  },"323": {
+  },"295": {
     "doc": "Runbook - DAYS Date Diff Calculator",
     "title": "Errors",
     "content": "See Errors in Sub-Programs . ",
     "url": "/Sub-Programs/Runbook%20DAYS%20Date%20Diff%20Calculator.html#errors",
     "relUrl": "/Sub-Programs/Runbook%20DAYS%20Date%20Diff%20Calculator.html#errors"
-  },"324": {
+  },"296": {
     "doc": "Runbook - DAYS Date Diff Calculator",
     "title": "Useful Links",
     "content": "Next topic: Runbook - GDAT Date Convert Serial to Gregorian Previous topic: Sub-Programs . ",
     "url": "/Sub-Programs/Runbook%20DAYS%20Date%20Diff%20Calculator.html#useful-links",
     "relUrl": "/Sub-Programs/Runbook%20DAYS%20Date%20Diff%20Calculator.html#useful-links"
-  },"325": {
+  },"297": {
     "doc": "Runbook - GDAT Date Convert Serial to Gregorian",
     "title": "Runbook - GDAT Date Convert Serial to Gregorian",
     "content": "TABLE OF CONTENTS . | What Sub-Program GDAT achieves | How to invoke GDAT | Errors | Useful Links | . ",
     "url": "/Sub-Programs/Runbook%20GDAT%20Date%20Convert%20Serial%20to%20Gregorian.html",
     "relUrl": "/Sub-Programs/Runbook%20GDAT%20Date%20Convert%20Serial%20to%20Gregorian.html"
-  },"326": {
+  },"298": {
     "doc": "Runbook - GDAT Date Convert Serial to Gregorian",
     "title": "What Sub-Program GDAT achieves",
     "content": " ",
     "url": "/Sub-Programs/Runbook%20GDAT%20Date%20Convert%20Serial%20to%20Gregorian.html#what-sub-program-gdat-achieves",
     "relUrl": "/Sub-Programs/Runbook%20GDAT%20Date%20Convert%20Serial%20to%20Gregorian.html#what-sub-program-gdat-achieves"
-  },"327": {
+  },"299": {
     "doc": "Runbook - GDAT Date Convert Serial to Gregorian",
     "title": "How to invoke GDAT",
     "content": " ",
     "url": "/Sub-Programs/Runbook%20GDAT%20Date%20Convert%20Serial%20to%20Gregorian.html#how-to-invoke-gdat",
     "relUrl": "/Sub-Programs/Runbook%20GDAT%20Date%20Convert%20Serial%20to%20Gregorian.html#how-to-invoke-gdat"
-  },"328": {
+  },"300": {
     "doc": "Runbook - GDAT Date Convert Serial to Gregorian",
     "title": "Errors",
     "content": "See Errors in Sub-Programs . ",
     "url": "/Sub-Programs/Runbook%20GDAT%20Date%20Convert%20Serial%20to%20Gregorian.html#errors",
     "relUrl": "/Sub-Programs/Runbook%20GDAT%20Date%20Convert%20Serial%20to%20Gregorian.html#errors"
-  },"329": {
+  },"301": {
     "doc": "Runbook - GDAT Date Convert Serial to Gregorian",
     "title": "Useful Links",
     "content": "Next topic: Runbook - JDAY Date Convert Gregorian to Serial Previous topic: Runbook - DAYS Date Diff Calculator . ",
     "url": "/Sub-Programs/Runbook%20GDAT%20Date%20Convert%20Serial%20to%20Gregorian.html#useful-links",
     "relUrl": "/Sub-Programs/Runbook%20GDAT%20Date%20Convert%20Serial%20to%20Gregorian.html#useful-links"
-  },"330": {
+  },"302": {
     "doc": "Runbook - JDAY Date Convert Gregorian to Serial",
     "title": "Runbook - JDAY Date Convert Gregorian to Serial",
     "content": "TABLE OF CONTENTS . | What Sub-Program JDAY achieves | How to invoke JDAY | Errors | Useful Links | . ",
     "url": "/Sub-Programs/Runbook%20JDAY%20Date%20Convert%20Gregorian%20to%20Serial.html",
     "relUrl": "/Sub-Programs/Runbook%20JDAY%20Date%20Convert%20Gregorian%20to%20Serial.html"
-  },"331": {
+  },"303": {
     "doc": "Runbook - JDAY Date Convert Gregorian to Serial",
     "title": "What Sub-Program JDAY achieves",
     "content": " ",
     "url": "/Sub-Programs/Runbook%20JDAY%20Date%20Convert%20Gregorian%20to%20Serial.html#what-sub-program-jday-achieves",
     "relUrl": "/Sub-Programs/Runbook%20JDAY%20Date%20Convert%20Gregorian%20to%20Serial.html#what-sub-program-jday-achieves"
-  },"332": {
+  },"304": {
     "doc": "Runbook - JDAY Date Convert Gregorian to Serial",
     "title": "How to invoke JDAY",
     "content": " ",
     "url": "/Sub-Programs/Runbook%20JDAY%20Date%20Convert%20Gregorian%20to%20Serial.html#how-to-invoke-jday",
     "relUrl": "/Sub-Programs/Runbook%20JDAY%20Date%20Convert%20Gregorian%20to%20Serial.html#how-to-invoke-jday"
-  },"333": {
+  },"305": {
     "doc": "Runbook - JDAY Date Convert Gregorian to Serial",
     "title": "Errors",
     "content": "See Errors in Sub-Programs . ",
     "url": "/Sub-Programs/Runbook%20JDAY%20Date%20Convert%20Gregorian%20to%20Serial.html#errors",
     "relUrl": "/Sub-Programs/Runbook%20JDAY%20Date%20Convert%20Gregorian%20to%20Serial.html#errors"
-  },"334": {
+  },"306": {
     "doc": "Runbook - JDAY Date Convert Gregorian to Serial",
     "title": "Useful Links",
     "content": "Next topic: Runbook - UR05 Memory Allocation Previous topic: Runbook - GDAT Date Convert Serial to Gregorian . ",
     "url": "/Sub-Programs/Runbook%20JDAY%20Date%20Convert%20Gregorian%20to%20Serial.html#useful-links",
     "relUrl": "/Sub-Programs/Runbook%20JDAY%20Date%20Convert%20Gregorian%20to%20Serial.html#useful-links"
-  },"335": {
+  },"307": {
     "doc": "Runbook - LX13 Key Break Tester",
     "title": "Runbook - LX13 Key Break Tester",
     "content": "TABLE OF CONTENTS . | What User-Exit LX13 achieves | How to invoke LX13 | Errors | Useful Links | . ",
     "url": "/User-Exits/Runbook%20LX13%20Key%20Break%20Tester.html",
     "relUrl": "/User-Exits/Runbook%20LX13%20Key%20Break%20Tester.html"
-  },"336": {
+  },"308": {
     "doc": "Runbook - LX13 Key Break Tester",
     "title": "What User-Exit LX13 achieves",
     "content": " ",
     "url": "/User-Exits/Runbook%20LX13%20Key%20Break%20Tester.html#what-user-exit-lx13-achieves",
     "relUrl": "/User-Exits/Runbook%20LX13%20Key%20Break%20Tester.html#what-user-exit-lx13-achieves"
-  },"337": {
+  },"309": {
     "doc": "Runbook - LX13 Key Break Tester",
     "title": "How to invoke LX13",
     "content": " ",
     "url": "/User-Exits/Runbook%20LX13%20Key%20Break%20Tester.html#how-to-invoke-lx13",
     "relUrl": "/User-Exits/Runbook%20LX13%20Key%20Break%20Tester.html#how-to-invoke-lx13"
-  },"338": {
+  },"310": {
     "doc": "Runbook - LX13 Key Break Tester",
     "title": "Errors",
     "content": "See Errors in User-Exits . ",
     "url": "/User-Exits/Runbook%20LX13%20Key%20Break%20Tester.html#errors",
     "relUrl": "/User-Exits/Runbook%20LX13%20Key%20Break%20Tester.html#errors"
-  },"339": {
+  },"311": {
     "doc": "Runbook - LX13 Key Break Tester",
     "title": "Useful Links",
     "content": "Next topic: Runbook - RD15 Lookup Detail File Convert Previous topic: How to program User-Exits . ",
     "url": "/User-Exits/Runbook%20LX13%20Key%20Break%20Tester.html#useful-links",
     "relUrl": "/User-Exits/Runbook%20LX13%20Key%20Break%20Tester.html#useful-links"
-  },"340": {
+  },"312": {
     "doc": "Runbook - MR48 VDP XML Importer",
     "title": "Runbook - MR48 VDP XML Importer",
     "content": "TABLE OF CONTENTS . | What Program MR48 achieves | Diagram | Inputs | Outputs | Errors | . ",
     "url": "/Run%20Control%20Utilities/Runbook%20MR48%20VDP%20XML%20Importer.html",
     "relUrl": "/Run%20Control%20Utilities/Runbook%20MR48%20VDP%20XML%20Importer.html"
-  },"341": {
+  },"313": {
     "doc": "Runbook - MR48 VDP XML Importer",
     "title": "What Program MR48 achieves",
     "content": " ",
     "url": "/Run%20Control%20Utilities/Runbook%20MR48%20VDP%20XML%20Importer.html#what-program-mr48-achieves",
     "relUrl": "/Run%20Control%20Utilities/Runbook%20MR48%20VDP%20XML%20Importer.html#what-program-mr48-achieves"
-  },"342": {
+  },"314": {
     "doc": "Runbook - MR48 VDP XML Importer",
     "title": "Diagram",
     "content": " ",
     "url": "/Run%20Control%20Utilities/Runbook%20MR48%20VDP%20XML%20Importer.html#diagram",
     "relUrl": "/Run%20Control%20Utilities/Runbook%20MR48%20VDP%20XML%20Importer.html#diagram"
-  },"343": {
+  },"315": {
     "doc": "Runbook - MR48 VDP XML Importer",
     "title": "Inputs",
     "content": " ",
     "url": "/Run%20Control%20Utilities/Runbook%20MR48%20VDP%20XML%20Importer.html#inputs",
     "relUrl": "/Run%20Control%20Utilities/Runbook%20MR48%20VDP%20XML%20Importer.html#inputs"
-  },"344": {
+  },"316": {
     "doc": "Runbook - MR48 VDP XML Importer",
     "title": "Outputs",
     "content": " ",
     "url": "/Run%20Control%20Utilities/Runbook%20MR48%20VDP%20XML%20Importer.html#outputs",
     "relUrl": "/Run%20Control%20Utilities/Runbook%20MR48%20VDP%20XML%20Importer.html#outputs"
-  },"345": {
+  },"317": {
     "doc": "Runbook - MR48 VDP XML Importer",
     "title": "Errors",
     "content": "See 73 Errors in General Utilites . ",
     "url": "/Run%20Control%20Utilities/Runbook%20MR48%20VDP%20XML%20Importer.html#errors",
     "relUrl": "/Run%20Control%20Utilities/Runbook%20MR48%20VDP%20XML%20Importer.html#errors"
-  },"346": {
+  },"318": {
+    "doc": "Runbook - MR88 Format Data",
+    "title": "Runbook - MR88 Format Data",
+    "content": "TABLE OF CONTENTS . | What Program MR88 achieves | Diagram | Inputs | Outputs | Errors | Useful Links | . ",
+    "url": "/PE%20Programs/Runbook%20MR88%20Format%20Data.html",
+    "relUrl": "/PE%20Programs/Runbook%20MR88%20Format%20Data.html"
+  },"319": {
+    "doc": "Runbook - MR88 Format Data",
+    "title": "What Program MR88 achieves",
+    "content": " ",
+    "url": "/PE%20Programs/Runbook%20MR88%20Format%20Data.html#what-program-mr88-achieves",
+    "relUrl": "/PE%20Programs/Runbook%20MR88%20Format%20Data.html#what-program-mr88-achieves"
+  },"320": {
+    "doc": "Runbook - MR88 Format Data",
+    "title": "Diagram",
+    "content": " ",
+    "url": "/PE%20Programs/Runbook%20MR88%20Format%20Data.html#diagram",
+    "relUrl": "/PE%20Programs/Runbook%20MR88%20Format%20Data.html#diagram"
+  },"321": {
+    "doc": "Runbook - MR88 Format Data",
+    "title": "Inputs",
+    "content": " ",
+    "url": "/PE%20Programs/Runbook%20MR88%20Format%20Data.html#inputs",
+    "relUrl": "/PE%20Programs/Runbook%20MR88%20Format%20Data.html#inputs"
+  },"322": {
+    "doc": "Runbook - MR88 Format Data",
+    "title": "Outputs",
+    "content": " ",
+    "url": "/PE%20Programs/Runbook%20MR88%20Format%20Data.html#outputs",
+    "relUrl": "/PE%20Programs/Runbook%20MR88%20Format%20Data.html#outputs"
+  },"323": {
+    "doc": "Runbook - MR88 Format Data",
+    "title": "Errors",
+    "content": "See Errors in PE Programs . ",
+    "url": "/PE%20Programs/Runbook%20MR88%20Format%20Data.html#errors",
+    "relUrl": "/PE%20Programs/Runbook%20MR88%20Format%20Data.html#errors"
+  },"324": {
+    "doc": "Runbook - MR88 Format Data",
+    "title": "Useful Links",
+    "content": "Previous topic: Runbook - MR95E Extract Data . ",
+    "url": "/PE%20Programs/Runbook%20MR88%20Format%20Data.html#useful-links",
+    "relUrl": "/PE%20Programs/Runbook%20MR88%20Format%20Data.html#useful-links"
+  },"325": {
+    "doc": "Runbook - MR91 Control File Generator",
+    "title": "Runbook - MR91 Control File Generator",
+    "content": "TABLE OF CONTENTS . | What Program MR91 achieves | Diagram | Inputs | Outputs | Errors | Useful Links | . ",
+    "url": "/PE%20Programs/Runbook%20MR91%20Control%20File%20Generator.html",
+    "relUrl": "/PE%20Programs/Runbook%20MR91%20Control%20File%20Generator.html"
+  },"326": {
+    "doc": "Runbook - MR91 Control File Generator",
+    "title": "What Program MR91 achieves",
+    "content": " ",
+    "url": "/PE%20Programs/Runbook%20MR91%20Control%20File%20Generator.html#what-program-mr91-achieves",
+    "relUrl": "/PE%20Programs/Runbook%20MR91%20Control%20File%20Generator.html#what-program-mr91-achieves"
+  },"327": {
+    "doc": "Runbook - MR91 Control File Generator",
+    "title": "Diagram",
+    "content": " ",
+    "url": "/PE%20Programs/Runbook%20MR91%20Control%20File%20Generator.html#diagram",
+    "relUrl": "/PE%20Programs/Runbook%20MR91%20Control%20File%20Generator.html#diagram"
+  },"328": {
+    "doc": "Runbook - MR91 Control File Generator",
+    "title": "Inputs",
+    "content": " ",
+    "url": "/PE%20Programs/Runbook%20MR91%20Control%20File%20Generator.html#inputs",
+    "relUrl": "/PE%20Programs/Runbook%20MR91%20Control%20File%20Generator.html#inputs"
+  },"329": {
+    "doc": "Runbook - MR91 Control File Generator",
+    "title": "Outputs",
+    "content": " ",
+    "url": "/PE%20Programs/Runbook%20MR91%20Control%20File%20Generator.html#outputs",
+    "relUrl": "/PE%20Programs/Runbook%20MR91%20Control%20File%20Generator.html#outputs"
+  },"330": {
+    "doc": "Runbook - MR91 Control File Generator",
+    "title": "Errors",
+    "content": "See Errors in PE Programs . ",
+    "url": "/PE%20Programs/Runbook%20MR91%20Control%20File%20Generator.html#errors",
+    "relUrl": "/PE%20Programs/Runbook%20MR91%20Control%20File%20Generator.html#errors"
+  },"331": {
+    "doc": "Runbook - MR91 Control File Generator",
+    "title": "Useful Links",
+    "content": "Next topic: Runbook - MR95R Reference Data . ",
+    "url": "/PE%20Programs/Runbook%20MR91%20Control%20File%20Generator.html#useful-links",
+    "relUrl": "/PE%20Programs/Runbook%20MR91%20Control%20File%20Generator.html#useful-links"
+  },"332": {
     "doc": "Runbook - MR93 Job Scheduler",
     "title": "Runbook - MR93 Job Scheduler",
     "content": "TABLE OF CONTENTS . | What Program MR93 achieves | Diagram | Inputs | Outputs | Errors | . ",
     "url": "/Run%20Control%20Utilities/Runbook%20MR93%20Job%20Scheduler.html",
     "relUrl": "/Run%20Control%20Utilities/Runbook%20MR93%20Job%20Scheduler.html"
-  },"347": {
+  },"333": {
     "doc": "Runbook - MR93 Job Scheduler",
     "title": "What Program MR93 achieves",
     "content": " ",
     "url": "/Run%20Control%20Utilities/Runbook%20MR93%20Job%20Scheduler.html#what-program-mr93-achieves",
     "relUrl": "/Run%20Control%20Utilities/Runbook%20MR93%20Job%20Scheduler.html#what-program-mr93-achieves"
-  },"348": {
+  },"334": {
     "doc": "Runbook - MR93 Job Scheduler",
     "title": "Diagram",
     "content": " ",
     "url": "/Run%20Control%20Utilities/Runbook%20MR93%20Job%20Scheduler.html#diagram",
     "relUrl": "/Run%20Control%20Utilities/Runbook%20MR93%20Job%20Scheduler.html#diagram"
-  },"349": {
+  },"335": {
     "doc": "Runbook - MR93 Job Scheduler",
     "title": "Inputs",
     "content": " ",
     "url": "/Run%20Control%20Utilities/Runbook%20MR93%20Job%20Scheduler.html#inputs",
     "relUrl": "/Run%20Control%20Utilities/Runbook%20MR93%20Job%20Scheduler.html#inputs"
-  },"350": {
+  },"336": {
     "doc": "Runbook - MR93 Job Scheduler",
     "title": "Outputs",
     "content": " ",
     "url": "/Run%20Control%20Utilities/Runbook%20MR93%20Job%20Scheduler.html#outputs",
     "relUrl": "/Run%20Control%20Utilities/Runbook%20MR93%20Job%20Scheduler.html#outputs"
-  },"351": {
+  },"337": {
     "doc": "Runbook - MR93 Job Scheduler",
     "title": "Errors",
     "content": "See 73 Errors in General Utilites . ",
     "url": "/Run%20Control%20Utilities/Runbook%20MR93%20Job%20Scheduler.html#errors",
     "relUrl": "/Run%20Control%20Utilities/Runbook%20MR93%20Job%20Scheduler.html#errors"
+  },"338": {
+    "doc": "Runbook - MR95E Extract Data",
+    "title": "Runbook - MR95E Extract Data",
+    "content": "TABLE OF CONTENTS . | What Program MR95E achieves | Diagram | Inputs | Outputs | Errors | Useful Links | . ",
+    "url": "/PE%20Programs/Runbook%20MR95E%20Extract%20Data.html",
+    "relUrl": "/PE%20Programs/Runbook%20MR95E%20Extract%20Data.html"
+  },"339": {
+    "doc": "Runbook - MR95E Extract Data",
+    "title": "What Program MR95E achieves",
+    "content": " ",
+    "url": "/PE%20Programs/Runbook%20MR95E%20Extract%20Data.html#what-program-mr95e-achieves",
+    "relUrl": "/PE%20Programs/Runbook%20MR95E%20Extract%20Data.html#what-program-mr95e-achieves"
+  },"340": {
+    "doc": "Runbook - MR95E Extract Data",
+    "title": "Diagram",
+    "content": " ",
+    "url": "/PE%20Programs/Runbook%20MR95E%20Extract%20Data.html#diagram",
+    "relUrl": "/PE%20Programs/Runbook%20MR95E%20Extract%20Data.html#diagram"
+  },"341": {
+    "doc": "Runbook - MR95E Extract Data",
+    "title": "Inputs",
+    "content": " ",
+    "url": "/PE%20Programs/Runbook%20MR95E%20Extract%20Data.html#inputs",
+    "relUrl": "/PE%20Programs/Runbook%20MR95E%20Extract%20Data.html#inputs"
+  },"342": {
+    "doc": "Runbook - MR95E Extract Data",
+    "title": "Outputs",
+    "content": " ",
+    "url": "/PE%20Programs/Runbook%20MR95E%20Extract%20Data.html#outputs",
+    "relUrl": "/PE%20Programs/Runbook%20MR95E%20Extract%20Data.html#outputs"
+  },"343": {
+    "doc": "Runbook - MR95E Extract Data",
+    "title": "Errors",
+    "content": "See Errors in PE Programs . ",
+    "url": "/PE%20Programs/Runbook%20MR95E%20Extract%20Data.html#errors",
+    "relUrl": "/PE%20Programs/Runbook%20MR95E%20Extract%20Data.html#errors"
+  },"344": {
+    "doc": "Runbook - MR95E Extract Data",
+    "title": "Useful Links",
+    "content": "Next topic: Runbook - MR88 Format Data Previous topic: Runbook - MR95R Reference Data . ",
+    "url": "/PE%20Programs/Runbook%20MR95E%20Extract%20Data.html#useful-links",
+    "relUrl": "/PE%20Programs/Runbook%20MR95E%20Extract%20Data.html#useful-links"
+  },"345": {
+    "doc": "Runbook - MR95R Reference Data",
+    "title": "Runbook - MR95R Reference Data",
+    "content": "TABLE OF CONTENTS . | What Program MR95R achieves | Diagram | Inputs | Outputs | Errors | Useful Links | . ",
+    "url": "/PE%20Programs/Runbook%20MR95R%20Reference%20Data.html",
+    "relUrl": "/PE%20Programs/Runbook%20MR95R%20Reference%20Data.html"
+  },"346": {
+    "doc": "Runbook - MR95R Reference Data",
+    "title": "What Program MR95R achieves",
+    "content": " ",
+    "url": "/PE%20Programs/Runbook%20MR95R%20Reference%20Data.html#what-program-mr95r-achieves",
+    "relUrl": "/PE%20Programs/Runbook%20MR95R%20Reference%20Data.html#what-program-mr95r-achieves"
+  },"347": {
+    "doc": "Runbook - MR95R Reference Data",
+    "title": "Diagram",
+    "content": " ",
+    "url": "/PE%20Programs/Runbook%20MR95R%20Reference%20Data.html#diagram",
+    "relUrl": "/PE%20Programs/Runbook%20MR95R%20Reference%20Data.html#diagram"
+  },"348": {
+    "doc": "Runbook - MR95R Reference Data",
+    "title": "Inputs",
+    "content": " ",
+    "url": "/PE%20Programs/Runbook%20MR95R%20Reference%20Data.html#inputs",
+    "relUrl": "/PE%20Programs/Runbook%20MR95R%20Reference%20Data.html#inputs"
+  },"349": {
+    "doc": "Runbook - MR95R Reference Data",
+    "title": "Outputs",
+    "content": " ",
+    "url": "/PE%20Programs/Runbook%20MR95R%20Reference%20Data.html#outputs",
+    "relUrl": "/PE%20Programs/Runbook%20MR95R%20Reference%20Data.html#outputs"
+  },"350": {
+    "doc": "Runbook - MR95R Reference Data",
+    "title": "Errors",
+    "content": "See Errors in PE Programs . ",
+    "url": "/PE%20Programs/Runbook%20MR95R%20Reference%20Data.html#errors",
+    "relUrl": "/PE%20Programs/Runbook%20MR95R%20Reference%20Data.html#errors"
+  },"351": {
+    "doc": "Runbook - MR95R Reference Data",
+    "title": "Useful Links",
+    "content": "Next topic: Runbook - MR95E Extract Data Previous topic: Runbook - MR91 Control File Generator . ",
+    "url": "/PE%20Programs/Runbook%20MR95R%20Reference%20Data.html#useful-links",
+    "relUrl": "/PE%20Programs/Runbook%20MR95R%20Reference%20Data.html#useful-links"
   },"352": {
     "doc": "Runbook - RD15 Lookup Detail File Convert",
     "title": "Runbook - RD15 Lookup Detail File Convert",
