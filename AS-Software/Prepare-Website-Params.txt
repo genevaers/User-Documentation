@@ -8,5 +8,5 @@
  	DisplayInfo=Yes 
 	MaxIncludesPerFile=25
 	MaxDepthCommonIncludesCommon=5
-	MaxPathways=200
+	MaxPathways=500
 	
