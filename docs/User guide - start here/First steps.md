@@ -9,10 +9,10 @@ nav_order: 1
 
 [What is GenevaERS](What is GenevaERS) in less than 140 words.  
 
-Install & run our product on your mainframe using [Demo](https://genevaers.github.io/demo/).  
+Install & run our product on your mainframe using [Demo](https://genevaers.github.io/Demo/).  
 Downloading the demo actually installs most of this (free) product.  
 
-Alter the demo processing by installing [Workbench](https://genevaers.github.io/wb/).  
+Alter the demo processing by installing [Workbench](https://genevaers.github.io/Workbench/).  
 The workbench is key to using this product in your company.  
 
 # I want to learn the basics
