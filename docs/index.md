@@ -4,7 +4,7 @@ title: "Home"
 nav_order: 0
 ---
 
-# GenevaERS User Documentation - UNDER CONSTRUCTION
+# SAFR User Documentation - UNDER CONSTRUCTION
 {: .no_toc}
 TABLE OF CONTENTS 
  - TOC
@@ -62,7 +62,7 @@ TABLE OF CONTENTS
 [Publications](Publications)  
 [REA Accounting Guide](REA Accounting Guide)  
 [Frequently Asked Questions (FAQ)](Frequently Asked Questions (FAQ))  
-[Index](Website Index)  
+[Index to this website](Website Index)  
 [About this website](About this website)  
 
 Updated 28 June, 2022
