@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Website Index"
+title: "Index to this website"
 nav_order: 98
 
 ---
-# Website Index
+# Index
 
 To be completed (manually)
   
