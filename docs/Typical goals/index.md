@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Typical goals"
-nav_order: 11
+nav_order: 26
 has_children: true
 ---
 # Typical goals

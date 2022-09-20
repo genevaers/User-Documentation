@@ -1,5 +1,5 @@
 ﻿M01.72A  Report file for Prepare-Website-new.ps1   Version 2.0
-M01.72C  Run Date       09/20/2022 21:35:12
+M01.72C  Run Date       09/21/2022 08:22:44
   
 M02.10D  Params file                   C:\Users\EUGENEMORROW\Documents\Prepare-Website-Params.txt
 M02.10E 		BigFolder                 C:\Git\GenevaERS\User-Documentation
@@ -15,7 +15,7 @@ M06.30E  1 topic files have includes.
  
 ====================================================================
  
-M13.00A  Total topic files          263
+M13.00A  Total topic files          261
 M13.00B  Total common files         13
  
 M13.00C  Total includes             9
