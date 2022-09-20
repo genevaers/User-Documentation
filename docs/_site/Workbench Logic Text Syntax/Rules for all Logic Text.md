@@ -22,7 +22,7 @@ TABLE OF CONTENTS
   
 |Rule 2|Notes|
 |-----|-----|
-|Logic text can continue<br> on the next line.<br> A backslash \(\\\) is<br> optional at line end.|In previous versions of SAFR, a backslash \(\\\) was required in order to continue a line<br>of logic text on the next line. This backslash is no longer required.<br>The backslash is still allowed for backwards compatibility.<br> This means the following statements are the same:<br> IF ({FIELD1} >= 2)\\ <br>    THEN COLUMN = {FIELD1} ENDIF<br>  <br>IF ({FIELD1} >= 2) <br>    THEN COLUMN = {FIELD1} ENDIF<br>|
+|Logic text can continue<br> on the next line.<br> A backslash \(\\) is<br> optional at line end.|In previous versions of SAFR, a backslash \(\\) was required in order to continue a line<br>of logic text on the next line. This backslash is no longer required.<br>The backslash is still allowed for backwards compatibility.<br> This means the following statements are the same:<br> IF ({FIELD1} >= 2)\ <br>    THEN COLUMN = {FIELD1} ENDIF<br>  <br>IF ({FIELD1} >= 2) <br>    THEN COLUMN = {FIELD1} ENDIF<br>|
   
 # Rule 3 - Case of keywords has no effect
   
