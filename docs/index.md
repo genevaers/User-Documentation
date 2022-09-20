@@ -16,14 +16,18 @@ TABLE OF CONTENTS
 [User guide - start here](User guide - start here)  
 [Install](Install)  
 [Lessons in basic skills](Lessons in basic skills)  
-[How to use this product](How to use this product)  
-[Typical goals](Typical goals)  
 [Basic solutions](Basic solutions)  
 [Feature introductions](Feature introductions)  
-[Overall training videos](Overall training videos)  
-[Basic Views training videos](Basic views training videos)  
-[Workbench training videos](Workbench training videos)  
-[High speed training videos](High speed training videos)  
+
+
+## Once you know the basics
+
+[Overall product audio-visual training](Overall product audio-visual training)  
+[Basic views audio-visual training](Basic views audio-visual training)  
+[Workbench audio-visual training](Workbench audio-visual training)  
+[Product high performance audio-visual training](Product high performance audio-visual training)  
+[Use this product in your company](Use this product in your company)  
+[Typical goals](Typical goals)  
   
 ## Workbench
   
@@ -65,4 +69,4 @@ TABLE OF CONTENTS
 [Index to this website](Website Index)  
 [About this website](About this website)  
 
-Updated 28 June, 2022
+Updated 20 September, 2022
