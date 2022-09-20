@@ -5,7 +5,7 @@ parent: Syntax - SELECT, SELECTIF, SKIP & SKIPIF statements
 grand_parent: Workbench Logic Text Syntax
 nav_order: 4
 ---
-# Syntax - SKIP & SKIPIF statements in Format Record Filter (FRF)
+# Syntax - SKIP & SKIPIF statements in Format Record Filter (ERF)
 {: .no_toc}
 TABLE OF CONTENTS 
 1. TOC

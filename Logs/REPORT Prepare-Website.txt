@@ -1,0 +1,28 @@
+﻿M01.72A  Report file for Prepare-Website-new.ps1   Version 2.0
+M01.72C  Run Date       09/20/2022 11:13:24
+  
+M02.10D  Params file                   C:\Users\EUGENEMORROW\Documents\Prepare-Website-Params.txt
+M02.10E 		BigFolder                 C:\Git\GenevaERS\User-Documentation
+M02.10F 		WebsiteFolder             C:\Git\GenevaERS\User-Documentation\docs
+M02.10G 		MaxIncludesPerFile        25
+M02.10H 		MaxDepthCommonIncludesCommon          5
+M02.10J 		MaxPathways               500
+  
+M03.30B  Found 13 common files.
+M05.30E  2 common files have includes.
+M06.30E  1 topic files have includes.
+ 
+ 
+====================================================================
+ 
+M13.00A  Total topic files          263
+M13.00B  Total common files         13
+ 
+M13.00C  Total includes             9
+M13.00D  Includes in topic files    1
+M13.00E  Includes in common files   8
+M13.00F  Depth from Topics to deepest common includes common      2
+ 
+====================================================================
+ 
+M13.00Y  Successful end
