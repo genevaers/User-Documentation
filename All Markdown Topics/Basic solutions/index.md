@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Basic solutions"
-nav_order: 12
+nav_order: 11
 has_children: true
 ---
 # Basic solutions
