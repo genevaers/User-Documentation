@@ -16,8 +16,8 @@ Learn how to use GenevaERS with training videos and slides at [GenevaERS Trainin
 See more about the project at the [GenevaERS GitHub Repo](https://github.com/genevaers/community)
  
  
-This is the repository for the GenevaERS documentation site: 
-> https://genevaers.github.io/doc/
+This is the repository for the GenevaERS User documentation site: 
+>  https://genevaers.github.io/User-Documentation/
 
 
 

@@ -1,5 +1,5 @@
 ﻿M01.73A  Trace file for Prepare-Website-new.ps1   Version 2.0
-M01.73C  Run Date       09/20/2022 11:13:24
+M01.73C  Run Date       09/20/2022 21:35:12
   
 M01.83C  Created new ExpandedCommonFolder - C:\Git\GenevaERS\User-Documentation\Temp\Expanded-Common
 M01.84C  Created new ExpandedTopicsFolder - C:\Git\GenevaERS\User-Documentation\Temp\Expanded-Topics
@@ -304,8 +304,9 @@ M04.61B  Found Website sub-folders
 M04.61D  Sub-folder C:\Git\GenevaERS\User-Documentation\docs\Basic solutions
 M04.61D  Sub-folder C:\Git\GenevaERS\User-Documentation\docs\Basic views training videos
 M04.61D  Sub-folder C:\Git\GenevaERS\User-Documentation\docs\Compiler & Data Types
+M04.61D  Sub-folder C:\Git\GenevaERS\User-Documentation\docs\Errors in User-Exists
 M04.61D  Sub-folder C:\Git\GenevaERS\User-Documentation\docs\Feature introductions
-M04.61D  Sub-folder C:\Git\GenevaERS\User-Documentation\docs\High speed training
+M04.61D  Sub-folder C:\Git\GenevaERS\User-Documentation\docs\High speed audio-visual training
 M04.61D  Sub-folder C:\Git\GenevaERS\User-Documentation\docs\High speed training videos
 M04.61D  Sub-folder C:\Git\GenevaERS\User-Documentation\docs\How to use this product
 M04.61D  Sub-folder C:\Git\GenevaERS\User-Documentation\docs\images
@@ -606,10 +607,12 @@ M04.62B  Firstchar B
 M04.62C  Delete md files from C:\Git\GenevaERS\User-Documentation\docs\Basic views training videos
 M04.62B  Firstchar C
 M04.62C  Delete md files from C:\Git\GenevaERS\User-Documentation\docs\Compiler & Data Types
+M04.62B  Firstchar E
+M04.62C  Delete md files from C:\Git\GenevaERS\User-Documentation\docs\Errors in User-Exists
 M04.62B  Firstchar F
 M04.62C  Delete md files from C:\Git\GenevaERS\User-Documentation\docs\Feature introductions
 M04.62B  Firstchar H
-M04.62C  Delete md files from C:\Git\GenevaERS\User-Documentation\docs\High speed training
+M04.62C  Delete md files from C:\Git\GenevaERS\User-Documentation\docs\High speed audio-visual training
 M04.62B  Firstchar H
 M04.62C  Delete md files from C:\Git\GenevaERS\User-Documentation\docs\High speed training videos
 M04.62B  Firstchar H
