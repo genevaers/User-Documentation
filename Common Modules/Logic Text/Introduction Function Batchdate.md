@@ -8,11 +8,11 @@ The parameter for BATCHDATE is a number of days to add or delete from the defaul
 
 BATCHDATE can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
 
-{{ Logic Text\AA Syntax Legend }}
+[[ INCLUDE: Logic Text\AA Syntax Legend ]]
 
 # Syntax 
 
-{{ Logic Text\Syntax Function BATCHDATE }}
+[[ INCLUDE: Logic Text\Syntax Function BATCHDATE ]]
 
 # Rules for the syntax 
 
@@ -22,9 +22,9 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 # Examples: BATCHDATE function in Extract Record Filter
 
-{{ Logic Text\Example Function BATCHDATE ERF }}
+[[ INCLUDE: Logic Text\Example Function BATCHDATE ERF ]]
 
 # Examples: BATCHDATE function in Extract Column Assignment
 
-{{ Logic Text\Example Function BATCHDATE ECA }}
+[[ INCLUDE: Logic Text\Example Function BATCHDATE ECA ]]
 
