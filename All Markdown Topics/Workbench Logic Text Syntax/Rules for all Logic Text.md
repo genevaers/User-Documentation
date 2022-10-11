@@ -11,4 +11,4 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-{{ Logic Text\Rules for all Logic Text Common }}
+[[ INCLUDE: Logic Text\Rules for all Logic Text Common ]]
