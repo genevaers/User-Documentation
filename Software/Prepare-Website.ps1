@@ -1,5 +1,5 @@
 	
-$ScriptName = 'Prepare-Website-new.ps1'
+$ScriptName = 'Prepare-Website-NEW.ps1'
 $ScriptVersion = '2.0'
 
 <# Prepare-Website.ps1 - the script to process Markdown includes for a GitHub website.
@@ -14,11 +14,7 @@ $ScriptVersion = '2.0'
 	and the Jekyll website (for GitHub Pages) in 	"C:\Git\RepoABC\docs".
 	This script was tested using a Jekyll website using theme "just-the-docs".
 	
-	Theoretically this script could be in 			"C:\Git\RepoABC" 
-	and use a Gatsby website (for GitHub Pages) in  "C:\Git\RepoABC\content"
-	Such a website coudl use Gatsby "Gitbook-stater".   This has not been tested.
-	
-	This script allows markdown files in the website to include other markdown files.
+		This script allows markdown files in the website to include other markdown files.
 	See "OVERVIEW" about 75 lines below. 
 	
 	Version 1.1  9 Aug, 2022
@@ -26,14 +22,20 @@ $ScriptVersion = '2.0'
 			Folder AC Expanded Common is now AC-Expanded-Common
 			Folder AD Expanded Topics is now AD-Expanded-Topics
 			These changes allow gitignore to usesfully point to these folders.
-	Version 2.0  17 Aug, 2022
+	Version 2.0  07 Oct, 2022
 			Folder AA Topic Markdown is now    All Markdown Topics
-			Folder AC Common Markdown is now   Common-Markdown
+			Folder AC Common Markdown is now   Common Modules
 			Folder AI-Info is now              Logs
 			Folder AS-Software is now          Software
 			Folder AC-Expanded-Common is now   Temp\Expanded-Common
 			Folder AD-Expanded-Topics is now   Temp\Expanded-Topics
 			Folder Temp (ToDoIncludes) is now  TempInclude
+			Params folder has less variables.  Run script from Software folder.
+			Syntax of includes now uses [[ ]] rather than curly brackets.
+			Report has more details includign 
+				List of common files, list of topic files,
+				common files with includes, topics with includes,
+				comparison of params to usage.
 	
 	
 	DETAILS OF CODING
@@ -52,15 +54,16 @@ $ScriptVersion = '2.0'
 		Code01.20	Ignore comments and blank lines.
 		Code01.30	Read parameter=value into $line[0] and $line[1].
 		Code01.40	Use $line[0] to set parameter name and $line[1] to set the value
-	    Code01.50	Setup folders based on BigFolder
-		Code01.60	Check most criticaL parameters.
-		Code01.70	Create error file, report file, and trace file
-		Code01.80	Check other paramaters about folders
-		Code01.90	Check rest of parameters
+		Code01.41	Param values found.
+		Code01.50	Setup related folders starting from Software folder
+		Code01.60	Check permanent folders (All MD Topics, Common, docs, Logs, Software)
+		Code01.70	Check temporary folders
+		Code01.80	Check values of parameters
+
 	
 	Code02.00	Add more lines to files.
-		Code02.10	Add lines to report file.  
-		Code02.20	Add lines to trace File.     
+		Code02.10	Add lines to REPORT file.  
+		Code02.20	Add lines to TRACE File.     
 
 	Code03.00	Setup common file arrays
 		Code03.01	Declare one dimensional arrays for common files
@@ -82,29 +85,38 @@ $ScriptVersion = '2.0'
 		Code04.62	Delete all md files under website folders except underscore folders
 
 	Code05.00	Populate common includes array
-		Code05.10  Initialise variables
-		Code05.20  Read all common files and record includes in array
-		Code05.21  Housekeeping - set flags and counters.
-		Code05.22  Get the include details from the include coding
-		Code05.23  Put in ".md" as last three chars if not already there
-		Code05.24  If include coding starts with slash, remove it
-		Code05.25  Check if this include is already an include for this common file
-		Code05.26  Test that include points to an existing common file
-		Code05.27  Record include in CommonIncludesArray
+		Code05.01  Initialise variables
+		Code05.10  Read all common files and record includes in array
+		Code05.20  Includes - check how coding starts
+		Code05.21  Includes - check how coding ends
+		Code05.22  Includes - check if coding is almost right
+		Code05.23  Housekeeping - set flags and counters.
+		Code05.24  Get the include details from the include coding
+		Code05.25  Put in ".md" as last three chars if not already there
+		Code05.26  If include coding starts with slash, remove it
+		Code05.27  Check if this include is already an include for this common file
+		Code05.28  Test that include points to an existing common file
+		Code05.29  Record include in CommonIncludesArray
 		Code05.30  Display common files that have includes
 
 	Code06.00	Populate topic includes array
-		Code06.10  Initialise variables
-		Code06.20  Read all topic files and record includes in array
-		Code06.21  Housekeeping - set flags and counters.
-		Code06.22  Get the include details from the include coding
-		Code06.23  Put in ".md" as last three chars if not already there
-		Code06.24  If include coding starts with slash, remove it
-		Code06.25  Check if this include is already an include for this topic file
-		Code06.26  Test if include points to an existing common file
-		Code06.27  Record include in TopicIncludesArray
-		Code06.28  Topics without includes are copied to the website immediately
-		Code06.30  Display topic files that have includes
+		Code06.01  Initialise variables
+		Code06.10  Read all topic files and record includes in array
+		Code05.20  Includes - check how coding starts
+		Code05.21  Includes - check how coding ends
+		Code05.22  Includes - check if coding is almost right
+		Code06.20  Includes - check how coding starts
+		Code06.21  Includes - check how coding ends
+		Code06.22  Includes - check if coding is almost right
+		Code06.23  Housekeeping - set flags and counters.
+		Code06.24  Get the include details from the include coding
+		Code06.25  Put in ".md" as last three chars if not already there
+		Code06.26  If include coding starts with slash, remove it
+		Code06.27  Check if this include is already an include for this topic file
+		Code06.28  Test if include points to an existing common file
+		Code06.29  Record include in TopicIncludesArray
+		Code06.30  Topics without includes are copied to the website immediately
+		Code06.32  Display topic files that have includes
 		Code06.40  End processing if any errors in includes found (for either common or topic files)
 
 	Code07.00	Create pathway table for common files and check for circular includes
@@ -231,7 +243,7 @@ $ScriptVersion = '2.0'
 	   front matter gets an error message.  
 	
 	D.  The script does not know in advance where the incldes are.  The script scans the folder 
-	    "Common Markdown" (and sub-folders) to find any common files and whether they have includes. 
+	    "Common Modules" (and sub-folders) to find any common files and whether they have includes. 
 		The script also scans folder "All Markdown Topics" (and sub-folders) to find any topics that have
 		includes. If no errors are found, then the includes are procesed in the correct order appropriate.
 
@@ -263,17 +275,21 @@ $ScriptVersion = '2.0'
 	1.  Create file C1.md which has the common information.  C1.md does NOT have front matter - the
 	    file is just markdown text which may have links and/or graphics.
 	
-	2.  Place C1.md in a folder under "Common Markdown (see IMPORTANT FOLDER INFO below). Let's
-	    say we place C1.md in folder Common Markdown\GoodStuff.
+	2.  Place C1.md in a folder under "Common Modules (see IMPORTANT FOLDER INFO below). Let's
+	    say we place C1.md in folder Common Modules\General Common Files.  The name "General
+	 Common Files" can be anything - this is just an example name.  It is an advantage to group 
+	 common files into folders like this.
 	
 	3.  Both Aspect A.md and Aspect B.md get this coding on a line by itself:
-		     {{GoodStuff\C1}}
+		     [[ INCLUDE General Common Files\C1 ]]
 		
 	4.  Ensure all changes to files (such as Aspect A.md, Aspect B.md and C1.md) are complete. 
 	    See IMPORTANT FOLDER INFO below.
 	
-	5.  In a powershell window, run command C:\Git\RepoABC\Software\Prepare-Website 
-	
+	5.  In a powershell window, do the following:
+	        (a) Navigate to C:\Git\RepoABC\Software using cd commands.
+	        (b) Execute command ./Prepare-Website
+		
 	6.  If you see "Successful end", then the includes are now processed.
 	    Optional: if your website is a Jekyll website, this can be viewed locally using Jekyll
 		serve in the usual manner.  When appropriate, commit and merge the changes in all folders
@@ -295,7 +311,7 @@ $ScriptVersion = '2.0'
 	
 	The folders required in your repo are:
 		All Markdown Topics
-		Common Markdown
+		Common Modules
 		docs	
 		Temp\Expanded-Common
 		Temp\Expanded-Topics
@@ -320,17 +336,17 @@ $ScriptVersion = '2.0'
 	Let's say that Aspect A1 and Aspect B1 both want file C1 included.
 		
 	Files Aspect A1.md and Aspect B1.md contain the following coding (on a seperate line):
-		{{General Common Files\C1}}
+		[[ INCLUDE General Common Files\C1 ]]
 	
 	This coding makes include work (if C1.md exists in the given path) when the script is run.
 	
 	
-	Folder Common Markdown
+	Folder Common Modules
 	======================
 	
 	This folder contains common markdown files that can be included in any topic.
 	Normally, this folder has sub-folders which group common files together.
-	For example, folder:   	Common Markdown\General Common Files
+	For example, folder:   	Common Modules\General Common Files
 	contains file:          C1.md
 	
 		
@@ -347,7 +363,7 @@ $ScriptVersion = '2.0'
 	
 	The script uses expanded common files in folder Temp\Expanded-Common in the relevant
 	topic includes.  Example:
-		1. Common file "C1.md" in folder "Common Markdown\General Common Files",
+		1. Common file "C1.md" in folder "Common Modules\General Common Files",
 		2. Expanded version of C1.md is prepared in "Temp\Expanded-Common\General Common Files".
 		   The expanded version has C22 inserted at the correct location.
 		3. When Aspect A1.md includes C1, it is the expanded version of C1 that is inserted.
@@ -395,9 +411,8 @@ $ScriptVersion = '2.0'
 	
 	This folder contains:
 		1.  This script which can be run to do the include processing.
-		2.  File Prepare-Website-Params.txt.  Copy this to your "documents" folder and update.
-		    This allows the script to run on the relevant folders on your computer.
-			
+		2.  File Prepare-Website-Params.txt.  Normally, do not touch this file.
+	
 	
 	Folder TempInclude
 	==================
@@ -408,9 +423,7 @@ $ScriptVersion = '2.0'
 	Folder "docs"
 	=============
 	
-	This folder contains the files that create a jekyll website.  If your website is using Gatsby
-	website, then this folder could be "content".  This folder name is controlled by the 
-	parameter "websiteFolder" in the file Prepare-Website-params.txt in folder "Software".
+	This folder contains the files that create a jekyll website. 
 	
 	(Overview4.0)
 	
@@ -422,12 +435,12 @@ $ScriptVersion = '2.0'
 	
 	The parameters are below:
 
-	BigFolder		This can be any name.  For a GitHub repository this is typically
+	RepoFolder		This can be any name.  For a GitHub repository this is typically
 					C:\Git\reponame where reponame is the name of the GitHub repository.
 
 	WebsiteFolder   This can be any name.  For a Jekyll website that is part of a 
 					GitHub repository, this is typically C:\Git\reponame\docs.
-					The WebsiteFolder is typically underneath BigFolder, but this is
+					The WebsiteFolder is typically underneath RepoFolder, but this is
 					not necessary.
 
 	DisplayInfo    Typically Yes.  
@@ -603,284 +616,344 @@ $PSDefaultParameterValues['Out-File:Encoding'] = 'utf8'
 
 #  DEFAULT VALUES OF PARAMETERS
 
-$BigFolder	   	       = "default"
-$WebsiteFolder         = "default"
-$DisplayInfo           = 'Yes' 		# Set to No for a background process.
-$MaxIncludesPerFile    = 20	
-$MaxDepthCommonIncludesCommon 	   = 5
-$MaxPathways           = 100		# Rows for array to test for circular includes.
+$DisplayInfo                       = 'Yes' 		# Yes/No.  Set to No for a background process.
+												# This var sets $DisplayInfoInScript (True/False)
+$MaxIncludesPerFile                = 20			# This applies to both topics and common files.
+$MaxDepthCommonIncludesCommon 	   = 5			# A includes B includes C etc. to F at most.
+$MaxPathways                       = 500		# Rows for array to test for circular includes.
 
-# Note: LineEndings are CRLF because this is Jekyll.
+$LargestIncludesPerCommon           = 0			# Shows how many are needed for the markdown data.
+$LargestIncludesPerTopic            = 0			# Shows how many are needed for the markdown data.
+$UsedDepthCommonIncludesCommon 	    = 0			# Shows the depth needed for the markdown data.
+$UsedPathways                       = 0			# Shows Pathways needed for the markdown data.
+
+
+#  Include Coding syntax values
+
+$IncludeDelimeterStart = '[['
+$IncludeDelimeterEnd = ' ]]'
+$IncludeStart12Chars = "[[ INCLUDE: "
+$IncludeStart11Chars = "[[INCLUDE: "
+$IncludeLiteral = "INCLUDE:"
+$MDCommentCoding = '[//]: #'
+
+
+
+#	Interim value of DisplayInfoInScript.  Will be altered by valkue of param DisplayInfo
+
+$DisplayInfoInScript = $True
+
+
+# Note: LineEndings are CRLF because this is Jekyll under Windows.
 
 
 #	Code01.02		Look for file Prepare-Website-Params.txt
 
 #Find the script file that is running.
 
-#	$ScriptFile = $MyInvocation.MyCommand.Path
+$ScriptFile = $MyInvocation.MyCommand.Path
 # $ShowText = 'M01.02A  ScriptFile ' + $ScriptFile
 # Write-Host $ShowText
 
 #   Find folder for script.
 
-#	$ScriptFolder = Split-Path $ScriptFile -Parent
-#	$ShowText = 'M01.02B  ScriptFolder ' + $ScriptFolder
-#	Write-Host $ShowText
+$ScriptFolder = Split-Path $ScriptFile -Parent
+# $ShowText = 'M01.02B  ScriptFolder ' + $ScriptFolder
+# Write-Host $ShowText
+
+$SoftwareFolder = $ScriptFolder
 
 #   Params file should be in same folder as script.
 
-$DocumentsFolder = [System.Environment]::GetFolderPath("MyDocuments")
-#	$ShowText = "M01.02C  Documents folder is " + $DocumentsFolder
-#	Write-Host $ShowText
+$FoundParamsFile = $False
 
-$ParamsFileFullPath = $DocumentsFolder + '\Prepare-Website-Params.txt'
-#	$ShowText = 'M01.02D  ParamFile ' + $ParamsFileFullPath
-#	Write-Host $ShowText
+$ParamsFileFullPath = $SoftwareFolder + '\Prepare-Website-Params.txt'
+#   $ShowText = 'M01.02D  ParamFile ' + $ParamsFileFullPath
+#   Write-Host $ShowText
 
-If   (Test-Path -Path $ParamsFileFullPath -PathType leaf) {
+If (Test-Path -Path $ParamsFileFullPath -PathType leaf) {
+	$FoundParamsFile = $True
 #	$ShowText = 'M01.02E  Params found at ' + $ParamsFileFullPath 
-# 	Write-Host $ShowText
+#	Write-Host $ShowText
 } else {
-	$ShowText = 'M01.02F  Params file missing - ' + $ParamsFileFullPath 
-	Write-Host $ShowText
-	Exit
+	# Default values already set in 01.01 above.
 }	
 
-#	Found Prepare-Website-Params.txt
-#
-# 	Code01.10	Read Params file line by line.
-#
-$ParamsFileContents = Get-Content -Path $ParamsFileFullPath
-Foreach ($line in $ParamsFileContents) {
-	 	#	$ShowText = 'M01.10A  Line is ' + $line + ' ' 
-	 	#	Write-Host $ShowText
+If ($FoundParamsFile) {
+
+	#	Found Prepare-Website-Params.txt
+	#
+	# 	Code01.10	Read Params file line by line.
+	#
+	$ParamsFileContents = Get-Content -Path $ParamsFileFullPath
+	Foreach ($line in $ParamsFileContents) {
+			#	$ShowText = 'M01.10A  Line is ' + $line + ' ' 
+			#	Write-Host $ShowText
+		
+		$TrimLine = $line.Trim()
+			#	$ShowText = 'M01.10B  TrimLine is ' + $TrimLine + ' '
+			#	Write-Host $ShowText
+		
+		$FoundParamComment = $False
+		$FoundParamBlankLine = $False
 	
-	$TrimLine = $line.Trim()
-	 	#	$ShowText = 'M01.10B  TrimLine is ' + $TrimLine + ' '
-	 	#	Write-Host $ShowText
+		If  ($TrimLine.StartsWith('#')){ 
+			$FoundParamComment = $True
+		 		#	$ShowText = 'M01.10C      *** Ignore comment ***' 
+		 		#	Write-Host $ShowText
+		} 
+		If ($TrimLine -eq '') {
+			$FoundParamBlankLine = $True
+			 	#	$ShowText = 'M01.10D      ***** Ignore BLANK line *****' 
+		 		#	Write-Host $ShowText		
+		} 
 	
-	$FoundComment = $False
-	$FoundBlank = $False
 	
-	If  ($TrimLine.StartsWith('#')){ 
-		$FoundComment = $True
-		 	#	$ShowText = 'M01.10C      *** Ignore comment ***' 
+	
+		#	Code01.20  Ignore comments and blank lines.
+	
+		If (( -not ($FoundParamComment)) -and ( -not ($FoundParamBlankLine))) {
+		
+			#	
+			#	Code01.30   Read parameter=value into $line[0] and $line[1].
+			#	
+			#	$ShowText = 'M01.30A     Found paraneter ' + $line 
+			#	Write-Host $ShowText
+			$lineorig = $line
+			$line = $line.Split('=')
+			#	$ShowText = 'M01.30B      Line 0 is ' + $line[0] 
+			#	Write-Host $ShowText
+			$line[0] = $line[0].Trim()
+			#	$ShowText = 'M01.30C      Trimmed Line 0 is ' + $line[0] 
+			#	Write-Host $ShowText		
+		 	#	ShowText = 'M01.30D      Line 1 is ' + $line[1] 
 		 	#	Write-Host $ShowText
-	} 
-	If ($TrimLine -eq '') {
-		$FoundBlank = $True
-		 	#	$ShowText = 'M01.10D      ***** Ignore BLANK line *****' 
-		 	#	Write-Host $ShowText		
-	} 
-	
-	
-	
-	#	Code01.20  Ignore comments and blank lines.
-	
-	If (( -not ($FoundComment)) -and ( -not ($FoundBlank))) {
-		
-		#	
-		#	Code01.30   Read parameter=value into $line[0] and $line[1].
-		#	
-		#	$ShowText = 'M01.30A     Found paraneter ' + $line 
-		#	Write-Host $ShowText
-		$lineorig = $line
-		$line = $line.Split('=')
-		#	$ShowText = 'M01.30B      Line 0 is ' + $line[0] 
-		#	Write-Host $ShowText
-		$line[0] = $line[0].Trim()
-		#	$ShowText = 'M01.30C      Trimmed Line 0 is ' + $line[0] 
-		#	Write-Host $ShowText		
-		 #	ShowText = 'M01.30D      Line 1 is ' + $line[1] 
-		 #	Write-Host $ShowText
-		
-		$InvalidParam = $False
-		$TestParamName = $line[0].Trim()
-		$TestParamValue = $line[1].Trim()
-		#	ShowText = 'M01.30X     Parameter name is X' + $TestParamName + 'X' 
-		#	Write-Host $ShowText
-		#	$ShowText = 'M01.30Y     Parameter value is X' + $TestParamValue + 'X' 
-		#	Write-Host $ShowText		
+			
+			$InvalidParam = $False
+			$TestParamName = $line[0].Trim()
+			$TestParamValue = $line[1].Trim()
+			#	ShowText = 'M01.30X     Parameter name is X' + $TestParamName + 'X' 
+			#	Write-Host $ShowText
+			#	$ShowText = 'M01.30Y     Parameter value is X' + $TestParamValue + 'X' 
+			#	Write-Host $ShowText		
 		
 		
-		If ($TestParamName -eq '') {
-			ShowText = 'M01.30E     Params line has empty name for line ' + $lineorig 
- 			Write-Host $ShowText
-			$InvalidParam = $True
-		}
+			If ($TestParamName -eq '') {
+				ShowText = 'M01.30E     Params line has empty name for line ' + $lineorig 
+ 				Write-Host $ShowText
+				$InvalidParam = $True
+			}
 		
 		
-		If ($TestParamValue -eq '') {
-			$ShowText = 'M01.30F     Params line has empty value for line ' + $lineorig 
- 			Write-Host $ShowText
-			$InvalidParam = $True
-		}
-		If  ($InvalidParam ) {
-			$ShowText = 'M01.30G     Params line has empty value or name - run terminated.' 
- 			Write-Host $ShowText
-			Exit
-		}
+			If ($TestParamValue -eq '') {
+				$ShowText = 'M01.30F     Params line has empty value for line ' + $lineorig 
+ 				Write-Host $ShowText
+				$InvalidParam = $True
+			}
+			If  ($InvalidParam ) {
+				$ShowText = 'M01.30G     Params line has empty value or name - run terminated.' 
+ 				Write-Host $ShowText
+				Exit
+			}
 		
-		$OKParamName = $False
+			$OKParamName = $False
+			
 		
+			#	Code01.40	Use $line[0] to set parameter name and $line[1] to set the value
 		
-		#	Code01.40	Use $line[0] to set parameter name and $line[1] to set the value
-		
-		If ($line[0] -eq 'BigFolder') { 
-			$BigFolder = $line[1].Trim() 
-		#	$ShowText = 'M01.40A  Parameter BigFolder          = ' + $BigFolder 
- 		# 	Write-Host $ShowText
-			$OKParamName = $True
-		}
-		
-		If ($line[0] -eq 'WebsiteFolder') { 
-			$WebsiteFolder = $line[1].Trim() 
-		#	$ShowText = 'M01.40B  Parameter WebsiteFolder      = ' + $WebsiteFolder 
- 		#	Write-Host $ShowText
-			$OKParamName = $True
-		}
-		
-		
-		If ($line[0] -eq 'DisplayInfo') {
-			$DisplayInfoString = $line[1].Trim() 
-		#	$ShowText = 'M01.40C  Parameter DisplayInfo        = ' + $DisplayInfoString 
- 		#	Write-Host $ShowText
-			$OKParamName = $True
-		}
+			If ($line[0] -eq 'DisplayInfo') {
+				$DisplayInfo = $line[1].Trim() 
+				#	$ShowText = 'M01.40C  DisplayInfo      = ' + $DisplayInfo 
+ 				#	Write-Host $ShowText
+				$OKParamName = $True
+			}
 
-		If ($line[0] -eq 'MaxIncludesPerFile') {
-			$MaxIncludesPerFile = $line[1].Trim() 
-		#	$ShowText = 'M01.40C  Parameter DisplayInfo        = ' + $DisplayInfoString 
- 		#	Write-Host $ShowText
-			$OKParamName = $True
-		}
+			If ($line[0] -eq 'MaxIncludesPerFile') {
+				$MaxIncludesPerFile = $line[1].Trim() 
+				#	$ShowText = 'M01.40C  $MaxIncludesPerFile = ' + $MaxIncludesPerFile 
+				#	Write-Host $ShowText
+				$OKParamName = $True
+			}
 
-		If ($line[0] -eq 'MaxDepthCommonIncludesCommon') {
-			$MaxDepthCommonIncludesCommon = $line[1].Trim() 
-		#	$ShowText = 'M01.40C  Parameter DisplayInfo        = ' + $DisplayInfoString 
- 		#	Write-Host $ShowText
-			$OKParamName = $True
-		}
+			If ($line[0] -eq 'MaxDepthCommonIncludesCommon') {
+				$MaxDepthCommonIncludesCommon = $line[1].Trim() 
+				#	$ShowText = 'M01.40C  $MaxDepthCommonIncludesCommon        = ' + $MaxDepthCommonIncludesCommon 
+ 				#	Write-Host $ShowText
+				$OKParamName = $True
+			}
 
-		If ($line[0] -eq 'MaxPathways') {
-			$MaxPathways = $line[1].Trim() 
-		#	$ShowText = 'M01.40C  Parameter DisplayInfo        = ' + $DisplayInfoString 
- 		#	Write-Host $ShowText
-			$OKParamName = $True
-		}
+			If ($line[0] -eq 'MaxPathways') {
+				$MaxPathways = $line[1].Trim() 
+				#	$ShowText = 'M01.40C  MaxPathways     = ' + $MaxPathways 
+ 				#	Write-Host $ShowText
+				$OKParamName = $True
+			}
 
-		#	End with error if an invalid parameter name given.
+			#	End with error if an invalid parameter name given.
 		
-		If  ($OKParamName -eq $False) {
-			$ShowText = 'M01.40Z     Invalid Param name for line ' + $lineorig 
- 			Write-Host $ShowText
-			Exit
-		}
+			If  ($OKParamName -eq $False) {
+				$ShowText = 'M01.40Z     Invalid Param name for line ' + $lineorig 
+ 				Write-Host $ShowText
+				Exit
+			}
 		
-		
-	}	#	End If not comment and not blank line
-}	#	End For each line in ParamsFileContents
+		}	#	End If not comment and not blank line
+	}	#	End For each line in ParamsFileContents
+
+}	# If FoundParamsFile
 
 
 
-#   Code01.50		Setup folders based on BigFolder
+# 	Code01.41	Param values found.
 
-#	$ShowText = 'M01.50A  Setup folder names' 
+#	Values after param file processing complete
+
+# 	$ShowText = 'M01.41A  DisplayInfo ' + $DisplayInfo 
+# 	Write-Host $ShowText
+# 	$ShowText = 'M01.41B  MaxIncludesPerFile ' + $MaxIncludesPerFile 
+# 	Write-Host $ShowText
+# 	$ShowText = 'M01.41C  MaxDepthCommonIncludesCommon ' + $MaxDepthCommonIncludesCommon  
+# 	Write-Host $ShowText
+# 	$ShowText = 'M01.41D  MaxPathways ' + $MaxPathways 
+# 	Write-Host $ShowText
+
+
+
+#   Code01.50		Setup related folders starting from Software folder
+
+
+#  Code01.51  Check "Software" is name of current folder.
+
+$NameSoftwareFolder = Split-Path -Path ($SoftwareFolder) -Leaf
+#	$ShowText = 'M01.51AA $NameSoftwareFolder = ' + $NameSoftwareFolder
+#	Write-Host $ShowText 
+
+
+If (-not ($NameSoftwareFolder -ceq "Software")) {
+	If (($NameSoftwareFolder -eq "Software")) {
+		$ShowText = 'M01.51A  ERROR - Case incorrect for Software Folder'
+		Write-Host $ShowText 
+		Exit
+	} else {
+		$ShowText = 'M01.51B  ERROR - Run this script from folder named "Software"'
+		Write-Host $ShowText 
+		Exit
+	}
+}
+
+
+#  "RepoFolder" must exist, becuase the Software folder must have a parent.
+
+$RepoFolder = Split-Path $SoftwareFolder -Parent
+#	$ShowText = 'M01.52A  RepoFolder ' + $RepoFolder
 #	Write-Host $ShowText
 
 
-$TopicFolder = $BigFolder + '\All Markdown Topics'
-$CommonFolder = $BigFolder + '\Common Modules'
-$ExpandedCommonFolder = $BigFolder + '\Temp\Expanded-Common'
-$ExpandedTopicsFolder = $BigFolder + '\Temp\Expanded-Topics'
-$LogFolder = $BigFolder + '\Logs'
-$SoftwareFolder = $BigFolder + '\Software'
-$TempIncludeFolder = $BigFolder + '\TempInclude'
-#  $WebsiteFolder already set from parameter file.
+#  Code01.52  Setup folder names.
 
-#  Interim values for DisplayInfo
+$TopicsFolder = $RepoFolder + '\All Markdown Topics'
+$CommonFolder = $RepoFolder + '\Common Modules'
+$ExpandedCommonFolder = $RepoFolder + '\Temp\Expanded-Common'
+$ExpandedTopicsFolder = $RepoFolder + '\Temp\Expanded-Topics'
+$LogsFolder = $RepoFolder + '\Logs'
+$TempIncludeFolder = $RepoFolder + '\TempInclude'
+$WebsiteFolder = $RepoFolder + '\docs'
 
-$DisplayInfo = $true
-
-
+$ComModLiteral = "Common Modules"
+$ExpComLiteral = "Temp\Expanded-Common"
 
 
-#	Code01.60	Check most criticaL parameters.
+#	Code01.60	Check permanent folders (All MD Topics, Common, docs, Logs, Software)
 
-#	Code01.61	Check $BigFolder exists
+$FatalError = $False
 
-If (-not (Test-Path $BigFolder -PathType container)) {
-	$ShowText = 'M01.61A  ERROR - BigFolder "' + $BigFolder
-	$ShowText = $ShowText + '" does not exist. Run terminated.' 
-	If ($DisplayInfo) { Write-Host $ShowText }
+#	Code01.61	Check TopicsFolder
+
+If (-not (Test-Path $TopicsFolder -PathType container)) {
+	$FatalError = $True	
+	$ShowText = 'M01.61A  ERROR - Missing required folder "' + $TopicsFolder + '"'
+	Write-Host $ShowText
+}
+
+
+#   Code01.62	Check CommonFolder
+
+If (-not (Test-Path $CommonFolder -PathType container)) {
+	$FatalError = $True	
+	$ShowText = 'M01.62A  ERROR - Missing required folder "' + $CommonFolder + '"'
+	Write-Host $ShowText
+}
+
+
+#	Code01.63	Check $WebsiteFolder
+
+If (-not (Test-Path $WebsiteFolder -PathType container)) {
+	$FatalError = $True	
+	$ShowText = 'M01.63A  ERROR - Missing required folder "' + $WebsiteFolder + '"'
+	Write-Host $ShowText
+}
+
+
+If ($FatalError) {
+	$ShowText = 'Missing at least one required folder - run terminated. '
+	Write-Host $ShowText
 	Exit
 }
 
 
 
-#	Code01.62	Check $LogFolder
+#	Code01.64	Check $LogsFolder
 
-If (Test-Path -Path $LogFolder) {
-#	$ShowText = 'M01.62A 	Found Info Folder - ' + $LogFolder 
-#	If ($DisplayInfo) { Write-Host $ShowText }
+#	Logs folder is a permanent folder, but it is deleted and recreated fresh in each run.
+
+If (Test-Path -Path $LogsFolder) {
+#	$ShowText = 'M01.64A 	Found Logs Folder - ' + $LogsFolder 
+#	Write-Host $ShowText 
 
 	#  Delete InfoFolder and all sub-folders.
-	Remove-Item $LogFolder -Recurse	
-#	$ShowText = 'M01.62B 	Deleted Info Folder - ' + $LogFolder 
-#	If ($DisplayInfo) { Write-Host $ShowText }
+	Remove-Item $LogsFolder -Recurse	
+#	$ShowText = 'M01.64B 	Deleted Logs Folder - ' + $LogsFolder 
+#	Write-Host $ShowText 
 
 } 
 
 
-#  Create new Infofolder.  The "Out-Null" suppresses the Powershell output (too much).
+#  Create new Logsfolder.  The "Out-Null" suppresses the Powershell output (too much).
 	
-New-Item $LogFolder -itemType Directory | Out-Null
-$ShowText = 'M01.62C  Created new Info Folder - ' + $LogFolder 
-#	If ($DisplayInfo) { Write-Host $ShowText }
+New-Item $LogsFolder -itemType Directory | Out-Null
+#	$ShowText = 'M01.64C  Created new LogsFolder - ' + $LogsFolder 
+#	Write-Host $ShowText 
 
 
 
 
-#   Code01.70	Create error file, report file, and trace file
+#   Code01.65	Create ERROR file, REPPORT file, and TRACE file in Logs folder
 
 #   Setup RunDate 
 Get-Date | Set-Variable -Name RunDate
 
+#	Create ERROR file
 
-
-#   Code01.71	Create error file
-
-$ErrorFileFullPath = $LogFolder + '\'
+$ErrorFileFullPath = $LogsFolder + '\'
 $ErrorFileFullPath = $ErrorFileFullPath + 'ERRORS Prepare-Website.txt'
 
-$ShowText = 'M01.71A  Error file for ' + $ScriptName + '   Version ' + $ScriptVersion
+$ShowText = 'M01.65A  Error file for ' + $ScriptName + '   Version ' + $ScriptVersion
 Out-File -filepath $ErrorFileFullPath  -inputObject $ShowText -force
 
-$ShowText = 'M01.71B  Run Date       ' + $RunDate
-Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
-
-$ShowText = '  '
+$ShowText = 'M01.65B  Run Date       ' + $RunDate
 Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
 
 
+#   Create REPORT file
 
-
-
-
-
-#   Code01.72	Create report file
-
-$ReportFileFullPath = $LogFolder + '\'
+$ReportFileFullPath = $LogsFolder + '\'
 $ReportFileFullPath = $ReportFileFullPath + 'REPORT Prepare-Website.txt'
 
-$ShowText = 'M01.72A  Report file for ' + $ScriptName + '   Version ' + $ScriptVersion
+$ShowText = 'M01.65E  Report file for ' + $ScriptName + '   Version ' + $ScriptVersion
 Out-File -filepath $ReportFileFullPath  -inputObject $ShowText -force
 
-$ShowText = 'M01.72C  Run Date       ' + $RunDate
-Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
-
-$ShowText = '  '
+$ShowText = 'M01.65F  Run Date       ' + $RunDate
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
 
@@ -888,297 +961,318 @@ Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
 
 
-#   Code01.73	Create trace file
+#   Create TRACE file
 
-$TraceFileFullPath = $LogFolder + '\'
+$TraceFileFullPath = $LogsFolder + '\'
 $TraceFileFullPath = $TraceFileFullPath + 'TRACE Prepare-Website.txt'
 
-$ShowText = 'M01.73A  Trace file for ' + $ScriptName + '   Version ' + $ScriptVersion
+$ShowText = 'M01.65J  Trace file for ' + $ScriptName + '   Version ' + $ScriptVersion
 Out-File -filepath $TraceFileFullPath  -inputObject $ShowText -force
 
-$ShowText = 'M01.73C  Run Date       ' + $RunDate
-Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
-
-$ShowText = '  '
+$ShowText = 'M01.65K  Run Date       ' + $RunDate
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
 
 
-#   Code01.80	Check other paramaters about folders
+#   Code01.70	Check temporary folders
 
-#	Code01.81	Check TopicFolder
+#	This include folders:
+#		ExpandedCommonFolder = \Temp\Expanded-Common
+#		ExpandedTopicsFolder = \Temp\Expanded-Topics
+#		TempIncludeFolder = \TempInclude
 
-If (-not (Test-Path $TopicFolder -PathType container)) {
-	$ShowText = 'M01.81A  ERROR - TopicFolder "' + $TopicFolder
-	$ShowText = $ShowText + '" does not exist. Run terminated.' 
-	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
-	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
-	
-	$ShowText = 'Errors - see Error file in folder Logs  '
-	If ($DisplayInfo) { Write-Host $ShowText }
-		
-	Exit
-}
-
-
-#   Code01.82	Check CommonFolder
-
-If (-not (Test-Path $CommonFolder -PathType container)) {
-	$ShowText = 'M01.82A 	ERROR - CommonFolder "' + $CommonFolder
-	$ShowText = $ShowText + '" does not exist. Run terminated.' 
-	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
-	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
-	
-	$ShowText = 'Errors - see Error file in folder Logs  '
-	If ($DisplayInfo) { Write-Host $ShowText }
-
-	Exit
-}
-
-
-
-#	Code01.83	Check ExpandedCommonFolder
+#	Code01.71	Check ExpandedCommonFolder
 
 If (Test-Path -Path $ExpandedCommonFolder) {
-#	$ShowText = 'M01.83A 	Found ExpandedCommonFolder Folder - ' + $ExpandedCommonFolder
-#	If ($DisplayInfo) { Write-Host $ShowText }
+#	$ShowText = 'M01.71A 	Found ExpandedCommonFolder Folder - ' + $ExpandedCommonFolder
+#	Write-Host $ShowText 
 
 	#  Delete ExpandedCommonFolder and all contents
 	Remove-Item $ExpandedCommonFolder -Recurse
-#	$ShowText = 'M01.83B 	Deleted ExpandedCommonFolder Folder - ' + $ExpandedCommonFolder
-#	If ($DisplayInfo) { Write-Host $ShowText }	
+#	$ShowText = 'M01.71B 	Deleted ExpandedCommonFolder Folder - ' + $ExpandedCommonFolder
+#	Write-Host $ShowText 
 }
 
 #  Create new ExpandedCommonFolder.  The "Out-Null" suppresses the Powershell output (too much).
 	
 New-Item $ExpandedCommonFolder -itemType Directory | Out-Null
-$ShowText = 'M01.83C  Created new ExpandedCommonFolder - ' + $ExpandedCommonFolder 
+$ShowText = 'M01.71C  Created new ExpandedCommonFolder - ' + $ExpandedCommonFolder 
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
-#	If ($DisplayInfo) { Write-Host $ShowText }
+#	Write-Host $ShowText 
 
 
 
 
-#	Code01.84	Check ExpandedTopicsFolder
+#	Code01.72	Check ExpandedTopicsFolder
 
 
 If (Test-Path -Path $ExpandedTopicsFolder) {
-#	$ShowText = 'M01.84A 	Found ExpandedTopicsFolder Folder - ' + $ExpandedTopicsFolder
-#	If ($DisplayInfo) { Write-Host $ShowText }
+#	$ShowText = 'M01.72A 	Found ExpandedTopicsFolder Folder - ' + $ExpandedTopicsFolder
+#	Write-Host $ShowText 
 
 	#  Delete all files in ExpandedTopicsFolder.
 	Remove-Item  $ExpandedTopicsFolder -Recurse
-#	$ShowText = 'M01.84B 	Deleted ExpandedTopicsFolder Folder - ' + $ExpandedTopicsFolder
-#	If ($DisplayInfo) { Write-Host $ShowText }
+#	$ShowText = 'M01.72B 	Deleted ExpandedTopicsFolder Folder - ' + $ExpandedTopicsFolder
+#	Write-Host $ShowText 
 
 } 
 
 #  ExpandedTopicsFolder does not exist - so create it.
 	
 New-Item $ExpandedTopicsFolder -itemType Directory  | Out-Null
-$ShowText = 'M01.84C  Created new ExpandedTopicsFolder - ' + $ExpandedTopicsFolder 
+$ShowText = 'M01.72C  Created new ExpandedTopicsFolder - ' + $ExpandedTopicsFolder 
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
-#	If ($DisplayInfo) { Write-Host $ShowText }
+#	Write-Host $ShowText 
 
 
 
-#   Code01.85	Check SoftwareFolder
-
-If (-not (Test-Path $SoftwareFolder -PathType container)) {
-	$ShowText = 'M01.85A 	ERROR - SoftwareFolder ' + $SoftwareFolder
-	$ShowText = $ShowText + ' does not exist. Run terminated.' 
-	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
-	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
-	
-	$ShowText = 'Errors - see Error file in folder Logs  '
-	If ($DisplayInfo) { Write-Host $ShowText }
-	
-	Exit
-}
-
-
-
-#	Code01.86	Check $WebsiteFolder
-
-If (-not (Test-Path $WebsiteFolder -PathType container)) {
-	$ShowText = 'M01.86A 	ERROR - WebsiteFolder "' + $WebsiteFolder
-	$ShowText = $ShowText + '" does not exist. Run terminated.' 
-	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
-	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
-
-	$ShowText = 'Errors - see Error file in folder Logs  '
-	If ($DisplayInfo) { Write-Host $ShowText }
-	
-	Exit
-}
+#	TempIncludeFolder = \TempInclude is setup in 11.00 later.
 
 
 
 
-#	Code01.90	Check rest of parameters
+#	Code01.80	Check values of parameters
 
-#	Code01.90	Check $DisplayInfoString
+#	Code01.81	Check $DisplayInfo
 #	Check if Yes or No. 
-If ($DisplayInfoString -eq 'Yes') {
-	$DisplayInfo = $true
+If ($DisplayInfo -eq 'Yes') {
+	$DisplayInfoInScript = $True
 } else {
-    If ($DisplayInfoString -eq 'No') {
-		$DisplayInfo = $false
+    If ($DisplayInfo -eq 'No') {
+		$DisplayInfoInScript = $False
 	} else {
-		$DisplayInfo = $true
-		$ShowText = 'M01.90A 	ERROR DisplayInfo must be Yes or No. '
+
+		$DisplayInfoInScript = $True
+
+		$ShowText = 'M01.81A 	ERROR DisplayInfo must be Yes or No. '
 		Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-		If ($DisplayInfo) { Write-Host $ShowText }
-		$ShowText = 'M01.90B 	ERROR DisplayInfo is currently "' + $DisplayInfoString + '"' 
+		Write-Host $ShowText 
+
+		$ShowText = 'M01.82B 	ERROR DisplayInfo = "' + $DisplayInfo + '"' 
 		Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 		
 		$ShowText = 'Errors - see Error file in folder Logs  '
-		If ($DisplayInfo) { Write-Host $ShowText }
+		Write-Host $ShowText 
 		
 		Exit
 	}
 }
 
 
-#	Code01.91	Check $MaxIncludesPerFile
+#	Code01.82	Check $MaxIncludesPerFile
 #	Check integer and greater than zero
 $MaxIncludesPerFile = $MaxIncludesPerFile -as [int]
 If ($MaxIncludesPerFile -isnot [int]) {
-	$ShowText = 'M01.91A 	ERROR MaxIncludesPerFile must be positive whole number. '
+	$ShowText = 'M01.82A 	ERROR MaxIncludesPerFile must be positive whole number. '
 	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append 
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 	
 	$ShowText = 'Errors - see Error file in folder Logs  '
-	If ($DisplayInfo) { Write-Host $ShowText }
+	If ($DisplayInfoInScript) { Write-Host $ShowText }
 	
 	Exit
 } 
 If ($MaxIncludesPerFile -lt 0) {
-	$ShowText = 'M01.91B 	ERROR MaxIncludesPerFile must be positive whole number. '
+	$ShowText = 'M01.82B 	ERROR MaxIncludesPerFile must be positive whole number. '
 	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append 
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 	
 	$ShowText = 'Errors - see Error file in folder Logs  '
-	If ($DisplayInfo) { Write-Host $ShowText }
+	If ($DisplayInfoInScript) { Write-Host $ShowText }
 	
 	Exit
 } 
 
 
-#	Code01.92	Check $MaxDepthCommonIncludesCommon
+#	Code01.83	Check $MaxDepthCommonIncludesCommon
 #	Check integer and greater than zero
 $MaxDepthCommonIncludesCommon = $MaxDepthCommonIncludesCommon -as [int]
 If ($MaxDepthCommonIncludesCommon -isnot [int]) {
-	$ShowText = 'M01.92A  ERROR MaxDepthCommonIncludesCommon must be positive whole number. '
+	$ShowText = 'M01.83A  ERROR MaxDepthCommonIncludesCommon must be positive whole number. '
 	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 	
 	$ShowText = 'Errors - see Error file in folder Logs  '
-	If ($DisplayInfo) { Write-Host $ShowText }
+	If ($DisplayInfoInScript) { Write-Host $ShowText }
 	
 	Exit
 }
 
-#	$ShowText = 'M01.92BB  MaxDepthCommonIncludesCommon ' +  $MaxDepthCommonIncludesCommon 
-#	If ($DisplayInfo) { Write-Host $ShowText }
+#	$ShowText = 'M01.83B  MaxDepthCommonIncludesCommon ' +  $MaxDepthCommonIncludesCommon 
+#	If ($DisplayInfoInScript) { Write-Host $ShowText }
 
 If ($MaxDepthCommonIncludesCommon -lt 1) {
-	$ShowText = 'M01.92B  ERROR MaxDepthCommonIncludesCommon must be positive whole number. '
+	$ShowText = 'M01.83C  ERROR MaxDepthCommonIncludesCommon must be positive whole number. '
 	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 	
 	$ShowText = 'Errors - see Error file in folder Logs  '
-	If ($DisplayInfo) { Write-Host $ShowText }
+	If ($DisplayInfoInScript) { Write-Host $ShowText }
 	
 	Exit
 } 
 
-#	Code01.93	Check $MaxPathways
+#	Code01.84	Check $MaxPathways
 #	Check integer and greater than zero
 $MaxPathways = $MaxPathways -as [int]
 If ($MaxPathways -isnot [int]) {
-	$ShowText = 'M01.93A 	ERROR MaxPathways must be positive whole number. '
+	$ShowText = 'M01.84A 	ERROR MaxPathways must be positive whole number. '
 	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 	
 	$ShowText = 'Errors - see Error file in folder Logs  '
-	If ($DisplayInfo) { Write-Host $ShowText }
+	If ($DisplayInfoInScript) { Write-Host $ShowText }
 	
 	Exit
 } 
 If ($MaxPathways -lt 0) {
-	$ShowText = 'M01.93B 	ERROR MaxPathways must be positive whole number. '
+	$ShowText = 'M01.84B 	ERROR MaxPathways must be positive whole number. '
 	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 	
 	$ShowText = 'Errors - see Error file in folder Logs  '
-	If ($DisplayInfo) { Write-Host $ShowText }
+	If ($DisplayInfoInScript) { Write-Host $ShowText }
 	
 	Exit
 } 
+
+#	Code01.85	All parameter processing complete
+
+# $ShowText = 'M01.85A  DisplayInfo ' + $DisplayInfo 
+# Write-Host $ShowText
+# $ShowText = 'M01.85B  MaxIncludesPerFile ' + $MaxIncludesPerFile 
+# Write-Host $ShowText
+# $ShowText = 'M01.85C  MaxDepthCommonIncludesCommon ' + $MaxDepthCommonIncludesCommon  
+# Write-Host $ShowText
+# $ShowText = 'M01.85D  MaxPathways ' + $MaxPathways 
+# Write-Host $ShowText
+
+
 
 
 
 #	Code02.00	Add more lines to files.
 
+#	Code02.10	Add lines to REPORT file.  
+
 $ShowText = '  '
-Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
-
-$ShowText = 'M02.00A  Error, Report, Trace lines' 
-Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
-
-#	Code02.10	Add lines to report file.  
-
-$ShowText = 'M02.10D  Params file                   ' + $ParamsFileFullPath 
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
-$ShowText = 'M02.10E 		BigFolder                 ' + $BigFolder 
+$ShowText = 'M02.10A 	List of important folders'
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
-$ShowText = 'M02.10F 		WebsiteFolder             ' + $WebsiteFolder 
+$ShowText = '  '
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
-$ShowText = 'M02.10G 		MaxIncludesPerFile        ' + $MaxIncludesPerFile
+$ShowText = 'M02.10B 	Repo Folder               ' + $RepoFolder 
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+$ShowText = 'M02.10C 	All Markdown TopicsFolder ' + $TopicsFolder 
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+$ShowText = 'M02.10D 	Common Modules Folder     ' + $CommonFolder 
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+$ShowText = 'M02.10E 	Website ("docs") Folder   ' + $WebsiteFolder 
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+$ShowText = 'M02.10F 	Logs Folder               ' + $LogsFolder 
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+$ShowText = 'M02.10G 	Software Folder           ' + $SoftwareFolder 
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+$ShowText = '  '
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+$ShowText = 'M02.10M 	Parameters to this script           '
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+$ShowText = '  '
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+If ($FoundParamsFile) {
+	$ShowText = 'M02.10N 	Params file                  ' + $ParamsFileFullPath 
+	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+} else {
+	$ShowText = 'M02.10P 	No Params file - values below are default' 
+	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+}
+
+$ShowText = 'M02.10Q 	DisplayInfo                  ' + $DisplayInfo
  Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
-$ShowText = 'M02.10H 		MaxDepthCommonIncludesCommon          ' + $MaxDepthCommonIncludesCommon 
+$ShowText = 'M02.10R 	MaxIncludesPerFile           ' + $MaxIncludesPerFile
+ Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+$ShowText = 'M02.10S 	MaxDepthCommonIncludesCommon ' + $MaxDepthCommonIncludesCommon 
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
-$ShowText = 'M02.10J 		MaxPathways               ' + $MaxPathways 
+$ShowText = 'M02.10T 	MaxPathways                  ' + $MaxPathways 
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+
+
+#	Code02.20	Add lines to TRACE File.  
 
 $ShowText = '  '
-Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
-
-
-
-
-#	Code02.20	Add lines to trace File.  
-
-$ShowText = 'M02.20D  Params file                   ' + $ParamsFileFullPath 
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
-$ShowText = 'M02.20E 		BigFolder                 ' + $BigFolder 
+$ShowText = 'M02.20A 	List of important folders'
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
-$ShowText = 'M02.20F 		WebsiteFolder             ' + $WebsiteFolder 
+$ShowText = '  '
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
-$ShowText = 'M02.20G 		DisplayInfo               ' + $DisplayInfo 
+$ShowText = 'M02.20B 	Repo Folder               ' + $RepoFolder 
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
-$ShowText = 'M02.20H 		MaxIncludesPerFile        ' + $MaxIncludesPerFile 
+$ShowText = 'M02.20C 	All Markdown TopicsFolder ' + $TopicsFolder 
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
-$ShowText = 'M02.20J 		MaxDepthCommonIncludesCommon          ' + $MaxDepthCommonIncludesCommon 
+$ShowText = 'M02.20D 	Common Modules Folder     ' + $CommonFolder 
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
-$ShowText = 'M02.20K 		MaxPathways               ' + $MaxPathways 
+$ShowText = 'M02.20E 	Website ("docs") Folder   ' + $WebsiteFolder 
+Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
+
+$ShowText = 'M02.20F 	Logs Folder               ' + $LogsFolder 
+Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
+
+$ShowText = 'M02.20G 	Software Folder           ' + $SoftwareFolder 
+Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
+
+$ShowText = '  '
+Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
+
+$ShowText = 'M02.20M 	Parameters to this script           '
+Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
+
+$ShowText = '  '
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
 
+If ($FoundParamsFile) {
+	$ShowText = 'M02.20N 	Params file                  ' + $ParamsFileFullPath 
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
+} else {
+	$ShowText = 'M02.20P 	No Params file - values below are default' 
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
+}
+
+$ShowText = 'M02.20Q 	DisplayInfo                  ' + $DisplayInfo
+ Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
+
+$ShowText = 'M02.20R 	MaxIncludesPerFile           ' + $MaxIncludesPerFile
+ Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
+
+$ShowText = 'M02.20S 	MaxDepthCommonIncludesCommon ' + $MaxDepthCommonIncludesCommon 
+Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
+
+$ShowText = 'M02.20T 	MaxPathways                  ' + $MaxPathways 
+Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
 
 
@@ -1216,7 +1310,7 @@ If (Get-Childitem -Path $CommonFolder -Include *.md -recurse) {
 
 If (-not $CommonFilesExist) {
 
-	#	No common markdown files means no includes are possible for topics.
+	#	No common modules means no includes are possible for topics.
 
 	$ShowText = 'M03.20A  (Information only)  No common files in ' + $CommonFolder
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
@@ -1224,7 +1318,7 @@ If (-not $CommonFilesExist) {
 	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
 	
-	$ShowText = 'M03.20B  (Information only)  This means no includes will be possible for topics in ' + $TopicFolder
+	$ShowText = 'M03.20B  (Information only)  This means no includes will be possible for topics in ' + $TopicsFolder
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
@@ -1266,23 +1360,48 @@ If ($CommonFilesExist) {
 
 	#	Display CommonArray
 	
-	$ShowText = 'M03.30B  Found ' + $CommonArray.length + ' common files.'
+	
+	$ShowText = ' '
+	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+	$ShowText = '===================================================================='
+	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+	
+	$ShowText = ' '
+	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+	
+
+	$ShowText = 'M03.30B  COMMON FILES '
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 	#	Write-Host $ShowText
+
+	$ShowText = ' '
+	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+	
 
 		
 	For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 		
 		$FileName = $CommonArray[$index1]
-		$ShowText = 'M03.30C  	Index1 ' + $index1 + ' = ' +  $FileName
+		$ShowText = 'M03.30C  	' + $index1 + '   ' +  $FileName
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+		Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append 
 		#	Write-Host $ShowText
 		
 	}	#  For index in CommonArray
 
 }	# If CommonFilesExist
 
+	$ShowText = ' '
+	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+	$ShowText = 'M03.30D  Total common files: ' + $CommonArray.length 
+	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+	$ShowText = ' '
+	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
 #	Code03.40	Setup two dimensional arrays for Common files
 
@@ -1348,7 +1467,7 @@ For ($index1 = 0; $index1 -lt $CommonFilenameArray.length; $index1++) {
 			Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 			
 			$ShowText = 'Errors - see Error file in folder Logs  '
-			If ($DisplayInfo) { Write-Host $ShowText }
+			If ($DisplayInfoInScript) { Write-Host $ShowText }
 
 			Exit
 			
@@ -1368,7 +1487,7 @@ Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
 $ShowText = 'M04.00A  Topic files '
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-#	If ($DisplayInfo) { Write-Host $ShowText }
+#	If ($DisplayInfoInScript) { Write-Host $ShowText }
 
 
 #	Code04.01	Declare one dimensional arrays for topic files
@@ -1387,7 +1506,7 @@ $NumTopicIncludesArray	= @()		#   Number of includes for this topic file
 $ShowText = 'M04.10A  Start search for topic files'
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
-If (Get-Childitem -Path $TopicFolder -Include *.md -recurse) {
+If (Get-Childitem -Path $TopicsFolder -Include *.md -recurse) {
 	$TopicFilesExist = $True
 } else {
 	$TopicFilesExist = $False
@@ -1399,7 +1518,7 @@ If (-not $TopicFilesExist) {
 
 	#	No topic markdown files means no includes are possible for topics.
 
-	$ShowText = 'M04.20A  No topic files in ' + $TopicFolder
+	$ShowText = 'M04.20A  No topic files in ' + $TopicsFolder
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
@@ -1411,7 +1530,7 @@ If (-not $TopicFilesExist) {
 	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 	
 	$ShowText = 'Errors - see Error file in folder Logs  '
-	If ($DisplayInfo) { Write-Host $ShowText }
+	If ($DisplayInfoInScript) { Write-Host $ShowText }
 
 	Exit
 
@@ -1423,7 +1542,7 @@ If (-not $TopicFilesExist) {
 
 #	Get-ChildItem sets the sizes of one dimentional topic arrays
 
-(Get-ChildItem -Path $TopicFolder -Include *.md -recurse ).FullName |
+(Get-ChildItem -Path $TopicsFolder -Include *.md -recurse ).FullName |
 ForEach-Object{ 
 	$TopicArray += $_ 					# Sizes this Array for the topic files that exist.
 	$TopicPriorityArray += $_			# Sizes this array as for TopicArray.
@@ -1432,7 +1551,7 @@ ForEach-Object{
 	
 #	Get-ChildItem also sets the size of TopicFileNameArray
 
-(Get-ChildItem -Path $TopicFolder -Include *.md -recurse ).Name |
+(Get-ChildItem -Path $TopicsFolder -Include *.md -recurse ).Name |
 ForEach-Object{ 
 	$TopicFilenameArray += $_			# Populates and sizes this Array.
 	}
@@ -1451,20 +1570,45 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 
 
 #	Display TopicArray
-	
-$ShowText = "M04.30B  Found " + $TopicArray.length + ' topic files.'
+
+$ShowText = '===================================================================='
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+$ShowText = ' '
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+
+$ShowText = "M04.30B  TOPIC FILES" 
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-#	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 #	Write-Host $ShowText
+
+$ShowText = ' '
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
 		
 For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 		
-	$ShowText = 'M04.30C  	Index1 ' + $index1 + ' = ' +  $TopicArray[$index1]
+	$ShowText = 'M04.30C   ' + $index1 + '   ' +  $TopicArray[$index1]
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 	#	Write-Host $ShowText
 
 }	#  For index in TopicArray
+
+
+$ShowText = ' '
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+
+$ShowText = "M04.30D  Total Topic Files: " + $TopicArray.length 
+Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+#	Write-Host $ShowText
+
+$ShowText = ' '
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
 
 
 #	Code04.40	Setup two dimensional arrays for topic files
@@ -1531,7 +1675,7 @@ For ($index1 = 0; $index1 -lt $TopicFilenameArray.length; $index1++) {
 			Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 			
 			$ShowText = 'Errors - see Error file in folder Logs  '
-			If ($DisplayInfo) { Write-Host $ShowText }
+			If ($DisplayInfoInScript) { Write-Host $ShowText }
 
 			Exit
 			
@@ -1614,7 +1758,7 @@ If ($WebsiteSubFoldersExist) {
 		$WebSiteSubFolders = $False
 		$ShowText = 'M04.61C  NO SUBFOLDERS FOUND ????? '
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-		If ($DisplayInfo) { Write-Host $ShowText }
+		If ($DisplayInfoInScript) { Write-Host $ShowText }
 		Exit
 	} else {
 
@@ -1754,7 +1898,7 @@ Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
 $ShowText = 'M05.00A  Common includes '
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-#	If ($DisplayInfo) { Write-Host $ShowText }
+#	If ($DisplayInfoInScript) { Write-Host $ShowText }
 
 
 $ShowText = 'M05.00B  Start search for includes inside common files'
@@ -1762,13 +1906,13 @@ Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
 
 
-#	Code05.10  Initialise variables
+#	Code05.01  Initialise variables
 
 $ErrorsInIncludes = $False				#	This flag covers both common and topic files
 $CommonFilesHaveIncludes = $False
 
 
-#	Code05.20  Read all common files and record includes in array
+#	Code05.10  Read all common files and record includes in array
 
 
 If ($CommonFilesExist) {
@@ -1781,13 +1925,13 @@ If ($CommonFilesExist) {
 	
 		$NumberIncludesThisCommonFile = 0
 						
-		#	Read each line in the Common Markdown file
+		#	Read each line in the common module
 	
 	
-		$ShowText = 'M05.20A  start read file ====================================='
+		$ShowText = 'M05.10A  start read file ====================================='
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
-		$ShowText = 'M05.20B  Read common File ' + $index1 + " = " + $CommonArray[$index1]
+		$ShowText = 'M05.10B  Read common File ' + $index1 + " = " + $CommonArray[$index1]
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 		
@@ -1795,68 +1939,290 @@ If ($CommonFilesExist) {
 
 		foreach($line in Get-Content $CommonArray[$index1]) {
 	
-			#		If there is a blank line, the trace has '(blank line)' to be clearer to see.
-
 			$ShowBlankLine = $line.Trim()
-			If ($ShowBlankLine -eq '') { 
+
+			#	If there is a blank line, the trace has '(blank line)' to be clearer to see.
+			
+			# If ($ShowBlankLine -eq '') { 
 				#	$ShowBlankLine = '(blank line)'
-				#	$ShowText =  'M05.20C  		$line ' + $ShowBlankLine
-			} else {	
-				#	$ShowText =  'M05.20D  		$line ' + $line
-			}
+				#	$ShowText =  'M05.10C  		$line ' + $ShowBlankLine
+			# } else {	
+				#	$ShowText =  'M05.10D  		$line ' + $line
+			# }
 			#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 		
 			# Want to ignore spaces at start of line.
 
-			#	Check for include coding that starts a line with {{
-				
+
+			#  Code05.20  Includes - check how coding starts
+
+			#	Find include coding on a line in a common file.
+			#	First check for $IncludeDelimeterStart	If found, check for proper start and end coding.
 			
-			$TestFirst2Chars = $line.Trim()
-			If ($TestFirst2Chars.length -lt 2) { $TestFirst2Chars = $TestFirst2Chars + "XX"}
+			$CurrentLine = $line.Trim()
+			If ($CurrentLine.length -lt 2) { $CurrentLine = $CurrentLine + "XX"}
 			
-			$TestFirst2Chars = $TestFirst2Chars.substring(0,2)
+			$TestFirst2Chars = $CurrentLine.substring(0,2)
 			
-			#	$ShowText =  'M05.20E  TestFirst2Chars = ' + $TestFirst2Chars
+			#	$ShowText =  'M05.20A  TestFirst2Chars = ' + $TestFirst2Chars
 			#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
+			$FoundOKIncludeCoding = $False
+			$IncludeCodingStart = $False
+			$IncludeCodingEnd = $False
 
-			If($TestFirst2Chars.substring(0,2) -eq "{{") {
+			If ($TestFirst2Chars -eq $IncludeDelimeterStart) {
+
+				# Found $IncludeDelimeterStart so check for full include coding.
+
+				If ($CurrentLine.length -lt 12) { $CurrentLine = $CurrentLine + "XXXXXXXXXXXX" }
+				$TestFirst12Chars = $CurrentLine.substring(0,12)
+				$TestFirst11Chars = $CurrentLine.substring(0,11)
+				
+				If (($TestFirst12Chars -ceq $IncludeStart12Chars) -or
+				    ($TestFirst11Chars -ceq $IncludeStart11Chars)) {
+					$IncludeCodingStart = $True
+				} else {
+
+					# Error in Include - start coding not correct
+					$ErrorsInIncludes = $True
+					
+					# Is it an error of case or something else?  This decides the error message.
+					# Test for a case problem first
+					$ErrorInCaseOfIncludeLiteral = $False
+					
+					If (($TestFirst12Chars -eq $IncludeStart12Chars) -or
+					    ($TestFirst11Chars -eq $IncludeStart11Chars)) {
+						$ErrorInCaseOfIncludeLiteral = $True
+					}
+
+					If ($ErrorInCaseOfIncludeLiteral) {
+						
+						$ShowText = ' '
+						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+						$ShowText = 'M05.20D  ERROR - "INCLUDE:" must be all upper case'
+						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+					
+						$ShowText = 'M05.20E  Include coding "' + $CurrentLine + '"'
+						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+						$ShowText = 'M05.20F  File: ' + $CommonArray[$index1]
+						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append	
+
+					} else {
+
+						$ShowText = ' '
+						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+						$ShowText = 'M05.20J  ERROR - Include coding must start "' + $IncludeStart12Chars 
+						$ShowText = $ShowText + '" OR "' + $IncludeStart11Chars + '"'
+						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+					
+						$ShowText = 'M05.20K  Include coding "' + $CurrentLine + '"'
+						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+						$ShowText = 'M05.20L  File: ' + $CommonArray[$index1]
+						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append	
+					}	#	Not ErrorInCaseOfIncludeLiteral
+				}	#	First 12 or 11 chars Not OK
+
+
+				#  Code05.21  Includes - check how coding ends
+
+				If ($IncludeCodingStart) {
+
+					$TestLast3Chars = $CurrentLine.substring($CurrentLine.length - 3)
+	
+					If ($TestLast3Chars -eq $IncludeDelimeterEnd)   {
+						$IncludeCodingEnd = $True
+					} else {
+						# Error in Include - end coding not correct
+						$ErrorsInIncludes = $True
+						$ShowText = ' '
+						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+						$ShowText = 'M05.21A  ERROR - Include coding must end "' + $IncludeDelimeterEnd + '"'
+						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+					
+						$ShowText = 'M05.21B  Include coding "' + $CurrentLine + '"'
+						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+				
+						$ShowText = 'M05.21C  File: ' + $CommonArray[$index1]
+						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+					}
+				}	# IF ($IncludeCodingStart) so check IncludeCodingEnd
+
+				If ($IncludeCodingStart -and $IncludeCodingEnd) {
+					$FoundOKIncludeCoding = $True
+				}
+
+			}    # If ($TestFirst2Chars -eq $IncludeDelimeterStart)
+			
+
+			#  Code05.22  Includes - check if coding is almost right
+			 
+			# Find lines that are "almost" an include, and give error.  User will delete or fix them.
+			
+			If($TestFirst2Chars -ne $IncludeDelimeterStart) {
+
+				$FoundComment = $False
+				$FoundTwoOpenSquareBrackets = $False
+				$FoundTwoClosedSquareBrackets = $False
+				$FoundWordIncludeAnyCase = $False
+				$FoundAlmostInclude = $False
+
+				# Check for comment.  If not, check for number of [ and ] and INCLUDE:
+				If ($CurrentLine.length -lt 7) { $CurrentLine = $CurrentLine + "XXXXXXX" }
+				$TestFirst7Chars = $CurrentLine.substring(0,7)
+				
+				If ($TestFirst7Chars -eq $MDCommentCoding) {
+					$FoundComment = $True
+					# Found comment so ignore this line
+
+					$ShowText = 'M05.22A  Comment found - will ignore this line and so will Markdown'
+					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
+					$ShowText = 'M05.22B  Comment is "' + $CurrentLine.Trim() + '"'
+					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
+
+				} else {	
+					# May be line that is almost an include coding line.
+					#  Count [ and ] to see if two each.  
+					$NumberOpenSquareBrackets =  ($CurrentLine.Split('[')).count-1 
+					$NumberClosedSquareBrackets =  ($CurrentLine.Split(']')).count-1 
+
+					# $ShowText = 'M05.22C  NumberOpenSquareBrackets = ' + $NumberOpenSquareBrackets
+					# Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+					
+					# $ShowText = 'M05.22D  NumberClosedSquareBrackets = ' + $NumberClosedSquareBrackets
+					# Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+					If ($NumberOpenSquareBrackets -eq 2) {
+						$FoundTwoOpenSquareBrackets = $True
+					}
+					If ($NumberClosedSquareBrackets -eq 2) {
+						$FoundTwoClosedSquareBrackets = $True
+					}
+					#  Look for "include" and ensure NOT case senstivie.
+
+					If ($CurrentLine.Tolower().Contains("include")) {
+						$FoundWordIncludeAnyCase = $True
+					}
+
+					# $ShowText = 'M05.22E  Word "include" found in any case = ' + $FoundWordIncludeAnyCase
+					# Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+					#  If all true then issue error - Include not started correctly.
+
+					If (($FoundTwoOpenSquareBrackets) -and
+					    ($FoundTwoClosedSquareBrackets) -and
+						($FoundWordIncludeAnyCase)) {
+						$FoundAlmostInclude = $True
+					}
+
+					If ($FoundAlmostInclude) {
+						#	This is an error - the line is almost an incluce but has incorrect coding.
+						$ErrorsInIncludes = $True
+
+						$ShowText = ' '
+						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+						$ShowText = 'M05.22G  ERROR - Include coding must start "' + $IncludeStart12Chars 
+						$ShowText = $ShowText + '" OR "' + $IncludeStart11Chars + '"'
+						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+					
+						$ShowText = 'M05.22H  Include coding "' + $CurrentLine + '"'
+						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+				
+						$ShowText = 'M05.22J  File: ' + $CommonArray[$index1]
+						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+
+
+
+					}	#  Found likely include
+
+					#  Most markdown lines in the file will reach here without an error. This is fine.
+					#  It is only lines look like includes but are not quite right that get an error.
+
+				}	#    If not a comment line
+			}	# First 2 chars are NOT an include.
+
+			If ($FoundOKIncludeCoding) {
 				
 				# Found an include in this common file.
-				# Code05.21  Housekeeping - set flags and counters.
-				# Code05.22  Get the include details from the include coding
-				# Code05.23  Put in ".md" as last three chars if not already there
-				# Code05.24  If include coding starts with slash, remove it
-				# Code05.25  Check if this include is already an include for this common file
-				# Code05.26  Test that include points to an existing common file
-				# Code05.27  Record include in CommonIncludesArray
+
+				# Here is what is below:
+				# Code05.23  Housekeeping - set flags and counters.
+				# Code05.24  Get the include details from the include coding
+				# Code05.25  Put in ".md" as last three chars if not already there
+				# Code05.26  If include coding starts with slash, remove it
+				# Code05.27  Check if this include is already an include for this common file
+				# Code05.28  Test that include points to an existing common file
+				# Code05.29  Record include in CommonIncludesArray
 				
+				 
+				$IncludeCoding = $CurrentLine
+				$IncludeCoding = $IncludeCoding.replace($IncludeDelimeterStart,"")
+				$IncludeCoding = $IncludeCoding.replace($IncludeLiteral,"")
+				$IncludeCoding = $IncludeCoding.replace($IncludeDelimeterEnd,"")
+				$IncludeCoding = $IncludeCoding.Trim()
+				
+				$ShowText = 'M05.22M  IncludeCoding "' + $IncludeCoding + '"'
+				Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 
-
-
-				# Code05.21  Housekeeping - set flags and counters.
+				# Code05.23  Housekeeping - set flags and counters.
 				
 				$NumberIncludesThisCommonFile++
 
 				$CommonFilesHaveIncludes = $True
 
 
-				# Code05.22  Get the include details from the include coding
-				# Extract Include request from this line
-				# First two chars are "{{".  Last two chars are "}}".
-				# Substring needs to skip 2 chars and accept a length 4 less than current length.
+				# Code05.24  Get the include details from the include coding
+				# $IncludeCoding is the Include request from this line
 
-				$IncludeFileRequested = $line.Trim()
-				$RequestLength = $IncludeFileRequested.length - 4
-				$IncludeFileRequested = $IncludeFileRequested.Substring(2, $RequestLength)
+				$IncludeFileRequested = $IncludeCoding
 
 				# Ensure no unnecessary spaces in include coding start or end
 
 				$IncludeFileRequested = $IncludeFileRequested.Trim()
 
 
-				# Code05.23  Put in ".md" as last three chars if not already there
+
+				# Code05.25  Put in ".md" as last three chars if not already there
 				#	If include coding does not end ".md" then insert this.
 				#	Normally the include coding can omit the ".md" to save typing.
 
@@ -1867,7 +2233,7 @@ If ($CommonFilesExist) {
 					$IncludeFileRequested = $IncludeFileRequested + ".md"
 				}				
 				
-				#	$ShowText =  'M05.23A  Includes Coding = ' + $IncludeFileRequested
+				#	$ShowText =  'M05.25A  Includes Coding = ' + $IncludeFileRequested
 				#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 
@@ -1876,12 +2242,12 @@ If ($CommonFilesExist) {
 
 
 
-				# Code05.24  If include coding starts with slash, remove it
+				# Code05.26  If include coding starts with slash, remove it
 				
 				$PositionBackslash = $IncludeFileRequested.IndexOf("\")
-				If ($PositionBackslash -eq -0) {
+				If ($PositionBackslash -eq 0) {
 					$IncludeFileRequested = $IncludeFileRequested.Substring(1)
-					#	$ShowText =  'M05.24A  Backslash as first char not needed - ignored.' 
+					#	$ShowText =  'M05.26A  Backslash as first char not needed - ignored.' 
 					#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 				} 
 			
@@ -1891,7 +2257,7 @@ If ($CommonFilesExist) {
 
 
 
-				# Code05.25  Check if this include is already an include for this common file
+				# Code05.27  Check if this include is already an include for this common file
 
 				$IncludeAlreadyRecorded = $False
 
@@ -1910,7 +2276,7 @@ If ($CommonFilesExist) {
 						If ($CommonIncludesArray[$index1,$index10] -eq $IncludeFileRequested) {
 							$IncludeAlreadyRecorded = $True
 							$NumberIncludesThisCommonFile = $NumberIncludesThisCommonFile - 1
-							$ShowText =  'M05.25A  Include already recorded for this common file '
+							$ShowText =  'M05.27A  Include already recorded for this common file '
 							Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 						} # Include already present in includes for this common file (which is OK)
@@ -1920,17 +2286,17 @@ If ($CommonFilesExist) {
 				If ($IncludeAlreadyRecorded -eq $False) {
 
 
-					# Code05.26  Test that include points to an existing common file
+					# Code05.28  Test that include points to an existing common file
 										
 					#	Check if include file exists
 
-					#	$ShowText = 'M05.26A  Check Include at ' + $IncludeFileRequested
+					#	$ShowText = 'M05.28A  Check Include at ' + $IncludeFileRequested
 					#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 					$ThisIncludeExists = $False
 
 					If   (Test-Path -Path $IncludeFileRequested -PathType leaf) {
-						#	$ShowText = 'M05.26B  Include file exists ' 
+						#	$ShowText = 'M05.28B  Include file exists ' 
 						#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 						$ThisIncludeExists = $True
 					} else {
@@ -1940,31 +2306,27 @@ If ($CommonFilesExist) {
 						$ShowText = ' '
 						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
-						$ShowText = 'M05.26C  ERROR - Include does not exist - ' + $IncludeFileRequested
+						$ShowText = 'M05.28C  ERROR - Include does not exist - ' + $IncludeFileRequested
 						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
-						$ShowText = 'M05.26D  Include requested in file -      ' + $CommonArray[$index1]
+						$ShowText = 'M05.28D  File: ' + $CommonArray[$index1]
 						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
-					
-						$ShowText = ' '
-						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
-						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append	
-
+	
 					}  # Include does not exist	
 
 
 					If ($ThisIncludeExists -eq $True) {
 
 			
-						# Code05.27  Record include in CommonIncludesArray
+						# Code05.29  Record include in CommonIncludesArray
 				
-						#	$ShowText =  'M05.27A  Include Coding = ' + $IncludeFileRequested
+						#	$ShowText =  'M05.29A  Include Coding = ' + $IncludeFileRequested
 						#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 						#	Arrays start at index zero so index 2 is $NumberIncludesThisCommonFile - 1
@@ -1982,43 +2344,43 @@ If ($CommonFilesExist) {
 							Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 							Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 	
-							$ShowText = 'M05.27B  ERROR - Too many includes in a file. '
+							$ShowText = 'M05.29B  ERROR - Too many includes in a file. '
 							Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 							Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 							Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
-							$ShowText = 'M05.27C  Parameter MaxIncludesPerFile = ' + $MaxIncludesPerFile
+							$ShowText = 'M05.29C  Parameter MaxIncludesPerFile = ' + $MaxIncludesPerFile
 							Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 							Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 							Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
-							$ShowText = 'M05.27D  File: ' + $CommonArray[$index1]
+							$ShowText = 'M05.29D  File: ' + $CommonArray[$index1]
 							Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 							Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 							Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
 							For ($index11 = 0; $index11 -lt $MaxIncludesPerFile; $index11++) {
 					
-								$ShowText = 'M05.27E    Include at index ' + $index11 + '  ' 
+								$ShowText = 'M05.29E    Include at index ' + $index11 + '  ' 
 								$ShowText = $Showtext + $CommonIncludesArray[$index1,$index11] 
 								Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 								Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 								Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 							}
 
-							$ShowText = 'M05.27F  Extra include needed: ' + $IncludeFileRequested
+							$ShowText = 'M05.29F  Extra include needed: ' + $IncludeFileRequested
 							Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 							Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 							Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
-							$ShowText = 'M05.27G  Please increase parameter MaxIncludesPerFile. '
+							$ShowText = 'M05.29G  Please increase parameter MaxIncludesPerFile. '
 							Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 							Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 							Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -Append
 
 							
 							$ShowText = 'Errors - see Error file in folder Logs  '
-							If ($DisplayInfo) { Write-Host $ShowText }
+							If ($DisplayInfoInScript) { Write-Host $ShowText }
 
 							Exit
 
@@ -2029,7 +2391,7 @@ If ($CommonFilesExist) {
 						$CommonIncludesArray[$index1,$index2] = $IncludeFileRequested
 						$NumCommonIncludesArray[$index1] = $NumberIncludesThisCommonFile
 
-						$ShowText = 'M05.27H  CommonIncludesArray('
+						$ShowText = 'M05.29H  CommonIncludesArray('
 						$ShowText = $ShowText + $index1 + ',' + $index2 + ') = '
 						$ShowText = $ShowText + $CommonIncludesArray[$index1,$index2]
 						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append	
@@ -2043,7 +2405,7 @@ If ($CommonFilesExist) {
 		}	# End foreach line in Common file
 	
 		
-		$ShowText = 'M05.26E  end ================================================='
+		$ShowText = 'M05.28E  end ================================================='
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 	
 		$ShowText = ' '
@@ -2061,12 +2423,21 @@ If ($CommonFilesExist) {
 	$NumberCommonFilesWithIncludes = 0
 	$TotalCommonIncludes = 0
 
+	
+	$ShowText = '===================================================================='
+	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+	
+	$ShowText = ' '
+	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+	
+
+
 
 	If (-not $CommonFilesHaveIncludes) {
 	
-		#	No common markdown files have includes.
+		#	No common module files have includes.
 		
-		$ShowText = 'M05.30A  No common files have any includes '
+		$ShowText = 'M05.30A  No common files have includes '
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 		Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 		#	Write-Host $ShowText
@@ -2075,45 +2446,66 @@ If ($CommonFilesExist) {
 	
 		
 
-		$ShowText = 'M05.30B  Display includes in common files'
+		$ShowText = 'M05.30B  COMMON FILES WITH INCLUDES'
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+		Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 		
-
 		For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
-		
-			$ShowText = 'M05.30C  Common file ' + $index1 + ' = ' +  $CommonArray[$index1]
-			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-				
-			# Displauy of includes
-
 			
 			If ($NumCommonIncludesArray[$index1] -gt 0) {
 			
 				$NumberCommonFilesWithIncludes++
+	
+				$ShowText = ' '
+				Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+				
+				$ShowText = 'M05.30C  Common ' + $index1 + ' = ' +  $CommonArray[$index1]
+				Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+				Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
-				#	$ShowText = 'M05.30D  	Above common file has '
-				#	$ShowText = $ShowText + $NumCommonIncludesArray[$index1] + ' includes.'
-				#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
+				#	Find larged number of includes in a common module
+
+				If ($NumCommonIncludesArray[$index1] -gt $LargestIncludesPerCommon) {
+					$LargestIncludesPerCommon = $NumCommonIncludesArray[$index1]
+				}
+
+				# Displauy of includes
 
 				For ($index2 = 0; $index2 -lt $NumCommonIncludesArray[$index1]; $index2++) {
 
 					$TotalCommonIncludes++
-			
-					$ShowText = 'M05.30D  	        ' + $CommonIncludesArray[$index1,$index2] 
+					If ($index2 -eq 0) { 
+						$ShowText = 'M05.30D       INCLUDES ' + $CommonIncludesArray[$index1,$index2] 
+					} else {
+						$ShowText = 'M05.30D                ' + $CommonIncludesArray[$index1,$index2] 
+					}
 					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 													
 				}	#  For index2 = include for that common file
 			} #	 $NumCommonIncludesArray[$index1] greater than zero
 						
 		}	# End index for common file
 	
+	
+		$ShowText = ' '
+		Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 		
-		$ShowText = 'M05.30E  ' + $NumberCommonFilesWithIncludes + ' common files have includes.'
+	
+		If ($NumberCommonFilesWithIncludes -eq 1) { 
+			$ShowText = 'M05.30E  ' + $NumberCommonFilesWithIncludes + ' common file has includes.' 
+		} else {
+			$ShowText = 'M05.30E  ' + $NumberCommonFilesWithIncludes + ' common files have includes.' 
+		}
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 		Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 		#	Write-Host $ShowText
-
-
+	
+		$ShowText = ' '
+		Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+		
+	
+		
 	}	# Common files have includes
 	
 
@@ -2128,19 +2520,19 @@ Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
 $ShowText = 'M06.00A  Topic includes '
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-#	If ($DisplayInfo) { Write-Host $ShowText }
+#	If ($DisplayInfoInScript) { Write-Host $ShowText }
 
 $ShowText = 'M06.00B  Start search for includes in topic files'
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 
-#	Code06.10  Initialise variables
+#	Code06.01  Initialise variables
 
 $TopicFilesHaveIncludes = $False
 
 
 
-#	Code06.20  Read all topic files and record includes in TopicIncludesArray
+#	Code06.10  Read all topic files and record includes in TopicIncludesArray
 
 
 #	For loop to read TopicArray
@@ -2154,10 +2546,10 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 	#	Read each line in the topic file
 	
 
-	$ShowText = 'M06.20A  start read file ========================================='
+	$ShowText = 'M06.10A  start read file ========================================='
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
-	$ShowText = 'M06.20B  Read topic file ' + $index1 + " = " + $TopicArray[$index1]
+	$ShowText = 'M06.10B  Read topic file ' + $index1 + " = " + $TopicArray[$index1]
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 	
@@ -2165,68 +2557,290 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 
 	foreach($line in Get-Content $TopicArray[$index1]) {
 	
-		#		If there is a blank line, the trace has '(blank line)' to be clearer to see.
-
 		$ShowBlankLine = $line.Trim()
-		If ($ShowBlankLine -eq '') { 
+
+		#	If there is a blank line, the trace has '(blank line)' to be clearer to see.
+
+		# If ($ShowBlankLine -eq '') { 
 			#	$ShowBlankLine = '(blank line)'
-			#	$ShowText =  'M06.20C  		$line ' + $ShowBlankLine
-		} else {	
-			#	$ShowText =  'M06.20D  		$line ' + $line
-		}
+			#	$ShowText =  'M06.10C  		$line ' + $ShowBlankLine
+		# } else {	
+			#	$ShowText =  'M06.10D  		$line ' + $line
+		# }
 		#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 		
 		# Want to ignore spaces at start of line.
 
-		#	Check for include coding that starts a line with {{
 
-		$TestFirst2Chars = $line.Trim()
-		If ($TestFirst2Chars.length -lt 2) { $TestFirst2Chars = $TestFirst2Chars + "XX"}
+		#  Code06.20  Includes - check how coding starts
+
+		#	Find include coding on a line in a topic.
+		#	First check for $IncludeDelimeterStart	If found, check for proper start and end coding.
+
+		$CurrentLine = $line.Trim()
+		If ($CurrentLine.length -lt 2) { $CurrentLine = $CurrentLine + "XX"}
 		
-		$TestFirst2Chars = $TestFirst2Chars.substring(0,2)
+		$TestFirst2Chars = $CurrentLine.substring(0,2)
 		
-		#	$ShowText =  'M06.20E  TestFirst2Chars = ' + $TestFirst2Chars
+		#	$ShowText =  'M06.20A  TestFirst2Chars = ' + $TestFirst2Chars
 		#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
+		$FoundOKIncludeCoding = $False
+		$IncludeCodingStart = $False
+		$IncludeCodingEnd = $False
 
-		If($TestFirst2Chars.substring(0,2) -eq "{{") {
+		If($TestFirst2Chars -eq $IncludeDelimeterStart) {
+
+			# Found $IncludeDelimeterStart so check for full include coding.
+
+			If ($CurrentLine.length -lt 12) { $CurrentLine = $CurrentLine + "XXXXXXXXXXXX"}
+			$TestFirst12Chars = $CurrentLine.substring(0,12)
+			$TestFirst11Chars = $CurrentLine.substring(0,11)
+
+			If (($TestFirst12Chars -ceq $IncludeStart12Chars) -or
+			    ($TestFirst11Chars -ceq $IncludeStart11Chars)) {
+				$IncludeCodingStart = $True
+			} else {
+				# Error in Include - start coding not correct
+				$ErrorsInIncludes = $True
+
+				# Is it an error of case or something else?  This decides the error message.
+				# Test for a case problem first
+				$ErrorInCaseOfIncludeLiteral = $False
+				
+				If (($TestFirst12Chars -eq $IncludeStart12Chars) -or
+				    ($TestFirst11Chars -eq $IncludeStart11Chars)) {
+					$ErrorInCaseOfIncludeLiteral = $True
+				}
+
+				If ($ErrorInCaseOfIncludeLiteral) {
+
+					$ShowText = ' '
+					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+					$ShowText = 'M06.20D  ERROR - "INCLUDE:" must be all upper case'
+					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+					
+					$ShowText = 'M06.20E  Include coding "' + $CurrentLine + '"'
+					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+					$ShowText = 'M06.20F  File: ' + $TopicArray[$index1]
+					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append	
+
+				} else {
+
+					$ShowText = ' '
+					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+					$ShowText = 'M06.20J  ERROR - Include coding must start "' + $IncludeStart12Chars 
+					$ShowText = $ShowText + '" OR "' + $IncludeStart11Chars + '"'
+					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+				
+					$ShowText = 'M06.20K  Include coding "' + $CurrentLine + '"'
+					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+					$ShowText = 'M06.20L  File: ' + $TopicArray[$index1]
+					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+				}	#	Not ErrorInCaseOfIncludeLiteral
+			}	#	First 12 or 11 chars Not OK
+
+
+			#  Code06.21  Includes - check how coding ends
+
+			If ($IncludeCodingStart) {
+
+				$TestLast3Chars = $CurrentLine.substring($CurrentLine.length - 3)
+
+				If ($TestLast3Chars -eq $IncludeDelimeterEnd)   {
+					$IncludeCodingEnd = $True
+				} else {
+					# Error in Include - end coding not correct
+					$ErrorsInIncludes = $True
+					$ShowText = ' '
+					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+					$ShowText = 'M06.21A  ERROR - Include coding must end "' + $IncludeDelimeterEnd + '"'
+					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+				
+					$ShowText = 'M06.21B  Include coding "' + $CurrentLine + '"'
+					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+					$ShowText = 'M06.21C  File: ' + $TopicArray[$index1]
+					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+				}	
+
+			}     # IF ($IncludeCodingStart) so check IncludeCodingEnd
+
+
+			If ($IncludeCodingStart -and $IncludeCodingEnd) {
+				$FoundOKIncludeCoding = $True
+			}
+		
+		}   # If first 2 chars are $IncludeDelimeterStart
+
+		
+		#  Code06.22  Includes - check if coding is almost right
+
+		#  Find lines that are "almost" an include, and give error.  User will delete or fix them.
+
+		If($TestFirst2Chars -ne $IncludeDelimeterStart) {
+
+			$FoundComment = $False
+			$FoundTwoOpenSquareBrackets = $False
+			$FoundTwoClosedSquareBrackets = $False
+			$FoundWordIncludeAnyCase = $False
+			$FoundAlmostInclude = $False
+
+			# Check for comment.  If not, check for number of [ and ] and INCLUDE:
+			If ($CurrentLine.length -lt 7) { $CurrentLine = $CurrentLine + "XXXXXXX" }
+			$TestFirst7Chars = $CurrentLine.substring(0,7)
+			
+			If ($TestFirst7Chars -eq $MDCommentCoding) {
+				$FoundComment = $True
+				# Found comment so ignore this line
+
+				$ShowText = 'M06.22A  Comment found - will ignore this line and so will Markdown'
+				Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
+				$ShowText = 'M06.22B  Comment is "' + $CurrentLine.Trim() + '"'
+				Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
+
+
+			} else {	
+				# May be line that is almost an include coding line.
+				#  Count [ and ] to see if two each.  
+				$NumberOpenSquareBrackets =  ($CurrentLine.Split('[')).count-1 
+				$NumberClosedSquareBrackets =  ($CurrentLine.Split(']')).count-1 
+
+				# $ShowText = 'M06.22C  NumberOpenSquareBrackets = ' + $NumberOpenSquareBrackets
+				# Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+				
+				# $ShowText = 'M06.22D  NumberClosedSquareBrackets = ' + $NumberClosedSquareBrackets
+				# Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+				If ($NumberOpenSquareBrackets -eq 2) {
+					$FoundTwoOpenSquareBrackets = $True
+				}
+				If ($NumberClosedSquareBrackets -eq 2) {
+					$FoundTwoClosedSquareBrackets = $True
+				}
+				#  Look for "include" and ensure NOT case senstivie.
+
+				If ($CurrentLine.Tolower().Contains("include")) {
+					$FoundWordIncludeAnyCase = $True
+				}
+
+				# $ShowText = 'M06.22E  Word "include" found in any case = ' + $FoundWordIncludeAnyCase
+				# Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+				#  If all true then issue error - Include not started correctly.
+
+				If (($FoundTwoOpenSquareBrackets) -and
+					($FoundTwoClosedSquareBrackets) -and
+					($FoundWordIncludeAnyCase)) {
+					$FoundAlmostInclude = $True
+				}
+
+				If ($FoundAlmostInclude) {
+					#	This is an error - the line is almost an incluce but has incorrect coding.
+					$ErrorsInIncludes = $True
+
+					$ShowText = ' '
+					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+					$ShowText = 'M06.22G  ERROR - Include coding must start "' + $IncludeStart12Chars 
+					$ShowText = $ShowText + '" OR "' + $IncludeStart11Chars + '"'
+					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+				
+					$ShowText = 'M06.22H  Include coding "' + $CurrentLine + '"'
+					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+			
+					$ShowText = 'M06.22J  File: ' + $TopicArray[$index1]
+					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
+
+				}	#  Found likely include
+
+				#  Most markdown lines in the file will reach here without an error. This is fine.
+				#  It is only lines look like includes but are not quite right that get an error.
+
+			}	#  If not a comment line
+		}	# First 2 chars are NOT an include.
+
+		If ($FoundOKIncludeCoding) {
 
 			# Found an include in this topic file.
 
 			# Here is what is below:
-			# Code06.21  Housekeeping - set flags and counters.
-			# Code06.22  Get the include details from the include coding
-			# Code06.23  Put in ".md" as last three chars if not already there
-			# Code06.24  If include coding starts with slash, remove it
-			# Code06.25  Check if this include is already an include for this topic file
-			# Code06.26  Test if include points to an existing common file
-			# Code06.27  Record include in TopicIncludesArray
-			# Code06.28  Topics without includes are copied to the website immediately
+			# Code06.23  Housekeeping - set flags and counters.
+			# Code06.24  Get the include details from the include coding
+			# Code06.25  Put in ".md" as last three chars if not already there
+			# Code06.26  If include coding starts with slash, remove it
+			# Code06.27  Check if this include is already an include for this topic file
+			# Code06.28  Test if include points to an existing common file
+			# Code06.29  Record include in TopicIncludesArray
+			# Code06.30  Topics without includes are copied to the website immediately
 			
+			$IncludeCoding = $CurrentLine
+			$IncludeCoding = $IncludeCoding.replace($IncludeDelimeterStart,"")
+			$IncludeCoding = $IncludeCoding.replace($IncludeLiteral,"")
+			$IncludeCoding = $IncludeCoding.replace($IncludeDelimeterEnd,"")
+			$IncludeCoding = $IncludeCoding.Trim()
 
-			# Code06.21  Housekeeping - set flags and counters.
+			$ShowText = 'M06.22M  IncludeCoding "' + $IncludeCoding + '"'
+			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+
+			# Code06.23  Housekeeping - set flags and counters.
 			
 			$NumberIncludesThisTopicFile++
+
 			$TopicFilesHaveIncludes = $True
 
 
-			# Code06.22  Get the include details from the include coding
-			#
-			# Extract Include request from this line
-			# First two chars are "{{".  Last two chars are "}}".
-			# Substring needs to skip 2 chars and accept a length 4 less than current length.
+			# Code06.24  Get the include details from the include coding
+			# $IncludeCoding is the Include request from this line
 
-			$IncludeFileRequested = $line.Trim()
-			$RequestLength = $IncludeFileRequested.length - 4
-			$IncludeFileRequested = $IncludeFileRequested.Substring(2, $RequestLength)
-
+			$IncludeFileRequested = $IncludeCoding
+			
+	
 			# Ensure no unnecessary spaces in include coding start or end
 
 			$IncludeFileRequested = $IncludeFileRequested.Trim()
 
 
 
-			# Code06.23  Put in ".md" as last three chars if not already there
+			# Code06.25  Put in ".md" as last three chars if not already there
 
 			#	If include coding does not end ".md" then insert this.
 			#	Normally the include coding can omit the ".md" to save typing.
@@ -2238,17 +2852,17 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 				$IncludeFileRequested = $IncludeFileRequested + ".md"
 			}			
 
-			#	$ShowText =  'M06.23A  Includes Coding = ' + $IncludeFileRequested
+			#	$ShowText =  'M06.25A  Includes Coding = ' + $IncludeFileRequested
 			#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append			
 
 
 
-			# Code06.24  If include coding starts with slash, remove it
+			# Code06.26  If include coding starts with slash, remove it
 		
 			$PositionBackslash = $IncludeFileRequested.IndexOf("\")
-			If ($PositionBackslash -eq -0) {
+			If ($PositionBackslash -eq 0) {
 				$IncludeFileRequested = $IncludeFileRequested.Substring(1)
-				#	$ShowText =  'M06.24A  Backslash as first char not needed - ignored.' 
+				#	$ShowText =  'M06.26A  Backslash as first char not needed - ignored.' 
 				#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 			} 
 
@@ -2259,13 +2873,13 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 
 
 
-			#	Code06.25  Check if this include is already an include for this topic file
+			#	Code06.27  Check if this include is already an include for this topic file
 
 			$IncludeAlreadyRecorded = $False
 
 			$index2 = $NumberIncludesThisTopicFile - 1		#	Potential psition of new include 	
 
-			#	$ShowText =  'M06.25A  Index2 ' + $index2
+			#	$ShowText =  'M06.27A  Index2 ' + $index2
 			#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 			#	We are inside $TopicArray[$index1] and have found an include.
@@ -2281,7 +2895,7 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 					If ($TopicIncludesArray[$index1,$index10] -eq $IncludeFileRequested) {
 						$IncludeAlreadyRecorded = $True
 						$NumberIncludesThisTopicFile--
-						$ShowText =  'M05.25A  Include already recorded for this topic file '
+						$ShowText =  'M05.27A  Include already recorded for this topic file '
 						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 					} # Include already present in includes for this topic file (which is OK)
@@ -2292,18 +2906,18 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 
 
 
-				# Code06.26  Test if include points to an existing common file
+				# Code06.28  Test if include points to an existing common file
 						
 				
 				#  TestIncludePath is the possible include file
 
-				#	$ShowText = 'M06.26A  Check Include at ' + $IncludeFileRequested
+				#	$ShowText = 'M06.28A  Check Include at ' + $IncludeFileRequested
 				#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 				$ThisIncludeExists = $False
 
 				If   (Test-Path -Path $IncludeFileRequested -PathType leaf) {
-					#	$ShowText = 'M06.26B  Include file exists ' 
+					#	$ShowText = 'M06.28B  Include file exists ' 
 					#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 					$ThisIncludeExists = $True
 				} else {
@@ -2313,18 +2927,14 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 					$ShowText = ' '
 					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append		
+					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
-					$ShowText = 'M06.26C  ERROR - Include file does not exist - ' + $IncludeFileRequested 
+					$ShowText = 'M06.28C  ERROR - Include file does not exist - ' + $IncludeFileRequested 
 					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append	
 
-					$ShowText = 'M06.26D  Include was requested from file - ' + $TopicArray[$index1]
-					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
-					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
-
-					$ShowText = ' '
+					$ShowText = 'M06.28D  Include was requested from file - ' + $TopicArray[$index1]
 					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 					Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 					Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
@@ -2334,9 +2944,9 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 				If ($ThisIncludeExists -eq $True) {
 
 
-					#	Code06.27  Record include in TopicIncludesArray
+					#	Code06.29  Record include in TopicIncludesArray
 				
-					#	$ShowText =  'M06.27A  Include Coding = ' + $IncludeFileRequested
+					#	$ShowText =  'M06.29A  Include Coding = ' + $IncludeFileRequested
 					#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 					#	Arrays start at index zero so index2 is $NumberIncludesThisTopicFile - 1
@@ -2354,42 +2964,42 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 	
-						$ShowText = 'M06.27B  ERROR - Too many includes in a file. '
+						$ShowText = 'M06.29B  ERROR - Too many includes in a file. '
 						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
-						$ShowText = 'M06.27C  Parameter MaxIncludesPerFile = ' + $MaxIncludesPerFile
+						$ShowText = 'M06.29C  Parameter MaxIncludesPerFile = ' + $MaxIncludesPerFile
 						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
-						$ShowText = 'M06.27D  File: ' + $TopicArray[$index1]
+						$ShowText = 'M06.29D  File: ' + $TopicArray[$index1]
 						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
 						For ($index11 = 0; $index11 -lt $MaxIncludesPerFile; $index11++) {
 					
-							$ShowText = 'M06.27E    Include at index ' + $index11 + '  ' 
+							$ShowText = 'M06.29E    Include at index ' + $index11 + '  ' 
 							$ShowText = $Showtext + $TopicIncludesArray[$index1,$index11] 
 							Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 							Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 							Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 						}
 
-						$ShowText = 'M06.27F  Extra include needed: ' + $IncludeFileRequested
+						$ShowText = 'M06.29F  Extra include needed: ' + $IncludeFileRequested
 						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
-						$ShowText = 'M06.27G  Please increase parameter MaxIncludesPerFile. '
+						$ShowText = 'M06.29G  Please increase parameter MaxIncludesPerFile. '
 						Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 						Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 						Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 						
 						$ShowText = 'Errors - see Error file in folder Logs  '
-						If ($DisplayInfo) { Write-Host $ShowText }
+						If ($DisplayInfoInScript) { Write-Host $ShowText }
 
 						Exit
 
@@ -2400,7 +3010,7 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 					$TopicIncludesArray[$index1,$index2] = $IncludeFileRequested
 					$NumTopicIncludesArray[$index1] = $NumberIncludesThisTopicFile
 
-					$ShowText = 'M06.27H  TopicIncludesArray('
+					$ShowText = 'M06.29H  TopicIncludesArray('
 					$ShowText = $ShowText + $index1 + ',' + $index2 + ') = '
 					$ShowText = $ShowText + $TopicIncludesArray[$index1,$index2]
 					Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
@@ -2417,11 +3027,11 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 	}	# End foreach line in topic file
 	
 	
-	$ShowText = 'M06.27M  end ====================================================='
+	$ShowText = 'M06.29M  end ====================================================='
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 	
 
-	#	Code06.28	Topics without includes are copied to the website immediately
+	#	Code06.30	Topics without includes are copied to the website immediately
 
 
 	If ($NumberIncludesThisTopicFile -eq 0) {
@@ -2431,34 +3041,34 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 
 		$TopicFileName = Find-Filename $TopicArray[$index1]
 
-		$ShowText = 'M06.28A  Topic filename with no includes = ' +  $TopicFileName
+		$ShowText = 'M06.30A  Topic filename with no includes = ' +  $TopicFileName
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
 
         #   Call Find-Path to find path associated with topic
 
-		#	$ShowText = 'M06.28B      TopicFolder = ' + $TopicFolder
+		#	$ShowText = 'M06.30B      TopicsFolder = ' + $TopicsFolder
 		#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
-		#	$ShowText = 'M06.28C      Topic full path =  ' + $TopicArray[$index1]
+		#	$ShowText = 'M06.30C      Topic full path =  ' + $TopicArray[$index1]
 		#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 		
 			
-		$TopicPath = Find-Path $TopicFolder $TopicArray[$index1]
+		$TopicPath = Find-Path $TopicsFolder $TopicArray[$index1]
 
-		$ShowText = 'M06.28D  Path for topic = ' +  $TopicPath
+		$ShowText = 'M06.30D  Path for topic = ' +  $TopicPath
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
         
 		
         
 		#	Call Confirm-Folders to make sure Website has the path
 
-		#	$ShowText = 'M06.28E      Path needed above website '  +  $WebsiteFolder
+		#	$ShowText = 'M06.30E      Path needed above website '  +  $WebsiteFolder
 		#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 		
         $Result = Confirm-Folders   $WebsiteFolder $TopicPath
 
-        $ShowText = 'M06.28F      Result of adding path to website is ' + $Result
+        $ShowText = 'M06.30F      Result of adding path to website is ' + $Result
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
 		#	Copy topic to website folder path
@@ -2469,7 +3079,7 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 
 		Copy-Item -Path $TopicArray[$index1] -Destination $TopicWebsiteFullPath  -Force
 
-		$ShowText = 'M06.28G  Topic copied to website and path ' 
+		$ShowText = 'M06.30G  Topic copied to website and path ' 
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 	}
@@ -2484,63 +3094,94 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 #	Have finished reading all topic files.  Either we found includes or we did not.
 
 
-#	Code06.30		Display topic files with includes
+#	Code06.32		Display topic files with includes
 
 $NumberTopicFilesWithIncludes = 0
 $TotalTopicIncludes = 0
+
+
+$ShowText = '===================================================================='
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+$ShowText = ' '
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
 
 
 If (-not $TopicFilesHaveIncludes) {
 	
 	#	No topic markdown files have includes.
 	
-	$ShowText = 'M06.30A  No topic files have any includes '
+	$ShowText = 'M06.32A  No topic files have any includes '
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-	#	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
-	#	Write-Host $ShowText
-					
+	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+	Write-Host $ShowText
+	
 } else {	# TopicIncludesArray must have entries somewhere
 	
 	
-	$ShowText = 'M06.30B  Display includes in topic files'
+	$ShowText = 'M06.32B  TOPIC FILES WITH INCLUDES'
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
-		
+	
 	For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 	
 				
 		# Displauy of includes
 		
 		If ($NumTopicIncludesArray[$index1] -gt 0) {
-
-			$ShowText = 'M06.30C  Topic file ' + $index1 + ' = ' +  $TopicArray[$index1]
+	
+			$ShowText = ' '
+			Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+			
+			$ShowText = 'M06.32C  Topic ' + $index1 + ' = ' +  $TopicArray[$index1]
 			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+			Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 		
 			$NumberTopicFilesWithIncludes++
 
-			#	$ShowText = 'M06.30D  	Above topic file has '
-			#	$ShowText = $ShowText + $NumTopicIncludesArray[$index1] + ' includes.'
-			#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
+
+			#	Find larged number of includes in a topic
+				
+			If ($NumTopicIncludesArray[$index1] -gt $LargestIncludesPerTopic) {
+				$LargestIncludesPerTopic = $NumTopicIncludesArray[$index1]
+			}
+
+
 
 			For ($index2 = 0; $index2 -lt $NumTopicIncludesArray[$index1]; $index2++) {
 
 				$TotalTopicIncludes++
 		
-				$ShowText = 'M06.30D      Include ' + $TopicIncludesArray[$index1,$index2] 
+				If ($index2 -eq 0) { 
+					$ShowText = 'M06.32D       INCLUDES  ' + $TopicIncludesArray[$index1,$index2] 
+				} else {
+					$ShowText = 'M06.32D                 ' + $TopicIncludesArray[$index1,$index2] 
+				}
 				Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
+				Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 												
 			}	#  For index2 = include for that topic file
 
 		} #	 $NumTopicIncludesArray[$index1] greater than zero
 		
 	}	# There are topic includes
+	
+	$ShowText = ' '
+	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+	
 
-		
-	$ShowText = 'M06.30E  ' + $NumberTopicFilesWithIncludes + ' topic files have includes.'
+	If ($NumberTopicFilesWithIncludes -eq 1) { 
+		$ShowText = 'M06.32E  ' + $NumberTopicFilesWithIncludes + ' topic file has includes.' 
+	} else {
+		$ShowText = 'M06.32E  ' + $NumberTopicFilesWithIncludes + ' topic files have includes.' 
+	}	
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 	Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 	#	Write-Host $ShowText
 
+	
 }	# End index for topic file
 
 
@@ -2553,12 +3194,12 @@ If ($ErrorsInIncludes) {
 	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
 
-	$ShowText = 'M06.40A  ERROR - Some includes do not exist (see other messages).  Run terminated.'
+	$ShowText = 'M06.40A  ERROR - Includes have errors (see other messages).  Run terminated.'
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
 	$ShowText = 'Errors - see Error file in folder Logs  '
-	If ($DisplayInfo) { Write-Host $ShowText }
+	If ($DisplayInfoInScript) { Write-Host $ShowText }
 	
 	Exit
 
@@ -2573,7 +3214,7 @@ Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
 $ShowText = 'M07.00A  Create Pathways and check circular includes '
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-#	If ($DisplayInfo) { Write-Host $ShowText }
+#	If ($DisplayInfoInScript) { Write-Host $ShowText }
 
 $ShowText = "M07.00B  Start pathway processing."
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
@@ -2902,7 +3543,7 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 
 							
 							$ShowText = 'Errors - see Error file in folder Logs  '
-							If ($DisplayInfo) { Write-Host $ShowText }
+							If ($DisplayInfoInScript) { Write-Host $ShowText }
 
 							Exit
 
@@ -2965,7 +3606,7 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 							}
 		
 							$ShowText = 'Errors - see Error file in folder Logs  '
-							If ($DisplayInfo) { Write-Host $ShowText }
+							If ($DisplayInfoInScript) { Write-Host $ShowText }
 		
 							Exit
 		
@@ -3156,7 +3797,7 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 												Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
 												$ShowText = 'Errors - see Error file in folder Logs  '
-												If ($DisplayInfo) { Write-Host $ShowText }
+												If ($DisplayInfoInScript) { Write-Host $ShowText }
 
 												Exit
 
@@ -3242,7 +3883,7 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 												}
 		
 												$ShowText = 'Errors - see Error file in folder Logs  '
-												If ($DisplayInfo) { Write-Host $ShowText }
+												If ($DisplayInfoInScript) { Write-Host $ShowText }
 		
 												Exit
 		
@@ -3421,7 +4062,7 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 								Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
 								$ShowText = 'Errors - see Error file in folder Logs  '
-								If ($DisplayInfo) { Write-Host $ShowText }
+								If ($DisplayInfoInScript) { Write-Host $ShowText }
 
 								Exit
 
@@ -3486,7 +4127,7 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 							}
 		
 							$ShowText = 'Errors - see Error file in folder Logs  '
-							If ($DisplayInfo) { Write-Host $ShowText }
+							If ($DisplayInfoInScript) { Write-Host $ShowText }
 		
 							Exit
 
@@ -3571,7 +4212,7 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 					}
 
 					$ShowText = 'Errors - see Error file in folder Logs  '
-					If ($DisplayInfo) { Write-Host $ShowText }
+					If ($DisplayInfoInScript) { Write-Host $ShowText }
 
 					Exit
 
@@ -3639,7 +4280,7 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 
 					
 					$ShowText = 'Errors - see Error file in folder Logs  '
-					If ($DisplayInfo) { Write-Host $ShowText }
+					If ($DisplayInfoInScript) { Write-Host $ShowText }
 
 					Exit
 
@@ -3726,6 +4367,7 @@ if ($PathwayLastRow -gt -1) {
 	$NewPathwayRowLength =  $NewPathwayLastRow + 1
 
 	$PathwayRowLength =  $PathwayLastRow + 1
+	$UsedPathways = $PathwayLastRow + 1
 
 	#   $ShowText = 'M07.90B  PathwayRowLength = ' + $PathwayRowLength
 	#	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
@@ -3766,7 +4408,7 @@ Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
 $ShowText = 'M08.00A  Priorities for common includes '
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-#	If ($DisplayInfo) { Write-Host $ShowText }
+#	If ($DisplayInfoInScript) { Write-Host $ShowText }
 
 
 
@@ -4059,7 +4701,7 @@ If ($CommonPriorityMinusOneExists) {
 			Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
 			$ShowText = 'Errors - see Error file in folder Logs  '
-			If ($DisplayInfo) { Write-Host $ShowText }
+			If ($DisplayInfoInScript) { Write-Host $ShowText }
 			
 			Exit
 
@@ -4304,7 +4946,7 @@ If ($CommonPriorityMinusOneExists) {
 	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append 
 
 	$ShowText = 'Errors - see Error file in folder Logs  '
-	If ($DisplayInfo) { Write-Host $ShowText }
+	If ($DisplayInfoInScript) { Write-Host $ShowText }
 
 	Exit
 } 
@@ -4543,7 +5185,7 @@ If ($NeedToDOIncludesProcessed) {
 		
 	} 
 	
-	#  Create new Infofolder.  The "Out-Null" suppresses the Powershell output (too much).
+	#  Create new TempInclude Folder.  The "Out-Null" suppresses the Powershell output (too much).
 			
 	New-Item $TempIncludeFolder -itemType Directory | Out-Null
 	$ShowText = 'M11.10C  Created new TempInclude Folder - ' + $TempIncludeFolder 
@@ -4565,7 +5207,7 @@ If ($NeedToDOIncludesProcessed) {
 		$ShowText = ' '
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
-		$ShowText = 'M11.20A  Priority  ' + $ToDoPriorityArray[$index20] 
+		$ShowText = 'M11.20A  Priority of this requesting file: ' + $ToDoPriorityArray[$index20] 
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 		$ShowText = 'M11.20B  Copy input files to TempInclude  ' 
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
@@ -4590,8 +5232,8 @@ If ($NeedToDOIncludesProcessed) {
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 		#	The requesting file always comes from the source folder, the source is
-		#	All Markdown Topics or Common Markdown. That source is copied to the TempInclude folder.
-		#	The include files come from Common Markdown, or from Temp\Expanded-Common.
+		#	All Markdown Topics or Common Modules. That source is copied to the TempInclude folder.
+		#	The include files come from Common Modules, or from Temp\Expanded-Common.
 		#	We use Temp\Expanded-Common when the include file has priority above zero.
 
 
@@ -4602,9 +5244,9 @@ If ($NeedToDOIncludesProcessed) {
 			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 			
 			#	If this include has priority zero then ToDoIncludesArray has the correct source
-			#	which is Common Markdown.
+			#	which is Common Modules.
 			#	However, if this include has priority above zero, we must change the source to the
-			#	same path where Common Markdown is replaced by Temp\Expanded-Common.
+			#	same path where Common Modules is replaced by Temp\Expanded-Common.
 
 			If ($ToDoIncludesPriorityArray[$index20,$index21] -eq 0) {
 				$IncludeHasPriorityZero = $True
@@ -4616,15 +5258,19 @@ If ($NeedToDOIncludesProcessed) {
 			If ($IncludeHasPriorityZero) {
 				$IncludeFileFullPath = $ToDoIncludesArray[$index20,$index21]
 
-				$ShowText = 'M11.20H          Include comes from Common Markdown '
+				$ShowText = 'M11.20H          Include comes from Common Modules '
 				Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 			} else {
-				$ACSource = $ToDoIncludesArray[$index20,$index21]
-				$ADSource = $ACSource.replace("Common Markdown","Temp\Expanded-Common")
-				$IncludeFileFullPath = $ADSource
+				$CommonSource = $ToDoIncludesArray[$index20,$index21]
 
-				$ShowText = 'M11.20J          Include comes from AD Expanded Markdown '
+				# Change Common Modules foldedr to the Expanded Common folder.
+				# This ensures that the source is the Expanded module, not the source module.
+
+				$CommonExpandedSource = $CommonSource.replace($ComModLiteral,$ExpComLiteral)
+				$IncludeFileFullPath = $CommonExpandedSource
+
+				$ShowText = 'M11.20J          Include comes from Temp\Expanded-Common '
 				Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 			}
 
@@ -4644,7 +5290,7 @@ If ($NeedToDOIncludesProcessed) {
 
         #   Setup base folders
         If ($RequestingTopic) {
-			$RequestingBaseFolder = $TopicFolder
+			$RequestingBaseFolder = $TopicsFolder
             $ExpandedBaseFolder = $ExpandedTopicsFolder
         } else {
 			$RequestingBaseFolder = $CommonFolder
@@ -4714,15 +5360,21 @@ If ($NeedToDOIncludesProcessed) {
 
 			#	Code11.60	Find include coding
 
-			If($RequestingLine -match "{{") {
+			$CurrentLine = $line.Trim()
+			If ($CurrentLine.length -lt 2) { $CurrentLine = $CurrentLine + "XX"}
+			
+			$TestFirst2Chars = $CurrentLine.substring(0,2)
+			
+			If($TestFirst2Chars -eq $IncludeDelimeterStart) {
 		
 				#	Found an include.  All we need is the filename which is unique.
 				#	The incluce will already be in the TempInclude folder.
 				#	Once we know the include file in the TempInclude Folder we can open it and copy lines.
 
 				$IncludeCoding = $RequestingLine.Trim()
-				$IncludeCoding = $IncludeCoding.replace("{{","")
-				$IncludeCoding = $IncludeCoding.replace("}}","")
+				$IncludeCoding = $IncludeCoding.replace($IncludeDelimeterStart,"")
+				$IncludeCoding = $IncludeCoding.replace($IncludeLiteral,"")
+				$IncludeCoding = $IncludeCoding.replace($IncludeDelimeterEnd,"")
 				$IncludeCoding = $IncludeCoding.Trim()
 
 				#	Put in ".md" if not there
@@ -4734,7 +5386,7 @@ If ($NeedToDOIncludesProcessed) {
 					$IncludeCoding = $IncludeCoding + ".md"
 				}			
 
-				#   Call Find-Filename to find just the fiiename of the include
+				#   Call Find-Filename to find just the filename of the include
 
 				$IncludeFileName = Find-Filename $IncludeCoding
 
@@ -4802,8 +5454,10 @@ If ($NeedToDOIncludesProcessed) {
 
 			$ShowText = 'M11.70A    Topic copied to website and path ' 
 			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
-						
-		}	
+			$ShowText = 'M11.70B         ThisExpandedFileFullPath ' + $ThisExpandedFileFullPath
+			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 						
+			$ShowText = 'M11.70C         TopicWebsiteFullPath '  + $TopicWebsiteFullPath
+			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append }	
 		
 
 		#	Finished include processing for the requesting file in the TempInclude Folder.
@@ -4812,7 +5466,7 @@ If ($NeedToDOIncludesProcessed) {
 
 		#  Delete TempIncludeFolder and all sub-folders.
 		Remove-Item $TempIncludeFolder -Recurse
-		$ShowText = 'M11.70B  Deleted TempInclude Folder - ' + $TempIncludeFolder 
+		$ShowText = 'M11.70G  Deleted TempInclude Folder - ' + $TempIncludeFolder 
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 	 
 		# 	Recreate the TempInclude folder only if there is at least one more ToDo item coming
@@ -4822,7 +5476,7 @@ If ($NeedToDOIncludesProcessed) {
 			#  Create new TempIncludeFolder.  The "Out-Null" suppresses the Powershell output (too much).
 		
 			New-Item $TempIncludeFolder -itemType Directory | Out-Null
-			$ShowText = 'M11.70C  Created new TempInclude Folder - ' + $TempIncludeFolder 
+			$ShowText = 'M11.70H  Created new TempInclude Folder - ' + $TempIncludeFolder 
 			Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 		}
 
@@ -4843,7 +5497,7 @@ Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 #	Code12.10	Check if All Markdown Topics folder has an images folder
 #	If not, error and end
 
-$TopicImagesFolder = $TopicFolder + '\' + "images"
+$TopicImagesFolder = $TopicsFolder + '\' + "images"
 
 If (Test-Path -Path $TopicImagesFolder) {
 	$ShowText = 'M12.10A      Found topic images folder     ' + $TopicImagesFolder 
@@ -4855,7 +5509,7 @@ If (Test-Path -Path $TopicImagesFolder) {
 	Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
 	$ShowText = 'Errors - see Error file in folder Logs  '
-	If ($DisplayInfo) { Write-Host $ShowText }
+	If ($DisplayInfoInScript) { Write-Host $ShowText }
 
 	Exit
 } 
@@ -4897,10 +5551,6 @@ Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 
 #	Code13.00	Final report lines.
 
-
-$ShowText = ' '
-Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
-
 $ShowText = ' '
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
@@ -4910,26 +5560,37 @@ Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 $ShowText = ' '
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
-$ShowText = 'M13.00A  Total topic files          ' + $TopicArray.length
+$ShowText = 'M13.00A  SUMMARY OF INCLUDES          '
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+$ShowText = ' '
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
 $ShowText = 'M13.00B  Total common files         ' + $CommonArray.length
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
+$ShowText = 'M13.00C  Total topic files          ' + $TopicArray.length
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
 $ShowText = ' '
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
+$TotalFilesWithIncludes = $NumberTopicFilesWithIncludes + $NumberCommonFilesWithIncludes
 $TotalIncludes = $TotalTopicIncludes + $TotalCommonIncludes
 
-$ShowText = 'M13.00C  Total includes             ' + $TotalIncludes
+$ShowText = 'M13.00D  Common files with includes    ' + $NumberCommonFilesWithIncludes
+$ShowText = $ShowText + '       Total includes in those common files    ' + $TotalCommonIncludes
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
-$ShowText = 'M13.00D  Includes in topic files    ' + $TotalTopicIncludes
+$ShowText = 'M13.00E  Topic files with includes     ' + $NumberTopicFilesWithIncludes
+$ShowText = $ShowText + '       Total includes in those topic files     ' + $TotalTopicIncludes
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
-$ShowText = 'M13.00E  Includes in common files   ' + $TotalCommonIncludes
+$ShowText = 'M13.00F  Total files with includes     ' + $TotalFilesWithIncludes
+$ShowText = $ShowText + '       Total includes in all files             ' + $TotalIncludes
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+#	Code13.10	Depth of includes - possible reporting
 
 # The total depth of includes can be worked out for each situatiom.
 #	For no common or topic includes, then the depth is zero.
@@ -4951,6 +5612,7 @@ If ($TotalIncludes -eq 0) {
 		# Are includes, none for common, all for topic files
 		$TotalDepthOfIncludes = 1
 	} else {
+		$UsedDepthCommonIncludesCommon = $HighestCommonPriority
 		If ($TotalTopicIncludes -eq 0) {
 			# Are includes, some for common, none for topic files
 			$TotalDepthOfIncludes = $HighestCommonPriority
@@ -4962,7 +5624,48 @@ If ($TotalIncludes -eq 0) {
 
 }	#	If there are includes
 
-$ShowText = 'M13.00F  Depth from Topics to deepest common includes common      ' + $TotalDepthOfIncludes 
+# $ShowText = 'M13.10A  Depth from Topics to deepest common includes common      ' + $TotalDepthOfIncludes 
+# Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+$ShowText = ' '
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+$ShowText = '===================================================================='
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+
+
+#	Code13.20	Comparison of parameters to usage
+
+$ShowText = ' '
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+$ShowText = 'Comparison of parameters to usage '
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+$ShowText = ' '
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+$ShowText = 'M13.20A  Includes Per Common        - Param Max = ' + $MaxIncludesPerFile
+$ShowText = $ShowText + '           Largest = ' + $LargestIncludesPerCommon
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+$ShowText = 'M13.20B  Includes Per Topic         - Param Max = ' + $MaxIncludesPerFile
+$ShowText = $ShowText + '           Largest = ' + $LargestIncludesPerTopic
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+$ShowText = 'M13.20C  DepthCommonIncludesCommons - Param Max = ' + $MaxDepthCommonIncludesCommon
+$ShowText = $ShowText + '            Used Depth = ' + $UsedDepthCommonIncludesCommon
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+$ShowText = ' '
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+$ShowText = 'M13.20D  Pathways = Total instances of a common including a common to any depth'
+Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
+
+$ShowText = 'M13.20D  Pathways                   - Param Max =  ' + $MaxPathways
+$ShowText = $ShowText + '         Used = ' + $UsedPathways
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
 $ShowText = ' '
@@ -4976,6 +5679,9 @@ Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
+$ShowText = 'M13.00X  Report summary lines written' 
+Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
+
 $ShowText = 'M13.00Y  Successful end' 
 Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append
 Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
@@ -4984,6 +5690,6 @@ $ShowText = 'M13.00Z  No errors '
 Out-File -filepath $ErrorFileFullPath -inputobject $ShowText -append
 
 $ShowText = 'Successful end' 
-If ($DisplayInfo) { Write-Host $ShowText }
+If ($DisplayInfoInScript) { Write-Host $ShowText }
 
 #	End of script
