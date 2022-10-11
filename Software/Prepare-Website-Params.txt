@@ -3,8 +3,6 @@
 #	Parameter=value pairs - avoid spaces around equals sign.
 #	Comment lines start with # and are ignored.	Blank lines ignored.  
 
- 	BigFolder=C:\Git\GenevaERS\User-Documentation
-	WebsiteFolder=C:\Git\GenevaERS\User-Documentation\docs
  	DisplayInfo=Yes 
 	MaxIncludesPerFile=25
 	MaxDepthCommonIncludesCommon=5
