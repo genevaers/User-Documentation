@@ -1,5 +1,5 @@
-	
-$ScriptName = 'Prepare-Website-NEW.ps1'
+$S	
+$ScriptName = 'Prepare-Website.ps1'
 $ScriptVersion = '2.0'
 
 <# Prepare-Website.ps1 - the script to process Markdown includes for a GitHub website.
@@ -1755,7 +1755,6 @@ If ($WebsiteSubFoldersExist) {
 	Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 
 	If ($WebsiteSubFoldersArray.length -eq 0) {
-		$WebSiteSubFolders = $False
 		$ShowText = 'M04.61C  NO SUBFOLDERS FOUND ????? '
 		Out-File -filepath $TraceFileFullPath -inputobject $ShowText -append 
 		If ($DisplayInfoInScript) { Write-Host $ShowText }
@@ -1939,7 +1938,7 @@ If ($CommonFilesExist) {
 
 		foreach($line in Get-Content $CommonArray[$index1]) {
 	
-			$ShowBlankLine = $line.Trim()
+			#  $ShowBlankLine = $line.Trim()
 
 			#	If there is a blank line, the trace has '(blank line)' to be clearer to see.
 			
@@ -2090,7 +2089,7 @@ If ($CommonFilesExist) {
 			
 			If($TestFirst2Chars -ne $IncludeDelimeterStart) {
 
-				$FoundComment = $False
+				#  $FoundComment = $False
 				$FoundTwoOpenSquareBrackets = $False
 				$FoundTwoClosedSquareBrackets = $False
 				$FoundWordIncludeAnyCase = $False
@@ -2101,7 +2100,7 @@ If ($CommonFilesExist) {
 				$TestFirst7Chars = $CurrentLine.substring(0,7)
 				
 				If ($TestFirst7Chars -eq $MDCommentCoding) {
-					$FoundComment = $True
+					#  $FoundComment = $True
 					# Found comment so ignore this line
 
 					$ShowText = 'M05.22A  Comment found - will ignore this line and so will Markdown'
@@ -2557,7 +2556,7 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 
 	foreach($line in Get-Content $TopicArray[$index1]) {
 	
-		$ShowBlankLine = $line.Trim()
+		#  $ShowBlankLine = $line.Trim()
 
 		#	If there is a blank line, the trace has '(blank line)' to be clearer to see.
 
@@ -2710,7 +2709,7 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 
 		If($TestFirst2Chars -ne $IncludeDelimeterStart) {
 
-			$FoundComment = $False
+			#  $FoundComment = $False
 			$FoundTwoOpenSquareBrackets = $False
 			$FoundTwoClosedSquareBrackets = $False
 			$FoundWordIncludeAnyCase = $False
@@ -2721,7 +2720,7 @@ For ($index1 = 0; $index1 -lt $TopicArray.length; $index1++) {
 			$TestFirst7Chars = $CurrentLine.substring(0,7)
 			
 			If ($TestFirst7Chars -eq $MDCommentCoding) {
-				$FoundComment = $True
+				#  $FoundComment = $True
 				# Found comment so ignore this line
 
 				$ShowText = 'M06.22A  Comment found - will ignore this line and so will Markdown'
@@ -3721,8 +3720,8 @@ For ($index1 = 0; $index1 -lt $CommonArray.length; $index1++) {
 
 											$OldExtendLength = $CheckExtendLastStep + 1
 							
-											$NewExtendLastStep = $CheckExtendLastStep + 1
-											$NewLengthExtend = $NewExtendLastStep + 1
+											#  $NewExtendLastStep = $CheckExtendLastStep + 1
+											#  $NewLengthExtend = $NewExtendLastStep + 1
 					
 											#	Duplicate pathway in ExistingPathwayArray to NewPathwayArray
 					
@@ -5606,19 +5605,19 @@ Out-File -filepath $ReportFileFullPath -inputobject $ShowText -append
 
 If ($TotalIncludes -eq 0) {
 	# No includes for common or topic files
-	$TotalDepthOfIncludes = 0	
+	#  $TotalDepthOfIncludes = 0	
 } else { 
 	If ($TotalCommonIncludes -eq 0) {
 		# Are includes, none for common, all for topic files
-		$TotalDepthOfIncludes = 1
+		#  $TotalDepthOfIncludes = 1
 	} else {
 		$UsedDepthCommonIncludesCommon = $HighestCommonPriority
 		If ($TotalTopicIncludes -eq 0) {
 			# Are includes, some for common, none for topic files
-			$TotalDepthOfIncludes = $HighestCommonPriority
+			#  $TotalDepthOfIncludes = $HighestCommonPriority
 		} else {
 			# Are includes, some for both topic and common files
-			$TotalDepthOfIncludes = $HighestCommonPriority + 1
+			#  $TotalDepthOfIncludes = $HighestCommonPriority + 1
 			}	#	If there are common and topic includes
 	}  #	If there are common includes
 

@@ -1,5 +1,5 @@
-﻿M01.65J  Trace file for Prepare-Website-NEW.ps1   Version 2.0
-M01.65K  Run Date       10/12/2022 09:50:39
+﻿M01.65J  Trace file for Prepare-Website.ps1   Version 2.0
+M01.65K  Run Date       10/13/2022 15:30:43
 M01.71C  Created new ExpandedCommonFolder - C:\Git\GenevaERS\User-Documentation\Temp\Expanded-Common
 M01.72C  Created new ExpandedTopicsFolder - C:\Git\GenevaERS\User-Documentation\Temp\Expanded-Topics
   
@@ -340,7 +340,7 @@ M04.61D  Sub-folder C:\Git\GenevaERS\User-Documentation\docs\Workbench User Guid
 M04.61D  Sub-folder C:\Git\GenevaERS\User-Documentation\docs\_posts
 M04.61D  Sub-folder C:\Git\GenevaERS\User-Documentation\docs\_sass
 M04.61D  Sub-folder C:\Git\GenevaERS\User-Documentation\docs\_site
-M04.61E  MD files under Website 264
+M04.61E  MD files under Website 266
  
 M04.61F  Display Website MD files 
 M04.61G      MD File C:\Git\GenevaERS\User-Documentation\docs\Basic solutions\index.md
@@ -590,6 +590,8 @@ M04.61G      MD File C:\Git\GenevaERS\User-Documentation\docs\Workbench Screens\
 M04.61G      MD File C:\Git\GenevaERS\User-Documentation\docs\Workbench User Guide\index.md
 M04.61G      MD File C:\Git\GenevaERS\User-Documentation\docs\Workbench User Guide\Keyboard Shortcuts for General Users.md
 M04.61G      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ALL.md
+M04.61G      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\Workbench Logic Text Syntax\Syntax - functions\Syntax - function BATCHDATE.md
+M04.61G      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M04.61G      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\Workbench User Guide\Keyboard Shortcuts for General Users.md
 M04.61G      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\README.md
 M04.61G      MD File C:\Git\GenevaERS\User-Documentation\docs\About this website.md
@@ -670,10 +672,12 @@ M04.62B  Firstchar _
 M04.62B  Firstchar _
 M04.62B  Firstchar _
 M04.62Z  End Delete md from docs 
-M04.63A  MD files left under Website 3
+M04.63A  MD files left under Website 5
  
 M04.63B  Check Website MD files still there 
 M04.63C      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ALL.md
+M04.63C      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\Workbench Logic Text Syntax\Syntax - functions\Syntax - function BATCHDATE.md
+M04.63C      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M04.63C      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\Workbench User Guide\Keyboard Shortcuts for General Users.md
 M04.63C      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\README.md
  
@@ -2136,13 +2140,9 @@ M06.29M  end =====================================================
  
 M06.10A  start read file =========================================
 M06.10B  Read topic file 171 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function BATCHDATE.md
-M06.22A  Comment found - will ignore this line and so will Markdown
-M06.22B  Comment is "[//]: # [[ Logic Text Introduction Function BATCHDATE ]]"
+M06.22M  IncludeCoding "Logic Text\Introduction Function BATCHDATE"
+M06.29H  TopicIncludesArray(171,0) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE.md
 M06.29M  end =====================================================
-M06.30A  Topic filename with no includes = Syntax - function BATCHDATE.md
-M06.30D  Path for topic = Workbench Logic Text Syntax\Syntax - functions
-M06.30F      Result of adding path to website is SUCCESS
-M06.30G  Topic copied to website and path 
  
 M06.10A  start read file =========================================
 M06.10B  Read topic file 172 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function CURRENT.md
@@ -2863,9 +2863,11 @@ M06.30G  Topic copied to website and path
 M06.32B  TOPIC FILES WITH INCLUDES
 M06.32C  Topic 170 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ALL.md
 M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL.md
+M06.32C  Topic 171 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function BATCHDATE.md
+M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE.md
 M06.32C  Topic 215 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
-M06.32E  2 topic files have includes.
+M06.32E  3 topic files have includes.
  
 M07.00A  Create Pathways and check circular includes 
 M07.00B  Start pathway processing.
@@ -3259,6 +3261,8 @@ M08.40M  	Topic has same include at index 170 0 C:\Git\GenevaERS\User-Documentat
 M08.40N  	Priority of that include is  1
 M08.40F      Common at index 8 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate.md
 M08.40G      Priority 1
+M08.40M  	Topic has same include at index 171 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE.md
+M08.40N  	Priority of that include is  1
 M08.40F      Common at index 9 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Keyboard Shortcuts Logic Text Common.md
 M08.40G      Priority 0
 M08.40F      Common at index 10 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
@@ -3275,6 +3279,8 @@ M09.00A  Priorities for topic includes
 M09.00B  Topics with includes get priority 2
 M09.00C      Topic at index 170 C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ALL.md
 M09.00D          Priority 2
+M09.00C      Topic at index 171 C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function BATCHDATE.md
+M09.00D          Priority 2
 M09.00C      Topic at index 215 C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M09.00D          Priority 2
   
@@ -3284,6 +3290,7 @@ M10.20B      Requesting common file =  C:\Git\GenevaERS\User-Documentation\Commo
 M10.20B      Requesting common file =  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate.md
 M10.20M  Target priority is target includes priority =  2
 M10.20N      Requesting topic file =  C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ALL.md
+M10.20N      Requesting topic file =  C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function BATCHDATE.md
 M10.20N      Requesting topic file =  C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M10.20X  Created ToDo includes arrays  
 M10.30A  Display ToDo includes in trace
@@ -3303,8 +3310,11 @@ M10.30B  Priority  2
 M10.30B      Requesting File C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ALL.md
 M10.30C          Include 2 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL.md
 M10.30B  Priority  2
+M10.30B      Requesting File C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function BATCHDATE.md
+M10.30C          Include 3 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE.md
+M10.30B  Priority  2
 M10.30B      Requesting File C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Rules for all Logic Text.md
-M10.30C          Include 3 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
+M10.30C          Include 4 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
   
 M11.00A  Perform ToDoIncludes List 
 M11.10C  Created new TempInclude Folder - C:\Git\GenevaERS\User-Documentation\TempInclude
@@ -3387,10 +3397,30 @@ M11.70H  Created new TempInclude Folder - C:\Git\GenevaERS\User-Documentation\Te
  
 M11.20A  Priority of this requesting file: 2
 M11.20B  Copy input files to TempInclude  
+M11.20C      Requesting File C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function BATCHDATE.md
+M11.20D      Requesting file is a topic
+M11.20F      Requesting file copied to TempInclude Folder 
+M11.20G          Include 3 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE.md
+M11.20J          Include comes from Temp\Expanded-Common 
+M11.20K          Copied to Temp Folder 
+M11.40A  Process includes for this requesting file = Syntax - function BATCHDATE.md
+M11.40B      Filename for requesting file = Syntax - function BATCHDATE.md
+M11.40E      Path for requesting file = Workbench Logic Text Syntax\Syntax - functions
+M11.40G      Result of Confirm-Folders for expanded is SUCCESS
+M11.40H      Result of Confirm-Folders for website is SUCCESS
+M11.60A      Include Filename = Introduction Function BATCHDATE.md
+M11.70A    Topic copied to website and path 
+M11.70B         ThisExpandedFileFullPath C:\Git\GenevaERS\User-Documentation\Temp\Expanded-Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function BATCHDATE.md
+M11.70C         TopicWebsiteFullPath C:\Git\GenevaERS\User-Documentation\docs\Workbench Logic Text Syntax\Syntax - functions\Syntax - function BATCHDATE.md
+M11.70G  Deleted TempInclude Folder - C:\Git\GenevaERS\User-Documentation\TempInclude
+M11.70H  Created new TempInclude Folder - C:\Git\GenevaERS\User-Documentation\TempInclude
+ 
+M11.20A  Priority of this requesting file: 2
+M11.20B  Copy input files to TempInclude  
 M11.20C      Requesting File C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M11.20D      Requesting file is a topic
 M11.20F      Requesting file copied to TempInclude Folder 
-M11.20G          Include 3 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
+M11.20G          Include 4 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
 M11.20H          Include comes from Common Modules 
 M11.20K          Copied to Temp Folder 
 M11.40A  Process includes for this requesting file = Rules for all Logic Text.md

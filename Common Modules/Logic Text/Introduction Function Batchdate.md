@@ -1,4 +1,4 @@
-# Syntax: function BATCHDATE 
+
 
 # How do I use BATCHDATE? 
 
