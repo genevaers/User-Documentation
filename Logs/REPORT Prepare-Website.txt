@@ -1,5 +1,5 @@
-﻿M01.65E  Report file for Prepare-Website-NEW.ps1   Version 2.0
-M01.65F  Run Date       10/12/2022 09:50:39
+﻿M01.65E  Report file for Prepare-Website.ps1   Version 2.0
+M01.65F  Run Date       10/13/2022 15:30:43
   
 M02.10A 	List of important folders
   
@@ -331,10 +331,13 @@ M06.32B  TOPIC FILES WITH INCLUDES
 M06.32C  Topic 170 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ALL.md
 M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL.md
  
+M06.32C  Topic 171 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function BATCHDATE.md
+M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE.md
+ 
 M06.32C  Topic 215 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
  
-M06.32E  2 topic files have includes.
+M06.32E  3 topic files have includes.
  
 ====================================================================
  
@@ -344,8 +347,8 @@ M13.00B  Total common files         13
 M13.00C  Total topic files          261
  
 M13.00D  Common files with includes    2       Total includes in those common files    8
-M13.00E  Topic files with includes     2       Total includes in those topic files     2
-M13.00F  Total files with includes     4       Total includes in all files             10
+M13.00E  Topic files with includes     3       Total includes in those topic files     3
+M13.00F  Total files with includes     5       Total includes in all files             11
  
 ====================================================================
  
