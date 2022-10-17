@@ -6,5 +6,3 @@ has_children: true
 ---
 # Errors in User-Exits
 
-New version 2
-
