@@ -6,5 +6,3 @@ has_children: true
 ---
 # Errors in PE Programs
 
-New version 2
-
