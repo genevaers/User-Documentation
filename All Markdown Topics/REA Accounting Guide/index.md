@@ -6,5 +6,4 @@ has_children: true
 ---
 # REA Accounting Guide
 
-New version
-  
+New version 2
