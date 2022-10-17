@@ -1,5 +1,5 @@
 ﻿M01.65E  Report file for Prepare-Website.ps1   Version 2.0
-M01.65F  Run Date       10/17/2022 13:10:11
+M01.65F  Run Date       10/17/2022 14:19:11
   
 M02.10A 	List of important folders
   
@@ -55,245 +55,245 @@ M04.30C   9   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Compiler &
 M04.30C   10   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Compiler & Data Types\index.md
 M04.30C   11   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Compiler & Data Types\What Is The Compiler.md
 M04.30C   12   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Errors in PE Programs\index.md
-M04.30C   13   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Errors in User-Exits\index.md
-M04.30C   14   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature F01 - Views.md
-M04.30C   15   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature F02 - Phases.md
-M04.30C   16   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature F03 - Files.md
-M04.30C   17   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature F04 - File layouts.md
-M04.30C   18   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature F05 - Lookup Paths.md
-M04.30C   19   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature F06 - VDP File.md
-M04.30C   20   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature F07 - JLT File.md
-M04.30C   21   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature F08 - XLT File.md
-M04.30C   22   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature F09 - Logic Table codes.md
-M04.30C   23   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature F20 - Parallel running.md
-M04.30C   24   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature G01 - Workbench Environments.md
-M04.30C   25   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature G02 - Workbench Users and Groups.md
-M04.30C   26   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature G03 - Workbench View Folder.md
-M04.30C   27   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature G04 - Workbench Global Field.md
-M04.30C   28   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature G05 - Workbench Control Record.md
-M04.30C   29   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature H01 - Pipes.md
-M04.30C   30   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature H02 - Tokens.md
-M04.30C   31   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature H03 - ZIIPs.md
-M04.30C   32   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature H04 - User-Exits.md
-M04.30C   33   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature H05 - Sub-Programs.md
-M04.30C   34   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature H06 - General utilities.md
-M04.30C   35   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature H07 - Run control utilities.md
-M04.30C   36   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature H10 - Compiler.md
-M04.30C   37   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature J01 - Format Phase.md
-M04.30C   38   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature J02 - Logic Text for Format Phase.md
-M04.30C   39   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\index.md
-M04.30C   40   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\A01 - Lesson A - START HERE.md
-M04.30C   41   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\A02 - Views and phases.md
-M04.30C   42   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\A03 - Define a report.md
-M04.30C   43   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\A04 - Prepare JCL for Lesson A.md
-M04.30C   44   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\A05 - Run solution for Lesson A.md
-M04.30C   45   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\A06 - Inside solution for Lesson A.md
-M04.30C   46   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\A07 - VDP file for Lesson A.md
-M04.30C   47   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\A08 - JLT file for Lesson A.md
-M04.30C   48   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\A09 - XLT file for Lesson A.md
-M04.30C   49   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\A10 - Logic Table codes for Lesson A.md
-M04.30C   50   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\A11 - MR95 Reports for Lesson A.md
-M04.30C   51   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\A12 - Lesson A achievements.md
-M04.30C   52   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\index.md
-M04.30C   53   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\B01 - Lesson B - START HERE.md
-M04.30C   54   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\B02 - Lookup paths.md
-M04.30C   55   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\B03 - Define a lookup path.md
-M04.30C   56   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\B04 - Prepare JCL for Lesson B.md
-M04.30C   57   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\B05 - Run solution for Lesson B.md
-M04.30C   58   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\B06 - Inside solution for Lesson B.md
-M04.30C   59   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\B07 - VDP file for Lesson B.md
-M04.30C   60   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\B08 - JLT file for Lesson B.md
-M04.30C   61   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\B09 - XLT file for Lesson B.md
-M04.30C   62   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\B10 - Logic Table codes for Lesson B.md
-M04.30C   63   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\B11 - MR95 Reports for Lesson B.md
-M04.30C   64   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\B12 - Lesson B achievements.md
-M04.30C   65   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\index.md
-M04.30C   66   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\C01 - Lesson C - START HERE.md
-M04.30C   67   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\C02 - Optimize lookup paths.md
-M04.30C   68   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\C03 - Modify lookup path.md
-M04.30C   69   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\C04 - Prepare JCL for Lesson C.md
-M04.30C   70   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\C05 - Run solution for Lesson C.md
-M04.30C   71   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\C06 - Inside solution for Lesson C.md
-M04.30C   72   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\C07 - VDP file for Lesson C.md
-M04.30C   73   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\C08 - JLT file for Lesson C.md
-M04.30C   74   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\C09 - XLT file for Lesson C.md
-M04.30C   75   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\C10 - Logic Table codes for Lesson C.md
-M04.30C   76   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\C11 - MR95 Reports for Lesson C.md
-M04.30C   77   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\C12 - Lesson C achievements.md
-M04.30C   78   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\index.md
-M04.30C   79   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\01 - How to learn quickly.md
-M04.30C   80   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\02 - Introduction.md
-M04.30C   81   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\03 - Lessons Guide.md
-M04.30C   82   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\index.md
-M04.30C   83   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Overall product audio-visual training\index.md
-M04.30C   84   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\PE Checklists\A General PE Checklist.md
-M04.30C   85   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\PE Checklists\B Checklist for Pipes.md
-M04.30C   86   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\PE Checklists\C Checklist for Tokens.md
-M04.30C   87   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\PE Checklists\index.md
-M04.30C   88   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\PE Programs\index.md
-M04.30C   89   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\PE Programs\Runbook MR88 Format Data.md
-M04.30C   90   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\PE Programs\Runbook MR91 Control File Generator.md
-M04.30C   91   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\PE Programs\Runbook MR95E Extract Data.md
-M04.30C   92   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\PE Programs\Runbook MR95R Reference Data.md
-M04.30C   93   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Product high performance audio-visual training\index.md
-M04.30C   94   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Control Utilities\A How to read syntax diagrams.md
-M04.30C   95   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Control Utilities\GVBLTPRT DD Statements.md
-M04.30C   96   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Control Utilities\GVBLTPRT Parameter File Syntax.md
-M04.30C   97   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Control Utilities\GVBMR91 DD Statements.md
-M04.30C   98   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Control Utilities\GVBMR91 Parameter File Syntax.md
-M04.30C   99   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Control Utilities\GVBVDPNL DD Statements.md
-M04.30C   100   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Control Utilities\GVBVDPNL Parameter File Syntax.md
-M04.30C   101   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Control Utilities\index.md
-M04.30C   102   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Control Utilities\Runbook MR48 VDP XML Importer.md
-M04.30C   103   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Control Utilities\Runbook MR93 Job Scheduler.md
-M04.30C   104   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Control Utilities\Runbook UT90 Logic Table Report.md
-M04.30C   105   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Control Utilities\Runbook UT99 User Abend.md
-M04.30C   106   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Performance Engine (PE)\A Create JCL for batch flow.md
-M04.30C   107   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Performance Engine (PE)\B Run PE.md
-M04.30C   108   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Performance Engine (PE)\C Turbocharge PE.md
-M04.30C   109   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Performance Engine (PE)\index.md
-M04.30C   110   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\index.md
-M04.30C   111   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook DAYS Date Diff Calculator.md
-M04.30C   112   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook GDAT Date Convert Serial to Gregorian.md
-M04.30C   113   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook JDAY Date Convert Gregorian to Serial.md
-M04.30C   114   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR05 Memory Allocation.md
-M04.30C   115   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR10 Memory Release.md
-M04.30C   116   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR15 Address Pointer Set.md
-M04.30C   117   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR20 Sequential IO.md
-M04.30C   118   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR25 Direct Sequential File.md
-M04.30C   119   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR26 Data Set VOLSER List.md
-M04.30C   120   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR27 File Extent Table.md
-M04.30C   121   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR28 Relative Block Num Convert.md
-M04.30C   122   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR29 File VOLSER List.md
-M04.30C   123   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR30 DB2 Table Read.md
-M04.30C   124   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR31 Data Set Name.md
-M04.30C   125   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR32 Dataspace Services.md
-M04.30C   126   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR33 Substitute Symbolic Var.md
-M04.30C   127   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR35 Dynamic Allocation.md
-M04.30C   128   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR39 GENWRITE.md
-M04.30C   129   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR40 HW Compress Expand.md
-M04.30C   130   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR45 Table Search.md
-M04.30C   131   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR65 Get System Info.md
-M04.30C   132   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR66 COBOL ENQ DEQ.md
-M04.30C   133   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook XXTHC Exit Space And Threads.md
-M04.30C   134   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Typical goals\Goal1 - Speed a report.md
-M04.30C   135   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Typical goals\Goal2 - Speed overnight batch.md
-M04.30C   136   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Typical goals\Goal3 - Make possible complex reports.md
-M04.30C   137   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Typical goals\Goal4 - Change annual reports.md
-M04.30C   138   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Typical goals\index.md
-M04.30C   139   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Use this product in your company\index.md
-M04.30C   140   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Use this product in your company\Stage1 - Define goal.md
-M04.30C   141   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Use this product in your company\Stage2 - Analyze existing systems.md
-M04.30C   142   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Use this product in your company\Stage3 - Design batch flows.md
-M04.30C   143   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Use this product in your company\Stage4 - Develop solution in workbench.md
-M04.30C   144   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Use this product in your company\Stage5 - Run solution.md
-M04.30C   145   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User guide - start here\First steps.md
-M04.30C   146   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User guide - start here\index.md
-M04.30C   147   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User guide - start here\What is GenevaERS.md
-M04.30C   148   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\How to program User-Exits.md
-M04.30C   149   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\index.md
-M04.30C   150   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\Runbook LX13 Key Break Tester.md
-M04.30C   151   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\Runbook RD15 Lookup Detail File Convert.md
-M04.30C   152   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\Runbook RD35 Lookup File Build.md
-M04.30C   153   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\Runbook SMFX SMF Record Flattening.md
-M04.30C   154   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\Runbook SR01 Permutation Exploder Old.md
-M04.30C   155   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\Runbook SR02 Permutation Exploder.md
-M04.30C   156   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\Runbook XLENV MR92 Env Info Lookup.md
-M04.30C   157   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\Runbook XLEXP Calculate exponential values.md
-M04.30C   158   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\Runbook XLFIL MR95 File Info Lookup.md
-M04.30C   159   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\Runbook XLST String Concatenator.md
-M04.30C   160   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\Runbook XP01 Record Paste Up.md
-M04.30C   161   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Admin Guide\index.md
-M04.30C   162   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Admin Guide\Keyboard Shortcuts for Admins.md
-M04.30C   163   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench audio-visual training\index.md
-M04.30C   164   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Intro\Dummy.md
-M04.30C   165   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Intro\index.md
-M04.30C   166   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Summary Diagrams\Diagrams - Extract Column Assignment (ECA).md
-M04.30C   167   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Summary Diagrams\Diagrams - Extract Record Filter (ERF).md
-M04.30C   168   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Summary Diagrams\Diagrams - Format Column Assignment (FCA).md
-M04.30C   169   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Summary Diagrams\Diagrams - Format Record Filter (FRF).md
-M04.30C   170   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Summary Diagrams\index.md
-M04.30C   171   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\index.md
-M04.30C   172   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ALL.md
-M04.30C   173   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function BATCHDATE.md
-M04.30C   174   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function CURRENT.md
-M04.30C   175   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function DATE.md
-M04.30C   176   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function DAYSBETWEEN.md
-M04.30C   177   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function FISCALDAY.md
-M04.30C   178   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function FISCALMONTH.md
-M04.30C   179   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function FISCALQUARTER.md
-M04.30C   180   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function FISCALYEAR.md
-M04.30C   181   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ISFOUND.md
-M04.30C   182   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ISNOTFOUND.md
-M04.30C   183   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ISNOTNULL.md
-M04.30C   184   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ISNOTNUMERIC.md
-M04.30C   185   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ISNOTSPACES.md
-M04.30C   186   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ISNULL.md
-M04.30C   187   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ISNUMERIC.md
-M04.30C   188   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ISSPACES.md
-M04.30C   189   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function MONTHSBETWEEN.md
-M04.30C   190   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function PRIOR.md
-M04.30C   191   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function Q1, Q2, Q3 and Q4.md
-M04.30C   192   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function REPEAT.md
-M04.30C   193   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function RUNDAY.md
-M04.30C   194   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function RUNMONTH.md
-M04.30C   195   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function RUNPERIOD.md
-M04.30C   196   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function RUNQUARTER.md
-M04.30C   197   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function RUNYEAR.md
-M04.30C   198   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function YEARSBETWEEN.md
-M04.30C   199   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - IF statements\index.md
-M04.30C   200   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - IF statements\Syntax - IF statements in Extract Column Assignment (ECA).md
-M04.30C   201   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - IF statements\Syntax - IF statements in Extract Record Filter (ERF).md
-M04.30C   202   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - IF statements\Syntax - IF statements in Format Column Calculation (FCC).md
-M04.30C   203   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - IF statements\Syntax - IF statements in Format Record Filter (FRF).md
-M04.30C   204   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - SELECT, SELECTIF, SKIP & SKIPIF statements\index.md
-M04.30C   205   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - SELECT, SELECTIF, SKIP & SKIPIF statements\Syntax - SELECT & SELECTIF statements in Extract Record Filter (ERF).md
-M04.30C   206   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - SELECT, SELECTIF, SKIP & SKIPIF statements\Syntax - SELECT & SELECTIF statements in Format Record Filter (FRF).md
-M04.30C   207   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - SELECT, SELECTIF, SKIP & SKIPIF statements\Syntax - SKIP & SKIPIF statements in Extract Record Filter (ERF).md
-M04.30C   208   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - SELECT, SELECTIF, SKIP & SKIPIF statements\Syntax - SKIP & SKIPIF statements in Format Record Filter (FRF).md
-M04.30C   209   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - string comparison\index.md
-M04.30C   210   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - string comparison\Syntax - BEGINS_WITH.md
-M04.30C   211   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - string comparison\Syntax - CONTAINS.md
-M04.30C   212   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - string comparison\Syntax - ENDS_WITH.md
-M04.30C   213   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - string comparison\Syntax - LIKE.md
-M04.30C   214   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - string comparison\Syntax - MATCHES.md
-M04.30C   215   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\index.md
-M04.30C   216   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Keyboard Shortcuts Logic Text.md
-M04.30C   217   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Rules for all Logic Text.md
-M04.30C   218   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - COLUMN & Col.nnn statements.md
-M04.30C   219   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - lookup paths.md
-M04.30C   220   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - WRITE statements.md
-M04.30C   221   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Extract Column Assignment (ECA)\Examples - COLUMN & COL.nnn statements.md
-M04.30C   222   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Extract Column Assignment (ECA)\Examples - IF statements with COLUMN & COL.nnn.md
-M04.30C   223   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Extract Column Assignment (ECA)\Examples - WRITE statements.md
-M04.30C   224   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Extract Column Assignment (ECA)\index.md
-M04.30C   225   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Extract Column Assignment (ECA)\Introduction - Extract Column Assignment (ECA).md
-M04.30C   226   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Extract Record Filter (ERF)\Examples - IF statements with SELECT.md
-M04.30C   227   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Extract Record Filter (ERF)\Examples - IF statements with SKIP.md
-M04.30C   228   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Extract Record Filter (ERF)\Examples - SELECTIF statements.md
-M04.30C   229   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Extract Record Filter (ERF)\Examples - SKIPIF statements.md
-M04.30C   230   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Extract Record Filter (ERF)\Examples - WRITE statements.md
-M04.30C   231   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Extract Record Filter (ERF)\index.md
-M04.30C   232   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Extract Record Filter (ERF)\Introduction - Extract Record Filter (ERF).md
-M04.30C   233   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Format Column Calculations (FCC)\Examples - COLUMN statements.md
-M04.30C   234   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Format Column Calculations (FCC)\Examples - IF statements with COLUMN.md
-M04.30C   235   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Format Column Calculations (FCC)\index.md
-M04.30C   236   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Format Column Calculations (FCC)\Introduction - Format Column Calculations (FCC).md
-M04.30C   237   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Format Record Filter (FRF)\Examples - IF statements with SELECT.md
-M04.30C   238   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Format Record Filter (FRF)\Examples - IF statements with SKIP.md
-M04.30C   239   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Format Record Filter (FRF)\Examples - SELECTIF statements.md
-M04.30C   240   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Format Record Filter (FRF)\Examples - SKIPIF statements.md
-M04.30C   241   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Format Record Filter (FRF)\index.md
-M04.30C   242   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Format Record Filter (FRF)\Introduction - Format Record Filter (FRF).md
-M04.30C   243   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\index.md
-M04.30C   244   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Screens\index.md
-M04.30C   245   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Screens\WorkbenchScreenDependencyChecker.md
-M04.30C   246   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench User Guide\index.md
-M04.30C   247   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench User Guide\Keyboard Shortcuts for General Users.md
-M04.30C   248   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\About this website.md
-M04.30C   249   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Errors in Run Control Utilities.md
-M04.30C   250   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Errors in Sub-Programs.md
-M04.30C   251   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Errors in Workbench.md
+M04.30C   13   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Errors in Run Control Utilities\index.md
+M04.30C   14   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Errors in Sub-Programs\index.md
+M04.30C   15   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Errors in User-Exits\index.md
+M04.30C   16   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Errors in Workbench\index.md
+M04.30C   17   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature F01 - Views.md
+M04.30C   18   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature F02 - Phases.md
+M04.30C   19   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature F03 - Files.md
+M04.30C   20   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature F04 - File layouts.md
+M04.30C   21   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature F05 - Lookup Paths.md
+M04.30C   22   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature F06 - VDP File.md
+M04.30C   23   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature F07 - JLT File.md
+M04.30C   24   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature F08 - XLT File.md
+M04.30C   25   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature F09 - Logic Table codes.md
+M04.30C   26   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature F20 - Parallel running.md
+M04.30C   27   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature G01 - Workbench Environments.md
+M04.30C   28   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature G02 - Workbench Users and Groups.md
+M04.30C   29   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature G03 - Workbench View Folder.md
+M04.30C   30   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature G04 - Workbench Global Field.md
+M04.30C   31   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature G05 - Workbench Control Record.md
+M04.30C   32   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature H01 - Pipes.md
+M04.30C   33   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature H02 - Tokens.md
+M04.30C   34   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature H03 - ZIIPs.md
+M04.30C   35   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature H04 - User-Exits.md
+M04.30C   36   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature H05 - Sub-Programs.md
+M04.30C   37   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature H06 - General utilities.md
+M04.30C   38   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature H07 - Run control utilities.md
+M04.30C   39   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature H10 - Compiler.md
+M04.30C   40   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature J01 - Format Phase.md
+M04.30C   41   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\Feature J02 - Logic Text for Format Phase.md
+M04.30C   42   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Feature introductions\index.md
+M04.30C   43   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\A01 - Lesson A - START HERE.md
+M04.30C   44   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\A02 - Views and phases.md
+M04.30C   45   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\A03 - Define a report.md
+M04.30C   46   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\A04 - Prepare JCL for Lesson A.md
+M04.30C   47   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\A05 - Run solution for Lesson A.md
+M04.30C   48   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\A06 - Inside solution for Lesson A.md
+M04.30C   49   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\A07 - VDP file for Lesson A.md
+M04.30C   50   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\A08 - JLT file for Lesson A.md
+M04.30C   51   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\A09 - XLT file for Lesson A.md
+M04.30C   52   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\A10 - Logic Table codes for Lesson A.md
+M04.30C   53   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\A11 - MR95 Reports for Lesson A.md
+M04.30C   54   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\A12 - Lesson A achievements.md
+M04.30C   55   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson A - Simple report\index.md
+M04.30C   56   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\B01 - Lesson B - START HERE.md
+M04.30C   57   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\B02 - Lookup paths.md
+M04.30C   58   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\B03 - Define a lookup path.md
+M04.30C   59   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\B04 - Prepare JCL for Lesson B.md
+M04.30C   60   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\B05 - Run solution for Lesson B.md
+M04.30C   61   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\B06 - Inside solution for Lesson B.md
+M04.30C   62   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\B07 - VDP file for Lesson B.md
+M04.30C   63   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\B08 - JLT file for Lesson B.md
+M04.30C   64   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\B09 - XLT file for Lesson B.md
+M04.30C   65   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\B10 - Logic Table codes for Lesson B.md
+M04.30C   66   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\B11 - MR95 Reports for Lesson B.md
+M04.30C   67   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\B12 - Lesson B achievements.md
+M04.30C   68   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson B -  Add lookup to report\index.md
+M04.30C   69   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\C01 - Lesson C - START HERE.md
+M04.30C   70   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\C02 - Optimize lookup paths.md
+M04.30C   71   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\C03 - Modify lookup path.md
+M04.30C   72   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\C04 - Prepare JCL for Lesson C.md
+M04.30C   73   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\C05 - Run solution for Lesson C.md
+M04.30C   74   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\C06 - Inside solution for Lesson C.md
+M04.30C   75   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\C07 - VDP file for Lesson C.md
+M04.30C   76   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\C08 - JLT file for Lesson C.md
+M04.30C   77   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\C09 - XLT file for Lesson C.md
+M04.30C   78   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\C10 - Logic Table codes for Lesson C.md
+M04.30C   79   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\C11 - MR95 Reports for Lesson C.md
+M04.30C   80   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\C12 - Lesson C achievements.md
+M04.30C   81   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\Lesson C - Speed the lookup\index.md
+M04.30C   82   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\01 - How to learn quickly.md
+M04.30C   83   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\02 - Introduction.md
+M04.30C   84   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\03 - Lessons Guide.md
+M04.30C   85   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Lessons in basic skills\index.md
+M04.30C   86   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Overall product audio-visual training\index.md
+M04.30C   87   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\PE Checklists\A General PE Checklist.md
+M04.30C   88   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\PE Checklists\B Checklist for Pipes.md
+M04.30C   89   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\PE Checklists\C Checklist for Tokens.md
+M04.30C   90   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\PE Checklists\index.md
+M04.30C   91   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\PE Programs\index.md
+M04.30C   92   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\PE Programs\Runbook MR88 Format Data.md
+M04.30C   93   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\PE Programs\Runbook MR91 Control File Generator.md
+M04.30C   94   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\PE Programs\Runbook MR95E Extract Data.md
+M04.30C   95   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\PE Programs\Runbook MR95R Reference Data.md
+M04.30C   96   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Product high performance audio-visual training\index.md
+M04.30C   97   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Control Utilities\A How to read syntax diagrams.md
+M04.30C   98   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Control Utilities\GVBLTPRT DD Statements.md
+M04.30C   99   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Control Utilities\GVBLTPRT Parameter File Syntax.md
+M04.30C   100   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Control Utilities\GVBMR91 DD Statements.md
+M04.30C   101   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Control Utilities\GVBMR91 Parameter File Syntax.md
+M04.30C   102   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Control Utilities\GVBVDPNL DD Statements.md
+M04.30C   103   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Control Utilities\GVBVDPNL Parameter File Syntax.md
+M04.30C   104   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Control Utilities\index.md
+M04.30C   105   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Control Utilities\Runbook MR48 VDP XML Importer.md
+M04.30C   106   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Control Utilities\Runbook MR93 Job Scheduler.md
+M04.30C   107   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Control Utilities\Runbook UT90 Logic Table Report.md
+M04.30C   108   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Control Utilities\Runbook UT99 User Abend.md
+M04.30C   109   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Performance Engine (PE)\A Create JCL for batch flow.md
+M04.30C   110   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Performance Engine (PE)\B Run PE.md
+M04.30C   111   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Performance Engine (PE)\C Turbocharge PE.md
+M04.30C   112   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Run Performance Engine (PE)\index.md
+M04.30C   113   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\index.md
+M04.30C   114   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook DAYS Date Diff Calculator.md
+M04.30C   115   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook GDAT Date Convert Serial to Gregorian.md
+M04.30C   116   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook JDAY Date Convert Gregorian to Serial.md
+M04.30C   117   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR05 Memory Allocation.md
+M04.30C   118   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR10 Memory Release.md
+M04.30C   119   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR15 Address Pointer Set.md
+M04.30C   120   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR20 Sequential IO.md
+M04.30C   121   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR25 Direct Sequential File.md
+M04.30C   122   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR26 Data Set VOLSER List.md
+M04.30C   123   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR27 File Extent Table.md
+M04.30C   124   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR28 Relative Block Num Convert.md
+M04.30C   125   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR29 File VOLSER List.md
+M04.30C   126   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR30 DB2 Table Read.md
+M04.30C   127   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR31 Data Set Name.md
+M04.30C   128   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR32 Dataspace Services.md
+M04.30C   129   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR33 Substitute Symbolic Var.md
+M04.30C   130   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR35 Dynamic Allocation.md
+M04.30C   131   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR39 GENWRITE.md
+M04.30C   132   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR40 HW Compress Expand.md
+M04.30C   133   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR45 Table Search.md
+M04.30C   134   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR65 Get System Info.md
+M04.30C   135   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook UR66 COBOL ENQ DEQ.md
+M04.30C   136   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Sub-Programs\Runbook XXTHC Exit Space And Threads.md
+M04.30C   137   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Typical goals\Goal1 - Speed a report.md
+M04.30C   138   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Typical goals\Goal2 - Speed overnight batch.md
+M04.30C   139   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Typical goals\Goal3 - Make possible complex reports.md
+M04.30C   140   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Typical goals\Goal4 - Change annual reports.md
+M04.30C   141   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Typical goals\index.md
+M04.30C   142   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Use this product in your company\index.md
+M04.30C   143   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Use this product in your company\Stage1 - Define goal.md
+M04.30C   144   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Use this product in your company\Stage2 - Analyze existing systems.md
+M04.30C   145   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Use this product in your company\Stage3 - Design batch flows.md
+M04.30C   146   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Use this product in your company\Stage4 - Develop solution in workbench.md
+M04.30C   147   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Use this product in your company\Stage5 - Run solution.md
+M04.30C   148   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User guide - start here\First steps.md
+M04.30C   149   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User guide - start here\index.md
+M04.30C   150   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User guide - start here\What is GenevaERS.md
+M04.30C   151   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\How to program User-Exits.md
+M04.30C   152   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\index.md
+M04.30C   153   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\Runbook LX13 Key Break Tester.md
+M04.30C   154   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\Runbook RD15 Lookup Detail File Convert.md
+M04.30C   155   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\Runbook RD35 Lookup File Build.md
+M04.30C   156   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\Runbook SMFX SMF Record Flattening.md
+M04.30C   157   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\Runbook SR01 Permutation Exploder Old.md
+M04.30C   158   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\Runbook SR02 Permutation Exploder.md
+M04.30C   159   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\Runbook XLENV MR92 Env Info Lookup.md
+M04.30C   160   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\Runbook XLEXP Calculate exponential values.md
+M04.30C   161   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\Runbook XLFIL MR95 File Info Lookup.md
+M04.30C   162   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\Runbook XLST String Concatenator.md
+M04.30C   163   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\User-Exits\Runbook XP01 Record Paste Up.md
+M04.30C   164   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Admin Guide\index.md
+M04.30C   165   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Admin Guide\Keyboard Shortcuts for Admins.md
+M04.30C   166   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench audio-visual training\index.md
+M04.30C   167   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Intro\Dummy.md
+M04.30C   168   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Intro\index.md
+M04.30C   169   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Summary Diagrams\Diagrams - Extract Column Assignment (ECA).md
+M04.30C   170   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Summary Diagrams\Diagrams - Extract Record Filter (ERF).md
+M04.30C   171   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Summary Diagrams\Diagrams - Format Column Assignment (FCA).md
+M04.30C   172   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Summary Diagrams\Diagrams - Format Record Filter (FRF).md
+M04.30C   173   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Summary Diagrams\index.md
+M04.30C   174   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\index.md
+M04.30C   175   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ALL.md
+M04.30C   176   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function BATCHDATE.md
+M04.30C   177   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function CURRENT.md
+M04.30C   178   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function DATE.md
+M04.30C   179   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function DAYSBETWEEN.md
+M04.30C   180   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function FISCALDAY.md
+M04.30C   181   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function FISCALMONTH.md
+M04.30C   182   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function FISCALQUARTER.md
+M04.30C   183   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function FISCALYEAR.md
+M04.30C   184   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ISFOUND.md
+M04.30C   185   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ISNOTFOUND.md
+M04.30C   186   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ISNOTNULL.md
+M04.30C   187   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ISNOTNUMERIC.md
+M04.30C   188   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ISNOTSPACES.md
+M04.30C   189   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ISNULL.md
+M04.30C   190   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ISNUMERIC.md
+M04.30C   191   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ISSPACES.md
+M04.30C   192   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function MONTHSBETWEEN.md
+M04.30C   193   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function PRIOR.md
+M04.30C   194   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function Q1, Q2, Q3 and Q4.md
+M04.30C   195   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function REPEAT.md
+M04.30C   196   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function RUNDAY.md
+M04.30C   197   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function RUNMONTH.md
+M04.30C   198   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function RUNPERIOD.md
+M04.30C   199   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function RUNQUARTER.md
+M04.30C   200   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function RUNYEAR.md
+M04.30C   201   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function YEARSBETWEEN.md
+M04.30C   202   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - IF statements\index.md
+M04.30C   203   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - IF statements\Syntax - IF statements in Extract Column Assignment (ECA).md
+M04.30C   204   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - IF statements\Syntax - IF statements in Extract Record Filter (ERF).md
+M04.30C   205   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - IF statements\Syntax - IF statements in Format Column Calculation (FCC).md
+M04.30C   206   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - IF statements\Syntax - IF statements in Format Record Filter (FRF).md
+M04.30C   207   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - SELECT, SELECTIF, SKIP & SKIPIF statements\index.md
+M04.30C   208   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - SELECT, SELECTIF, SKIP & SKIPIF statements\Syntax - SELECT & SELECTIF statements in Extract Record Filter (ERF).md
+M04.30C   209   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - SELECT, SELECTIF, SKIP & SKIPIF statements\Syntax - SELECT & SELECTIF statements in Format Record Filter (FRF).md
+M04.30C   210   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - SELECT, SELECTIF, SKIP & SKIPIF statements\Syntax - SKIP & SKIPIF statements in Extract Record Filter (ERF).md
+M04.30C   211   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - SELECT, SELECTIF, SKIP & SKIPIF statements\Syntax - SKIP & SKIPIF statements in Format Record Filter (FRF).md
+M04.30C   212   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - string comparison\index.md
+M04.30C   213   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - string comparison\Syntax - BEGINS_WITH.md
+M04.30C   214   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - string comparison\Syntax - CONTAINS.md
+M04.30C   215   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - string comparison\Syntax - ENDS_WITH.md
+M04.30C   216   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - string comparison\Syntax - LIKE.md
+M04.30C   217   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - string comparison\Syntax - MATCHES.md
+M04.30C   218   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\index.md
+M04.30C   219   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Keyboard Shortcuts Logic Text.md
+M04.30C   220   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Rules for all Logic Text.md
+M04.30C   221   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - COLUMN & Col.nnn statements.md
+M04.30C   222   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - lookup paths.md
+M04.30C   223   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - WRITE statements.md
+M04.30C   224   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Extract Column Assignment (ECA)\Examples - COLUMN & COL.nnn statements.md
+M04.30C   225   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Extract Column Assignment (ECA)\Examples - IF statements with COLUMN & COL.nnn.md
+M04.30C   226   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Extract Column Assignment (ECA)\Examples - WRITE statements.md
+M04.30C   227   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Extract Column Assignment (ECA)\index.md
+M04.30C   228   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Extract Column Assignment (ECA)\Introduction - Extract Column Assignment (ECA).md
+M04.30C   229   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Extract Record Filter (ERF)\Examples - IF statements with SELECT.md
+M04.30C   230   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Extract Record Filter (ERF)\Examples - IF statements with SKIP.md
+M04.30C   231   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Extract Record Filter (ERF)\Examples - SELECTIF statements.md
+M04.30C   232   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Extract Record Filter (ERF)\Examples - SKIPIF statements.md
+M04.30C   233   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Extract Record Filter (ERF)\Examples - WRITE statements.md
+M04.30C   234   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Extract Record Filter (ERF)\index.md
+M04.30C   235   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Extract Record Filter (ERF)\Introduction - Extract Record Filter (ERF).md
+M04.30C   236   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Format Column Calculations (FCC)\Examples - COLUMN statements.md
+M04.30C   237   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Format Column Calculations (FCC)\Examples - IF statements with COLUMN.md
+M04.30C   238   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Format Column Calculations (FCC)\index.md
+M04.30C   239   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Format Column Calculations (FCC)\Introduction - Format Column Calculations (FCC).md
+M04.30C   240   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Format Record Filter (FRF)\Examples - IF statements with SELECT.md
+M04.30C   241   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Format Record Filter (FRF)\Examples - IF statements with SKIP.md
+M04.30C   242   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Format Record Filter (FRF)\Examples - SELECTIF statements.md
+M04.30C   243   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Format Record Filter (FRF)\Examples - SKIPIF statements.md
+M04.30C   244   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Format Record Filter (FRF)\index.md
+M04.30C   245   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\Format Record Filter (FRF)\Introduction - Format Record Filter (FRF).md
+M04.30C   246   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Types\index.md
+M04.30C   247   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Screens\index.md
+M04.30C   248   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Screens\WorkbenchScreenDependencyChecker.md
+M04.30C   249   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench User Guide\index.md
+M04.30C   250   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench User Guide\Keyboard Shortcuts for General Users.md
+M04.30C   251   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\About this website.md
 M04.30C   252   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Frequently Asked Questions (FAQ).md
 M04.30C   253   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\How this website works.md
 M04.30C   254   C:\Git\GenevaERS\User-Documentation\All Markdown Topics\index.md
@@ -328,13 +328,13 @@ M05.30E  2 common files have includes.
  
 M06.32B  TOPIC FILES WITH INCLUDES
  
-M06.32C  Topic 172 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ALL.md
+M06.32C  Topic 175 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ALL.md
 M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL.md
  
-M06.32C  Topic 173 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function BATCHDATE.md
+M06.32C  Topic 176 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function BATCHDATE.md
 M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE.md
  
-M06.32C  Topic 217 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Rules for all Logic Text.md
+M06.32C  Topic 220 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
  
 M06.32E  3 topic files have includes.
