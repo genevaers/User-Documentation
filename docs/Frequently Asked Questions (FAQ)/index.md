@@ -6,6 +6,4 @@ has_children: true
 ---
 # Frequently Asked Questions (FAQ)
 
-New version
-
-  
+New version 2
