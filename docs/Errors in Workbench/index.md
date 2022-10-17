@@ -6,5 +6,4 @@ has_children: true
 ---
 # Errors in Workbench
 
-New version
-  
+New version 2
