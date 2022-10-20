@@ -1,5 +1,5 @@
 ﻿M01.65E  Report file for Prepare-Website.ps1   Version 2.0
-M01.65F  Run Date       10/17/2022 16:30:51
+M01.65F  Run Date       10/20/2022 16:22:46
   
 M02.10A 	List of important folders
   
@@ -24,17 +24,17 @@ M03.30B  COMMON FILES
  
 M03.30C  	0   C:\Git\GenevaERS\User-Documentation\Common Modules\FAQ\Keyboard Shortcuts All WB Screens Common.md
 M03.30C  	1   C:\Git\GenevaERS\User-Documentation\Common Modules\FAQ\Keyboard Shortcuts Common.md
-M03.30C  	2   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend.md
+M03.30C  	2   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M03.30C  	3   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ECA.md
 M03.30C  	4   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ERF.md
 M03.30C  	5   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ECA.md
 M03.30C  	6   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ERF.md
-M03.30C  	7   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL.md
-M03.30C  	8   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate.md
+M03.30C  	7   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M03.30C  	8   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M03.30C  	9   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Keyboard Shortcuts Logic Text Common.md
 M03.30C  	10   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
-M03.30C  	11   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL.md
-M03.30C  	12   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE.md
+M03.30C  	11   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
+M03.30C  	12   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
  
 M03.30D  Total common files: 13
  
@@ -310,15 +310,15 @@ M04.30D  Total Topic Files: 261
  
 M05.30B  COMMON FILES WITH INCLUDES
  
-M05.30C  Common 7 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL.md
-M05.30D       INCLUDES C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend.md
-M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL.md
+M05.30C  Common 7 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M05.30D       INCLUDES C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
+M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ERF.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ECA.md
  
-M05.30C  Common 8 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate.md
-M05.30D       INCLUDES C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend.md
-M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE.md
+M05.30C  Common 8 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
+M05.30D       INCLUDES C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
+M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ERF.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ECA.md
  
@@ -329,10 +329,10 @@ M05.30E  2 common files have includes.
 M06.32B  TOPIC FILES WITH INCLUDES
  
 M06.32C  Topic 177 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ALL.md
-M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL.md
+M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
  
 M06.32C  Topic 178 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function BATCHDATE.md
-M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE.md
+M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
  
 M06.32C  Topic 222 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
