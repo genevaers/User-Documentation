@@ -12,4 +12,4 @@ TABLE OF CONTENTS
 {:toc}  
  
 
- [[ INCLUDE: Logic Text\Introduction Function ALL ]]
+ [[ INCLUDE: Logic Text\Introduction Function ALL Level 3 ]]

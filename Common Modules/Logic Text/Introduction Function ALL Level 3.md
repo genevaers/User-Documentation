@@ -6,11 +6,11 @@ If you provide a text string then ALL can check if all of a field value is that 
 
 ALL can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
 
-[[INCLUDE: Logic Text\AA Syntax Legend ]]
+[[INCLUDE: Logic Text\AA Syntax Legend Level 3 ]]
 
 # Syntax 
 
-[[INCLUDE: Logic Text\Syntax Function ALL ]]
+[[INCLUDE: Logic Text\Syntax Function ALL Level 3 ]]
 
 # Rules for the syntax 
 

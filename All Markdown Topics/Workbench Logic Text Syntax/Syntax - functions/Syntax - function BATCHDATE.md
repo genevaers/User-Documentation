@@ -12,4 +12,4 @@ TABLE OF CONTENTS
 {:toc}  
  
 
- [[ INCLUDE: Logic Text\Introduction Function BATCHDATE ]]
+ [[ INCLUDE: Logic Text\Introduction Function BATCHDATE Level 3 ]]
