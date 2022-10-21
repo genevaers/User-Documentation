@@ -1,8 +1,4 @@
 ﻿M01.65A  Error file for Prepare-Website.ps1   Version 2.0
-M01.65B  Run Date       10/21/2022 15:17:33
+M01.65B  Run Date       10/21/2022 16:10:22
  
-M06.20J  ERROR - Include coding must start "[[ INCLUDE: " OR "[[INCLUDE: "
-M06.20K  Include coding "[[ [[ INCLUDE: Logic Text\Introduction Function ALL Level 3 ]]"
-M06.20L  File: C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ALL.md
- 
-M06.40A  ERROR - Includes have errors (see other messages).  Run terminated.
+M13.00Z  No errors 
