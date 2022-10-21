@@ -1,5 +1,5 @@
 ﻿M01.65E  Report file for Prepare-Website.ps1   Version 2.0
-M01.65F  Run Date       10/21/2022 15:17:33
+M01.65F  Run Date       10/21/2022 16:10:22
   
 M02.10A 	List of important folders
   
@@ -35,8 +35,9 @@ M03.30C  	9   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Keyb
 M03.30C  	10   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
 M03.30C  	11   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
 M03.30C  	12   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
+M03.30C  	13   C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
  
-M03.30D  Total common files: 13
+M03.30D  Total common files: 14
  
 ====================================================================
  
@@ -324,13 +325,12 @@ M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic 
  
 M05.30E  2 common files have includes.
  
- 
-M06.20J  ERROR - Include coding must start "[[ INCLUDE: " OR "[[INCLUDE: "
-M06.20K  Include coding "[[ [[ INCLUDE: Logic Text\Introduction Function ALL Level 3 ]]"
-M06.20L  File: C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ALL.md
 ====================================================================
  
 M06.32B  TOPIC FILES WITH INCLUDES
+ 
+M06.32C  Topic 177 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ALL.md
+M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
  
 M06.32C  Topic 178 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function BATCHDATE.md
 M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
@@ -338,4 +338,33 @@ M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic
 M06.32C  Topic 222 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
  
-M06.32E  2 topic files have includes.
+M06.32C  Topic 254 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\About this website.md
+M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
+ 
+M06.32E  4 topic files have includes.
+ 
+====================================================================
+ 
+M13.00A  SUMMARY OF INCLUDES          
+ 
+M13.00B  Total common files         14
+M13.00C  Total topic files          261
+ 
+M13.00D  Common files with includes    2       Total includes in those common files    8
+M13.00E  Topic files with includes     4       Total includes in those topic files     4
+M13.00F  Total files with includes     6       Total includes in all files             12
+ 
+====================================================================
+ 
+Comparison of parameters to usage 
+ 
+M13.20A  Includes Per Common        - Param Max = 25           Largest = 4
+M13.20B  Includes Per Topic         - Param Max = 25           Largest = 1
+M13.20C  DepthCommonIncludesCommons - Param Max = 5            Used Depth = 1
+ 
+M13.20D  Pathways = Total instances of a common including a common to any depth
+M13.20D  Pathways                   - Param Max =  500         Used = 8
+ 
+====================================================================
+ 
+M13.00Y  Successful end
