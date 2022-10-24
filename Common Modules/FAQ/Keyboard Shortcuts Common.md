@@ -1,6 +1,6 @@
 # Shortcuts - All workbench screens 
 
-[//]: # {{ FAQ\Keyboard Shortcuts All WB Screens Common }}  
+[[ INCLUDE: FAQ\Keyboard Shortcuts All WB Screens Common ]]  
 
 # Shortcuts - Navigator
 
