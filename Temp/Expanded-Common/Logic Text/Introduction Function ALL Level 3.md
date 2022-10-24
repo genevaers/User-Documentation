@@ -29,6 +29,7 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 # Examples: ALL function in Extract Column Assignment 
 
+
 |Example logic text|Meaning|
 |------------------|-------|
 |IF (field3} = "Total")<br>THEN COLUMN = ALL("-")<br>ENDIF|If field3 is "Total" then set the<br> current column to all dashes.|
