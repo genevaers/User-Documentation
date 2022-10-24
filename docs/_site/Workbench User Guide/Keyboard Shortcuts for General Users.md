@@ -12,7 +12,7 @@ TABLE OF CONTENTS
 {:toc}  
 
 # Shortcuts - All workbench screens 
- # Shortcuts-AllWBScrns
+
 
 These shortcuts work on all workbench screens **except the Connection screen and the Login screen.**
   
@@ -293,4 +293,6 @@ Remember to also see heading [Shortcuts - All workbench screens](#Shortcuts-AllS
 |Shortcut|Notes|
 |--------|-----|
 |Alt+F6|**Refresh defaults.** Restores the defaults that apply to a new user and removes any configured defaults. The same action as clicking the icon ![](../images/Icon_Refresh_03.GIF).|
+
+
 
