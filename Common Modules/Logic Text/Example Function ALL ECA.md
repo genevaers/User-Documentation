@@ -1,3 +1,4 @@
+
 |Example logic text|Meaning|
 |------------------|-------|
 |IF (field3} = "Total")<br>THEN COLUMN = ALL("-")<br>ENDIF|If field3 is "Total" then set the<br> current column to all dashes.|
