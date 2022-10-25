@@ -24,13 +24,13 @@ DATE can only be used in **Extract Record Filter** or **Extract Column Assignmen
 
 # Syntax 
 
-![(Function DATE)](../../images/LTSF_Date_01.gif)
+![(Function DATE 1)](../../images/LTSF_Date_01.gif)
 
-![(Function DATE)](../../images/LTSF_DATE_02.gif)
+![(Function DATE 2)](../../images/LTSF_DATE_02.gif)
 
-![(Function DATE)](../../images/LTSF_DATE_03.gif)
+![(Function DATE 3)](../../images/LTSF_DATE_03.gif)
 
-![(Function DATE)](../../images/LTSF_DATE_04.gif)
+![(Function DATE 4)](../../images/LTSF_DATE_04.gif)
 
 # Rules for the syntax 
 
@@ -43,7 +43,7 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 |Example logic text|Meaning|
 |------------------|-------|
-|IF {field1}<br>= DATE("20111201",CCYYMMDD)<br>THEN SELECT<br>ENDIF<br>|Select those input records where<br>field1 is December 1, 2011.<br>The code at left can also be written as:<br>SELECTIF({field1}<br>= DATE("20111201",CCYYMMDD))|
+|IF {field1} = DATE("20111201",CCYYMMDD)<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF<br>|Select those input records where<br>field1 is December 1, 2011.<br>The code at left can also be written as:<br>SELECTIF({field1}<br>= DATE("20111201",CCYYMMDD))|
 
 
 # Examples: DATE function in Extract Column Assignment 
