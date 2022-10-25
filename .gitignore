@@ -2,7 +2,7 @@ docs\_site\*.html
 docs\sass-cache*.*
 docs\jekyll-cache*.*
 docs\jekyll-metadata*.*
-docs\vendor*.*
+docs\vendor\*.*
 docs\404.html
 docs\DataGenerator.html
 docs\feed.xml
@@ -15,5 +15,5 @@ docs\just-the-docs-default.css
 docs\just-the-docs-light.css
 docs\search-data.json
 docs\welcome-to-jekyll.html
-Logs\*.txt
+Logs\*.*
 Temp\*.*
