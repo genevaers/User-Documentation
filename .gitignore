@@ -15,6 +15,5 @@ docs\just-the-docs-default.css
 docs\just-the-docs-light.css
 docs\search-data.json
 docs\welcome-to-jekyll.html
-AI-Info\*.txt
-AD-Expanded-Common\*.*
-AE-Expanded-Topics\*.*
+Logs\*.txt
+Temp\*.*
