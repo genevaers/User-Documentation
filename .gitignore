@@ -1,8 +1,7 @@
-docs\_site\*.html
+docs\_site\*.*
 docs\sass-cache*.*
 docs\jekyll-cache*.*
 docs\jekyll-metadata*.*
-docs\vendor\*.*
 docs\404.html
 docs\DataGenerator.html
 docs\feed.xml
