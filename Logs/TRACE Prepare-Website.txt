@@ -1,5 +1,5 @@
 ﻿M01.65J  Trace file for Prepare-Website.ps1   Version 2.0
-M01.65K  Run Date       10/26/2022 10:49:00
+M01.65K  Run Date       10/27/2022 08:39:01
 M01.71C  Created new ExpandedCommonFolder - C:\Git\GenevaERS\User-Documentation\Temp\Expanded-Common
 M01.72C  Created new ExpandedTopicsFolder - C:\Git\GenevaERS\User-Documentation\Temp\Expanded-Topics
   
@@ -34,19 +34,23 @@ M03.30C  	7   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Exam
 M03.30C  	8   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ERF.md
 M03.30C  	9   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ECA.md
 M03.30C  	10   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ERF.md
-M03.30C  	11   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
-M03.30C  	12   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
-M03.30C  	13   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
-M03.30C  	14   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
-M03.30C  	15   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Keyboard Shortcuts Logic Text Common.md
-M03.30C  	16   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
-M03.30C  	17   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
-M03.30C  	18   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
-M03.30C  	19   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
-M03.30C  	20   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
-M03.30C  	21   C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
-M03.30C  	22   C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Gillian.md
-M03.30D  Total common files: 23
+M03.30C  	11   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ECA.md
+M03.30C  	12   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ERF.md
+M03.30C  	13   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M03.30C  	14   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
+M03.30C  	15   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M03.30C  	16   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M03.30C  	17   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M03.30C  	18   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Keyboard Shortcuts Logic Text Common.md
+M03.30C  	19   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
+M03.30C  	20   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
+M03.30C  	21   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
+M03.30C  	22   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
+M03.30C  	23   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
+M03.30C  	24   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function FISCALDAY Level 3.md
+M03.30C  	25   C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
+M03.30C  	26   C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Gillian.md
+M03.30D  Total common files: 27
   
 M04.00A  Topic files 
 M04.10A  Start search for topic files
@@ -760,111 +764,140 @@ M05.10B  Read common File 10 = C:\Git\GenevaERS\User-Documentation\Common Module
 M05.28E  end =================================================
  
 M05.10A  start read file =====================================
-M05.10B  Read common File 11 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
-M05.22M  IncludeCoding "Logic Text\AA Syntax Legend Level 3"
-M05.29H  CommonIncludesArray(11,0) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
-M05.22M  IncludeCoding "Logic Text\Syntax Function ALL Level 3"
-M05.29H  CommonIncludesArray(11,1) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
-M05.22M  IncludeCoding "Logic Text\Example Function ALL ERF"
-M05.29H  CommonIncludesArray(11,2) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ERF.md
-M05.22M  IncludeCoding "Logic Text\Example Function ALL ECA"
-M05.29H  CommonIncludesArray(11,3) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ECA.md
+M05.10B  Read common File 11 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ECA.md
 M05.28E  end =================================================
  
 M05.10A  start read file =====================================
-M05.10B  Read common File 12 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
-M05.22M  IncludeCoding "Logic Text\AA Syntax Legend Level 3"
-M05.29H  CommonIncludesArray(12,0) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
-M05.22M  IncludeCoding "Logic Text\Syntax Function BATCHDATE Level 3"
-M05.29H  CommonIncludesArray(12,1) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
-M05.22M  IncludeCoding "Logic Text\Example Function BATCHDATE ERF"
-M05.29H  CommonIncludesArray(12,2) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ERF.md
-M05.22M  IncludeCoding "Logic Text\Example Function BATCHDATE ECA"
-M05.29H  CommonIncludesArray(12,3) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ECA.md
+M05.10B  Read common File 12 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ERF.md
 M05.28E  end =================================================
  
 M05.10A  start read file =====================================
-M05.10B  Read common File 13 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M05.10B  Read common File 13 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M05.22M  IncludeCoding "Logic Text\AA Syntax Legend Level 3"
 M05.29H  CommonIncludesArray(13,0) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
-M05.22M  IncludeCoding "Logic Text\Syntax Function DATE Level 3"
-M05.29H  CommonIncludesArray(13,1) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
-M05.22M  IncludeCoding "Logic Text\Example Function DATE ERF"
-M05.29H  CommonIncludesArray(13,2) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ERF.md
-M05.22M  IncludeCoding "Logic Text\Example Function DATE ECA"
-M05.29H  CommonIncludesArray(13,3) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ECA.md
+M05.22M  IncludeCoding "Logic Text\Syntax Function ALL Level 3"
+M05.29H  CommonIncludesArray(13,1) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
+M05.22M  IncludeCoding "Logic Text\Example Function ALL ERF"
+M05.29H  CommonIncludesArray(13,2) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ERF.md
+M05.22M  IncludeCoding "Logic Text\Example Function ALL ECA"
+M05.29H  CommonIncludesArray(13,3) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ECA.md
 M05.28E  end =================================================
  
 M05.10A  start read file =====================================
-M05.10B  Read common File 14 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M05.10B  Read common File 14 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M05.22M  IncludeCoding "Logic Text\AA Syntax Legend Level 3"
 M05.29H  CommonIncludesArray(14,0) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
-M05.22M  IncludeCoding "Logic Text\Syntax Function DAYSBETWEEN Level 3"
-M05.29H  CommonIncludesArray(14,1) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
-M05.22M  IncludeCoding "Logic Text\Example Function DAYSBETWEEN ERF"
-M05.29H  CommonIncludesArray(14,2) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ERF.md
-M05.22M  IncludeCoding "Logic Text\Example Function DAYSBETWEEN ECA"
-M05.29H  CommonIncludesArray(14,3) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ECA.md
+M05.22M  IncludeCoding "Logic Text\Syntax Function BATCHDATE Level 3"
+M05.29H  CommonIncludesArray(14,1) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
+M05.22M  IncludeCoding "Logic Text\Example Function BATCHDATE ERF"
+M05.29H  CommonIncludesArray(14,2) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ERF.md
+M05.22M  IncludeCoding "Logic Text\Example Function BATCHDATE ECA"
+M05.29H  CommonIncludesArray(14,3) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ECA.md
 M05.28E  end =================================================
  
 M05.10A  start read file =====================================
-M05.10B  Read common File 15 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Keyboard Shortcuts Logic Text Common.md
+M05.10B  Read common File 15 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M05.22M  IncludeCoding "Logic Text\AA Syntax Legend Level 3"
+M05.29H  CommonIncludesArray(15,0) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
+M05.22M  IncludeCoding "Logic Text\Syntax Function DATE Level 3"
+M05.29H  CommonIncludesArray(15,1) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
+M05.22M  IncludeCoding "Logic Text\Example Function DATE ERF"
+M05.29H  CommonIncludesArray(15,2) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ERF.md
+M05.22M  IncludeCoding "Logic Text\Example Function DATE ECA"
+M05.29H  CommonIncludesArray(15,3) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ECA.md
+M05.28E  end =================================================
+ 
+M05.10A  start read file =====================================
+M05.10B  Read common File 16 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M05.22M  IncludeCoding "Logic Text\AA Syntax Legend Level 3"
+M05.29H  CommonIncludesArray(16,0) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
+M05.22M  IncludeCoding "Logic Text\Syntax Function DAYSBETWEEN Level 3"
+M05.29H  CommonIncludesArray(16,1) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
+M05.22M  IncludeCoding "Logic Text\Example Function DAYSBETWEEN ERF"
+M05.29H  CommonIncludesArray(16,2) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ERF.md
+M05.22M  IncludeCoding "Logic Text\Example Function DAYSBETWEEN ECA"
+M05.29H  CommonIncludesArray(16,3) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ECA.md
+M05.28E  end =================================================
+ 
+M05.10A  start read file =====================================
+M05.10B  Read common File 17 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M05.22M  IncludeCoding "Logic Text\AA Syntax Legend Level 3"
+M05.29H  CommonIncludesArray(17,0) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
+M05.22M  IncludeCoding "Logic Text\Syntax Function FISCALDAY Level 3"
+M05.29H  CommonIncludesArray(17,1) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function FISCALDAY Level 3.md
+M05.22M  IncludeCoding "Logic Text\Example Function FISCALDAY ERF"
+M05.29H  CommonIncludesArray(17,2) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ERF.md
+M05.22M  IncludeCoding "Logic Text\Example Function FISCALDAY ECA"
+M05.29H  CommonIncludesArray(17,3) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ECA.md
+M05.28E  end =================================================
+ 
+M05.10A  start read file =====================================
+M05.10B  Read common File 18 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Keyboard Shortcuts Logic Text Common.md
 M05.22A  Comment found - will ignore this line and so will Markdown
 M05.22B  Comment is "[//]: # [[ FAQ\Keyboard Shortcuts All WB Screens Common ]]"
 M05.28E  end =================================================
  
 M05.10A  start read file =====================================
-M05.10B  Read common File 16 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
+M05.10B  Read common File 19 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
 M05.28E  end =================================================
  
 M05.10A  start read file =====================================
-M05.10B  Read common File 17 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
+M05.10B  Read common File 20 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
 M05.28E  end =================================================
  
 M05.10A  start read file =====================================
-M05.10B  Read common File 18 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
+M05.10B  Read common File 21 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
 M05.28E  end =================================================
  
 M05.10A  start read file =====================================
-M05.10B  Read common File 19 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
+M05.10B  Read common File 22 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
 M05.28E  end =================================================
  
 M05.10A  start read file =====================================
-M05.10B  Read common File 20 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
+M05.10B  Read common File 23 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
 M05.28E  end =================================================
  
 M05.10A  start read file =====================================
-M05.10B  Read common File 21 = C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
+M05.10B  Read common File 24 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function FISCALDAY Level 3.md
 M05.28E  end =================================================
  
 M05.10A  start read file =====================================
-M05.10B  Read common File 22 = C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Gillian.md
+M05.10B  Read common File 25 = C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
+M05.28E  end =================================================
+ 
+M05.10A  start read file =====================================
+M05.10B  Read common File 26 = C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Gillian.md
 M05.28E  end =================================================
  
 M05.30B  COMMON FILES WITH INCLUDES
 M05.30C  Common 1 = C:\Git\GenevaERS\User-Documentation\Common Modules\FAQ\Keyboard Shortcuts Common.md
 M05.30D       INCLUDES C:\Git\GenevaERS\User-Documentation\Common Modules\FAQ\Keyboard Shortcuts All WB Screens Common.md
-M05.30C  Common 11 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M05.30C  Common 13 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M05.30D       INCLUDES C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ERF.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ECA.md
-M05.30C  Common 12 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M05.30C  Common 14 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M05.30D       INCLUDES C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ERF.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ECA.md
-M05.30C  Common 13 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M05.30C  Common 15 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M05.30D       INCLUDES C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ERF.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ECA.md
-M05.30C  Common 14 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M05.30C  Common 16 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
 M05.30D       INCLUDES C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ERF.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ECA.md
-M05.30E  5 common files have includes.
+M05.30C  Common 17 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M05.30D       INCLUDES C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
+M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function FISCALDAY Level 3.md
+M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ERF.md
+M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ECA.md
+M05.30E  6 common files have includes.
  
 M06.00A  Topic includes 
 M06.00B  Start search for includes in topic files
@@ -2328,11 +2361,9 @@ M06.29M  end =====================================================
  
 M06.10A  start read file =========================================
 M06.10B  Read topic file 183 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function FISCALDAY.md
+M06.22M  IncludeCoding "Logic Text\Introduction Function FISCALDAY Level 3"
+M06.29H  TopicIncludesArray(183,0) = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
 M06.29M  end =====================================================
-M06.30A  Topic filename with no includes = Syntax - function FISCALDAY.md
-M06.30D  Path for topic = Workbench Logic Text Syntax\Syntax - functions
-M06.30F      Result of adding path to website is SUCCESS
-M06.30G  Topic copied to website and path 
  
 M06.10A  start read file =========================================
 M06.10B  Read topic file 184 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function FISCALMONTH.md
@@ -2969,6 +3000,8 @@ M06.32C  Topic 181 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Wor
 M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M06.32C  Topic 182 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function DAYSBETWEEN.md
 M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M06.32C  Topic 183 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function FISCALDAY.md
+M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
 M06.32C  Topic 223 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
 M06.32C  Topic 254 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench User Guide\Keyboard Shortcuts for General Users.md
@@ -2976,7 +3009,7 @@ M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\FAQ\K
 M06.32C  Topic 255 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\About this website.md
 M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
 M06.32D                 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Gillian.md
-M06.32E  7 topic files have includes.
+M06.32E  8 topic files have includes.
  
 M07.00A  Create Pathways and check circular includes 
 M07.00B  Start pathway processing.
@@ -3016,7 +3049,11 @@ M07.20A  Check includes for common 9 = C:\Git\GenevaERS\User-Documentation\Commo
  
 M07.20A  Check includes for common 10 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ERF.md
  
-M07.20A  Check includes for common 11 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M07.20A  Check includes for common 11 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ECA.md
+ 
+M07.20A  Check includes for common 12 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ERF.md
+ 
+M07.20A  Check includes for common 13 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M07.21B                  Found include C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M07.21C      NewPathway 2-step start = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M07.21D                  single step = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
@@ -3033,7 +3070,7 @@ M07.70P        ExistingPathwayArray start 1 0 C:\Git\GenevaERS\User-Documentatio
 M07.70Q                      step 1 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
-M07.21A  Continue checking includes for common 11 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M07.21A  Continue checking includes for common 13 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M07.21B                  Found include C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
 M07.21C      NewPathway 2-step start = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M07.21D                  single step = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
@@ -3052,7 +3089,7 @@ M07.70P        ExistingPathwayArray start 2 0 C:\Git\GenevaERS\User-Documentatio
 M07.70Q                      step 2 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
 M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
-M07.21A  Continue checking includes for common 11 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M07.21A  Continue checking includes for common 13 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M07.21B                  Found include C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ERF.md
 M07.21C      NewPathway 2-step start = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M07.21D                  single step = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ERF.md
@@ -3073,7 +3110,7 @@ M07.70P        ExistingPathwayArray start 3 0 C:\Git\GenevaERS\User-Documentatio
 M07.70Q                      step 3 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ERF.md
 M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
-M07.21A  Continue checking includes for common 11 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M07.21A  Continue checking includes for common 13 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M07.21B                  Found include C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ECA.md
 M07.21C      NewPathway 2-step start = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M07.21D                  single step = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ECA.md
@@ -3096,9 +3133,9 @@ M07.70P        ExistingPathwayArray start 4 0 C:\Git\GenevaERS\User-Documentatio
 M07.70Q                      step 4 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ECA.md
 M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
-M07.20A  Check includes for common 12 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.20A  Check includes for common 14 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.21B                  Found include C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
-M07.21C      NewPathway 2-step start = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.21C      NewPathway 2-step start = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.21D                  single step = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M07.30A    Begin ExistingPathDuplAddLast
 M07.30B        PathwayLastRow 4
@@ -3117,13 +3154,13 @@ M07.50A    Begin ExistingPathDuplAddFirst
 M07.53B    Finish ExistingPathDuplAddFirst 
 M07.60A  Begin Circular Include check
 M07.70A  Copy NewPathwayArray to end of ExistingPathwayArray
-M07.70P        ExistingPathwayArray start 5 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.70P        ExistingPathwayArray start 5 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.70Q                      step 5 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
-M07.21A  Continue checking includes for common 12 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.21A  Continue checking includes for common 14 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.21B                  Found include C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
-M07.21C      NewPathway 2-step start = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.21C      NewPathway 2-step start = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.21D                  single step = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
 M07.30A    Begin ExistingPathDuplAddLast
 M07.30B        PathwayLastRow 5
@@ -3137,20 +3174,20 @@ M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 3 C:\Git\GenevaE
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 4 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.48M    Finish ExistingPathDuplAddLast 
 M07.50A    Begin ExistingPathDuplAddFirst
 M07.53B    Finish ExistingPathDuplAddFirst 
 M07.60A  Begin Circular Include check
 M07.70A  Copy NewPathwayArray to end of ExistingPathwayArray
-M07.70P        ExistingPathwayArray start 6 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.70P        ExistingPathwayArray start 6 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.70Q                      step 6 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
 M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
-M07.21A  Continue checking includes for common 12 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.21A  Continue checking includes for common 14 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.21B                  Found include C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ERF.md
-M07.21C      NewPathway 2-step start = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.21C      NewPathway 2-step start = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.21D                  single step = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ERF.md
 M07.30A    Begin ExistingPathDuplAddLast
 M07.30B        PathwayLastRow 6
@@ -3164,22 +3201,22 @@ M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 3 C:\Git\GenevaE
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 4 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.48M    Finish ExistingPathDuplAddLast 
 M07.50A    Begin ExistingPathDuplAddFirst
 M07.53B    Finish ExistingPathDuplAddFirst 
 M07.60A  Begin Circular Include check
 M07.70A  Copy NewPathwayArray to end of ExistingPathwayArray
-M07.70P        ExistingPathwayArray start 7 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.70P        ExistingPathwayArray start 7 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.70Q                      step 7 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ERF.md
 M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
-M07.21A  Continue checking includes for common 12 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.21A  Continue checking includes for common 14 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.21B                  Found include C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ECA.md
-M07.21C      NewPathway 2-step start = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.21C      NewPathway 2-step start = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.21D                  single step = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ECA.md
 M07.30A    Begin ExistingPathDuplAddLast
 M07.30B        PathwayLastRow 7
@@ -3193,22 +3230,22 @@ M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 3 C:\Git\GenevaE
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 4 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.48M    Finish ExistingPathDuplAddLast 
 M07.50A    Begin ExistingPathDuplAddFirst
 M07.53B    Finish ExistingPathDuplAddFirst 
 M07.60A  Begin Circular Include check
 M07.70A  Copy NewPathwayArray to end of ExistingPathwayArray
-M07.70P        ExistingPathwayArray start 8 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.70P        ExistingPathwayArray start 8 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.70Q                      step 8 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ECA.md
 M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
-M07.20A  Check includes for common 13 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M07.20A  Check includes for common 15 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M07.21B                  Found include C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M07.21C      NewPathway 2-step start = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M07.21D                  single step = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
@@ -3224,13 +3261,13 @@ M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 3 C:\Git\GenevaE
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 4 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 8 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 8 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.48M    Finish ExistingPathDuplAddLast 
 M07.50A    Begin ExistingPathDuplAddFirst
@@ -3241,7 +3278,7 @@ M07.70P        ExistingPathwayArray start 9 0 C:\Git\GenevaERS\User-Documentatio
 M07.70Q                      step 9 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
-M07.21A  Continue checking includes for common 13 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M07.21A  Continue checking includes for common 15 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M07.21B                  Found include C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
 M07.21C      NewPathway 2-step start = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M07.21D                  single step = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
@@ -3257,13 +3294,13 @@ M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 3 C:\Git\GenevaE
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 4 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 8 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 8 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 9 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
@@ -3276,7 +3313,7 @@ M07.70P        ExistingPathwayArray start 10 0 C:\Git\GenevaERS\User-Documentati
 M07.70Q                      step 10 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
 M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
-M07.21A  Continue checking includes for common 13 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M07.21A  Continue checking includes for common 15 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M07.21B                  Found include C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ERF.md
 M07.21C      NewPathway 2-step start = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M07.21D                  single step = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ERF.md
@@ -3292,13 +3329,13 @@ M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 3 C:\Git\GenevaE
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 4 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 8 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 8 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 9 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
@@ -3313,7 +3350,7 @@ M07.70P        ExistingPathwayArray start 11 0 C:\Git\GenevaERS\User-Documentati
 M07.70Q                      step 11 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ERF.md
 M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
-M07.21A  Continue checking includes for common 13 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M07.21A  Continue checking includes for common 15 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M07.21B                  Found include C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ECA.md
 M07.21C      NewPathway 2-step start = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M07.21D                  single step = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ECA.md
@@ -3329,13 +3366,13 @@ M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 3 C:\Git\GenevaE
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 4 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 8 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 8 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 9 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
@@ -3352,7 +3389,7 @@ M07.70P        ExistingPathwayArray start 12 0 C:\Git\GenevaERS\User-Documentati
 M07.70Q                      step 12 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ECA.md
 M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
-M07.20A  Check includes for common 14 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M07.20A  Check includes for common 16 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
 M07.21B                  Found include C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M07.21C      NewPathway 2-step start = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
 M07.21D                  single step = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
@@ -3368,13 +3405,13 @@ M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 3 C:\Git\GenevaE
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 4 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 8 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 8 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 9 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
@@ -3393,7 +3430,7 @@ M07.70P        ExistingPathwayArray start 13 0 C:\Git\GenevaERS\User-Documentati
 M07.70Q                      step 13 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
-M07.21A  Continue checking includes for common 14 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M07.21A  Continue checking includes for common 16 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
 M07.21B                  Found include C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
 M07.21C      NewPathway 2-step start = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
 M07.21D                  single step = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
@@ -3409,13 +3446,13 @@ M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 3 C:\Git\GenevaE
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 4 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 8 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 8 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 9 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
@@ -3436,7 +3473,7 @@ M07.70P        ExistingPathwayArray start 14 0 C:\Git\GenevaERS\User-Documentati
 M07.70Q                      step 14 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
 M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
-M07.21A  Continue checking includes for common 14 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M07.21A  Continue checking includes for common 16 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
 M07.21B                  Found include C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ERF.md
 M07.21C      NewPathway 2-step start = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
 M07.21D                  single step = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ERF.md
@@ -3452,13 +3489,13 @@ M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 3 C:\Git\GenevaE
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 4 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 8 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 8 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 9 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
@@ -3481,7 +3518,7 @@ M07.70P        ExistingPathwayArray start 15 0 C:\Git\GenevaERS\User-Documentati
 M07.70Q                      step 15 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ERF.md
 M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
-M07.21A  Continue checking includes for common 14 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M07.21A  Continue checking includes for common 16 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
 M07.21B                  Found include C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ECA.md
 M07.21C      NewPathway 2-step start = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
 M07.21D                  single step = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ECA.md
@@ -3497,13 +3534,13 @@ M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 3 C:\Git\GenevaE
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 4 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
-M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 8 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 8 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
 M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 9 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M07.48L           Finished this pathway for ExistingPathDuplAddLast
@@ -3528,21 +3565,231 @@ M07.70P        ExistingPathwayArray start 16 0 C:\Git\GenevaERS\User-Documentati
 M07.70Q                      step 16 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ECA.md
 M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
-M07.20A  Check includes for common 15 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Keyboard Shortcuts Logic Text Common.md
+M07.20A  Check includes for common 17 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M07.21B                  Found include C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
+M07.21C      NewPathway 2-step start = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M07.21D                  single step = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
+M07.30A    Begin ExistingPathDuplAddLast
+M07.30B        PathwayLastRow 16
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 0 C:\Git\GenevaERS\User-Documentation\Common Modules\FAQ\Keyboard Shortcuts Common.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 4 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 8 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 9 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 10 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 11 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 12 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 13 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 14 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 15 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 16 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.48M    Finish ExistingPathDuplAddLast 
+M07.50A    Begin ExistingPathDuplAddFirst
+M07.53B    Finish ExistingPathDuplAddFirst 
+M07.60A  Begin Circular Include check
+M07.70A  Copy NewPathwayArray to end of ExistingPathwayArray
+M07.70P        ExistingPathwayArray start 17 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M07.70Q                      step 17 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
+M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
-M07.20A  Check includes for common 16 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
+M07.21A  Continue checking includes for common 17 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M07.21B                  Found include C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function FISCALDAY Level 3.md
+M07.21C      NewPathway 2-step start = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M07.21D                  single step = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function FISCALDAY Level 3.md
+M07.30A    Begin ExistingPathDuplAddLast
+M07.30B        PathwayLastRow 17
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 0 C:\Git\GenevaERS\User-Documentation\Common Modules\FAQ\Keyboard Shortcuts Common.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 4 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 8 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 9 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 10 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 11 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 12 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 13 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 14 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 15 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 16 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 17 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.48M    Finish ExistingPathDuplAddLast 
+M07.50A    Begin ExistingPathDuplAddFirst
+M07.53B    Finish ExistingPathDuplAddFirst 
+M07.60A  Begin Circular Include check
+M07.70A  Copy NewPathwayArray to end of ExistingPathwayArray
+M07.70P        ExistingPathwayArray start 18 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M07.70Q                      step 18 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function FISCALDAY Level 3.md
+M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
-M07.20A  Check includes for common 17 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
+M07.21A  Continue checking includes for common 17 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M07.21B                  Found include C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ERF.md
+M07.21C      NewPathway 2-step start = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M07.21D                  single step = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ERF.md
+M07.30A    Begin ExistingPathDuplAddLast
+M07.30B        PathwayLastRow 18
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 0 C:\Git\GenevaERS\User-Documentation\Common Modules\FAQ\Keyboard Shortcuts Common.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 4 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 8 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 9 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 10 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 11 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 12 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 13 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 14 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 15 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 16 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 17 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 18 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.48M    Finish ExistingPathDuplAddLast 
+M07.50A    Begin ExistingPathDuplAddFirst
+M07.53B    Finish ExistingPathDuplAddFirst 
+M07.60A  Begin Circular Include check
+M07.70A  Copy NewPathwayArray to end of ExistingPathwayArray
+M07.70P        ExistingPathwayArray start 19 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M07.70Q                      step 19 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ERF.md
+M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
-M07.20A  Check includes for common 18 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
+M07.21A  Continue checking includes for common 17 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M07.21B                  Found include C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ECA.md
+M07.21C      NewPathway 2-step start = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M07.21D                  single step = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ECA.md
+M07.30A    Begin ExistingPathDuplAddLast
+M07.30B        PathwayLastRow 19
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 0 C:\Git\GenevaERS\User-Documentation\Common Modules\FAQ\Keyboard Shortcuts Common.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 4 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 7 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 8 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 9 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 10 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 11 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 12 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 13 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 14 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 15 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 16 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 17 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 18 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.30C        ExistingPathDuplAddLast - Check Existing Pathway 19 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M07.48L           Finished this pathway for ExistingPathDuplAddLast
+M07.48M    Finish ExistingPathDuplAddLast 
+M07.50A    Begin ExistingPathDuplAddFirst
+M07.53B    Finish ExistingPathDuplAddFirst 
+M07.60A  Begin Circular Include check
+M07.70A  Copy NewPathwayArray to end of ExistingPathwayArray
+M07.70P        ExistingPathwayArray start 20 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M07.70Q                      step 20 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ECA.md
+M07.70X  NewPathwayArray added to ExistingPathwayArray 
  
-M07.20A  Check includes for common 19 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
+M07.20A  Check includes for common 18 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Keyboard Shortcuts Logic Text Common.md
  
-M07.20A  Check includes for common 20 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
+M07.20A  Check includes for common 19 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
  
-M07.20A  Check includes for common 21 = C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
+M07.20A  Check includes for common 20 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
  
-M07.20A  Check includes for common 22 = C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Gillian.md
+M07.20A  Check includes for common 21 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
+ 
+M07.20A  Check includes for common 22 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
+ 
+M07.20A  Check includes for common 23 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
+ 
+M07.20A  Check includes for common 24 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function FISCALDAY Level 3.md
+ 
+M07.20A  Check includes for common 25 = C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
+ 
+M07.20A  Check includes for common 26 = C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Gillian.md
 M07.70Y  Finished processing of pathways.
  
 M07.90A  Display pathways
@@ -3556,13 +3803,13 @@ M07.90D  ExistingPathwayArray 3 0 C:\Git\GenevaERS\User-Documentation\Common Mod
 M07.90E                  Step 3 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ERF.md
 M07.90D  ExistingPathwayArray 4 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M07.90E                  Step 4 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ECA.md
-M07.90D  ExistingPathwayArray 5 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.90D  ExistingPathwayArray 5 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.90E                  Step 5 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
-M07.90D  ExistingPathwayArray 6 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.90D  ExistingPathwayArray 6 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.90E                  Step 6 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
-M07.90D  ExistingPathwayArray 7 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.90D  ExistingPathwayArray 7 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.90E                  Step 7 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ERF.md
-M07.90D  ExistingPathwayArray 8 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M07.90D  ExistingPathwayArray 8 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M07.90E                  Step 8 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ECA.md
 M07.90D  ExistingPathwayArray 9 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M07.90E                  Step 9 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
@@ -3580,6 +3827,14 @@ M07.90D  ExistingPathwayArray 15 0 C:\Git\GenevaERS\User-Documentation\Common Mo
 M07.90E                  Step 15 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ERF.md
 M07.90D  ExistingPathwayArray 16 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
 M07.90E                  Step 16 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ECA.md
+M07.90D  ExistingPathwayArray 17 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M07.90E                  Step 17 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
+M07.90D  ExistingPathwayArray 18 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M07.90E                  Step 18 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function FISCALDAY Level 3.md
+M07.90D  ExistingPathwayArray 19 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M07.90E                  Step 19 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ERF.md
+M07.90D  ExistingPathwayArray 20 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M07.90E                  Step 20 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ECA.md
  
 M08.00A  Priorities for common includes 
 M08.10A  Find commons with no includes
@@ -3589,69 +3844,84 @@ M08.12B          verify include is 1 0 C:\Git\GenevaERS\User-Documentation\Commo
 M08.13A          Include priority set to zero 
 M08.11A  No includes for common at index 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
-M08.12B          verify include is 11 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
-M08.13A          Include priority set to zero 
-M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
-M08.12B          verify include is 12 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
-M08.13A          Include priority set to zero 
-M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M08.12B          verify include is 13 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M08.13A          Include priority set to zero 
-M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M08.12B          verify include is 14 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
+M08.13A          Include priority set to zero 
+M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M08.12B          verify include is 15 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
+M08.13A          Include priority set to zero 
+M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M08.12B          verify include is 16 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
+M08.13A          Include priority set to zero 
+M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M08.12B          verify include is 17 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M08.13A          Include priority set to zero 
 M08.11A  No includes for common at index 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ECA.md
 M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
-M08.12B          verify include is 11 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ECA.md
+M08.12B          verify include is 13 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ECA.md
 M08.13A          Include priority set to zero 
 M08.11A  No includes for common at index 4 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ERF.md
 M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
-M08.12B          verify include is 11 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ERF.md
+M08.12B          verify include is 13 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ERF.md
 M08.13A          Include priority set to zero 
 M08.11A  No includes for common at index 5 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ECA.md
-M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
-M08.12B          verify include is 12 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ECA.md
+M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
+M08.12B          verify include is 14 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ECA.md
 M08.13A          Include priority set to zero 
 M08.11A  No includes for common at index 6 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ERF.md
-M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
-M08.12B          verify include is 12 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ERF.md
+M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
+M08.12B          verify include is 14 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ERF.md
 M08.13A          Include priority set to zero 
 M08.11A  No includes for common at index 7 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ECA.md
 M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
-M08.12B          verify include is 13 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ECA.md
+M08.12B          verify include is 15 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ECA.md
 M08.13A          Include priority set to zero 
 M08.11A  No includes for common at index 8 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ERF.md
 M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
-M08.12B          verify include is 13 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ERF.md
+M08.12B          verify include is 15 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ERF.md
 M08.13A          Include priority set to zero 
 M08.11A  No includes for common at index 9 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ECA.md
 M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
-M08.12B          verify include is 14 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ECA.md
+M08.12B          verify include is 16 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ECA.md
 M08.13A          Include priority set to zero 
 M08.11A  No includes for common at index 10 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ERF.md
 M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
-M08.12B          verify include is 14 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ERF.md
+M08.12B          verify include is 16 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ERF.md
 M08.13A          Include priority set to zero 
-M08.11A  No includes for common at index 15 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Keyboard Shortcuts Logic Text Common.md
-M08.11A  No includes for common at index 16 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
-M08.11A  No includes for common at index 17 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
+M08.11A  No includes for common at index 11 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ECA.md
+M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M08.12B          verify include is 17 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ECA.md
+M08.13A          Include priority set to zero 
+M08.11A  No includes for common at index 12 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ERF.md
+M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M08.12B          verify include is 17 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ERF.md
+M08.13A          Include priority set to zero 
+M08.11A  No includes for common at index 18 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Keyboard Shortcuts Logic Text Common.md
+M08.11A  No includes for common at index 19 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
+M08.11A  No includes for common at index 20 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
 M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
-M08.12B          verify include is 11 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
+M08.12B          verify include is 13 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
 M08.13A          Include priority set to zero 
-M08.11A  No includes for common at index 18 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
-M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
-M08.12B          verify include is 12 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
+M08.11A  No includes for common at index 21 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
+M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
+M08.12B          verify include is 14 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
 M08.13A          Include priority set to zero 
-M08.11A  No includes for common at index 19 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
+M08.11A  No includes for common at index 22 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
 M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
-M08.12B          verify include is 13 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
+M08.12B          verify include is 15 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
 M08.13A          Include priority set to zero 
-M08.11A  No includes for common at index 20 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
+M08.11A  No includes for common at index 23 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
 M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
-M08.12B          verify include is 14 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
+M08.12B          verify include is 16 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
 M08.13A          Include priority set to zero 
-M08.11A  No includes for common at index 21 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
-M08.11A  No includes for common at index 22 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Gillian.md
+M08.11A  No includes for common at index 24 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function FISCALDAY Level 3.md
+M08.12A      Same included in C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M08.12B          verify include is 17 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function FISCALDAY Level 3.md
+M08.13A          Include priority set to zero 
+M08.11A  No includes for common at index 25 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
+M08.11A  No includes for common at index 26 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Gillian.md
 M08.14A  Check for any common priorities still -1 
 M08.14B      Common 0 C:\Git\GenevaERS\User-Documentation\Common Modules\FAQ\Keyboard Shortcuts All WB Screens Common.md
 M08.14C      Priority 0
@@ -3687,78 +3957,98 @@ M08.14F          Common has no includes
 M08.14B      Common 10 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ERF.md
 M08.14C      Priority 0
 M08.14F          Common has no includes 
-M08.14B      Common 11 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
-M08.14C      Priority -1
-M08.14D          Include 11 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
-M08.14E          Priority 0
-M08.14D          Include 11 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
-M08.14E          Priority 0
-M08.14D          Include 11 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ERF.md
-M08.14E          Priority 0
-M08.14D          Include 11 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ECA.md
-M08.14E          Priority 0
-M08.14B      Common 12 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
-M08.14C      Priority -1
-M08.14D          Include 12 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
-M08.14E          Priority 0
-M08.14D          Include 12 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
-M08.14E          Priority 0
-M08.14D          Include 12 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ERF.md
-M08.14E          Priority 0
-M08.14D          Include 12 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ECA.md
-M08.14E          Priority 0
-M08.14B      Common 13 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M08.14B      Common 11 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ECA.md
+M08.14C      Priority 0
+M08.14F          Common has no includes 
+M08.14B      Common 12 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ERF.md
+M08.14C      Priority 0
+M08.14F          Common has no includes 
+M08.14B      Common 13 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M08.14C      Priority -1
 M08.14D          Include 13 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M08.14E          Priority 0
-M08.14D          Include 13 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
+M08.14D          Include 13 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
 M08.14E          Priority 0
-M08.14D          Include 13 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ERF.md
+M08.14D          Include 13 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ERF.md
 M08.14E          Priority 0
-M08.14D          Include 13 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ECA.md
+M08.14D          Include 13 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ECA.md
 M08.14E          Priority 0
-M08.14B      Common 14 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M08.14B      Common 14 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M08.14C      Priority -1
 M08.14D          Include 14 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M08.14E          Priority 0
-M08.14D          Include 14 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
+M08.14D          Include 14 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
 M08.14E          Priority 0
-M08.14D          Include 14 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ERF.md
+M08.14D          Include 14 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ERF.md
 M08.14E          Priority 0
-M08.14D          Include 14 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ECA.md
+M08.14D          Include 14 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ECA.md
 M08.14E          Priority 0
-M08.14B      Common 15 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Keyboard Shortcuts Logic Text Common.md
+M08.14B      Common 15 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M08.14C      Priority -1
+M08.14D          Include 15 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
+M08.14E          Priority 0
+M08.14D          Include 15 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
+M08.14E          Priority 0
+M08.14D          Include 15 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ERF.md
+M08.14E          Priority 0
+M08.14D          Include 15 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ECA.md
+M08.14E          Priority 0
+M08.14B      Common 16 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M08.14C      Priority -1
+M08.14D          Include 16 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
+M08.14E          Priority 0
+M08.14D          Include 16 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
+M08.14E          Priority 0
+M08.14D          Include 16 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ERF.md
+M08.14E          Priority 0
+M08.14D          Include 16 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ECA.md
+M08.14E          Priority 0
+M08.14B      Common 17 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M08.14C      Priority -1
+M08.14D          Include 17 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
+M08.14E          Priority 0
+M08.14D          Include 17 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function FISCALDAY Level 3.md
+M08.14E          Priority 0
+M08.14D          Include 17 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ERF.md
+M08.14E          Priority 0
+M08.14D          Include 17 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ECA.md
+M08.14E          Priority 0
+M08.14B      Common 18 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Keyboard Shortcuts Logic Text Common.md
 M08.14C      Priority 0
 M08.14F          Common has no includes 
-M08.14B      Common 16 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
+M08.14B      Common 19 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
 M08.14C      Priority 0
 M08.14F          Common has no includes 
-M08.14B      Common 17 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
+M08.14B      Common 20 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
 M08.14C      Priority 0
 M08.14F          Common has no includes 
-M08.14B      Common 18 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
+M08.14B      Common 21 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
 M08.14C      Priority 0
 M08.14F          Common has no includes 
-M08.14B      Common 19 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
+M08.14B      Common 22 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
 M08.14C      Priority 0
 M08.14F          Common has no includes 
-M08.14B      Common 20 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
+M08.14B      Common 23 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
 M08.14C      Priority 0
 M08.14F          Common has no includes 
-M08.14B      Common 21 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
+M08.14B      Common 24 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function FISCALDAY Level 3.md
 M08.14C      Priority 0
 M08.14F          Common has no includes 
-M08.14B      Common 22 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Gillian.md
+M08.14B      Common 25 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
+M08.14C      Priority 0
+M08.14F          Common has no includes 
+M08.14B      Common 26 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Gillian.md
 M08.14C      Priority 0
 M08.14F          Common has no includes 
 M08.14X  Still have priority -1 somewhere 
  
 M08.20A  Priority 1 for commons that have all includes at priority = 0 
 M08.21A  Priority 1 for common file 1 C:\Git\GenevaERS\User-Documentation\Common Modules\FAQ\Keyboard Shortcuts Common.md
-M08.21A  Priority 1 for common file 11 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
-M08.21A  Priority 1 for common file 12 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
-M08.21A  Priority 1 for common file 13 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
-M08.21A  Priority 1 for common file 14 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M08.21A  Priority 1 for common file 13 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M08.21A  Priority 1 for common file 14 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
+M08.21A  Priority 1 for common file 15 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M08.21A  Priority 1 for common file 16 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M08.21A  Priority 1 for common file 17 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
 M08.24A  Check for any common priorities still -1 
 M08.24B      Common at index 0 C:\Git\GenevaERS\User-Documentation\Common Modules\FAQ\Keyboard Shortcuts All WB Screens Common.md
 M08.24C      Priority 0
@@ -3794,68 +4084,87 @@ M08.24F          Common has no includes
 M08.24B      Common at index 10 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ERF.md
 M08.24C      Priority 0
 M08.24F          Common has no includes 
-M08.24B      Common at index 11 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
-M08.24C      Priority 1
-M08.24D          Include 11 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
-M08.24E          Priority 0
-M08.24D          Include 11 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
-M08.24E          Priority 0
-M08.24D          Include 11 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ERF.md
-M08.24E          Priority 0
-M08.24D          Include 11 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ECA.md
-M08.24E          Priority 0
-M08.24B      Common at index 12 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
-M08.24C      Priority 1
-M08.24D          Include 12 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
-M08.24E          Priority 0
-M08.24D          Include 12 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
-M08.24E          Priority 0
-M08.24D          Include 12 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ERF.md
-M08.24E          Priority 0
-M08.24D          Include 12 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ECA.md
-M08.24E          Priority 0
-M08.24B      Common at index 13 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M08.24B      Common at index 11 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ECA.md
+M08.24C      Priority 0
+M08.24F          Common has no includes 
+M08.24B      Common at index 12 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ERF.md
+M08.24C      Priority 0
+M08.24F          Common has no includes 
+M08.24B      Common at index 13 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M08.24C      Priority 1
 M08.24D          Include 13 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M08.24E          Priority 0
-M08.24D          Include 13 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
+M08.24D          Include 13 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
 M08.24E          Priority 0
-M08.24D          Include 13 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ERF.md
+M08.24D          Include 13 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ERF.md
 M08.24E          Priority 0
-M08.24D          Include 13 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ECA.md
+M08.24D          Include 13 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ECA.md
 M08.24E          Priority 0
-M08.24B      Common at index 14 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M08.24B      Common at index 14 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M08.24C      Priority 1
 M08.24D          Include 14 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M08.24E          Priority 0
-M08.24D          Include 14 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
+M08.24D          Include 14 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
 M08.24E          Priority 0
-M08.24D          Include 14 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ERF.md
+M08.24D          Include 14 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ERF.md
 M08.24E          Priority 0
-M08.24D          Include 14 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ECA.md
+M08.24D          Include 14 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ECA.md
 M08.24E          Priority 0
-M08.24B      Common at index 15 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Keyboard Shortcuts Logic Text Common.md
+M08.24B      Common at index 15 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M08.24C      Priority 1
+M08.24D          Include 15 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
+M08.24E          Priority 0
+M08.24D          Include 15 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
+M08.24E          Priority 0
+M08.24D          Include 15 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ERF.md
+M08.24E          Priority 0
+M08.24D          Include 15 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ECA.md
+M08.24E          Priority 0
+M08.24B      Common at index 16 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M08.24C      Priority 1
+M08.24D          Include 16 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
+M08.24E          Priority 0
+M08.24D          Include 16 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
+M08.24E          Priority 0
+M08.24D          Include 16 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ERF.md
+M08.24E          Priority 0
+M08.24D          Include 16 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ECA.md
+M08.24E          Priority 0
+M08.24B      Common at index 17 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M08.24C      Priority 1
+M08.24D          Include 17 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
+M08.24E          Priority 0
+M08.24D          Include 17 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function FISCALDAY Level 3.md
+M08.24E          Priority 0
+M08.24D          Include 17 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ERF.md
+M08.24E          Priority 0
+M08.24D          Include 17 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ECA.md
+M08.24E          Priority 0
+M08.24B      Common at index 18 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Keyboard Shortcuts Logic Text Common.md
 M08.24C      Priority 0
 M08.24F          Common has no includes 
-M08.24B      Common at index 16 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
+M08.24B      Common at index 19 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
 M08.24C      Priority 0
 M08.24F          Common has no includes 
-M08.24B      Common at index 17 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
+M08.24B      Common at index 20 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
 M08.24C      Priority 0
 M08.24F          Common has no includes 
-M08.24B      Common at index 18 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
+M08.24B      Common at index 21 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
 M08.24C      Priority 0
 M08.24F          Common has no includes 
-M08.24B      Common at index 19 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
+M08.24B      Common at index 22 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
 M08.24C      Priority 0
 M08.24F          Common has no includes 
-M08.24B      Common at index 20 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
+M08.24B      Common at index 23 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
 M08.24C      Priority 0
 M08.24F          Common has no includes 
-M08.24B      Common at index 21 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
+M08.24B      Common at index 24 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function FISCALDAY Level 3.md
 M08.24C      Priority 0
 M08.24F          Common has no includes 
-M08.24B      Common at index 22 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Gillian.md
+M08.24B      Common at index 25 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
+M08.24C      Priority 0
+M08.24F          Common has no includes 
+M08.24B      Common at index 26 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Gillian.md
 M08.24C      Priority 0
 M08.24F          Common has no includes 
 M08.24Y  All priorities now calculated 
@@ -3884,41 +4193,51 @@ M08.40F      Common at index 9 C:\Git\GenevaERS\User-Documentation\Common Module
 M08.40G      Priority 0
 M08.40F      Common at index 10 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ERF.md
 M08.40G      Priority 0
-M08.40F      Common at index 11 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M08.40F      Common at index 11 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ECA.md
+M08.40G      Priority 0
+M08.40F      Common at index 12 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ERF.md
+M08.40G      Priority 0
+M08.40F      Common at index 13 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M08.40G      Priority 1
 M08.40M  	Topic has same include at index 178 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M08.40N  	Priority of that include is  1
-M08.40F      Common at index 12 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M08.40F      Common at index 14 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M08.40G      Priority 1
 M08.40M  	Topic has same include at index 179 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
 M08.40N  	Priority of that include is  1
-M08.40F      Common at index 13 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M08.40F      Common at index 15 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M08.40G      Priority 1
 M08.40M  	Topic has same include at index 181 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M08.40N  	Priority of that include is  1
-M08.40F      Common at index 14 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M08.40F      Common at index 16 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
 M08.40G      Priority 1
 M08.40M  	Topic has same include at index 182 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
 M08.40N  	Priority of that include is  1
-M08.40F      Common at index 15 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Keyboard Shortcuts Logic Text Common.md
+M08.40F      Common at index 17 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M08.40G      Priority 1
+M08.40M  	Topic has same include at index 183 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M08.40N  	Priority of that include is  1
+M08.40F      Common at index 18 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Keyboard Shortcuts Logic Text Common.md
 M08.40G      Priority 0
-M08.40F      Common at index 16 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
+M08.40F      Common at index 19 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
 M08.40G      Priority 0
 M08.40M  	Topic has same include at index 223 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
 M08.40N  	Priority of that include is  0
-M08.40F      Common at index 17 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
+M08.40F      Common at index 20 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
 M08.40G      Priority 0
-M08.40F      Common at index 18 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
+M08.40F      Common at index 21 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
 M08.40G      Priority 0
-M08.40F      Common at index 19 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
+M08.40F      Common at index 22 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
 M08.40G      Priority 0
-M08.40F      Common at index 20 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
+M08.40F      Common at index 23 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
 M08.40G      Priority 0
-M08.40F      Common at index 21 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
+M08.40F      Common at index 24 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function FISCALDAY Level 3.md
+M08.40G      Priority 0
+M08.40F      Common at index 25 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
 M08.40G      Priority 0
 M08.40M  	Topic has same include at index 255 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
 M08.40N  	Priority of that include is  0
-M08.40F      Common at index 22 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Gillian.md
+M08.40F      Common at index 26 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Gillian.md
 M08.40G      Priority 0
 M08.40M  	Topic has same include at index 255 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Gillian.md
 M08.40N  	Priority of that include is  0
@@ -3934,6 +4253,8 @@ M09.00C      Topic at index 181 C:\Git\GenevaERS\User-Documentation\All Markdown
 M09.00D          Priority 2
 M09.00C      Topic at index 182 C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function DAYSBETWEEN.md
 M09.00D          Priority 2
+M09.00C      Topic at index 183 C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function FISCALDAY.md
+M09.00D          Priority 2
 M09.00C      Topic at index 223 C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M09.00D          Priority 2
 M09.00C      Topic at index 254 C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench User Guide\Keyboard Shortcuts for General Users.md
@@ -3945,14 +4266,16 @@ M10.00A  Create ToDoIncludes List
 M10.20A  Target priority =  1
 M10.20B      Requesting common file =  C:\Git\GenevaERS\User-Documentation\Common Modules\FAQ\Keyboard Shortcuts Common.md
 M10.20B      Requesting common file =  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
-M10.20B      Requesting common file =  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M10.20B      Requesting common file =  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M10.20B      Requesting common file =  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M10.20B      Requesting common file =  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M10.20B      Requesting common file =  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
 M10.20M  Target priority is target includes priority =  2
 M10.20N      Requesting topic file =  C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ALL.md
 M10.20N      Requesting topic file =  C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function BATCHDATE.md
 M10.20N      Requesting topic file =  C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function DATE.md
 M10.20N      Requesting topic file =  C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function DAYSBETWEEN.md
+M10.20N      Requesting topic file =  C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function FISCALDAY.md
 M10.20N      Requesting topic file =  C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M10.20N      Requesting topic file =  C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench User Guide\Keyboard Shortcuts for General Users.md
 M10.20N      Requesting topic file =  C:\Git\GenevaERS\User-Documentation\All Markdown Topics\About this website.md
@@ -3968,7 +4291,7 @@ M10.30C          Include 1 1 C:\Git\GenevaERS\User-Documentation\Common Modules\
 M10.30C          Include 1 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ERF.md
 M10.30C          Include 1 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ECA.md
 M10.30B  Priority  1
-M10.30B      Requesting File C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M10.30B      Requesting File C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M10.30C          Include 2 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M10.30C          Include 2 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
 M10.30C          Include 2 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ERF.md
@@ -3985,28 +4308,37 @@ M10.30C          Include 4 0 C:\Git\GenevaERS\User-Documentation\Common Modules\
 M10.30C          Include 4 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
 M10.30C          Include 4 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ERF.md
 M10.30C          Include 4 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ECA.md
+M10.30B  Priority  1
+M10.30B      Requesting File C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M10.30C          Include 5 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
+M10.30C          Include 5 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function FISCALDAY Level 3.md
+M10.30C          Include 5 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ERF.md
+M10.30C          Include 5 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ECA.md
 M10.30B  Priority  2
 M10.30B      Requesting File C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ALL.md
-M10.30C          Include 5 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M10.30C          Include 6 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M10.30B  Priority  2
 M10.30B      Requesting File C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function BATCHDATE.md
-M10.30C          Include 6 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M10.30C          Include 7 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
 M10.30B  Priority  2
 M10.30B      Requesting File C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function DATE.md
-M10.30C          Include 7 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M10.30C          Include 8 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M10.30B  Priority  2
 M10.30B      Requesting File C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function DAYSBETWEEN.md
-M10.30C          Include 8 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M10.30C          Include 9 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M10.30B  Priority  2
+M10.30B      Requesting File C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function FISCALDAY.md
+M10.30C          Include 10 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
 M10.30B  Priority  2
 M10.30B      Requesting File C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Rules for all Logic Text.md
-M10.30C          Include 9 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
+M10.30C          Include 11 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
 M10.30B  Priority  2
 M10.30B      Requesting File C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench User Guide\Keyboard Shortcuts for General Users.md
-M10.30C          Include 10 0 C:\Git\GenevaERS\User-Documentation\Common Modules\FAQ\Keyboard Shortcuts Common.md
+M10.30C          Include 12 0 C:\Git\GenevaERS\User-Documentation\Common Modules\FAQ\Keyboard Shortcuts Common.md
 M10.30B  Priority  2
 M10.30B      Requesting File C:\Git\GenevaERS\User-Documentation\All Markdown Topics\About this website.md
-M10.30C          Include 11 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
-M10.30C          Include 11 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Gillian.md
+M10.30C          Include 13 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
+M10.30C          Include 13 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Gillian.md
   
 M11.00A  Perform ToDoIncludes List 
 M11.10C  Created new TempInclude Folder - C:\Git\GenevaERS\User-Documentation\TempInclude
@@ -4057,7 +4389,7 @@ M11.70H  Created new TempInclude Folder - C:\Git\GenevaERS\User-Documentation\Te
  
 M11.20A  Priority of this requesting file: 1
 M11.20B  Copy input files to TempInclude  
-M11.20C      Requesting File C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M11.20C      Requesting File C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M11.20E      Requesting file is a common file
 M11.20F      Requesting file copied to TempInclude Folder 
 M11.20G          Include 2 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
@@ -4072,8 +4404,8 @@ M11.20K          Copied to Temp Folder
 M11.20G          Include 2 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ECA.md
 M11.20H          Include comes from Common Modules 
 M11.20K          Copied to Temp Folder 
-M11.40A  Process includes for this requesting file = Introduction Function BATCHDATE Level 3.md
-M11.40B      Filename for requesting file = Introduction Function BATCHDATE Level 3.md
+M11.40A  Process includes for this requesting file = Introduction Function Batchdate Level 3.md
+M11.40B      Filename for requesting file = Introduction Function Batchdate Level 3.md
 M11.40E      Path for requesting file = Logic Text
 M11.40G      Result of Confirm-Folders for expanded is SUCCESS
 M11.60A      Include Filename = AA Syntax Legend Level 3.md
@@ -4139,12 +4471,40 @@ M11.60A      Include Filename = Example Function DAYSBETWEEN ECA.md
 M11.70G  Deleted TempInclude Folder - C:\Git\GenevaERS\User-Documentation\TempInclude
 M11.70H  Created new TempInclude Folder - C:\Git\GenevaERS\User-Documentation\TempInclude
  
+M11.20A  Priority of this requesting file: 1
+M11.20B  Copy input files to TempInclude  
+M11.20C      Requesting File C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M11.20E      Requesting file is a common file
+M11.20F      Requesting file copied to TempInclude Folder 
+M11.20G          Include 5 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
+M11.20H          Include comes from Common Modules 
+M11.20K          Copied to Temp Folder 
+M11.20G          Include 5 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function FISCALDAY Level 3.md
+M11.20H          Include comes from Common Modules 
+M11.20K          Copied to Temp Folder 
+M11.20G          Include 5 2 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ERF.md
+M11.20H          Include comes from Common Modules 
+M11.20K          Copied to Temp Folder 
+M11.20G          Include 5 3 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ECA.md
+M11.20H          Include comes from Common Modules 
+M11.20K          Copied to Temp Folder 
+M11.40A  Process includes for this requesting file = Introduction Function FISCALDAY Level 3.md
+M11.40B      Filename for requesting file = Introduction Function FISCALDAY Level 3.md
+M11.40E      Path for requesting file = Logic Text
+M11.40G      Result of Confirm-Folders for expanded is SUCCESS
+M11.60A      Include Filename = AA Syntax Legend Level 3.md
+M11.60A      Include Filename = Syntax Function FISCALDAY Level 3.md
+M11.60A      Include Filename = Example Function FISCALDAY ERF.md
+M11.60A      Include Filename = Example Function FISCALDAY ECA.md
+M11.70G  Deleted TempInclude Folder - C:\Git\GenevaERS\User-Documentation\TempInclude
+M11.70H  Created new TempInclude Folder - C:\Git\GenevaERS\User-Documentation\TempInclude
+ 
 M11.20A  Priority of this requesting file: 2
 M11.20B  Copy input files to TempInclude  
 M11.20C      Requesting File C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ALL.md
 M11.20D      Requesting file is a topic
 M11.20F      Requesting file copied to TempInclude Folder 
-M11.20G          Include 5 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M11.20G          Include 6 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M11.20J          Include comes from Temp\Expanded-Common 
 M11.20K          Copied to Temp Folder 
 M11.40A  Process includes for this requesting file = Syntax - function ALL.md
@@ -4164,7 +4524,7 @@ M11.20B  Copy input files to TempInclude
 M11.20C      Requesting File C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function BATCHDATE.md
 M11.20D      Requesting file is a topic
 M11.20F      Requesting file copied to TempInclude Folder 
-M11.20G          Include 6 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M11.20G          Include 7 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
 M11.20J          Include comes from Temp\Expanded-Common 
 M11.20K          Copied to Temp Folder 
 M11.40A  Process includes for this requesting file = Syntax - function BATCHDATE.md
@@ -4184,7 +4544,7 @@ M11.20B  Copy input files to TempInclude
 M11.20C      Requesting File C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function DATE.md
 M11.20D      Requesting file is a topic
 M11.20F      Requesting file copied to TempInclude Folder 
-M11.20G          Include 7 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M11.20G          Include 8 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M11.20J          Include comes from Temp\Expanded-Common 
 M11.20K          Copied to Temp Folder 
 M11.40A  Process includes for this requesting file = Syntax - function DATE.md
@@ -4204,7 +4564,7 @@ M11.20B  Copy input files to TempInclude
 M11.20C      Requesting File C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function DAYSBETWEEN.md
 M11.20D      Requesting file is a topic
 M11.20F      Requesting file copied to TempInclude Folder 
-M11.20G          Include 8 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M11.20G          Include 9 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
 M11.20J          Include comes from Temp\Expanded-Common 
 M11.20K          Copied to Temp Folder 
 M11.40A  Process includes for this requesting file = Syntax - function DAYSBETWEEN.md
@@ -4221,10 +4581,30 @@ M11.70H  Created new TempInclude Folder - C:\Git\GenevaERS\User-Documentation\Te
  
 M11.20A  Priority of this requesting file: 2
 M11.20B  Copy input files to TempInclude  
+M11.20C      Requesting File C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function FISCALDAY.md
+M11.20D      Requesting file is a topic
+M11.20F      Requesting file copied to TempInclude Folder 
+M11.20G          Include 10 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M11.20J          Include comes from Temp\Expanded-Common 
+M11.20K          Copied to Temp Folder 
+M11.40A  Process includes for this requesting file = Syntax - function FISCALDAY.md
+M11.40B      Filename for requesting file = Syntax - function FISCALDAY.md
+M11.40E      Path for requesting file = Workbench Logic Text Syntax\Syntax - functions
+M11.40G      Result of Confirm-Folders for expanded is SUCCESS
+M11.40H      Result of Confirm-Folders for website is SUCCESS
+M11.60A      Include Filename = Introduction Function FISCALDAY Level 3.md
+M11.70A    Topic copied to website and path 
+M11.70B         ThisExpandedFileFullPath C:\Git\GenevaERS\User-Documentation\Temp\Expanded-Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function FISCALDAY.md
+M11.70C         TopicWebsiteFullPath C:\Git\GenevaERS\User-Documentation\docs\Workbench Logic Text Syntax\Syntax - functions\Syntax - function FISCALDAY.md
+M11.70G  Deleted TempInclude Folder - C:\Git\GenevaERS\User-Documentation\TempInclude
+M11.70H  Created new TempInclude Folder - C:\Git\GenevaERS\User-Documentation\TempInclude
+ 
+M11.20A  Priority of this requesting file: 2
+M11.20B  Copy input files to TempInclude  
 M11.20C      Requesting File C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M11.20D      Requesting file is a topic
 M11.20F      Requesting file copied to TempInclude Folder 
-M11.20G          Include 9 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
+M11.20G          Include 11 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
 M11.20H          Include comes from Common Modules 
 M11.20K          Copied to Temp Folder 
 M11.40A  Process includes for this requesting file = Rules for all Logic Text.md
@@ -4244,7 +4624,7 @@ M11.20B  Copy input files to TempInclude
 M11.20C      Requesting File C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench User Guide\Keyboard Shortcuts for General Users.md
 M11.20D      Requesting file is a topic
 M11.20F      Requesting file copied to TempInclude Folder 
-M11.20G          Include 10 0 C:\Git\GenevaERS\User-Documentation\Common Modules\FAQ\Keyboard Shortcuts Common.md
+M11.20G          Include 12 0 C:\Git\GenevaERS\User-Documentation\Common Modules\FAQ\Keyboard Shortcuts Common.md
 M11.20J          Include comes from Temp\Expanded-Common 
 M11.20K          Copied to Temp Folder 
 M11.40A  Process includes for this requesting file = Keyboard Shortcuts for General Users.md
@@ -4264,10 +4644,10 @@ M11.20B  Copy input files to TempInclude
 M11.20C      Requesting File C:\Git\GenevaERS\User-Documentation\All Markdown Topics\About this website.md
 M11.20D      Requesting file is a topic
 M11.20F      Requesting file copied to TempInclude Folder 
-M11.20G          Include 11 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
+M11.20G          Include 13 0 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
 M11.20H          Include comes from Common Modules 
 M11.20K          Copied to Temp Folder 
-M11.20G          Include 11 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Gillian.md
+M11.20G          Include 13 1 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Gillian.md
 M11.20H          Include comes from Common Modules 
 M11.20K          Copied to Temp Folder 
 M11.40A  Process includes for this requesting file = About this website.md

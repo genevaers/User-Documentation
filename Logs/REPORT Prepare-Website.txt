@@ -1,5 +1,5 @@
 ﻿M01.65E  Report file for Prepare-Website.ps1   Version 2.0
-M01.65F  Run Date       10/26/2022 10:49:00
+M01.65F  Run Date       10/27/2022 08:39:01
   
 M02.10A 	List of important folders
   
@@ -33,20 +33,24 @@ M03.30C  	7   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Exam
 M03.30C  	8   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ERF.md
 M03.30C  	9   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ECA.md
 M03.30C  	10   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ERF.md
-M03.30C  	11   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
-M03.30C  	12   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
-M03.30C  	13   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
-M03.30C  	14   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
-M03.30C  	15   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Keyboard Shortcuts Logic Text Common.md
-M03.30C  	16   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
-M03.30C  	17   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
-M03.30C  	18   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
-M03.30C  	19   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
-M03.30C  	20   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
-M03.30C  	21   C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
-M03.30C  	22   C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Gillian.md
+M03.30C  	11   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ECA.md
+M03.30C  	12   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ERF.md
+M03.30C  	13   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M03.30C  	14   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
+M03.30C  	15   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M03.30C  	16   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M03.30C  	17   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M03.30C  	18   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Keyboard Shortcuts Logic Text Common.md
+M03.30C  	19   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
+M03.30C  	20   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
+M03.30C  	21   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
+M03.30C  	22   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
+M03.30C  	23   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
+M03.30C  	24   C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function FISCALDAY Level 3.md
+M03.30C  	25   C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
+M03.30C  	26   C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Gillian.md
  
-M03.30D  Total common files: 23
+M03.30D  Total common files: 27
  
 ====================================================================
  
@@ -324,31 +328,37 @@ M05.30B  COMMON FILES WITH INCLUDES
 M05.30C  Common 1 = C:\Git\GenevaERS\User-Documentation\Common Modules\FAQ\Keyboard Shortcuts Common.md
 M05.30D       INCLUDES C:\Git\GenevaERS\User-Documentation\Common Modules\FAQ\Keyboard Shortcuts All WB Screens Common.md
  
-M05.30C  Common 11 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
+M05.30C  Common 13 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function ALL Level 3.md
 M05.30D       INCLUDES C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function ALL Level 3.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ERF.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function ALL ECA.md
  
-M05.30C  Common 12 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function BATCHDATE Level 3.md
+M05.30C  Common 14 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function Batchdate Level 3.md
 M05.30D       INCLUDES C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function BATCHDATE Level 3.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ERF.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function BATCHDATE ECA.md
  
-M05.30C  Common 13 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
+M05.30C  Common 15 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DATE Level 3.md
 M05.30D       INCLUDES C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DATE Level 3.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ERF.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DATE ECA.md
  
-M05.30C  Common 14 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
+M05.30C  Common 16 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
 M05.30D       INCLUDES C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function DAYSBETWEEN Level 3.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ERF.md
 M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function DAYSBETWEEN ECA.md
  
-M05.30E  5 common files have includes.
+M05.30C  Common 17 = C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+M05.30D       INCLUDES C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\AA Syntax Legend Level 3.md
+M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Syntax Function FISCALDAY Level 3.md
+M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ERF.md
+M05.30D                C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Example Function FISCALDAY ECA.md
+ 
+M05.30E  6 common files have includes.
  
 ====================================================================
  
@@ -366,6 +376,9 @@ M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic
 M06.32C  Topic 182 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function DAYSBETWEEN.md
 M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function DAYSBETWEEN Level 3.md
  
+M06.32C  Topic 183 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Syntax - functions\Syntax - function FISCALDAY.md
+M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Introduction Function FISCALDAY Level 3.md
+ 
 M06.32C  Topic 223 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Logic Text\Rules for all Logic Text Common.md
  
@@ -376,18 +389,18 @@ M06.32C  Topic 255 = C:\Git\GenevaERS\User-Documentation\All Markdown Topics\Abo
 M06.32D       INCLUDES  C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Eugene.md
 M06.32D                 C:\Git\GenevaERS\User-Documentation\Common Modules\Test\Gillian.md
  
-M06.32E  7 topic files have includes.
+M06.32E  8 topic files have includes.
  
 ====================================================================
  
 M13.00A  SUMMARY OF INCLUDES          
  
-M13.00B  Total common files         23
+M13.00B  Total common files         27
 M13.00C  Total topic files          262
  
-M13.00D  Common files with includes    5       Total includes in those common files    17
-M13.00E  Topic files with includes     7       Total includes in those topic files     8
-M13.00F  Total files with includes     12       Total includes in all files             25
+M13.00D  Common files with includes    6       Total includes in those common files    21
+M13.00E  Topic files with includes     8       Total includes in those topic files     9
+M13.00F  Total files with includes     14       Total includes in all files             30
  
 ====================================================================
  
@@ -398,7 +411,7 @@ M13.20B  Includes Per Topic         - Param Max = 25           Largest = 2
 M13.20C  DepthCommonIncludesCommons - Param Max = 5            Used Depth = 1
  
 M13.20D  Pathways = Total instances of a common including a common to any depth
-M13.20D  Pathways                   - Param Max =  500         Used = 17
+M13.20D  Pathways                   - Param Max =  500         Used = 21
  
 ====================================================================
  
