@@ -1,16 +1,3 @@
-﻿---
-layout: default
-title: "Syntax - function FISCALDAY"
-parent: Syntax - functions
-grand_parent: Workbench Logic Text Syntax
-nav_order: 6
----
-# Syntax - function FISCALDAY
-{: .no_toc}
-TABLE OF CONTENTS 
-1. TOC
-{:toc}  
- 
 
 # How do I use FISCALDAY? 
 
@@ -32,11 +19,11 @@ The VDP for a view can override the fiscal values in a control record. In those 
 
 For more, see the \[FISCAL DATES\] section in the configuration file for MR91 in as given in topic [Runbook MR91 Control File Generator](../../PE Programs/Runbook MR91 Control File Generator). 
 
-![(Syntax Legend)](../../images/LTZZ_Syntax_legend.gif )
+[[INCLUDE: Logic Text\AA Syntax Legend Level 3 ]]
 
 # Syntax 
 
-![Function FISCALDAY](../../images/LTSF_FISCALDAY_01.gif)
+[[INCLUDE: Logic Text\Syntax Function FISCALDAY Level 3 ]]
 
 # Rules for the syntax 
 
@@ -46,16 +33,9 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 # Examples: FISCALDAY function in Extract Record Filter 
 
-
-|Example logic text|Meaning|
-|------------------|-------|
-|IF ({field1} < FISCALDAY(-7))<BR>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<BR>ENDIF|Skip any input records where field1 is more than 7 fiscal days before<BR>the date of running this view, and select all other records.<BR>Fiscal days means that if the date of running this view is fiscal day five<BR>of a fiscal year, then only records from fiscal days one to five<BR> are selected. This example assumes that field1 is a fiscal day number.<BR>The code at left can also be written as<BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;SKIPIF({field1} < FISCALDAY(-7))|
+[[ INCLUDE: Logic Text\Example Function FISCALDAY ERF ]]
 
 # Examples: FISCALDAY function in Extract Column Assignment 
 
-
-|Example logic text|Meaning|
-|------------------|-------|
-|COLUMN = FISCALDAY()|Set the current column to the<BR>fiscal day number of the day<BR>the view is run.|
-  
+[[ INCLUDE: Logic Text\Example Function FISCALDAY ECA ]]
 
