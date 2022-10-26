@@ -1,5 +1,5 @@
 ﻿M01.65J  Trace file for Prepare-Website.ps1   Version 2.0
-M01.65K  Run Date       10/27/2022 08:39:01
+M01.65K  Run Date       10/27/2022 09:28:36
 M01.71C  Created new ExpandedCommonFolder - C:\Git\GenevaERS\User-Documentation\Temp\Expanded-Common
 M01.72C  Created new ExpandedTopicsFolder - C:\Git\GenevaERS\User-Documentation\Temp\Expanded-Topics
   
@@ -359,7 +359,7 @@ M04.61D  Sub-folder C:\Git\GenevaERS\User-Documentation\docs\Workbench User Guid
 M04.61D  Sub-folder C:\Git\GenevaERS\User-Documentation\docs\_posts
 M04.61D  Sub-folder C:\Git\GenevaERS\User-Documentation\docs\_sass
 M04.61D  Sub-folder C:\Git\GenevaERS\User-Documentation\docs\_site
-M04.61E  MD files under Website 270
+M04.61E  MD files under Website 271
  
 M04.61F  Display Website MD files 
 M04.61G      MD File C:\Git\GenevaERS\User-Documentation\docs\Basic solutions\index.md
@@ -621,6 +621,7 @@ M04.61G      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\Workbench Lo
 M04.61G      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\Workbench Logic Text Syntax\Syntax - functions\Syntax - function BATCHDATE.md
 M04.61G      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\Workbench Logic Text Syntax\Syntax - functions\Syntax - function DATE.md
 M04.61G      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\Workbench Logic Text Syntax\Syntax - functions\Syntax - function DAYSBETWEEN.md
+M04.61G      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\Workbench Logic Text Syntax\Syntax - functions\Syntax - function FISCALDAY.md
 M04.61G      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M04.61G      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\Workbench User Guide\Keyboard Shortcuts for General Users.md
 M04.61G      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\About this website.md
@@ -703,13 +704,14 @@ M04.62B  Firstchar _
 M04.62B  Firstchar _
 M04.62B  Firstchar _
 M04.62Z  End Delete md from docs 
-M04.63A  MD files left under Website 8
+M04.63A  MD files left under Website 9
  
 M04.63B  Check Website MD files still there 
 M04.63C      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\Workbench Logic Text Syntax\Syntax - functions\Syntax - function ALL.md
 M04.63C      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\Workbench Logic Text Syntax\Syntax - functions\Syntax - function BATCHDATE.md
 M04.63C      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\Workbench Logic Text Syntax\Syntax - functions\Syntax - function DATE.md
 M04.63C      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\Workbench Logic Text Syntax\Syntax - functions\Syntax - function DAYSBETWEEN.md
+M04.63C      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\Workbench Logic Text Syntax\Syntax - functions\Syntax - function FISCALDAY.md
 M04.63C      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\Workbench Logic Text Syntax\Rules for all Logic Text.md
 M04.63C      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\Workbench User Guide\Keyboard Shortcuts for General Users.md
 M04.63C      MD File C:\Git\GenevaERS\User-Documentation\docs\_site\About this website.md
