@@ -1,16 +1,3 @@
-﻿---
-layout: default
-title: "Syntax - function PRIOR"
-parent: Syntax - functions
-grand_parent: Workbench Logic Text Syntax
-nav_order: 19
----
-# Syntax - function PRIOR
-{: .no_toc}
-TABLE OF CONTENTS 
-1. TOC
-{:toc}  
- 
 
 # How do I use PRIOR? 
 
@@ -33,11 +20,11 @@ Notice how CURRENT makes the meaning very clear, even though if you omit the wor
   
 CURRENT and PRIOR can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
   
-![(Syntax Legend)](../../images/LTZZ_Syntax_legend.gif )
+[[INCLUDE: Logic Text\AA Syntax Legend Level 3 ]]
 
 # Syntax 
 
-![Function PRIOR](../../images/LTS_CURRENT_PRIOR_01.gif)
+[[INCLUDE: Logic Text\Syntax Function PRIOR Level 3 ]]
 
 # Rules for the syntax 
 
@@ -47,17 +34,9 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 # Examples: PRIOR function in Extract Record Filter 
 
-
-|Example logic text|Meaning|
-|------------------|-------|
-|IF (CURRENT({field1}) <> PRIOR({field1}))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF|Select only records with unique values for field1.<br>This assumes the input file is sorted into field1 order.<br>This example can also be written:<br>&nbsp;&nbsp;&nbsp;&nbsp;SELECTIF(CURRENT({field1}) <> PRIOR({field1}))|
-
+[[ INCLUDE: Logic Text\Example Function PRIOR ERF ]]
 
 # Examples: PRIOR function in Extract Column Assignment 
 
-
-|Example logic text|Meaning|
-|------------------|-------|
-|IF (CURRENT({field2}) <> PRIOR({field2}))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN COLUMN = "PRODUCT: "<br>&nbsp;&nbsp;&nbsp;&nbsp;    ELSE COLUMN = " "<br>ENDIF|If the current record has a different value of field2 from<br>the previous record, set the current column to "PRODUCT: "<br>otherwise set the current column to blank.<br>This assumes the input file is sorted into field2 order.|
-  
+[[ INCLUDE: Logic Text\Example Function PRIOR ECA ]]
 
