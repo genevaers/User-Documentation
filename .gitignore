@@ -15,4 +15,5 @@ docs\just-the-docs-light.css
 docs\search-data.json
 docs\welcome-to-jekyll.html
 Logs\*.*
-Temp\*.*
+Temp\Expanded-Common\*.*
+Temp\Expanded-Topics\*.*
