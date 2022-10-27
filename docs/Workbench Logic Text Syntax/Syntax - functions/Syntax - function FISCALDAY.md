@@ -14,7 +14,7 @@ TABLE OF CONTENTS
 
 # How do I use FISCALDAY? 
 
-ISCALDAY returns a day based on the fiscal values in the control record for the environment for a view. This means that different views in the same batch run can have different fiscal dates because they come from different environments. By comparison, RUNDAY is the same for all views in a batch.
+FISCALDAY returns a day based on the fiscal values in the control record for the environment for a view. This means that different views in the same batch run can have different fiscal dates because they come from different environments. By comparison, RUNDAY is the same for all views in a batch.
 
 The VDP can override the fiscal values in the control record - see the next section below.
 

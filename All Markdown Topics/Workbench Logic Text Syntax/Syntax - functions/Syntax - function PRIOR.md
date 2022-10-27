@@ -11,4 +11,4 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
  
-# UNDER CONSTRUCTION
+ [[ INCLUDE: Logic Text\Introduction Function PRIOR Level 3 ]]
