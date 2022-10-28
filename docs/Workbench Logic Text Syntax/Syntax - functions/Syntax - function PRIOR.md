@@ -50,7 +50,7 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 |Example logic text|Meaning|
 |------------------|-------|
-|IF (CURRENT({field1}) <> PRIOR({field1}))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF|Select only records with unique values for field1.<br>This assumes the input file is sorted into field1 order.<br>This example can also be written:<br>&nbsp;&nbsp;&nbsp;&nbsp;SELECTIF(CURRENT({field1}) <> PRIOR({field1}))|
+|**IF (CURRENT({field1}) <> PRIOR({field1}))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select only records with unique values for field1.<br>This assumes the input file is sorted into field1 order.<br>This example can also be written:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(CURRENT({field1}) <> PRIOR({field1}))**|
 
 
 # Examples: PRIOR function in Extract Column Assignment 
@@ -58,6 +58,6 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 |Example logic text|Meaning|
 |------------------|-------|
-|IF (CURRENT({field2}) <> PRIOR({field2}))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN COLUMN = "PRODUCT: "<br>&nbsp;&nbsp;&nbsp;&nbsp;    ELSE COLUMN = " "<br>ENDIF|If the current record has a different value of field2 from<br>the previous record, set the current column to "PRODUCT: "<br>otherwise set the current column to blank.<br>This assumes the input file is sorted into field2 order.|
+|**IF (CURRENT({field2}) <> PRIOR({field2}))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN COLUMN = "PRODUCT: "<br>&nbsp;&nbsp;&nbsp;&nbsp;    ELSE COLUMN = " "<br>ENDIF**|If the current record has a different value of field2 from<br>the previous record, set the current column to "PRODUCT: "<br>otherwise set the current column to blank.<br>This assumes the input file is sorted into field2 order.|
   
 
