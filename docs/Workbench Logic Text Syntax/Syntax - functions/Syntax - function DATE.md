@@ -43,7 +43,7 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 |Example logic text|Meaning|
 |------------------|-------|
-|IF {field1} = DATE("20111201",CCYYMMDD)<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF<br>|Select those input records where<br>field1 is December 1, 2011.<br>The code at left can also be written as:<br>&nbsp;&nbsp;&nbsp;&nbsp;SELECTIF({field1}= DATE("20111201",CCYYMMDD))|
+|**IF {field1} = DATE("20111201",CCYYMMDD)<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select those input records where<br>field1 is December 1, 2011.<br>The code at left can also be written as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF({field1}= DATE("20111201",CCYYMMDD))**|
 
 
 # Examples: DATE function in Extract Column Assignment 
@@ -51,7 +51,7 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 |Example logic text|Meaning|
 |------------------|-------|
-|COLUMN = DATE("20111201",CCYYMMDD)|Set the current column to a date of<br>December 1, 2011 in CCYYMMDD format.|
+|**COLUMN = DATE("20111201",CCYYMMDD)**|Set the current column to a date of<br>December 1, 2011 in CCYYMMDD format.|
 
   
 
