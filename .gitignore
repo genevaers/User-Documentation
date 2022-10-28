@@ -1,4 +1,5 @@
 docs/_site/
+docs/_posts
 docs/sass-cache*.*
 docs/jekyll-cache*.*
 docs/jekyll-metadata*.*
