@@ -1,16 +1,3 @@
-﻿---
-layout: default
-title: "Syntax - function FISCALMONTH"
-parent: Syntax - functions
-grand_parent: Workbench Logic Text Syntax
-nav_order: 6
----
-# Syntax - function FISCALMONTH
-{: .no_toc}
-TABLE OF CONTENTS 
-1. TOC
-{:toc}  
- 
 
 # How do I use FISCALMONTH? 
 
@@ -32,11 +19,11 @@ The VDP for a view can override the fiscal values in a control record. In those 
 
 For more, see the \[FISCAL DATES\] section in the configuration file for MR91 in as given in topic [Runbook MR91 Control File Generator](../../PE Programs/Runbook MR91 Control File Generator). 
 
-![(Syntax Legend)](../../images/LTZZ_Syntax_legend.gif )
+[[INCLUDE: Logic Text\AA Syntax Legend Level 3 ]]
 
 # Syntax 
 
-![Function FISCALMONTH](../../images/LTSF_FISCALMONTH_01.gif)
+[[INCLUDE: Logic Text\Syntax Function FISCALMONTH Level 3 ]]
 
 # Rules for the syntax 
 
@@ -46,17 +33,9 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 # Examples: FISCALMONTH function in Extract Record Filter 
 
-
-|Example logic text|Meaning|
-|------------------|-------|
-|**IF ({field2} >= FISCALMONTH(-1))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select any input records where field2 is the previous fiscal month or later,<br>and skip all other records. Fiscal months means that if the date of<br>running this view is fiscal month one, then only records from<br>fiscal month one are selected.<br>The example at left assumes that field2 is a fiscal month number.<br>The code at left can also be written as:<br>**SELECTIF({field2} >= FISCALMONTH(-1))**|
+[[ INCLUDE: Logic Text\Example Function FISCALMONTH ERF ]]
 
 # Examples: FISCALMONTH function in Extract Column Assignment 
 
-
-|Example logic text|Meaning|
-|------------------|-------|
-|**COLUMN = FISCALMONTH()**|Set the current column to the current fiscal month number.|
-
-  
+[[ INCLUDE: Logic Text\Example Function FISCALMONTH ECA ]]
 
