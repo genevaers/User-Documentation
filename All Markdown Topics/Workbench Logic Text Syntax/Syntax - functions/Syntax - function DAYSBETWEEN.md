@@ -10,6 +10,5 @@ nav_order: 5
 TABLE OF CONTENTS 
 1. TOC
 {:toc}  
- 
- 
- [[ INCLUDE: Logic Text\Introduction Function DAYSBETWEEN Level 3 ]]
+
+[[ INCLUDE: Logic Text\Consolidations\Consolidation Function DAYSBETWEEN Level 3 ]]

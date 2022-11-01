@@ -10,5 +10,5 @@ nav_order: 6
 TABLE OF CONTENTS 
 1. TOC
 {:toc}  
- 
- [[ INCLUDE: Logic Text\Introduction Function FISCALDAY Level 3 ]]
+
+ [[ INCLUDE: Logic Text\Consolidations\Consolidation Function FISCALDAY Level 3 ]]

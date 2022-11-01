@@ -10,15 +10,15 @@ nav_order: 4
 TABLE OF CONTENTS 
 1. TOC
 {:toc}  
- 
- 
 
 
 # How do I use DATE? 
 
+
 DATE is used whenever you want to specify some date. You can use DATE to set a value, or as part of a comparison.
 
 DATE can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+
 
 ![(Syntax Legend)](../../images/LTZZ_Syntax_legend.gif )
 
@@ -54,5 +54,4 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 |**COLUMN = DATE("20111201",CCYYMMDD)**|Set the current column to a date of<br>December 1, 2011 in CCYYMMDD format.|
 
   
-
 

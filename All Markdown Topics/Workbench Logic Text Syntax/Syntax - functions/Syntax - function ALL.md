@@ -10,6 +10,5 @@ nav_order: 1
 TABLE OF CONTENTS 
 1. TOC
 {:toc}  
- 
 
- [[ INCLUDE: Logic Text\Introduction Function ALL Level 3 ]]
+ [[ INCLUDE: Logic Text\Consolidations\Consolidation Function ALL Level 3 ]]

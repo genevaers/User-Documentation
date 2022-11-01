@@ -10,9 +10,10 @@ nav_order: 6
 TABLE OF CONTENTS 
 1. TOC
 {:toc}  
- 
+
 
 # How do I use FISCALDAY? 
+
 
 FISCALDAY returns a day based on the fiscal values in the control record for the environment for a view. This means that different views in the same batch run can have different fiscal dates because they come from different environments. By comparison, RUNDAY is the same for all views in a batch.
 
@@ -31,6 +32,7 @@ A view specifies a control record, and so the values in the control record norma
 The VDP for a view can override the fiscal values in a control record. In those cases the view ignores the fiscal values in the control record and uses the VDP fiscal values.
 
 For more, see the \[FISCAL DATES\] section in the configuration file for MR91 in as given in topic [Runbook MR91 Control File Generator](../../PE Programs/Runbook MR91 Control File Generator). 
+
 
 ![(Syntax Legend)](../../images/LTZZ_Syntax_legend.gif )
 
