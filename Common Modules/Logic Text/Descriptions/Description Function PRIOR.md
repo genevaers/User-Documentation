@@ -1,6 +1,4 @@
 
-# How do I use PRIOR? 
-
 PRIOR means the previous input record. For any input record, you can compare the current value of a field with the value in the previous record.
   
 PRIOR is typed before the name of the field, for example:
@@ -20,23 +18,3 @@ Notice how CURRENT makes the meaning very clear, even though if you omit the wor
   
 CURRENT and PRIOR can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
   
-[[INCLUDE: Logic Text\AA Syntax Legend Level 3 ]]
-
-# Syntax 
-
-[[INCLUDE: Logic Text\Syntax Function PRIOR Level 3 ]]
-
-# Rules for the syntax 
-
-PRIOR can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
-
-See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
-
-# Examples: PRIOR function in Extract Record Filter 
-
-[[ INCLUDE: Logic Text\Example Function PRIOR ERF ]]
-
-# Examples: PRIOR function in Extract Column Assignment 
-
-[[ INCLUDE: Logic Text\Example Function PRIOR ECA ]]
-

@@ -10,15 +10,15 @@ nav_order: 5
 TABLE OF CONTENTS 
 1. TOC
 {:toc}  
- 
- 
 
 
 # How do I use DAYSBETWEEN? 
 
+
 Use DAYSBETWEEN to compare dates and return the difference in days.
 
 DAYSBETWEEN can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+
 
 ![(Syntax Legend)](../../images/LTZZ_Syntax_legend.gif )
 

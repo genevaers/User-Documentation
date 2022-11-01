@@ -11,4 +11,4 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
  
- [[ INCLUDE: Logic Text\Introduction Function PRIOR Level 3 ]]
+  [[ INCLUDE: Logic Text\Consolidations\Consolidation Function PRIOR Level 3 ]]
