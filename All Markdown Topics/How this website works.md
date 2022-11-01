@@ -10,7 +10,7 @@ TABLE OF CONTENTS
 {:toc}  
 
 # Layout of screen  
-This section is not yet documented.
+To be completed.
   
   
 
