@@ -55,3 +55,6 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 |**IF (DAYSBETWEEN({BUY_DATE},{SHIP_DATE}) > 30)<BR>&nbsp;&nbsp;&nbsp;&nbsp;THEN WRITE(SOURCE=VIEW,DEST=EXT=03)<BR>ENDIF**|Write to Extract 3 those<BR> records where there are<BR> more than 30 days between the<BR>transaction date and the shipping date.|
   
 
+  
+  (Examples can be copied to the clipboard.)
+  

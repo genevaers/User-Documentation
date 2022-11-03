@@ -61,3 +61,6 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 |**COLUMN = FISCALDAY()**|Set the current column to the<BR>fiscal day number of the day<BR>the view is run.|
   
 
+  
+  (Examples can be copied to the clipboard.)
+  
