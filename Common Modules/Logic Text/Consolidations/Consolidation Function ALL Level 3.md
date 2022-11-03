@@ -23,3 +23,4 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 [[ INCLUDE: Logic Text\Examples\Example Function ALL ECA ]]
 
+[[ INCLUDE: Logic Text\Examples and Clipboard ]]

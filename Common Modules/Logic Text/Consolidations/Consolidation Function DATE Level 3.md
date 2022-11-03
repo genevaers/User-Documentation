@@ -23,3 +23,4 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 [[ INCLUDE: Logic Text\Examples\Example Function DATE ECA ]]
 
+[[ INCLUDE: Logic Text\Examples and Clipboard ]]
