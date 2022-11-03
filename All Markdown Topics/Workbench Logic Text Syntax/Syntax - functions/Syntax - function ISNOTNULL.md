@@ -10,5 +10,5 @@ nav_order: 12
 TABLE OF CONTENTS 
 1. TOC
 {:toc}  
- 
-# UNDER CONSTRUCTION
+
+ [[ INCLUDE: Logic Text\Consolidations\Consolidation Function ISNOTNULL Level 3 ]]
