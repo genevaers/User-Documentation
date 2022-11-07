@@ -23,7 +23,7 @@ RUNMONTH returns a CCYYMM format date based on the run date. All views in a batc
 
 # Possible values of the VDP run date
 
-The date that PE runs is the VDP run date unless there is a specific value set in the VDP.  To set a specific value in the VDP see the RUNDATE parameter for the configuration file to MR91 as given in topic [Runbook - MR91 Control File Generator](../../PE Programs/Runbook MR91 Control File Generator). 
+The date that PE runs is the VDP run date unless there is a specific value set in the VDP.  To set a specific value in the VDP see the RUNDATE parameter for the configuration file to MR91 as given in topic [Runbook - MR91 Control File Generator](../../PE Programs/Runbook - MR91 Control File Generator). 
 
 # How do I use RUNMONTH? 
 
