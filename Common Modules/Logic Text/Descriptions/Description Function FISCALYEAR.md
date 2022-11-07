@@ -15,5 +15,5 @@ A view specifies a control record, and so the values in the control record norma
 
 The VDP for a view can override the fiscal values in a control record. In those cases the view ignores the fiscal values in the control record and uses the VDP fiscal values.
 
-For more, see the \[FISCAL DATES\] section in the configuration file for MR91 in as given in topic [Runbook MR91 Control File Generator](../../PE Programs/Runbook MR91 Control File Generator). 
+For more, see the \[FISCAL DATES\] section in the configuration file for MR91 in as given in topic [Runbook - MR91 Control File Generator](../../PE Programs/Runbook MR91 Control File Generator). 
 
