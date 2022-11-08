@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default
 title: "Rules for all Logic Text"
 parent: Workbench Logic Text Full Details
@@ -11,7 +11,6 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-  
 # Rule 1 - Extra blanks
   
 |Rule 1|Notes|
@@ -47,4 +46,3 @@ TABLE OF CONTENTS
   
 See topic [Keyboard Shortcuts Logic Text](Keyboard Shortcuts Logic Text)
   
-

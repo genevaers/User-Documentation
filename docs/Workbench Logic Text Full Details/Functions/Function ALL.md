@@ -11,7 +11,6 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-
 # How do I use function ALL? 
 
 
