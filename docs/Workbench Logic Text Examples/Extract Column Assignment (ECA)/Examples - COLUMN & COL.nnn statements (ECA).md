@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Examples - WRITE statements"
+title: "Examples - COLUMN & COL.nnn statements (ECA)"
 parent: Extract Column Assignment (ECA)
 grand_parent: Workbench Logic Text Examples
-nav_order: 4
+nav_order: 2
 ---
 
-# Examples - WRITE statements
+# Examples - COLUMN & COL.nnn statements (ECA)
 {: .no_toc}
 TABLE OF CONTENTS 
 1. TOC
