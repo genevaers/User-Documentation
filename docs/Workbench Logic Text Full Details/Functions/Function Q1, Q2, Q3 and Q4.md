@@ -11,7 +11,6 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-
 # How do I use Q1, Q2, Q3 and Q4? 
 
 
@@ -62,3 +61,4 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
   
   (Examples can be copied to the clipboard.)
   
+

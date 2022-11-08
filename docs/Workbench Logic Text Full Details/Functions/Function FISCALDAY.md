@@ -11,7 +11,6 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-
 # How do I use FISCALDAY? 
 
 
@@ -64,3 +63,4 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
   
   (Examples can be copied to the clipboard.)
   
+
