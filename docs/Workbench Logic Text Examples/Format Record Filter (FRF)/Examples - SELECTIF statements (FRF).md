@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Examples - IF statements with SELECT"
-parent: Extract Record Filter (ERF)
+title: "Examples - SELECTIF statements (FRF)"
+parent: Format Record Filter (FRF)
 grand_parent: Workbench Logic Text Examples
-nav_order: 4
+nav_order: 2
 ---
 
-# Examples - IF statements with SELECT
+# Examples - SELECTIF statements (FRF)
 {: .no_toc}
 TABLE OF CONTENTS 
 1. TOC

@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Examples - IF statements with SKIP"
+title: "Examples - IF statements with SKIP (FRF)"
 parent: Format Record Filter (FRF)
 grand_parent: Workbench Logic Text Examples
 nav_order: 5
 ---
 
-# Examples - IF statements with SKIP
+# Examples - IF statements with SKIP (FRF)
 {: .no_toc}
 TABLE OF CONTENTS 
 1. TOC

@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Examples - WRITE statements"
-parent: Extract Record Filter (ERF)
+title: "Examples - WRITE statements (ECA)"
+parent: Extract Column Assignment (ECA)
 grand_parent: Workbench Logic Text Examples
-nav_order: 6
+nav_order: 4
 ---
 
-# Examples - WRITE statements
+# Examples - WRITE statements (ECA)
 {: .no_toc}
 TABLE OF CONTENTS 
 1. TOC

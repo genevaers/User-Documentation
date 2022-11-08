@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Examples - SKIPIF statements"
-parent: Extract Record Filter (ERF)
+title: "Examples - IF statements with COLUMN (FCC)"
+parent: Format Column Calculations (FCC)
 grand_parent: Workbench Logic Text Examples
 nav_order: 3
 ---
 
-# Examples - SKIPIF statements
+# Examples - IF statements with COLUMN (FCC)
 {: .no_toc}
 TABLE OF CONTENTS 
 1. TOC
