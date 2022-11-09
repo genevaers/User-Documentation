@@ -6,7 +6,7 @@ parent: COLUMN & COL.nnn statements
 grand_parent: Workbench Logic Text Full Details
 
 ---
-#  COLUMN & COL.nnn statements (ECA)
+# COLUMN & COL.nnn statements (ECA)
 {: .no_toc}
 TABLE OF CONTENTS 
 1. TOC
