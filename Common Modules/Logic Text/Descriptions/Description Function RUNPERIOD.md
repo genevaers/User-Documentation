@@ -1,4 +1,6 @@
 
+# What is RUNPERIOD?
+
 RUNPERIOD is a similar concept to month. The difference is that there can be 13 periods in a year instead of 12. Periods are defined in the control record for the environment of the view.
 
 Normally, the date PE runs is the "run date".

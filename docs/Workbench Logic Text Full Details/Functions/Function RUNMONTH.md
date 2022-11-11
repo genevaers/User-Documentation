@@ -11,8 +11,10 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-# What is RUNMONTH?
 
+
+
+# What is RUNMONTH?
 
 Normally, the date PE runs is the "run date".
 
@@ -43,16 +45,16 @@ RUNMONTH can only be used in **Extract Record Filter** or **Extract Column Assig
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: RUNMONTH function in Extract Record Filter 
 
+# Examples: RUNMONTH function in Extract Record Filter 
 
 |Example logic text|Meaning|
 |------------------|-------|
 |**IF ({field2} >= RUNMONTH(-1))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select any input records where field2 is the previous month or later,<br>and skip all other records.<br>The example at left assumes that field2 is a month number.<br>The code at left can also be written as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF({field2} >= RUNMONTH(-1))**|
 
 
-# Examples: RUNMONTH function in Extract Column Assignment 
 
+# Examples: RUNMONTH function in Extract Column Assignment 
 
 |Example logic text|Meaning|
 |------------------|-------|

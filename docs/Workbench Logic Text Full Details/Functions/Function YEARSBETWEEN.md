@@ -11,8 +11,8 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-# What is YEARSBETWEEN?
 
+# What is YEARSBETWEEN?
 
 Use YEARSBETWEEN to compare dates and give the difference in years.
 
@@ -40,8 +40,8 @@ YEARSBETWEEN can only be used in **Extract Record Filter** or **Extract Column A
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: YEARSBETWEEN function in Extract Record Filter 
 
+# Examples: YEARSBETWEEN function in Extract Record Filter 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -49,8 +49,8 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 |**IF (YEARSBETWEEN({field1},{field2}) >= 1)<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select only records where there is at least one year<br>between field1 and field2, and skip all other records.<br>This example can also be written:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(YEARSBETWEEN({field1},{field2}) >= 1)**|
 
 
-# Examples: YEARSBETWEEN function in Extract Column Assignment 
 
+# Examples: YEARSBETWEEN function in Extract Column Assignment 
 
 |Example logic text|Meaning|
 |------------------|-------|

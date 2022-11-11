@@ -11,8 +11,8 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-# What is RUNDAY?
 
+# What is RUNDAY?
 
 Normally, the date PE runs is the "run date".
 
@@ -45,16 +45,16 @@ RUNDAY can only be used in **Extract Record Filter** or **Extract Column Assignm
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: RUNDAY function in Extract Record Filter 
 
+# Examples: RUNDAY function in Extract Record Filter 
 
 |Example logic text|Meaning|
 |------------------|-------|
 |**IF ({field1} < RUNDAY(-7))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>ENDIF**|Skip any input records where field1 is more than 7 days before the<br>date of running this view, and select all other records.<br>This example assumes that field1 is a date.<br>The code at left can also be written as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SKIPIF({field1} < RUNDAY(-7))**|
 
 
-# Examples: RUNDAY function in Extract Column Assignment 
 
+# Examples: RUNDAY function in Extract Column Assignment 
 
 |Example logic text|Meaning|
 |------------------|-------|

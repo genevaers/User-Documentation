@@ -11,8 +11,8 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-# How do I use BATCHDATE? 
 
+# How do I use BATCHDATE? 
 
 The BATCHDATE returns a date in CCYYMMDD format that is when the view is run. The group of views all running in the same batch in the Performance Engine all use the same BATCHDATE.
 
@@ -33,12 +33,13 @@ BATCHDATE can only be used in **Extract Record Filter** or **Extract Column Assi
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: BATCHDATE function in Extract Record Filter
 
+# Examples: BATCHDATE function in Extract Record Filter
 
 |Example logic text|Meaning|
 |------------------|-------|
 |**IF ({field1} < BATCHDATE(-7))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>ENDIF**|Skip any input records where field1 is more than 7 days before the<br>date of running this view. Select all other records.<br> This example can also be written:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SKIPIF({field1} < BATCHDATE(-7))**|
+
 
 
 # Examples: BATCHDATE function in Extract Column Assignment

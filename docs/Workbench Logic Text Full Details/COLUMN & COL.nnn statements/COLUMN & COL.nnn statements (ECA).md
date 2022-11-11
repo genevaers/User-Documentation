@@ -11,9 +11,9 @@ grand_parent: Workbench Logic Text Full Details
 TABLE OF CONTENTS 
 1. TOC
 {:toc}  
- 
-# How do I use COLUMN & COL.nnn statements in ECA? 
 
+
+# How do I use COLUMN & COL.nnn statements in ECA? 
 
 **COLUMN** is always a statement where you set the value of the current column. A COLUMN statement is allowed in **Extract Column Assignment**.
 
@@ -35,8 +35,8 @@ You can **set the value** column in the view using a COL.nnn statement in **Extr
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: COLUMN & COL.nnn (ECA)
 
+# Examples: COLUMN & COL.nnn (ECA)
 
 In all the following examples, **COLUMN can be replaced by COL.nnn**, for example COL.3. You can set the value of any COL.nnn from any other column. You can create multiple COL.nnn statements in Extract Column Assignment logic text.
 

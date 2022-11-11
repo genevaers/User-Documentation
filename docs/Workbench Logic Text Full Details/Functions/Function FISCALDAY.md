@@ -11,8 +11,8 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-# How do I use FISCALDAY? 
 
+# How do I use FISCALDAY? 
 
 FISCALDAY returns a day based on the fiscal values in the control record for the environment for a view. This means that different views in the same batch run can have different fiscal dates because they come from different environments. By comparison, RUNDAY is the same for all views in a batch.
 
@@ -45,15 +45,15 @@ FISCALDAY can only be used in **Extract Record Filter** or **Extract Column Assi
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: FISCALDAY function in Extract Record Filter 
 
+# Examples: FISCALDAY function in Extract Record Filter 
 
 |Example logic text|Meaning|
 |------------------|-------|
 |**IF ({field1} < FISCALDAY(-7))<BR>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<BR>ENDIF**|Skip any input records where field1 is more than 7 fiscal days before<BR>the date of running this view, and select all other records.<BR>Fiscal days means that if the date of running this view is fiscal day five<BR>of a fiscal year, then only records from fiscal days one to five<BR> are selected. This example assumes that field1 is a fiscal day number.<BR>The code at left can also be written as<BR>&nbsp;&nbsp;&nbsp;&nbsp;**SKIPIF({field1} < FISCALDAY(-7))**|
 
-# Examples: FISCALDAY function in Extract Column Assignment 
 
+# Examples: FISCALDAY function in Extract Column Assignment 
 
 |Example logic text|Meaning|
 |------------------|-------|

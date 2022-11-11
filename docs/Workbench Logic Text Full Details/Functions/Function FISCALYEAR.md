@@ -11,8 +11,8 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-# How do I use FISCALYEAR? 
 
+# How do I use FISCALYEAR? 
 
 FISCALYEAR returns a year based on the Fiscal Parameters in the control record for the environment for a view. This means that different views running in the same batch can have different Fiscal dates because they come from different environments. By comparison, RUNDAY is the same for all views in a batch.
 
@@ -45,16 +45,16 @@ FISCALYEAR can only be used in **Extract Record Filter** or **Extract Column Ass
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: FISCALYEAR function in Extract Record Filter 
 
+# Examples: FISCALYEAR function in Extract Record Filter 
 
 |Example logic text|Meaning|
 |------------------|-------|
 |**IF ({field4} = FISCALYEAR(-1))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select any input records where field4 is the previous fiscal year<br>and skip all other records.<br>The example at left assumes that field4 is a fiscal year number.<br>The code at left can also be written as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF({field4} >= FISCALYEAR(-1))**|
 
 
-# Examples: FISCALYEAR function in Extract Column Assignment 
 
+# Examples: FISCALYEAR function in Extract Column Assignment 
 
 |Example logic text|Meaning|
 |------------------|-------|

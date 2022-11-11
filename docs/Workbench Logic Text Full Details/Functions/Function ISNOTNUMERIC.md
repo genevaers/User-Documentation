@@ -11,8 +11,8 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-# How do I use ISNOTNUMERIC? 
 
+# How do I use ISNOTNUMERIC? 
 
 If you provide an input field or lookup path then ISNOTNUMERIC returns true if the input field or lookup path field not a numeric value, and false if the value is numeric.
 
@@ -42,16 +42,16 @@ If this functions checks a lookup, and **no effective date** is specified, the l
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: ISNOTNUMERIC function in Extract Record Filter 
 
+# Examples: ISNOTNUMERIC function in Extract Record Filter 
 
 |Example logic text|Meaning|
 |------------------|-------|
 |**IF ISNOTNUMERIC({field7})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>ENDIF**|Skip all input records where field7 is not numeric, and select all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SKIPIF(ISNOTNUMERIC({field7})**|
 
 
-# Examples: ISNOTNUMERIC function in Extract Column Assignment 
 
+# Examples: ISNOTNUMERIC function in Extract Column Assignment 
 
 |Example logic text|Meaning|
 |------------------|-------|

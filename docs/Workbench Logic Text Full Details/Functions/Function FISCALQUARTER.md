@@ -11,8 +11,8 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-# How do I use FISCALQUARTER? 
 
+# How do I use FISCALQUARTER? 
 
 FISCALQUARTER returns a month \(at a quarter start\) based on the Fiscal Parameters in the control record for the environment for a view. This means that different views running in the same batch can have different Fiscal dates because they come from different environments. By comparison, RUNDAY is the same for all views in a batch.
 
@@ -45,15 +45,15 @@ FISCALQUARTER can only be used in **Extract Record Filter** or **Extract Column 
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: FISCALQUARTER function in Extract Record Filter 
 
+# Examples: FISCALQUARTER function in Extract Record Filter 
 
 |Example logic text|Meaning|
 |------------------|-------|
 |**IF ({field2} >= FISCALQUARTER(-1))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select any input records where field2 is the previous fiscal quarter<br>or later,and skip all other records. Fiscal quarter means that if<br>the date of running this view is fiscal quarter one, then<br>only records from fiscal quarter one are selected.<br>The example at left assumes that field2 is a fiscal quarter number.<br>The code at left can also be written as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF({field2} >= FISCALQUARTER(-1))**|
 
-# Examples: FISCALQUARTER function in Extract Column Assignment 
 
+# Examples: FISCALQUARTER function in Extract Column Assignment 
 
 |Example logic text|Meaning|
 |------------------|-------|

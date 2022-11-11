@@ -11,8 +11,8 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-# How do I use MONTHSBETWEEN? 
 
+# How do I use MONTHSBETWEEN? 
 
 Use MONTHSBETWEEN to compare dates and return the difference in months.
 
@@ -37,16 +37,16 @@ MONTHSBETWEEN can only be used in **Extract Record Filter** or **Extract Column 
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: MONTHSBETWEEN function in Extract Record Filter 
 
+# Examples: MONTHSBETWEEN function in Extract Record Filter 
 
 |Example logic text|Meaning|
 |------------------|-------|
 |**IF (MONTHSBETWEEN({field1},{field2}) >= 3)<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select only records where there are at least 3 months between field1 and field2,<br>and skip all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(MONTHSBETWEEN({field1},{field2}) >= 3)**|
 
 
-# Examples: MONTHSBETWEEN function in Extract Column Assignment 
 
+# Examples: MONTHSBETWEEN function in Extract Column Assignment 
 
 |Example logic text|Meaning|
 |------------------|-------|

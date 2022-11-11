@@ -11,8 +11,8 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-# How do I use ISFOUND? 
 
+# How do I use ISFOUND? 
 
 If you provide a lookup path then ISFOUND returns true if the lookup path is successful for the current input record, and false if the lookup path fails.
 
@@ -39,16 +39,16 @@ If **no effective date** is specified, ISFOUND uses RUNDAY\( \) - see topic: [Sy
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: ISFOUND function in Extract Record Filter 
 
+# Examples: ISFOUND function in Extract Record Filter 
 
 |Example logic text|Meaning|
 |------------------|-------|
 |**IF ISFOUND({Lookup2})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select all input records where lookup path Lookup2 successfully<br>finds a target record, and skip all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(ISFOUND({Lookup2})**|
 
 
-# Examples: ISFOUND function in Extract Column Assignment 
 
+# Examples: ISFOUND function in Extract Column Assignment 
 
 |Example logic text|Meaning|
 |------------------|-------|

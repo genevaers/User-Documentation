@@ -11,15 +11,13 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-# How do I use ISFOUND? 
-
 [[ INCLUDE: Logic Text\Descriptions\Description Function ISFOUND ]]
 
-[[ INCLUDE: Logic Text\Syntax Diagrams\AA How the syntax works Level 3 ]]
+[[ INCLUDE: Logic Text\Syntax Diagrams\CMAA How the syntax works Level 3 ]]
 
 # Syntax 
 
-[[ INCLUDE: Logic Text\Syntax Diagrams\Syntax Diag Function ISFOUND Level 3 ]]
+[[ INCLUDE: Logic Text\Syntax Diagrams\CMSyntax Diag Function ISFOUND Level 3 ]]
 
 # Rules for the syntax 
 
@@ -29,13 +27,9 @@ If **no effective date** is specified, ISFOUND uses RUNDAY\( \) - see topic: [Sy
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: ISFOUND function in Extract Record Filter 
+[[ INCLUDE: Logic Text\Examples\CMExample Function ISFOUND ERF ]]
 
-[[ INCLUDE: Logic Text\Examples\Example Function ISFOUND ERF ]]
-
-# Examples: ISFOUND function in Extract Column Assignment 
-
-[[ INCLUDE: Logic Text\Examples\Example Function ISFOUND ECA ]]
+[[ INCLUDE: Logic Text\Examples\CMExample Function ISFOUND ECA ]]
 
 [[ INCLUDE: Logic Text\Examples and Clipboard ]]
 

@@ -11,8 +11,8 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-# How do I use ISNOTNULL? 
 
+# How do I use ISNOTNULL? 
 
 If you provide an input field or lookup path then ISNOTNULL returns true if the input field or lookup path field is something other than null values, and false if the value is null values.
 
@@ -42,8 +42,8 @@ If this functions checks a lookup, and **no effective date** is specified, ISNOT
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: ISNOTNULL function in Extract Record Filter 
 
+# Examples: ISNOTNULL function in Extract Record Filter 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -51,8 +51,8 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 |**IF ISNOTNULL({Lookup1})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select all input records where the lookup field for lookup path Lookup1<br>does not contain null values, and skip all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(ISNOTNULL({Lookup1})**|
 
 
-# Examples: ISNOTNULL function in Extract Column Assignment 
 
+# Examples: ISNOTNULL function in Extract Column Assignment 
 
 |Example logic text|Meaning|
 |------------------|-------|

@@ -11,8 +11,8 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-# What is RUNPERIOD?
 
+# What is RUNPERIOD?
 
 RUNPERIOD is a similar concept to month. The difference is that there can be 13 periods in a year instead of 12. Periods are defined in the control record for the environment of the view.
 
@@ -45,16 +45,16 @@ RUNPERIOD can only be used in **Extract Record Filter** or **Extract Column Assi
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: RUNPERIOD function in Extract Record Filter 
 
+# Examples: RUNPERIOD function in Extract Record Filter 
 
 |Example logic text|Meaning|
 |------------------|-------|
 |**IF ({field3} >= RUNPERIOD(-1))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select any input records where field3 is the previous period or later,<br>and skip all other records.<br>The example at left assumes that field3 is a period number.<br>The code at left can also be written as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF({field3} >= RUNPERIOD(-1))**|
 
 
-# Examples: RUNPERIOD function in Extract Column Assignment 
 
+# Examples: RUNPERIOD function in Extract Column Assignment 
 
 |Example logic text|Meaning|
 |------------------|-------|

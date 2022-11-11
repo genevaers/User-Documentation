@@ -11,24 +11,20 @@ grand_parent: Workbench Logic Text Full Details
 TABLE OF CONTENTS 
 1. TOC
 {:toc}  
- 
-# How do I use COLUMN & COL.nnn statements in ECA? 
 
 [[ INCLUDE: Logic Text\Descriptions\Description COLUMN & COL.nnn ECA ]]
 
-[[ INCLUDE: Logic Text\Syntax Diagrams\AA How the syntax works Level 3 ]]
+[[ INCLUDE: Logic Text\Syntax Diagrams\CMAA How the syntax works Level 3 ]]
 
 # Syntax 
 
-[[ INCLUDE: Logic Text\Syntax Diagrams\Syntax Diag COLUMN & COL.nnn ECA Level 3 ]]
+[[ INCLUDE: Logic Text\Syntax Diagrams\CMSyntax Diag COLUMN & COL.nnn ECA Level 3 ]]
 
 # Rules for the syntax 
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: COLUMN & COL.nnn (ECA)
-
-[[ INCLUDE: Logic Text\Examples\Example COLUMN & COL.nnn ECA ]]
+[[ INCLUDE: Logic Text\Examples\CMExample COLUMN & COL.nnn ECA ]]
 
 [[ INCLUDE: Logic Text\Examples and Clipboard ]]
 

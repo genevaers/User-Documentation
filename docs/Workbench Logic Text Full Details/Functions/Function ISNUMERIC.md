@@ -11,8 +11,8 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-# How do I use ISNUMERIC? 
 
+# How do I use ISNUMERIC? 
 
 If you provide an input field or lookup path then ISNUMERIC returns true if the input field or lookup path field has a numeric value, and false if the value is anything else.
 
@@ -42,16 +42,16 @@ If this functions checks a lookup, and **no effective date** is specified, the l
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: ISNUMERIC function in Extract Record Filter 
 
+# Examples: ISNUMERIC function in Extract Record Filter 
 
 |Example logic text|Meaning|
 |------------------|-------|
 |**IF ISNUMERIC({field5})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select all input records where field5 is numeric, and skip all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(ISNUMERIC({field5})**|
 
 
-# Examples: ISNUMERIC function in Extract Column Assignment 
 
+# Examples: ISNUMERIC function in Extract Column Assignment 
 
 |Example logic text|Meaning|
 |------------------|-------|

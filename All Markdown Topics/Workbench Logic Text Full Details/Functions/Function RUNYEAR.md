@@ -12,15 +12,13 @@ TABLE OF CONTENTS
 {:toc}  
  
 
-# What is RUNYEAR?
-
 [[ INCLUDE: Logic Text\Descriptions\Description Function RUNYEAR ]]
 
-[[ INCLUDE: Logic Text\Syntax Diagrams\AA How the syntax works Level 3 ]]
+[[ INCLUDE: Logic Text\Syntax Diagrams\CMAA How the syntax works Level 3 ]]
 
 # Syntax 
 
-[[ INCLUDE: Logic Text\Syntax Diagrams\Syntax Diag Function RUNYEAR Level 3 ]]
+[[ INCLUDE: Logic Text\Syntax Diagrams\CMSyntax Diag Function RUNYEAR Level 3 ]]
 
 # Rules for the syntax 
 
@@ -28,13 +26,9 @@ RUNYEAR can only be used in **Extract Record Filter** or **Extract Column Assign
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: RUNYEAR function in Extract Record Filter 
+[[ INCLUDE: Logic Text\Examples\CMExample Function RUNYEAR ERF ]]
 
-[[ INCLUDE: Logic Text\Examples\Example Function RUNYEAR ERF ]]
-
-# Examples: RUNYEAR function in Extract Column Assignment 
-
-[[ INCLUDE: Logic Text\Examples\Example Function RUNYEAR ECA ]]
+[[ INCLUDE: Logic Text\Examples\CMExample Function RUNYEAR ECA ]]
 
 [[ INCLUDE: Logic Text\Examples and Clipboard ]]
 
