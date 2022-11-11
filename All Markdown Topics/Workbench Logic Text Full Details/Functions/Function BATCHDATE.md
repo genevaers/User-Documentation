@@ -11,15 +11,13 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-# How do I use BATCHDATE? 
-
 [[ INCLUDE: Logic Text\Descriptions\Description Function BATCHDATE ]]
 
-[[ INCLUDE: Logic Text\Syntax Diagrams\AA How the syntax works Level 3 ]]
+[[ INCLUDE: Logic Text\Syntax Diagrams\CMAA How the syntax works Level 3 ]]
 
 # Syntax 
 
-[[ INCLUDE: Logic Text\Syntax Diagrams\Syntax Diag Function BATCHDATE Level 3 ]]
+[[ INCLUDE: Logic Text\Syntax Diagrams\CMSyntax Diag Function BATCHDATE Level 3 ]]
 
 # Rules for the syntax 
 
@@ -27,12 +25,8 @@ BATCHDATE can only be used in **Extract Record Filter** or **Extract Column Assi
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: BATCHDATE function in Extract Record Filter
+[[ INCLUDE: Logic Text\Examples\CMExample Function BATCHDATE ERF ]]
 
-[[ INCLUDE: Logic Text\Examples\Example Function BATCHDATE ERF ]]
-
-# Examples: BATCHDATE function in Extract Column Assignment
-
-[[ INCLUDE: Logic Text\Examples\Example Function BATCHDATE ECA ]]
+[[ INCLUDE: Logic Text\Examples\CMExample Function BATCHDATE ECA ]]
 
 [[ INCLUDE: Logic Text\Examples and Clipboard ]]

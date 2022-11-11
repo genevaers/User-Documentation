@@ -11,8 +11,8 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-# How do I use ISNOTSPACES? 
 
+# How do I use ISNOTSPACES? 
 
 If you provide an input field or lookup path then ISNOTSPACES returns true if the input field or lookup path field is not spaces, and false if the value is spaces.
 
@@ -42,16 +42,16 @@ If this functions checks a lookup, and **no effective date** is specified, the l
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: ISNOTSPACES function in Extract Record Filter 
 
+# Examples: ISNOTSPACES function in Extract Record Filter 
 
 |Example logic text|Meaning|
 |------------------|-------|
 |**IF ISNOTSPACES({field2})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select all input records where field2 is not spaces, and skip all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(ISNOTSPACES({field2})**|
 
 
-# Examples: ISNOTSPACES function in Extract Column Assignment 
 
+# Examples: ISNOTSPACES function in Extract Column Assignment 
 
 |Example logic text|Meaning|
 |------------------|-------|

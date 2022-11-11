@@ -11,8 +11,8 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-# How do I use ISNOTFOUND? 
 
+# How do I use ISNOTFOUND? 
 
 If you provide a lookup path then ISNOTFOUND returns true if the lookup path fails for the current input record and false if the lookup path is successful .
 
@@ -39,16 +39,16 @@ If **no effective date** is specified, ISNOTFOUND uses RUNDAY\( \) - see topic: 
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: ISNOTFOUND function in Extract Record Filter 
 
+# Examples: ISNOTFOUND function in Extract Record Filter 
 
 |Example logic text|Meaning|
 |------------------|-------|
 |**IF ISNOTFOUND({Lookup3})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>ENDIF**|Skip all input records where lookup path Lookup3 does not successfully<br>find a target record, and select all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SKIPIF(ISNOTFOUND({Lookup3})**|
 
 
-# Examples: ISNOTFOUND function in Extract Column Assignment 
 
+# Examples: ISNOTFOUND function in Extract Column Assignment 
 
 |Example logic text|Meaning|
 |------------------|-------|

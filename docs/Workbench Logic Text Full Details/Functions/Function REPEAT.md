@@ -11,8 +11,8 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-# How do I use REPEAT? 
 
+# How do I use REPEAT? 
 
 If you provide a text string and an integer, then REPEAT can create a string that consists of the given text string with integer repetitions. REPEAT is different from ALL because REPEAT has a fixed number of repetitions, whereas ALL is flexible and compares with fields of different lengths.
 
@@ -33,8 +33,8 @@ REPEAT can only be used in **Extract Record Filter** or **Extract Column Assignm
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: REPEAT function in Extract Record Filter 
 
+# Examples: REPEAT function in Extract Record Filter 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -42,8 +42,8 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 |**IF ({field8} = REPEAT("-", 13))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>ENDIF**|Skip for output those records with field8 is equal<br>to 13 dashes. Select all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SKIPIF({field8} = REPEAT("-", 13))**|
 
 
-# Examples: REPEAT function in Extract Column Assignment 
 
+# Examples: REPEAT function in Extract Column Assignment 
 
 |Example logic text|Meaning|
 |------------------|-------|

@@ -12,15 +12,13 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
  
-# How do I use COLUMN & COL.nnn statements in FCC? 
-
 [[ INCLUDE: Logic Text\Descriptions\Description COLUMN & COL.nnn FCC ]]
 
-[[ INCLUDE: Logic Text\Syntax Diagrams\AA How the syntax works Level 3 ]]
+[[ INCLUDE: Logic Text\Syntax Diagrams\CMAA How the syntax works Level 3 ]]
 
 # Syntax for COLUMN in FCC
 
-[[ INCLUDE: Logic Text\Syntax Diagrams\Syntax Diag COLUMN & COL.nnn FCC Level 3 ]]
+[[ INCLUDE: Logic Text\Syntax Diagrams\CMSyntax Diag COLUMN & COL.nnn FCC Level 3 ]]
 
 # Rules for the syntax 
 
@@ -29,9 +27,7 @@ TABLE OF CONTENTS
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: COLUMN & COL.nnn (FCC)
-
-[[ INCLUDE: Logic Text\Examples\Example COLUMN & COL.nnn FCC ]]
+[[ INCLUDE: Logic Text\Examples\CMExample COLUMN & COL.nnn FCC ]]
 
 [[ INCLUDE: Logic Text\Examples and Clipboard ]]
 

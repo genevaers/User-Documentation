@@ -11,11 +11,10 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
+
 # How do I use function ALL? 
 
-
 If you provide a text string then ALL can check if all of a field value is that text string \(repeated\). ALL is different from REPEAT because REPEAT has a fixed number of repetitions, whereas ALL is flexible and compares with fields of different lengths.
-
 ALL can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
 
 
@@ -31,8 +30,8 @@ ALL can only be used in **Extract Record Filter** or **Extract Column Assignment
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: ALL function in Extract Record Filter 
 
+# Examples: ALL function in Extract Record Filter 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -40,8 +39,8 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 |**IF ({field2} = ALL("-"))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>ENDIF**|Skip for output those records with field2 is equal to all dashes.<br> Select all other records. This example gives the same result as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SKIPIF({field2} = ALL("-"))**|
 
 
-# Examples: ALL function in Extract Column Assignment 
 
+# Examples: ALL function in Extract Column Assignment 
 
 |Example logic text|Meaning|
 |------------------|-------|

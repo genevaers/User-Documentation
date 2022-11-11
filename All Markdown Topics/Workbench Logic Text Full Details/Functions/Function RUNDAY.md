@@ -11,15 +11,13 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-# What is RUNDAY?
-
 [[ INCLUDE: Logic Text\Descriptions\Description Function RUNDAY ]]
 
-[[ INCLUDE: Logic Text\Syntax Diagrams\AA How the syntax works Level 3 ]]
+[[ INCLUDE: Logic Text\Syntax Diagrams\CMAA How the syntax works Level 3 ]]
 
 # Syntax 
 
-[[ INCLUDE: Logic Text\Syntax Diagrams\Syntax Diag Function RUNDAY Level 3 ]]
+[[ INCLUDE: Logic Text\Syntax Diagrams\CMSyntax Diag Function RUNDAY Level 3 ]]
 
 # Rules for the syntax 
 
@@ -29,13 +27,9 @@ RUNDAY can only be used in **Extract Record Filter** or **Extract Column Assignm
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: RUNDAY function in Extract Record Filter 
+[[ INCLUDE: Logic Text\Examples\CMExample Function RUNDAY ERF ]]
 
-[[ INCLUDE: Logic Text\Examples\Example Function RUNDAY ERF ]]
-
-# Examples: RUNDAY function in Extract Column Assignment 
-
-[[ INCLUDE: Logic Text\Examples\Example Function RUNDAY ECA ]]
+[[ INCLUDE: Logic Text\Examples\CMExample Function RUNDAY ECA ]]
 
 [[ INCLUDE: Logic Text\Examples and Clipboard ]]
 

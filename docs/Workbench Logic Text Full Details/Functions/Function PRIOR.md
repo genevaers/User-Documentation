@@ -11,8 +11,8 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-# How do I use PRIOR? 
 
+# How do I use PRIOR? 
 
 PRIOR means the previous input record. For any input record, you can compare the current value of a field with the value in the previous record.
   
@@ -46,16 +46,16 @@ PRIOR can only be used in **Extract Record Filter** or **Extract Column Assignme
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: PRIOR function in Extract Record Filter 
 
+# Examples: PRIOR function in Extract Record Filter 
 
 |Example logic text|Meaning|
 |------------------|-------|
 |**IF (CURRENT({field1}) <> PRIOR({field1}))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select only records with unique values for field1.<br>This assumes the input file is sorted into field1 order.<br>This example can also be written:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(CURRENT({field1}) <> PRIOR({field1}))**|
 
 
-# Examples: PRIOR function in Extract Column Assignment 
 
+# Examples: PRIOR function in Extract Column Assignment 
 
 |Example logic text|Meaning|
 |------------------|-------|

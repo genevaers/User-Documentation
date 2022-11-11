@@ -11,8 +11,8 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-# How do I use ISNULL? 
 
+# How do I use ISNULL? 
 
 If you provide an input field or lookup path then ISNULL returns true if the input field or lookup path field is null values, and false if the value is anything else.
 
@@ -42,16 +42,16 @@ If this functions checks a lookup, and **no effective date** is specified, the l
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: ISNULL function in Extract Record Filter 
 
+# Examples: ISNULL function in Extract Record Filter 
 
 |Example logic text|Meaning|
 |------------------|-------|
 |**IF ISNULL({field1})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>ENDIF**|Skip all input records where field1 contains null values,<br>and select all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SKIPIF(ISNULL({field1})**|
 
 
-# Examples: ISNULL function in Extract Column Assignment 
 
+# Examples: ISNULL function in Extract Column Assignment 
 
 |Example logic text|Meaning|
 |------------------|-------|

@@ -1,4 +1,6 @@
 
+# How do I use PRIOR? 
+
 PRIOR means the previous input record. For any input record, you can compare the current value of a field with the value in the previous record.
   
 PRIOR is typed before the name of the field, for example:

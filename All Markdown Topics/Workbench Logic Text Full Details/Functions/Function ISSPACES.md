@@ -11,15 +11,13 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-# How do I use ISSPACES? 
-
 [[ INCLUDE: Logic Text\Descriptions\Description Function ISSPACES ]]
 
-[[ INCLUDE: Logic Text\Syntax Diagrams\AA How the syntax works Level 3 ]]
+[[ INCLUDE: Logic Text\Syntax Diagrams\CMAA How the syntax works Level 3 ]]
 
 # Syntax 
 
-[[ INCLUDE: Logic Text\Syntax Diagrams\Syntax Diag Function ISSPACES Level 3 ]]
+[[ INCLUDE: Logic Text\Syntax Diagrams\CMSyntax Diag Function ISSPACES Level 3 ]]
 
 # Rules for the syntax 
 
@@ -29,13 +27,9 @@ If this functions checks a lookup, and **no effective date** is specified, the l
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: ISSPACES function in Extract Record Filter 
+[[ INCLUDE: Logic Text\Examples\CMExample Function ISSPACES ERF ]]
 
-[[ INCLUDE: Logic Text\Examples\Example Function ISSPACES ERF ]]
-
-# Examples: ISSPACES function in Extract Column Assignment 
-
-[[ INCLUDE: Logic Text\Examples\Example Function ISSPACES ECA ]]
+[[ INCLUDE: Logic Text\Examples\CMExample Function ISSPACES ECA ]]
 
 [[ INCLUDE: Logic Text\Examples and Clipboard ]]
 

@@ -1,4 +1,6 @@
 
+# How do I use Q1, Q2, Q3 and Q4? 
+
 These functions return a range of dates that are part of a quarter year \(a three month period\). You can test if a date is inside that quarter.
 
 For example, this logic text tests if field1 is in the first quarter of this year:

@@ -11,8 +11,8 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-# How do I use COLUMN & COL.nnn statements in FRF? 
 
+# How do I use COLUMN & COL.nnn statements in FRF? 
 
 **COLUMN** is not allowed in **Format Record Filter**.
 
@@ -27,8 +27,8 @@ COL.nnn can only appear in an **inquiry** \(for example "IF \(COL.nnn = ? " \) i
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: SELECTIF (FRF)
 
+# Examples: SELECTIF (FRF)
 
 |Example logic text|Meaning|
 |------------------|-------|

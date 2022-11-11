@@ -12,8 +12,8 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
  
-# How do I use COLUMN & COL.nnn statements in FCC? 
 
+# How do I use COLUMN & COL.nnn statements in FCC? 
 
 **COLUMN** is always a statement where you set the value of the current column. A COLUMN statement is allowed in **Format Column Calculations**.
 
@@ -35,8 +35,8 @@ COL.nnn can only appear in an **inquiry** \(for example "IF \(COL.nnn = ? " \) i
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
-# Examples: COLUMN & COL.nnn (FCC)
 
+# Examples: COLUMN (FCC)
 
 |Example logic text|Meaning|
 |------------------|-------|
