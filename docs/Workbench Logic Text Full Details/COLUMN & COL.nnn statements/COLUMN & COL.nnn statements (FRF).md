@@ -28,7 +28,7 @@ COL.nnn can only appear in an **inquiry** \(for example "IF \(COL.nnn = ? " \) i
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
 
-# Examples: SELECTIF COL.nnn (FRF)
+# Examples: SELECTIF with COL.nnn (FRF)
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -42,7 +42,7 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 |**SELECTIF(NOT COL.6 =<br>&nbsp;&nbsp;&nbsp;&nbsp;REPEAT("-", 13))**|Select for output those records with<br>column 6 is not equal to 13 dashes.<br>Skip all other records.<br>This example gives the same result as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SKIPIF(COL.6 = REPEAT("-", 13))**|
 |**SELECTIF(NOT COL.6 = "\xFF")**|Select for output those records with column 6<br>is not equal to hexadecimal FF.<br>Skip all other records.<br>This example gives the same result as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SKIPIF(COL.6 = "\xFF")**|
 
-# Examples: SKIPIF COL.nnn (FRF)
+# Examples: SKIPIF with COL.nnn (FRF)
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -56,7 +56,7 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 |**SKIPIF(COL.6 =<br>&nbsp;&nbsp;&nbsp;&nbsp;REPEAT("-", 13))**|Skip for output those records with<br>column 6 equal to 13 dashes.<br>Select all other records.|
 |**SKIPIF(COL.6 = "\xFF")**|Skip for output those records with column 6<br>equal to hexadecimal FF.<br>Select all other records.|
 
-# Examples: IF with COL.nnn SELECT (FRF)
+# Examples: IF with COL.nnn and SELECT (FRF)
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -72,7 +72,7 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 |**IF (COL.2 = "A") AND<br>&nbsp;&nbsp;&nbsp;&nbsp;(COL.3 > 10)<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>&nbsp;&nbsp;&nbsp;&nbsp;ELSE IF (COL.2 "D")<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ELSE IF (COL.2 "G")<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ENDIF<br>&nbsp;&nbsp;&nbsp;&nbsp;ENDIF<br>ENDIF**|Select for output those records with<br>column 2 equal to "A" and column 3 greater than 10.<br>Also select for output those records with column 2 equal to "D".<br>Also select for output those records with column 2 equal to "G".<br>Skip all other records.<br>Notice that the logic text at left counts as<br>only one IF statement, because the extra IF statements<br>are nested inside the first.<br>The code at left can also be written as follows<br>\(note the use of brackets to control the evaluation<br>of the conditions\):<br>**IF (COL.2 = "A" AND COL.3 > 10) OR<br>&nbsp;&nbsp;&nbsp;&nbsp;(COL.2 = "D") OR<br>&nbsp;&nbsp;&nbsp;&nbsp;(COL.2 = "G")<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|
 |**IF (COL.2 = "A") AND<br>&nbsp;&nbsp;&nbsp;&nbsp;(COL.3 > 10)<br>THEN IF (COL.4 + COL.5<br>&nbsp;&nbsp;&nbsp;&nbsp;         > COL.6)<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>&nbsp;&nbsp;&nbsp;&nbsp;ELSE IF (COL.7 = 0)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENDIF<br>&nbsp;&nbsp;&nbsp;&nbsp;ENDIF<br>ENDIF**|Consider those records with column 2 equal to "A"<br> and column 3 greater than 10.<br>Of the considered records, select for output<br>those records with column 4 plus column 5<br>greater then column 6.<br>Of the considered records not yet selected,<br>select also for output those records with<br>column 7 equal to zero.<br>Skip all other records.<br>Notice that the logic text at left counts as only<br>one IF statement, because the extra IF<br> statements are nested inside the first.<br>The code at left can also be written as follows<br>\(note the use of brackets to control the evaluation of the conditions\):<br>**IF (COL.2 = "A" AND COL.3 > 10) AND<br>&nbsp;&nbsp;&nbsp;&nbsp;((COL.4 + COL.5 > COL.6) OR<br>&nbsp;&nbsp;&nbsp;&nbsp;(COL.7 = 0))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|
 
-# Examples: IF with COL.nnn SKIP (FRF)
+# Examples: IF with COL.nnn and SKIP (FRF)
 
 |Example logic text|Meaning|
 |------------------|-------|
