@@ -3,7 +3,7 @@ layout: default
 title: "Examples - SELECTIF statements (ERF)"
 parent: Extract Record Filter (ERF)
 grand_parent: Workbench Logic Text Examples
-nav_order: 2
+nav_order: 6
 ---
 
 # Examples - SELECTIF statements (ERF)

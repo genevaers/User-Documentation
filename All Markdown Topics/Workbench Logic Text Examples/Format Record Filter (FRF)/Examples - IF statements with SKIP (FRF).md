@@ -3,7 +3,7 @@ layout: default
 title: "Examples - IF statements with SKIP (FRF)"
 parent: Format Record Filter (FRF)
 grand_parent: Workbench Logic Text Examples
-nav_order: 5
+nav_order: 4
 ---
 
 # Examples - IF statements with SKIP (FRF)

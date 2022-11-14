@@ -1,31 +1,18 @@
 ﻿---
 layout: default
-title: "COLUMN & COL.nnn statements (FRF)"
-nav_order: 4
-parent: COLUMN & COL.nnn statements
-grand_parent: Workbench Logic Text Full Details
+title: "Examples - COLUMN & COL.nnn statements (FRF)"
+parent: Format Record Filter (FRF)
+grand_parent: Workbench Logic Text Examples
+nav_order: 2
 ---
-#  COLUMN & COL.nnn statements (FRF)
+
+# Examples - COLUMN & COL.nnn statements (FRF)
 {: .no_toc}
 TABLE OF CONTENTS 
 1. TOC
 {:toc}  
 
-
-# How do I use COLUMN & COL.nnn statements in FRF? 
-
-**COLUMN** is not allowed in **Format Record Filter**.
-
-COL.nnn can only appear in an **inquiry** \(for example "IF \(COL.nnn = ? " \) in the format phase. In **Format Record Filter**, nnn can be any column in the view.
-
-
-# Syntax for COL.nnn in FRF
-
-COL.nnn can only appear in an **inquiry** \(for example "IF \(COL.nnn = ? " \) in the format phase. In **Format Record Filter**, nnn can be any column in the view.
-
-# Rules for the syntax 
-
-See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
+ COLUMN statements are **not permitted** in **Format Record Filter** logic text.
 
 
 # Examples: SELECTIF COL.nnn (FRF)
@@ -87,13 +74,5 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 |**IF (COL.6 = "\xFF")<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>ENDIF**|Skip for output those records with column 6<br>is equal to hexadecimal FF. Select all other records.<br>This example gives the same result as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SKIPIF(COL.6 = "\xFF")**|
 |**IF (COL.2 = "A") AND<br>&nbsp;&nbsp;&nbsp;&nbsp;(COL.3 > 10)<br>THEN SKIP<br>ELSE IF (COL.2 = "D")<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>&nbsp;&nbsp;&nbsp;&nbsp;ELSE IF (COL.2 = "G")<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          ENDIF<br>&nbsp;&nbsp;&nbsp;&nbsp;ENDIF<br>ENDIF**|Skip for output those records with column 2<br> equal to "A" and column 3 greater than 10.<br>In addition, skip for output those records with<br>column 2 equal to "D".<br>In addition, skip for output those records with column 2 equal to "G".<br>Select all other records.<br>Notice that the logic text at left counts as only one IF statement,<br>because the extra IF statements are nested inside the first.<br>The code at left can also be written as follows<br>\(note the use of brackets to control the evaluation of the conditions\):<br>**IF (COL.2 = "A" AND COL.3 > 10) OR<br>&nbsp;&nbsp;&nbsp;&nbsp;(COL.2 = "D") OR<br>&nbsp;&nbsp;&nbsp;&nbsp;(COL.2 = "G")<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>ENDIF**|
 |**IF (COL.2 = "A") AND<br>&nbsp;&nbsp;&nbsp;&nbsp;(COL.3 > 10)<br>THEN IF (COL.4 + COL.5<br>&nbsp;&nbsp;&nbsp;&nbsp;         > COL.6)<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>&nbsp;&nbsp;&nbsp;&nbsp;ELSE IF (COL.7 = 0)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          ENDIF<br>&nbsp;&nbsp;&nbsp;&nbsp;ENDIF<br>ENDIF**|Consider those records with column 2 equal to "A"<br>and column 3 greater than 10.<br>Of the considered records, skip for output those records<br>with column 4 plus column 5 is greater then column 6.<br>Of the considered records not yet skipped,<br>skip also for output those records with column 7 equal to zero.<br>Select all other records.<br>Notice that the logic text at left counts as only one IF statement,<br>because the extra IF statements are nested inside the first.<br>The code at left can also be written as follows<br>\(note the use of brackets to control the evaluation of the conditions\):<br>**IF (COL.2 = "A" AND COL.3 > 10) AND<br>&nbsp;&nbsp;&nbsp;&nbsp;((COL.4 + COL.5 > COL.6) OR<br>&nbsp;&nbsp;&nbsp;&nbsp;(COL.7 = 0))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>ENDIF**|
-
-
-  
-  (Examples can be copied to the clipboard.)
-  
-
-
-
 
 
