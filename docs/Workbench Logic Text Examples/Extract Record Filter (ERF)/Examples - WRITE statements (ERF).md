@@ -3,7 +3,7 @@ layout: default
 title: "Examples - WRITE statements (ERF)"
 parent: Extract Record Filter (ERF)
 grand_parent: Workbench Logic Text Examples
-nav_order: 6
+nav_order: 8
 ---
 
 # Examples - WRITE statements (ERF)

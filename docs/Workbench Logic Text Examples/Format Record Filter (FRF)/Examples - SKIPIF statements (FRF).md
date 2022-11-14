@@ -3,7 +3,7 @@ layout: default
 title: "Examples - SKIPIF statements (FRF)"
 parent: Format Record Filter (FRF)
 grand_parent: Workbench Logic Text Examples
-nav_order: 3
+nav_order: 6
 ---
 
 # Examples - SKIPIF statements (FRF)

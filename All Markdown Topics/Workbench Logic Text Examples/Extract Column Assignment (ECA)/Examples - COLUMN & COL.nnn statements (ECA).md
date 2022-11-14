@@ -12,4 +12,5 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
  
-# UNDER CONSTRUCTION
+[[ INCLUDE: Logic Text\Examples\CMExample COLUMN & COL.nnn ECA ]]
+
