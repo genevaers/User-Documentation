@@ -30,7 +30,7 @@ The date that PE runs is the VDP run date unless there is a specific value set i
 
 The parameter for RUNMONTH is a number of months to add or delete from the default RUNMONTH. For example, RUNMONTH\(-5\) provides the day five months before the date the view is run.
 
-RUNMONTH can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+RUNMONTH can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment (ECA)** logic text.
 
 
 ![(Syntax Legend)](../../images/LTZZ_Syntax_legend.gif )
@@ -41,7 +41,7 @@ RUNMONTH can only be used in **Extract Record Filter** or **Extract Column Assig
 
 # Rules for the syntax 
 
-RUNMONTH can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+RUNMONTH can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment(ECA)** logic text.
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 

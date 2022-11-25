@@ -22,7 +22,7 @@ The FISCALDAY returns a date in CCYYMMDD format that is appropriate for the envi
 
 The parameter for FISCALDAY is a number of days to add or delete from the default FISCALDAY. For example, FISCALDAY\(-5\) provides the day that is five days before the date the view is run.
 
-FISCALDAY can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+FISCALDAY can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment (ECA)** logic text.
 
 # VDP for view can override fiscal values in a control record
 
@@ -41,7 +41,7 @@ For more, see the \[FISCAL DATES\] section in the configuration file for MR91 in
 
 # Rules for the syntax 
 
-FISCALDAY can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+FISCALDAY can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment(ECA)*** logic text.
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 

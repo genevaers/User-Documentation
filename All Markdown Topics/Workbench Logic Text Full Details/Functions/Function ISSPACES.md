@@ -21,7 +21,7 @@ TABLE OF CONTENTS
 
 # Rules for the syntax 
 
-ISSPACES can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+ISSPACES can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment(ECA)** logic text.
 
 If this functions checks a lookup, and **no effective date** is specified, the lookup uses RUNDAY\( \) - see topic: [Syntax - function RUNDAY](Syntax - function RUNDAY)
 

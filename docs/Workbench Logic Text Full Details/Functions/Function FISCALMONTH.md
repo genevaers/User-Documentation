@@ -22,7 +22,7 @@ The FISCALMONTH returns a date in CCYYMM format that is appropriate for the envi
 
 The parameter for FISCALMONTH is a number of months to add or delete from the default FISCALMONTH. For example, FISCALMONTH\(-5\) provides the month that is five months before the date the view is run.
 
-FISCALMONTH can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+FISCALMONTH can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment (ECA)** logic text.
 
 # VDP for view can override fiscal values in a control record
 
@@ -41,7 +41,7 @@ For more, see the \[FISCAL DATES\] section in the configuration file for MR91 in
 
 # Rules for the syntax 
 
-FISCALMONTH can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+FISCALMONTH can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment(ECA)** logic text.
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 

@@ -9,7 +9,7 @@ The FISCALQUARTER returns a date in CCYYMM format that is appropriate for the en
 
 The parameter for FISCALQUARTER is a number of quarters to add or delete from the default FISCALQUARTER. For example, FISCALQUARTER\(-5\) provides the month that is five quarters before the date the view is run.
 
-FISCALQUARTER can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+FISCALQUARTER can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment (ECA)** logic text.
 
 # VDP for view can override fiscal values in a control record
 

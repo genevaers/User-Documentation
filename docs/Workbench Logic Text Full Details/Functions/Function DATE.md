@@ -16,7 +16,7 @@ TABLE OF CONTENTS
 
 DATE is used whenever you want to specify some date. You can use DATE to set a value, or as part of a comparison.
 
-DATE can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+DATE can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment (ECA)*** logic text.
 
 
 ![(Syntax Legend)](../../images/LTZZ_Syntax_legend.gif )
@@ -33,7 +33,7 @@ DATE can only be used in **Extract Record Filter** or **Extract Column Assignmen
 
 # Rules for the syntax 
 
-DATE can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+DATE can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment(ECA)** logic text.
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 

@@ -17,5 +17,5 @@ The date that PE runs is the VDP run date unless there is a specific value set i
 
 The parameter for RUNPERIOD is a number of periods to add or delete from the default RUNPERIOD. For example, RUNPERIOD\(-5\) provides the day five periods before the date the view is run.
 
-RUNPERIOD can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+RUNPERIOD can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment (ECA)** logic text.
 

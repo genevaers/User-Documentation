@@ -1,3 +1,1 @@
-
-[//]: # (Comment: there is no syntax diagram for COL.nnn in FRF. )
-
+![Function COLUMN FCC 1](../../images/LTS_COLUMN_3FCC_01.gif)

@@ -29,7 +29,7 @@ The date that PE runs is the VDP run date unless there is a specific value set i
 
 The parameter for RUNYEAR is a number of years to add or delete from the default RUNYEAR. For example, RUNYEAR\(-5\) provides a date five years before the date the view is run.
 
-RUNYEAR can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+RUNYEAR can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment (ECA)** logic text.
 
 
 ![(Syntax Legend)](../../images/LTZZ_Syntax_legend.gif )
@@ -40,7 +40,7 @@ RUNYEAR can only be used in **Extract Record Filter** or **Extract Column Assign
 
 # Rules for the syntax 
 
-RUNYEAR can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+RUNYEAR can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment(ECA)** logic text.
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 

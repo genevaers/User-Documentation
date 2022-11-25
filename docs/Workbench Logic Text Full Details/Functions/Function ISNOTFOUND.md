@@ -16,7 +16,7 @@ TABLE OF CONTENTS
 
 If you provide a lookup path then ISNOTFOUND returns true if the lookup path fails for the current input record and false if the lookup path is successful .
 
-ISNOTFOUND can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+ISNOTFOUND can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment (ECA)** logic text.
 
 
 ![(Syntax Legend)](../../images/LTZZ_Syntax_legend.gif )
@@ -33,7 +33,7 @@ ISNOTFOUND can only be used in **Extract Record Filter** or **Extract Column Ass
 
 # Rules for the syntax 
 
-ISNOTFOUND can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+ISNOTFOUND can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment(ECA)** logic text.
 
 If **no effective date** is specified, ISNOTFOUND uses RUNDAY\( \) - see topic: [Syntax - function RUNDAY](Syntax - function RUNDAY)
 
