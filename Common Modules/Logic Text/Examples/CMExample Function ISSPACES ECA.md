@@ -1,5 +1,5 @@
 
-# Examples: ISSPACES function in Extract Column Assignment 
+# Examples: ISSPACES function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

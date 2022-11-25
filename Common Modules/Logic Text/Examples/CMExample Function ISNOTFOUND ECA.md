@@ -1,5 +1,5 @@
 
-# Examples: ISNOTFOUND function in Extract Column Assignment 
+# Examples: ISNOTFOUND function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

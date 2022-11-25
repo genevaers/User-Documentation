@@ -1,5 +1,5 @@
 
-# Examples: DATE function in Extract Record Filter 
+# Examples: DATE function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|

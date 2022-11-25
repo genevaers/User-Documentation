@@ -1,5 +1,5 @@
 
-# Examples: ISNOTSPACES function in Extract Column Assignment 
+# Examples: ISNOTSPACES function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

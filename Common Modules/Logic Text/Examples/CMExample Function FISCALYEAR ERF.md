@@ -1,5 +1,5 @@
 
-# Examples: FISCALYEAR function in Extract Record Filter 
+# Examples: FISCALYEAR function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|

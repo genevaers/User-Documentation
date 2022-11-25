@@ -1,5 +1,5 @@
 
-# Examples: DAYSBETWEEN function in Extract Record Filter 
+# Examples: DAYSBETWEEN function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|

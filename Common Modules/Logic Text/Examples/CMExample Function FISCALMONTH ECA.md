@@ -1,5 +1,5 @@
 
-# Examples: FISCALMONTH function in Extract Column Assignment 
+# Examples: FISCALMONTH function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

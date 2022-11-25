@@ -46,7 +46,7 @@ RUNMONTH can only be used in **Extract Record Filter (ERF)** and **Extract Colum
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
 
-# Examples: RUNMONTH function in Extract Record Filter 
+# Examples: RUNMONTH function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -54,7 +54,7 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 
 
-# Examples: RUNMONTH function in Extract Column Assignment 
+# Examples: RUNMONTH function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

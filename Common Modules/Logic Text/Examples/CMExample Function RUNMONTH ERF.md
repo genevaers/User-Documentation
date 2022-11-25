@@ -1,5 +1,5 @@
 
-# Examples: RUNMONTH function in Extract Record Filter 
+# Examples: RUNMONTH function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|

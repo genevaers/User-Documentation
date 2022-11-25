@@ -1,5 +1,5 @@
 
-# Examples: BATCHDATE function in Extract Record Filter
+# Examples: BATCHDATE function in ERF
 
 |Example logic text|Meaning|
 |------------------|-------|

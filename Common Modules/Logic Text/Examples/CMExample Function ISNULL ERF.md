@@ -1,5 +1,5 @@
 
-# Examples: ISNULL function in Extract Record Filter 
+# Examples: ISNULL function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|

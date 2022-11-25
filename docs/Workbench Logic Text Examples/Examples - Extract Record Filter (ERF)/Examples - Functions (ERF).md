@@ -14,7 +14,7 @@ TABLE OF CONTENTS
  
 
 
-# Examples: ALL function in Extract Record Filter 
+# Examples: ALL function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -23,7 +23,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: BATCHDATE function in Extract Record Filter
+# Examples: BATCHDATE function in ERF
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -31,7 +31,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: DATE function in Extract Record Filter 
+# Examples: DATE function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -39,42 +39,42 @@ TABLE OF CONTENTS
 
 
 
-# Examples: DAYSBETWEEN function in Extract Record Filter 
+# Examples: DAYSBETWEEN function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
 |**IF (DAYSBETWEEN({field1},{field2}) > 7)<BR>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<BR>ENDIF**|Select only records where<BR>there are more than 7 days<BR>between field1 and field2, <BR>and skip all other records. <BR>This example can also be written:<BR>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(DAYSBETWEEN({field1},{field2}) > 7**|
 
 
-# Examples: DAYSBETWEEN function in Extract Record Filter 
+# Examples: DAYSBETWEEN function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
 |**IF (DAYSBETWEEN({field1},{field2}) > 7)<BR>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<BR>ENDIF**|Select only records where<BR>there are more than 7 days<BR>between field1 and field2, <BR>and skip all other records. <BR>This example can also be written:<BR>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(DAYSBETWEEN({field1},{field2}) > 7**|
 
 
-# Examples: FISCALDAY function in Extract Record Filter 
+# Examples: FISCALDAY function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
 |**IF ({field1} < FISCALDAY(-7))<BR>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<BR>ENDIF**|Skip any input records where field1 is more than 7 fiscal days before<BR>the date of running this view, and select all other records.<BR>Fiscal days means that if the date of running this view is fiscal day five<BR>of a fiscal year, then only records from fiscal days one to five<BR> are selected. This example assumes that field1 is a fiscal day number.<BR>The code at left can also be written as<BR>&nbsp;&nbsp;&nbsp;&nbsp;**SKIPIF({field1} < FISCALDAY(-7))**|
 
 
-# Examples: FISCALMONTH function in Extract Record Filter 
+# Examples: FISCALMONTH function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
 |**IF ({field2} >= FISCALMONTH(-1))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select any input records where field2 is the previous fiscal month or later,<br>and skip all other records. Fiscal months means that if the date of<br>running this view is fiscal month one, then only records from<br>fiscal month one are selected.<br>The example at left assumes that field2 is a fiscal month number.<br>The code at left can also be written as:<br>**SELECTIF({field2} >= FISCALMONTH(-1))**|
 
 
-# Examples: FISCALQUARTER function in Extract Record Filter 
+# Examples: FISCALQUARTER function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
 |**IF ({field2} >= FISCALQUARTER(-1))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select any input records where field2 is the previous fiscal quarter<br>or later,and skip all other records. Fiscal quarter means that if<br>the date of running this view is fiscal quarter one, then<br>only records from fiscal quarter one are selected.<br>The example at left assumes that field2 is a fiscal quarter number.<br>The code at left can also be written as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF({field2} >= FISCALQUARTER(-1))**|
 
 
-# Examples: FISCALYEAR function in Extract Record Filter 
+# Examples: FISCALYEAR function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -82,7 +82,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: ISFOUND function in Extract Record Filter 
+# Examples: ISFOUND function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -90,7 +90,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: ISNOTFOUND function in Extract Record Filter 
+# Examples: ISNOTFOUND function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -98,7 +98,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: ISNOTNULL function in Extract Record Filter 
+# Examples: ISNOTNULL function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -107,7 +107,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: ISNOTNUMERIC function in Extract Record Filter 
+# Examples: ISNOTNUMERIC function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -115,7 +115,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: ISNOTSPACES function in Extract Record Filter 
+# Examples: ISNOTSPACES function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -123,7 +123,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: ISNULL function in Extract Record Filter 
+# Examples: ISNULL function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -131,7 +131,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: ISNUMERIC function in Extract Record Filter 
+# Examples: ISNUMERIC function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -139,14 +139,14 @@ TABLE OF CONTENTS
 
 
 
-# Examples: ISSPACES function in Extract Record Filter 
+# Examples: ISSPACES function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
 |**IF ISSPACES({field9})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>ENDIF**|Skip all input records where field9 is spaces, and select all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SKIPIF(ISSPACES({field9})**|
 
 
-# Examples: MONTHSBETWEEN function in Extract Record Filter 
+# Examples: MONTHSBETWEEN function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -154,7 +154,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: PRIOR function in Extract Record Filter 
+# Examples: PRIOR function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -162,7 +162,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: Q1, Q2, Q3 and Q4 function in Extract Record Filter 
+# Examples: Q1, Q2, Q3 and Q4 function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -170,7 +170,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: REPEAT function in Extract Record Filter 
+# Examples: REPEAT function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -179,7 +179,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: RUNDAY function in Extract Record Filter 
+# Examples: RUNDAY function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -187,7 +187,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: RUNMONTH function in Extract Record Filter 
+# Examples: RUNMONTH function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -195,7 +195,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: RUNPERIOD function in Extract Record Filter 
+# Examples: RUNPERIOD function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -203,7 +203,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: RUNPERIOD function in Extract Record Filter 
+# Examples: RUNPERIOD function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -211,7 +211,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: RUNYEAR function in Extract Record Filter 
+# Examples: RUNYEAR function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -219,7 +219,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: YEARSBETWEEN function in Extract Record Filter 
+# Examples: YEARSBETWEEN function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|

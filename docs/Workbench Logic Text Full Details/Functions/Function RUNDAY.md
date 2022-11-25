@@ -46,7 +46,7 @@ RUNDAY can only be used in **Extract Record Filter (ERF)** and **Extract Column 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
 
-# Examples: RUNDAY function in Extract Record Filter 
+# Examples: RUNDAY function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -54,7 +54,7 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 
 
-# Examples: RUNDAY function in Extract Column Assignment 
+# Examples: RUNDAY function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

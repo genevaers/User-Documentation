@@ -1,5 +1,5 @@
 
-# Examples: Q1, Q2, Q3 and Q4 function in Extract Column Assignment 
+# Examples: Q1, Q2, Q3 and Q4 function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

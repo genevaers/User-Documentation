@@ -1,5 +1,5 @@
 
-# Examples: DATE function in Extract Column Assignment 
+# Examples: DATE function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

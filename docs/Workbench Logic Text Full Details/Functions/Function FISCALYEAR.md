@@ -46,7 +46,7 @@ FISCALYEAR can only be used in **Extract Record Filter (ERF)** and **Extract Col
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
 
-# Examples: FISCALYEAR function in Extract Record Filter 
+# Examples: FISCALYEAR function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -54,7 +54,7 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 
 
-# Examples: FISCALYEAR function in Extract Column Assignment 
+# Examples: FISCALYEAR function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

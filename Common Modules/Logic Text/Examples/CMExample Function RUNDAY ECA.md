@@ -1,5 +1,5 @@
 
-# Examples: RUNDAY function in Extract Column Assignment 
+# Examples: RUNDAY function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

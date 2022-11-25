@@ -1,5 +1,5 @@
 
-# Examples: ISNOTNULL function in Extract Record Filter 
+# Examples: ISNOTNULL function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|

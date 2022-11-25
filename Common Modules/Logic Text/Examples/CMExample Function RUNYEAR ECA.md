@@ -1,5 +1,5 @@
 
-# Examples: RUNYEAR function in Extract Column Assignment 
+# Examples: RUNYEAR function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

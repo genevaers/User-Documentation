@@ -1,5 +1,5 @@
 
-# Examples: RUNPERIOD function in Extract Column Assignment 
+# Examples: RUNPERIOD function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

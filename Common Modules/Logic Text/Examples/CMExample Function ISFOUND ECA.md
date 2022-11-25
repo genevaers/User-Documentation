@@ -1,5 +1,5 @@
 
-# Examples: ISFOUND function in Extract Column Assignment 
+# Examples: ISFOUND function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

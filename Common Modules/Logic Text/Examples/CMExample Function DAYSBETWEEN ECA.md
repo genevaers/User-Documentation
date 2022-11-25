@@ -1,5 +1,5 @@
 
-# Examples: DAYSBETWEEN function in Extract Column Assignment 
+# Examples: DAYSBETWEEN function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

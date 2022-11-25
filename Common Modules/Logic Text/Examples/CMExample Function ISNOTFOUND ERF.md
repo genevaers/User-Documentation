@@ -1,5 +1,5 @@
 
-# Examples: ISNOTFOUND function in Extract Record Filter 
+# Examples: ISNOTFOUND function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|

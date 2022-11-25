@@ -1,5 +1,5 @@
 
-# Examples: FISCALQUARTER function in Extract Record Filter 
+# Examples: FISCALQUARTER function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|

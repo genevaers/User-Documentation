@@ -31,7 +31,7 @@ ALL can only be used in **Extract Record Filter (ERF)** and **Extract Column Ass
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
 
-# Examples: ALL function in Extract Record Filter 
+# Examples: ALL function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -40,7 +40,7 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 
 
-# Examples: ALL function in Extract Column Assignment 
+# Examples: ALL function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

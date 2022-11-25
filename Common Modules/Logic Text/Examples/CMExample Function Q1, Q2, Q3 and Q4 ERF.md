@@ -1,5 +1,5 @@
 
-# Examples: Q1, Q2, Q3 and Q4 function in Extract Record Filter 
+# Examples: Q1, Q2, Q3 and Q4 function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|

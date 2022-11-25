@@ -1,5 +1,5 @@
 
-# Examples: FISCALDAY function in Extract Column Assignment 
+# Examples: FISCALDAY function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

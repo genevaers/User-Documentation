@@ -1,5 +1,5 @@
 
-# Examples: ALL function in Extract Column Assignment 
+# Examples: ALL function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

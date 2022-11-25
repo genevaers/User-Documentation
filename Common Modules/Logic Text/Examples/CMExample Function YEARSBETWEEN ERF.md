@@ -1,5 +1,5 @@
 
-# Examples: YEARSBETWEEN function in Extract Record Filter 
+# Examples: YEARSBETWEEN function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|

@@ -1,5 +1,5 @@
 
-# Examples: MONTHSBETWEEN function in Extract Column Assignment 
+# Examples: MONTHSBETWEEN function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

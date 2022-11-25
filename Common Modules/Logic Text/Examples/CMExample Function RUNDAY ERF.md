@@ -1,5 +1,5 @@
 
-# Examples: RUNDAY function in Extract Record Filter 
+# Examples: RUNDAY function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|

@@ -1,5 +1,5 @@
 
-# Examples: FISCALDAY function in Extract Record Filter 
+# Examples: FISCALDAY function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
