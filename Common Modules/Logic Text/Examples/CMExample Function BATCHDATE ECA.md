@@ -1,5 +1,5 @@
 
-# Examples: BATCHDATE function in Extract Column Assignment
+# Examples: BATCHDATE function in ECA
 
 |Example logic text|Meaning|
 |------------------|-------|

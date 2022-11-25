@@ -1,5 +1,5 @@
 
-# Examples: RUNQUARTER function in Extract Record Filter 
+# Examples: RUNQUARTER function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|

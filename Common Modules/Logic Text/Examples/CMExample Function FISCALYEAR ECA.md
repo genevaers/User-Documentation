@@ -1,5 +1,5 @@
 
-# Examples: FISCALYEAR function in Extract Column Assignment 
+# Examples: FISCALYEAR function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

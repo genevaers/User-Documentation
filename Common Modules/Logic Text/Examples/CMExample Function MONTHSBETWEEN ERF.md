@@ -1,5 +1,5 @@
 
-# Examples: MONTHSBETWEEN function in Extract Record Filter 
+# Examples: MONTHSBETWEEN function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|

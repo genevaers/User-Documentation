@@ -1,5 +1,5 @@
 
-# Examples: PRIOR function in Extract Record Filter 
+# Examples: PRIOR function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|

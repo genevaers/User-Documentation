@@ -1,5 +1,5 @@
 
-# Examples: RUNPERIOD function in Extract Record Filter 
+# Examples: RUNPERIOD function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|

@@ -1,5 +1,5 @@
 
-# Examples: RUNMONTH function in Extract Column Assignment 
+# Examples: RUNMONTH function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

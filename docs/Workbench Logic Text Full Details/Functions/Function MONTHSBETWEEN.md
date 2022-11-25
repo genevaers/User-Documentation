@@ -38,7 +38,7 @@ MONTHSBETWEEN can only be used in **Extract Record Filter (ERF)** and **Extract 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
 
-# Examples: MONTHSBETWEEN function in Extract Record Filter 
+# Examples: MONTHSBETWEEN function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -46,7 +46,7 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 
 
-# Examples: MONTHSBETWEEN function in Extract Column Assignment 
+# Examples: MONTHSBETWEEN function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

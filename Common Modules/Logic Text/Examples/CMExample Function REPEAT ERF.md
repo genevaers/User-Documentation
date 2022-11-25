@@ -1,5 +1,5 @@
 
-# Examples: REPEAT function in Extract Record Filter 
+# Examples: REPEAT function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|

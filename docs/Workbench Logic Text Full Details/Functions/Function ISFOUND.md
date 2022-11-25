@@ -40,7 +40,7 @@ If **no effective date** is specified, ISFOUND uses RUNDAY\( \) - see topic: [Sy
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
 
-# Examples: ISFOUND function in Extract Record Filter 
+# Examples: ISFOUND function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -48,7 +48,7 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 
 
-# Examples: ISFOUND function in Extract Column Assignment 
+# Examples: ISFOUND function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

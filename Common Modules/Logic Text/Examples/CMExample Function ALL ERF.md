@@ -1,5 +1,5 @@
 
-# Examples: ALL function in Extract Record Filter 
+# Examples: ALL function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|

@@ -41,7 +41,7 @@ YEARSBETWEEN can only be used in **Extract Record Filter (ERF)** and **Extract C
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
 
-# Examples: YEARSBETWEEN function in Extract Record Filter 
+# Examples: YEARSBETWEEN function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -50,7 +50,7 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 
 
-# Examples: YEARSBETWEEN function in Extract Column Assignment 
+# Examples: YEARSBETWEEN function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

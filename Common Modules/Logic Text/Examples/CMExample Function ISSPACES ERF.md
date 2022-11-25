@@ -1,5 +1,5 @@
 
-# Examples: ISSPACES function in Extract Record Filter 
+# Examples: ISSPACES function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|

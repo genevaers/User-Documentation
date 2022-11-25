@@ -38,14 +38,14 @@ DAYSBETWEEN can only be used in **Extract Record Filter (ERF)** and **Extract Co
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
 
-# Examples: DAYSBETWEEN function in Extract Record Filter 
+# Examples: DAYSBETWEEN function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
 |**IF (DAYSBETWEEN({field1},{field2}) > 7)<BR>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<BR>ENDIF**|Select only records where<BR>there are more than 7 days<BR>between field1 and field2, <BR>and skip all other records. <BR>This example can also be written:<BR>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(DAYSBETWEEN({field1},{field2}) > 7**|
 
 
-# Examples: DAYSBETWEEN function in Extract Column Assignment 
+# Examples: DAYSBETWEEN function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

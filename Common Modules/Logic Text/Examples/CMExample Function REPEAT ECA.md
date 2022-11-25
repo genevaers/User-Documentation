@@ -1,5 +1,5 @@
 
-# Examples: REPEAT function in Extract Column Assignment 
+# Examples: REPEAT function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

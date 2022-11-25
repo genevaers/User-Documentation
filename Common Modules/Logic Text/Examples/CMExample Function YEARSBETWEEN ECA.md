@@ -1,5 +1,5 @@
 
-# Examples: YEARSBETWEEN function in Extract Column Assignment 
+# Examples: YEARSBETWEEN function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

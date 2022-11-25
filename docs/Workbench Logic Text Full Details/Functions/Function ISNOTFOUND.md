@@ -40,7 +40,7 @@ If **no effective date** is specified, ISNOTFOUND uses RUNDAY\( \) - see topic: 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
 
-# Examples: ISNOTFOUND function in Extract Record Filter 
+# Examples: ISNOTFOUND function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -48,7 +48,7 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 
 
-# Examples: ISNOTFOUND function in Extract Column Assignment 
+# Examples: ISNOTFOUND function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

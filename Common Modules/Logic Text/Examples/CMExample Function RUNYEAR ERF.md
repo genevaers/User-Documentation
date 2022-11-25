@@ -1,5 +1,5 @@
 
-# Examples: RUNYEAR function in Extract Record Filter 
+# Examples: RUNYEAR function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|

@@ -14,7 +14,7 @@ TABLE OF CONTENTS
  
 
 
-# Examples: ALL function in Extract Column Assignment 
+# Examples: ALL function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -24,7 +24,7 @@ TABLE OF CONTENTS
   
 
 
-# Examples: BATCHDATE function in Extract Column Assignment
+# Examples: BATCHDATE function in ECA
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -35,7 +35,7 @@ TABLE OF CONTENTS
   
 
 
-# Examples: DATE function in Extract Column Assignment 
+# Examples: DATE function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -44,7 +44,7 @@ TABLE OF CONTENTS
   
 
 
-# Examples: DAYSBETWEEN function in Extract Column Assignment 
+# Examples: DAYSBETWEEN function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -54,7 +54,7 @@ TABLE OF CONTENTS
   
 
 
-# Examples: FISCALDAY function in Extract Column Assignment 
+# Examples: FISCALDAY function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -62,7 +62,7 @@ TABLE OF CONTENTS
   
 
 
-# Examples: FISCALMONTH function in Extract Column Assignment 
+# Examples: FISCALMONTH function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -71,7 +71,7 @@ TABLE OF CONTENTS
   
 
 
-# Examples: FISCALQUARTER function in Extract Column Assignment 
+# Examples: FISCALQUARTER function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -80,7 +80,7 @@ TABLE OF CONTENTS
   
 
 
-# Examples: FISCALYEAR function in Extract Column Assignment 
+# Examples: FISCALYEAR function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -89,7 +89,7 @@ TABLE OF CONTENTS
   
 
 
-# Examples: ISFOUND function in Extract Column Assignment 
+# Examples: ISFOUND function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -97,7 +97,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: ISNOTFOUND function in Extract Column Assignment 
+# Examples: ISNOTFOUND function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -105,7 +105,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: ISNOTNULL function in Extract Column Assignment 
+# Examples: ISNOTNULL function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -113,7 +113,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: ISNOTNUMERIC function in Extract Column Assignment 
+# Examples: ISNOTNUMERIC function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -121,7 +121,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: ISNOTSPACES function in Extract Column Assignment 
+# Examples: ISNOTSPACES function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -129,7 +129,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: ISNULL function in Extract Column Assignment 
+# Examples: ISNULL function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -137,7 +137,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: ISNUMERIC function in Extract Column Assignment 
+# Examples: ISNUMERIC function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -145,7 +145,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: ISSPACES function in Extract Column Assignment 
+# Examples: ISSPACES function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -153,7 +153,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: MONTHSBETWEEN function in Extract Column Assignment 
+# Examples: MONTHSBETWEEN function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -163,7 +163,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: PRIOR function in Extract Column Assignment 
+# Examples: PRIOR function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -171,7 +171,7 @@ TABLE OF CONTENTS
   
 
 
-# Examples: Q1, Q2, Q3 and Q4 function in Extract Column Assignment 
+# Examples: Q1, Q2, Q3 and Q4 function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -179,7 +179,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: REPEAT function in Extract Column Assignment 
+# Examples: REPEAT function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -188,7 +188,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: RUNDAY function in Extract Column Assignment 
+# Examples: RUNDAY function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -196,7 +196,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: RUNMONTH function in Extract Column Assignment 
+# Examples: RUNMONTH function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -204,7 +204,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: RUNPERIOD function in Extract Column Assignment 
+# Examples: RUNPERIOD function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -212,7 +212,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: RUNQUARTER function in Extract Column Assignment 
+# Examples: RUNQUARTER function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -220,7 +220,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: RUNYEAR function in Extract Column Assignment 
+# Examples: RUNYEAR function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -228,7 +228,7 @@ TABLE OF CONTENTS
 
 
 
-# Examples: YEARSBETWEEN function in Extract Column Assignment 
+# Examples: YEARSBETWEEN function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

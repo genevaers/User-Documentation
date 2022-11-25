@@ -43,7 +43,7 @@ Q1, Q2, Q3 and Q4 can only be used in **Extract Record Filter (ERF)** and **Extr
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
 
-# Examples: Q1, Q2, Q3 and Q4 function in Extract Record Filter 
+# Examples: Q1, Q2, Q3 and Q4 function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -51,7 +51,7 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 
 
-# Examples: Q1, Q2, Q3 and Q4 function in Extract Column Assignment 
+# Examples: Q1, Q2, Q3 and Q4 function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

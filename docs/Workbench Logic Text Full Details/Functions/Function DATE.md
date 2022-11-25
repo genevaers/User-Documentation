@@ -38,7 +38,7 @@ DATE can only be used in **Extract Record Filter (ERF)** and **Extract Column As
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
 
-# Examples: DATE function in Extract Record Filter 
+# Examples: DATE function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -46,7 +46,7 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 
 
-# Examples: DATE function in Extract Column Assignment 
+# Examples: DATE function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

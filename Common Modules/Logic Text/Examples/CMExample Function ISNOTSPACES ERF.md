@@ -1,5 +1,5 @@
 
-# Examples: ISNOTSPACES function in Extract Record Filter 
+# Examples: ISNOTSPACES function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|

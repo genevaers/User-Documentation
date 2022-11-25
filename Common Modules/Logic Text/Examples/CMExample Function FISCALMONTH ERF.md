@@ -1,5 +1,5 @@
 
-# Examples: FISCALMONTH function in Extract Record Filter 
+# Examples: FISCALMONTH function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|

@@ -45,7 +45,7 @@ RUNYEAR can only be used in **Extract Record Filter (ERF)** and **Extract Column
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
 
-# Examples: RUNYEAR function in Extract Record Filter 
+# Examples: RUNYEAR function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -53,7 +53,7 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 
 
-# Examples: RUNYEAR function in Extract Column Assignment 
+# Examples: RUNYEAR function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

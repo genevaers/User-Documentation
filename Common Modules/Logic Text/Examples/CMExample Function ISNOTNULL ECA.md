@@ -1,5 +1,5 @@
 
-# Examples: ISNOTNULL function in Extract Column Assignment 
+# Examples: ISNOTNULL function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

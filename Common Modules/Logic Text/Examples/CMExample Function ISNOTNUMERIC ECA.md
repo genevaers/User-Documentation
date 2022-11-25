@@ -1,5 +1,5 @@
 
-# Examples: ISNOTNUMERIC function in Extract Column Assignment 
+# Examples: ISNOTNUMERIC function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

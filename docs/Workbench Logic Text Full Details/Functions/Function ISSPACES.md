@@ -43,7 +43,7 @@ If this functions checks a lookup, and **no effective date** is specified, the l
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
 
-# Examples: ISSPACES function in Extract Record Filter 
+# Examples: ISSPACES function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -51,7 +51,7 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 
 
-# Examples: ISSPACES function in Extract Column Assignment 
+# Examples: ISSPACES function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

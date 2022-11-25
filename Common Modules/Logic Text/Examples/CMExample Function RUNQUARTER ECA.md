@@ -1,5 +1,5 @@
 
-# Examples: RUNQUARTER function in Extract Column Assignment 
+# Examples: RUNQUARTER function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

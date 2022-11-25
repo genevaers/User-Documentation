@@ -34,7 +34,7 @@ REPEAT can only be used in **Extract Record Filter (ERF)** and **Extract Column 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
 
-# Examples: REPEAT function in Extract Record Filter 
+# Examples: REPEAT function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -43,7 +43,7 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 
 
-# Examples: REPEAT function in Extract Column Assignment 
+# Examples: REPEAT function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

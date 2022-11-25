@@ -1,5 +1,5 @@
 
-# Examples: ISNUMERIC function in Extract Record Filter 
+# Examples: ISNUMERIC function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|

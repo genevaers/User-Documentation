@@ -46,7 +46,7 @@ RUNPERIOD can only be used in **Extract Record Filter (ERF)** and **Extract Colu
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
 
-# Examples: RUNPERIOD function in Extract Record Filter 
+# Examples: RUNPERIOD function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -54,7 +54,7 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 
 
-# Examples: RUNPERIOD function in Extract Column Assignment 
+# Examples: RUNPERIOD function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

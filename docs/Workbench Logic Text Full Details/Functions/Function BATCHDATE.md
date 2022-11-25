@@ -34,7 +34,7 @@ BATCHDATE can only be used in **Extract Record Filter (ERF)** and **Extract Colu
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
 
-# Examples: BATCHDATE function in Extract Record Filter
+# Examples: BATCHDATE function in ERF
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -42,7 +42,7 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 
 
-# Examples: BATCHDATE function in Extract Column Assignment
+# Examples: BATCHDATE function in ECA
 
 |Example logic text|Meaning|
 |------------------|-------|

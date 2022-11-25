@@ -1,5 +1,5 @@
 
-# Examples: FISCALQUARTER function in Extract Column Assignment 
+# Examples: FISCALQUARTER function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

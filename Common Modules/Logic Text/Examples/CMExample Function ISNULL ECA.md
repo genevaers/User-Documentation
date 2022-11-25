@@ -1,5 +1,5 @@
 
-# Examples: ISNULL function in Extract Column Assignment 
+# Examples: ISNULL function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

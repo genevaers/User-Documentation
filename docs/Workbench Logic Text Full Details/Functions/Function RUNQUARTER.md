@@ -44,7 +44,7 @@ RUNQUARTER can only be used in **Extract Record Filter (ERF)** and **Extract Col
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
 
-# Examples: RUNQUARTER function in Extract Record Filter 
+# Examples: RUNQUARTER function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
@@ -52,7 +52,7 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 
 
 
-# Examples: RUNQUARTER function in Extract Column Assignment 
+# Examples: RUNQUARTER function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|

@@ -1,5 +1,5 @@
 
-# Examples: PRIOR function in Extract Column Assignment 
+# Examples: PRIOR function in ECA 
 
 |Example logic text|Meaning|
 |------------------|-------|
