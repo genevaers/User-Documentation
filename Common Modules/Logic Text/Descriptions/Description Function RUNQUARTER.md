@@ -15,5 +15,5 @@ The date that PE runs is the VDP run date unless there is a specific value set i
 
 The parameter for RUNQUARTER is a number of quarters to add or delete from the default RUNQUARTER. For example, RUNQUARTER\(-5\) provides the day five quarters before the date the view is run.
 
-RUNQUARTER can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+RUNQUARTER can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment (ECA)** logic text.
 

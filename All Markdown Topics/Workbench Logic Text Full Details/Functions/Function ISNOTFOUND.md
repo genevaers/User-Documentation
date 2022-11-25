@@ -21,7 +21,7 @@ TABLE OF CONTENTS
 
 # Rules for the syntax 
 
-ISNOTFOUND can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+ISNOTFOUND can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment(ECA)** logic text.
 
 If **no effective date** is specified, ISNOTFOUND uses RUNDAY\( \) - see topic: [Syntax - function RUNDAY](Syntax - function RUNDAY)
 

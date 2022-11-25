@@ -16,7 +16,7 @@ TABLE OF CONTENTS
 
 If you provide an input field or lookup path then ISNULL returns true if the input field or lookup path field is null values, and false if the value is anything else.
 
-ISNULL can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+ISNULL can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment (ECA)** logic text.
 
 
 ![(Syntax Legend)](../../images/LTZZ_Syntax_legend.gif )
@@ -36,7 +36,7 @@ ISNULL can only be used in **Extract Record Filter** or **Extract Column Assignm
 
 # Rules for the syntax 
 
-ISNULL can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+ISNULL can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment(ECA)** logic text.
 
 If this functions checks a lookup, and **no effective date** is specified, the lookup uses RUNDAY\( \) - see topic: [Syntax - function RUNDAY](Syntax - function RUNDAY)
 

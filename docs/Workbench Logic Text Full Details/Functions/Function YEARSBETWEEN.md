@@ -16,7 +16,7 @@ TABLE OF CONTENTS
 
 Use YEARSBETWEEN to compare dates and give the difference in years.
 
-YEARSBETWEEN can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+YEARSBETWEEN can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment (ECA)** logic text.
 
 
 ![(Syntax Legend)](../../images/LTZZ_Syntax_legend.gif )
@@ -36,7 +36,7 @@ YEARSBETWEEN can only be used in **Extract Record Filter** or **Extract Column A
 
 # Rules for the syntax 
 
-YEARSBETWEEN can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+YEARSBETWEEN can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment(ECA)** logic text.
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 

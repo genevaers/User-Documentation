@@ -16,7 +16,7 @@ TABLE OF CONTENTS
 
 If you provide an input field or lookup path then ISNUMERIC returns true if the input field or lookup path field has a numeric value, and false if the value is anything else.
 
-ISNUMERIC can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+ISNUMERIC can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment (ECA)** logic text.
 
 
 ![(Syntax Legend)](../../images/LTZZ_Syntax_legend.gif )
@@ -36,7 +36,7 @@ ISNUMERIC can only be used in **Extract Record Filter** or **Extract Column Assi
 
 # Rules for the syntax 
 
-ISNUMERIC can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+ISNUMERIC can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment(ECA)** logic text.
 
 If this functions checks a lookup, and **no effective date** is specified, the lookup uses RUNDAY\( \) - see topic: [Syntax - function RUNDAY](Syntax - function RUNDAY)
 

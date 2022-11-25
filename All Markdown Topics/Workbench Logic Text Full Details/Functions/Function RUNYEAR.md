@@ -22,7 +22,7 @@ TABLE OF CONTENTS
 
 # Rules for the syntax 
 
-RUNYEAR can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+RUNYEAR can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment(ECA)** logic text.
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 

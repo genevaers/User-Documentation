@@ -9,7 +9,7 @@ The FISCALYEAR returns a date in CCYY format that is appropriate for the environ
 
 The parameter for FISCALYEAR is a number of years to add or delete from the default FISCALYEAR. For example, FISCALYEAR\(-5\) provides the year that is five years before the date the view is run.
 
-FISCALYEAR can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+FISCALYEAR can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment (ECA)** logic text.
 
 # VDP for view can override fiscal values in a control record
 

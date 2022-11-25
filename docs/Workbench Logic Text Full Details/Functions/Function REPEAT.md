@@ -16,7 +16,7 @@ TABLE OF CONTENTS
 
 If you provide a text string and an integer, then REPEAT can create a string that consists of the given text string with integer repetitions. REPEAT is different from ALL because REPEAT has a fixed number of repetitions, whereas ALL is flexible and compares with fields of different lengths.
 
-REPEAT can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+REPEAT can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment (ECA)** logic text.
 
 
 ![(Syntax Legend)](../../images/LTZZ_Syntax_legend.gif )
@@ -29,7 +29,7 @@ REPEAT can only be used in **Extract Record Filter** or **Extract Column Assignm
 
 REPEAT has a maximum length of 256 characters.
 
-REPEAT can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+REPEAT can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment(ECA)** logic text.
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 

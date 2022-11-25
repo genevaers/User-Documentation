@@ -26,7 +26,7 @@ If you provide a year in CCYY format, then the quarter applies to that year. For
 
 <pre><b>     IF ({field2} = Q3(2008)) THEN   </b></pre>
 
-Q1, Q2, Q3 and Q4 can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+Q1, Q2, Q3 and Q4 can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment (ECA)** logic text.
 
 
 ![(Syntax Legend)](../../images/LTZZ_Syntax_legend.gif )
@@ -38,7 +38,7 @@ Q1, Q2, Q3 and Q4 can only be used in **Extract Record Filter** or **Extract Col
 
 # Rules for the syntax 
 
-Q1, Q2, Q3 and Q4 can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+Q1, Q2, Q3 and Q4 can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment(ECA)** logic text.
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 

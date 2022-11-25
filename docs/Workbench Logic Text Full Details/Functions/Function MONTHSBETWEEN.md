@@ -16,7 +16,7 @@ TABLE OF CONTENTS
 
 Use MONTHSBETWEEN to compare dates and return the difference in months.
 
-MONTHSBETWEEN can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+MONTHSBETWEEN can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment (ECA)** logic text.
 
 
 ![(Syntax Legend)](../../images/LTZZ_Syntax_legend.gif )
@@ -33,7 +33,7 @@ MONTHSBETWEEN can only be used in **Extract Record Filter** or **Extract Column 
 
 # Rules for the syntax 
 
-MONTHSBETWEEN can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+MONTHSBETWEEN can only be used in **Extract Record Filter (ERF)** and **Extract Column Assignment(ECA)** logic text.
 
 See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
 
