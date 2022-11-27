@@ -6,3 +6,6 @@ has_children: true
 ---
 # Typical goals
 Companies use our product for the goals below.  
+  
+Link: [Home](../index) 
+  

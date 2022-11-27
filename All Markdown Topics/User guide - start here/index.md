@@ -6,3 +6,6 @@ has_children: true
 ---
 # User guide - start here
   
+  
+Link: [Home](../index) 
+  

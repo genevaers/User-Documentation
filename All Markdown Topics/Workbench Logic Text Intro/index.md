@@ -6,3 +6,5 @@ has_children: true
 ---
 # Workbench Logic Text Intro
   
+Link: [Home](../index) 
+  

@@ -6,3 +6,5 @@ has_children: true
 ---
 # Workbench audio-visual training
   
+Link: [Home](../index) 
+  

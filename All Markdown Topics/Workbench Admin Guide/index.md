@@ -6,3 +6,5 @@ has_children: true
 ---
 # Workbench Admin Guide
   
+Link: [Home](../index) 
+  
