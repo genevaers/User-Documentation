@@ -6,3 +6,5 @@ has_children: true
 ---
 # Basic views audio-visual training
   
+Link: [Home](../index) 
+  

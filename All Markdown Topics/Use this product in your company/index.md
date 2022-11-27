@@ -13,3 +13,6 @@ This folder of topics assumes you have already done the following:
 1.  **Taught yourself using** [Lessons in basic skills](../Lessons in basic skills).  
   
 Once you have done all these, the folder of topics below guide you to use GenevaERS in your company.  The topics below cover creating a single solution and implementing it.  You can create as many solutions as needed.
+  
+Link: [Home](../index) 
+  

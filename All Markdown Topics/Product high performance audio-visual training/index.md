@@ -11,3 +11,5 @@ The videos below assume you have already done the following:
 1.  **Installed and run the** [Workbench](https://genevaers.github.io/Workbench/).  
 1.  **Taught yourself using** [Lessons in basic skills](../Lessons in basic skills).  
   
+Link: [Home](../index) 
+  

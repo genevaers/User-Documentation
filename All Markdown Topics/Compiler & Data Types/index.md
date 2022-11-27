@@ -7,3 +7,5 @@ has_children: true
 
 # Compiler & Data Types
   
+Link: [Home](../index) 
+  
