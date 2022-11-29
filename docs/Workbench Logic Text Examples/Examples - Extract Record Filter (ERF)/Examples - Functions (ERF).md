@@ -43,14 +43,14 @@ TABLE OF CONTENTS
 
 |Example logic text|Meaning|
 |------------------|-------|
-|**IF (DAYSBETWEEN({field1},{field2}) > 7)<BR>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<BR>ENDIF**|Select only records where<BR>there are more than 7 days<BR>between field1 and field2, <BR>and skip all other records. <BR>This example can also be written:<BR>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(DAYSBETWEEN({field1},{field2}) > 7**|
+|**IF (DAYSBETWEEN({field1},{field2}) > 7)<BR>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<BR>ENDIF**|Select only records where<BR>there are more than 7 days<BR>between field1 and field2, <BR>and skip all other records. <BR>This example can also be written:<BR>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(DAYSBETWEEN({field1},{field2}) > 7)**|
 
 
 # Examples: DAYSBETWEEN function in ERF 
 
 |Example logic text|Meaning|
 |------------------|-------|
-|**IF (DAYSBETWEEN({field1},{field2}) > 7)<BR>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<BR>ENDIF**|Select only records where<BR>there are more than 7 days<BR>between field1 and field2, <BR>and skip all other records. <BR>This example can also be written:<BR>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(DAYSBETWEEN({field1},{field2}) > 7**|
+|**IF (DAYSBETWEEN({field1},{field2}) > 7)<BR>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<BR>ENDIF**|Select only records where<BR>there are more than 7 days<BR>between field1 and field2, <BR>and skip all other records. <BR>This example can also be written:<BR>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(DAYSBETWEEN({field1},{field2}) > 7)**|
 
 
 # Examples: FISCALDAY function in ERF 
@@ -86,7 +86,7 @@ TABLE OF CONTENTS
 
 |Example logic text|Meaning|
 |------------------|-------|
-|**IF ISFOUND({Lookup2})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select all input records where lookup path Lookup2 successfully<br>finds a target record, and skip all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(ISFOUND({Lookup2})**|
+|**IF ISFOUND({Lookup2})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select all input records where lookup path Lookup2 successfully<br>finds a target record, and skip all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(ISFOUND({Lookup2}))**|
 
 
 
@@ -94,7 +94,7 @@ TABLE OF CONTENTS
 
 |Example logic text|Meaning|
 |------------------|-------|
-|**IF ISNOTFOUND({Lookup3})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>ENDIF**|Skip all input records where lookup path Lookup3 does not successfully<br>find a target record, and select all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SKIPIF(ISNOTFOUND({Lookup3})**|
+|**IF ISNOTFOUND({Lookup3})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>ENDIF**|Skip all input records where lookup path Lookup3 does not successfully<br>find a target record, and select all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SKIPIF(ISNOTFOUND({Lookup3}))**|
 
 
 
@@ -102,8 +102,8 @@ TABLE OF CONTENTS
 
 |Example logic text|Meaning|
 |------------------|-------|
-|**IF ISNOTNULL({field3})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select all input records where field3 does not contain null values,<br>and skip all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(ISNOTNULL({field3})**|
-|**IF ISNOTNULL({Lookup1})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select all input records where the lookup field for lookup path Lookup1<br>does not contain null values, and skip all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(ISNOTNULL({Lookup1})**|
+|**IF ISNOTNULL({field3})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select all input records where field3 does not contain null values,<br>and skip all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(ISNOTNULL({field3}))**|
+|**IF ISNOTNULL({Lookup1})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select all input records where the lookup field for lookup path Lookup1<br>does not contain null values, and skip all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(ISNOTNULL({Lookup1}))**|
 
 
 
@@ -111,7 +111,7 @@ TABLE OF CONTENTS
 
 |Example logic text|Meaning|
 |------------------|-------|
-|**IF ISNOTNUMERIC({field7})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>ENDIF**|Skip all input records where field7 is not numeric, and select all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SKIPIF(ISNOTNUMERIC({field7})**|
+|**IF ISNOTNUMERIC({field7})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>ENDIF**|Skip all input records where field7 is not numeric, and select all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SKIPIF(ISNOTNUMERIC({field7}))**|
 
 
 
@@ -119,7 +119,7 @@ TABLE OF CONTENTS
 
 |Example logic text|Meaning|
 |------------------|-------|
-|**IF ISNOTSPACES({field2})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select all input records where field2 is not spaces, and skip all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(ISNOTSPACES({field2})**|
+|**IF ISNOTSPACES({field2})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select all input records where field2 is not spaces, and skip all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(ISNOTSPACES({field2}))**|
 
 
 
@@ -127,7 +127,7 @@ TABLE OF CONTENTS
 
 |Example logic text|Meaning|
 |------------------|-------|
-|**IF ISNULL({field1})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>ENDIF**|Skip all input records where field1 contains null values,<br>and select all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SKIPIF(ISNULL({field1})**|
+|**IF ISNULL({field1})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>ENDIF**|Skip all input records where field1 contains null values,<br>and select all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SKIPIF(ISNULL({field1}))**|
 
 
 
@@ -135,7 +135,7 @@ TABLE OF CONTENTS
 
 |Example logic text|Meaning|
 |------------------|-------|
-|**IF ISNUMERIC({field5})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select all input records where field5 is numeric, and skip all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(ISNUMERIC({field5})**|
+|**IF ISNUMERIC({field5})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SELECT<br>ENDIF**|Select all input records where field5 is numeric, and skip all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SELECTIF(ISNUMERIC({field5}))**|
 
 
 
@@ -143,7 +143,7 @@ TABLE OF CONTENTS
 
 |Example logic text|Meaning|
 |------------------|-------|
-|**IF ISSPACES({field9})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>ENDIF**|Skip all input records where field9 is spaces, and select all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SKIPIF(ISSPACES({field9})**|
+|**IF ISSPACES({field9})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>ENDIF**|Skip all input records where field9 is spaces, and select all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SKIPIF(ISSPACES({field9}))**|
 
 
 # Examples: MONTHSBETWEEN function in ERF 
