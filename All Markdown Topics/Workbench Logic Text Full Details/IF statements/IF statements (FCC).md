@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "IF statements in Format Column Calculation (FCC)"
+title: "IF statements (FCC)"
+nav_order: 3
 parent: IF statements
 grand_parent: Workbench Logic Text Full Details
-nav_order: 3
 ---
-# IF statements in Format Column Calculation (FCC)
+# IF statements (FCC)
 {: .no_toc}
 TABLE OF CONTENTS 
 1. TOC
