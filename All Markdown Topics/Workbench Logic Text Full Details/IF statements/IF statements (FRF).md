@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "IF statements in Format Record Filter (FRF)"
+title: "IF statements (FRF)"
+nav_order: 4
 parent: IF statements
 grand_parent: Workbench Logic Text Full Details
-nav_order: 4
 ---
-# IF statements in Format Record Filter (FRF)
+# IF statements (FRF)
 {: .no_toc}
 TABLE OF CONTENTS 
 1. TOC

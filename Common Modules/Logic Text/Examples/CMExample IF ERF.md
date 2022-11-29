@@ -1,57 +1,3 @@
-﻿---
-layout: default
-title: "IF statements (ERF)"
-nav_order: 1
-parent: IF statements
-grand_parent: Workbench Logic Text Full Details
----
-# IF statements (ERF)
-{: .no_toc}
-TABLE OF CONTENTS 
-1. TOC
-{:toc}  
- 
-
-
-# How do I use IF statements in ERF? 
-
-IF statements can be part of any logic text. An IF statement allows a condition to control if one or more statements are executed.
-
-Even though IF statements are allowed in all logic text, the statements that can be called in an IF statement change depending on the particular logic text.
-
-An IF statement can call another IF statement - this is called "nesting" of IF statements, and is allowed in all logic text.
-
-The syntax details of an IF statement in **Extract Record Filtger** are shown below.
-
-![(Syntax Legend)](../../images/LTZZ_Syntax_legend.gif )
-
-# Syntax 
-
-![Function IF ERF 01](../../images/LTS_IF_1ERF_01.gif)
-
-![Function IF ERF 02](../../images/LTS_IF_1ERF_02.gif)
-
-![Function IF ERF 03](../../images/LTS_IF_1ERF_03.gif)
-
-![Function IF ERF 04](../../images/LTS_IF_1ERF_04.gif)
-
-![Function IF ERF 05](../../images/LTS_IF_1ERF_05.gif)
-
-![Function IF ERF 06](../../images/LTS_IF_1ERF_06.gif)
-
-![Function IF ERF 07](../../images/LTS_IF_1ERF_07.gif)
-
-![Function IF ERF 08](../../images/LTS_IF_1ERF_08.gif)
-
-![Function IF ERF 09](../../images/LTS_IF_1ERF_09.gif)
-
-![Function IF ERF 10](../../images/LTS_IF_1ERF_10.gif)
-
-
-# Rules for the syntax 
-
-See also topic: [Rules for all Logic Text](../Rules for all Logic Text) 
-
 
 # Examples: IF with SELECT (ERF)
 
@@ -84,11 +30,3 @@ See also topic: [Rules for all Logic Text](../Rules for all Logic Text)
 |**IF ({field2} = ALL("-"))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>ENDIF**|Skip for output those records with field2 is equal to all dashes.<br> Select all other records.<br>This example gives the same result as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SKIPIF({field2} = ALL("-"))**|
 |**IF ({field8} =<br>&nbsp;&nbsp;&nbsp;&nbsp;REPEAT("-", 13))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>ENDIF**|Skip for output those records with field8 is equal<br>to 13 dashes. Select all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SKIPIF({field8} = REPEAT("-", 13))**|
 |**IF ({field6} = "\xFF")<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN SKIP<br>ENDIF**|Skip for output those records with<br>field6 equal to hexadecimal FF. Select all other records.<br>This example is the same as:<br>&nbsp;&nbsp;&nbsp;&nbsp;**SKIPIF({field6} = "\xFF")**|
-
-  
-  (Examples can be copied to the clipboard.)
-  
-
-
-
-
