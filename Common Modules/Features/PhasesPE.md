@@ -3,9 +3,10 @@
 
 The phases are shown below:
 
-[//]: # ( Comment on old image - PLEASE KEEP - <img src="../images/PM_All_Progs_10_Thin.gif" alt="Missing image" width="100" height="100"/> )
+[//]: # (  Comment - fancy image is <img src="../images/PM_All_Progs_10_Thin.gif" alt="Phases of PE" width="300" height="300"/> )
 
-<img src="../../images/PM_All_Progs_10_Thin.gif" alt="Phases of PE" width="100" height="100"/> 
+![Phases of PE](../images/PM_All_Progs_10_Thin.gif)
+
 
 # 1. Logic phase
 
@@ -27,7 +28,7 @@ For more, see these overviews:
 -   "**XLT file overview**"
 
 
-# 4. Reference phase
+# 2. Reference phase
 
 This phase does the following:
 
@@ -43,7 +44,7 @@ For more, see these overviews:
 -   "**VDP file overview**"
 
 
-# 5. Extract phase
+# 3. Extract phase
 
 This phase does the following:
 
@@ -57,7 +58,7 @@ For more, see these overviews:
 -   "**XLT file overview**"
 
 
-# 6. Format phase
+# 4. Format phase
 
 This phase is optional and formats output files from the extract phase. There can be multiple format phases - one phase per output. file.
 
