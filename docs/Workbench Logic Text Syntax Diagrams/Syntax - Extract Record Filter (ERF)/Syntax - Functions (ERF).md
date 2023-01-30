@@ -13,15 +13,15 @@ TABLE OF CONTENTS
 {:toc}  
  
 
-# Functdion ALL
+# Function ALL
 
 ![(Function ALL)](../../images/LTSF_ALL_01.gif )
 
-# Functdion BATCHDATE
+# Function BATCHDATE
 
 ![Function BATCHDATE](../../images/LTSF_BATCHDATE_01.gif)
 
-# Functdion DATE
+# Function DATE
 
 ![(Function DATE 1)](../../images/LTSF_Date_01.gif)
 
@@ -31,7 +31,7 @@ TABLE OF CONTENTS
 
 ![(Function DATE 4)](../../images/LTSF_DATE_04.gif)
 
-# Functdion DAYSBETWEEN
+# Function DAYSBETWEEN
 
 ![Function DAYSBETWEEN 1](../../images/LTSF_DAYSBTWDATE_01.gif)
 
@@ -41,23 +41,23 @@ TABLE OF CONTENTS
 
 ![Function DAYSBETWEEN 4](../../images/LTSF_DATE_04.gif)
 
-# Functdion FISCALDAY
+# Function FISCALDAY
 
 ![Function FISCALDAY](../../images/LTSF_FISCALDAY_01.gif)
 
-# Functdion FISCALMONTH
+# Function FISCALMONTH
 
 ![Function FISCALMONTH](../../images/LTSF_FISCALMONTH_01.gif)
 
-# Functdion FISCALQUARTER
+# Function FISCALQUARTER
 
 ![Function FISCALQUARTER](../../images/LTSF_FISCALQUARTER_01.gif)
 
-# Functdion FISCALYEAR
+# Function FISCALYEAR
 
 ![Function FISCALYEAR](../../images/LTSF_FISCALYEAR_01.gif)
 
-# Functdion ISFOUND
+# Function ISFOUND
 
 ![Function ISFOUND 1](../../images/LTSF_ISFOUND_01.gif)
 
@@ -67,7 +67,7 @@ TABLE OF CONTENTS
 
 ![Function ISFOUND 4](../../images/LTSF_ISFOUND_03.gif)
 
-# Functdion ISNOTFOUND
+# Function ISNOTFOUND
 
 ![Function ISNOTFOUND 1](../../images/LTSF_ISNOTFOUND_01.gif)
 
@@ -77,7 +77,7 @@ TABLE OF CONTENTS
 
 ![Function ISNOTFOUND 4](../../images/LTSF_ISNOTFOUND_03.gif)
 
-# Functdion ISNOTNULL
+# Function ISNOTNULL
 
 ![Function ISNOTNULL 1](../../images/LTSF_ISNOTNULL_01.gif)
 
@@ -90,7 +90,7 @@ TABLE OF CONTENTS
 ![Function ISNOTNULL 5](../../images/LTSF_ISNOTNULL_04.gif)
 
 
-# Functdion ISNOTNUMERIC
+# Function ISNOTNUMERIC
 
 ![Function ISNOTNUMERIC 1](../../images/LTSF_ISNOTNUMERIC_01.gif)
 
@@ -103,7 +103,7 @@ TABLE OF CONTENTS
 ![Function ISNOTNUMERIC 5](../../images/LTSF_ISNOTNUMERIC_04.gif)
 
 
-# Functdion ISNOTSPACES
+# Function ISNOTSPACES
 
 ![Function ISNOTSPACES 1](../../images/LTSF_ISNOTSPACES_01.gif)
 
@@ -116,7 +116,7 @@ TABLE OF CONTENTS
 ![Function ISNOTSPACES 5](../../images/LTSF_ISNOTSPACES_04.gif)
 
 
-# Functdion ISNULL
+# Function ISNULL
 
 ![Function ISNULL 1](../../images/LTSF_ISNULL_01.gif)
 
@@ -129,7 +129,7 @@ TABLE OF CONTENTS
 ![Function ISNULL 5](../../images/LTSF_ISNULL_04.gif)
 
 
-# Functdion ISNUMERIC
+# Function ISNUMERIC
 
 ![Function ISNUMERIC 1](../../images/LTSF_ISNUMERIC_01.gif)
 
@@ -142,7 +142,7 @@ TABLE OF CONTENTS
 ![Function ISNUMERIC 5](../../images/LTSF_ISNUMERIC_04.gif)
 
 
-# Functdion ISSPACES
+# Function ISSPACES
 
 ![Function ISSPACES 1](../../images/LTSF_ISSPACES_01.gif)
 
@@ -155,7 +155,7 @@ TABLE OF CONTENTS
 ![Function ISSPACES 5](../../images/LTSF_ISSPACES_04.gif)
 
 
-# Funcdtion MONTHSBETWEEN
+# Function MONTHSBETWEEN
 
 ![Function MONTHSBETWEEN 1](../../images/LTSF_MTHSBTWDATE_01.gif)
 
@@ -165,39 +165,39 @@ TABLE OF CONTENTS
 
 ![Function MONTHSBETWEEN 4](../../images/LTSF_DATE_04.gif)
 
-# Funcdtion PRIOR
+# Function PRIOR
 ![Function PRIOR](../../images/LTS_CURRENT_PRIOR_01.gif)
 
-# Funcdtion Q1, Q2, Q3 and Q4 
+# Function Q1, Q2, Q3 and Q4 
 
 ![Function Q1, Q2, Q3 and Q4 1](../../images/LTS_Q1_Q2_Q3_Q4_01.gif)
 
 
-# Funcdtion REPEAT
+# Function REPEAT
 
 ![Function REPEAT 1](../../images/LTSF_REPEAT_01.gif)
 
-# Funcdtion RUNDAY
+# Function RUNDAY
 
 ![Function RUNDAY 1](../../images/LTSF_RUNDAY_01.gif)
 
-# Funcdtion RUNMONTH
+# Function RUNMONTH
 
 ![Function RUNMONTH 1](../../images/LTSF_RUNMONTH_01.gif)
 
-# Funcdtion RUNPERIOD
+# Function RUNPERIOD
 
 ![Function RUNPERIOD 1](../../images/LTSF_RUNPERIOD_01.gif)
 
-# Funcdtion RUNQUARTER
+# Function RUNQUARTER
 
 ![Function RUNQUARTER 1](../../images/LTSF_RUNQUARTER_01.gif)
 
-# Funcdtion RUNYEAR
+# Function RUNYEAR
 
 ![Function RUNYEAR 1](../../images/LTSF_RUNYEAR_01.gif)
 
-# Funcdtion YEARSBETWEEN
+# Function YEARSBETWEEN
 
 ![Function RUNYEAR 1](../../images/LTSF_YRSBTWDATE_01.gif)
 
