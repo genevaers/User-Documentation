@@ -1,64 +1,64 @@
-# Functdion ALL
+# Function ALL
 
 [[ INCLUDE: Logic Text\Syntax diagrams\CMSyntax Diag Function ALL Level 3 ]]
 
-# Functdion BATCHDATE
+# Function BATCHDATE
 
 [[ INCLUDE: Logic Text\Syntax diagrams\CMSyntax Diag Function BATCHDATE Level 3 ]]
 
-# Functdion DATE
+# Function DATE
 
 [[ INCLUDE: Logic Text\Syntax diagrams\CMSyntax Diag Function DATE Level 3 ]]
 
-# Functdion DAYSBETWEEN
+# Function DAYSBETWEEN
 
 [[ INCLUDE: Logic Text\Syntax diagrams\CMSyntax Diag Function DAYSBETWEEN Level 3 ]]
 
-# Functdion FISCALDAY
+# Function FISCALDAY
 
 [[ INCLUDE: Logic Text\Syntax diagrams\CMSyntax Diag Function FISCALDAY Level 3 ]]
 
-# Functdion FISCALMONTH
+# Function FISCALMONTH
 
 [[ INCLUDE: Logic Text\Syntax diagrams\CMSyntax Diag Function FISCALMONTH Level 3 ]]
 
-# Functdion FISCALQUARTER
+# Function FISCALQUARTER
 
 [[ INCLUDE: Logic Text\Syntax diagrams\CMSyntax Diag Function FISCALQUARTER Level 3 ]]
 
-# Functdion FISCALYEAR
+# Function FISCALYEAR
 
 [[ INCLUDE: Logic Text\Syntax diagrams\CMSyntax Diag Function FISCALYEAR Level 3 ]]
 
-# Functdion ISFOUND
+# Function ISFOUND
 
 [[ INCLUDE: Logic Text\Syntax diagrams\CMSyntax Diag Function ISFOUND Level 3 ]]
 
-# Functdion ISNOTFOUND
+# Function ISNOTFOUND
 
 [[ INCLUDE: Logic Text\Syntax diagrams\CMSyntax Diag Function ISNOTFOUND Level 3 ]]
 
-# Functdion ISNOTNULL
+# Function ISNOTNULL
 
 [[ INCLUDE: Logic Text\Syntax diagrams\CMSyntax Diag Function ISNOTNULL Level 3 ]]
 
-# Functdion ISNOTNUMERIC
+# Function ISNOTNUMERIC
 
 [[ INCLUDE: Logic Text\Syntax diagrams\CMSyntax Diag Function ISNOTNUMERIC Level 3 ]]
 
-# Functdion ISNOTSPACES
+# Function ISNOTSPACES
 
 [[ INCLUDE: Logic Text\Syntax diagrams\CMSyntax Diag Function ISNOTSPACES Level 3 ]]
 
-# Functdion ISNULL
+# Function ISNULL
 
 [[ INCLUDE: Logic Text\Syntax diagrams\CMSyntax Diag Function ISNULL Level 3 ]]
 
-# Functdion ISNUMERIC
+# Function ISNUMERIC
 
 [[ INCLUDE: Logic Text\Syntax diagrams\CMSyntax Diag Function ISNUMERIC Level 3 ]]
 
-# Functdion ISSPACES
+# Function ISSPACES
 
 [[ INCLUDE: Logic Text\Syntax diagrams\CMSyntax Diag Function ISSPACES Level 3 ]]
 
