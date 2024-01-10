@@ -1,1 +1,0 @@
-![Function FISCALQUARTER](../../images/LTSF_FISCALQUARTER_01.gif)

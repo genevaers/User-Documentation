@@ -1,1 +1,0 @@
-This text was included by Randall.

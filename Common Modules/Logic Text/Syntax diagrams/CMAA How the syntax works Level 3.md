@@ -1,1 +1,0 @@
-![(Syntax Legend)](../../images/LTZZ_Syntax_legend.gif )

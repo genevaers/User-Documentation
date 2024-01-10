@@ -1,1 +1,0 @@
-![Function FISCALDAY](../../images/LTSF_FISCALDAY_01.gif)
