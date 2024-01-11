@@ -1,17 +1,14 @@
----
-layout: home
-title: "Get Started"
-nav_order: 10
----
+# Getting Started
 
+## Overview 
+GenevaERS is open source software that
+- executes high-volume data analysis very efficiently
+- is easy to use, with a graphical interface
   
-**Getting Started**
-- Overview (what it does)
-	- High-volume data analysis
-	- Easy to develop with a graphical interface
-- Overview (Components)
-	- A small overview (we don't want to lose people here with TMI )
-- Demo
-	- Link to how to install and run the Demo
-
+## Overview of Components
+GenevaERS consists of two software components: the PC-based Workbench and the mainframe-based batch process known as the Performance Engine. Developers use the Workbench to build applications that are stored in a metadata repository. These applications are then run by the Performance Engine, which reads data from source files or databases, transforms it, and writes it to output files.
+  
+## Demo
+Download and run a demo of GenevaERS. Follow this link to the  
+[GenevaERS Demo Documentation](https://genevaers.github.io/Demo/)
 

@@ -1,8 +1,3 @@
----
-layout: home
-title: "Reference"
-nav_order: 40
----
 
   
 **Reference**

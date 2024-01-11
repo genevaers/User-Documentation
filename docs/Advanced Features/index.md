@@ -1,8 +1,4 @@
----
-layout: home
-title: "Advanced Features"
-nav_order: 30
----
+
 
   
 **Advanced Features**
