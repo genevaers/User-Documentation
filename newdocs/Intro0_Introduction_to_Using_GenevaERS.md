@@ -17,7 +17,7 @@ GenevaERS is a software application development tool that solves high-volume dat
 
 <div style="clear: right" > <img style="float: right;" width="50%" vspace="5" alt="GenevaERS Components" src=images/Module1-Introduction-to-Views/Module1_Slide4.jpeg title="GenevaERS Components"/> 
 
-GenevaERS consists of two software components: the PC-based Workbench and the mainframe-based batch process known as the Performance Engine. Developers use the Workbench to build applications that are stored in a metadata repository in an IBM¬Æ  DB2¬Æ  database. These applications are then run by the Performance Engine, which reads data from source files or databases, transforms it, and writes it to output files.
+GenevaERS consists of two software components: the PC-based Workbench and the mainframe-based batch process known as the Performance Engine. Developers use the Workbench to build applications that are stored in a metadata repository in an IBM  Db2 database or a PostgreSQL database. These applications are then run by the Performance Engine, which reads data from source files or databases, transforms it, and writes it to output files.
 
 <div style="clear: right" > 
 
@@ -25,17 +25,16 @@ GenevaERS consists of two software components: the PC-based Workbench and the ma
 Several types of metadata make up a GenevaERS application. The most common are 
 - the environment definition, 
 - the physical file definition (or PF), 
-- the logical file definition (or LF), - the logical record definition (or LR), 
+- the logical file definition (or LF), 
+- the logical record definition (or LR), 
 - the view definition, and the view folder.  
 
 Note that, when discussing GenevaERS metadata, we often omit the word definition, because it is usually clear from the context whether we mean the metadata or the entity it refers to.  
 
-<div style="clear: right" > <img style="float: right;" width="50%" vspace="5" alt="GenevaERS Environments" src=images/Module1-Introduction-to-Views/Module1_Slide6.jpeg title="GenevaERS Environments"/>
-
 An environment definition describes a logical collection of metadata within the GenevaERS Workbench. Typical types of environments include development, production, or training environments. Access to an environment can be restricted to a certain set of users.  
 
 Some major components of the metadata include:
-- A physical file definition, or PF, describes a data source. Examples include customer or order files. 
+- A physical file definition, or PF, describes a data source. Examples include a customer file in a Db2 database, or an order file in a sequential file. 
 
 - A logical file definition, or LF, describes a collection of one or more physical files. 
 
@@ -52,9 +51,6 @@ Some examples of these metadata types are shown here.
 <div style="clear: right" > 
 
 ## Views
-
-
-<img style="float: right;" width="50%" vspace="5" src=images/Module1-Introduction-to-Views/Module1_Slide8.jpeg title="GenevaERS View Folders" alt="GenevaERS View Folders"/>
 
 A view definition describes a data transformation. It is analogous to a program or a query. Views are the basic units of work that are performed by the Performance Engine.  
 
