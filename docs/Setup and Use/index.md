@@ -47,6 +47,6 @@ You can now create a new View using some of the Demo metadata.
 
 [Example 1: Creating a new View](Examples/NewView.md)
 
-[Example 2: Adding a filter]
+[Example 2: Adding a filter](Examples/AddExtractFilter.md)
 
 [Example 3: Adding a Lookup field]

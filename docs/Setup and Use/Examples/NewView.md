@@ -92,8 +92,12 @@ Save the View **File** > **Save**,
 ### Activate the View 
 
 To activate the view, use any of these methods: 
-- Select Activate from the Action menu 
+- Select  **Action** > **Activate** 
 - Press the Activate icon on the View Editor toolbar 
-- Press F5.
+- Press **F5**
 
 The view title bar now displays the word "Active". Save the view again to preserve this active state. The view is now ready to be run.
+
+[Running the View](../RunView/RunView.md)
+
+[Reviewing the Reports]
