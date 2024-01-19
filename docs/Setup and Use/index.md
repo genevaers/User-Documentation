@@ -49,4 +49,10 @@ You can now create a new View using some of the Demo metadata.
 
 [Example 2: Adding a filter](Examples/AddExtractFilter.md)
 
-[Example 3: Adding a Lookup field]
+[Example 3: Adding a Lookup field](Examples/AddLookup.md)
+
+[Example 4: Adding a Column Formula]
+
+[Example 5: Creating a Summary View]
+
+(any other suggestions here??)

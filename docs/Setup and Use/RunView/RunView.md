@@ -9,9 +9,9 @@ Sample JCL is contained in
 
 < *your-tso-prefix* >.GVBDEMO.JCL(RUNPASS1) runs all four of the Performance Engine Phases in one job.
 
-**This is to be completed when we have added some sample JCL**
+**This is to be completed and reviewed when we have added some sample JCL**
 
-Gill note : Perhaps move this to the introduction .... have on separate page as a link or include
+(Gill note : Perhaps move this to the Basic Concepts for PE .... have on separate page as a link or include)
 
 ### Compile Phase 
 
@@ -38,7 +38,6 @@ Before running the Extract phase job, you must make sure that DD statements for 
 ### Specifying the View Output Files
 
 Similarly, you also must ensure that DD statements for any required output files are included. These DD names are determined by view parameters in the Workbench.
-
 
 ### Reports and Logs
 

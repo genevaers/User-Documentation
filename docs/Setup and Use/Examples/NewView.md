@@ -1,6 +1,6 @@
 ## Example 1: Creating a new View
 
-In this example you will create a View that reads the order item files and performs a simple data transformation, writing out only the order ID, order item number and quantity. For this you need to define an Extract-Phase only View.
+In this example you will create a View that reads the order item files and performs a simple data transformation, writing out only the order ID, product ID and quantity. For this you need to define an Extract-Phase only View.
 
 Select **Administration** > **New** > **View**
 
@@ -38,34 +38,33 @@ Next you are going to specify the input to the View, the View Source, by selecti
 
 ![View Properties outline](../../images/NewViewSource.png)
 
-For more information on how to define your own logical record, logical file and physical file definitions look [here]
+For more information on how to define your own logical record, logical file and physical file definitions look [here - tbd] 
 
 ### Adding Columns
 
 Next define the output layout. The output layout is definied by adding columns to the View. The columns contain the characteristics of the output such as data type, the length, and the alignment, such as left, right, or center. They can also contain logic and lookup fields, which will be described later.
 
 1. Select **Edit** > **Insert Column After**  
-Alternatively, you can insert a new column using the View Editor toolbar in the top right of the Editor Area. The arrow icons are used to insert new columns, or to move columns.  
+or you can insert a new column using the View Editor toolbar in the top right of the Editor Area. The arrow icons are used to insert new columns, or to move columns.  
 A new column is added to the grid.
-
-1.  Click the green cell at the bottom of the new column.  
+2.  Click the green cell at the bottom of the new column.  
 The Column Source Properties frame opens on the right.  
-2.  From the **Column Source Type** list, select **Source File Field**
-3.  From the **Column Source Value** list, click the list box and select **ORDER_ID**
+3.  From the **Column Source Type** list, select **Source File Field**
+4.  From the **Column Source Value** list, click the list box and select **ORDER_ID**
 
 ![New View column](../../images/NewViewColumn.png)
 
-Repeat the previous steps to add columns for **ORDER_ITEM_NUM** and **QUANTITY**. 
+Repeat the previous steps to add columns for **PRODUCT_ID** and **QUANTITY**. 
 
 ### Changing column attributes
 
 Data can be transformed into numerous different types, many of which are not available as standard formats in COBOL or other languages. The choice of this attribute affects other column attributes, such as length, sign, decimal place, and mask, and thus is very important in building file output views.
 
-**ORDER_ITEM_NUM** and **QUANTITY** both have data type of Binary with length 2. 
+**QUANTITY** has data type of Binary with length 2. 
 
 Change the Data Type to Zoned Decimal with Length 8:
-1. Click on the Data Type cell for **ORDER_ITEM_NUM**, and select **Zoned Decimal** from the list.
-2. Click on the Length cell for **ORDER_ITEM_NUM**, and type **8** 
+1. Click on the Data Type cell for **QUANTITY**, and select **Zoned Decimal** from the list.
+2. Click on the Length cell for **QUANTITY**, and type **8** 
 
 For more information on Data Types look [here]
 

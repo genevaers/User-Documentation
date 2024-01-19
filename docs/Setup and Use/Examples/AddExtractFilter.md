@@ -9,7 +9,7 @@ In this example you will add an Extract-Phase record filter to the View created 
 3. From the **Extract-Phase Output** > **Record Filter** double-click in the empty field  
 This opens the **Extract-Phase Record Filter** area in the Editor Area, and the Logic Text Helper on the right side. The Logic Text Helper displays keywords and values that can be used in logic text.
 
-4. Type the following in the Editor area  
+4. You may wish to only report on products with a certain Product_ID range. Type the following in the Editor area  
 **SELECTIF({PRODUCT_ID}<1000)**
 
 ![Filter Editor](../../images/ExtractFilter1.png)
