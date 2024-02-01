@@ -66,7 +66,7 @@ Change the Data Type to Zoned Decimal with Length 8:
 1. Click on the Data Type cell for **QUANTITY**, and select **Zoned Decimal** from the list.
 2. Click on the Length cell for **QUANTITY**, and type **8** 
 
-For more information on Data Types look [here]
+For more information on Data Types look [here](../MetaData/DataTypes.md)
 
 ### Adding Output destination
 
