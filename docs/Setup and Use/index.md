@@ -7,7 +7,11 @@ There are two main components to install. The PC based Workbench and the mainfra
 
 - To download the latest Performance Engine executables go [here](https://github.com/genevaers/Performance-Engine/releases)
 
-- Other setup info - Sample JCL, Parms e.g. EXTRPARM (?) with links to parameters in Reference section
+- For information on how to use the Workbench to create a new View, follow the examples under [Basic Skills](#basic-skills) 
+  
+- To run a View look at the sample JCL in [Running the View](RunView/RunView.md)
+  
+- For tuning and parameter reference information go to the [Reference](../Reference/index.md)
 
 ## Basic Concepts
 
@@ -19,7 +23,7 @@ The following page provides you with an introduction to the GenevaERS Performanc
 - Identify the phases of the Performance Engine 
 - Identify the main inputs and outputs for each phase
 
-[Performance Engine](Concepts/Intro1_Introduction_to_the_Performance_Engine.md)
+[Performance Engine Introduction](Concepts/Intro1_Introduction_to_the_Performance_Engine.md)
 
 ## Basic Skills
 

@@ -1,7 +1,4 @@
-# Introduction to the GenevaERS Performance Engine
-
-
-# GenevaERS Overview
+## Introduction to the GenevaERS Performance Engine
 
 ![Gen PE overview](../../images/Module2-GenevaERS_Performance_Engine_Overview/Module2_Slide3.jpeg) 
 

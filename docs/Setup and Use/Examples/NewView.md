@@ -38,7 +38,7 @@ Next you are going to specify the input to the View, the View Source, by selecti
 
 ![View Properties outline](../../images/NewViewSource.png)
 
-For more information on how to define your own logical record, logical file and physical file definitions look [here - tbd] 
+For more information on how to define your own logical record, logical file and physical file definitions look [here](../MetaData/SpecifyLRLFPFs.md) 
 
 ### Adding Columns
 
@@ -82,7 +82,7 @@ You will see that the WRITE statement in the **Read Logic** field has changed.
 
 ![Output Properties](../../images/NewViewSourceProperties.png)
 
-For more information on how to define your own logical file and physical file definitions look [here]
+For more information on how to define your own logical file and physical file definitions look [here](../MetaData/SpecifyLRLFPFs.md)
 
 Save the View **File** > **Save**,  
    or click the Save icon in the Workbench toolbar,  
