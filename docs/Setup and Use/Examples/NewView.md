@@ -38,7 +38,7 @@ Next you are going to specify the input to the view, the view source, by selecti
 
 ![View Properties outline](../../images/NewViewSource.png)
 
-For more information on how to define your own logical record, logical file and physical file definitions look [here](../../Advanced%20Features/MetaData/SpecifyLRLFPFs.md) 
+For more information on how to define your own logical record, logical file and physical file definitions look [here](../../AdvancedFeatures/MetaData/SpecifyLRLFPFs.md) 
 
 ### Adding Columns
 
@@ -66,7 +66,7 @@ Change the Data Type to Zoned Decimal with Length 8:
 1. Click on the Data Type cell for **QUANTITY**, and select **Zoned Decimal** from the list.
 2. Click on the Length cell for **QUANTITY**, and type **8** 
 
-For more information on Data Types look [here](../../Advanced%20Features/MetaData/DataTypes.md)
+For more information on Data Types look [here](../../AdvancedFeatures/MetaData/DataTypes.md)
 
 ### Adding Output destination
 
@@ -82,7 +82,7 @@ You will see that the WRITE statement in the **Read Logic** field has changed.
 
 ![Output Properties](../../images/NewViewSourceProperties.png)
 
-For more information on how to define your own logical file and physical file definitions look [here](../../Advanced%20Features/MetaData/SpecifyLRLFPFs.md)
+For more information on how to define your own logical file and physical file definitions look [here](../../AdvancedFeatures/MetaData/SpecifyLRLFPFs.md)
 
 Save the view **File** > **Save**,  
    or click the Save icon in the Workbench toolbar,  

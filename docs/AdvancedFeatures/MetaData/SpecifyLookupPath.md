@@ -17,7 +17,7 @@ Next define the target of the Lookup Path:
 4. Select the **Lookup Path Definition** tab  
 5. Select the target LR from the **Logical Record** drop down list.  
 6. Select the target LF from the **Logical File** drop down list
-The target LR must contain at least one field defined as a **Primary Key**. To read about LR definitions look [here](../../Advanced%20Features/MetaData/SpecifyLRLFPFs.md)  
+The target LR must contain at least one field defined as a **Primary Key**. To read about LR definitions look [here](../../AdvancedFeatures/MetaData/SpecifyLRLFPFs.md)  
 ![Lookup Path Definition tab](../../images/LookupPathDefn.png)  
     
 You can then select the source fields that should be used to create a key to search the target to find a matching record. The accumulated length of the source fields must equal the total key length before the lookup path can be activated and used for processing in a view.

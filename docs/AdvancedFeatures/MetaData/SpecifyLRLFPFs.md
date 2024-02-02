@@ -91,7 +91,7 @@ Logical record information is displayed across three tabs, **LR Properties**, **
 ### LR Fields
 
 Select the **LR Fields** tab.  
-The grid on this panel is used to create and maintain field definitions. Fields are defined with names, data types, start positions and lengths, and numbers of decimal points. All the data types discussed available are discussed [here](../../Advanced%20Features/MetaData/DataTypes.md).
+The grid on this panel is used to create and maintain field definitions. Fields are defined with names, data types, start positions and lengths, and numbers of decimal points. All the data types discussed available are discussed [here](../../AdvancedFeatures/MetaData/DataTypes.md).
 
 1. To define a field **Edit** > **Insert Field Before**  
    or click the Insert Field icons on the Logical Record Editor toolbar  
