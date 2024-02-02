@@ -7,9 +7,9 @@ There are two main components to install. The PC based Workbench and the mainfra
 
 - To download the latest Performance Engine executables go [here](https://github.com/genevaers/Performance-Engine/releases)
 
-- For information on how to use the Workbench to create a new View, follow the examples under [Basic Skills](#basic-skills) 
+- For information on how to use the Workbench to create a new view, follow the examples under [Basic Skills](#basic-skills) 
   
-- To run a View look at the sample JCL in [Running the View](RunView/RunView.md)
+- To run a view look at the sample JCL in [Running the View](RunView/RunView.md)
   
 - For tuning and parameter reference information go to the [Reference](../Reference/index.md)
 
@@ -47,16 +47,16 @@ The examples here are based on the Demo data. If you haven't installed the Demo,
 
 This imports in to the Workbench all the PFs, LFs, LRs, Lookup Paths, and Views associated with the Demo.
  
-You can now create a new View using some of the Demo metadata.
+You can now create a new view using some of the Demo metadata.
 
-[Example 1: Creating a new View](Examples/NewView.md)
+[Example 1: Creating a new view](Examples/NewView.md)
 
 [Example 2: Adding a filter](Examples/AddExtractFilter.md)
 
-[Example 3: Adding a Lookup field](Examples/AddLookup.md)
+[Example 3: Adding a lookup field](Examples/AddLookup.md)
 
-[Example 4: Adding a Column Formula]
+[Example 4: Adding a column formula]
 
-[Example 5: Creating a Summary View]
+[Example 5: Creating a summary view]
 
 (any other suggestions here??)

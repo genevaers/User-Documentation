@@ -1,6 +1,6 @@
 ## Example 1: Creating a new View
 
-In this example you will create a View that reads the order item files and performs a simple data transformation, writing out only the order ID, product ID and quantity. For this you need to define an Extract-Phase only View.
+In this example you will create a view that reads the order item files and performs a simple data transformation, writing out only the order ID, product ID and quantity. For this you need to define an Extract-Phase only view.
 
 Select **Administration** > **New** > **View**
 
@@ -14,7 +14,7 @@ The first screen presented is the View Properties screen
 1. In the **Name** field type **CustomerOrders**
 2. In the **Control Record** field select **Default_Install**
 3. Click **Extract-Phase Output** with **Fixed-Width Fields** 
-4. Save the View **File** > **Save**,  
+4. Save the view **File** > **Save**,  
    or click the Save icon in the Workbench toolbar,  
    or press **Ctrl + s**
 
@@ -26,7 +26,7 @@ To toggle between the View Properties screen and the View Editor screen,
 
 ### View Source 
 
-Next you are going to specify the input to the View, the View Source, by selecting a logical file and logical record. You will use metadata already defined as part of the Demo.
+Next you are going to specify the input to the view, the view source, by selecting a logical file and logical record. You will use metadata already defined as part of the Demo.
 
 6. Change to the View Editor screen
 7. Select **Edit** > **Add View Source**  
@@ -38,11 +38,11 @@ Next you are going to specify the input to the View, the View Source, by selecti
 
 ![View Properties outline](../../images/NewViewSource.png)
 
-For more information on how to define your own logical record, logical file and physical file definitions look [here](../MetaData/SpecifyLRLFPFs.md) 
+For more information on how to define your own logical record, logical file and physical file definitions look [here](../../Advanced%20Features/MetaData/SpecifyLRLFPFs.md) 
 
 ### Adding Columns
 
-Next define the output layout. The output layout is definied by adding columns to the View. The columns contain the characteristics of the output such as data type, the length, and the alignment, such as left, right, or center. They can also contain logic and lookup fields, which will be described later.
+Next define the output layout. The output layout is definied by adding columns to the view. The columns contain the characteristics of the output such as data type, the length, and the alignment, such as left, right, or center. They can also contain logic and lookup fields, which will be described later.
 
 1. Select **Edit** > **Insert Column After**  
 or you can insert a new column using the View Editor toolbar in the top right of the Editor Area. The arrow icons are used to insert new columns, or to move columns.  
@@ -66,15 +66,15 @@ Change the Data Type to Zoned Decimal with Length 8:
 1. Click on the Data Type cell for **QUANTITY**, and select **Zoned Decimal** from the list.
 2. Click on the Length cell for **QUANTITY**, and type **8** 
 
-For more information on Data Types look [here](../MetaData/DataTypes.md)
+For more information on Data Types look [here](../../Advanced%20Features/MetaData/DataTypes.md)
 
 ### Adding Output destination
 
-The default output destination for Extract-Phase only Views is the DD **F*****nnnnnnn*** where ***nnnnnnn*** is the View ID. For example, if the View ID is **12183** the default DD name for Extract-Phase only Views is **F0012183**.
+The default output destination for Extract-Phase only Views is the DD **F*****nnnnnnn*** where ***nnnnnnn*** is the view ID. For example, if the view ID is **12183** the default DD name for Extract-Phase only Views is **F0012183**.
 
 You can specify your own output destination. To do this:
 
-- Left click on the View Source blue cell you added earlier. This opens the View Source Properties tab in the Metadata List Area.
+- Left click on the View Sources blue cell you added earlier. This opens the **View Source Properties** tab in the Metadata List Area.
 - From the **Extract-Phase Output** > **Logical File** list select **OUTPUT01**
 - From the **Extract-Phase Output** > **Physical File** list select **OUTPUT01**
 
@@ -82,9 +82,9 @@ You will see that the WRITE statement in the **Read Logic** field has changed.
 
 ![Output Properties](../../images/NewViewSourceProperties.png)
 
-For more information on how to define your own logical file and physical file definitions look [here](../MetaData/SpecifyLRLFPFs.md)
+For more information on how to define your own logical file and physical file definitions look [here](../../Advanced%20Features/MetaData/SpecifyLRLFPFs.md)
 
-Save the View **File** > **Save**,  
+Save the view **File** > **Save**,  
    or click the Save icon in the Workbench toolbar,  
    or press **Ctrl + s**
 

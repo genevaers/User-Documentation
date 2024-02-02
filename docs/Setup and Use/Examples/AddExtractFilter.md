@@ -2,10 +2,10 @@
 
 GenevaERS record filters use conditional processing to include or exclude records, based upon specific criteria. Extract-Phase record filtering is performed on the source records during the Extract Phase. There is also output record filtering which is performed in the format phase.
 
-In this example you will add an Extract-Phase record filter to the View created in Example 1.
+In this example you will add an Extract-Phase record filter to the view created in Example 1.
 
-1. Open the **CustomerOrders** View by double-clicking the View listed in the Metadata List Area
-2. Left click on the View Source blue cell. This opens the View Source Properties tab in the Metadata List Area.
+1. Open the **CustomerOrders** view by double-clicking the view listed in the Metadata List Area
+2. Left click on the View Sources blue cell. This opens the **View Source Properties** tab in the Metadata List Area.
 3. From the **Extract-Phase Output** > **Record Filter** double-click in the empty field  
 This opens the **Extract-Phase Record Filter** area in the Editor Area, and the Logic Text Helper on the right side. The Logic Text Helper displays keywords and values that can be used in logic text.
 
@@ -17,11 +17,11 @@ This opens the **Extract-Phase Record Filter** area in the Editor Area, and the 
 5. Save the filter by pressing **Ctrl + s**
 6. Close the **Extract-Phase Record Filter** tab
    
-If you left click on the View Source blue cell again to open the View Source Properties tab, you will see the Record filter has been added.
+If you left click on the View Sources blue cell again to open the **View Source Properties** tab, you will see the record filter has been added.
 
 ![Filter Editor](../../images/ExtractFilter2.png)
 
-Save the View **File** > **Save**,  
+Save the view **File** > **Save**,  
    or click the Save icon in the Workbench toolbar,  
    or press **Ctrl + s**
 

@@ -4,13 +4,13 @@ GenevaERS allows users to combine or "join" data together from different files f
 
 A lookup path is a GenevaERS metadata component defining how to retrieve information from a target logical record (LR) using data from a source LR.
 
-In this example you will add a new column with a lookup field as the source to the View created in Example 1. You will use existing metadata from the Demo that defines the source LR, the target LR, and the Lookup path. 
+In this example you will add a new column with a lookup field as the source to the view created in Example 1. You will use existing metadata from the Demo that defines the source LR, the target LR, and the Lookup path. 
 
-For more information on how to define your own logical record, logical file and physical file definitions look [here]
+For more information on how to define your own logical record, logical file and physical file definitions look [here](../../Advanced%20Features/MetaData/SpecifyLRLFPFs.md)
 
-For more information on how to define your own lookup path definitions look [here](../MetaData/SpecifyLookup.md)
+For more information on how to define your own lookup path definitions look [here](../../Advanced%20Features/MetaData/SpecifyLookupPath.md)
 
-1. Open the **CustomerOrders** View by double-clicking the View listed in the Metadata List Area
+1. Open the **CustomerOrders** view by double-clicking the view listed in the Metadata List Area
 2. Select **Column 2** by clicking on the column header.
 3. Select **Edit** > **Insert Column After**  
 or insert a new column using the buttons in View Editor toolbar.
@@ -24,7 +24,7 @@ The Column Source Properties frame opens on the right.
 ![Filter Editor](../../images/AddLookupColumn.png)
 
 
-Save the View **File** > **Save**,  
+Save the view **File** > **Save**,  
    or click the Save icon in the Workbench toolbar,  
    or press **Ctrl + s**
 

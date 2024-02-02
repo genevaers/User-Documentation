@@ -1,4 +1,4 @@
-## Running the View
+## Running the view
 
 If you haven't installed the Demo, then it is highly recommended you do. Go [here](https://genevaers.github.io/Demo/)
 
@@ -15,7 +15,7 @@ Sample JCL is contained in
 
 ### Compile Phase 
 
-The program GVBMR91 reads the View definitions and creates
+The program GVBMR91 reads the view definitions and creates
  -  View Definition Parameters (VDP file),
  -  Join Logic Table (JLT file), and 
  -  Extract Logic Table (XLT file)  
@@ -27,13 +27,13 @@ The program GVBMR95R produces reference data for use in the extract phase. It re
 
 ### Extract Phase
 
-The program GVBMR95E executes the extract phase.GVBMR95 reads VDP file,the XLT file, and the REH, and RED files created by earlier steps, along with source data for the process.
+The program GVBMR95E executes the extract phase. GVBMR95E reads the VDP file, the XLT file, and the REH, and RED files created by earlier steps, along with source data for the process.
 
-GVBMR95 executes various transformations and, depending on specifications in the selected views, produces one or more View Output files. It may also produce one or more Extract Work files, which are temporary files processed by the Format phase. 
+GVBMR95E executes various transformations and, depending on specifications in the selected views, produces one or more view output files. It may also produce one or more Extract Work files, which are temporary files processed by the Format phase. 
 
 ### Specifying the Source Files in the JCL
 
-Before running the Extract phase job, you must make sure that DD statements for any required input files are included, containing the data to be scanned and extracted according to the view requirements. The DD names (such as CUSTOMER or ORDER001) must match those in the Workbench physical files referenced by the views being run.
+Make sure that DD statements for any required input files are included in the JCL. For example DD statements for the data to be scanned and extracted according to the view requirements. The DD names (such as CUSTOMER or ORDER001) must match those in the Workbench physical files referenced by the views being run.
 
 ### Specifying the View Output Files
 
