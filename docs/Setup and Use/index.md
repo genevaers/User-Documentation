@@ -29,6 +29,8 @@ The following page provides you with an introduction to the GenevaERS Performanc
 
 The examples here are based on the Demo data. If you haven't installed the Demo, then it is highly recommended you do. Go [here](https://genevaers.github.io/Demo/)
 
+The following Workbench tasks are based on the Workbench user having **system administrator** rights. For more information on users and access rights go [here](../AdvancedFeatures/Access.md)
+
 **Import the Demo XML into the Workbench in a new environment**
 
 1. Using your preferred file transfer method, download *your-hlq*.GVBDEMO.WB.XML to a folder on your PC.
@@ -55,8 +57,8 @@ You can now create a new view using some of the Demo metadata.
 
 [Example 3: Adding a lookup field](Examples/AddLookup.md)
 
-[Example 4: Adding a column formula]
+[Example 4: Adding a column formula](Examples/AddColumnFormula.md)
 
-[Example 5: Creating a summary view]
+[Example 5: Creating a summary view](Examples/NewSummaryView.md)
 
 (any other suggestions here??)

@@ -6,6 +6,6 @@
 
 [Setup and Use](Setup and Use)
 
-[Advanced Features](Advanced Features)
+[Advanced Features](AdvancedFeatures)
 
 [Reference](Reference)

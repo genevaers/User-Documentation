@@ -71,13 +71,13 @@ Save the logical file definition **File** > **Save**,
    or click the Save icon in the Workbench toolbar,  
    or press **Ctrl + s**
 
-After you save the logical file for the first time, an ID is assigned and the time stamps are updated. If you return to the Physical File definition, you can see that the association is also shown there under **Associated Logical Files** 
+After you save the logical file for the first time, an ID is assigned and the time stamps are updated. If you return to the physical file definition, you can see that the association is also shown there under **Associated Logical Files** 
 
 The records in logical files can be described by many logical records. A list of the associated logic records is presented on this screen for reference. You can associate a logical file with an LR on the Logical Record screen. You must first define an LR before you make the association.
 
 ## Logical Records
 
-Logical Records can be used by many different Views. To view existing Logical Records, click Logical Records in the Navigator pane and open a Logical Record in the metadata list at the bottom of the screen.
+Logical Records can be used by many different Views. To view existing logical records, click **Logical Records** in the Navigator pane and open a logical record in the metadata list at the bottom of the screen.
 
 To create a new Logical Record
 
@@ -124,8 +124,8 @@ Select the **Associated Logical Files** tab. On this tab, you define which logic
   
 1. Click **Add** and select one or more logical files to be associated. After you click OK, the logical file is displayed in the Associated Logical Files tab.  
 
-Save the Logical Record definition **File** > **Save**,  
+Save the logical record definition **File** > **Save**,  
    or click the Save icon in the Workbench toolbar,  
    or press **Ctrl + s**
 
-After you save the logical record for the first time, an ID is assigned and the time stamps are updated. If you return to the Logical File definition, you can see that the association is also shown there under **Associated Logical Records** 
+After you save the logical record for the first time, an ID is assigned and the time stamps are updated. If you return to the logical file definition, you can see that the association is also shown there under **Associated Logical Records** 

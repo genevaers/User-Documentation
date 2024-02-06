@@ -1,7 +1,6 @@
 
-  
-**Reference**
+## Reference
 
 - WB logic text reference
 - Parameter file syntax
-- Assignment rules
+- [Assignment and Comparison rules](./Assignment-and-Comparison-Rules.md)
