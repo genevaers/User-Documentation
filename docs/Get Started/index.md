@@ -1,4 +1,4 @@
-# Getting Started
+# Get Started
 
 ## Overview 
 GenevaERS is open source software that
