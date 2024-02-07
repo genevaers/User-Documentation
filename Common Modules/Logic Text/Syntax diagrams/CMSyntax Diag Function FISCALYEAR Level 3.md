@@ -1,1 +1,0 @@
-![Function FISCALYEAR](../../images/LTSF_FISCALYEAR_01.gif)
