@@ -2,7 +2,7 @@
 
 # GenevaERS User Documentation
 
-[Get Started](Get Started)
+[Getting Started](Get Started)
 
 [Setup and Use](Setup and Use)
 
