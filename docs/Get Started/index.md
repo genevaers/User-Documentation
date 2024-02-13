@@ -7,6 +7,15 @@ GenevaERS is open source software that
   
 ## Overview of Components
 GenevaERS consists of two software components: the PC-based Workbench and the mainframe-based batch process known as the Performance Engine. Developers use the Workbench to build applications that are stored in a metadata repository. These applications are then run by the Performance Engine, which reads data from source files or databases, transforms it, and writes it to output files.
+Examples of source data are:
+- ZOS sequential files
+- DB2 database
+- VSAM files
+- Adabas database
+  
+GenevaERS rapidly produces many outputs while efficiently reading large volumes of data only once.
+
+GenevaERS is extensible, and adding more reports or outputs does not affect the performance. 
 
 ![Gen comp](../images/Module1-Introduction-to-Views/Module1_Slide4.jpeg)
   
