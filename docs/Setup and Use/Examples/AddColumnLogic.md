@@ -38,6 +38,23 @@ Save the Column Logic **File** > **Save**,
 
 Close the **Extract-Phase Column Logic** tab.
 
+### Column attributes
+
+When using column logic you must consider the column attributes with regards to the fields or constants set in the logic text. In this example the column logic assigns DISCOUNT_PERCENT or 0 to the column. DISCOUNT_PERCENT has data type packed, length of 6-bytes , signed with 2 decimal places. You can specify that the data type is to be transformed in the column to Masked Numeric, with length of 8. 
+
+Change the Data Type to Masked Numeric with Length 8:
+1. Click on the **Data Type** cell for **Column 5**, and select **Masked Numeric** from the list.
+2. Click on the **Length** cell for **Column 5**, and type **8** 
+3. Click on the **Decimal Places** cell for **Column 5**, and type **2** 
+4. Click the **Signed** cell for **Column 5** to indicate signed 
+
+Optionally, you can add a **Column Header** to Column 5. Headers are used in the report output format, but in this case it is useful to add a header when the column output is defined by some logic. A header is not automatically displayed in the Workbench for a column with column logic.  
+Click on the **Header 1** cell for **Column 5**, and type **DISCOUNT** 
+
+![Change column attributes screen shot](../../images/AddColumnLogic2.png)
+
+<!-- Note that it is possible that transforming a packed 6 into a Masked Numeric of length 8 may result in overflow of large numbers. You must be aware of your data in cases like this. -->
+
 Save the view **File** > **Save**,  
    or click the Save icon in the Workbench toolbar,  
    or press **Ctrl + s**
@@ -51,7 +68,7 @@ To activate the view, use any of these methods:
 
 The view title bar now displays the word "Active". Save the view again to preserve this active state. The view is now ready to be run.
 
-For more information on column logic see [Introduction to column logic](Intro6_Introduction_to_Column_Formulas.md) 
+For more information on column logic see [Extract-phase column logic](../../AdvancedFeatures/ColumnLogic.md) 
 
 
 [Running the View](../RunView/RunView.md)
