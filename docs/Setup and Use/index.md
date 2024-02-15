@@ -57,7 +57,7 @@ You can now create a new view using some of the Demo metadata.
 
 [Example 3: Adding a lookup field](Examples/AddLookup.md)
 
-[Example 4: Adding a column formula](Examples/AddColumnFormula.md)
+[Example 4: Adding column logic](Examples/AddColumnLogic.md)
 
 [Example 5: Creating a summary view](Examples/NewSummaryView.md)
 

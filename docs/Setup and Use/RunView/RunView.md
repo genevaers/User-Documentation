@@ -11,7 +11,6 @@ Sample JCL is contained in
 
 **This is to be completed and reviewed when we have added some sample JCL**
 
-(Gill note : Perhaps move this to the Basic Concepts for PE .... have on separate page as a link or include)
 
 ### Compile Phase 
 
