@@ -3,6 +3,8 @@
 [Workbench keyboard shortcuts](./Workbench/KeyboardShortcuts.md)   
 A keyboard shortcuts summary can be displayed in the Workbench by clicking **Help** > **Key Assist**
 
+[Workbench Logic Text](./Workbench/LogicTextFullDetails.md)
+
 [Assignment and comparison rules](./Assignment-and-Comparison-Rules.md)   
 
 

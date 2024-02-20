@@ -1,5 +1,10 @@
 # Workbench keyboard shortcuts 
 
+{: .no_toc}
+TABLE OF CONTENTS 
+1. TOC
+{:toc}  
+
 ## All screens
 
 {% include_relative includes/KeyboardShortcutsAllWBScreens.md %}  
@@ -188,11 +193,11 @@ Remember to also see heading [Shortcuts - All workbench screens](#all-screens)
 This applies to screens such as:
 
 -  Create New Extract Record Filter
--  Create New Extract Column Assignment
+-  Create New Extract Column Logic
 -  Create New Format-Phase Column Calculation
 -  Create New Format-Phase Record Filter
 -  Edit Extract Record Filter
--  Edit Extract Column Assignment
+-  Edit Extract Column Logic
 -  Edit Format-Phase Column Calculation
 -  Edit Format-Phase Record Filter
 

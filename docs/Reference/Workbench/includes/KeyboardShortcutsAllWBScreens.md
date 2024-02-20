@@ -31,13 +31,13 @@ These shortcuts work on all workbench screens **except the Connection screen and
 | | |
 |Ctrl + M|**Maximize** the active screen - either the Editor Area, Navigator or Metadata List. Press again to undo the maximize action.|
 | | |
-|Ctrl + N|Create a **new** instance of the type of metadata currently selected in the Navigator. If the Navigator is highlighting a particular view folder, then this results in a **new view** screen. This keyboard shortcut achieves the same result as going to the Navigator, clicking on the **arrow beside**![](../images/Icon_New_08.GIF) \(the new icon\) on the toolbar and selecting the appropriate item.|
+|Ctrl + N|Create a **new** instance of the type of metadata currently selected in the Navigator. If the Navigator is highlighting a particular view folder, then this results in a **new view** screen. This keyboard shortcut achieves the same result as going to the Navigator, clicking on the **arrow beside**![](../../../images/Icon_New_08.GIF) \(the new icon\) on the toolbar and selecting the appropriate item.|
 | | |
 |Ctrl + O|**Open a view by id number**. The **Open View** screen appears. Type a view id number and click OK to open that view. This shortcut achieves the same result as selecting **File -\> Open View**.|
 | | |
-|Ctrl + S|**Save** the current data. This shortcut achieves the same result as clicking ![](../images/Icon_Save_03.GIF) \(the save icon\) or selecting **File -\> Save**.|
+|Ctrl + S|**Save** the current data. This shortcut achieves the same result as clicking ![](../../../images/Icon_Save_03.GIF) \(the save icon\) or selecting **File -\> Save**.|
 | | |
-|Ctrl + Shift + S|**Copy Metadata \(also called Save As\)**. This shortcut achieves the same result as clicking ![](../images/Icon_SaveAs_01.gif) \(the Save As icon\) or selecting **File -\> Save As**. This function requires that the Editor Area has a metadata item open in a window.|
+|Ctrl + Shift + S|**Copy Metadata \(also called Save As\)**. This shortcut achieves the same result as clicking ![](../../../images/Icon_SaveAs_01.gif) \(the Save As icon\) or selecting **File -\> Save As**. This function requires that the Editor Area has a metadata item open in a window.|
 | | |
 |Ctrl + V|**Paste selected text.**You must have copied some text first \(using Ctrl+C\).|
 | | |
