@@ -20,10 +20,13 @@
 
 title: GenevaERS User Documentation
 email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  GenevaERS the Single-Pass Optimization Engine
+description: 
+  GenevaERS  
+    <br/>
+  The Single-Pass Optimization Engine
 # baseurl: "/UserDocs" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://genevaers.github.io" 
+# the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -35,9 +38,13 @@ github_username:  jekyll
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
+- jekyll-sitemap
 
 logo: "/images/genevaers-color.svg"
 color_scheme: geneva
+# The following disables the 'View on Github' button in the theme Cayman
+github:
+  is_project_page: false
 #
 # Exclude from processing.
 # The following items will not be processed, by default.
