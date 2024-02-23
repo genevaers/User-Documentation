@@ -1,25 +1,16 @@
-{: .no_toc}
-# Workbench logic text 
+# Format-Phase Column Logic (FCL)
 
-{: .no_toc}
-TABLE OF CONTENTS 
-1. TOC
-{:toc}  
+## Introduction
 
+Format-Phase Column Logic is applied to the columns created in the extract-phase. Only columns that are numeric, perform aggregation, or are the results of calculations, can have format-phase column logic applied to them.
 
-# COLUMN & COL.nnn statements (ECL)
+## Language Constructs
 
-{% include_relative LogicText/Descriptions/DescriptionCOLUMNCOLnnnECL.md %} 
+[COLUMN and COL.nn statments](./LogicText/ColumnStatementFCL.md)  
+[IF statements](./LogicText/IFstatementsFCL.md)
 
-{% include_relative LogicText/SyntaxDiagrams/CMAAHowthesyntaxworksLevel3.md %} 
+## Arithmetic Operators
 
-## Syntax 
+## Comparision Operators
 
-{% include_relative LogicText/SyntaxDiagrams/CMSyntaxDiagCOLUMNCOLnnnECLLevel3.md %} 
-
-**Rules for the syntax**
-
-See also topic: [Rules for all Logic Text](../Workbench/RulesforallLogicText.md) 
-
-
-{% include_relative LogicText/Examples/CMExampleCOLUMNCOLnnnECL.md %} 
+## Logical Operators

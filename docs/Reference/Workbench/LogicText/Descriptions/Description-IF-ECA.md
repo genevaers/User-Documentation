@@ -1,5 +1,5 @@
 
-## How do I use IF statements in ECL? 
+# How do I use IF statements in ECL? 
 
 IF statements can be part of any logic text. An IF statement allows a condition to control if one or more statements are executed.
 

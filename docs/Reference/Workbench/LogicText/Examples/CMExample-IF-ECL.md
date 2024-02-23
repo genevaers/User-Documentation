@@ -1,5 +1,5 @@
 
-## Examples: IF with COLUMN & COL.nnn (ECL)
+# Examples: IF with COLUMN & COL.nnn (ECL)
 
 In all the following examples, **COLUMN can be replaced by COL.nnn**, for example COL.3. You can set the value of any COL.nnn from any other column. You can create multiple IF statements in Extract Column Logic text. However, you cannot inquire on COL.nnn \(for example, IF COL.4 = 0 is not allowed\).
 
@@ -32,7 +32,7 @@ In all the following examples, **COLUMN can be replaced by COL.nnn**, for exampl
 |**IF ({field1} LIKE "^B\*C\*E$")<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN COLUMN = {field1}<br>&nbsp;&nbsp;&nbsp;&nbsp;ELSE COLUMN = " "<br>ENDIF**|If field1 begins "B", contains "C" and ends "E"<br>then set current column to field1,<br>otherwise set current column to one blank.|
 
 
-## Examples: IF with WRITE (ECL)
+# Examples: IF with WRITE (ECL)
 
 |Example logic text|Meaning|
 |------------------|-------|

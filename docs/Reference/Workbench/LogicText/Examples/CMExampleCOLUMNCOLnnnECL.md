@@ -1,5 +1,5 @@
 
-## Examples: COLUMN & COL.nnn (ECL)
+# Examples: COLUMN & COL.nnn (ECL)
 
 In all the following examples, **COLUMN can be replaced by COL.nnn**, for example COL.3. You can set the value of any COL.nnn from any other column. You can create multiple COL.nnn statements in Extract Column Logic text.
 
@@ -15,7 +15,7 @@ In all the following examples, **COLUMN can be replaced by COL.nnn**, for exampl
 |**COLUMN = {Lookup1.Field3,field7;$SYM1=3,$SYM2=0}**|Set current column to Field3 found by<br>lookup path Lookup1 using<br>effective date of field7 and symbols<br>SYM1 set to 3 and SYM2 set to zero.|
 |**COLUMN = DAYSBETWEEN({BUY_DATE},{SHIP_DATE})**|Set current column to the days between<br>the transaction date and the shipping date.|
 
-## Examples: IF with COLUMN & COL.nnn (ECL)
+# Examples: IF with COLUMN & COL.nnn (ECL)
 
 In all the following examples, **COLUMN can be replaced by COL.nnn**, for example COL.3. You can set the value of any COL.nnn from any other column. You can create multiple IF statements in Extract Column Logic text. However, you cannot inquire on COL.nnn \(for example, IF COL.4 = 0 is not allowed\).
 

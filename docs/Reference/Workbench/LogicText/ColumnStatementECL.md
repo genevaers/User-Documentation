@@ -1,5 +1,5 @@
 {: .no_toc}
-# Extract-Phase Column Logic 
+# COLUMN & COL.nnn statements (Extract-Phase Column Logic)
 
 {: .no_toc}
 TABLE OF CONTENTS 
@@ -7,13 +7,11 @@ TABLE OF CONTENTS
 {:toc}  
 
 
-# COLUMN & COL.nnn statements (ECL)
-
 {% include_relative Descriptions/DescriptionCOLUMNCOLnnnECL.md %} 
 
 {% include_relative SyntaxDiagrams/CMAAHowthesyntaxworksLevel3.md %} 
 
-## Syntax 
+# Syntax 
 
 {% include_relative SyntaxDiagrams/CMSyntaxDiagCOLUMNCOLnnnECLLevel3.md %} 
 

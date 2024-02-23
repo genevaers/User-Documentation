@@ -1,25 +1,23 @@
-{: .no_toc}
-# Workbench logic text 
+# Format-Phase Record Filter (FRF)
 
-{: .no_toc}
-TABLE OF CONTENTS 
-1. TOC
-{:toc}  
+## Introduction
 
+The function of Format-Phase Record Filter is to include or exclude output records, based upon specific criteria.
 
-# COLUMN & COL.nnn statements (ECL)
+Format Phase Record Filters:
 
-{% include_relative LogicText/Descriptions/DescriptionCOLUMNCOLnnnECL.md %} 
-
-{% include_relative LogicText/SyntaxDiagrams/CMAAHowthesyntaxworksLevel3.md %} 
-
-## Syntax 
-
-{% include_relative LogicText/SyntaxDiagrams/CMSyntaxDiagCOLUMNCOLnnnECLLevel3.md %} 
-
-**Rules for the syntax**
-
-See also topic: [Rules for all Logic Text](../Workbench/RulesforallLogicText.md) 
+-  Select records to be written to output.
+-  Are performed last, after all criteria, before the write is performed.
+-  If omitted, all records will be written to output.
 
 
-{% include_relative LogicText/Examples/CMExampleCOLUMNCOLnnnECL.md %} 
+## Language Constructs
+
+
+## Arithmetic Operators
+
+## Comparision Operators
+
+## Logical Operators
+
+## String Operators
