@@ -43,6 +43,10 @@ Extract Record Filters:
 [ISSPACES()](./LogicText/Function-ISSPACES.md)  
 [MONTHSBETWEEN()](./LogicText/Function-MONTHSBETWEEN.md)  
 [PRIOR()](./LogicText/Function-PRIOR.md)  
+[REPEAT()](./LogicText/Function-REPEAT.md)  
+[RUNDAY()](./LogicText/Function-RUNDAY.md)  
+[RUNMONTH()](./LogicText/Function-RUNMONTH.md)  
+[RUNYEAR()](./LogicText/Function-RUNYEAR.md)  
 [YEARSBETWEEN()](./LogicText/Function-YEARSBETWEEN.md)  
 
 
