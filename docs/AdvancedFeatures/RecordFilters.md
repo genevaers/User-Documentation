@@ -16,6 +16,17 @@ Specifically, this logic text changes the **records selected for processing** in
 
 Extract Record Filter logic text is performed at the start of the extract phase processing for each view.
 
+### Statements for selecting input files
+
+The overall idea is that your logic text describes how to select or skip, but not both.
+
+|Choice for logic text|Notes|
+|---------------------|-----|
+|One SELECTIF statement|A SELECTIF statement gives a condition for selecting input records. Skip any records that do no meet the condition.|
+|One SKIPIF statement|A SKIPIF statement gives a condition for skipping input records. Select any records that do not meet the condition.|
+|One IF statement using only SELECT statements|One IF statement can contain a SELECT statement for the THEN or ELSE cases. Alternatively, the THEN or ELSE cases might contain other IF statements that also has SELECT statements or IF statements, and the whole thing still counts as one IF statement. Skip any records that do not qualify for a SELECT somewhere in the IF statement. No actual SKIP statements are allowed.|
+|One IF statement using only SKIP statements|One IF statement can contain a SKIP statement for the THEN or ELSE cases. Alternatively, the THEN or ELSE cases might contain other IF statements that also has SKIP statements or IF statements, and the whole thing still counts as one IF statement. Select any records that do not qualify for a SKIP somewhere in the IF statement. No actual SELECT statements are allowed.|
+
 ### Logic text syntax and examples
 
 The syntax of this logic text and examples are described in the Reference section [Workbench Logic Text - Extract-Phase Record Filter](../Reference/Workbench/LogicTextERFStatements.md)
@@ -37,6 +48,8 @@ This logic text is part of a view and is associated with a view source file. To 
     -   **OR** press **Ctrl+S**.
   
 You may wish to close the open windows. Closing the **Extract-Phase Record Filter** window will also close the **Logic Text Helper**.
+
+
 
 ## Format-Phase Record Filter
 
