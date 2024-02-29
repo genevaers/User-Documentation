@@ -5,6 +5,7 @@ A keyboard shortcuts summary can be displayed in the Workbench by clicking **Hel
 
 [Workbench Logic Text - Extract-Phase Column Logic (ECL)](./Workbench/LogicTextECLStatements.md)  
 [Workbench Logic Text - Extract-Phase Record Filter (ERF)](./Workbench/LogicTextERFStatements.md)  
+[Workbench Logic Text - Extract-Phase Record Logic (ERL)](./Workbench/LogicTextERLStatements.md)  
 [Workbench Logic Text - Format-Phase Column Logic (FCL)](./Workbench/LogicTextFCLStatements.md)  
 [Workbench Logic Text - Format-Phase Record Filter (FRF)](./Workbench/LogicTextFRFStatements.md)  
 
