@@ -21,9 +21,9 @@ Extract Record Filters:
 
 ## Comparision Operators
 
-## Logical Operators
-
-## String Operators
+[BEGINS_WITH](./LogicText/BEGINS-WITH-Comparison.md)  
+[CONTAINS](./LogicText/CONTAINS-Comparison.md)  
+[ENDS_WITH](./LogicText/ENDS-WITH-Comparison.md)  
 
 ## Functions
 
@@ -50,6 +50,6 @@ Extract Record Filters:
 [YEARSBETWEEN()](./LogicText/Function-YEARSBETWEEN.md)  
 
 
-
+## Logical Operators
 
 ## Lookup Paths

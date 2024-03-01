@@ -15,6 +15,11 @@ The function of Extract-Phase Column Logic is to populate output columns with fi
 
 ## Comparision Operators
 
+[BEGINS_WITH](./LogicText/BEGINS-WITH-Comparison.md)  
+[CONTAINS](./LogicText/CONTAINS-Comparison.md)  
+[ENDS_WITH](./LogicText/ENDS-WITH-Comparison.md)  
+
+
 ## Logical Operators
 
 ## String Operators

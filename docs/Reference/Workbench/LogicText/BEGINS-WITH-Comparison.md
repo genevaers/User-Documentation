@@ -12,7 +12,7 @@ TABLE OF CONTENTS
 
 # Syntax 
 
-{% include_relative SyntaxDiagrams/CMSyntax-Diag-BEGINS-WITH.md %}
+{% include_relative SyntaxDiagrams/CMSyntax-Diag-Comparison-BEGINS-WITH.md %}
 
 # Rules for the syntax
 
