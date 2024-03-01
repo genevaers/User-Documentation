@@ -40,7 +40,7 @@ This logic text is part of a view and is associated with a view source file. To 
 3. Ensure you are on the **View Editor** tab. If the **View Properties** tab is displayed, click the **Show Grid / Properties** button. <img src="../images/Icon_Show_Grid_Props_01.gif" alt="Missing image" width="35" height="35"/> or press F9 or select **Edit -\> Show Grid/Properties**.
 4. In the column immediately below "View Editor", if there is a plus + sign to the left of **View Source**, double click the plus sign to expand the list of view sources.
 5. Click in the cell with a relevant view source name under **View Sources**.  This opens the **View Source Properties** tab in the Metadata List Area.
-6. From the **Extract-Phase Output** > **Record Filter** double-click in the empty cell.  This opens the **Extract-Phase Record Filter** area in the Editor Area, and the Logic Text Helper on the right side. The Logic Text Helper displays keywords and values that can be used in logic text.
+6. From the **Extract-Phase Source** > **Record Filter** double-click in the empty cell.  This opens the **Extract-Phase Record Filter** area in the Editor Area, and the Logic Text Helper on the right side. The Logic Text Helper displays keywords and values that can be used in logic text.
 7. Type your logic text in the **Extract-Phase Record Filter** window. You can use the **Logic Text Helper** to build your logic text, by double-clicking on keywords, operators, or field names.
 8. When the new logic text is complete,
     -   **EITHER** click <img src="../images/Icon_Save_03.GIF" alt="Missing image" width="35" height="35"/> ,
@@ -48,7 +48,6 @@ This logic text is part of a view and is associated with a view source file. To 
     -   **OR** press **Ctrl+S**.
   
 You may wish to close the open windows. Closing the **Extract-Phase Record Filter** window will also close the **Logic Text Helper**.
-
 
 
 ## Format-Phase Record Filter
