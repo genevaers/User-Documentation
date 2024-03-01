@@ -28,6 +28,7 @@ Extract Record Filters:
 ## Functions
 
 [ALL()](./LogicText/Function-All.md)  
+[CURRENT()](./LogicText/Function-CURRENT.md)  
 [DATE()](./LogicText/Function-DATE.md)  
 [DAYSBETWEEN()](./LogicText/Function-DAYSBETWEEN.md)  
 [FISCALDAY()](./LogicText/Function-FISCALDAY.md)  

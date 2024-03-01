@@ -27,6 +27,7 @@ The function of Extract-Phase Column Logic is to populate output columns with fi
 ## Functions
 
 [ALL()](./LogicText/Function-All.md)  
+[CURRENT()](./LogicText/Function-CURRENT.md)  
 [DATE()](./LogicText/Function-DATE.md)  
 [DAYSBETWEEN()](./LogicText/Function-DAYSBETWEEN.md)  
 [FISCALDAY()](./LogicText/Function-FISCALDAY.md)  
