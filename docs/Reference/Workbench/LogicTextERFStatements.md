@@ -19,6 +19,8 @@ Extract Record Filters:
 
 ## Cast operators
 
+[Cast Operators ](./LogicText/Cast-operators.md)
+
 ## Comparision Operators
 
 [BEGINS_WITH](./LogicText/BEGINS-WITH-Comparison.md)  

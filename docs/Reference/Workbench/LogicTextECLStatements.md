@@ -13,6 +13,8 @@ The function of Extract-Phase Column Logic is to populate output columns with fi
 
 ## Cast operators
 
+[Cast Operators ](./LogicText/Cast-operators.md)
+
 ## Comparision Operators
 
 [BEGINS_WITH](./LogicText/BEGINS-WITH-Comparison.md)  
@@ -48,6 +50,8 @@ The function of Extract-Phase Column Logic is to populate output columns with fi
 [RUNMONTH()](./LogicText/Function-RUNMONTH.md)  
 [RUNYEAR()](./LogicText/Function-RUNYEAR.md)  
 [YEARSBETWEEN()](./LogicText/Function-YEARSBETWEEN.md)  
+
+<!-- LEFT , RIGHT , SUBSTR , TIMESTAMP tbd ->
 
 
 ## WRITE statements

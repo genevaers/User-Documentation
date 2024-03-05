@@ -17,7 +17,7 @@ TABLE OF CONTENTS
 
 # Rules for the syntax
 
-PRIOR can only be used in **Extract Record Filter (ERF)** and **Extract Column Logic (ECL)** text.
+CURRENT can only be used in **Extract Record Filter (ERF)** and **Extract Column Logic (ECL)** text.
 
 See also topic: [Rules for all Logic Text](../../Workbench/RulesforallLogicText.md) 
 

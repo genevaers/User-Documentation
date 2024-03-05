@@ -3,6 +3,8 @@
 [Workbench keyboard shortcuts](./Workbench/KeyboardShortcuts.md)   
 A keyboard shortcuts summary can be displayed in the Workbench by clicking **Help** > **Key Assist**
 
+[How to read syntax diagrams](./How_to_read_the_syntax_diagrams.md)  
+
 [Workbench Logic Text - Extract-Phase Column Logic (ECL)](./Workbench/LogicTextECLStatements.md)  
 [Workbench Logic Text - Extract-Phase Record Filter (ERF)](./Workbench/LogicTextERFStatements.md)  
 [Workbench Logic Text - Extract-Phase Record Logic (ERL)](./Workbench/LogicTextERLStatements.md)  
@@ -18,4 +20,4 @@ A keyboard shortcuts summary can be displayed in the Workbench by clicking **Hel
 [GVBMR88 DD statements](./GVBMR88_DD_Statements.md)  
 [GVBMR88 parameters](./GVBMR88_Parameter_File_Syntax.md)  
   
-[How to read syntax diagrams](./How_to_read_the_syntax_diagrams.md)
+
