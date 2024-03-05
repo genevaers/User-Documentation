@@ -51,7 +51,6 @@ The function of Extract-Phase Column Logic is to populate output columns with fi
 [RUNYEAR()](./LogicText/Function-RUNYEAR.md)  
 [YEARSBETWEEN()](./LogicText/Function-YEARSBETWEEN.md)  
 
-<!-- LEFT , RIGHT , SUBSTR , TIMESTAMP tbd ->
 
 
 ## WRITE statements
