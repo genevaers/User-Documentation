@@ -13,18 +13,6 @@ There are two main components to install. The PC based Workbench and the mainfra
   
 - For tuning and parameter reference information go to the [Reference](../Reference/index.md)
 
-## Basic Concepts
-
-The following information provides you with a broad overview of GenevaERS and the basics of its graphical user interface. 
-
-[Workbench Introduction](Concepts/Intro0_Introduction_to_Using_GenevaERS.md)
-
-The following page provides you with an introduction to the GenevaERS Performance Engine and how to use it.  You will be able to:
-- Identify the phases of the Performance Engine 
-- Identify the main inputs and outputs for each phase
-
-[Performance Engine Introduction](Concepts/Intro1_Introduction_to_the_Performance_Engine.md)
-
 ## Basic Skills
 
 The examples here are based on the Demo data. If you haven't installed the Demo, then it is highly recommended you do. Go [here](https://genevaers.github.io/Demo/)
