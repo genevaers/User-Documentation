@@ -1,1 +1,1 @@
-![Function CONTAINS 01](../../../../images/LTSStr_CONTAINS_01.gif)
+![Function CONTAINS 01](../../../images/LTSStr_CONTAINS_01.gif)
