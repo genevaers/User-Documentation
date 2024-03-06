@@ -68,7 +68,7 @@ The table of shortcuts for this screen is below:
 | | |
 |Ctrl + Shift + V|**Paste Below**. Pastes a field below the currently highlighted row. You must have copied a column first \(using Ctrl+C\).|
 | | |
-|Delete|**Delete** the currently highlighted field. This performs the same function as clicking ![](../../images/LR_Delete_field_03.GIF)|
+|Delete|**Delete** the currently highlighted field. This performs the same function as clicking ![delete button](../../images/LR_Delete_field_03.GIF)|
 | | |
 |End|Go to the rightmost cell in the current row.|
 | | |
@@ -78,7 +78,7 @@ The table of shortcuts for this screen is below:
 | | |
 |Home|Go to the leftmost cell in the current row.|
 | | |
-|Insert|Insert a new row above the current row. This performs the same function as clicking ![](../../images/LR_Insert_field_04.GIF) \(insert field\).|
+|Insert|Insert a new row above the current row. This performs the same function as clicking ![insert button](../../images/LR_Insert_field_04.GIF) \(insert field\).|
 | | |
 |Page-down|Go to the bottom cell in this column.|
 | | |
@@ -215,7 +215,7 @@ This applies to screens such as:
 | | |
 |Ctrl + Z|**Delete the last character typed.** Can be used for up to 25 characters.|
 | | |
-|F7|**Check Logic Text.** The same action as clicking the icon ![](../../images/Icon_ValidLT_02.gif).|
+|F7|**Check Logic Text.** The same action as clicking the icon ![check mark](../../images/Icon_ValidLT_02.gif).|
 
 ## Edit User screen 
 
@@ -223,4 +223,4 @@ Remember to also see heading [Shortcuts - All workbench screens](#all-screens)
 
 |Shortcut|Notes|
 |--------|-----|
-|Alt+F6|**Refresh defaults.** Restores the defaults that apply to a new user and removes any configured defaults. The same action as clicking the icon ![](../../images/Icon_Refresh_03.GIF).|
+|Alt+F6|**Refresh defaults.** Restores the defaults that apply to a new user and removes any configured defaults. The same action as clicking the icon ![refresh button](../../images/Icon_Refresh_03.GIF).|

@@ -21,7 +21,7 @@ TABLE OF CONTENTS
   
 |Rule 2|Notes|
 |-----|-----|
-|**Logic text can continue<br> on the next line.**<br> A backslash \(\\) is<br> optional at line end.|In previous versions of SAFR, a backslash \(\\) was required in order to continue a line<br>of logic text on the next line. This backslash is no longer required.<br>The backslash is still allowed for backwards compatibility.<br>This means the following statements are the same:<br><br> IF ({FIELD1} >= 2)\ <br>&nbsp;&nbsp;&nbsp;&nbsp;THEN COLUMN = {FIELD1} ENDIF<br><br>IF ({FIELD1} >= 2) <br>&nbsp;&nbsp;&nbsp;&nbsp;THEN COLUMN = {FIELD1} ENDIF<br>|
+|**Logic text can continue<br> on the next line.**<br> A backslash \(\\) is<br> optional at line end.|In previous versions of GenevaERS, a backslash \(\\) was required in order to continue a line<br>of logic text on the next line. This backslash is no longer required.<br>The backslash is still allowed for backwards compatibility.<br>This means the following statements are the same:<br><br> IF ({FIELD1} >= 2)\ <br>&nbsp;&nbsp;&nbsp;&nbsp;THEN COLUMN = {FIELD1} ENDIF<br><br>IF ({FIELD1} >= 2) <br>&nbsp;&nbsp;&nbsp;&nbsp;THEN COLUMN = {FIELD1} ENDIF<br>|
   
 # Rule 3 - Case of keywords has no effect
   
@@ -39,7 +39,7 @@ TABLE OF CONTENTS
   
 |Rule 5|Notes|
 |-----|-----|
-|Use **curly brackets \{ \}** to enclose<br> **input fields** or names of metadata<br> from the SAFR Workbench<br> \(such as a lookup path,<br> logical file, physical file\).|Examples are:<br>&nbsp;&nbsp;&nbsp;&nbsp;{shipping_date}<br>&nbsp;&nbsp;&nbsp;&nbsp;{product_category}<br>&nbsp;&nbsp;&nbsp;&nbsp;{CA_Sales_2009_Logical_File}<br>&nbsp;&nbsp;&nbsp;&nbsp;{Products_Logical_File}<br>&nbsp;&nbsp;&nbsp;&nbsp;{Products_USA_File}<br>&nbsp;&nbsp;&nbsp;&nbsp;{Lookup_Sales_to_Product_Category}<br>|
+|Use **curly brackets \{ \}** to enclose<br> **input fields** or names of metadata<br> from the GenevaERS Workbench<br> \(such as a lookup path,<br> logical file, physical file\).|Examples are:<br>&nbsp;&nbsp;&nbsp;&nbsp;{shipping_date}<br>&nbsp;&nbsp;&nbsp;&nbsp;{product_category}<br>&nbsp;&nbsp;&nbsp;&nbsp;{CA_Sales_2009_Logical_File}<br>&nbsp;&nbsp;&nbsp;&nbsp;{Products_Logical_File}<br>&nbsp;&nbsp;&nbsp;&nbsp;{Products_USA_File}<br>&nbsp;&nbsp;&nbsp;&nbsp;{Lookup_Sales_to_Product_Category}<br>|
   
   
 # Keyboard shortcuts for logic text screens 

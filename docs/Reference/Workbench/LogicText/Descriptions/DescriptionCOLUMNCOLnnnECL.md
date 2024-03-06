@@ -1,5 +1,5 @@
 
-## How do I use COLUMN & COL.nnn statements in ECL? 
+# How do I use COLUMN & COL.nnn statements in ECL? 
 
 **COLUMN** is always a statement where you set the value of the current column. A COLUMN statement is allowed in **Extract Column Logic**.
 

@@ -6,7 +6,7 @@ In this example you will add an Extract-Phase record filter to the view created 
 
 1. Open the **CustomerOrders** view by double-clicking the view listed in the Metadata List Area
 2. Left click on the View Sources blue cell. This opens the **View Source Properties** tab in the Metadata List Area.
-3. From the **Extract-Phase Output** > **Record Filter** double-click in the empty field  
+3. From the **Extract-Phase Source** > **Record Filter** double-click in the empty field  
 This opens the **Extract-Phase Record Filter** area in the Editor Area, and the Logic Text Helper on the right side. The Logic Text Helper displays keywords and values that can be used in logic text.
 
 4. You may wish to only report on products with a certain Product_ID range. Type the following in the Editor area  
@@ -34,7 +34,7 @@ To activate the view, use any of these methods:
 
 The view title bar now displays the word "Active". Save the view again to preserve this active state. The view is now ready to be run.
 
-For more information on filters see [Introduction to record Filtering](Intro5_Introduction_to_Record_Filtering.md)
+For more information on filters see [Record Filters](../../AdvancedFeatures/RecordFilters.md) in Advanced Features.
 
 
 [Running the View](../RunView/RunView.md)
