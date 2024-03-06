@@ -1,1 +1,1 @@
-![Function PRIOR](../../../../images/LTS_CURRENT_PRIOR_01.gif)
+![Function PRIOR](../../../images/LTS_CURRENT_PRIOR_01.gif)
