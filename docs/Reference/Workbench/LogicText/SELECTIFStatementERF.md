@@ -16,6 +16,12 @@ TABLE OF CONTENTS
 
 {% include_relative SyntaxDiagrams/CMSyntax-Diag-SELECTIF-ERF-Level-3.md %}
 
+Test 4
+
+![Function SELECT ERF test 4](../../../images/LTSSS_IF_Select_01_ERF.gif) 
+
+End tests
+
 # Rules for the syntax
 
 Extract Record Filter can have one SELECTIF statement or one IF statement that contains one or more SELECT statements. When one SELECTIF or SELECT is present, then no SKIP or SKIPIF statements are allowed.  
