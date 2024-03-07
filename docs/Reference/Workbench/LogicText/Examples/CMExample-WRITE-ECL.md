@@ -1,0 +1,7 @@
+# Examples: IF with WRITE in Extract Column Assignment
+
+|Example logic text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Meaning|
+|------------------|-------|
+|**IF (ISNUMERIC({field4}) AND <br>&nbsp;&nbsp;&nbsp;&nbsp; ({field5} > {field6} * 10) AND <br>&nbsp;&nbsp;&nbsp;&nbsp; ISNOTSPACES({field7})) THEN<br>&nbsp;&nbsp;&nbsp;&nbsp;WRITE (SOURCE=DATA, <br>&nbsp;&nbsp;&nbsp;&nbsp;USEREXIT={DB2_Update}) <br>ENDIF**|If field4 is numeric and field5 is greater than field6 times 10 and field7 is not spaces, then call the user-exit routine DB2\_Update for the columns up to the current point. This effectively does a writes to a DB2 table the columns in that record up to the current point.|
+|**IF (ISNOTNULL({field3}) AND <br>&nbsp;&nbsp;&nbsp;&nbsp; ({field2} = {field1} + {field5}) THEN <br>&nbsp;&nbsp;&nbsp;&nbsp;WRITE  SOURCE=INPUT, &nbsp;DEST=FILE= {LogicalFile3}) <br>ENDIF**|If field3 is not nulls and field2 equals field1 plus field 5 then write the entire input record to LogicalFile3. All columns in the input record are included, no matter what column contains this logic text.|
+|**IF (DAYSBETWEEN({field12},{field15}) > 10) AND <br>&nbsp;&nbsp;&nbsp;&nbsp;(ISFOUND({Lookup3;$SYM="A"})) THEN <br>&nbsp;&nbsp;&nbsp;&nbsp; WRITE (SOURCE=VIEW, DEST=EXTRACT) <br>ENDIF**|If field12 and field15 are more than 10 days apart, and a record is found for the lookup path Lookup3 with symbol SYM set to "A", then write the columns up to the current point to the extract work file. The extract work file number is defined on the Extract Phase tab of the view.
