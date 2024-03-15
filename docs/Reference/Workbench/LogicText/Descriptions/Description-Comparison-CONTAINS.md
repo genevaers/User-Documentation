@@ -7,6 +7,6 @@ For example, a field with "LONDON" contains the string "ON" and "DO" and even "L
 
 CONTAINS is an example of string comparisons that return a true or false value that can be part of an IF statement.
 
-CONTAINS can only be used in **Extract Record Filter** or **Extract Column Assignment** logic text.
+CONTAINS can only be used in **Extract Record Filter** or **Extract Column Logic** text.
 
 The syntax details of CONTAINS are shown below.
