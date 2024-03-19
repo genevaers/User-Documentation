@@ -54,3 +54,5 @@ The function of Extract-Phase Column Logic is to populate output columns with fi
 [WRITE()](./LogicText/WRITEstatementsECL.md)  
 
 ## Lookup Paths
+
+[Lookup Paths](./LogicText/LookupPaths.md)
