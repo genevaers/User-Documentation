@@ -6,7 +6,6 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-<!-- # SELECTIF statement (ERF) -->
 
 {% include_relative Descriptions/Description-SELECTIF-ERF.md %}
 
@@ -15,12 +14,6 @@ TABLE OF CONTENTS
 # Syntax 
 
 {% include_relative SyntaxDiagrams/CMSyntax-Diag-SELECTIF-ERF-Level-3.md %}
-
-Test 4
-
-![Function SELECT ERF test 4](../../../images/LTSSS_IF_Select_01_ERF.gif) 
-
-End tests
 
 # Rules for the syntax
 

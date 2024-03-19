@@ -7,4 +7,4 @@ Even though IF statements are allowed in all logic text, the statements that can
 
 An IF statement can call another IF statement - this is called "nesting" of IF statements, and is allowed in all logic text.
 
-The syntax details of an IF statement in **Extract Record Filtger** are shown below.
+The syntax details of an IF statement in **Extract Record Filter** are shown below.

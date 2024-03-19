@@ -7,6 +7,6 @@ For example, a field with "LONDON" ends with the string "N" and "ON" and even "L
 
 ENDS_WITH is an example of string comparisons that return a true or false value that can be part of an IF statement.
 
-ENDS_WITH can only be used at extract-phase time in **Extract Record Filter** or **Extract Column Assignment** logic text.
+ENDS_WITH can only be used at extract-phase time in **Extract Record Filter** or **Extract Column Logic** text.
 
 The syntax details of ENDS_WITH are shown below.

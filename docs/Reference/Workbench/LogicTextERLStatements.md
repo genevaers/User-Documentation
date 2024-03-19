@@ -1,28 +1,22 @@
-# Extract-Phase Record Filter (ERF)
+# Extract-Phase Record Logic (ERL)
 
 ## Introduction
 
-The function of Extract-Phase Record Filter is to include or exclude records, based upon specific criteria. The Extract-Phase filtering performs filtering on the input records.
-
-Extract Record Filters:
-
--  Select source records to process.
--  Are performed first, before any other criteria.
--  If omitted, all records will be selected as input.
+Extract-Phase Record Logic is used to override the default, or implicit WRITE for a view.
 
 ## Language Constructs
 
-[SELECT and SELECTIF](./LogicText/SELECTIFStatementERF.md)  
-[SKIP and SKIPIF](./LogicText/SKIPIFStatementERF.md)  
-[IF Statements](./LogicText/IFstatementsERF.md)
+[COL.nn statments](./LogicText/ColumnStatementERL.md)  
+[IF statements](./LogicText/IFstatementsERL.md)
 
 ## Arithmetic Operators
 
-## Cast operators
+## Cast Operators
 
 [Cast Operators ](./LogicText/Cast-operators.md)
 
 ## Comparision Operators
+
 
 [BEGINS_WITH](./LogicText/BEGINS-WITH-Comparison.md)  
 [CONTAINS](./LogicText/CONTAINS-Comparison.md)  
@@ -53,7 +47,7 @@ Extract Record Filters:
 [RUNYEAR()](./LogicText/Function-RUNYEAR.md)  
 [YEARSBETWEEN()](./LogicText/Function-YEARSBETWEEN.md)  
 
+[WRITE()](./LogicText/WRITEstatementsERL.md)  
 
 ## Logical Operators
 
-## Lookup Paths
