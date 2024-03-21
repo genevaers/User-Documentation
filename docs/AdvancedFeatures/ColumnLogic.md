@@ -1,5 +1,15 @@
-  
-## Extract-phase Column Logic
+{: .no_toc}
+# Column Assignment
+
+{: .no_toc}
+TABLE OF CONTENTS 
+1. TOC
+{:toc}  
+
+
+## Extract Phase Column Logic
+
+The Extract phase has visibility into all fields on the input LR, and all fields of Lookup Paths that have the input LR as the source LR of the first step of the lookup path.
 
 ### Column Assignment - Constants
 
@@ -79,6 +89,8 @@ In addition to using field names in logic text, you can use functions. This colu
 
 ![Logic Test Function Screenshot](../images/LogicTextFunction.png)
 
+See [Extract-Phase Column Logic Reference](../Reference/Workbench/LogicTextECLStatements.md#functions) for detailed descriptions of the functions.
+
 ### Value Reassignment
 
 Column logic can be used to assign values to a prior column, which is called reassignment. Column logic is applied to columns starting from the left and moving to the right. Thus columns are populated left to right within GenevaERS, and previously assigned values can be overwritten by later columns.
@@ -97,3 +109,28 @@ Column logic allows calculations to be performed against numeric fields. Any cal
 
     COLUMN = {ORDER_TOTAL_AMOUNT} * 0.1
 
+See [Extract-Phase Column Logic Reference](../Reference/Workbench/LogicTextECLStatements.md) for detailed descriptions of the logic.
+
+## Format-Phase Column Logic
+
+The format phase is optional, but if the view has a format phase, column logic can be performed in this phase using column values assigned in the Extract process.  Format phase logic refers to columns rather than field names. The only columns available for format phase column logic are those with a numeric data type (i.e. not alphanumeric).
+
+### Creating Format-Phase Column Logic text
+
+This logic text is part of a view and is associated with a column during the format phase.
+
+1. Open the view by double-clicking the view listed in the Metadata List Area.  
+Note that the view must have a format phase for **Format-Phase column logic** to be enabled.
+2. Ensure you are on the **View Editor** tab. If the **View Properties** tab is displayed, click the **Show Grid / Properties** button. <img src="../images/Icon_Show_Grid_Props_01.gif" alt="Missing image" width="35" height="35"/> or press F9 or select **Edit -\> Show Grid/Properties**.
+3. Choose a numeric column that is not part of the sort key. 
+4. Format phase column logic is accessed by double-clicking in the **Format-Phase Column Logic** cell, or clicking in the cell to display the icon , then clicking the icon ![Three dot icon](../images/Icon_Three_Dots_01.gif).  
+This opens the **Format-Phase Column Logic** tab (**FCL** tab) in the Editor Area.  
+  
+Opening the **FCL** tab also opens the **Logic Text Helper**, which enables you to place keywords and column numbers into logic for column assignment.  
+
+The following is some example format phase column logic within column 4. 
+
+    COLUMN = COL.1 - COL.2 - COL.3
+  
+
+  See [Format-Phase Column Logic Reference](../Reference/Workbench/LogicTextFCLStatements.md) for detailed descriptions of the logic.
