@@ -87,7 +87,7 @@ For example, the following logic will set the column to field PRICE, a 6-byte pa
 
 In addition to using field names in logic text, you can use functions. This column uses the ISSPACES function, which tests a field value equal to spaces. If true, the output column contains the text “Error”; if not true, it contains the order ID.
 
-![Logic Test Function Screenshot](../images/LogicTextFunction.png)
+![Logic Text Helper with Functions expanded.](../images/LogicTextFunction.png)
 
 See [Extract-Phase Column Logic Reference](../Reference/Workbench/LogicTextECLStatements.md#functions) for detailed descriptions of the functions.
 
@@ -132,5 +132,6 @@ The following is some example format phase column logic within column 4.
 
     COLUMN = COL.1 - COL.2 - COL.3
   
+![Adding Format-Phase Column Logic.](../images/FormatColLogic1.png)
 
-  See [Format-Phase Column Logic Reference](../Reference/Workbench/LogicTextFCLStatements.md) for detailed descriptions of the logic.
+See [Format-Phase Column Logic Reference](../Reference/Workbench/LogicTextFCLStatements.md) for detailed descriptions of the logic.

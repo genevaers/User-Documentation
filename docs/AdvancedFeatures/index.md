@@ -7,6 +7,6 @@
 
 [Specify Lookup Path metadata](./MetaData/SpecifyLookupPath.md)
 
-[Column Logic](./ColumnLogic.md)
+[Column Assignment](./ColumnLogic.md)
 
 [Record Filters](./RecordFilters.md)

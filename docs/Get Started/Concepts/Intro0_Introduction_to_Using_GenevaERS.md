@@ -23,7 +23,7 @@ Some major components of the metadata include:
 
 Some examples of these metadata types are shown here. 
 
-![Meta data](../../images/Module1-Introduction-to-Views/Module1_Slide7.jpeg) 
+![Diagram of associated metadata types.](../../images/Module1-Introduction-to-Views/Module1_Slide7.jpeg) 
 
 
 - A logical record for a customer is used to map data to a customer logical file. The customer logical file refers to data in a customer physical file.  
@@ -39,7 +39,7 @@ Views are often grouped together into view folders for ease of maintenance. View
 ## Workbench
 
 The GenevaERS Workbench is used to add, change, and delete GenevaERS metadata. 
-![WB outline](../../images/Module1-Introduction-to-Views/Module1_Slide9.jpeg) 
+![Diagram of Workbench layout.](../../images/Module1-Introduction-to-Views/Module1_Slide9.jpeg) 
 
 
 It contains a menu and toolbar, and consists of multiple display areas, or frames.  

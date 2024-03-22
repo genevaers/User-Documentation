@@ -17,7 +17,7 @@ GenevaERS rapidly produces many outputs while efficiently reading large volumes 
 
 GenevaERS is extensible, and adding more reports or outputs does not affect the performance. 
 
-![Gen comp](../images/Module1-Introduction-to-Views/Module1_Slide4.jpeg)
+![Diagram of GenevaERS components.](../images/Module1-Introduction-to-Views/Module1_Slide4.jpeg)
 
 ## Basic Concepts
 
