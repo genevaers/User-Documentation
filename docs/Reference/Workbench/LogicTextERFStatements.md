@@ -57,3 +57,5 @@ Extract Record Filters:
 ## Logical Operators
 
 ## Lookup Paths
+
+[Lookup Paths](./LogicText/LookupPaths.md)
