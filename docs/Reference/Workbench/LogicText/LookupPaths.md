@@ -1,12 +1,12 @@
 {: .no_toc}
-# Lookup Paths
+# Lookup Paths in logic text
 
 {: .no_toc}
 TABLE OF CONTENTS 
 1. TOC
 {:toc}  
 
-# How to use lookup paths
+# How to use lookup paths in logic text
 
 A lookup path is a method to use one logical file to lookup a record in another logical file. For an introduction, see topic **Lookup paths overview**.
 
