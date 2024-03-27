@@ -1,4 +1,4 @@
-## Lookup Paths
+## Specifying Lookup Paths
 
 A lookup path is a GenevaERS metadata component defining how to retrieve information from a target logical record (LR) using data from a source LR.
 
