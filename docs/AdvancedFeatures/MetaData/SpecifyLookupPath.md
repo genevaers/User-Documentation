@@ -43,7 +43,7 @@ If an active lookup path changes, all views referencing that lookup path are dea
 
 ### Multi-step Lookup Paths
 
-Lookups can involve multiple files to access the data you require. The example shown here has two steps, with a lookup to the Customer file, followed by a lookup to the Gender Description file.
+Lookups can involve multiple files to access the data you require. The example shown here has two steps, with a lookup to the Customer file, followed by a lookup to the Gender Description file. The primary key of each file is indicated by PK, and the foreign key used to link to the target file, is indicated by FK.
 
 ![Multi-step Lookup diagram.](../../images/MultiStepLUDiagram.png)
 
@@ -67,3 +67,5 @@ The source LRs avaiable are all LRs used in previous steps.
 ![Adding a second Lookup Path Step.](../../images/MultiStepLuPathDefn.png)
 
 Care should be taken when building paths with respect to required data format conversions. GenevaERS joins use binary compares, meaning it matches byte for byte the key to a potential target record. Joins on numeric keys can fail if the source field formats do not match the target formats. GenevaERS will perform the necessary data conversations in the logic table when building keys to convert field formats if they are specified properly in the Look-up Path definition.
+
+For a more detailed description of lookup paths go to [Overview of Lookup Paths](../OverviewLookupPaths.md).
