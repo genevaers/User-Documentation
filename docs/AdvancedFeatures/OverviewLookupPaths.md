@@ -106,7 +106,7 @@ To set a symbol to a non-default value in logic text, the syntax requires **$** 
 
 Lookup path LP\_SalesProduct uses a **symbol called Prefix** which has a default value of "PRD". In Extract Column Assignment logic text, the call to LKProduct is different depending on the value of the 5 digits. This is shown below:
 
-![Diagram of a lookup path with symbol, and logic text.](../images/LP_Symbol_02b.gif)  
+![Diagram of a lookup path with symbol, and logic text.](../images/LP_Symbol_02B.gif)  
 
 Extract Column Logic text for a column in a view:
 
