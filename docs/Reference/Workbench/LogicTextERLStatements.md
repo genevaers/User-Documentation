@@ -51,3 +51,6 @@ Extract-Phase Record Logic is used to override the default, or implicit WRITE fo
 
 ## Logical Operators
 
+## Lookup Paths
+
+[Lookup Paths](./LogicText/LookupPaths.md)

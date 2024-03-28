@@ -30,7 +30,7 @@ You can build up the logic by placing the curser in the **ECL** editor area, the
 3. **Keywords** > **Language Constructs** > COLUMN =
 4. **Fields** > {DISCOUNT_PERCENT}
 
-![Add column logic screen shot](../../images/AddColumnLogic.png)
+![A screenshoot of adding Extract-phase column logic.](../../images/AddColumnLogic.png)
 
 Save the Column Logic **File** > **Save**,  
    or click the Save icon in the Workbench toolbar,  
@@ -51,7 +51,7 @@ Change the Data Type to Masked Numeric with Length 8:
 Optionally, you can add a **Column Header** to Column 5. Headers are used in the report output format, but in this case it is useful to add a header when the column output is defined by some logic. A header is not automatically displayed in the Workbench for a column with column logic.  
 Click on the **Header 1** cell for **Column 5**, and type **DISCOUNT** 
 
-![Change column attributes screen shot](../../images/AddColumnLogic2.png)
+![Changing column attributes.](../../images/AddColumnLogic2.png)
 
 <!-- Note that it is possible that transforming a packed 6 into a Masked Numeric of length 8 may result in overflow of large numbers. You must be aware of your data in cases like this. -->
 
