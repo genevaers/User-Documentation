@@ -9,7 +9,13 @@
 
 [Record Filters](./RecordFilters.md)
 
-### Workbench Metadata
+### Workbench
+
+[Workbench Environments Overview](./EnvironmentOverview.md)
+
+[Workbench Security Overview](./SecurityOverview.md)
+
+[Specify Users, Groups and Permissions](./MetaData/SpecifyUsersGroupsPerm.md)
 
 [Specify LR, LF, PF metatdata](./MetaData/SpecifyLRLFPFs.md)
 
