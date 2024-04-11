@@ -14,16 +14,13 @@ This opens the **Extract-Phase Record Filter** area in the Editor Area, and the 
 
 ![Extract-phase Record Filter editor.](../../images/ExtractFilter1.png)
 
-5. Save the filter by pressing **Ctrl + s**
+5. Save the filter **File** > **Save**
 6. Close the **Extract-Phase Record Filter** tab
+7. Save the view **File** > **Save**
    
 If you left click on the View Sources blue cell again to open the **View Source Properties** tab, you will see the record filter has been added.
 
 ![View Source Properties tab showing record filter.](../../images/ExtractFilter2.png)
-
-Save the view **File** > **Save**,  
-   or click the Save icon in the Workbench toolbar,  
-   or press **Ctrl + s**
 
 ### Activate the View 
 

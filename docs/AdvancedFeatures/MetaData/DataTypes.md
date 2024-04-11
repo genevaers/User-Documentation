@@ -1,4 +1,10 @@
-## Data Types 
+{: .no_toc}
+# Data Types
+
+{: .no_toc}
+TABLE OF CONTENTS 
+1. TOC
+{:toc}  
 
 The Performance Engine transforms data into numerous different types, many of which are not available as standard formats in COBOL or other languages. The data type chosen affects other column and logical record attributes, such as length, sign, decimal place, and mask, and thus is very important in building file output views. The following information will help you understand how values are stored.
 

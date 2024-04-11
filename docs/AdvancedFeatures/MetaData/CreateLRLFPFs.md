@@ -1,22 +1,12 @@
-## Specify Input and Output 
+{: .no_toc}
 
-The GenevaERS Performance Engine reads source data using definitions in the GenevaERS Metadata Repository. Logical records, logical files and physical file definitions describe the inputs to the Performance Engine. View columns describe the output, and optionally logical file and physical file definitions can describe the output destination.
+# Create LRs, LFs and PFs
 
-This page provides an overview of the GenevaERS metadata creation process for logical records and files, physical files, and methods for creating and then associating logical records, logical files, and physical files. It will help you:
+TABLE OF CONTENTS 
+1. TOC
+{:toc}  
 
-- Create physical file definitions
-- Create logical file definitions
-- Associate physical files with logical files
-- Create logical record definitions, and
-- Associate logical files with logical records
-
-![Metatdata Overview diagram.](../../images/Module9-Metadata_Creation/Module9_Slide3.jpeg)
-
-A physical file definition describes a data source. Examples include customer files and order files.  
-A logical file definition describes a collection of one or more physical files.  
-A logical record definition, or LR, describes a record layout. In COBOL programs, record layouts are often found in copybooks. In relational databases, they are found in table definitions.
-
-## Physical files
+## Physical file
 
 To create a physical file definition
 
@@ -44,9 +34,7 @@ The **Data Set Name** is optional. If the fully qualified data set name is provi
 
 The **Output** **DD Name** field enables you to specify the DD name that will receive output from a View. 
 
-Save the physical file definition **File** > **Save**,  
-   or click the Save icon in the Workbench toolbar,  
-   or press **Ctrl + s**
+6. Save the physical file definition **File** > **Save**,  
 
 When the physical file is saved, it is assigned a unique GenevaERS ID. The time stamps show when the file was created, and when it was last updated. 
 Physical files are contained within one or more logical files. A list of the associated logical files is presented on this screen for reference. The association of a physical file with a logical file can be done on the Logical File screen, which is show below.
@@ -64,12 +52,10 @@ You can use the Comments field to describe this logical file and its purpose.
 ### Physical File Association
 
 Logical files are associated with one or more physical files. To make the association
-1. Click **Add** and select one or more physical files to be associated. After you click OK, the physical file is displayed in the Associated Physical Files area.  
+3. Click **Add** and select one or more physical files to be associated. After you click OK, the physical file is displayed in the Associated Physical Files area.  
 ![Associating physical files with a logical file.](../../images/AssociatePFs.png)
 
-Save the logical file definition **File** > **Save**,  
-   or click the Save icon in the Workbench toolbar,  
-   or press **Ctrl + s**
+4. Save the logical file definition **File** > **Save**  
 
 After you save the logical file for the first time, an ID is assigned and the time stamps are updated. If you return to the physical file definition, you can see that the association is also shown there under **Associated Logical Files** 
 
@@ -118,14 +104,12 @@ The **Date/Time Format** field designates how the date is stored in fields, if a
 A check mark in the **Signed** check box indicates that the field contains valid sign data.  
 If this field is used as a column in a view, the **Heading 1**, **Heading 2** and **Heading 3** fields can be used as to set the headings for the column in that view.
 
-## Logical File Association
+### Logical File Association
 
 Select the **Associated Logical Files** tab. On this tab, you define which logical files contain records in the layout of the LR. 
   
 1. Click **Add** and select one or more logical files to be associated. After you click OK, the logical file is displayed in the Associated Logical Files tab.  
 
-Save the logical record definition **File** > **Save**,  
-   or click the Save icon in the Workbench toolbar,  
-   or press **Ctrl + s**
+2. Save the logical record definition **File** > **Save**.
 
 After you save the logical record for the first time, an ID is assigned and the time stamps are updated. If you return to the logical file definition, you can see that the association is also shown there under **Associated Logical Records** 

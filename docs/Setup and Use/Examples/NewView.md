@@ -14,9 +14,7 @@ The first screen presented is the View Properties screen
 1. In the **Name** field type **CustomerOrders**
 2. In the **Control Record** field select **Default_Install**
 3. Click **Extract-Phase Output** with **Fixed-Width Fields** 
-4. Save the view **File** > **Save**,  
-   or click the Save icon in the Workbench toolbar,  
-   or press **Ctrl + s**
+4. Save the view **File** > **Save**  
 
 ![View Properties General tab.](../../images/NewViewExtract.png)
 
@@ -38,7 +36,7 @@ Next you are going to specify the input to the view, the view source, by selecti
 
 ![Add view Source pop-up window.](../../images/NewViewSource.png)
 
-For more information on how to define your own logical record, logical file and physical file definitions look at [Specifying LR, LF, and PF metatdata](../../AdvancedFeatures/MetaData/SpecifyLRLFPFs.md) in Advanced Features.
+For more information on how to define your own logical record, logical file and physical file definitions look at [Create LR, LF, and PF metatdata](../../AdvancedFeatures/MetaData/CreateLRLFPFs.md) in Advanced Features.
 
 ### Adding Columns
 
@@ -74,19 +72,16 @@ The default output destination for Extract-Phase only Views is the DD **F*****nn
 
 You can specify your own output destination. To do this:
 
-- Left click on the View Sources blue cell you added earlier. This opens the **View Source Properties** tab in the Metadata List Area.
-- From the **Extract-Phase Output** > **Logical File** list select **OUTPUT01**
-- From the **Extract-Phase Output** > **Physical File** list select **OUTPUT01**
+1. Left click on the View Sources blue cell you added earlier. This opens the **View Source Properties** tab in the Metadata List Area.
+2. From the **Extract-Phase Output** > **Logical File** list select **OUTPUT01**
+3. From the **Extract-Phase Output** > **Physical File** list select **OUTPUT01**
+4. Save the view **File** > **Save**
 
 You will see that the WRITE statement in the **Read Logic** field has changed.
 
 ![View source properties tab, showing an extract-phase output file defined.](../../images/NewViewSourceProperties.png)
 
-For more information on how to define your own logical file and physical file definitions look at [Specifying LR, LF, and PF metatdata](../../AdvancedFeatures/MetaData/SpecifyLRLFPFs.md) in Advanced Features.
-
-Save the view **File** > **Save**,  
-   or click the Save icon in the Workbench toolbar,  
-   or press **Ctrl + s**
+For more information on how to define your own logical file and physical file definitions look at [Create LR, LF, and PF metatdata](../../AdvancedFeatures/MetaData/CreateLRLFPFs.md) in Advanced Features.
 
 ### Activate the View 
 

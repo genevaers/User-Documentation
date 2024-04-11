@@ -1,4 +1,11 @@
-## Specifying Lookup Paths
+{: .no_toc}
+# Lookup Paths
+
+TABLE OF CONTENTS 
+1. TOC
+{:toc}  
+
+## Create Lookup Paths
 
 A lookup path is a GenevaERS metadata component defining how to retrieve information from a target logical record (LR) using data from a source LR.
 
@@ -17,7 +24,7 @@ Next define the target of the Lookup Path:
 4. Select the **Lookup Path Definition** tab  
 5. Select the target LR from the **Logical Record** drop down list.  
 6. Select the target LF from the **Logical File** drop down list
-The target LR must contain at least one field defined as a **Primary Key**. To read about LR definitions look at [Specifying LR, LF, and PF metatdata](../../AdvancedFeatures/MetaData/SpecifyLRLFPFs.md) in Advanced Features.  
+The target LR must contain at least one field defined as a **Primary Key**. To read about LR definitions look at [Create LRs, LFs, and PFs](../../AdvancedFeatures/MetaData/CreateLRLFPFs.md) in Advanced Features.  
 ![Lookup Path Definition tab.](../../images/LookupPathDefn.png)  
     
 You can then select the source fields that should be used to create a key to search the target to find a matching record. The accumulated length of the source fields must equal the total key length before the lookup path can be activated and used for processing in a view.
@@ -30,9 +37,8 @@ You can then select the source fields that should be used to create a key to sea
 Constants are static. A Symbol Name allows you to set the value in the view when the lookup path is used.  
 When specifying a constant, carefully consider the format of the target key when setting the data attributes.  
 4. You can build the key from multiple source fields or constants by selecting **Edit** > **Add Source Field** again.
-5. Save the Lookup Path **File** > **Save**,  
-   or click the Save icon in the Workbench toolbar,  
-   or press **Ctrl + s**  
+5. Save the Lookup Path **File** > **Save**  
+
 ![Adding Lookup Path source fields.](../../images/LookupPathSourceField.png)  
 
 When you save a new lookup path, the lookup path ID is assigned by the Workbench and is not editable. It is used to make each lookup path unique and appears along with the lookup path name in views.
@@ -60,9 +66,7 @@ You will see a number 2 appear in the Steps section, and have fresh **Target** a
 7. Click in the **Selected Source Fields** grid and add source fields as described previously.  
 The source LRs avaiable are all LRs used in previous steps.
 8. Add more steps if required, by clicking **Add** under the **Steps** section.
-9. Save the Lookup Path **File** > **Save**,  
-   or click the Save icon in the Workbench toolbar,  
-   or press **Ctrl + s**.    
+9. Save the Lookup Path **File** > **Save**  
 
 ![Adding a second Lookup Path Step.](../../images/MultiStepLuPathDefn.png)
 

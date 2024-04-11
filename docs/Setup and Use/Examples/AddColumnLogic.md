@@ -25,18 +25,16 @@ Add the following logic.
       ENDIF
 
 You can build up the logic by placing the curser in the **ECL** editor area, then double-clicking on the required text in the **Logic Text Helper**:  
-1. **Keywords** > **Language Constructs** > IF THEN ELSE ENDIF
-2. **Fields** > {QUANTITY}
-3. **Keywords** > **Language Constructs** > COLUMN =
-4. **Fields** > {DISCOUNT_PERCENT}
+
+    1. **Keywords** > **Language Constructs** > IF THEN ELSE ENDIF  
+    2. **Fields** > {QUANTITY}  
+    3. **Keywords** > **Language Constructs** > COLUMN =  
+    4. **Fields** > {DISCOUNT_PERCENT}  
 
 ![A screenshoot of adding Extract-phase column logic.](../../images/AddColumnLogic.png)
 
-Save the Column Logic **File** > **Save**,  
-   or click the Save icon in the Workbench toolbar,  
-   or press **Ctrl + s**
-
-Close the **Extract-Phase Column Logic** tab.
+7. Save the Column Logic **File** > **Save**.
+8. Close the **Extract-Phase Column Logic** tab.
 
 ### Column attributes
 
@@ -47,17 +45,14 @@ Change the Data Type to Masked Numeric with Length 8:
 2. Click on the **Length** cell for **Column 5**, and type **8** 
 3. Click on the **Decimal Places** cell for **Column 5**, and type **2** 
 4. Click the **Signed** cell for **Column 5** to indicate signed 
-
-Optionally, you can add a **Column Header** to Column 5. Headers are used in the report output format, but in this case it is useful to add a header when the column output is defined by some logic. A header is not automatically displayed in the Workbench for a column with column logic.  
+5. Optionally, you can add a **Column Header** to Column 5. Headers are used in the report output format, but in this case it is useful to add a header when the column output is defined by some logic. A header is not automatically displayed in the Workbench for a column with column logic.  
 Click on the **Header 1** cell for **Column 5**, and type **DISCOUNT** 
 
 ![Changing column attributes.](../../images/AddColumnLogic2.png)
 
 <!-- Note that it is possible that transforming a packed 6 into a Masked Numeric of length 8 may result in overflow of large numbers. You must be aware of your data in cases like this. -->
 
-Save the view **File** > **Save**,  
-   or click the Save icon in the Workbench toolbar,  
-   or press **Ctrl + s**
+6. Save the view **File** > **Save**.
 
 ### Activate the View 
 

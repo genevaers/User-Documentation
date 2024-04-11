@@ -164,7 +164,7 @@ The "given" date is a constant date value given in a view or logic text. A const
 
 ## Define lookup paths
 
-Lookup paths are defined using metadata in the GenevaERS Workbench. Go to [Specifying Lookup Paths](../AdvancedFeatures/MetaData/SpecifyLookupPath.md) for detailed information on how to do this.
+Lookup paths are defined using metadata in the GenevaERS Workbench. Go to [Create Lookup Paths](../AdvancedFeatures/MetaData/CreateLookupPath.md) for detailed information on how to do this.
 
 ## Where to call lookup paths in a view
 

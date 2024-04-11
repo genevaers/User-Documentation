@@ -34,13 +34,13 @@ General users:
 
 General Users must be a member of at least one Group. The association can be defined either by adding users to a group, or by defining the groups a user is a member of.
 
-See **Membership by Group** and **Membership by User** under [Specifying Users, Groups and Permissions](./MetaData/SpecifyUsersGroupsPerm.md)
+See **Membership by Group** and **Membership by User** under [Create Users, Groups and Permissions](./MetaData/CreateUsersGroupsPerm.md)
 
 ### Group Permissions
 
 Each group has a set of permissions associated with it. Group persmissions are defined for each environment you wish this group to have access to. A **role** of either **guest**, **developer** or **administator** is assigned for each environment, each of which have a set of default Edit Rights and Permissions. These can be tailored to your own specifications for each environment.
 
-See **Group Security** under [Specifying Users, Groups and Permissions](./MetaData/SpecifyUsersGroupsPerm.md)
+See **Group Security** under [Create Users, Groups and Permissions](./MetaData/CreateUsersGroupsPerm.md)
 
 ### Permissions by Environment
 
@@ -93,4 +93,4 @@ The **Migrate** utility copies selected metadata from a source environment to a 
 
 Selecting the **Migrate in** permission for an environment, allows the user to migrate metadata into this environment (the target environment). The source environment must be a different environment the user has permissions to access.
 
-Create and migrate permissions are setup by administrators. See **Group Security** under [Specifying Users, Groups and Permissions](./MetaData/SpecifyUsersGroupsPerm.md)
+Create and migrate permissions are setup by administrators. See **Group Security** under [Create Users, Groups and Permissions](./MetaData/CreateUsersGroupsPerm.md)

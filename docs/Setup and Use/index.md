@@ -26,7 +26,7 @@ The following Workbench tasks are based on the Workbench user having **system ad
 3. Select **Administration** > **New** > **Environment**
 4. In the **Name** field type **DemoEnv**
 5. Uncheck **Generate a Control Record**
-6. Save using either **cntl+s**, or click the save symbol on the tool bar.
+6. Save the environment definition **File** > **Save**
 7. Select **Administration** > **Import**
 8. Type the following in the Import Utility window
     - Target Environment: **DemoEnv**
