@@ -52,7 +52,7 @@ You can view the permissions and edit rights defined for each environment.
 - Create a group
 - Create Users
 - Modify group membership
-- Modify group permissions
+- Modify group permissions for environments
 
 ## Edit rights
 
@@ -91,6 +91,6 @@ For example, the create permission for physical files means a general user can c
 
 The **Migrate** utility copies selected metadata from a source environment to a target environment in the same GenevaERS Database. For more information, see **Migrate metadata overview** (tbd).
 
-Selecting the **Migrate in** permission for an environment, allows the user to migrate metadata into this environment (the target environment). The source environment must be a different environment the user has permissions to access.
+Selecting the **Migrate in** permission for an environment, allows the user to migrate metadata into this environment (the target environment). The source environment must be a different environment the user has permission to access.
 
 Create and migrate permissions are setup by administrators. See **Group Security** under [Create Users, Groups and Permissions](./MetaData/CreateUsersGroupsPerm.md)

@@ -15,9 +15,9 @@ An environment can contain items of these types:
 -   Views,
 -   View folders.
 
-For more on these metadata items are, look under [Advanced Features](./index.md).
+For more information on these metadata items, look under [Advanced Features](./index.md).
 
-The Workbench installation process defines an initial environment **Development**, and a system administrator user ID.
+The Workbench installation process defines an initial environment **Development**, and, for Db2, a system administrator user ID **ADMIN**.
 
 ## Administrating environments
 

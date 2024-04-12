@@ -17,7 +17,7 @@ There are two main components to install. The PC based Workbench and the mainfra
 
 The examples here are based on the Demo data. If you haven't installed the Demo, then it is highly recommended you do. [Find the Demo here.](https://genevaers.github.io/Demo/)
 
-The following Workbench tasks are based on the Workbench user having **system administrator** rights. For more information on users and access rights go to [Workbench Users, Groups and Access rights.](../AdvancedFeatures/Access.md)
+The following Workbench tasks are based on the Workbench user having **system administrator** rights. For more information on users and access rights go to [Workbench security overview.](../AdvancedFeatures/SecurityOverview.md)
 
 **Import the Demo XML into the Workbench in a new environment**
 
