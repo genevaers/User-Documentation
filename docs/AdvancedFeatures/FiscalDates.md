@@ -47,3 +47,26 @@ A relative value of ‘0’ can be used with both the relative fiscal month and 
 As with all relative conditions, any value can be used, but the relative period should not extend beyond your fiscal year or biennial time frames.  The ‘+’ feature can be very useful when used to show future budget periods when used with the relative fiscal month.  The ‘+’ value typically has no application when used with the relative calendar day because transactions are not typically processed for future dates.
 
 For example, to select data that is between three prior fiscal months and one prior fiscal month, enter ‘-003’ in the SELECTION FROM, and ‘F’ in the REL CD FROM; and ‘-001’ in the SELECTION TO, and ‘F’ in the REL CD FROM.  This effectively creates a “moving” view of the values from the previous three months without having to change the SELECTION FROM and the SELECTION TO VALUE as would be required if the values ‘9’ and ‘12’ were entered.
+
+.....
+
+To Define a View Containing Columns to Include the Three Prior Fiscal Months
+You can use the following procedure to create a View Definition with relative values and codes.  By using relative values and codes, you will not need to change the selection criteria each time you run the View.  You may want to create a View Definition with a FREQUENCY of ‘M’ on the Standard Parameters screen.  This example constructs a View Definition with three columns each presenting expenditures for a different month based on the current fiscal month.  Column 1 is expenditures for the current fiscal month less one, Column 2 contains the expenditures for the current fiscal month less two, Column 3 presents expenditures for current fiscal month minus 3.  Once this View Definition is created, you can leave it active with FREQUENCY of ‘M’.  It will print every month with the expenditures for the previous three months.  You can specify the current fiscal month by using ‘00’ in the FROM field.  This example assumes that all columns are defined with the same transaction amount field.  Once the three columns are defined, you can define all Column Selection Parameters in order by scrolling between them using <PF20> NEXT COL and <PF19> PREV COL.
+STEP 1.	Access the View Definition General Column Parameters screen and then the Column Selection Parameters screen.
+STEP 2.	Tab to the SELECTION FIELD and either enter the field number if known or press FLD LIST to access the list of available Field Definition Numbers.  This is the field that you want to use to select data for this column.  It should be the processing fiscal month field.  
+A list of all available Field Definitions will be displayed.
+    Tip!  It is important to tab to the SELECTION FIELD field before you press FLD LIST.  This action positions the cursor on the field that will be populated with the Field Definition Number you select from the FLD LIST screen.  When FLD LIST is pressed, GENEVA V/T  remembers where the cursor was on the current screen so that it can transfer the Field Definition Number you select from the Field Definition List screen and populate the SELECTION FIELD field with the value.
+
+STEP 3.	Select the processing fiscal month Field Definition by placing the cursor on the line containing the Field Definition number and pressing <ENTER>.
+The Field Definition Number will be transferred to the View Definition Column Selection Parameters screen.
+?Help!  Scrolling through the Field Definition List is accomplished by pressing <PF7> to scroll backward and <PF8> to scroll forward.
+
+ 
+STEP 5.	Enter the SELECTION FROM that you want included in this column.  For this example, you should enter ‘-01’ in column 1, ‘-02’ in column 2 and ‘-03’ in column 3.  (You will provide the relative code to select fiscal month and apply this operand (+ or -) and value.)
+STEP 6.	Enter an ‘F’ in the REL CD FROM.  
+STEP 7.	Leave the MOD indicator blank to include the value.
+STEP 8.	Press UPDT/SAME and then NEXT COL to enter the selection criteria for the next column.  
+The message:  ‘RECORD SUCCESSFULLY UPDATED’ will be displayed.
+    Note:  These steps can be followed to enter a relative value based on calendar date.  You must use a Field Definition Number with date ‘D’ format.  You can specify SELECTION FROM ‘-07’ with ‘C’ in the REL CD FROM and SELECTION FROM ‘-01’ with ‘C’ in the REL CD FROM to create a view to run weekly.  This example will provide data from the previous week (from seven days before today to the previous day).
+
+
