@@ -19,3 +19,10 @@
 
         Suppose you have a View Definition that is run monthly and compares the current month financial information with the prior month.  You could “hard code” the fiscal month numbers in the View Definition General Selection Parameters and change these values each month.  To avoid this additional effort, use the relative date View Definition to define the View Definition General Selection Parameters screen as follows:
 Enter a ‘F’ in the SELECTION FROM CODE field and enter ‘-001’ in the SELECTION FROM VALUE field, enter a ‘F’ in the SELECTION TO CODE field and enter ‘000’ in the SELECTION TO VALUE.  This will always result in a view containing the data for the current month and the previous month.
+
+(More Documentation from another part of the old manuals)
+
+Relative values can be entered on date fields.  When relative values are entered, GENEVA V/T interprets those values differently as time passes.  In the example above, the Field ‘H21’ (fiscal month) has a relative code of ‘F’ and a relative value of ‘-03’.  If this is fiscal month ‘10’ (based on the current month stored in the System Management Table), then this View Definition will select data from fiscal month ‘7’.  When the current fiscal month changes to ‘11’, the View Definition will change its data selection to fiscal month ‘8’.  If you are not interested in a range of values and only want fiscal month ‘-3’ data, there is no need to enter any criteria in the selection fields.  For more information on relative and absolute values, refer to the Field Descriptions section in this chapter.
+
+You can enter field values as a range using ‘FROM’ and ‘TO’ values.  When specifying a range, you can combine two absolute field values, two relative date values, or an absolute field with a relative date.  If you are combining an absolute value with a relative date selection, the absolute value must be entered in the SELECTION FROM field.  In the example above, the field ‘H42’ has a range of ‘6000’ to ‘7000’.  This means that data with any value between 6000 and 7000, inclusive, will be included on your view (MOD is ‘blank’).  
+
