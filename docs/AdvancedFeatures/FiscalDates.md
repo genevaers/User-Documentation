@@ -26,3 +26,24 @@ Relative values can be entered on date fields.  When relative values are entered
 
 You can enter field values as a range using ‘FROM’ and ‘TO’ values.  When specifying a range, you can combine two absolute field values, two relative date values, or an absolute field with a relative date.  If you are combining an absolute value with a relative date selection, the absolute value must be entered in the SELECTION FROM field.  In the example above, the field ‘H42’ has a range of ‘6000’ to ‘7000’.  This means that data with any value between 6000 and 7000, inclusive, will be included on your view (MOD is ‘blank’).  
 
+.....
+
+REL CD FROM
+
+This field can be used to create relative selection criteria for fiscal period or date fields.  Instead of entering an absolute value in the SELECTION FROM and SELECTION TOs, relative values can be entered in the SELECTION FROM and REL CD TO fields.  A relative code of ‘F’ is used to designate relative fiscal month, while ‘C’ is used to designate relative calendar day.  
+    Note:  Valid REL CD FROM values are:
+    ‘C’	Calendar Days
+    ‘F’	Fiscal Month
+
+For example, to select data that is between three prior fiscal months and one prior fiscal month, enter ‘-003’ in the SELECTION FROM, and ‘F’ in the REL CD FROM; and ‘-001’ in the SELECTION TO, and ‘F’ in the REL CD TO.  This effectively creates a “moving” view of the values from the previous three months without having to change the FROM and TOs as you would if the values ‘9’ and ‘12’ were entered.
+
+In another example, to select Accounts Receivable under 90 days old, enter ‘-90’ in the SELECTION FROM, and ‘C’ in the REL CD FROM; and ‘0’ in the SELECTION TO, and ‘C’ in the REL CD TO.  This effectively creates a “moving” view of the accounts receivable under 90 days old based on the current system date without having to change the FROM and TO values each time the View Definition is activated.  
+
+The value entered in the SELECTION FROM VALUE or SELECTION TO must follow the following format:  the first character should be a  
+sign (‘+’ or ‘-‘); the next characters are numbers specifying the number of months or days.  In the example above, GENEVA V/T will select data three months prior to the current month (current month minus 3).
+
+A relative value of ‘0’ can be used with both the relative fiscal month and calendar day.  If used, no ‘+/-‘ sign is required.  A ‘0’ value used with the fiscal month will select data from only the current month.  When used with the relative calendar day, GENEVA V/T will only select data that is posted to the Event File as of the day of your view production run.
+
+As with all relative conditions, any value can be used, but the relative period should not extend beyond your fiscal year or biennial time frames.  The ‘+’ feature can be very useful when used to show future budget periods when used with the relative fiscal month.  The ‘+’ value typically has no application when used with the relative calendar day because transactions are not typically processed for future dates.
+
+For example, to select data that is between three prior fiscal months and one prior fiscal month, enter ‘-003’ in the SELECTION FROM, and ‘F’ in the REL CD FROM; and ‘-001’ in the SELECTION TO, and ‘F’ in the REL CD FROM.  This effectively creates a “moving” view of the values from the previous three months without having to change the SELECTION FROM and the SELECTION TO VALUE as would be required if the values ‘9’ and ‘12’ were entered.
