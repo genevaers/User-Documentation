@@ -12,8 +12,9 @@ Extract Record Filters:
 
 ## Language Constructs
 
-[SELECTIF](./LogicText/SELECTIFStatementERF.md)  
-[SKIPIF](./LogicText/SKIPIFStatementERF.md)  
+[SELECT and SELECTIF](./LogicText/SELECTIFStatementERF.md)  
+[SKIP and SKIPIF](./LogicText/SKIPIFStatementERF.md)  
+[IF Statements](./LogicText/IFstatementsERF.md)
 
 ## Arithmetic Operators
 
@@ -56,3 +57,5 @@ Extract Record Filters:
 ## Logical Operators
 
 ## Lookup Paths
+
+[Lookup Paths](./LogicText/LookupPaths.md)

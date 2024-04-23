@@ -7,6 +7,6 @@ For example, a field with "LONDON" begins with the string "L" and "LO" and even 
 
 BEGINS_WITH is an example of string comparisons that return a true or false value that can be part of an IF statement.
 
-BEGINS_WITH can only be used at extract-phase time in **Extract Record Filter** or **Extract Column Assignment** logic text.
+BEGINS_WITH can only be used at extract-phase time in **Extract Record Filter** or **Extract Column Logic** text.
 
 The syntax details of BEGINS_WITH are shown below.

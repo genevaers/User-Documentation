@@ -18,7 +18,7 @@ The first screen presented is the View Properties screen
    or click the Save icon in the Workbench toolbar,  
    or press **Ctrl + s**
 
-![View Properties outline](../../images/NewViewExtract.png)
+![View Properties General tab.](../../images/NewViewExtract.png)
 
 To toggle between the View Properties screen and the View Editor screen,  
 - press **F9**,  
@@ -36,9 +36,9 @@ Next you are going to specify the input to the view, the view source, by selecti
    - Logical File: **DEMO_ORDER_ITEM_LR**
    - Click **OK**
 
-![View Properties outline](../../images/NewViewSource.png)
+![Add view Source pop-up window.](../../images/NewViewSource.png)
 
-For more information on how to define your own logical record, logical file and physical file definitions look [here](../../AdvancedFeatures/MetaData/SpecifyLRLFPFs.md) 
+For more information on how to define your own logical record, logical file and physical file definitions look at [Specifying LR, LF, and PF metatdata](../../AdvancedFeatures/MetaData/SpecifyLRLFPFs.md) in Advanced Features.
 
 ### Adding Columns
 
@@ -52,7 +52,7 @@ The Column Source Properties frame opens on the right.
 3.  From the **Column Source Type** list, select **Source File Field**
 4.  From the **Column Source Value** list, click the list box and select **ORDER_ID**
 
-![New View column](../../images/NewViewColumn.png)
+![Adding a new column, showing Column source properties.](../../images/NewViewColumn.png)
 
 Repeat the previous steps to add columns for **PRODUCT_ID** and **QUANTITY**. 
 
@@ -80,9 +80,9 @@ You can specify your own output destination. To do this:
 
 You will see that the WRITE statement in the **Read Logic** field has changed.
 
-![Output Properties](../../images/NewViewSourceProperties.png)
+![View source properties tab, showing an extract-phase output file defined.](../../images/NewViewSourceProperties.png)
 
-For more information on how to define your own logical file and physical file definitions look [here](../../AdvancedFeatures/MetaData/SpecifyLRLFPFs.md)
+For more information on how to define your own logical file and physical file definitions look at [Specifying LR, LF, and PF metatdata](../../AdvancedFeatures/MetaData/SpecifyLRLFPFs.md) in Advanced Features.
 
 Save the view **File** > **Save**,  
    or click the Save icon in the Workbench toolbar,  

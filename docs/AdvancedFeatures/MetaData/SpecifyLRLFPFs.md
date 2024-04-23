@@ -10,7 +10,7 @@ This page provides an overview of the GenevaERS metadata creation process for lo
 - Create logical record definitions, and
 - Associate logical files with logical records
 
-![Metatdata Overview](../../images/Module9-Metadata_Creation/Module9_Slide3.jpeg)
+![Metatdata Overview diagram.](../../images/Module9-Metadata_Creation/Module9_Slide3.jpeg)
 
 A physical file definition describes a data source. Examples include customer files and order files.  
 A logical file definition describes a collection of one or more physical files.  
@@ -21,7 +21,7 @@ A logical record definition, or LR, describes a record layout. In COBOL programs
 To create a physical file definition
 
 1. Select **Administration** > **New** > **Physical File**  
-![New Physical file definition](../../images/NewPF.png)
+![Adding a new physical file definition.](../../images/NewPF.png)
 2. In the **Name** field type a descriptive name.  
 All GenevaERS components must be uniquely named within an environment. The names may be up to 48 characters long, starting with a letter, and composed of letters, numbers, and the underscore (_).  
   
@@ -65,7 +65,7 @@ You can use the Comments field to describe this logical file and its purpose.
 
 Logical files are associated with one or more physical files. To make the association
 1. Click **Add** and select one or more physical files to be associated. After you click OK, the physical file is displayed in the Associated Physical Files area.  
-![Associate Pysical Files Screen](../../images/AssociatePFs.png)
+![Associating physical files with a logical file.](../../images/AssociatePFs.png)
 
 Save the logical file definition **File** > **Save**,  
    or click the Save icon in the Workbench toolbar,  
@@ -91,7 +91,7 @@ Logical record information is displayed across three tabs, **LR Properties**, **
 ### LR Fields
 
 Select the **LR Fields** tab.  
-The grid on this panel is used to create and maintain field definitions. Fields are defined with names, data types, start positions and lengths, and numbers of decimal points. All the data types discussed available are discussed [here](../../AdvancedFeatures/MetaData/DataTypes.md).
+The grid on this panel is used to create and maintain field definitions. Fields are defined with names, data types, start positions and lengths, and numbers of decimal points. All the data types available are discussed in [Data Types](../../AdvancedFeatures/MetaData/DataTypes.md) in Advanced Features.
 
 1. To define a field **Edit** > **Insert Field Before**  
    or click the Insert Field icons on the Logical Record Editor toolbar  

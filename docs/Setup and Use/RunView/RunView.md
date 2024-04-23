@@ -1,6 +1,6 @@
 ## Running the view
 
-If you haven't installed the Demo, then it is highly recommended you do. Go [here](https://genevaers.github.io/Demo/)
+If you haven't installed the Demo, then it is highly recommended you do. [Find the Demo here.](https://genevaers.github.io/Demo/)
 
 Sample JCL is contained in 
 < *your-tso-prefix* >.GVBDEMO.JCL

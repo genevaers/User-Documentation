@@ -1,30 +1,26 @@
-# Extract-Phase Column Logic (ECL)
+# Extract-Phase Record Logic (ERL)
 
 ## Introduction
 
-The function of Extract-Phase Column Logic is to populate output columns with field values, constants, or the results of calculations.
+Extract-Phase Record Logic is used to override the default, or implicit WRITE for a view.
 
 ## Language Constructs
 
-[COLUMN and COL.nn statments](./LogicText/ColumnStatementECL.md)  
-[IF statements](./LogicText/IFstatementsECL.md)
+[COL.nn statments](./LogicText/ColumnStatementERL.md)  
+[IF statements](./LogicText/IFstatementsERL.md)
 
 ## Arithmetic Operators
 
-## Cast operators
+## Cast Operators
 
 [Cast Operators ](./LogicText/Cast-operators.md)
 
 ## Comparision Operators
 
+
 [BEGINS_WITH](./LogicText/BEGINS-WITH-Comparison.md)  
 [CONTAINS](./LogicText/CONTAINS-Comparison.md)  
 [ENDS_WITH](./LogicText/ENDS-WITH-Comparison.md)  
-
-
-## Logical Operators
-
-## String Operators
 
 ## Functions
 
@@ -51,7 +47,9 @@ The function of Extract-Phase Column Logic is to populate output columns with fi
 [RUNYEAR()](./LogicText/Function-RUNYEAR.md)  
 [YEARSBETWEEN()](./LogicText/Function-YEARSBETWEEN.md)  
 
-[WRITE()](./LogicText/WRITEstatementsECL.md)  
+[WRITE()](./LogicText/WRITEstatementsERL.md)  
+
+## Logical Operators
 
 ## Lookup Paths
 

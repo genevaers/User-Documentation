@@ -6,7 +6,7 @@ TABLE OF CONTENTS
 {:toc}  
 
 
-Record filters can be used to filter input records at extract-phase time, and output records at format-phase time, using functions like SELECTIF() and SKIPIF().Record filters are optional. 
+Record filters can be used to filter input records at extract-phase time, and output records at format phase time, using functions like SELECTIF() and SKIPIF().Record filters are optional. 
 
 ## Extract-Phase Record Filter
 
@@ -55,6 +55,8 @@ You may wish to close the open windows. Closing the **Extract-Phase Record Filte
 The function of the Format-Phase Record Filter is to select or skip output records for a view.
 
 Specifically, this logic text changes the **records selected for output** in the format phase of the Performance Engine. The format phase is optional, because the extract phase may be sufficient to produce the results of that view.
+
+The Format phase performs record filtering as the last step before writing to the output file. It works against aggregated records if the view summarizes records. Otherwise it works against detailed records.
 
 ### Logic text syntax and examples
 
