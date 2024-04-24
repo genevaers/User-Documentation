@@ -1,1 +1,1 @@
-![Function COLUMN FCC 1](../../../images/LTS_COLUMN_3FCC_01.gif)
+![Function COLUMN FRF](../../../images/LTS_COLnnn_2ECA_01Z.gif)

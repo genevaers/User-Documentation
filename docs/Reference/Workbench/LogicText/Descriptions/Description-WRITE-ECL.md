@@ -1,4 +1,4 @@
-# WRITE Statements 
+## How do I use WRITE Statements in ECL?
 
 WRITE statements are optional in your extract column logic text.  If your logic text contains **no WRITE statements**, then a WRITE occurs automatically as the last function of the view. This is called an **implicit** WRITE, and the parameters of this can be overridden using **Extract Record Logic**.
 

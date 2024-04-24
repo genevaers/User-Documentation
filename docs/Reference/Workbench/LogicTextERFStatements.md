@@ -18,6 +18,11 @@ Extract Record Filters:
 
 ## Arithmetic Operators
 
+\+  
+\-  
+\*  
+/  
+
 ## Cast operators
 
 [Cast Operators ](./LogicText/Cast-operators.md)
@@ -27,6 +32,12 @@ Extract Record Filters:
 [BEGINS_WITH](./LogicText/BEGINS-WITH-Comparison.md)  
 [CONTAINS](./LogicText/CONTAINS-Comparison.md)  
 [ENDS_WITH](./LogicText/ENDS-WITH-Comparison.md)  
+\<  
+\>  
+\=  
+\<=  
+\>=  
+\<>  
 
 ## Functions
 
@@ -55,6 +66,10 @@ Extract Record Filters:
 
 
 ## Logical Operators
+
+AND  
+NOT  
+OR  
 
 ## Lookup Paths
 

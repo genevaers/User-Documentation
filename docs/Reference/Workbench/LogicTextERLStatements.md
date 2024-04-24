@@ -2,14 +2,19 @@
 
 ## Introduction
 
-Extract-Phase Record Logic is used to override the default, or implicit WRITE for a view.
+Extract-Phase Record Logic is used to override the default, or implicit WRITE for a view. If there are no WRITE statements in any column's Extract Column Logic, there must be at least one WRITE statement in the Extract Record Logic.
 
 ## Language Constructs
 
-[COL.nn statments](./LogicText/ColumnStatementERL.md)  
+[COL.nnn](./LogicText/ColnnnStatementERL.md)  
 [IF statements](./LogicText/IFstatementsERL.md)
 
 ## Arithmetic Operators
+
+\+  
+\-  
+\*  
+/  
 
 ## Cast Operators
 
@@ -17,10 +22,15 @@ Extract-Phase Record Logic is used to override the default, or implicit WRITE fo
 
 ## Comparision Operators
 
-
 [BEGINS_WITH](./LogicText/BEGINS-WITH-Comparison.md)  
 [CONTAINS](./LogicText/CONTAINS-Comparison.md)  
 [ENDS_WITH](./LogicText/ENDS-WITH-Comparison.md)  
+\<  
+\>  
+\=  
+\<=  
+\>=  
+\<>  
 
 ## Functions
 
@@ -50,6 +60,10 @@ Extract-Phase Record Logic is used to override the default, or implicit WRITE fo
 [WRITE()](./LogicText/WRITEstatementsERL.md)  
 
 ## Logical Operators
+
+AND  
+NOT  
+OR  
 
 ## Lookup Paths
 

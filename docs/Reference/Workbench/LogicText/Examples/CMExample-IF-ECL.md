@@ -1,5 +1,5 @@
 
-# Examples: IF with COLUMN & COL.nnn (ECL)
+## Examples: IF with COLUMN & COL.nnn (ECL)
 
 In all the following examples, **COLUMN can be replaced by COL.nnn**, for example COL.3. You can set the value of any COL.nnn from any other column. You can create multiple IF statements in Extract Column Logic text. However, you cannot inquire on COL.nnn \(for example, IF COL.4 = 0 is not allowed\).
 
@@ -32,11 +32,11 @@ In all the following examples, **COLUMN can be replaced by COL.nnn**, for exampl
 |**IF ({field1} LIKE "^B\*C\*E$")<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN COLUMN = {field1}<br>&nbsp;&nbsp;&nbsp;&nbsp;ELSE COLUMN = " "<br>ENDIF**|If field1 begins "B", contains "C" and ends "E"<br>then set current column to field1,<br>otherwise set current column to one blank.|
 
 
-# Examples: IF with WRITE (ECL)
+## Examples: IF with WRITE (ECL)
 
 |Example logic text|Meaning|
 |------------------|-------|
 |**IF (ISNUMERIC({field4}) AND<br>&nbsp;&nbsp;&nbsp;&nbsp;({field5} > {field6} \* 10) AND<br>&nbsp;&nbsp;&nbsp;&nbsp;(ISNOTSPACES{field7})<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN WRITE (SOURCE=DATA,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; USEREXIT={DB2_Update})<br>ENDIF**|If field4 is numeric and field5 is greater than field6 times 10 and<br>field7 is not spaces, then call the user-exit routine DB2\_Update<br>for the columns up to the current point.<br>This effectively writes to a DB2 table the columns in that record<br>up to the current point.|
 |**IF (ISNOTNULL({field3}) AND<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;({field2} = {field1} + {field5}))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN WRITE (SOURCE=INPUT,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEST=FILE={LogicalFile3})<br>ENDIF**|If field3 is not nulls and field2 equals field1 plus field 5<br>then write the entire input record to LogicalFile3.<br>All columns in the input record are included,<br>no matter what column contains this logic text.|
-|**IF (DAYSBETWEEN({field12},{field15})<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;> 10) AND<br>&nbsp;&nbsp;&nbsp;&nbsp;(ISFOUND({Lookup3;$SYM="A"}))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN WRITE (SOURCE=VIEW,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DEST=EXT=03)<br>ENDIF**|If field12 and field15 are more than 10 days apart and the<br>lookup path Lookup3 works with symbol SYM set to "A",<br>then write the columns up to the current point<br>to extract work file \(EXT\) 3.<br>This assumes that the control record for this environment<br>has a Maximum Extract File Number that is at least 3,<br> or any overwrite of the VDP has also set this parameter<br>to at least 3|
+|**IF (DAYSBETWEEN({field12},{field15})<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;> 10) AND<br>&nbsp;&nbsp;&nbsp;&nbsp;(ISFOUND({Lookup3;$SYM="A"}))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN WRITE (SOURCE=VIEW,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DEST=EXT=03)<br>ENDIF**|If field12 and field15 are more than 10 days apart and the lookup path Lookup3 works with symbol SYM set to "A",<br>then write the columns up to the current point<br>to extract work file \(EXT\) 3.|
 

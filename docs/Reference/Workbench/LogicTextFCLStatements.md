@@ -6,11 +6,27 @@ Format-Phase Column Logic is applied to the columns created in the extract phase
 
 ## Language Constructs
 
-[COLUMN and COL.nn statments](./LogicText/ColumnStatementFCL.md)  
+[COLUMN and COL.nn statements](./LogicText/ColumnStatementFCL.md)  
 [IF statements](./LogicText/IFstatementsFCL.md)
+
+## Logical Operators
+
+AND  
+NOT  
+OR  
 
 ## Arithmetic Operators
 
+\+  
+\-  
+\*  
+/  
+
 ## Comparision Operators
 
-## Logical Operators
+\<  
+\>  
+\=  
+\<=  
+\>=  
+\<>  

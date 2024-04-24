@@ -50,7 +50,7 @@ You can view the permissions and edit rights defined for each environment.
 
 - Create Environments
 - Create a group
-- Create Users
+- Create users
 - Modify group membership
 - Modify group permissions for environments
 

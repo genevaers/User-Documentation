@@ -6,7 +6,7 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-# Description
+## Description
 
 Cast Operators are used to override the data type of a column, or the data type of an LR field.
 
@@ -34,7 +34,7 @@ The \<NODTF> cast operator can be used in conjunction with Data Type cast operat
 
 For more information and examples see [Assignment and Comparison Rules](../../Assignment-and-Comparison-Rules.md)
 
-# Examples
+## Examples
 
 1. In this example the column and the field **discount** bothe have a data type of **packed**. If the column is not cast to **alpha** an error will be flagged because you would be trying to assign an alphanumeric constant to a packed column.
 

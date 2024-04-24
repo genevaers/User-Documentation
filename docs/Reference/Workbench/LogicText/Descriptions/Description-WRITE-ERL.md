@@ -1,4 +1,4 @@
-# WRITE Statements in Extract Record Logic
+## How do I use WRITE Statements in ERL?
 
 The Extract Record Logic can be used to override the **implicit WRITE statement** that is generated as the last function of a view.
 

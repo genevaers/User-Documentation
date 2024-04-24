@@ -1,5 +1,5 @@
 {: .no_toc}
-# Extract-Phase Record Filter 
+# SKIP and SKIPIF in Extract-Phase Record Filters
 
 {: .no_toc}
 TABLE OF CONTENTS 
@@ -12,11 +12,11 @@ TABLE OF CONTENTS
 
 {% include_relative SyntaxDiagrams/CMAAHowthesyntaxworksLevel3.md %}
 
-# Syntax 
+## Syntax 
 
 {% include_relative SyntaxDiagrams/CMSyntax-Diag-SKIPIF-ERF-Level-3.md %}
 
-# Rules for the syntax
+## Rules for the syntax
 
 Extract Record Filter can have one SELECTIF statement or one IF statement that contains one or more SELECT statements. When one SELECTIF or SELECT is present, then no SKIP or SKIPIF statements are allowed.  
 

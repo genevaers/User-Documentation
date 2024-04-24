@@ -1,5 +1,5 @@
 
-# Examples: COLUMN & COL.nnn (ECL)
+## Examples: COLUMN & COL.nnn (ECL)
 
 In all the following examples, **COLUMN can be replaced by COL.nnn**, for example COL.3. You can set the value of any COL.nnn from any other column. You can create multiple COL.nnn statements in Extract Column Logic text.
 
@@ -15,7 +15,7 @@ In all the following examples, **COLUMN can be replaced by COL.nnn**, for exampl
 |**COLUMN = {Lookup1.Field3,field7;$SYM1=3,$SYM2=0}**|Set current column to Field3 found by<br>lookup path Lookup1 using<br>effective date of field7 and symbols<br>SYM1 set to 3 and SYM2 set to zero.|
 |**COLUMN = DAYSBETWEEN({BUY_DATE},{SHIP_DATE})**|Set current column to the days between<br>the transaction date and the shipping date.|
 
-# Examples: IF with COLUMN & COL.nnn (ECL)
+## Examples: IF with COLUMN & COL.nnn (ECL)
 
 In all the following examples, **COLUMN can be replaced by COL.nnn**, for example COL.3. You can set the value of any COL.nnn from any other column. You can create multiple IF statements in Extract Column Logic text. However, you cannot inquire on COL.nnn \(for example, IF COL.4 = 0 is not allowed\).
 
@@ -24,7 +24,7 @@ In all the following examples, **COLUMN can be replaced by COL.nnn**, for exampl
 |**IF ({field1} > 0) THEN<br>&nbsp;&nbsp;&nbsp;&nbsp;COLUMN = ({field2}/{field1}) \* 100<br>&nbsp;&nbsp;&nbsp;&nbsp;COL.27 = {field1} \* {field26}<br>&nbsp;&nbsp;&nbsp;&nbsp;COL.28 = {field14} + {field1}<br>ELSE<br>&nbsp;&nbsp;&nbsp;&nbsp;COLUMN = 0<br>&nbsp;&nbsp;&nbsp;&nbsp;COL.27 = 0<br>&nbsp;&nbsp;&nbsp;&nbsp;COL.28 = 0<br>ENDIF**|If field1 is greater than zero then set current column<br>to field2 divided by field1 all multiplied by 100,<br>set column 27 to field1 times field26<br>and set column 28 to field 14 plus field1.<br>If field1 is not greater than zero then set<br>current column and columns 27 and 28 to zero.|
 |**IF (CURRENT({field5}) <> PRIOR({field5}))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN COLUMN = "PRODUCT: "<br>&nbsp;&nbsp;&nbsp;&nbsp;ELSE COLUMN = " "<br>ENDIF**|If current record field5 has a different value<br>from the previous record,<br> set current column to "PRODUCT: "<br>otherwise set current column to blank.<br>This assumes the input file is sorted into field5 order.|
 |**IF ({field5} = "Total")<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN COLUMN = ALL("-")<br>ENDIF**|If field5 is "Total" then set current column<br>to all dashes.|
-|**IF {field6} = ALL("-")<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN COLUMN = {field2} + {field3}<br>ENDIF**|If field6 is all dashes, then set current column<br>to a total of fields 2 and 3.|
+|**IF COL.01 = ALL("-")<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN COLUMN = {field2} + {field3}<br>ENDIF**|If column 1 is all dashes, then set current column<br>to a total of fields 2 and 3.|
 |**IF ({field5} = "Total")<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN COLUMN = REPEAT("-", 13)<br>ENDIF**|If field5 is "Total" then set current column<br>to 13 dashes.|
 |**IF ({field6} = REPEAT("-", 13))<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN COLUMN = {field2} + {field3}<br>ENDIF**|If field6 is 13 dashes, then set current column<br>to a total of fields 2 and 3.|
 |**IF ({field5} = "Total")<br>&nbsp;&nbsp;&nbsp;&nbsp;THEN COLUMN = "\xFF"<br>ENDIF**|If field5 is "Total" then set current column<br>to hexadecimal FF.|

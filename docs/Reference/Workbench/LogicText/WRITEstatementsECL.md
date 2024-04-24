@@ -1,5 +1,5 @@
 {: .no_toc}
-# Extract-Phase Column Logic 
+# WRITE statements in Extract-Phase Column Logic 
 
 {: .no_toc}
 TABLE OF CONTENTS 
@@ -10,7 +10,7 @@ TABLE OF CONTENTS
 
 {% include_relative SyntaxDiagrams/CMAAHowthesyntaxworksLevel3.md %}
 
-# Syntax 
+## Syntax 
 
 {% include_relative SyntaxDiagrams/CMSyntax-Diag-WRITE-ECL-Level-3.md %}  
 

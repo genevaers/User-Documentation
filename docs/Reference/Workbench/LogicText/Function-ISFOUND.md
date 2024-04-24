@@ -19,7 +19,7 @@ TABLE OF CONTENTS
 
 ISFOUND can only be used in **Extract Record Filter (ERF)** and **Extract Column Logic (ECL)** text.
 
-If **no effective date** is specified, ISFOUND uses RUNDAY\( \) - see topic: [Syntax - function RUNDAY](Syntax - function RUNDAY)
+If **no effective date** is specified, ISFOUND uses RUNDAY\( \) - see [function RUNDAY](./Function-RUNDAY.md)
 
 See also topic: [Rules for all Logic Text](../../Workbench/RulesforallLogicText.md) 
 
