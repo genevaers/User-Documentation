@@ -1,8 +1,8 @@
 ## How do I use WRITE Statements in ERL?
 
-The Extract Record Logic can be used to override the **implicit WRITE statement** that is generated as the last function of a view.
+The Extract Record Logic can be used to override the **default WRITE statement** that is generated as the Extract Record Logic of a view.
 
-There must be at least one WRITE statement in either the Extract Record Logic or the Extract Column Logic. So if the Extract Record Logic does not contain a WRITE statment, therefore eliminating the implicit WRITE, there must be at least one WRITE statment in a Column.
+There must be at least one WRITE statement in either the Extract Record Logic or the Extract Column Logic. So if the Extract Record Logic does not contain a WRITE statment, therefore eliminating the default WRITE, there must be at least one WRITE statment in a Column.
 
 A WRITE statement in your ERL logic text allows the following:
 

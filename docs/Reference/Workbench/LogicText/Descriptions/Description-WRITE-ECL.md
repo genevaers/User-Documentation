@@ -1,15 +1,15 @@
 ## How do I use WRITE Statements in ECL?
 
-WRITE statements are optional in your extract column logic text.  If your logic text contains **no WRITE statements**, then a WRITE occurs automatically as the last function of the view. This is called an **implicit** WRITE, and the parameters of this can be overridden using **Extract Record Logic**.
+WRITE statements are optional in your Extract Column Logic text. If there are no WRITE statements in ECL, then there must be a WRITE statement either from the default Extract Record Logic, or provided in the overriding Extract Record Logic.
 
-An implicit WRITE still occurs if you provide WRITE statements in your extract column logic text.
+A default WRITE (in Extract Record Logic) still occurs if you provide WRITE statements in your extract column logic text.
 
 A WRITE statement in your extract column logic text allows the following:
 
 -   Writing records to logical files of your choice.
 -   Performing a procedure or user-exit routine on input records.
 -   Writing only some of the columns.
--   Writing mutliple output records for each record read.
+-   Writing multiple output records for each record read.
 -   A combination of the above.
 
 Here are some example cases of a WRITE in Extract Column Logic:
