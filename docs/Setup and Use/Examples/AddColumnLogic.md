@@ -26,10 +26,10 @@ Add the following logic.
 
 You can build up the logic by placing the curser in the **ECL** editor area, then double-clicking on the required text in the **Logic Text Helper**:  
 
-    1. **Keywords** > **Language Constructs** > IF THEN ELSE ENDIF  
-    2. **Fields** > {QUANTITY}  
-    3. **Keywords** > **Language Constructs** > COLUMN =  
-    4. **Fields** > {DISCOUNT_PERCENT}  
+1. **Keywords** > **Language Constructs** > IF THEN ELSE ENDIF  
+2. **Fields** > {QUANTITY}  
+3. **Keywords** > **Language Constructs** > COLUMN =  
+4. **Fields** > {DISCOUNT_PERCENT}  
 
 ![A screenshoot of adding Extract-phase column logic.](../../images/AddColumnLogic.png)
 
