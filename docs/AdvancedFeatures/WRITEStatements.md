@@ -17,7 +17,7 @@ The function of the Extract-Phase Record Filter is to include or exclude source 
 
 Specifically, this logic text changes the **records selected for processing** in the extract phase of the Performance Engine. The records selected during this phase are the **input records** for processing the view(s) in that run of the Performance Engine.
 
-Extract Record Filter logic text is performed at the start of the extract phase processing for each view.
+Extract-Phase Record Filter logic text is performed at the start of the extract phase processing for each view.
 
 ### Statements for selecting input files
 
@@ -34,7 +34,7 @@ The overall idea is that your logic text describes how to select or skip, but no
 
 The syntax of this logic text and examples are described in the Reference section [Workbench Logic Text - Extract-Phase Record Filter](../Reference/Workbench/LogicTextERFStatements.md)
 
-### Create logic text for Extract Record Filter
+### Create logic text for Extract-Phase Record Filter
 
 This logic text is part of a view and is associated with a view source file. To create this logic text in an existing view, do the following:
 
@@ -60,7 +60,7 @@ Specifically, this logic text changes the **records selected for output** in the
 
 The syntax of this logic text and examples are described in the Reference section [Workbench Logic Text - Format-Phase Record Filter](../Reference/Workbench/LogicTextFRFStatements.md)
 
-### Create logic text for Format Record Filter
+### Create logic text for Format-Phase Record Filter
 
 This logic text is part of a view and is associated with the format phase. The view must have a format phase. To create this logic text in an existing view, do the following:
 

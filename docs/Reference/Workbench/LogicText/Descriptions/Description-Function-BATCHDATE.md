@@ -5,5 +5,5 @@ The BATCHDATE returns a date in CCYYMMDD format that is when the view is run. Th
 
 The parameter for BATCHDATE is a number of days to add or delete from the default BATCHDATE. For example, BATCHDATE\(-5\) provides the day five days before the date the view is run.
 
-BATCHDATE can only be used in **Extract Record Filter (ERF)** and **Extract Column Logic (ECL)** text.
+BATCHDATE can only be used in **Extract-Phase Record Filter (ERF)** and **Extract-Phase Column Logic (ECL)** text.
 

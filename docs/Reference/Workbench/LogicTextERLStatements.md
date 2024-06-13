@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Extract-Phase Record Logic is used to override the default WRITE for a view. If there are no WRITE statements in any column's Extract Column Logic, there must be at least one WRITE statement in the Extract Record Logic.
+Extract-Phase Record Logic is used to override the default WRITE for a view. If there are no WRITE statements in any column's Extract-Phase Column Logic, there must be at least one WRITE statement in the Extract-Phase Record Logic.
 
 ## Language Constructs
 

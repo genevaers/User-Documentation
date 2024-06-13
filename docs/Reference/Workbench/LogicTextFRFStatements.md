@@ -4,7 +4,7 @@
 
 The function of Format-Phase Record Filter is to include or exclude output records, based upon specific criteria.
 
-Format Phase Record Filters:
+Format-Phase Record Filters:
 
 -  Select records to be written to output.
 -  Are performed last, after all criteria, before the write is performed.

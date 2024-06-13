@@ -4,7 +4,7 @@
 
 The function of Extract-Phase Record Filter is to include or exclude records, based upon specific criteria. The Extract-Phase filtering performs filtering on the input records.
 
-Extract Record Filters:
+Extract-Phase Record Filters:
 
 -  Select source records to process.
 -  Are performed first, before any other criteria.

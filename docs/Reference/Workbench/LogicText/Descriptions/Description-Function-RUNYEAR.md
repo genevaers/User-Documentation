@@ -13,4 +13,4 @@ RUNYEAR returns a CCYY format date based on the run date, plus or minus the numb
 
 The parameter for RUNYEAR is a number of years to add or subtract from the default RUNYEAR. For example, RUNYEAR\(-5\) provides a date five years before the date the view is run.
 
-RUNYEAR can only be used in **Extract Logic**.
+RUNYEAR can only be used in **Extract-Phase Logic**.

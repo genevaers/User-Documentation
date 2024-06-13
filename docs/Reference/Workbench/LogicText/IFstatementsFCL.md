@@ -8,7 +8,7 @@ TABLE OF CONTENTS
 
 {% include_relative Descriptions/Description-IF.md %}
 
-The syntax details of an IF statement in **Format Column Logic** are shown below.
+The syntax details of an IF statement in **Format-Phase Column Logic** are shown below.
 
 {% include_relative SyntaxDiagrams/CMAAHowthesyntaxworksLevel3.md %}
 

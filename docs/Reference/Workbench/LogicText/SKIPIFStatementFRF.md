@@ -17,7 +17,7 @@ TABLE OF CONTENTS
 
 ## Rules for the syntax
 
-Format Record Filter can only have one SELECTIF or one SKIPIF statement.
+A Format-Phase Record Filter can only have one SELECTIF or one SKIPIF statement.
 
 See also topic: [Rules for all Logic Text](../../Workbench/RulesforallLogicText.md) 
 
