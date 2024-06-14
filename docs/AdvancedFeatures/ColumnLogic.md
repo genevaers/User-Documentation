@@ -7,7 +7,7 @@ TABLE OF CONTENTS
 {:toc}  
 
 
-## Extract Phase Column Logic
+## Extract Phase Column Logic 
 
 The Extract phase has visibility into all fields on the input LR, and all fields of Lookup Paths that have the input LR as the source LR of the first step of the lookup path.
 
