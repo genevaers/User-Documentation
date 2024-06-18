@@ -44,5 +44,4 @@ TABLE OF CONTENTS
   
 # Keyboard shortcuts for logic text screens 
   
-See topic [Keyboard Shortcuts Logic Text](Keyboard Shortcuts Logic Text)
-  
+See topic [Keyboard Shortcuts Logic Text](./KeyboardShortcuts.md)  

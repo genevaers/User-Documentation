@@ -1,5 +1,5 @@
 
-# SKIP and SKIPIF in Extract-Phase Record Filters
+## How do I use SKIP and SKIPIF in ERF?
  
 In this logic text, SKIP or SKIPIF define the input records to be excluded in the extract phase.
 

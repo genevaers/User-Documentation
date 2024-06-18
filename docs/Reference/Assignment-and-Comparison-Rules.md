@@ -26,7 +26,9 @@ These data items may be defined with the following Data Types:
 |Sortable Binary|Numeric|\<SBINARY\>|
 |Sortable Packed|Numeric|\<SPACKED\>|
 |Zoned Decimal|Numeric|\<ZONED\>|
-  
+
+For a description of the data types see [Data Types](../AdvancedFeatures/MetaData/DataTypes.md) in [Advanced Features](../AdvancedFeatures/index.md).
+
 The Data Type for a view column can be overridden by prefixing the `COLUMN` keyword with a cast operator.  For example, if a column is defined as Alphanumeric, that Data Type can be changed to Packed Decimal with the following logic text:  
 
     <PACKED>COLUMN = {PACKED_FIELD}  

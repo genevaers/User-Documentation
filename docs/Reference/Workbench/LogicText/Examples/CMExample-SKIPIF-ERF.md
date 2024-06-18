@@ -1,11 +1,11 @@
-# Examples: SKIPIF in Extract Record Filter
+## Examples: SKIPIF in Extract Record Filter
 
 |Example logic text|Meaning|
 |------------------|-------|
 |**SKIPIF(CURRENT({field4})<br>&nbsp;&nbsp;&nbsp;&nbsp;PRIOR({field4}))**|Skip records where the new field4 value is the same as the previous field4. This assumes the input file is sorted into field4 order. This selects only the input records where field4 is a new value \(compared to the previous record\).| 
 |**SKIPIF({field1} > 1000)**|Skip for output those records with field1 greater than 1000. Select all other records. The code at left is a shorthand for:<br>&nbsp;&nbsp;IF {field1} > 1000<br>&nbsp;&nbsp;&nbsp;&nbsp; THEN SKIP<br> &nbsp;&nbsp;ENDIF|
 |**SKIPIF({field2} = "ABC")**|Skip for output those records with field2 equal to "ABC". Select all other records.|
-|**SKIPIF(NOT({field2} = "ABC")**|Skip those output records with field2 not equal to "ABC". Select all other records. This example gives the same result as: <br>&nbsp;&nbsp;SELECTIF({field3} = "ABC")|
+|**SKIPIF(NOT({field2} = "ABC"))**|Skip those output records with field2 not equal to "ABC". Select all other records. This example gives the same result as: <br>&nbsp;&nbsp;SELECTIF({field3} = "ABC")|
 |**SKIPIF({field3} = "A" OR<br>&nbsp;&nbsp;&nbsp;&nbsp;{field3} = "D")**|Skip for output those records with field4 equal to "A" and field5 greater than 10. Select all other records.|
 |**SKIPIF({field4} = "A" AND<br>&nbsp;&nbsp;&nbsp;&nbsp;{field5} > 10)**|Select for output only those records with field3 equal to "A" and field4 greater than 10. Skip all other records.|
 |**SKIPIF({field6} * 2 > {field8}+ 5)**|Skip for output those records with field6 times 2 is greater than field8 plus 5. Select all other records.|

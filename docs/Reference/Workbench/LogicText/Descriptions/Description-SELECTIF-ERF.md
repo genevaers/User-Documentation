@@ -1,5 +1,5 @@
 
-# SELECT and SELECTIF in Extract-Phase Record Filters
+## How do I use SELECT and SELECTIF in ERF?
  
 In this logic text, SELECT or SELECTIF define the input records to be included in the extract phase.
 

@@ -2,15 +2,31 @@
 
 ## Introduction
 
-Format-Phase Column Logic is applied to the columns created in the extract phase. Only columns that are numeric, can have format phase column logic applied to them.
+Format-Phase Column Logic is applied to the columns created in the extract phase. Only columns that are numeric, can have Format-Phase Column Logic applied to them.
 
 ## Language Constructs
 
-[COLUMN and COL.nn statments](./LogicText/ColumnStatementFCL.md)  
+[COLUMN and COL.nn statements](./LogicText/ColumnStatementFCL.md)  
 [IF statements](./LogicText/IFstatementsFCL.md)
+
+## Logical Operators
+
+AND  
+NOT  
+OR  
 
 ## Arithmetic Operators
 
+\+  
+\-  
+\*  
+/  
+
 ## Comparision Operators
 
-## Logical Operators
+\<  
+\>  
+\=  
+\<=  
+\>=  
+\<>  

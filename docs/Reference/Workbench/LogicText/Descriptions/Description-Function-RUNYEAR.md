@@ -1,19 +1,16 @@
 
 # What is RUNYEAR?
 
-Normally, the date PE runs is the "run date".
+The RUNYEAR function is dependent on the **run date**, or execution date of the GenevaERS extract job. The default run date is the date when the extract job is run. You can override the run date with the extract job parameter RUN_DATE, to make the job appear to run on a different date.
 
-The run date can be set to a fixed value in the VDP. See the next section for details of possible values.
+See [GVBMR95 parameters.](../../GVBMR95_Parameter_File_Syntax.html)
 
-RUNYEAR returns a CCYY format date based on the run date. All views in a batch use the same base date for RUNYEAR.
+All views in the extract job batch use the same run date.
 
-# Possible values of the VDP run date
-
-The date that PE runs is the VDP run date unless there is a specific value set in the VDP.  To set a specific value in the VDP see the RUNDATE parameter for the configuration file to MR91 as given in topic [Runbook - MR91 Control File Generator](../../PE Programs/Runbook - MR91 Control File Generator). 
+RUNYEAR returns a CCYY format date based on the run date, plus or minus the number of years specified in the parameter. 
 
 # How do I use RUNYEAR? 
 
-The parameter for RUNYEAR is a number of years to add or delete from the default RUNYEAR. For example, RUNYEAR\(-5\) provides a date five years before the date the view is run.
+The parameter for RUNYEAR is a number of years to add or subtract from the default RUNYEAR. For example, RUNYEAR\(-5\) provides a date five years before the date the view is run.
 
-RUNYEAR can only be used in **Extract Record Filter (ERF)** and **Extract Column Logic (ECL)** text.
-
+RUNYEAR can only be used in **Extract-Phase Logic**.

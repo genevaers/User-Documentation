@@ -6,10 +6,15 @@ The function of Extract-Phase Column Logic is to populate output columns with fi
 
 ## Language Constructs
 
-[COLUMN and COL.nn statments](./LogicText/ColumnStatementECL.md)  
+[COLUMN and COL.nn statements](./LogicText/ColumnStatementECL.md)  
 [IF statements](./LogicText/IFstatementsECL.md)
 
 ## Arithmetic Operators
+
+\+  
+\-  
+\*  
+/  
 
 ## Cast operators
 
@@ -20,11 +25,22 @@ The function of Extract-Phase Column Logic is to populate output columns with fi
 [BEGINS_WITH](./LogicText/BEGINS-WITH-Comparison.md)  
 [CONTAINS](./LogicText/CONTAINS-Comparison.md)  
 [ENDS_WITH](./LogicText/ENDS-WITH-Comparison.md)  
-
+\<  
+\>  
+\=  
+\<=  
+\>=  
+\<>  
 
 ## Logical Operators
 
+AND  
+NOT  
+OR  
+
 ## String Operators
+
+&  
 
 ## Functions
 

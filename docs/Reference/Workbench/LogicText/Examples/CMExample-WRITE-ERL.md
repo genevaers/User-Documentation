@@ -1,4 +1,4 @@
-# Examples: IF with WRITE in Extract Record Logic
+## Examples: IF with WRITE in Extract Record Logic
 
 |Example logic text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Meaning|
 |------------------|-------|

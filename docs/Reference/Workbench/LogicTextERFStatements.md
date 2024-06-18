@@ -4,7 +4,7 @@
 
 The function of Extract-Phase Record Filter is to include or exclude records, based upon specific criteria. The Extract-Phase filtering performs filtering on the input records.
 
-Extract Record Filters:
+Extract-Phase Record Filters:
 
 -  Select source records to process.
 -  Are performed first, before any other criteria.
@@ -18,6 +18,11 @@ Extract Record Filters:
 
 ## Arithmetic Operators
 
+\+  
+\-  
+\*  
+/  
+
 ## Cast operators
 
 [Cast Operators ](./LogicText/Cast-operators.md)
@@ -27,6 +32,12 @@ Extract Record Filters:
 [BEGINS_WITH](./LogicText/BEGINS-WITH-Comparison.md)  
 [CONTAINS](./LogicText/CONTAINS-Comparison.md)  
 [ENDS_WITH](./LogicText/ENDS-WITH-Comparison.md)  
+\<  
+\>  
+\=  
+\<=  
+\>=  
+\<>  
 
 ## Functions
 
@@ -55,6 +66,10 @@ Extract Record Filters:
 
 
 ## Logical Operators
+
+AND  
+NOT  
+OR  
 
 ## Lookup Paths
 

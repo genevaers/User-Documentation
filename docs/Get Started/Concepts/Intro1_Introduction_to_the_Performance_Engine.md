@@ -7,7 +7,7 @@ GenevaERS consists of two software components: a PC-based Workbench and a mainfr
 # Performance Engine Phases
 
 The Performance Engine comprises four phases: 
-- The COMPILE phase, where selected views are converted to an executable form, and logic from multiple views is consolidated and optimized for execution
-- The REFERENCE phase, where values are retrieved from lookup tables and optimized for execution
-- The EXTRACT phase, where data from source files is retrieved, merged with lookup data, and transformed for output, and
-- The optional FORMAT phase, where data is sorted, summarized, and formatted if necessary 
+- The COMPILE phase, where selected views are converted to an executable form, and logic from multiple views is consolidated and optimized for execution.
+- The REFERENCE phase, where values are retrieved from lookup tables and optimized for execution.
+- The EXTRACT phase, where data from source files is retrieved, merged with lookup data, and transformed for output.
+- The optional FORMAT phase, where data is sorted, summarized and formatted, if necessary. 

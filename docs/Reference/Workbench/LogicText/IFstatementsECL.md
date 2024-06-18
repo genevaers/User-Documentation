@@ -1,14 +1,14 @@
 {: .no_toc}
-# Extract-Phase Column Logic 
+## IF statements (Extract-Phase Record Logic)
 
 {: .no_toc}
 TABLE OF CONTENTS 
 1. TOC
 {:toc}  
 
-# IF statements (ECL) 
+{% include_relative Descriptions/Description-IF.md %}
 
-{% include_relative Descriptions/Description-IF-ECA.md %}
+The syntax details of an IF statement in **Extract Record Logic** are shown below.
 
 {% include_relative SyntaxDiagrams/CMAAHowthesyntaxworksLevel3.md %}
 

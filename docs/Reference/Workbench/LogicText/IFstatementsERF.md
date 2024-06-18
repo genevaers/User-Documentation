@@ -1,14 +1,14 @@
 {: .no_toc}
-# Extract-Phase Record Filter 
+# If statements (Extract-Phase Record Filter) 
 
 {: .no_toc}
 TABLE OF CONTENTS 
 1. TOC
 {:toc}  
 
-# IF statements (ERF) 
+{% include_relative Descriptions/Description-IF.md %}
 
-{% include_relative Descriptions/Description-IF-ERF.md %}
+The syntax details of an IF statement in **Extract Record Filter** are shown below.
 
 {% include_relative SyntaxDiagrams/CMAAHowthesyntaxworksLevel3.md %}
 

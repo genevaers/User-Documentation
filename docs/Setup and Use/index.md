@@ -17,7 +17,7 @@ There are two main components to install. The PC based Workbench and the mainfra
 
 The examples here are based on the Demo data. If you haven't installed the Demo, then it is highly recommended you do. [Find the Demo here.](https://genevaers.github.io/Demo/)
 
-The following Workbench tasks are based on the Workbench user having **system administrator** rights. For more information on users and access rights go to [Workbench Users, Groups and Access rights.](../AdvancedFeatures/Access.md)
+The following Workbench tasks are based on the Workbench user having **system administrator** rights. For more information on users and access rights go to [Workbench security overview.](../AdvancedFeatures/SecurityOverview.md)
 
 **Import the Demo XML into the Workbench in a new environment**
 
@@ -26,7 +26,7 @@ The following Workbench tasks are based on the Workbench user having **system ad
 3. Select **Administration** > **New** > **Environment**
 4. In the **Name** field type **DemoEnv**
 5. Uncheck **Generate a Control Record**
-6. Save using either **cntl+s**, or click the save symbol on the tool bar.
+6. Save the environment definition **File** > **Save**
 7. Select **Administration** > **Import**
 8. Type the following in the Import Utility window
     - Target Environment: **DemoEnv**

@@ -1,19 +1,18 @@
 
-# What is RUNDAY?
+## What is RUNDAY?
 
-Normally, the date PE runs is the "run date".
+The RUNDAY function is dependent on the **run date**, or execution date of the GenevaERS extract job. The default run date is the date when the extract job is run. You can override the run date with the extract job parameter RUN_DATE, to make the job appear to run on a different date.
 
-The run date can be set to a fixed value in the VDP. See the next section for details of possible values.
+See [GVBMR95 parameters.](../../GVBMR95_Parameter_File_Syntax.html)
 
-RUNDAY returns a CCYYMMDD format date based on the run date. All views in the batch use the same base date for RUNDAY.
+All views in the extract job batch use the same run date.
 
-# Possible values of the VDP run date
+RUNDAY returns a CCYYMMDD format date based on the run date, plus or minus the number of days specified in the parameter.
 
-The date that PE runs is the VDP run date unless there is a specific value set in the VDP.  To set a specific value in the VDP see the RUNDATE parameter for the configuration file to MR91 as given in topic [Runbook - MR91 Control File Generator](../../PE Programs/Runbook - MR91 Control File Generator). 
+This date can be used for setting column values, for comparisons, and evaluating lookup "effective dates". 
 
-# How do I use RUNDAY? 
+## How do I use RUNDAY? 
 
-The parameter for RUNDAY is a number of days to add or delete from the default RUNDAY. For example, RUNDAY\(-5\) provides the day five days before the date the view is run.
+The parameter for RUNDAY is a number of days to add or subtract from the default RUNDAY. For example, RUNDAY\(-5\) provides the date five days before the date the view is run.
 
-RUNDAY can only be used in **Extract Record Filter (ERF)** and **Extract Column Logic (ECL)** text.
-
+RUNDAY can only be used in **Extract-Phase Logic**.
