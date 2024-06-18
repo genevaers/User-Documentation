@@ -27,7 +27,7 @@ Views define the following:
 
 Views are classified by the output required, which determines the jobs, or phases, to be executed.
 
-- Extract-only views  
+- Extract-Phase only views  
   Only the extract job will be run. The source records can be filtered, output layout can be defined using column, lookups can be used, output can be written to one or many files. The output record format is fixed-width fields, or can simply be set to match the source record layout.
 - Summary views  
   After the extract job, the format job will be run to sort and summarise the output from the extract job. Calculations and logic can be applied to summarised columns. The output can be fixed-width fields, delimited fields, or in a report format with headers and footers.  See [Overview of format views](./OverviewFormatViews.md).
@@ -36,7 +36,7 @@ Views are classified by the output required, which determines the jobs, or phase
 
 Here is a quick summary of the tasks that need to be completed to define a view. See [Create Views](./MetaData/CreateView.md) and [Create Summary Views](./MetaData/CreateSummaryView.md) for a detailed descriptions.
 
-1) Select the kind of view you want; extract only, sorted and summarised, delimited output, a report, and create a view with the required options. 
+1) Select the kind of view you want; detailed, sorted and summarised, delimited output, a report. [Create a view](./MetaData/CreateView.md) with the required options.  
 2) Define the inputs - see [Input and Output](./OverviewInputOutput.md) and [Create LR, LF, PF metatdata.](./MetaData/CreateLRLFPFs.md).  
 3) Define the output record format by defining columns - see [Column Assignment](./ColumnLogic.md) and [Data Types](./MetaData/DataTypes.md).  
 4) If lookups are required, define the Lookup paths [Overview of lookup paths](./OverviewLookupPaths.md) and [Create Lookup Paths](./MetaData/CreateLookupPath.md).  
@@ -46,24 +46,22 @@ Here is a quick summary of the tasks that need to be completed to define a view.
 If the view is to be sorted (has a format-phase):  
 
 1) Define the sort key. This could be composed of multiple columns.  
-2) Specify the output file for the format-phase, any Format-Phase Record filters.    
-3) Define any Format-Phase Column Logic.   
+2) Specify any Format-Phase Record filters required.  
+3) Specify an override to the default output file for the format-phase, if required.  
+4) Define any Format-Phase Column Logic.   
    
 If summarisation is required:  
 
-1)  Switch on Record Aggregation (FRA), and define the Record and/or Group Aggregation functions.  
+1)  Switch on Record Aggregation (FRA)
+2)  Define the Record and/or Group Aggregation functions.  
 
 If a Report is required:
 
-1)  Specify Report headers and footers.
+1)  Specify Report headers and footers.  
 2)  Specify any Sort Key Titles.
 
-Other options include creating and specifying User defined exits.  See [User Exits.](./OverviewUserExits.md)
-
+Other options include creating and specifying user defined exits.  See [User Exits.](./OverviewUserExits.md)
 
 ## Activating a view
 
-During creation of a view, or immediately after modification of any part of a view, the view becomes "Inactive".  The view must be activated before the view can be run in the Performance Engine. Activation means all parts of the view are validated. The validation displays any error messages that prevent the view becoming 'Active".
-
-
-See your system or environment administrator if you need access to views or view folders in your environment, or more rights to create these items.
+During creation of a view, or immediately after modification of any part of a view, the view becomes "Inactive".  The view must be activated before the view can be run in the Performance Engine. Activation means all parts of the view are validated. The validation displays any error messages that prevent the view becoming "Active".

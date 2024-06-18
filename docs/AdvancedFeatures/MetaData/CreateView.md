@@ -1,22 +1,22 @@
 {: .no_toc}
-# Views
+# Create Views
 
 TABLE OF CONTENTS 
 1. TOC
 {:toc}  
 
-A view is a GenevaERS metadata component that defines a data transformation. See [Overview of views](../OverviewViews.md) and [overview of format views](../OverviewFormatViews.md) for a detailed description.
+A view is a GenevaERS metadata component that defines a data transformation. See [Overview of views](../OverviewViews.md) and [overview of summary views](../OverviewFormatViews.md) for a detailed description.
 
-Views can be grouped together in **View Folders**. To list existing views:  
+In the workbench views can be grouped together in **View Folders**. To list existing views:  
 
 - Click **View Folders** > **ALL_VIEWS** or,
 - Click **View Folders** > *folder-name* in the Navigator pane.
 
-The views are shown in the metadata list at the bottom of the screen.
+The views are shown in the metadata list at the bottom of the workbench screen.
 
 ## Create a view - Extract only with column defined output
 
-Creating an Extract-Phase Output view is described here. See [CreateFormatView]() for how to create a Format-Phase Output view.
+Creating an Extract-Phase Output view is described here.  
 
 To create a new view:
 
@@ -140,3 +140,7 @@ To activate the view, use any of these methods:
 Activation invokes the compiler which checks for errors and warnings.
 
 When the view is active, save it to preserve this active state. The view is now ready to be run.
+
+## Summary views
+
+Summary views require a format-phase to be defined. See [create summary view](./CreateSummaryView.md) 

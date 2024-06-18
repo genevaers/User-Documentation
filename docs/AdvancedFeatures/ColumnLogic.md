@@ -29,7 +29,7 @@ An alternative approach to assigning values to a column is to use column logic.
 1. Click in the column's **View Sources** cell  
   In the Column Source Properties area:
 2. Select **Column Source Type** > **Column Logic** 
-3. To create and edit the column logic click in **Column Source Value**, then click in the icon on the right side.  
+3. To create and edit the column logic click in **Column Source Value**, then click the icon on the right side ![Three dot icon](../images/Icon_Three_Dots_01.gif).  
 This opens the **Extract-Phase Column Logic** tab (**ECL** tab) in the Editor Area.  
   
 Opening the **ECL** tab also opens the **Logic Text Helper**, which enables you to place keywords, field names, and column numbers into logic for column assignment.  
@@ -123,7 +123,7 @@ This logic text is part of a view and is associated with a column during the for
 Note that the view must have a format phase for **Format-Phase column logic** to be enabled.
 2. Ensure you are on the **View Editor** tab. If the **View Properties** tab is displayed, click the **Show Grid / Properties** button. <img src="../images/Icon_Show_Grid_Props_01.gif" alt="Missing image" width="35" height="35"/> or press F9 or select **Edit -\> Show Grid/Properties**.
 3. Choose a numeric column that is not part of the sort key. 
-4. Format phase column logic is accessed by double-clicking in the **Format-Phase Column Logic** cell, or clicking in the cell to display the icon , then clicking the icon ![Three dot icon](../images/Icon_Three_Dots_01.gif).  
+4. Format phase column logic is accessed by double-clicking in the **Format-Phase Column Logic** cell, or clicking in the cell, then clicking the icon ![Three dot icon](../images/Icon_Three_Dots_01.gif).  
 This opens the **Format-Phase Column Logic** tab (**FCL** tab) in the Editor Area.  
   
 Opening the **FCL** tab also opens the **Logic Text Helper**, which enables you to place keywords and column numbers into logic for column assignment.  

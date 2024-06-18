@@ -1,6 +1,6 @@
 ## Example 5: Creating a summary view
 
-In this example you will create a view that reads the order item files, then calculates the total number of products per order and the total price of the order. This view requires a format phase to be defined, which will execute the summarisation. For this example you will copy and modify the view created in [Example 1](./NewView.md).
+In this example you will create a view that reads the order item files, then calculates the total number of products per order and the total price of the order. This view requires a format phase to be defined, which will do the summarisation. For this example you will copy and modify the view created in [Example 1](./NewView.md).
 
 1. Open the **CustomerOrders** view by double-clicking the view listed in the Metadata List Area
 2. Select **File** > **Save As** 
@@ -50,7 +50,7 @@ or insert a new column using the buttons in View Editor toolbar.
 3. Click the green cell at the bottom of the new column.  
 The Column Source Properties frame opens on the right.  
 4.  From the **Column Source Type** list, select **Column Logic**
-5.  To create and edit the column logic click in **Column Source Value**, then click in the icon on the right side.  
+5.  To create and edit the column logic click in **Column Source Value**, click the icon on the right side ![Three dot icon](../../images/Icon_Three_Dots_01.gif).   
 This opens the **Extract-Phase Column Logic** tab (**ECL** tab) in the Editor Area.  
   
 Opening the **ECL** tab also opens the **Logic Text Helper**, which enables you to place keywords, field names, and column numbers into logic for column assignment.
