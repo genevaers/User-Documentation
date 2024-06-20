@@ -1,9 +1,20 @@
-## GenevaERS Overview
+## Configure GenevaERS to do things
 
-GenevaERS consists of two software components: the PC-based Workbench and the mainframe-based batch process known as the Performance Engine. Developers use the Workbench to build applications that are stored in a metadata repository in an IBM  Db2 database or a PostgreSQL database. These applications are then run by the Performance Engine, which reads data from source files or databases, transforms it, and writes it to output files.
+The Workbench is how you tell GenevaERS what needs to be done.
+
+Like most things in IT, it is a matter of:
+1.  Define inputs
+2.  Define processing
+3.  Define outputs
+
+A collection of the three points above is called a "**view**".  A view shows what your requested processing for GenevaERS.
+
+Running GenevaERS is a matter of preparing views in the Workbench and then running the views in the Performance Engine. 
+
+The Performance Engine is the part of GenevaERS that actually produces the results.
 
 ## Metadata
-Several types of metadata make up a GenevaERS application. The most common are 
+Begin by using the Workbench to define metadata. The most common are 
 - the environment definition, 
 - the physical file definition (or PF), 
 - the logical file definition (or LF), 
