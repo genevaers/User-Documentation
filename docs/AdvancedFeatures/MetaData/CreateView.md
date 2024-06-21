@@ -21,14 +21,8 @@ Creating an Extract-Phase Output view is described here.
 To create a new view:
 
 1. Select **Administration** > **New** > **View** from the menu.  
-View information is displayed on two separate screens:
 
-- The View Properties screen, where you can modify information that applies to the whole view.  
-- The View Editor screen, where you can define specific data transformations.
-
-To toggle between the View Properties screen and the View Editor screen,  
-- press **F9**,  
-- or click the **Show Grid / Properties** button in the Editor area toolbar.
+{% include_relative includes/ViewToggle.md %}
 
 The first screen presented is the View Properties screen, which contains the sub-tab **General**.
 
@@ -36,10 +30,11 @@ The first screen presented is the View Properties screen, which contains the sub
 2. In the **Control Record** field select the control record.
 3. Select the **Default Output Format** required. This will affect the other sub-tabs available to you. For this case, an Extract only view with column defined output, select **Extract-Phase Output** > **Fixed-Width Fields**.
 4. You can select an output LR to pre-define columns by using **Create View based on Output Logical Record**.  This option is only available before the first save. It could be useful if the output of this view is to become the source of another view via a pipe or a token.
+
+![New View Properties General tab.](../../images/CreateViewNew.png)
+
 5. Select the **View Properties** sub-tab **Extract Phase**. Here you have the option to limit the number of output records written with the **Extract-Phase Output Limit**
 6. Save the view **File** > **Save**  
-
-![New View Properties General tab.](../../images/CreateViewExtract1.png)
 
 When you save a new view, the view ID is assigned by the Workbench and is not editable.
 
@@ -83,7 +78,7 @@ You can specify your own output destination. To do this:
 3. From the **Extract-Phase Output** > **Physical File** list select the PF you want to write to.
 4. Save the view **File** > **Save**
 
-You will see that the WRITE statement in the **Read Logic** field has changed.
+You will see that the WRITE statement in the **Record Logic** field has changed.
 
 You can also replace the WRITE statement with Extract Record Logic. For example you may want to have logic that directs some output to one file and the rest to another file, depending on some condition. See [Extract-Phase Record Logic](../../Reference/Workbench/LogicTextERLStatements.md) for more details.
 
@@ -109,24 +104,23 @@ Another type of Extract only view is a copy view. This view has no columns as th
 To define a copy view:
 
 1. Select **Administration** > **New** > **View** from the menu.  
-View information is displayed on two separate screens:
 
-- The View Properties screen, where you can modify information that applies to the whole view.  
-- The View Editor screen, where you can define specific data transformations.
-
-To toggle between the View Properties screen and the View Editor screen,  
-- press **F9**,  
-- or click the **Show Grid / Properties** button in the Editor area toolbar.
+{% include_relative includes/ViewToggle.md %}
 
 The first screen presented is the View Properties screen, which contains the sub-tab **General**.
 
 1. In the **Name** field  type a descriptive name.
 2. In the **Control Record** field select the control record.
 3. Select the **Default Output Format** required. This will affect the other sub-tabs available to you. For this case, an Extract only copy view, select **Extract-Phase Output** > **Source-Record Layout**.
-5. Select the **View Properties** sub-tab **Extract Phase**. Here you have the option to limit the number of output records written with the **Extract-Phase Output Limit**
-6. Save the view **File** > **Save**  
 
-Next define the [view source](#view-source), as in the previous case. A copy view has no columns.
+![New View Properties General tab.](../../images/CreateViewCopy.png)
+Note that 'Create View based on Output Logical Record' is not selectable in this case.
+
+4. Select the **View Properties** sub-tab **Extract Phase**. Here you have the option to limit the number of output records written with the **Extract-Phase Output Limit**
+5. Save the view **File** > **Save**  
+
+Next define the [view source](#view-source), as in the previous case.  
+A copy view has no columns.
 
 You can optionally define [output destinations](#output-destinations), and a [record filter](#defining-a-filter).
 
@@ -143,4 +137,4 @@ When the view is active, save it to preserve this active state. The view is now 
 
 ## Summary views
 
-Summary views require a format-phase to be defined. See [create summary view](./CreateSummaryView.md) 
+Summary views require a format phase to be defined. See [create summary views](./CreateSummaryView.md) for details of how to create the different types of summary views.

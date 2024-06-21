@@ -21,5 +21,6 @@
 [Create Users, Groups and Permissions](./MetaData/CreateUsersGroupsPerm.md)  
 [Create LRs, LFs and PFs ](./MetaData/CreateLRLFPFs.md)  
 [Create Views](./MetaData/CreateView.md)  
+[Create Summary Views](./MetaData/CreateSummaryView.md)     
 [Create Lookup Paths](./MetaData/CreateLookupPath.md)  
 [Create Record filters](./MetaData/CreateRecordFilters.md)
