@@ -1,30 +1,40 @@
-## Configure GenevaERS to do things
+## Configure GenevaERS
 
-The Workbench is how you tell GenevaERS what needs to be done.
+The GenevaERS Workbench is used to define the data analysis and transformation you require the GenevaERS Performance Engine to do.
 
-Like most things in IT, it is a matter of:
-1.  Define inputs
-2.  Define processing
-3.  Define outputs
+To configure GenevaERS you define:  
+1.  Inputs
+2.  Processing
+3.  Outputs
 
-A collection of the three points above is called a "**view**".  A view shows what your requested processing for GenevaERS.
+A collection of the three points above is called a "**view**". These are all defined using metadata in the workbench.
 
-Running GenevaERS is a matter of preparing views in the Workbench and then running the views in the Performance Engine. 
+Running GenevaERS is a matter of preparing views in the Workbench and then running the views in the Performance Engine. The Performance Engine is the part of GenevaERS that produces the results.
 
-The Performance Engine is the part of GenevaERS that actually produces the results.
+## Workbench Metadata
+Begin by using the Workbench to define the metadata compenents listed above.
 
-## Metadata
-Begin by using the Workbench to define metadata. The most common are 
-- the environment definition, 
+Inputs are defined using:
 - the physical file definition (or PF), 
 - the logical file definition (or LF), 
-- the logical record definition (or LR), 
-- the view definition, and the view folder.  
+- the logical record definition (or LR) 
+
+The processing is defined using:
+- the view definition
+
+Outputs are defined using:
+- the physical file definition (or PF), 
+- the logical file definition (or LF)
+
+Views can be grouped using:
+- Environment definitions,
+- View folders
+
+An environment definition describes a logical collection of metadata within the GenevaERS Workbench. Typical types of environments include development, production, or training environments. Access to an environment can be restricted to a certain set of users.  View folders are used to group views within an environment.
 
 Note that, when discussing GenevaERS metadata, we often omit the word definition, because it is usually clear from the context whether we mean the metadata or the entity it refers to.  
 
-An environment definition describes a logical collection of metadata within the GenevaERS Workbench. Typical types of environments include development, production, or training environments. Access to an environment can be restricted to a certain set of users.  
-
+## File definitions
 Some major components of the metadata include:
 - A physical file definition, or PF, describes a data source. Examples include a customer file in a Db2 database, or an order file in a sequential file. 
 
@@ -47,9 +57,10 @@ A view definition describes a data transformation. It is analogous to a program 
 
 Views are often grouped together into view folders for ease of maintenance. View folders are often named for a particular developer or function. Security can be applied to view folders to prevent unauthorized access.  
 
-## Workbench
+## Workbench layout
 
-The GenevaERS Workbench is used to add, change, and delete GenevaERS metadata. 
+The GenevaERS Workbench is used to add, change, and delete GenevaERS metadata.  
+
 ![Diagram of Workbench layout.](../../images/Module1-Introduction-to-Views/Module1_Slide9.jpeg) 
 
 
@@ -60,3 +71,5 @@ It contains a menu and toolbar, and consists of multiple display areas, or frame
 - The Metadata List area displays a list of items for the selected metadata type.  
 
 - And the Editor area is the part of the screen where you modify metadata items.
+
+How to add and modify the different types of metadata in the workbench are described in [Setup and Use](../../Setup%20and%20Use/index.md) and [Advanced Features](../../AdvancedFeatures/index.md).
