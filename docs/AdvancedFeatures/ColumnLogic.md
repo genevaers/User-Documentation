@@ -113,7 +113,7 @@ See [Extract-Phase Column Logic Reference](../Reference/Workbench/LogicTextECLSt
 
 ## Format-Phase Column Logic
 
-The format phase is optional, but if the view has a format phase, column logic can be performed in this phase using column values assigned in the Extract process.  Format phase logic refers to columns rather than field names. The only columns available for format phase column logic are those with a numeric data type (i.e. not alphanumeric).
+The format phase is optional, but if the view has a format phase, column logic can be performed in this phase using column values assigned in the Extract process.  Format-phase logic refers to columns rather than field names. The only columns available for format-phase column logic are those with a numeric data type (i.e. not alphanumeric).
 
 ### Creating Format-Phase Column Logic text
 
@@ -123,15 +123,15 @@ This logic text is part of a view and is associated with a column during the for
 Note that the view must have a format phase for **Format-Phase column logic** to be enabled.
 2. Ensure you are on the **View Editor** tab. If the **View Properties** tab is displayed, click the **Show Grid / Properties** button. <img src="../images/Icon_Show_Grid_Props_01.gif" alt="Missing image" width="35" height="35"/> or press F9 or select **Edit -\> Show Grid/Properties**.
 3. Choose a numeric column that is not part of the sort key. 
-4. Format phase column logic is accessed by double-clicking in the **Format-Phase Column Logic** cell, or clicking in the cell, then clicking the icon ![Three dot icon](../images/Icon_Three_Dots_01.gif).  
+4. Format-phase column logic is accessed by double-clicking in the **Format-Phase Column Logic** cell, or clicking in the cell, then clicking the icon ![Three dot icon](../images/Icon_Three_Dots_01.gif).  
 This opens the **Format-Phase Column Logic** tab (**FCL** tab) in the Editor Area.  
   
 Opening the **FCL** tab also opens the **Logic Text Helper**, which enables you to place keywords and column numbers into logic for column assignment.  
 
-The following is some example format phase column logic within column 4. 
+The following is some example format-phase column logic. 
 
     COLUMN = COL.1 - COL.2 - COL.3
   
-![Adding Format-Phase Column Logic.](../images/FormatColLogic1.png)
+![Adding Format-Phase Column Logic.](../images/FormatColLogic3.png)
 
 See [Format-Phase Column Logic Reference](../Reference/Workbench/LogicTextFCLStatements.md) for detailed descriptions of the logic.

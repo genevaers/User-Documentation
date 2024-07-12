@@ -37,28 +37,41 @@ Views are classified by the output required, which determines the jobs, or phase
 Here is a quick summary of the tasks that need to be completed to define a view. See [Create Views](./MetaData/CreateView.md) and [Create Summary Views](./MetaData/CreateSummaryView.md) for a detailed descriptions.
 
 1) Select the kind of view you want; detailed, sorted and summarised, delimited output, a report. [Create a view](./MetaData/CreateView.md) with the required options.  
-2) Define the inputs - see [Input and Output](./OverviewInputOutput.md) and [Create LR, LF, PF metatdata.](./MetaData/CreateLRLFPFs.md).  
+2) Define the inputs - see [Input and Output](./OverviewInputOutput.md) and [Create LR, LF, PF metatdata](./MetaData/CreateLRLFPFs.md).  
 3) Define the output record format by defining columns - see [Column Assignment](./ColumnLogic.md) and [Data Types](./MetaData/DataTypes.md).  
 4) If lookups are required, define the Lookup paths [Overview of lookup paths](./OverviewLookupPaths.md) and [Create Lookup Paths](./MetaData/CreateLookupPath.md).  
 5) Define any input filters required - see [Overview of Record Filters](./OverviewRecordFilters.md) and [Create Record Filters](./MetaData/CreateRecordFilters.md).  
 6) Define any overrides to the default output destination, or final output record processing - see [Extract-Phase Record Logic](../Reference/Workbench/LogicTextERLStatements.md).  
     
-If the view is to be sorted (has a format-phase):  
+Note:  All the following will require an extract and format phase to be run at execution time.
+
+### If the output is to be sorted:  
 
 1) Define the sort key. This could be composed of multiple columns.  
 2) Specify any Format-Phase Record filters required.  
 3) Specify an override to the default output file for the format-phase, if required.  
 4) Define any Format-Phase Column Logic.   
    
-If summarisation is required:  
+### If summarisation is required:  
 
-1)  Switch on Record Aggregation (FRA)
-2)  Define the Record and/or Group Aggregation functions.  
+1)  The output must be sorted, so complete [If the output is to be sorted](#if-the-output-is-to-be-sorted) tasks.  
+2)  Switch on Record Aggregation (FRA).  
+3)  Define the Record Aggregation functions.  
 
-If a Report is required:
+### If delimited output is required:
 
-1)  Specify Report headers and footers.  
-2)  Specify any Sort Key Titles.
+1)  The output must be sorted, so complete [If the output is to be sorted](#if-the-output-is-to-be-sorted) tasks.  
+2)  If summarisation is required, complete [If summarisation is required](#if-summarisation-is-required) tasks.   
+3)  Specify if header row is required.  
+4)  Specify delimiter characters.
+
+### If a report is required:
+
+1)  The output must be sorted, so complete [If the output is to be sorted](#if-the-output-is-to-be-sorted) tasks.  
+2)  If summarisation is required, complete [If summarisation is required](#if-summarisation-is-required) tasks.   
+3)  Define Group Aggregation functions if required.  
+4)  Specify Report headers and footers.  
+5)  Specify any Sort Key Titles.  
 
 Other options include creating and specifying user defined exits.  See [User Exits.](./OverviewUserExits.md)
 

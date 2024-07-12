@@ -6,17 +6,7 @@ In this example you will create a view that reads the order item files, then cal
 2. Select **File** > **Save As** 
 3. In the **New Name** field type **CustomerOrdersSum**, and click **Save**
 
----
-   View information is displayed on two separate screens:
-
-   The **View Properties** screen, where you can modify information that applies to the whole view.  
-   The **View Editor** screen, where you can define specific data transformations.
-
-   To toggle between the View Properties screen and the View Editor screen,  
-   - press **F9**,  
-   - or click the **Show Grid / Properties** button in the Editor area toolbar.
-
----  
+{% include ViewToggle.md %}
 
 This view will aggregate records for each order, so records must be sorted by the order ID. The format phase does the sorting and aggregating, and requires a **sort key** to be defined. 
 
@@ -24,15 +14,15 @@ Modify the view to include a format phase with aggregation.
 
 1. Toggle to the View Properties screen.
 2. On the **General** tab click **Format-Phase Output** with **Fixed-Width Fields** (under **Default Output Format**).   
-A new tab will appear labelled **Format Phase**
-1. On the **Format Phase** tab click **Aggregate all records with identical sort keys** (under Format-Phase Record Aggregation (FRA)).
+A new tab will appear labelled **Format Phase**.
+1. On the **Format Phase** tab click **Aggregate all records with identical sort keys** (under **Format-Phase Record Aggregation (FRA)**).
 
 Define the ORDER_ID as the sort key.
 
 1. Toggle to the View Editor screen.
-2. Select the column with the column source **ORDER_ID**
-3. Select **Edit** > **Make Sort Key**
-4. Save the view **File** > **Save**   
+2. Select the column with the column source **ORDER_ID**.
+3. Select **Edit** > **Make Sort Key**.
+4. Save the view **File** > **Save**.   
 
 Define the columns.
 
@@ -62,7 +52,8 @@ Opening the **ECL** tab also opens the **Logic Text Helper**, which enables you 
 7. Save the Column Logic **File** > **Save**.
 8. Close the **Extract-Phase Column Logic** tab.
 
-Change the Data Type to Zoned Decimal with Length 8. All the following applies to the column just added:
+Change the Data Type to Zoned Decimal with Length 8, and add a column header.  
+All the following applies to the column just added:
 9. Click on the **Data Type** cell, and select **Zoned Decimal** from the list. 
 10. Click on the **Length** cell, and type **8** 
 11. Click on the **Decimal Places** cell, and type **2** 
@@ -92,7 +83,7 @@ You can specify your own output destination. To do this for a Format-Phase view:
 
 ![View properties tab, showing Format Phase properties.](../../images/FormatViewProperties.png)
 
-For more information on how to define your own logical file and physical file definitions look at [Create LR, LF, and PF metatdata](../../AdvancedFeatures/MetaData/CreateLRLFPFs.md) in Advanced Features.
+For more information on how to define your own logical file and physical file definitions look at [Create LR, LF, and PF metatdata](../../AdvancedFeatures/MetaData/CreateLRLFPFs.md) in [Advanced Features](../../AdvancedFeatures/index.md).
 
 ### Activate the View 
 

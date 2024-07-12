@@ -22,7 +22,7 @@ To create a new view:
 
 1. Select **Administration** > **New** > **View** from the menu.  
 
-{% include_relative includes/ViewToggle.md %}
+{% include ViewToggle.md %}
 
 The first screen presented is the View Properties screen, which contains the sub-tab **General**.
 
@@ -51,7 +51,7 @@ For information on how to define your own logical record, logical file and physi
 
 ### Adding columns
 
-Next define the output layout by adding columns to the view. The columns contain the characteristics of the output such as data type, the length, and the alignment, such as left, right, or center. They can also contain logic and lookup fields.
+Next define the output layout by adding columns to the view. The columns contain the characteristics of the output such as data type, the length, and the alignment, such as left, right, or center. They can also contain constants, logic and lookup fields.
 
 10. Select **Edit** > **Insert Column After**  
 or you can insert a new column using the View Editor toolbar in the top right of the Editor Area. The arrow icons are used to insert new columns, or to move columns.  
@@ -105,7 +105,7 @@ To define a copy view:
 
 1. Select **Administration** > **New** > **View** from the menu.  
 
-{% include_relative includes/ViewToggle.md %}
+{% include ViewToggle.md %}
 
 The first screen presented is the View Properties screen, which contains the sub-tab **General**.
 
