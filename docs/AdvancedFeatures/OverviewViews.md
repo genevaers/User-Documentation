@@ -9,18 +9,18 @@ TABLE OF CONTENTS
 
 A GenevaERS view definition describes a data transformation. It is analogous to a program or a query. Views are the basic units of work that are performed by the Performance Engine. A view describes input files, processing specifications and output files. Views are prepared in the GenevaERS Workbench.
 
-Views are often grouped together into view folders for ease of maintenance. View folders can be named for a particular developer or function. Security can be applied to view folders to prevent unauthorized access. Groups of views can be executed at one time. This is sometimes refered to as a pass.
+Views are often grouped together into view folders for ease of maintenance. View folders can be named for a particular developer or function. Security can be applied to view folders to prevent unauthorized access. Groups of views can be executed at one time. This is sometimes referred to as a pass.
 
 Views define the following:
 
 -   The **input files** called view source files.
--   The **output type** which can be detailed data, sorted and summarised data, delimited data (for example a CSV file), a report, or input to another view.
+-   The **output type** which can be detailed data, sorted and summarized data, delimited data (for example a CSV file), a report, or input to another view.
 -   The **output format** defined using columns. Each column is one of the following:
     -   a source file field,
     -   a constant,
     -   a formula which is implemented in **logic text**,
     -   a lookup field which uses a **lookup path**.
-    -   If the view is to be summarised and sorted, then at least one column must be part of the **sort key.**
+    -   If the view is to be summarized and sorted, then at least one column must be part of the **sort key.**
 -   The **output file(s)** 
 
 ## Types of view
@@ -30,13 +30,13 @@ Views are classified by the output required, which determines the jobs, or phase
 - Extract-Phase only views  
   Only the extract job will be run. The source records can be filtered, output layout can be defined using column, lookups can be used, output can be written to one or many files. The output record format is fixed-width fields, or can simply be set to match the source record layout.
 - Summary views  
-  After the extract job, the format job will be run to sort and summarise the output from the extract job. Calculations and logic can be applied to summarised columns. The output can be fixed-width fields, delimited fields, or in a report format with headers and footers.  See [Overview of format views](./OverviewFormatViews.md).
+  After the extract job, the format job will be run to sort and summarize the output from the extract job. Calculations and logic can be applied to summarized columns. The output can be fixed-width fields, delimited fields, or in a report format with headers and footers.  See [Overview of summary views](./OverviewFormatViews.md).
 
 ## Creating views in the workbench
 
-Here is a quick summary of the tasks that need to be completed to define a view. See [Create Views](./MetaData/CreateView.md) and [Create Summary Views](./MetaData/CreateSummaryView.md) for a detailed descriptions.
+Here is a quick summary of the tasks that need to be completed to define a view. See [Create Views](./MetaData/CreateView.md) for a detailed description.
 
-1) Select the kind of view you want; detailed, sorted and summarised, delimited output, a report. [Create a view](./MetaData/CreateView.md) with the required options.  
+1) Select the kind of view you want; detailed, sorted and summarized, delimited output, a report. [Create a view](./MetaData/CreateView.md) with the required options.  
 2) Define the inputs - see [Input and Output](./OverviewInputOutput.md) and [Create LR, LF, PF metatdata](./MetaData/CreateLRLFPFs.md).  
 3) Define the output record format by defining columns - see [Column Assignment](./ColumnLogic.md) and [Data Types](./MetaData/DataTypes.md).  
 4) If lookups are required, define the Lookup paths [Overview of lookup paths](./OverviewLookupPaths.md) and [Create Lookup Paths](./MetaData/CreateLookupPath.md).  
@@ -52,7 +52,7 @@ Note:  All the following will require an extract and format phase to be run at e
 3) Specify an override to the default output file for the format-phase, if required.  
 4) Define any Format-Phase Column Logic.   
    
-### If summarisation is required:  
+### If summarization is required:  
 
 1)  The output must be sorted, so complete [If the output is to be sorted](#if-the-output-is-to-be-sorted) tasks.  
 2)  Switch on Record Aggregation (FRA).  
@@ -61,14 +61,14 @@ Note:  All the following will require an extract and format phase to be run at e
 ### If delimited output is required:
 
 1)  The output must be sorted, so complete [If the output is to be sorted](#if-the-output-is-to-be-sorted) tasks.  
-2)  If summarisation is required, complete [If summarisation is required](#if-summarisation-is-required) tasks.   
+2)  If summarization is required, complete [If summarization is required](#if-summarization-is-required) tasks.   
 3)  Specify if header row is required.  
 4)  Specify delimiter characters.
 
 ### If a report is required:
 
 1)  The output must be sorted, so complete [If the output is to be sorted](#if-the-output-is-to-be-sorted) tasks.  
-2)  If summarisation is required, complete [If summarisation is required](#if-summarisation-is-required) tasks.   
+2)  If summarization is required, complete [If summarization is required](#if-summarization-is-required) tasks.   
 3)  Define Group Aggregation functions if required.  
 4)  Specify Report headers and footers.  
 5)  Specify any Sort Key Titles.  

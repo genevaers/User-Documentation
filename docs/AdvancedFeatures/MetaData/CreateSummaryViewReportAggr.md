@@ -7,8 +7,7 @@ TABLE OF CONTENTS
 
 ## Create a summary view - Report
 
-To create output that is delimited, the format phase is required. 
-To define a view that will write delimited output:
+To define a view that will write report style output:
 
 ### Add new view definition
 
@@ -20,16 +19,14 @@ The first screen presented is the View Properties screen, which contains the sub
 
 1. In the **Name** field  type a descriptive name.
 2. In the **Control Record** field select the control record.
-3. Select the **Default Output Format** required. This will affect the other sub-tabs available to you. For this case, a summary view with delimited output, select **Format-Phase Output** > **Delimited Fields**.
+3. Select the **Default Output Format** required. This will affect the other sub-tabs available to you. For this case, a summary view with report style output, select **Format-Phase Output** > **Report**.
 4. You can select an output LR to pre-define columns by using **Create View based on Output Logical Record**.  This option is only available before the first save. It could be useful if the output of this view is to become the source of another view via a pipe or a token.
-5. Select the **View Properties** sub-tab **Delimited**.  
-If a header row is required, tick **Include a header row**.  
-To choose the character to delimit the fields, select from the **Field** drop down menu.  
-To choose the character to enclose a string, select from the **String** drop down menu.
-6. Save the view **File** > **Save**  
+5. Save the view **File** > **Save**  
 When you save a new view, the view ID is assigned by the Workbench and is not editable.
 
-Other options on the Format Phase tab and the Extract Phase tab are described in sections below.
+Choosing the output format option as Report makes the sub-tab **Report** available, as well as the **Extract Phase** and **Format Phase** sub-tabs. 
+
+Options available on all these sub-tabs are described in the sections below.
 
 <!-- View Source specification description -->
 {% include_relative includes/AddViewSource.md %} 
@@ -49,9 +46,26 @@ Other options on the Format Phase tab and the Extract Phase tab are described in
 <!-- Define filters links -->
 {% include_relative includes/AddFilters.md %}  
 
+### Report tab options
+
+Select the **View Properties** sub-tab **Report**.  
+
+Details
+
+Header/footer
+
+Header
+
+Footer
+
+>>> relevance of the headers in Reports
+
+### Defining sort key titles
+???
+
 ### Specify aggregation
 
-Views with delimited output can write all records, or can specify aggregation and collapse the output data based on sort keys. If the data is to be aggregated, 
+Views with report output can write all records, or can specify aggregation and collapse the output data based on sort keys. If the data is to be aggregated, 
 
 - Select the **View Properties** sub-tab **Format Phase**, and click **Format-Phase Record Aggregation (FRA)** > **Aggregate all records with identical sort keys**.
 

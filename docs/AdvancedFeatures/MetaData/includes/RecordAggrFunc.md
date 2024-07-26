@@ -11,4 +11,4 @@ To specify the type of subtotaling, double-click in the **Record Aggregation Fun
 
 ![Defining Record Aggregation Functions](../../images/CreateViewAggrFunc.png)  
 
-Note that the cell will be grey, and can not be selected, if the column is data type Alphanumeric, the column is a sort key, or there is no format phase defined.
+Note that the cell will be grey, and can not be selected, if the column is data type Alphanumeric, the column is a sort key, there is no format phase defined, or Format Record Aggregation is not selected for the view.

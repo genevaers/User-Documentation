@@ -37,6 +37,8 @@ Other options on the Format Phase tab and the Extract Phase tab are described in
 <!-- COLUMN specification description -->
 {% include_relative includes/AddColumns.md %}  
 
+>>>> Add a note about the use of the headers in the header row 
+
 <!-- Sort key specification description -->
 {% include_relative includes/AddSortKeys.md %}  
 
