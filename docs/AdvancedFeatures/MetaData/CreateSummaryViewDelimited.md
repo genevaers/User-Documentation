@@ -23,9 +23,10 @@ The first screen presented is the View Properties screen, which contains the sub
 3. Select the **Default Output Format** required. This will affect the other sub-tabs available to you. For this case, a summary view with delimited output, select **Format-Phase Output** > **Delimited Fields**.
 4. You can select an output LR to pre-define columns by using **Create View based on Output Logical Record**.  This option is only available before the first save. It could be useful if the output of this view is to become the source of another view via a pipe or a token.
 5. Select the **View Properties** sub-tab **Delimited**.  
-If a header row is required, tick **Include a header row**.  
+If a header row is required, tick **Include a header row**. The header text is added when defining the columns.  
 To choose the character to delimit the fields, select from the **Field** drop down menu.  
-To choose the character to enclose a string, select from the **String** drop down menu.
+To choose the character to enclose a string, select from the **String** drop down menu.  
+![Delimited sub-tab](../../images/CreateDelimited.png)  
 6. Save the view **File** > **Save**  
 When you save a new view, the view ID is assigned by the Workbench and is not editable.
 
@@ -37,7 +38,18 @@ Other options on the Format Phase tab and the Extract Phase tab are described in
 <!-- COLUMN specification description -->
 {% include_relative includes/AddColumns.md %}  
 
->>>> Add a note about the use of the headers in the header row 
+### Header row
+
+If a header row is required for the delimited output file, then  
+1. Select the **View Properties** sub-tab **Delimited**.  
+2. Tick **Include a header row**.  
+3. Select the **View Editor** screen.  
+4. Define the header text in the cells **Heading 1**, **Heading 2** and **Heading 3**.  
+
+For column types Source File Field and Lookup Field, the column heading value defaults to the heading value in the logical record. If there is no heading value in the logical record, the field name is used. You can over type this value as needed. 
+
+The text in the three column header cells will be concatenated with a space placed in between. Each header section has a maximum of 48 characters.  
+![Column headings example](../../images/CreateReportColHdrs.png)
 
 <!-- Sort key specification description -->
 {% include_relative includes/AddSortKeys.md %}  
