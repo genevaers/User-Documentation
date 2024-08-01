@@ -71,8 +71,10 @@ The simplest report contains the sort fields displayed as data in columns, and i
 
 1. Select the **View Editor** tab. 
 2. Open the **Sort Key Properties** frame by clicking on the yellow **Sort Keys** cell in the column grid.
-3.  Select **As Data** for the **Display Mode**. This indicates the sort key data to be displayed in a column.
-4.  Select **Suppress Print** for the **Sort Key Footer Option**. This indicates no subtotal to be displayed at the sort key break (change in sort key value).  
+3. Select **As Data** for the **Display Mode**. This indicates the sort key data to be displayed in a column.
+4. Select **Suppress Print** for the **Sort Key Footer Option**. This indicates no subtotal to be displayed at the sort key break (change in sort key value).  
+
+![Define report with columns.](../../images/CreateReportCol.png)  
 
 If all sort keys have these same parameters, the report will look much like a spreadsheet with columns and rows of data.
 
@@ -82,14 +84,27 @@ As an alternative to displaying sort key values “as data” (that is, in colum
 
 1. Select the **View Editor** tab. 
 2. Open the **Sort Key Properties** frame by clicking on the yellow **Sort Keys** cell in the column grid.
-3.  Select **Categorize** for the **Display Mode**. This indicates the sort key data to be displayed as categories.
-4.  The **Sort Key Label** defaults to the text in Heading 1 for the Sort Key. This can be edited.
+3. Select **Categorize** for the **Display Mode**. This indicates the sort key data to be displayed as categories.
+With **Categorize** selected, the following options are available: 
+4. The **Sort Key Label** defaults to the text in Heading 1 for the Sort Key. This can be edited.
+5. The **Sort Key Footer Label** is used when subtotaling is required. See [Report options - Subtotals](#report-style-options---subtotals).
+6. The **Sort Key Header Option**. Select from the options:  
+- **Print on New Page** - the sort key headings, for each sort key break, are printed on a new page along with page headers and footers.  
+- **Print on Same Page** -  the sort key headings are printed for each sort key break.  
+- **Suppress Print**  - no sort key headings printed.  
+7. Select **Suppress Print** for the **Sort Key Footer Option**. This indicates no subtotal to be displayed at the sort key break (change in sort key value). 
+
+![Define report with categories.](../../images/CreateReportCat1.png)
 
 ### Report style options - Mixed
 
+Report styles can be mixed, for example Sort Key 1 can be defined with category headings displayed, and sort key 2 can be defined "As Data" in columns.
+
+![Mixed report sample output.](../../images/ReportScreenshot1.png)
+
 ### Report style options - Subtotals
 
-You can opt to print subtotals for numeric columns, at each sort break (change in sort key value). You can choose to define this for one or many of the defined sort keys. For example, you may want to print the subtotals for the primary sort key, but not the secondary sort key.  
+You can opt to print subtotals for numeric columns, at each sort break (change in sort key value). You can choose to define this for one or many of the defined sort keys. For example, you may want to print the subtotals for the primary sort key, but not a secondary sort key.  
 
 The value to be placed in this subtotal field is determined by the group aggregation functions, for the numeric columns. 
 
@@ -100,7 +115,7 @@ The value to be placed in this subtotal field is determined by the group aggrega
 
 The value to be placed in the subtotal field is determined by the group aggregation function, for the numeric column.  You can specify the type of aggregation for each numeric column: Group Calculation, Maximum, Minimum, Sum (default).
 
-To specify the type of subtotaling, double-click in the **Group Aggregation Function** cell for the column, and select the function from the drop-down list.
+To specify the type of subtotaling, click in the **Group Aggregation Function** cell for the column, and select the function from the drop-down list.
 
 - **Maximum** returns the maximum column value for each unique sort key value.  
 - **Minimum** returns the minimum column value for each unique sort key value.  
@@ -120,16 +135,29 @@ Note that the cell will be grey, and can not be selected, if the column is data 
 
 
 ### Defining sort key titles
-???
+
+The sort key titles functionality allows for descriptions to be placed next to sort keys by doing a lookup in a reference file. These are useful when sorting by codes, such as customer or store IDs. 
+
+To define a Sort Key Title  
+1. Select the **View Editor** tab. 
+2. Open the **Sort Key Properties** frame by clicking on the yellow **Sort Keys** cell in the column grid.  
+A tab **Sort Key Title** opens up in the bottom panel.  
+3. On the Sort Key Title tab,  
+ - select the logical record from the **View Source** list.
+ - select the field from the **Title Field** list. This will list all the available fields from currently defined lookup paths for this source LR.
+ - If the Lookup path selected has effective dates
+ - Select from the **Effective Date Type** list
+ - Enter the **Effective Date Value**
+6. Adjust the length of the **Title field** to be shown on the report. 
 
 
 ### Extract Phase tab options
 
-1) You have the option to limit the number of output records written with the **Extract-Phase Output Limit**.  
+1. You have the option to limit the number of output records written with the **Extract-Phase Output Limit**.  
 - Select **Write all eligible records** to ensure that all eligible records are output. This button is selected by default.  
 - Select **Stop Extract-Phase processing for this view after *n* records are written** to stop the processing of this view after *n* records are written. The *n* value is a positive integer up to 9 digits. The default for the *n* value is 100.
 
-2) **File Number** is used to manage the intermediate extract file name. See [Output destinations](#Output-destinations) for more details. The default is 0.
+2. **File Number** is used to manage the intermediate extract file name. See [Output destinations](#Output-destinations) for more details. The default is 0.
 
 ### Additional Format Phase tab options
 
