@@ -1,13 +1,13 @@
 {: .no_toc}
-# Create Summary View
+# Create a Summary Report 
 
 TABLE OF CONTENTS 
 1. TOC
 {:toc}  
 
-## Create a summary view - Report
+## Create a summary report
 
-To define a view that will write report style output:
+To define a view that will write sorted and aggregated records, in a report style:
 
 ### Add new view definition
 
@@ -21,12 +21,18 @@ The first screen presented is the View Properties screen, which contains the sub
 2. In the **Control Record** field select the control record.
 3. Select the **Default Output Format** required. This will affect the other sub-tabs available to you. For this case, a summary view with report style output, select **Format-Phase Output** > **Report**.
 4. You can select an output LR to pre-define columns by using **Create View based on Output Logical Record**.  This option is only available before the first save. It could be useful if the output of this view is to become the source of another view via a pipe or a token.
-5. Save the view **File** > **Save**  
+5. Select the **View Properties** sub-tab **Format Phase**, and click   
+**Format-Phase Record Aggregation (FRA)** > **Aggregate all records records with identical sort keys**.  
+6. Save the view **File** > **Save**  
 When you save a new view, the view ID is assigned by the Workbench and is not editable.
 
 Choosing the output format option as Report makes the sub-tab **Report** available, as well as the **Extract Phase** and **Format Phase** sub-tabs. 
-
 Options available on all these sub-tabs are described in the sections below.
+
+To define the report page size and customize page headers and footers, go to the **Report** sub-tab.
+
+<!-- Report tab description -->
+{% include_relative includes/ReportTab.md %}  
 
 <!-- View Source specification description -->
 {% include_relative includes/AddViewSource.md %} 
@@ -34,8 +40,19 @@ Options available on all these sub-tabs are described in the sections below.
 <!-- COLUMN specification description -->
 {% include_relative includes/AddColumns.md %}  
 
+<!-- COLUMN header specification description -->
+{% include_relative includes/AddColumnHdrs.md %}  
+
 <!-- Sort key specification description -->
 {% include_relative includes/AddSortKeys.md %}  
+
+<!-- Notes here about record aggregation types SUM, etc -->
+{% include_relative includes/RecordAggrFunc.md %}  
+
+The **group aggregation** function specifies the action at all higher-level sort breaks. This is described in [Reports with Subtotals](#report-with-subtotals).
+
+<!-- Report Types description -->
+{% include_relative includes/ReportTypes.md %}  
 
 <!-- Format-Phase column logic description -->
 {% include_relative includes/FormatColumnLogic.md %}  
@@ -45,33 +62,6 @@ Options available on all these sub-tabs are described in the sections below.
 
 <!-- Define filters links -->
 {% include_relative includes/AddFilters.md %}  
-
-### Report tab options
-
-Select the **View Properties** sub-tab **Report**.  
-
-Details
-
-Header/footer
-
-Header
-
-Footer
-
->>> relevance of the headers in Reports
-
-### Defining sort key titles
-???
-
-### Specify aggregation
-
-Views with report output can write all records, or can specify aggregation and collapse the output data based on sort keys. If the data is to be aggregated, 
-
-- Select the **View Properties** sub-tab **Format Phase**, and click **Format-Phase Record Aggregation (FRA)** > **Aggregate all records with identical sort keys**.
-
-If aggregation is selected you have the choice to select column aggregation functions.  
-<!-- Notes here about record aggregation types SUM, etc -->
-{% include_relative includes/RecordAggrFunc.md %}  
 
 ### Extract Phase tab options
 

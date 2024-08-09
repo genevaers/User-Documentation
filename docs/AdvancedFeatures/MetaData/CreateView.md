@@ -25,7 +25,7 @@ Create a view with sorted and [Fixed-Width Field output and aggregated numeric f
 
 Create a view with sorted and [Delimited Field output.](./CreateSummaryViewDelimited.md)  
  
-GenevaERS provides numerous options for formatting output in a report.  
+GenevaERS provides numerous options for formatting output in a report. Views with report output can write all records, or can specify aggregation and collapse the output data based on sort keys. Both detailed reports and aggregated reports can contain subtotals.
 
 Create a sorted and formatted view - [Detailed Report](./CreateSummaryViewReportDet.md).  
 
