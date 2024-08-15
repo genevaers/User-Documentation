@@ -30,14 +30,3 @@ GenevaERS provides numerous options for formatting output in a report. Views wit
 Create a sorted and formatted view - [Detailed Report](./CreateSummaryViewReportDet.md).  
 
 Create a sorted and formatted view with aggregation - [Aggregated Report](./CreateSummaryViewReportAggr.md).  
-
-## Organizing Views
-
-In the workbench views can be grouped together in **View Folders**. To list existing views:  
-
-- Click **View Folders** > **ALL_VIEWS** or,
-- Click **View Folders** > *folder-name* in the Navigator pane.
-
-The views are shown in the metadata list at the bottom of the workbench screen.  
-
-For details of how to create view folders, and add views to view folders go to [View Folders](./xxx.md)

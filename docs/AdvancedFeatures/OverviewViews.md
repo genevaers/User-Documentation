@@ -9,7 +9,7 @@ TABLE OF CONTENTS
 
 A GenevaERS view definition describes a data transformation. It is analogous to a program or a query. Views are the basic units of work that are performed by the Performance Engine. A view describes input files, processing specifications and output files. Views are prepared in the GenevaERS Workbench.
 
-Views are often grouped together into view folders for ease of maintenance. View folders can be named for a particular developer or function. Security can be applied to view folders to prevent unauthorized access. Groups of views can be executed at one time. This is sometimes referred to as a pass.
+Views are often grouped together into view folders for ease of maintenance. View folders can be named for a particular developer or function. Security can be applied to view folders to prevent unauthorized access. Groups of views can be executed at one time. This is sometimes referred to as a pass. See [Create View Folders](./MetaData/CreateViewFolder.md) and [Manage Views](./MetaData/ManageViews.md) for more details.
 
 Views define the following:
 
@@ -28,9 +28,13 @@ Views define the following:
 Views are classified by the output required, which determines the jobs, or phases, to be executed.
 
 - Extract-Phase only views  
-  Only the extract job will be run. The source records can be filtered, output layout can be defined using column, lookups can be used, output can be written to one or many files. The output record format is fixed-width fields, or can simply be set to match the source record layout.
+  Only the extract job will be run. The source records can be filtered, output layout can be defined using columns, lookups can be used, column logic can be applied, output can be written to one or many files. The output record format is fixed-width fields, or can simply be set to match the source record layout.
 - Summary views  
-  After the extract job, the format job will be run to sort and summarize the output from the extract job. Calculations and logic can be applied to summarized columns. The output can be fixed-width fields, delimited fields, or in a report format with headers and footers.  See [Overview of summary views](./OverviewFormatViews.md).
+  After the extract job, the format job will be run to sort and summarize the output from the extract job. Calculations and logic can be applied to summarized columns. The output can be fixed-width fields, delimited fields, or in a report format with headers and footers.  
+  
+  <!-- See [Overview of summary views](./OverviewFormatViews.md). -->
+
+
 
 ## Creating views in the workbench
 
