@@ -10,4 +10,4 @@ This opens the **Format-Phase Column Logic** tab (**FCL** tab) in the Editor Are
 
 Note that the cell will be grey, and can not be selected, if the column is data type Alphanumeric, the column is a sort key, or there is no format phase defined.
 
-For more information see [Format-Phase Column Logic](../ColumnLogic.md#format-phase-column-logic) and [Format-Phase Column Logic reference](../../Reference/Workbench/LogicTextFCLStatements.md).
+For more information see [Format-Phase Column Logic](../ColumnLogic.html#format-phase-column-logic) and [Format-Phase Column Logic reference](../../Reference/Workbench/LogicTextFCLStatements.html).

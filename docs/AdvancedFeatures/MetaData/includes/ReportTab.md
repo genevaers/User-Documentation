@@ -24,7 +24,7 @@ Functions available:
 **&[RunDate]** -  The date the VDP file was generated i.e. the date the RCG job was executed.
 
 **&[SortKey*nn*Label]** - The label set for Sort Key number *nn* in the **Sort Key Properties** frame.  
-**&[SortKey*nn*Title]** - The Sort Key Title defined for Sort Key number *nn*. See **Defining sort key titles**.  
+**&[SortKey*nn*Title]** - The Sort Key Title defined for Sort Key number *nn*. See [Defining sort key titles](#defining-sort-key-titles)  
 **&[SortKey*nn*Value]** - The Sort Key value for Sort Key number *nn*.  
 
 These are valid for up to five sort keys (*nn* is 01 to 05).

@@ -87,7 +87,7 @@ For a description of **ERA** see [Extract-Phase Record Aggregation Overview](../
 - Select **Write all eligible records** to ensure that all eligible records are output. This button is selected by default.  
 - Select **Stop Extract-Phase processing for this view after *n* records are written** to stop the processing of this view after *n* records are written. The *n* value is a positive integer up to 9 digits. The default for the *n* value is 100.
 
-3) **File Number** is used to manage the intermediate extract file name. See [Output destinations](#Output-destinations) for more details. The default is 0.
+3) **File Number** is used to manage the intermediate extract file name. See [Output destinations](#output-destinations) for more details. The default is 0.
 
 ### Additional Format Phase tab options
 
@@ -95,7 +95,7 @@ Select the **View Properties** sub-tab **Format Phase**.
 
 ![Format Phase sub-tab](../../images/CreateViewFormatTab2.png)  
 
-The **Output File** option is described in [Output destinations](#Output-destinations) above.
+The **Output File** option is described in [Output destinations](#output-destinations) above.
 
 You have the option to specify a **User-Exit routine** to be called during the format phase:
 - Select **Format User-Exit Routine** > **Name**  
@@ -107,7 +107,7 @@ You have the option to limit the number of output records written with the **For
 - Select **Write all eligible records** to ensure that all eligible records are output. This button is selected by default.  
 - Select **Stop Format-Phase processing for this view after *n* records are written** to stop the processing of this view after *n* records are written. The *n* value is a positive integer up to 9 digits. The default for the *n* value is 100.
 
-The **Format-Phase Record Filter** option is described in [Define filters](#Define-filters) above.
+The **Format-Phase Record Filter** option is described in [Define filters](#define-filters) above.
 
 To avoid output of records with zero in all numeric fields, tick the **Zero-value Record Suppression** box.
 

@@ -11,4 +11,4 @@ You can specify your own output destination. To do this:
 
 You will see that the WRITE statement in the **Record Logic** field has changed.
 
-You can also replace the WRITE statement with Extract Record Logic. For example you may want to have logic that directs some output to one file and the rest to another file, depending on some condition. See [Extract-Phase Record Logic](../../Reference/Workbench/LogicTextERLStatements.md) for more details.
+You can also replace the WRITE statement with Extract Record Logic. For example you may want to have logic that directs some output to one file and the rest to another file, depending on some condition. See [Extract-Phase Record Logic](../../Reference/Workbench/LogicTextERLStatements.html) for more details.
