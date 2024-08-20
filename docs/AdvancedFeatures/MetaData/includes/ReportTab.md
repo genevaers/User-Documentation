@@ -18,7 +18,7 @@ To add a function to the header or footer:
 
 Functions available:  
 **&[CompanyName]** - This is taken from the Name field of the control record defined for the view.  
-**&[FiscalDate]** - The date provided either by the FISCAL_DATE_DEFAULT or FISCAL_DATE_OVERRIDE parameters at Format Phase runtime. See [GVBMR88 parameters](../../../Reference/GVBMR88_Parameter_File_Syntax.md).  
+**&[FiscalDate]** - The date provided either by the FISCAL_DATE_DEFAULT or FISCAL_DATE_OVERRIDE parameters at Format Phase runtime. See [GVBMR88 parameters](../../../Reference/GVBMR88_Parameter_File_Syntax.html).  
 **&[ProcessDate]** - The date the Format Phase job was executed.  
 **&[ProcessTime]** - The time the Format Phase job was executed.  
 **&[RunDate]** -  The date the VDP file was generated i.e. the date the RCG job was executed.
