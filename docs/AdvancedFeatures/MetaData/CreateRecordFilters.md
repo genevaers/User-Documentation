@@ -7,7 +7,7 @@ TABLE OF CONTENTS
 
 Record filters are decribed in the [overview of record filters.](../OverviewRecordFilters.md)
 
-## Create logic text for an Extract Record Filter
+## Create logic text for an Extract-Phase Record Filter
 
 This logic text is part of a view and is associated with a view source file. To create this logic text in an existing view, do the following:
 
@@ -27,7 +27,7 @@ You may wish to close the open windows. Closing the **Extract-Phase Record Filte
 The syntax of this logic text and examples are described in the Reference section [Workbench Logic Text - Extract-Phase Record Filter](../../Reference/Workbench/LogicTextERFStatements.md)
 
 
-## Create logic text for a Format Record Filter
+## Create logic text for a Format-Phase Record Filter
 
 This logic text is part of a view and is associated with the format phase. The view must have a format phase. To create this logic text in an existing view, do the following:
 

@@ -13,4 +13,4 @@ RUNMONTH returns a CCYYMM format date based on the run date, plus or minus the n
 
 The parameter for RUNMONTH is a number of months to add or subtract from the default RUNMONTH. For example, RUNMONTH\(-5\) provides the date five months before the date the view is run.
 
-RUNMONTH can only be used in **Extract Logic**.
+RUNMONTH can only be used in **Extract-Phase Logic**.

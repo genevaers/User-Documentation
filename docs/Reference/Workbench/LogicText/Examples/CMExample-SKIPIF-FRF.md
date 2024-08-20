@@ -1,4 +1,4 @@
-## Examples: SKIPIF in Format Record Filter
+## Examples: SKIPIF in Format-Phase Record Filter
 
 |Example logic text|Meaning| 
 |------------------|-------|

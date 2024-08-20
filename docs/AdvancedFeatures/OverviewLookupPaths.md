@@ -104,11 +104,11 @@ A symbol **always uses the default value** in:
 
 To set a symbol to a non-default value in logic text, the syntax requires **$** \(a dollar sign\) before the symbol name. The actual symbol name always starts with a letter.
 
-Lookup path LP\_SalesProduct uses a **symbol called Prefix** which has a default value of "PRD". In Extract Column Assignment logic text, the call to LKProduct is different depending on the value of the 5 digits. This is shown below:
+Lookup path LP\_SalesProduct uses a **symbol called Prefix** which has a default value of "PRD". In Extract-Phase Column Assignment logic text, the call to LKProduct is different depending on the value of the 5 digits. This is shown below:
 
 ![Diagram of a lookup path with symbol, and logic text.](../images/LP_Symbol_02B.gif)  
 
-Extract Column Logic text for a column in a view:
+Extract-Phase Column Logic text for a column in a view:
 
     IF {SLR_Product_Code} < 50000
         THEN COLUMN = { LP_SalesProduct.PLR_Prod_Desc }
@@ -156,9 +156,9 @@ The "given" date is a constant date value given in a view or logic text. A const
 
 -   Screen "**Column Source Properties**" in field "**Effective Date Value**".
 -   Screen "**Sort Key Titles**" in field "**Effective Date Value**".
--   In **Extract Column logic** text, which includes a **DATE** keyword for specifying a date constant.
--   In **Extract Record Filter** logic text, which includes a **DATE** keyword for specifying a date constant.
--   In **Extract Record logic** text, which includes a **DATE** keyword for specifying a date constant.
+-   In **Extract-Phase Column logic** text, which includes a **DATE** keyword for specifying a date constant.
+-   In **Extract-Phase Record Filter** logic text, which includes a **DATE** keyword for specifying a date constant.
+-   In **Extract-Phase Record logic** text, which includes a **DATE** keyword for specifying a date constant.
 
 ![Lookup path with effective date from run date.](../images/LP_EffectDate_03_RunDate.gif)
 
@@ -170,7 +170,7 @@ Lookup paths are defined using metadata in the GenevaERS Workbench. Go to [Creat
 
 You can call a lookup path from four locations:
 
-- A view Column as a Lookup Field, or in Extract Column Logic text
-- In an extract-phase filter, in Extract Record Filter logic text
-- At extract-phase output writing time, in Extract Record logic text
-- A Sort Key Title in the format-phase
+- A view column as a Lookup Field, or in Extract-Phase Column Logic text.
+- In an extract-phase filter, in Extract-Phase Record Filter logic text.
+- At extract-phase output writing time, in Extract-Phase Record logic text.
+- A Sort Key Title in the format phase.

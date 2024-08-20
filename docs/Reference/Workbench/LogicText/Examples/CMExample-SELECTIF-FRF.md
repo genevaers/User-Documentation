@@ -1,4 +1,4 @@
-## Examples: SELECTIF in Format Record Filter
+## Examples: SELECTIF in Format-Phase Record Filter
 
 |Example logic text|Meaning| 
 |------------------|-------|

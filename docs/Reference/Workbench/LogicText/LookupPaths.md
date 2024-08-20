@@ -22,7 +22,7 @@ Lookup paths are used in the format phase only in the Sort Key Title field, whic
 
 # Rules for the syntax
 
-Lookups can only be used in **Extract Record Filter** or **Extract Column Logic** text.
+Lookups can only be used in **Extract-Phase Record Filter** or **Extract-Phase Column Logic** text.
 
 See also topic: [Rules for all Logic Text](../../Workbench/RulesforallLogicText.md) 
 

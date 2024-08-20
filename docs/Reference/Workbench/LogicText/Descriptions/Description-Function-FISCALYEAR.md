@@ -11,4 +11,4 @@ The FISCALYEAR returns a date in CCYY format based on the fiscal settings for th
 
 The parameter for FISCALYEAR is a number of years to add or delete from the default FISCALYEAR. For example, FISCALYEAR\(-5\) provides the year that is five years before the date the view is run.
 
-FISCALYEAR can only be used in **Extract Logic**.
+FISCALYEAR can only be used in **Extract-Phase Logic**.

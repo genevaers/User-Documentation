@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Format-Phase Column Logic is applied to the columns created in the extract phase. Only columns that are numeric, can have format phase column logic applied to them.
+Format-Phase Column Logic is applied to the columns created in the extract phase. Only columns that are numeric, can have Format-Phase Column Logic applied to them.
 
 ## Language Constructs
 

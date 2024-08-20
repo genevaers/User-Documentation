@@ -7,9 +7,9 @@ TABLE OF CONTENTS
 {:toc}  
 
 
-## Extract Phase Column Logic
+## Extract-Phase Column Logic
 
-The Extract phase has visibility into all fields on the input LR, and all fields of Lookup Paths that have the input LR as the source LR of the first step of the lookup path.
+The extract phase has visibility into all fields on the input LR, and all fields of Lookup Paths that have the input LR as the source LR of the first step of the lookup path.
 
 ### Column Assignment - Constants
 
@@ -105,7 +105,7 @@ The following is some example column logic within column 6. It assigns, first, a
 
 ### Field Calculations
 
-Column logic allows calculations to be performed against numeric fields. Any calculation referencing a field name is performed at extract time because the Extract phase has visibility into all fields on the input LR.
+Column logic allows calculations to be performed against numeric fields. Any calculation referencing a field name is performed at extract time because the extract phase has visibility into all fields on the input LR.
 
     COLUMN = {ORDER_TOTAL_AMOUNT} * 0.1
 
@@ -113,7 +113,7 @@ See [Extract-Phase Column Logic Reference](../Reference/Workbench/LogicTextECLSt
 
 ## Format-Phase Column Logic
 
-The format phase is optional, but if the view has a format phase, column logic can be performed in this phase using column values assigned in the Extract process.  Format-phase logic refers to columns rather than field names. The only columns available for format-phase column logic are those with a numeric data type (i.e. not alphanumeric).
+The format phase is optional, but if the view has a format phase, column logic can be performed in this phase using column values assigned in the extract process.  Format-phase logic refers to columns rather than field names. The only columns available for format-phase column logic are those with a numeric data type (i.e. not alphanumeric).
 
 ### Creating Format-Phase Column Logic text
 
