@@ -15,7 +15,7 @@ TABLE OF CONTENTS
 
 **Rules for the syntax**
 
-COL.nnn can only appear in an **inquiry** \(for example "IF \(COL.nnn = ? " \) in the format phase. In **Format Record Filter**, nnn can be any column in the view.
+COL.nnn can only appear in an **inquiry** \(for example "IF \(COL.nnn = ? " \) in the format phase. In **Format-Phase Record Filter**, nnn can be any column in the view.
 
 See also topic: [Rules for all Logic Text](../../Workbench/RulesforallLogicText.md) 
 

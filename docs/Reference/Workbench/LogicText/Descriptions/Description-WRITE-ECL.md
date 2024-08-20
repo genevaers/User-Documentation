@@ -1,10 +1,10 @@
 ## How do I use WRITE Statements in ECL?
 
-WRITE statements are optional in your Extract Column Logic text. If there are no WRITE statements in ECL, then there must be a WRITE statement either from the default Extract Record Logic, or provided in the overriding Extract Record Logic.
+WRITE statements are optional in your Extract-Phase Column Logic text. If there are no WRITE statements in ECL, then there must be a WRITE statement either from the default Extract-Phase Record Logic, or provided in the overriding Extract-Phase Record Logic.
 
-A default WRITE (in Extract Record Logic) still occurs if you provide WRITE statements in your extract column logic text.
+A default WRITE (in Extract-Phase Record Logic) still occurs if you provide WRITE statements in your Extract-Phase Column Logic text.
 
-A WRITE statement in your extract column logic text allows the following:
+A WRITE statement in your Extract-Phase Column Logic text allows the following:
 
 -   Writing records to logical files of your choice.
 -   Performing a procedure or user-exit routine on input records.
@@ -12,7 +12,7 @@ A WRITE statement in your extract column logic text allows the following:
 -   Writing multiple output records for each record read.
 -   A combination of the above.
 
-Here are some example cases of a WRITE in Extract Column Logic:
+Here are some example cases of a WRITE in Extract-Phase Column Logic:
 
 -   Write a full **copy of the selected input record** to a view output file  
 \(SOURCE=INPUT, DEST=FILE=LogicalFile\).
@@ -28,4 +28,4 @@ Only the EXTRACT work files are processed in the format phase. All other records
 
 These WRITE options provide great flexibility in view processing. 
 
-The syntax details of a WRITE statement in **Extract Column Logic** are shown below.
+The syntax details of a WRITE statement in **Extract-Phase Column Logic** are shown below.

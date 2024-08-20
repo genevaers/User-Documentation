@@ -11,4 +11,4 @@ The FISCALMONTH returns a date in CCYYMM format, based on the fiscal settings fo
 
 The parameter for FISCALMONTH is a number of months to add or subtract from the default FISCALMONTH. For example, FISCALMONTH\(-5\) provides the month that is five months before the date the view is run.
 
-FISCALMONTH can only be used in **Extract Logic**.
+FISCALMONTH can only be used in **Extract-Phase Logic**.

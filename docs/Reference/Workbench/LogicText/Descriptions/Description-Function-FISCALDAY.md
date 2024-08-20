@@ -11,4 +11,4 @@ FISCALDAY returns a date in CCYYMMDD format, based on the fiscal settings for th
 
 The parameter for FISCALDAY is a number of days to add or subtract from the default FISCALDAY. For example, FISCALDAY\(-5\) provides the day that is five days before the date the view is run.
 
-FISCALDAY can only be used in **Extract Logic**.
+FISCALDAY can only be used in **Extract-Phase Logic**.

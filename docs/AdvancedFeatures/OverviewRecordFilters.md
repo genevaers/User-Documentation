@@ -14,7 +14,7 @@ The function of the Extract-Phase Record Filter is to include or exclude source 
 
 Specifically, this logic text changes the **records selected for processing** in the extract phase of the Performance Engine. The records selected during this phase are the **input records** for processing the view(s) in that run of the Performance Engine.
 
-Extract Record Filter logic text is performed at the start of the extract phase processing for each view.
+Extract-Phase Record Filter logic text is performed at the start of the extract phase processing for each view.
 
 ### Statements for selecting input files
 
@@ -29,7 +29,7 @@ The overall idea is that your logic text describes how to select or skip, but no
 
 ### Logic text syntax and examples
 
-How to create logic text for an extract record filter is described in [Create record filters.](./MetaData/CreateRecordFilters.md)
+How to create logic text for an Extract-Phase Record Filter is described in [Create record filters.](./MetaData/CreateRecordFilters.md)
 
 The syntax of this logic text and examples are described in the Reference section [Workbench Logic Text - Extract-Phase Record Filter](../Reference/Workbench/LogicTextERFStatements.md)
 
@@ -40,10 +40,10 @@ The function of the Format-Phase Record Filter is to select or skip output recor
 
 Specifically, this logic text changes the **records selected for output** in the format phase of the Performance Engine. The format phase is optional, because the extract phase may be sufficient to produce the results of that view.
 
-The Format phase performs record filtering as the last step before writing to the output file. It works against aggregated records if the view summarizes records. Otherwise it works against detailed records.
+The format phase performs record filtering as the last step before writing to the output file. It works against aggregated records if the view summarizes records. Otherwise it works against detailed records.
 
 ### Logic text syntax and examples
 
-How to create logic text for a format record filter is described in [Create record filters.](./MetaData/CreateRecordFilters.md)
+How to create logic text for a Format-Phase Record Filter is described in [Create record filters.](./MetaData/CreateRecordFilters.md)
 
 The syntax of this logic text and examples are described in the Reference section [Workbench Logic Text - Format-Phase Record Filter](../Reference/Workbench/LogicTextFRFStatements.md)

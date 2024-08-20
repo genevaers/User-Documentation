@@ -28,11 +28,11 @@ Read user-exits are custom-developed programs called by the Extract Engine to re
 
 Physical File information is displayed across two tabs, **General** and **File Info**. The **File Info** tab changes to **Database Info** when the **File Type** **Database** is selected.  
 
-For **File Type** of **Disk File** define the data set DD name on the **File Info** tab.  
-The **Input** **DD Name** field should match the DD Name of the source data set in the JCL for the Extract phase step of the Performance Engine.
-The **Data Set Name** is optional. If the fully qualified data set name is provided and the input DD name is not found in the JCL, the Extract Engine attempts to dynamically allocate this file. The disposition defaults to Share.
+For **File Type** of **Disk File** define the data set ddname on the **File Info** tab.  
+The **Input** **DD Name** field should match the ddname of the source data set in the JCL for the extract phase step of the Performance Engine.
+The **Data Set Name** is optional. If the fully qualified data set name is provided and the input ddname is not found in the JCL, the Extract Engine attempts to dynamically allocate this file. The disposition defaults to Share.
 
-The **Output** **DD Name** field enables you to specify the DD name that will receive output from a View. 
+The **Output** **DD Name** field enables you to specify the ddname that will receive output from a View. 
 
 6. Save the physical file definition **File** > **Save**,  
 

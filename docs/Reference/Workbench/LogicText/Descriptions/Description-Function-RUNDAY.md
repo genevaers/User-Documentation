@@ -15,4 +15,4 @@ This date can be used for setting column values, for comparisons, and evaluating
 
 The parameter for RUNDAY is a number of days to add or subtract from the default RUNDAY. For example, RUNDAY\(-5\) provides the date five days before the date the view is run.
 
-RUNDAY can only be used in **Extract logic**.
+RUNDAY can only be used in **Extract-Phase Logic**.
