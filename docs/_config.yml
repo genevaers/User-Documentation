@@ -24,12 +24,12 @@ description:
   GenevaERS  
     <br/>
   The Single-Pass Optimization Engine
-# baseurl: "/UserDocs" # the subpath of your site, e.g. /blog
+baseurl: ""
 url: "http://genevaers.github.io" 
 # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
-
+locale: "en"
 # Build settings
 # theme: "Just-the-docs"
 # remote_theme: pmarsceill/just-the-docs
