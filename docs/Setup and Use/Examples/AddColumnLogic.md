@@ -11,7 +11,7 @@ or insert a new column using the buttons in View Editor toolbar.
 4. Click the green cell at the bottom of the new column.  
 The Column Source Properties frame opens on the right.  
 5.  From the **Column Source Type** list, select **Column Logic**
-6.  To create and edit the column logic click in **Column Source Value**, then click in the icon on the right side.  
+6.  To create and edit the column logic click in **Column Source Value**, then click in the icon on the right side ![Three dot icon](../../images/Icon_Three_Dots_01.gif).  
 This opens the **Extract-Phase Column Logic** tab (**ECL** tab) in the Editor Area.  
   
 Opening the **ECL** tab also opens the **Logic Text Helper**, which enables you to place keywords, field names, and column numbers into logic for column assignment. These functions are similar to functions provided by record filtering.
@@ -26,10 +26,10 @@ Add the following logic.
 
 You can build up the logic by placing the curser in the **ECL** editor area, then double-clicking on the required text in the **Logic Text Helper**:  
 
-    1. **Keywords** > **Language Constructs** > IF THEN ELSE ENDIF  
-    2. **Fields** > {QUANTITY}  
-    3. **Keywords** > **Language Constructs** > COLUMN =  
-    4. **Fields** > {DISCOUNT_PERCENT}  
+1. **Keywords** > **Language Constructs** > IF THEN ELSE ENDIF  
+2. **Fields** > {QUANTITY}  
+3. **Keywords** > **Language Constructs** > COLUMN =  
+4. **Fields** > {DISCOUNT_PERCENT}  
 
 ![A screenshoot of adding Extract-phase column logic.](../../images/AddColumnLogic.png)
 
