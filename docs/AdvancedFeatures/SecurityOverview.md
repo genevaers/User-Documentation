@@ -5,10 +5,17 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
+Workbench security allows the definition of access and edit rights to GenevaERS metadata components, such as views, physical files, logical files and logical records, in the workbench based on environments, users, groups, group membership and group permissions.
 
-Workbench security allows the definition of access and edit rights to GenevaERS metadata components, such as views, physical files, logical files and logical records, in the workbench based on users, groups, group membership and group permissions.
+On installation of the workbench, the userid **ADMIN** is created for Db2 connections. For PostgresSQL connections the administrator userid is configurable during installation; userid and password **postgres** is suggested. This userid has system administration rights, which means it has the authority to create and edit users, groups and environments, as well as rights to create and edit all the GenevaERS metatdata components associated with views.
 
-On installation of the workbench, the userid ADMIN is created. This userid has system administration rights, which means it has the authority to create and edit users, groups and environments, as well as rights to create and edit all the GenevaERS metatdata components associated with views.
+The GenevaERS Workbench has three levels of security.  
+
+1. A Workbench User must have permission to access a Workbench metadata database. Database access is defined by the database administrator. The database connection parameters are defined using a Workbench Connection. See [connect to the Workbench](./WorkbenchConnection.md) for a description of how to set up a database connection, and how to login to the Workbench.
+
+2. A Workbench User must be defined in the Workbench database. The user must either be defined as a system administrator, or a general user and belong to a Group. All permissions for general users are defined per Group/Environment combination. A Group and Environment is a many-to-many relationship. A Group can access multiple environments and environment can be accessed by multiple groups.
+
+3. The third security level, for general users, is based on a role that is assigned for a Group/Environment combination. The Workbench has the following roles; Environment Administrator, Developer and Guest.
 
 ## Environments
 
@@ -29,6 +36,7 @@ System administrators:
 General users:
 - must belong to a group.
 - can be a member of many groups.
+- can have different roles assigned for different environments.
 
 ### Groups 
 
@@ -38,7 +46,15 @@ See **Membership by Group** and **Membership by User** under [Create Users, Grou
 
 ### Group Permissions
 
-Each group has a set of permissions associated with it. Group persmissions are defined for each environment you wish this group to have access to. A **role** of either **guest**, **developer** or **administator** is assigned for each environment, each of which have a set of default Edit Rights and Permissions. These can be tailored to your own specifications for each environment.
+Each group has a set of permissions associated with it. Group permissions are defined for each environment you wish this group to have access to. A **role** of either **guest**, **developer** or **administrator** is assigned for each environment, each of which have a set of default Edit Rights and Permissions. 
+
+The default permissions:  
+
+- A **Guest** can browse metadata only.
+- A **Developer** can create, delete, modify, and browse metadata.
+- An (environment) **Administrator** can create, delete, modify, and browse metadata, and also migrate data into the environment.
+
+Note: These roles can be tailored to your own specifications for each environment in each group.
 
 See **Group Security** under [Create Users, Groups and Permissions](./MetaData/CreateUsersGroupsPerm.md)
 

@@ -5,7 +5,7 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
-At least one database connection name must exist to allow login to the GenevaERS Workbench. A database connection name provides the access to a Database where the Workbench stores the metadata. 
+At least one database connection definition must exist to allow login to the GenevaERS Workbench. A database connection definition provides the access to a database where the Workbench stores the metadata. 
 
 Login and adding new database connections are described here.
 
