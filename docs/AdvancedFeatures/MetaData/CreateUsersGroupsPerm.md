@@ -37,7 +37,7 @@ A new **general user** must be added as a member of at least one **group**.
 
 Only system administrators can change group membership, so ensure you are logged into the workbench as a **system administrator**. You can be in any environment.
 
-You can view and add users to groups by selecting a group and viewing and editing the associated Users list, or, you can view the user and edit the associated Groups list.
+You can view and add users to groups by selecting a group and viewing and editing the associated users list, or, you can view the user and edit the associated Groups list.
 
 ### Membership by Group
 
