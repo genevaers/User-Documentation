@@ -5,6 +5,8 @@ TABLE OF CONTENTS
 1. TOC
 {:toc}  
 
+## Introduction
+
 Workbench security allows the definition of access and edit rights to GenevaERS metadata components, such as views, physical files, logical files and logical records, in the workbench based on environments, users, groups, group membership and group permissions.
 
 On installation of the workbench, the userid **ADMIN** is created for Db2 connections. For PostgresSQL connections the administrator userid is configurable during installation; userid and password **postgres** is suggested. This userid has system administration rights, which means it has the authority to create and edit users, groups and environments, as well as rights to create and edit all the GenevaERS metatdata components associated with views.

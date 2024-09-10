@@ -1,10 +1,20 @@
-## Example 1: Workbench administrator tasks 
+{: .no_toc}
+# Workbench Administrator Tasks  
 
-The GenevaERS Workbench is supplied with the user ID of ADMIN for Db2 connections. This userid has system administration rights, which means it has the authority to create and edit users, groups and environments, as well as rights to create and edit all the GenevaERS metatdata components associated with views.
+TABLE OF CONTENTS 
+1. TOC
+{:toc}  
+
+
+## Introduction
+
+The GenevaERS Workbench is supplied with the user ID of **ADMIN** for Db2 connections. This userid has system administration rights, which means it has the authority to create and edit users, groups and environments, as well as rights to create and edit all the GenevaERS metatdata components associated with views.
 
 Note: PostgresQL connections can be administered in the same way, but using the admin userid and password set up during PostgresQL installation.  
 
-### In this example you will login with user ID ADMIN and update the password.
+The following guided examples build on each other.
+
+## Example 1: Login with user ID ADMIN and update the password.
 
 1. Start the GenevaERS Workbench.
 2. If this is your first login to the GenevaERS Workbench, the **GenevaERS Connection Manager** Screen will appear. Otherwise click **Manage**.
@@ -33,7 +43,7 @@ Note: There is no option to select a Group at this point, because ADMIN is a sys
 
 ![GenevaERS Login screen](../../images/LoginEx1b.png)
 
-You are now logged on to the GenevaERS Workbench. To update the password for **ADMIN**:  
+You are now logged on to the GenevaERS Workbench. Update the password for **ADMIN**:  
 1. In the Navigator pane, click **Administration** > **Users**  
 A list of Users will appear in the Metadata List area. 
 2. Double-click on User **ADMIN**  
@@ -41,7 +51,7 @@ The User definition will open in the Editor Area.
 3. Update the **Password** field.
 4. Save the User definition **File** > **Save**
 
-### In this example you will login as ADMIN and create a new general User ID.
+## Example 2: Login as ADMIN and create a new general User ID.
 
 1. Start the GenevaERS Workbench.
 2. In **Database Connection** > **Name** select **GenDev-Db2**.
@@ -53,7 +63,7 @@ Now you have logged on to the database you can select the GenevaERS environment.
 Note: There is no option to select a Group at this point, because ADMIN is a system administrator user ID.
 7. Click **OK**.
 
-You are now logged on to the GenevaERS Workbench. To create a new User ID: 
+You are now logged on to the GenevaERS Workbench. Create a new User ID: 
 
 1. Select **Administration** > **New** > **User** 
 2. In the **Name** field type **USERDEV1**. This user is going to be assigned to a developer group.
@@ -68,9 +78,9 @@ You are now logged on to the GenevaERS Workbench. To create a new User ID:
 A new **general user** must be added as a member of at least one **group** before it can be used. This is shown in the next example. 
 Note that a **system administrator** does not need to be a member of a group.
 
-### In this example you will login as ADMIN, create a new Group and assign a User to that Group.
+## Example 3: Login as ADMIN, create a new Group and assign a User to that Group.
 
-Login as ADMIN. See above.
+Login as **ADMIN**. See [Example 2](#example-2-login-as-admin-and-create-a-new-general-user-id) above.  
 
 1. Select **Administration** > **New** > **Group**. 
 2. In the **Name** field type **Developer_Group**.
@@ -88,9 +98,9 @@ You can now assign the user to this group. You can view and add users to groups 
    
 ![Add User to a Group screen](../../images/NewGroupMem2.png)
 
-### In this example you will login as ADMIN and create a environment.
+## Example 4: Login as ADMIN and create a environment.
 
-Login as ADMIN. See above.
+Login as **ADMIN**. See [Example 2](#example-2-login-as-admin-and-create-a-new-general-user-id) above.  
 
 1. Select **Administration** > **New** > **Environment**. 
 2. In the **Name** field type **Development_Test**.
@@ -98,9 +108,9 @@ Login as ADMIN. See above.
 
 ![New environment screen](../../images/NewEnv1.png)
 
-### In this example you will login as ADMIN and assign an environment to a group with a role.
+## Example 5: Login as ADMIN and assign an environment to a group with a role.
 
-Login as ADMIN. See above.
+Login as **ADMIN**. See [Example 2](#example-2-login-as-admin-and-create-a-new-general-user-id) above.  
 
 1. Select **Administration** > **Group Security** > **Permissions by Group...**
 2. In the **Group** field, select a **Developer_Group** from the drop down box. You can sort the list by clicking on **ID** or **Name** in the header of the list.

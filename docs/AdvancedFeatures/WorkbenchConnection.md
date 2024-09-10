@@ -24,7 +24,7 @@ Note: This User ID and password are likely different from the User ID for the Da
 ![Login Screen](../images/LoginScreen1.png)  
 
 Once logged in to the database, the environment information is available.  
-8. Select an **environment** (if there is a choice).  
+8. Select an **Environment** (if there is a choice).  
 If there is a list of environments, sort the list by clicking on "name" or "id" in the header of the list.  
 9. Once an environment is selected you can set it as your default environment, by selecting **Set as Default**. This environment will display first for your next login. 
 10. Select a **group** (if there is a choice).  
@@ -32,7 +32,7 @@ If there is a list of groups, sort the list by clicking on "name" or "id" in the
 11. Once a group is selected and the environment above already has a tick for "Set as Default", then for this group you can click **Set as Default** to ensure this group displays first for your next login.  
 If you are a system administrator, the groups field is grey
 and no action is required in this field.
-12. Click **OK**. Alternatively, click **Reset** to login to a different database, or as a different user name, and return to step 4.
+12. Click **OK**. Alternatively, click **Reset** to login to a different database, or as a different user name, and return to [login](#login) step 4.
 
 
 ## Add new connection
