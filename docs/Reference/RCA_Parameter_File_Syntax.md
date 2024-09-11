@@ -1,4 +1,4 @@
-# Run Control Analyser (RCA) Parameter File Syntax
+# Run Control Analyzer (RCA) Parameter File Syntax
 
 ### Format: RCAPARM file  
 <pre>
@@ -30,7 +30,7 @@
 
 </pre>
   
-The Run Control Analyser (RCA) examines the JLT, XLT and VDP created by the Run Control Generator (RCG), and creates reports that are written to JLTRPT, XLTRPT and VDPRPT respectively.
+The Run Control Analyzer (RCA) examines the JLT, XLT and VDP created by the Run Control Generator (RCG), and creates reports that are written to JLTRPT, XLTRPT and VDPRPT respectively.
 
 Any combination of the parameters **JLT_REPORT**, **XLT_REPORT** and **VDP_REPORT** may be used to specify the reports you require.
 
