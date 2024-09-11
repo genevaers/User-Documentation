@@ -17,6 +17,7 @@
 [Workbench Environments Overview](./EnvironmentOverview.md)  
 [Workbench Security Overview](./SecurityOverview.md)  
 [Create Users, Groups and Permissions](./MetaData/CreateUsersGroupsPerm.md)  
+[Create Environments](./MetaData/CreateEnvironment.md)  
 
 
 [Administrator Task Examples](./Examples/NewWorkbench.md)

@@ -10,7 +10,6 @@ An environment can contain items of these types:
 -   Logical records,
 -   Lookup paths,
 -   Physical files,
--   Users,
 -   User-exit routines,
 -   Views,
 -   View folders.
