@@ -97,4 +97,4 @@ The view title bar now displays the word "Active". Save the view again to preser
 [Running the View](../RunView/RunView.md)
 
 
-For more information on summary views see [Introduction to the Summary Phase](Intro4_Introduction_to_Format_Phase.md) and [Introduction to Reports](Intro9_Hardcopy_Output.md)
+For more information on summary views see [Overview of Views](../../AdvancedFeatures/OverviewViews.md) and [Create Views](../../AdvancedFeatures/MetaData/CreateView.md).
