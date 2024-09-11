@@ -64,7 +64,7 @@ Change the Data Type to Zoned Decimal with Length 8:
 1. Click on the Data Type cell for **QUANTITY**, and select **Zoned Decimal** from the list.
 2. Click on the Length cell for **QUANTITY**, and type **8** 
 
-For more information on Data Types look [here](../../AdvancedFeatures/MetaData/DataTypes.md)
+For more information see [Data Types](../../AdvancedFeatures/MetaData/DataTypes.md) in Advanced Features.
 
 ### Adding Output destination
 
@@ -92,6 +92,6 @@ To activate the view, use any of these methods:
 
 The view title bar now displays the word "Active". Save the view again to preserve this active state. The view is now ready to be run.
 
-[Running the View](../RunView/RunView.md)
+[Running the View](../RunView/RunView.md)  
 
-[Reviewing the Reports]
+For more information on summary views see [Overview of Views](../../AdvancedFeatures/OverviewViews.md) and [Create Views](../../AdvancedFeatures/MetaData/CreateView.md).

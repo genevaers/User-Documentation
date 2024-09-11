@@ -31,7 +31,6 @@ To activate the view, use any of these methods:
 
 The view title bar now displays the word "Active". Save the view again to preserve this active state. The view is now ready to be run.
 
-For more information on filters see [Record Filters](../../AdvancedFeatures/RecordFilters.md) in Advanced Features.
+[Running the View](../RunView/RunView.md)  
 
-
-[Running the View](../RunView/RunView.md)
+For more information on filters see [Overview of Record Filters](../../AdvancedFeatures/OverviewRecordFilters.md) and [Create Record Filters](../../AdvancedFeatures/MetaData/CreateRecordFilters.md) in Advanced Features.  

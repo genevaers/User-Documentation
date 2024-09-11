@@ -10,6 +10,8 @@ There are two main components to install. The PC based Workbench and the mainfra
 - For information on how to use the Workbench to create a new view, follow the examples under [Basic Skills.](#basic-skills) 
   
 - To run a view look at the sample JCL in [Running the View.](RunView/RunView.md)
+
+- For more advanced knowledge look at [Advanced Features.](../AdvancedFeatures/index.md)  
   
 - For tuning and parameter reference information go to the [Reference.](../Reference/index.md)
 
