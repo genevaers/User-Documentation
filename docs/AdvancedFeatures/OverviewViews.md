@@ -7,7 +7,7 @@ TABLE OF CONTENTS
 
 ## What is a view?
 
-A GenevaERS view definition describes a data transformation. It is analogous to a program or a query. Views are the basic units of work that are performed by the Performance Engine. A view describes input files, processing specifications and output files. Views are prepared in the GenevaERS Workbench.
+A GenevaERS view definition is analogous to a program or a query. Views are the basic units of work that are performed by the Performance Engine. A view describes input files, processing specifications and output files. Logical records definitions describe the inputs to the Performance Engine. The view definitions define the outputs, using columns to specify the fields. These are prepared in the GenevaERS Workbench.
 
 Views are often grouped together into view folders for ease of maintenance. View folders can be named for a particular developer or function. Security can be applied to view folders to prevent unauthorized access. Groups of views can be executed at one time. This is sometimes referred to as a pass. See [Create View Folders](./MetaData/CreateViewFolder.md) and [Manage Views](./MetaData/ManageViews.md) for more details.
 
@@ -32,9 +32,7 @@ Views are classified by the output required, which determines the jobs, or phase
 - Summary views  
   After the extract job, the format job will be run to sort and summarize the output from the extract job. Calculations and logic can be applied to summarized columns. The output can be fixed-width fields, delimited fields, or in a report format with headers and footers.  
   
-  <!-- See [Overview of summary views](./OverviewFormatViews.md). -->
-
-
+See [Create Views](./MetaData/CreateView.md) for more information.  
 
 ## Creating views in the workbench
 
