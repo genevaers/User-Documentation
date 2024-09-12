@@ -37,13 +37,13 @@ and no action is required in this field.
 
 ## Add new connection
 
-![Connection Manager screen](../images/ConnManager2.png)
+![Connection Manager screen](../images/ConnManager3.png)
 
 At the GenevaERS login screen
 1. Select **Manage**
 2. In the **Connection Name** field type a descriptive name.
 3. Select the database type from **Database Type**. Currently the supported options are Db2 and PostgresQL.
-4. In the **Database Name** field type the name of the Db2 database or Postgres database.
+4. In the **Database Name** field type the name of the Db2 subsystem or PostgresQL database.
 5. In the **Server** field type the IP address or domain name of the database host system.
 6. In the **Port** field type the port number identifying the database.
 7. In the **Schema Name** field type the name of the database schema where your GenevaERS metadata is going to reside.
