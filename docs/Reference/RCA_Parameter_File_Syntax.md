@@ -1,10 +1,44 @@
-# Run Control Analyzer (RCA) Parameter File Syntax
+# Run-Control App (RCA) Parameter File Syntax
 
-### Format: RCAPARM file  
+## Format: RCAPARM file  
+
 <pre>
+     ┌─GENERATE=N─────────────────────────┐        
+►►───┼────────────────────────────────────┼─────────────────────────────────────► 
+     └─GENERATE=Y──┤ generation options ├─┘       
 
+►────┤ general options ├───────────────────────────────────────────────────────►◄ 
+
+</pre>
+
+### generation options:
+
+<pre>
+►────┬─INPUT_TYPE=WBXML─────────────────────────────┬───────────────────────────►  
+     ├─INPUT_TYPE=VDPXML────────────────────────────┤    
+     ├─INPUT_TYPE=DB2───────┤ database parameters ├─┤  
+     └─INPUT_TYPE=POSTGRES──┤ database parameters ├─┘       
+       
+</pre>
+
+### database parameters:
+
+<pre>
+├────DB_SERVER=<i>server</i>──────────────────────────────────────────────────────────►  
+
+►────DB_PORT=<i>port</i>──────────────────────────────────────────────────────────────►  
+
+►────DB_DATABASE=<i>database-name</i>─────────────────────────────────────────────────►  
+    
+►────DB_SCHEMA=<i>db-schema</i>───────────────────────────────────────────────────────►  
+   
+►────ENVIRONMENT_ID=<i>GenevaERS-environment-id</i>───────────────────────────────────┤  
+</pre>
+
+### general options:
+<pre>
      ┌─JLT_REPORT=N─┐                                                     
-►►───┼──────────────┼───────────────────────────────────────────────────────────► 
+├────┼──────────────┼───────────────────────────────────────────────────────────► 
      └─JLT_REPORT=Y─┘                                                     
 
      ┌─XLT_REPORT=N─┐                                                     
@@ -20,22 +54,62 @@
      ├─REPORT_FORMAT=CSV───┤    
      └─REPORT_FORMAT=HTML──┘  
 
-     ┌─LOG_LEVEL=STANDARD─┐                                                       
-►────┼────────────────────┼─────────────────────────────────────────────────────► 
-     └─LOG_LEVEL=DEBUG────┘                                                       
-
      ┌─COMPARE=N─┐                                                       
 ►────┼───────────┼──────────────────────────────────────────────────────────────► 
      └─COMPARE=Y─┘                                                       
 
+     ┌─NUMBER_MODE=STANDARD─┐                                                     
+►────┼──────────────────────┼───────────────────────────────────────────────────► 
+     └─NUMBER_MODE=LARGE────┘                                                     
+                                       
+     ┌─LOG_LEVEL=STANDARD─┐                                                       
+►────┼────────────────────┼─────────────────────────────────────────────────────┤ 
+     └─LOG_LEVEL=DEBUG────┘                                                        
 </pre>
   
-The Run Control Analyzer (RCA) examines the JLT, XLT and VDP created by the Run Control Generator (RCG), and creates reports that are written to JLTRPT, XLTRPT and VDPRPT respectively.
+## Format: DBFLDRS file
+<pre>
+<i>►►───┬───────────────┬─────────────────────────────────────────────────────────►◄</i> 
+<i>     │ ┌───────────┐ │                                                        </i>
+<i>     │ ▼           │ │                                                        </i>
+<i>     └───folder-id─┴─┘ </i>
+</pre>
+  
+## Format: DBVIEWS file
+<pre>
+<i>►►───┬─────────────┬───────────────────────────────────────────────────────────►◄</i> 
+<i>     │ ┌─────────┐ │                                                        </i>
+<i>     │ ▼         │ │                                                        </i>
+<i>     └───view-id─┴─┘ </i>
+</pre>
+Note: If INPUT_TYPE=DB2, then both the DBVIEWS file and the DBFLDRS file are read. A list of view numbers to process is then derived from the union of the two files. If both files are either empty or missing, then an error is returned.    
 
-Any combination of the parameters **JLT_REPORT**, **XLT_REPORT** and **VDP_REPORT** may be used to specify the reports you require.
+## Format: RUNVIEWS file
+<pre>
+<i>►►───┬─────────────┬───────────────────────────────────────────────────────────►◄</i>
+<i>     │ ┌─────────┐ │                                                        </i>
+<i>     │ ▼         │ │                                                        </i>
+<i>     └───view-id─┴─┘ </i>
+</pre>
+Note: If the RUNVIEWS file is empty, all views are selected.  
 
-Each report requested must have the corresponding DD statement defined for input (JLTNEW, XLTNEW, VDPNEW) and output (JLTRPT, XLTRPT, VDPRPT).
+## Description
 
-If the parameter **COMPARE** is set to **Y**, the RCA will compare and report on two sets of RCG files. In this case the corresponding DD statements for both inputs must be provided (JLTNEW, XLTNEW, VDPNEW, and JLTOLD, XLTOLD, VDPOLD).
+*`server`*
+The IP address or domain name of the database host system.
 
-Specify the report output format with **REPORT_FORMAT**.
+*`port`*
+The port number identifying the database.
+
+*`database-name`*  
+This is the name of the Db2 database or Postgres database where your metadata resides.  
+For Postgres, this is the name set in the dbname parameter at database creation e.g. dbname=genevaers.
+  
+*`db-schema`*    
+This is the name of the database schema where your metadata resides. (For example, GENDEV.)  
+For Postgres, this is the name set in schemaV at database creation.  (For example, schemaV=gendev.)  
+  
+*`environment-id`*    
+This is the ID of the GenevaERS environment where the GenevaERS views to be selected reside.
+    
+
