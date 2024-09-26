@@ -10,9 +10,7 @@ To create a new Control Record:
 1. Select **Administration** > **New** > **Control Record** from the menu.  
 2. In the **Name** field type a descriptive name.  
 Note that this name can be used in report headers and footers using the **&[CompanyName]** function.  
-<!-- 3. Select the **Fiscal Parameters** > **First Fiscal Month**  
-Note that this is the fiscal date value that the logic text functions FISCALDAY(), FISCALMONTH(), FISCALYEAR() are derived from. They can be overridden in JCL at runtime.  -->
-4. Save the view folder **File** > **Save**  
+3. Save the view folder **File** > **Save**  
 
 ## Associate a View with a Control Record
 
