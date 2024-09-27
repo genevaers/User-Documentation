@@ -59,7 +59,7 @@ See [GVBMR95 parameters](../Reference/GVBMR95_Parameter_File_Syntax.md).
 
 ## Control Records
 
-The Fiscal logic text functions return dates based on the fiscal values indicated by the control record specified for a view. Each view specifies which control record should be used for its fiscal date processing, then the control record can be referenced in the Performance Engine JCL at run time.
+The fiscal logic text functions return dates based on the fiscal values indicated by the control record specified for a view. Each view specifies which control record should be used for its fiscal date processing, then the control record can be referenced in the Performance Engine JCL at run time.
 
 This means that different views in the same batch run can have different fiscal dates because they are associated with different control records. This is useful for processing views for multiple companies that have differing fiscal year ends. By comparison, RUNDAY is the same for all views in a batch.
 
