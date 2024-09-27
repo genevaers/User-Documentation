@@ -1,13 +1,13 @@
 {: .no_toc}
-# Create Extract-only View
+# Create Extract-only view with source-record layout
 
 TABLE OF CONTENTS 
 1. TOC
 {:toc}  
 
-## Create a copy view
-
 Another type of Extract only view is a copy view. This view has no columns as the output layout is the same as the source record layout. The view can still define record filters and output record logic.
+
+### Define view
 
 To define a copy view:
 

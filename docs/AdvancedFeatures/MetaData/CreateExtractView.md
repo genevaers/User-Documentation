@@ -1,13 +1,13 @@
 {: .no_toc}
-# Create Extract-only View
+# Create Extract-only view with fixed-width fields
 
 TABLE OF CONTENTS 
 1. TOC
 {:toc}  
 
-## Create Extract-only view with column defined output
-
 Creating an Extract-Phase Output view is described here.  
+
+### Define view
 
 To create a new view:
 

@@ -11,9 +11,9 @@ A view is a GenevaERS metadata component that defines a data transformation. See
 
 All views described in this section only require an extract phase to be defined and executed.
 
-Create an [Extract-only view with data transformation](./CreateExtractView.md).
+Create an [Extract-only view with fixed-width fields](./CreateExtractView.md).
 
-Create a [Copy view](./CreateCopyView.md).
+Create an [Extract-only view with source-record layout](./CreateCopyView.md). This is also known as a copy view.
 
 ## Summary Views
 
