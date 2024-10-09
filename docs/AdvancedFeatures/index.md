@@ -7,6 +7,7 @@
 [Overview of Views](./OverviewViews.md)  
 [Overview of Lookup Paths](./OverviewLookupPaths.md)  
 [Overview of Record Filters](./OverviewRecordFilters.md)  
+[Date processing functions](./OverviewDateFunctions.md)  
 
 ### Workbench
 
@@ -18,6 +19,7 @@
 [Workbench Security Overview](./SecurityOverview.md)  
 [Create Users, Groups and Permissions](./MetaData/CreateUsersGroupsPerm.md)  
 [Create Environments](./MetaData/CreateEnvironment.md)  
+[Create Control Records](./MetaData/CreateControlRecord.md)  
 
 
 [Administrator Task Examples](./Examples/NewWorkbench.md)

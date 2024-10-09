@@ -34,7 +34,7 @@ To define a view that will write all records, sorted, in a report style:
 The first screen presented is the View Properties screen, which contains the sub-tab **General**.
 
 1. In the **Name** field  type a descriptive name.
-2. In the **Control Record** field select the control record.
+2. In the **Control Record** field select the control record.  See [Date Processing Functions](../OverviewDateFunctions.md) for an explanation of how Control Records are used. 
 3. Select the **Default Output Format** required. This will affect the other sub-tabs available to you. For this case, a summary view with report style output, select **Format-Phase Output** > **Report**.
 4. You can select an output LR to pre-define columns by using **Create View based on Output Logical Record**.  This option is only available before the first save. It could be useful if the output of this view is to become the source of another view via a pipe or a token.  
 5. Select the **View Properties** sub-tab **Format Phase**, and click   
