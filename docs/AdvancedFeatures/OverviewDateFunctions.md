@@ -13,7 +13,7 @@ GenevaERS logic text allows for dates and date functions. For example the RUNDAY
 
 that is run on January 3, 2020 will compare ORDER_DATE to the constant “20200103”
 
-Many of the keywords allow math. For example, if the Batch Data contains a +3 inside the parenthesis, and were run on the same date the constant would be “20200106” rather than “20200103”
+Many of the keywords allow math. For example, if the RUNDAY contains a +3 inside the parenthesis, and were run on the same date the constant would be “20200106” rather than “20200103”
 
 These functions create very efficient processes as constant manipulation is not required during run time. Only the comparison is required.
 
