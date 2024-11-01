@@ -1,0 +1,13 @@
+flowchart LR
+    subgraph F0
+        direction LR
+        A(WorkBench) --> B(Run Control<br/>Generator)
+        B --> C(Reference<br/>Phase)
+        C --> D(Extract<br/>Phase)
+        D -->|optional| E(Format<br/>Phase)
+    end
+    subgraph F1
+        direction TB
+        B --> F(Run Control<br/>Analyser)
+    end
+%%    B--> (down) RCA(Run Control<br/>Analyser) (down)
