@@ -131,9 +131,10 @@ The type of assignment performed depends on the Data Type Category (String or Nu
   
 *Table 4.*  **Types of Assignments Performed** 
 
+Example-of-Assignment-Type-1A-–-Assignment-of-a-String-without-a-DTF-to-a-String-without-a-DTF
 |Type|Source Category|Source DTF|Target Category|Target DTF|Result|
 |:-|:-|:-|:-|:-|:-|
-|1A|String|No|String|No|**String**|
+|[1A](#test)|String|No|String|No|**String**|
 |1B|String|Yes|String|No|**String**|
 |1C|Numeric|No|String|No|**Numeric**|
 |1D|Numeric|Yes|String|No|**Numeric**|
@@ -189,7 +190,7 @@ NOTE:  The default lookup value may be overridden by testing the success of the 
     END-IF
   
 ### **Example of Assignment Type 1A – Assignment of a String without a DTF to a String without a DTF**
-  
+###Test  
     COLUMN = {ALPHA_NONDATE_FIELD}
   
 #### **Source**  
