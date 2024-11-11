@@ -189,6 +189,7 @@ NOTE:  The default lookup value may be overridden by testing the success of the 
     END-IF
   
 ### **Example of Assignment Type 1A – Assignment of a String without a DTF to a String without a DTF**
+
     COLUMN = {ALPHA_NONDATE_FIELD}
   
 #### **Source**  
