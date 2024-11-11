@@ -1,5 +1,11 @@
 # Run-Control App (RCA) Parameter File Syntax
 
+put examples at bottom 
+
+Note: each parameter must be on a separate line 
+
+link to sample JCL 
+
 ## Format: RCAPARM file  
 
 <pre>
