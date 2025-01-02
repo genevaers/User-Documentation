@@ -189,7 +189,7 @@ If ensuring the sign reflects the LR field definition is important, set this par
 ## Descriptions
 
 ### LOG_MESSAGE_LEVEL
-You can specify **DEBUG** to write detailed information to EXTRLOG, the log file. Details such as the status of initialization processing, reference table information, internal logic table details for each function, and lookup buffer details.
+Specifying **DEBUG** will write detailed information to EXTRLOG, the log file. Details such as the status of initialization processing, reference table information, internal logic table details for each function, and lookup buffer details.
 
 ### EXECUTE_IN_PARENT_THREAD
 Specifying **A** will execute all work in the main task, bypassing attaching any subtasks. All source data sets will be processed in series.  
@@ -199,7 +199,7 @@ Specifying **N** will allow sources to be processed in multiple subtasks, or thr
 Setting EXECUTE_IN_PARENT_THREAD to A or 1 will cause unpredictable results when pipe files are included.
 
 ### TRACE
-Specifying **Y** will open the trace file EXTRTRAC and write information on the data and functions processed by GenevaERS. Trace parameters can be set to filter which views, functions or data is to be traced. See [trace parameters](#extrtprm-file).  
+Specifying **Y** will open the trace file EXTRTRAC and write information on the data and functions processed by GenevaERS. Trace parameters can be set to filter which views, functions or data is to be traced. See [trace parameters](./GVBMR95_Parameter_File_Syntax_trace.md).  
 
 TRACE = Y requires the DD EXTRTRAC to be defined in the JCL.
 
@@ -245,140 +245,3 @@ For example, if you received the following message, and required a dump, set *me
        └─<i>view-id</i>─┘                      
 </pre>
   
-# EXTRTPRM file  
-
-The [TRACE](#trace) parameter activates tracing. It is specified in REFRPARM/EXTRPARM. 
-Parameters to filter tracing are defined here in REFRTPRM/EXTRTPRM.  
-Trace data is written to DD REFRTRAC/EXTRTRAC.
-
-You can trace all views, or specific views by view number. You can specify ranges based on Logic Table numbers, ranges based on source file record numbers, or trace records based on a value within the source record.
-
-<pre>
-►►───┬────────────────────────┬────────────────────────────────────────────────►◄ 
-     ├─┤ global-trace set ├───┤       
-     │                        │
-     │ ┌────────────────────┐ │                                                       
-     │ ▼                    │ │                   
-     └───┤ view-trace set ├─┴─┘       
-</pre>
-  
-Note 1:  A global trace set, if entered, must precede any view trace sets.
-
-Note 2:  TRACE options may be entered on separate lines.  They may also be entered, separated by commas, on the same line.  
-  
-## global-trace set:
-
-A global trace set applies to all views. Only one global trace set can be defined. 
-<pre>
-├────DISPLAYSOURCE=<i>source-file</i>──────────────────────────────────────────────────► 
-►────┤ trace-output-filter options ├────────────────────────────────────────────┤
-</pre>
-  
-## view-trace set:
-
-View trace sets apply to the view specified. Multiple view trace sets can be defined.  
-<pre>
-├────VIEW=<i>view-id</i>───────────────────────────────────────────────────────────────► 
-►────DISPLAYSOURCE=<i>source-file</i>──────────────────────────────────────────────────► 
-►────┤ trace-output-filter options ├────────────────────────────────────────────┤
-</pre>
-  
-## trace-output-filter options:
-<pre>
-├────┬──────────────────────────────┬───────────────────────────────────────────► 
-     └─DDNAME=<i>ddname-of-source-file</i>─┘
-
-►────┬─────────────────────────────┬────────────────────────────────────────────► 
-     ├─REC=<i>number-of-source-record</i>─┤ 
-     └─┤ source-record range ├─────┘                                                  
-                                                            
-►────┬─────────────────────────────────┬────────────────────────────────────────► 
-     ├─LTROW=<i>number-of-logic-table-row</i>─┤  
-     └─┤ logic-table-row range ├───────┘                                                        
-
-►────┬───────────────────────────┬──────────────────────────────────────────────► 
-     ├─COL=<i>number-of-view-column</i>─┤  
-     └─┤ view-column range ├─────┘  
-
-►────┬──────────────────────────────────┬───────────────────────────────────────► 
-     └─LTFUNC=<i>logic-table-function-code</i>─┘  
-                                                                                              
-►────┬───────────────────────────────────────────────────┬──────────────────────┤ 
-     └─VPOS=<i>value-position</i>,VLEN=<i>value-length</i>,VALUE=<i>value</i>─┘
-</pre>
-  
-## source-record range: 
-<pre>
-├────┬───────────────────────────────────────┬──────────────────────────────────► 
-     └─FROMREC=<i>number-of-first-source-record</i>─┘
-
-►────┬──────────────────────────────────────┬───────────────────────────────────┤ 
-     └─THRUREC=<i>number-of-last-source-record</i>─┘ 
-</pre>
-  
-## logic-table-row range:     
-<pre>
- ├────┬───────────────────────────────────────────┬──────────────────────────────► 
-      └─FROMLTROW=<i>number-of-first-logic-table-row</i>─┘
-
- ►────┬──────────────────────────────────────────┬───────────────────────────────┤ 
-      └─THRULTROW=<i>number-of-last-logic-table-row</i>─┘    
-</pre>
-  
-## view-column range: 
-<pre>
- ├────┬─────────────────────────────────────┬────────────────────────────────────► 
-      └─FROMCOL=<i>number-of-first-view-column</i>─┘
-
- ►────┬────────────────────────────────────┬─────────────────────────────────────┤ 
-      └─THRUCOL=<i>number-of-last-view-column</i>─┘
-</pre>
-
-## Descriptions
-
-### DISPLAYSOURCE
-
-Specifying this parameter with a valid ddname will include a copy of the original source record in the trace.  
-*source-file* DDNAME of source file to be traced, Max 8 characters.
-
-### VIEW
-
-The parameters following VIEW=*view-id* make up a 'trace set', and apply to that view number.
-*view-id* - the view number to be traced, 1- 4294967296 (internally Binary 4).
-
-### DDNAME
-
-Specifies the name of the source file for which you want the functions traced.
-*source-file* DDNAME of source file to be selected, Max 8 characters
-
-### REC
-
-Specifies the source record for which you want a trace.
-*number-of-source-record* Source record number.
-
-### LTROW
-
-### COL
-
-### LTFUNC
-
-### VPOS, VLEN, VALUE
-
-To trace records containing a specific value:
-Value-position – Position of the value in the source record (offset +1)
-value-length – Length of the value in the source record
-value – The value can be alphanumeric e.g. VALUE=1234 (max 16 characters), or hex e.g. VALUE=x'F1F2F3F4' (max 32 digits)
-
-### FROMREC, THRUREC
-
-Specifies the range of source records for which you want a trace.
-*number-of-source-record* Source record number.
-
-
-### FROMLTROW, THRULTROW
-
-start-LT-row – Logic table row number to start tracing from
-end-LT-row – Logic table row number to end tracing at
-
-
-### FROMCOL, THRUCOL
