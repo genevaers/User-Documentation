@@ -1,26 +1,13 @@
 {: .no_toc}
 # GVBMR95 Parameter File Syntax
 
-# EXTRPARM file
+# REFRPARM file
 
 ## Standard Options Syntax
 
 <pre>
-     ┌─RUN_DATE=<i>current-date</i>─┐                                                    
-►►───┼───────────────────────┼──────────────────────────────────────────────────►
-     └─RUN_DATE=<i>run-date</i>─────┘                                                    
-                                                                                  
-     ┌─FISCAL_DATE_DEFAULT=<i>run-date</i>────┐                                                 
-►────┼─────────────────────────────────┼────────────────────────────────────────►
-     └─FISCAL_DATE_DEFAULT=<i>fiscal-date</i>─┘                                                    
-
-     ┌─────────────────────────────────────────────────┐              
-     ▼                                                 │        
-►──────┬─────────────────────────────────────────────┬─┴────────────────────────► 
-       └─FISCAL_DATE_OVERRIDE=<i>control-record-id:date</i>─┘ 
-      
      ┌─IO_BUFFER_LEVEL=4───────────────┐        
-►────┼─────────────────────────────────┼────────────────────────────────────────► 
+►►───┼─────────────────────────────────┼────────────────────────────────────────► 
      └─IO_BUFFER_LEVEL=<i>io-buffer-level</i>─┘
                                                                                   
      ┌─DISK_THREAD_LIMIT=9999──────────────┐        
@@ -39,61 +26,13 @@
 ►────┼───────────────────────┼──────────────────────────────────────────────────► 
      └─PAGE_FIX_IO_BUFFERS=Y─┘
                                                                                   
-     ┌─TREAT_MISSING_VIEW_OUTPUTS_AS_DUMMY=N─┐
-►────┼───────────────────────────────────────┼──────────────────────────────────► 
-     └─TREAT_MISSING_VIEW_OUTPUTS_AS_DUMMY=Y─┘
-                                                                                  
-     ┌─ABEND_ON_CALCULATION_OVERFLOW=Y─┐
-►────┼─────────────────────────────────┼────────────────────────────────────────► 
-     └─ABEND_ON_CALCULATION_OVERFLOW=N─┘
-                                                                                  
      ┌─ABEND_ON_ERROR_CONDITION=N─┐
 ►────┼────────────────────────────┼─────────────────────────────────────────────► 
      └─ABEND_ON_ERROR_CONDITION=Y─┘
                                                                                   
-     ┌─OPTIMIZE_PACKED_OUTPUT=Y─┐
-►────┼──────────────────────────┼───────────────────────────────────────────────► 
-     └─OPTIMIZE_PACKED_OUTPUT=N─┘
 </pre>                                                                                 
 
 ## Descriptions
-
-<!-- [RUN_DATE](#run_date)  
-[FISCAL_DATE_DEFAULT](#fiscal_date_default)  
-[FISCAL_DATE_OVERRIDE](#fiscal_date_override)  
-[IO_BUFFER_LEVEL](#io_buffer_level)  
-[DISK_THREAD_LIMIT](#disk_thread_limit)  
-[TAPE_THREAD_LIMIT](#tape_thread_limit)  
-[DB2_SQL_PLAN_NAME](#db2_sql_plan_name)  
-[PAGE_FIX_IO_BUFFERS](#page_fix_io_buffers)  
-[TREAT_MISSING_VIEW_OUTPUTS_AS_DUMMY](#treat_missing_view_outputs_as_dummy)  
-[ABEND_ON_CALCULATION_OVERFLOW](#abend_on_calculation_overflow)  
-[ABEND_ON_ERROR_CONDITION](#abend_on_error_condition)  
-[OPTIMIZE_PACKED_OUTPUT](#optimize_packed_output)  
--->
-
-### RUN_DATE
-Used to make the extract-phase job appear to run on a different date. The functions RUNDAY, RUNMONTH and RUNYEAR use this parameter value to calculate their values.  
-
-***run-date*** is in the format CCYYMMDD.  
-
-The default run date is the current date.
-
-### FISCAL_DATE_DEFAULT
-Sets the fiscal date used by all the views in the extract job. The functions FISCALDAY, FISCALMONTH and FISCALYEAR use this parameter value to calculate their values.  
-To override the fiscal date at the view level use the FISCAL_DATE_OVERRIDE parameter in conjunction with control records.  
-
-***fiscal-date*** is in the format CCYYMMDD.  
-
-The default FISCAL_DATE_DEFAULT is the job run date, either the current date or the date set by RUN_DATE.
-
-### FISCAL_DATE_OVERRIDE
-Sets the fiscal date for a control record.
-You can use this to set the fiscal date for individual views that are run in one job, by associating the control record with a view.  
-
-***control-record-id*** is the ID of a control record as defined in the Workbench, a positive integer up to 10 digits. This control record is the one defined in the view you wish to set the fiscal date for.  
-
-***date*** is the fiscal date in the format CCYYMMDD.  
 
 ### IO_BUFFER_LEVEL
 Used to calculate an optimal number of buffers for each data set based on properties such as blocks per track and, for extended-format data sets, number of stripes.  
@@ -122,33 +61,9 @@ Sets page fixing for the I/O buffers used to read the source files, and to write
 
 This requires the extract-phase job to be running with APF-authorization.
 
-### TREAT_MISSING_VIEW_OUTPUTS_AS_DUMMY
-When set to Y, tells the extract-phase job to treat missing DD statements as if they they were specified as DD DUMMY. This applies to extract-phase only view outputs, not to the work files that go on to be input for the format-phase.  
-
-This feature can be useful when testing.
-
-### ABEND_ON_CALCULATION_OVERFLOW
-When set to Y, and RECOVER_FROM_ABEND is set to Y, a decimal overflow, or a fixed-point overflow will result in an abend.  
-A decimal overflow will result in SYSTEM COMPLETION CODE=0CA, and a fixed-point overflow will result in SYSTEM COMPLETION CODE=0C8.
-
 ### ABEND_ON_ERROR_CONDITION
 When set to Y, the user Abend 999 will be issued, if the return code from GVBMR95 is greater than 4.
 
-### OPTIMIZE_PACKED_OUTPUT
-When set to Y, source fields defined as Packed (also Zoned Decimal) in the LR field, are not forced to reflect the defined sign attribute.
-
-For example, if an LR field is specified as Unsigned Packed, we expect the data to end with a hex 'F' character. Similarly, if an LR field is specified as being Signed Packed, we expect the data to end with a hex 'C' or 'D' character.
-
-By setting this parameter to Y you are telling GenevaERS that you trust that the source data matches the sign attribute on the LR field. 
-
-This optimizes processing in the case where the source and column data type is Packed or Zoned Decimal, the column length is the same as the LR field length, and the sign attribute for the column is the same as the LR sign attribute. In this case a straight move is executed with no sign processing.  
-
-This is more efficient than forcing the sign to reflect the column sign attribute.
-
-However, if the user has not entered the correct sign attribute on the LR field, our output may not always reflect the column sign attribute. 
-
-If ensuring the sign reflects the LR field definition is important, set this parameter to N.
-    
 ## Debugging Options:
 <pre>
      ┌─LOG_MESSAGE_LEVEL=STANDARD─┐                                                 
@@ -189,7 +104,7 @@ If ensuring the sign reflects the LR field definition is important, set this par
 ## Descriptions
 
 ### LOG_MESSAGE_LEVEL
-Specifying **DEBUG** will write detailed information to EXTRLOG, the log file. Details such as the status of initialization processing, reference table information, internal logic table details for each function, and lookup buffer details.
+Specifying **DEBUG** will write detailed information to REFRLOG, the log file. Details such as the status of initialization processing, reference table information, internal logic table details for each function, and lookup buffer details.
 
 ### EXECUTE_IN_PARENT_THREAD
 Specifying **A** will execute all work in the main task, bypassing attaching any subtasks. All source data sets will be processed in series.  
@@ -199,14 +114,14 @@ Specifying **N** will allow sources to be processed in multiple subtasks, or thr
 Setting EXECUTE_IN_PARENT_THREAD to A or 1 will cause unpredictable results when pipe files are included.
 
 ### TRACE
-Specifying **Y** will open the trace file EXTRTRAC and write information on the data and functions processed by GenevaERS. Trace parameters can be set to filter which views, functions or data is to be traced. See [trace parameters](./GVBMR95_Parameter_File_Syntax_trace.md).  
+Specifying **Y** will open the trace file REFRTRAC and write information on the data and functions processed by GenevaERS. Trace parameters can be set to filter which views, functions or data is to be traced. See [trace parameters](./GVBMR95_Parameter_File_Syntax_trace_refr.md).  
 
-TRACE = Y requires the DD EXTRTRAC to be defined in the JCL.
+TRACE = Y requires the DD REFRTRAC to be defined in the JCL.
 
 ### DUMP_LT_AND_GENERATED_CODE
-Specifying **Y** will take a snap dump of the logic table, the generated machine code and the literal pool, and write it to EXTRDUMP. 
+Specifying **Y** will take a snap dump of the logic table, the generated machine code and the literal pool, and write it to REFRDUMP. 
 
-Requires the DD EXTRDUMP to be in the JCL.
+Requires the DD REFRDUMP to be in the JCL.
 
 ### SOURCE_RECORD_LIMIT
 Specifies the maximum number of records to be read per source file.  For example, if there are two source files and *source-record-limit* is set to 100, then 200 records will be read and processed.  

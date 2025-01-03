@@ -15,8 +15,10 @@ A keyboard shortcuts summary can be displayed in the Workbench by clicking **Hel
 
 [GVBMR95R DD statements](./GVBMR95R_DD_Statements.md)  
 [GVBMR95E DD statements](./GVBMR95E_DD_Statements.md)  
-[GVBMR95 parameters](./GVBMR95_Parameter_File_Syntax.md)  
-[GVBMR95 parameters for tracing](./GVBMR95_Parameter_File_Syntax_trace.md)  
+[GVBMR95R parameters](./GVBMR95_Parameter_File_Syntax_refr.md)  
+[GVBMR95E parameters](./GVBMR95_Parameter_File_Syntax_extr.md)  
+[GVBMR95R parameters for tracing](./GVBMR95_Parameter_File_Syntax_trace_refr.md)  
+[GVBMR95E parameters for tracing](./GVBMR95_Parameter_File_Syntax_trace_extr.md)  
   
 [GVBMR88 DD statements](./GVBMR88_DD_Statements.md)  
 [GVBMR88 parameters](./GVBMR88_Parameter_File_Syntax.md)  
