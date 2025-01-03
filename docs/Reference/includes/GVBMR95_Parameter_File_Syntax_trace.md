@@ -157,3 +157,20 @@ All of these parameters must be specified together.
 *value-position*: Position of the value in the source record (offset +1)
 *value-length*: Length of the value in the source record
 *value*: The value can be alphanumeric e.g. VALUE=1234 (max 16 characters), or hex e.g. VALUE=x'F1F2F3F4' (max 32 digits)
+
+
+## Example trace sets
+
+1.	A global trace set
+
+FROMLTROW=5,THRULTROW=15
+
+Trace the logic table rows 5 to 15 for all source records.
+
+2.	VIEW trace sets
+
+VIEW=10269,LTFUNC=WR, FROMREC=1,THRUREC=5
+VIEW=10271, VPOS=8, VLEN=8, VALUE=ILLINOIS
+
+For view number 10269 trace all write functions for the first 5 source records only.  
+For view number 10271 trace all functions where the source record contains 'ILLINOIS' starting in position 8.
