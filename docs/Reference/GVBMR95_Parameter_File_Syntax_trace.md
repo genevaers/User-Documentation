@@ -2,9 +2,9 @@
 
 # EXTRTPRM file  
 
-The [TRACE](./GVBMR95_Parameter_File_Syntax.md#trace) parameter activates tracing. It is specified in REFRPARM/EXTRPARM. 
-Parameters to filter tracing are defined here in REFRTPRM/EXTRTPRM.  
-Trace data is written to DD REFRTRAC/EXTRTRAC.
+The [TRACE](./GVBMR95_Parameter_File_Syntax.md#trace) parameter activates tracing. It is specified in EXTRPARM. 
+Parameters to filter tracing are defined here in EXTRTPRM.  
+Trace data is written to DD EXTRTRAC.
 
 You can trace all views, or specific views by view number. You can specify ranges based on Logic Table numbers, ranges based on source file record numbers, or trace records based on a value within the source record.
 

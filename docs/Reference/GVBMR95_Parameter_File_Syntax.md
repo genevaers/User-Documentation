@@ -204,9 +204,9 @@ Specifying **Y** will open the trace file EXTRTRAC and write information on the 
 TRACE = Y requires the DD EXTRTRAC to be defined in the JCL.
 
 ### DUMP_LT_AND_GENERATED_CODE
-Specifying **Y** will take a snap dump of the logic table, the generated machine code and the literal pool, and write it to REFRDUMP/EXTRDUMP. 
+Specifying **Y** will take a snap dump of the logic table, the generated machine code and the literal pool, and write it to EXTRDUMP. 
 
-Requires the DD REFRDUMP/EXTRDUMP to be in the JCL.
+Requires the DD EXTRDUMP to be in the JCL.
 
 ### SOURCE_RECORD_LIMIT
 Specifies the maximum number of records to be read per source file.  For example, if there are two source files and *source-record-limit* is set to 100, then 200 records will be read and processed.  
