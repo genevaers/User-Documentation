@@ -236,12 +236,3 @@ For example, if you received the following message, and required a dump, set *me
 ** GVB00016S GVBMR95  - Unable to LOAD user read exit: EXIT51  
 
 *message-number* is a valid error message number between 1 and 999.
-
-# RUNVIEWS file  
-<pre>
-     ┌─────────────┐
-     ▼             │
-►►─────┬─────────┬─┴───────────────────────────────────────────────────────────►◄ 
-       └─<i>view-id</i>─┘                      
-</pre>
-  

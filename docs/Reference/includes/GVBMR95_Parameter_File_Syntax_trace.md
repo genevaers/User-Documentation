@@ -162,15 +162,15 @@ All of these parameters must be specified together.
 ## Example trace sets
 
 1.	A global trace set
-
+```
+* Trace the logic table rows 5 to 15 for all source records.
 FROMLTROW=5,THRULTROW=15
-
-Trace the logic table rows 5 to 15 for all source records.
-
+```
 2.	VIEW trace sets
-
+```
+* For view number 10269 trace all write functions for the first 5 source records only.  
+* For view number 10271 trace all functions where the source record
+*  contains 'ILLINOIS' starting in position 8.
 VIEW=10269,LTFUNC=WR, FROMREC=1,THRUREC=5
 VIEW=10271, VPOS=8, VLEN=8, VALUE=ILLINOIS
-
-For view number 10269 trace all write functions for the first 5 source records only.  
-For view number 10271 trace all functions where the source record contains 'ILLINOIS' starting in position 8.
+```
