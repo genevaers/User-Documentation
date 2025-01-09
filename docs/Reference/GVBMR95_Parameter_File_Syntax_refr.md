@@ -42,12 +42,12 @@ Used to calculate an optimal number of buffers for each data set based on proper
 For example, if you set IO_BUFFER_LEVEL=4, the number of blocks that will fit on a track, multiplied by 4, will be calculated. For extended format data sets the number of stripes is also used in the calculation.
 
 ### DISK_THREAD_LIMIT
-Limits the number of threads allocated for source disk files. Typically one thread is used per source file. If there are more disk files than the specified *disk-thread-limit*, then threads are reused as they become free. 
+Limits the number of threads allocated for source disk files. Typically one thread is used per source file. If there are more disk files than the specified *disk-thread-limit*, then threads are reused as they become free and some threads are processed serially rather than in parallel.
 
 ***disk-thread-limit*** is an integer between 1 and 9999.  
 
 ### TAPE_THREAD_LIMIT
-Limits the number of threads allocated for source tape files. Typically one thread is used per source file.  If there are more tape files than the specified *tape-thread-limit*, then threads are reused as they become free.
+Limits the number of threads allocated for source tape files. Typically one thread is used per source file.  If there are more tape files than the specified *tape-thread-limit*, then threads are reused as they become free and some threads are processed serially rather than in parallel.
 
 ***tape-thread-limit*** is an integer between 1 and 9999. 
 
@@ -108,7 +108,7 @@ Specifying **DEBUG** will write detailed information to REFRLOG, the log file. D
 
 ### EXECUTE_IN_PARENT_THREAD
 Specifying **A** will execute all work in the main task, bypassing attaching any subtasks. All source data sets will be processed in series.  
-Specifying **1** will execute only the first source data set in the main task. No subtasks will be attached.  
+Specifying **1** will execute only processing of first source data set in the main task. No subtasks will be attached.  
 Specifying **N** will allow sources to be processed in multiple subtasks, or threads.  
 
 Setting EXECUTE_IN_PARENT_THREAD to A or 1 will cause unpredictable results when pipe files are included.
@@ -134,7 +134,7 @@ Specifying **N** will allocate the 64-bit memory used for reference tables with 
 **Note: Not implemented in V4**
 
 ### RECOVER_FROM_ABEND
-Specifying **Y** will call set up a recovery routine to be called when an abend occurs.  
+Specifying **Y** will set up a recovery routine to be called when an abend occurs.  
 Note that this option affects the parameter [ABEND_ON_CALCULATION_OVERFLOW](#abend_on_calculation_overflow).  
 
 ### ABEND_ON_LOGIC_TABLE_ROW_NBR
@@ -146,7 +146,7 @@ Note: This parameter requires **TRACE=Y**
 ### ABEND_ON_MESSAGE_NBR
 
 You can create a dump (0C1 abend) for debug purposes when GenevaERS receives an error message.  
-For example, if you received the following message, and required a dump, set *message-number* to 16, and re-run the job.
+For example, if you received the following message, and required a dump, set *message-number* to 16 (from GVB00016S below)", and re-run the job.
 
 ** GVB00016S GVBMR95  - Unable to LOAD user read exit: EXIT51  
 
