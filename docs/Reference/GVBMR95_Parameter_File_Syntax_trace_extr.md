@@ -6,4 +6,4 @@ The [TRACE](./GVBMR95_Parameter_File_Syntax_extr.md#trace) parameter activates t
 Parameters to filter tracing are defined here in EXTRTPRM.  
 Trace data is written to DD EXTRTRAC.
 
-{% include_relative includes/GVBMR95_Parameter_File_syntax_trace.md %}
+{% include_relative includes/GVBMR95_Parameter_File_Syntax_trace.md %}
