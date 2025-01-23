@@ -35,15 +35,6 @@ You can avoid invoking the SORT utility if the extract files are already sorted.
 SORT_EXTRACT_FILE = N will read the extract file from DD name MR88HXE.  
 SORT_EXTRACT_FILE = Y will invoke the SORT utility, and the extract file DD name must be SORTIN, and SYSIN must point to the generated sort control file.  
 
-### ABEND_ON_MESSAGE_NBR 
-
-You can create a dump (0C1 abend) for debug purposes when GenevaERS receives an error message.  
-For example, if you received the following message, and required a dump, set *message-number* to 412 (from GVB00412S below), and re-run the job.
-
-** GVB00412U GVBMR88  - Unable to open sort SYSIN control file     
-
-*message-number* is a valid error message number between 1 and 999.  
-
 ### RUN_DATE
 
 Used to make the format-phase job appear to run on a different date. The functions RUNDAY, RUNMONTH and RUNYEAR use this parameter value to calculate their values.  
@@ -69,3 +60,12 @@ You can use this to set the fiscal date for individual views that are run in one
 ***control-record-id*** is the ID of a control record as defined in the Workbench, a positive integer up to 10 digits. This control record is the one defined in the view you wish to set the fiscal date for.  
 
 ***date*** is the fiscal date in the format CCYYMMDD.  
+
+### ABEND_ON_MESSAGE_NBR 
+
+You can create a dump (0C1 abend) for debug purposes when GenevaERS receives an error message.  
+For example, if you received the following message, and required a dump, set *message-number* to 412 (from GVB00412S below), and re-run the job.
+
+** GVB00412U GVBMR88  - Unable to open sort SYSIN control file     
+
+*message-number* is a valid error message number between 1 and 999.  
