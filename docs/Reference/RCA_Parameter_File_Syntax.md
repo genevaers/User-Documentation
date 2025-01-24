@@ -1,10 +1,8 @@
 # Run-Control App (RCA) Parameter File Syntax
 
-put examples at bottom 
+<!-- put examples at bottom 
 
-Note: each parameter must be on a separate line 
-
-link to sample JCL 
+link to sample JCL -->
 
 ## Format: RCAPARM file  
 
@@ -24,6 +22,10 @@ link to sample JCL
      ├─INPUT_TYPE=VDPXML────────────────────────────┤    
      ├─INPUT_TYPE=DB2───────┤ database parameters ├─┤  
      └─INPUT_TYPE=POSTGRES──┤ database parameters ├─┘       
+
+     ┌─GENERATE_VDPXML=N──┐        
+►►───┼────────────────────┼─────────────────────────────────────────────────────► 
+     └─GENERATE_VDPXML=Y──┘       
        
 </pre>
 
@@ -72,7 +74,28 @@ link to sample JCL
 ►────┼────────────────────┼─────────────────────────────────────────────────────┤ 
      └─LOG_LEVEL=DEBUG────┘                                                        
 </pre>
+
+Note: each parameter must be on a separate line.   
+
+## Description
+
+*`server`*  
+The IP address or domain name of the database host system.  
+
+*`port`*  
+The port number identifying the database.  
+
+*`database-name`*  
+This is the name of the Db2 database or Postgres database where your metadata resides.  
+For Postgres, this is the name set in the dbname parameter at database creation e.g. dbname=genevaers.  
   
+*`db-schema`*  
+This is the name of the database schema where your metadata resides. (For example, GENDEV.)  
+For Postgres, this is the name set in schemaV at database creation.  (For example, schemaV=gendev.)  
+  
+*`environment-id`*    
+This is the ID of the GenevaERS environment where the GenevaERS views to be selected reside.  
+
 ## Format: DBFLDRS file
 <pre>
 <i>►►───┬───────────────┬─────────────────────────────────────────────────────────►◄</i> 
@@ -88,7 +111,12 @@ link to sample JCL
 <i>     │ ▼         │ │                                                        </i>
 <i>     └───view-id─┴─┘ </i>
 </pre>
-Note: If INPUT_TYPE=DB2, then both the DBVIEWS file and the DBFLDRS file are read. A list of view numbers to process is then derived from the union of the two files. If both files are either empty or missing, then an error is returned.    
+
+If INPUT_TYPE=DB2 or INPUT_TYPE=POSTGRES, then both the DBVIEWS file and the DBFLDRS file are read. A list of view numbers to process is then derived from the union of the two files. If both files are either empty or missing, then an error is returned.   
+
+***folder-id***: The view folder number, integer in the range 1 - 2147483647.  
+***view-id***: The view number, integer in the range 1 - 2147483647.  
+
 
 ## Format: RUNVIEWS file
 <pre>
@@ -97,25 +125,9 @@ Note: If INPUT_TYPE=DB2, then both the DBVIEWS file and the DBFLDRS file are rea
 <i>     │ ▼         │ │                                                        </i>
 <i>     └───view-id─┴─┘ </i>
 </pre>
-Note: If the RUNVIEWS file is empty, all views are selected.  
 
-## Description
+You can choose to run a subset of views. This feature is useful for testing. You can specify many view numbers with one number per line.  
+If the RUNVIEWS file is empty, all views are selected.  
 
-*`server`*
-The IP address or domain name of the database host system.
-
-*`port`*
-The port number identifying the database.
-
-*`database-name`*  
-This is the name of the Db2 database or Postgres database where your metadata resides.  
-For Postgres, this is the name set in the dbname parameter at database creation e.g. dbname=genevaers.
-  
-*`db-schema`*    
-This is the name of the database schema where your metadata resides. (For example, GENDEV.)  
-For Postgres, this is the name set in schemaV at database creation.  (For example, schemaV=gendev.)  
-  
-*`environment-id`*    
-This is the ID of the GenevaERS environment where the GenevaERS views to be selected reside.
-    
+***view-id***: The view number, integer in the range 1 - 2147483647.  
 

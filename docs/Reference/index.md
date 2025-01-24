@@ -15,13 +15,9 @@ A keyboard shortcuts summary can be displayed in the Workbench by clicking **Hel
 
 [Assignment and comparison rules](./Assignment-and-Comparison-Rules.md)   
 
-### Run Control Generator
+### Run Control App
 
-[GVBRCG DD statements](./GVBRCG_DD_Statements.md)
-[GVBRCG parameters](./GVBRCG_Parameter_File_Syntax.md)
-
-### Run Control Analyser
-
+[How to use the RCA](./RCA_Overview.md)  
 [GVBRCA DD statements](./GVBRCA_DD_Statements.md)
 [GVBRCA parameters](./GVBRCA_Parameter_File_Syntax.md)
 

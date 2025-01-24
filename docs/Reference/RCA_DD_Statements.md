@@ -18,6 +18,7 @@
 ||VDPRPT|VDP Report File|When VDP_REPORT=Y|PS|VB|8192|
 ||XLTRPT|Extract-Phase Logic Table Report|When XLT_REPORT=Y|PS|VB|8192|
 ||JLTRPT|Reference-Phase Logic Table Report|When JLT_REPORT=Y|PS|VB|8192|
+||VDPXML|VDP XML output (deprecated format)|When GENERATE_VDPXML=Y|PS|VB|8192|
 ||RCARPT|RCA Control Report|Always|PS|VB|164|
 ||RCALOG|RCA Log File|Always|PS|VB|164|
 

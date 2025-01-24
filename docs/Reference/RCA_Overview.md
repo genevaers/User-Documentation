@@ -1,4 +1,4 @@
-# Run-Control App (RCA) Overview 
+# How to use the Run-Control App (RCA)  
 
 The Run-Control App (RCA) can generate and examine GenevaERS run-control files: 
 - View Definition Parameters (VDP)
