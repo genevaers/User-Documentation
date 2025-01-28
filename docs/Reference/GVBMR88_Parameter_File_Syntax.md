@@ -31,7 +31,7 @@
 
 ### SORT_EXTRACT_FILE
 
-You can avoid invoking the SORT utility if the extract files are already sorted.   
+If the extract files are already sorted, set to N the SORT utility is not invoked.    
 SORT_EXTRACT_FILE = N will read the extract file from DD name MR88HXE.  
 SORT_EXTRACT_FILE = Y will invoke the SORT utility, and the extract file DD name must be SORTIN, and SYSIN must point to the generated sort control file.  
 
