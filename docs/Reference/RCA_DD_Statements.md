@@ -23,13 +23,13 @@
 ||RCALOG|RCA Log File|Always|PS|VB|164|
 
 Notes:  
-*(1)* RCA processes all members in the WBXMLI PDS.  
-*(2)* RCA processes all members in the VDPXMLI PDS.  
-*(3)* it is recommended that the VDLXML DD statement defines a member of a PDS. For example: 
+*(1)* RCA processes all members in the WBXMLI library.  
+*(2)* RCA processes all members in the VDPXMLI library.  
+*(3)* it is recommended that the VDLXML DD statement defines a member of a LIBRARY. For example: 
 ```
 //VDPXML DD DSN=VDPXML(MEMBER1),SPACE=(TRK,(100,5,5)),
-//          DISP=(NEW,CATLG),
-//          DCB=(DSORG=PS,RECFM=VB,LRECL=8192,BLKSIZE=0),---
+//          DISP=(NEW,CATLG),DSNTYPE=LIBRARY,
+//          DCB=(RECFM=VB,LRECL=8192,BLKSIZE=0),---
 ```
 
 ## (when GENERATE_RC_FILES=N)
