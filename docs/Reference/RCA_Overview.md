@@ -12,7 +12,7 @@ The input can be from:
 - Directly from the database used by the Workbench, or 
 - View Definition Parameters XML (VDPXML) (a deprecated format). 
 
-For WBXML input, XML files are supplied in members of the PDS WBXMLI. For database (DB2 or Postgres) input, database parameters must be supplied, along with the GenevaERS environment ID and a list of either view numbers or view folder numbers. The view numbers are supplied in the file DBVIEWS, and the view folder numbers are supplied in the file DBFLDRS.
+For WBXML input, XML files are supplied in members of the PDSE WBXMLI. For database (DB2 or Postgres) input, database parameters must be supplied, along with the GenevaERS environment ID and a list of either view numbers or view folder numbers. The view numbers are supplied in the file DBVIEWS, and the view folder numbers are supplied in the file DBFLDRS.
 
 The file RUNVIEWS is used to select a subset of views. This may be useful when the input is from WBXML or VDPXML.
 
