@@ -17,7 +17,7 @@ table { font-size: 80% }
 | REFR*nnn*      | Reference-Phase Work File *nnn*   | A file is required for every work file created in the Reference Phase.           | PS    | VB    | 4144       |
 
 Notes:  
-*(1)*: The Extract-Phase Work Files are written by GVBMR95E to ddname EXTR*nnn*  
+*(1)*: The Extract-Phase Work Files passed to GVBMR88, are files written by GVBMR95E to ddname EXTR*nnn*  
 *(2)*: The control statements are written by GVBMR95E to ddname SORT*nnn* 
 
 ## Output

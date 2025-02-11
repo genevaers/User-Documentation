@@ -35,6 +35,8 @@ If the extract files are already sorted, set to N the SORT utility is not invoke
 SORT_EXTRACT_FILE = N will read the extract file from DD name MR88HXE.  
 SORT_EXTRACT_FILE = Y will invoke the SORT utility, and the extract file DD name must be SORTIN, and SYSIN must point to the generated sort control file.  
 
+Note that for the case where the SORT utility is invoked, GVBMR88 will pass control to SORT with the GVBMR88 read routine set as the output handling exit. This way the sorted data is passed to GVBMR88 as input.
+
 ### RUN_DATE
 
 Used to make the format-phase job appear to run on a different date. The functions RUNDAY, RUNMONTH and RUNYEAR use this parameter value to calculate their values.  
