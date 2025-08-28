@@ -9,8 +9,9 @@ To summarize the process, you need to install Ruby (Jekyll is a Ruby gem), Bundl
 ```
 bundle exec jekyll serve
 ```
+Then you can view the User Documentation at http://localhost:4000/ 
 
-If you have set this up previously you may need to update the GitHub Pages gem. This is also described in the above link.
+Note: If you have set this up previously you may need to update the GitHub Pages gem. This is also described in the GitHub Pages link above.
 
 Other useful links:
 
