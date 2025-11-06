@@ -18,8 +18,11 @@ A keyboard shortcuts summary can be displayed in the Workbench by clicking **Hel
 ### Run Control App
 
 [How to use the RCA](./RCA_Overview.md)  
+
 [GVBRCA DD statements](./RCA_DD_Statements.md)  
+
 [GVBRCA parameters](./RCA_Parameter_File_Syntax.md)
+
 [GVBRCA JCL](./RCA_JCL.md)   
 
 ### Performance Engine
