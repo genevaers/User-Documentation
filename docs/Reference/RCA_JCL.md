@@ -128,7 +128,7 @@ Generalized parameters follow such as LOG_LEVEL and directions whether RCA is to
 <pre>
 //RCAPARM  DD *,SYMBOLS=EXECSYS
 # Input
-INPUT_TYPE=DB2
+INPUT_TYPE=DB2 | WBXML
 ENVIRONMENT_ID=environment_ID, i.e. 1 for GVBDEMO
 DB_SCHEMA=&DB2SCH
 DB_PORT=db2-port-number
@@ -143,6 +143,10 @@ JLT_REPORT=Y
 XLT_REPORT=Y
 NUMBER_MODE=STANDARD
 /*
+</pre>
+In the case where RCA reads input from XML files that were exported from Workbench the following DD statement is needed, instead of specifying any DB2 related parameters. The DCB information for this file is DSORG=PO,RECFM=VB,LRECL=8192.
+<pre>
+//WBXMLI   DD DSN=&DEMOHLQ..&DEMOMLQ..WBXMLI,DISP=SHR
 </pre>
 
 #### DBVIEWS parameter
