@@ -1,6 +1,10 @@
 # JCL and parameters to run RCA
 
-These instructions are intended for executing GeneversERS RCA on ZOS. The Run Control Application can take input either from data contained in a DB2 schema defined for GenevaERS, or from XML files exported via Workbench. For example JCL, see GenevaERS Workbench repository and file GVBDEME.JCL in directory database/db2.
+These instructions are intended for executing GeneversERS RCA on ZOS. The Run Control Application can take input either from data contained in a DB2 schema defined for GenevaERS, or from XML files exported via Workbench. Example JCL is available in GenevaERS Workbench and Demo repositories.
+
+Workbench: https://github.com/genevaers/Workbench/blob/main/database/db2/GVBDEME.JCL
+
+Demo: https://github.com/genevaers/Demo/blob/main/JCL/RUNEXT1
 
 ## Job steps involved
 <pre>
