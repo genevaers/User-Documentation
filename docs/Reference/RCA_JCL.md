@@ -144,7 +144,7 @@ XLT_REPORT=Y
 NUMBER_MODE=STANDARD
 /*
 </pre>
-In the case where RCA reads input from XML files that were exported from Workbench the following DD statement is needed, instead of specifying any DB2 related parameters. The DCB information for this file is DSORG=PO,RECFM=VB,LRECL=8192.
+In the case where RCA reads input from XML files that were exported from Workbench the following DD statement is needed, instead of specifying any DB2 related parameters. The DCB information for this file is DSORG=PO,RECFM=VB,LRECL=8192. Not user credentials are required as job will not access DB2.
 <pre>
 //WBXMLI   DD DSN=&DEMOHLQ..&DEMOMLQ..WBXMLI,DISP=SHR
 </pre>
