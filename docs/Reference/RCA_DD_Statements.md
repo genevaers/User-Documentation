@@ -1,5 +1,9 @@
 # Run-Control App (RCA) DD Statements  
 ## (when GENERATE_RC_FILES=Y)
+
+<style>
+table { font-size: 80% }
+</style>
   
 |Type|DD Name|Title|When Required|DSORG|RECFM|LRECL|  
 |:-|:-|:-|:-|:-|:-|-:|
@@ -46,5 +50,5 @@ Notes:
 |Output|VDPRPT|VDP Report File|When VDP_REPORT=Y|PS|VB|8192|
 ||XLTRPT|Extract-Phase Logic Table Report|When XLT_REPORT=Y|PS|VB|8192|
 ||JLTRPT|Reference-Phase Logic Table Report|When JLT_REPORT=Y|PS|VB|8192|
-||RCARPT|RCA Control Report|Always|PS|VB|164|
-||RCALOG|RCA Log File|Always|PS|VB|164|
+||RCARPT|RCA Control Report|Always|PS|VB|255|
+||RCALOG|RCA Log File|Always|PS|VB|255|

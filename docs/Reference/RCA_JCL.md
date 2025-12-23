@@ -174,13 +174,13 @@ Here the 3 output files are defined for the VDP, XLT and JLT. In the case of a c
 //            DISP=(NEW,CATLG,DELETE),
 //            UNIT=SYSDA,
 //            SPACE=(TRK,(10,10),RLSE),
-//            DCB=(DSORG=PS,RECFM=VB,LRECL=4004,BLKSIZE=32036)
+//            DCB=(DSORG=PS,RECFM=VB,LRECL=8192,BLKSIZE=32036)
 //*
 //XLTNEW   DD DSN=&DEMOHLQ..&DEMOMLQ..PASS1C1.XLT,
 //            DISP=(NEW,CATLG,DELETE),
 //            UNIT=SYSDA,
 //            SPACE=(CYL,(10,10),RLSE),
-//            DCB=(DSORG=PS,RECFM=VB,LRECL=4004,BLKSIZE=32036)
+//            DCB=(DSORG=PS,RECFM=VB,LRECL=8192,BLKSIZE=32036)
 </pre>
 
 #### Output report datasets
