@@ -19,12 +19,12 @@ table { font-size: 80% }
 |Output|VDPNEW|VDP Output File|Always|PS|VB|8192|
 ||XLTNEW|Extract-Phase Logic Table|Always|PS|VB|8192|
 ||JLTNEW|Reference-Phase Logic Table|Always|PS|VB|8192|
-||VDPRPT|VDP Report File|When VDP_REPORT=Y|PS|VB|8192|
-||XLTRPT|Extract-Phase Logic Table Report|When XLT_REPORT=Y|PS|VB|8192|
-||JLTRPT|Reference-Phase Logic Table Report|When JLT_REPORT=Y|PS|VB|8192|
+||VDPRPT|VDP Report File|When VDP_REPORT=Y|PS|VB|255|
+||XLTRPT|Extract-Phase Logic Table Report|When XLT_REPORT=Y|PS|VB|255|
+||JLTRPT|Reference-Phase Logic Table Report|When JLT_REPORT=Y|PS|VB|255|
 ||VDPXML *(3)*|VDP XML output (deprecated format) |When GENERATE_VDPXML=Y|PS|VB|8192|
-||RCARPT|RCA Control Report|Always|PS|VB|164|
-||RCALOG|RCA Log File|Always|PS|VB|164|
+||RCARPT|RCA Control Report|Always|PS|VB|255|
+||RCALOG|RCA Log File|Always|PS|VB|255|
 
 Notes:  
 *(1)* RCA processes all members in the WBXMLI library.  
@@ -47,8 +47,8 @@ Notes:
 ||VDPOLD|VDP File|When VDP_REPORT=Y and COMPARE=Y|PS|VB|8192|
 ||XLTOLD|Extract-Phase Logic Table|When XLT_REPORT=Y and COMPARE=Y|PS|VB|8192|
 ||JLTOLD|Reference-Phase Logic Table|When JLT_REPORT=Y and COMPARE=Y|PS|VB|8192|
-|Output|VDPRPT|VDP Report File|When VDP_REPORT=Y|PS|VB|8192|
-||XLTRPT|Extract-Phase Logic Table Report|When XLT_REPORT=Y|PS|VB|8192|
-||JLTRPT|Reference-Phase Logic Table Report|When JLT_REPORT=Y|PS|VB|8192|
+|Output|VDPRPT|VDP Report File|When VDP_REPORT=Y|PS|VB|255|
+||XLTRPT|Extract-Phase Logic Table Report|When XLT_REPORT=Y|PS|VB|255|
+||JLTRPT|Reference-Phase Logic Table Report|When JLT_REPORT=Y|PS|VB|255|
 ||RCARPT|RCA Control Report|Always|PS|VB|255|
 ||RCALOG|RCA Log File|Always|PS|VB|255|
