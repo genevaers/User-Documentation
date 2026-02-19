@@ -65,6 +65,7 @@ OR
 [RUNDAY()](./LogicText/Function-RUNDAY.md)  
 [RUNMONTH()](./LogicText/Function-RUNMONTH.md)  
 [RUNYEAR()](./LogicText/Function-RUNYEAR.md)  
+[SUBSTR()](./LogicText/Function-SUBSTR.md)  
 [YEARSBETWEEN()](./LogicText/Function-YEARSBETWEEN.md)  
 
 [WRITE()](./LogicText/WRITEstatementsECL.md)  
