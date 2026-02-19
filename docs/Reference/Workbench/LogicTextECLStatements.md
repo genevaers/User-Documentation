@@ -40,7 +40,7 @@ OR
 
 ## String Operators
 
-&  
+[&](./LogicText/Concatenation.md) String Concatenation
 
 ## Functions
 
