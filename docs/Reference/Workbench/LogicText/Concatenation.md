@@ -15,8 +15,9 @@ TABLE OF CONTENTS
 <pre><b>
 <i>                               ┌────────────────────────────┐</i>   
 <i>                               ▼                            │</i>   
-<i>    ►►──┬─&lt;Field Reference&gt;──┬─── & ──┬─&lt;Field Reference&gt;───┼──────────────────►◄</i>
-<i>        └─&lt;String&gt;───────────┘        └─&lt;String&gt;────────────┘</i>   
+<i>    ►►──┬─&lt;Field Reference&gt;───┬─── & ──┬─&lt;Field Reference&gt;────┼──────────────────►◄</i>
+<i>        ├─&lt;COL.nnn Reference&gt;─┤        ├─&lt;COL.nnn Reference&gt;──┤</i>
+<i>        └─&lt;String&gt;────────────┘        └─&lt;String&gt;─────────────┘</i>   
 </b></pre>
 
 
