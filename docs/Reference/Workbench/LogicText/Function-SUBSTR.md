@@ -14,8 +14,9 @@ TABLE OF CONTENTS
 # Syntax 
 
 <pre><b>
-<i>    ►►─SUBSTR(─┬─&lt;Field Reference&gt;──┬─,─&lt;Position&gt;─,─&lt;Length&gt;─)───────►◄</i>
-<i>               └─&lt;String&gt;───────────┘ </i>   
+<i>    ►►─SUBSTR(─┬─&lt;Field Reference&gt;───┬─,─&lt;Position&gt;─,─&lt;Length&gt;─)───────►◄</i>
+<i>               ├─&lt;COL.nnn Reference&gt;─┤</i>
+<i>               └─&lt;String&gt;────────────┘ </i>   
 </b></pre>
 
 {% include_relative SyntaxDiagrams/CMSyntax-Diag-Function-SUBSTR.md %}
@@ -24,7 +25,8 @@ TABLE OF CONTENTS
 
 The position and length are integers. They must reference bytes within the field or string referenced.
 
-SUBSTR can only be used in **Extract Record Filter (ERF)** and **Extract Column Logic (ECL)** text.
+SUBSTR can only be used in **Extract Record Filter (ERF)** and **Extract Column Logic (ECL)** text.  
+If used in an **Extract Record Filter (ERF)**, the Column references COL.nnn can not be used.
 
 See also topic: [Rules for all Logic Text](../../Workbench/RulesforallLogicText.md) 
 
