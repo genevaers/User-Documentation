@@ -28,7 +28,7 @@ The length is a positive integer and must be equal or less than the field, colum
 RIGHT can only be used in **Extract Record Filter (ERF)** and **Extract Column Logic (ECL)** text.  
 If used in an **Extract Record Filter (ERF)**, the Column references COL.nnn can not be used.
 
-RIGHT can be using in a comparison but only using the string comparison operators BEGINS_WITH, CONTAINS and ENDS_WITH.
+RIGHT can be used in a comparison but only using the string comparison operators BEGINS_WITH, CONTAINS and ENDS_WITH.
 
 See also topic: [Rules for all Logic Text](../../Workbench/RulesforallLogicText.md) 
 
