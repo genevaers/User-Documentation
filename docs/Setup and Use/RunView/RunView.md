@@ -14,7 +14,7 @@ Sample JCL is contained in
 
 ### Compile Phase 
 
-The program GVBMR91 reads the view definitions and creates
+The Run Control Apps - the RCA jar file rcapps-4.1.0_RCnn.jar - reads the view definitions and creates
  -  View Definition Parameters (VDP file),
  -  Join Logic Table (JLT file), and 
  -  Extract Logic Table (XLT file)  
@@ -22,7 +22,7 @@ for use by the Reference and Extract phases.
 
 ### Reference Phase
 
-The program GVBMR95R produces reference data for use in the extract phase. It reads the VDP file the JLT file created by GVBMR91. It then produces a Reference Extract Header (REH) that describes the format of the reference data being processed, and one Reference Extract Detail (RED) file for each Reference Data file read. These files contain only the data required to perform joins/lookups in the Extract phase.
+The program GVBMR95R produces reference data for use in the extract phase. It reads the VDP file the JLT file created by RCA. It then produces a Reference Extract Header (REH) that describes the format of the reference data being processed, and one Reference Extract Detail (RED) file for each Reference Data file read. These files contain only the data required to perform joins/lookups in the Extract phase.
 
 ### Extract Phase
 
