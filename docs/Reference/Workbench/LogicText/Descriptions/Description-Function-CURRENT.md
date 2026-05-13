@@ -5,14 +5,14 @@ The function CURRENT may be used along with the function PRIOR. It refers to the
   
 CURRENT may be typed before the name of the field, for example:
   
-<pre><b>     CURRENT {product_code}   </b></pre>
+<pre><b>     CURRENT({product_code})  </b></pre>
   
 This is the same as:
   
 <pre><b>     {product_code}   </b></pre>
   
 If you use PRIOR, it is recommended you put CURRENT in front of all fields that refer to the current source record. This is not necessary but recommended because it makes the logic text much easier to understand. For example:  
-<pre><b>     IF ((CURRENT {product_code} = PRIOR {product_code}) THEN   </b></pre>
+<pre><b>     IF (CURRENT({product_code}) = PRIOR({product_code})) THEN   </b></pre>
   
 Normally, CURRENT is used only when a statement contains PRIOR.
   
