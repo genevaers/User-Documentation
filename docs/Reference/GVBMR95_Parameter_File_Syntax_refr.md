@@ -3,7 +3,7 @@
 
 # REFRPARM file
 
-## Standard Options Syntax
+## Standard Options Syntax:
 
 <pre>
      ┌─IO_BUFFER_LEVEL=4───────────────┐        
@@ -30,6 +30,9 @@
 ►────┼────────────────────────────┼─────────────────────────────────────────────► 
      └─ABEND_ON_ERROR_CONDITION=Y─┘
                                                                                   
+     ┌─VERIFY_CREATION_TIMESTAMP=Y─┐
+►────┼─────────────────────────────┼────────────────────────────────────────────► 
+     └─VERIFY_CREATION_TIMESTAMP=N─┘
 </pre>                                                                                 
 
 ## Descriptions
@@ -63,6 +66,9 @@ This requires the extract-phase job to be running with APF-authorization.
 
 ### ABEND_ON_ERROR_CONDITION
 When set to Y, the user Abend 999 will be issued, if the return code from GVBMR95 is greater than 4.
+### VERIFY_CREATION_TIMESTAMP 
+
+When set to Y, the timestamp on the VDP is verified to match the timestamp on the JLT. If they do not match, an error message will be issued and processing terminated. When set to N, the timestamps are not checked.
 
 ## Debugging Options:
 <pre>

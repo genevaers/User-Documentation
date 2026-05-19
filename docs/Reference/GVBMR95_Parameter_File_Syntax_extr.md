@@ -3,7 +3,7 @@
 
 # EXTRPARM file
 
-## Standard Options Syntax
+## Standard Options Syntax:
 
 <pre>
      ┌─RUN_DATE=<i>current-date</i>─┐                                                    
@@ -54,6 +54,10 @@
      ┌─OPTIMIZE_PACKED_OUTPUT=Y─┐
 ►────┼──────────────────────────┼───────────────────────────────────────────────► 
      └─OPTIMIZE_PACKED_OUTPUT=N─┘
+
+     ┌─VERIFY_CREATION_TIMESTAMP=Y─┐
+►────┼─────────────────────────────┼────────────────────────────────────────────► 
+     └─VERIFY_CREATION_TIMESTAMP=N─┘
 </pre>                                                                                 
 
 ## Descriptions
@@ -70,6 +74,7 @@
 [ABEND_ON_CALCULATION_OVERFLOW](#abend_on_calculation_overflow)  
 [ABEND_ON_ERROR_CONDITION](#abend_on_error_condition)  
 [OPTIMIZE_PACKED_OUTPUT](#optimize_packed_output)  
+[VERIFY_CREATION_TIMESTAMP]()
 -->
 
 ### RUN_DATE
@@ -148,6 +153,10 @@ This is more efficient than forcing the sign to reflect the column sign attribut
 However, if the user has not entered the correct sign attribute on the LR field, our output may not always reflect the column sign attribute. 
 
 If ensuring the sign reflects the LR field definition is important, set this parameter to N.
+
+### VERIFY_CREATION_TIMESTAMP 
+
+When set to Y, the timestamp on the VDP is verified to match the timestamp on the XLT. If they do not match, an error message will be issued and processing terminated. When set to N, the timestamps are not checked.
     
 ## Debugging Options:
 <pre>
@@ -235,4 +244,27 @@ For example, if you received the following message, and required a dump, set *me
 
 ** GVB00016S GVBMR95  - Unable to LOAD user read exit: EXIT51  
 
-*message-number* is a valid error message number between 1 and 999.
+*message-number* is a valid error message number between 1 and 999.  
+
+## Licensed Feature Options:
+
+Use of the zIIP feature requires an additional license from IBM.
+<pre>
+     ┌─USE_ZIIP=N─┐ 
+►────┼────────────┼─────────────────────────────────────────────────────────────► 
+     └─USE_ZIIP=Y─┘
+
+     ┌─ZIIP_THREAD_LIMIT=9999──────────────┐        
+►────┼─────────────────────────────────────┼────────────────────────────────────► 
+     └─ZIIP_THREAD_LIMIT=ziip-thread-limit─┘
+</pre>
+### USE_ZIIP
+
+Specifying **Y** will allow GenevaERS zIIP-enabled work to be directed to a zIIP.
+This requires the extract-phase job to be running with APF-authorization.  
+Note that zIIP cannot be used when the extract-phase job is reading source from Db2.
+
+### ZIIP_THREAD_LIMIT
+
+Maximum number of SRBs allowed.  
+***ziip-thread-limit*** is an integer between 1 and 9999.  
