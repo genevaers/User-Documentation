@@ -31,8 +31,8 @@ See [Default WRITE Statements.](#default-write-statements)
 **SOURCE** is related to the output format, specifically if complete records, or columns are being written, and if the output file is to be processed in the format phase. It will dictate which function code is generated in the XLT.  
 
 **INPUT** means the source records are written (after filtering). This results in a WRIN generated in the XLT.  
-**DATA** means write the column data up to this column. This results in a WRDT generated in the XLT.  
-**VIEW** means write the column data, up to this column, to an extract file to be passed to the format phase. The extract file has additional information written at the start of each record, for example the sort key for use in the format phase. This results in a WRXT being generated in the XLT.  
+**DATA** means write the column data. This results in a WRDT generated in the XLT after the column processing.  
+**VIEW** means write the column data to an extract file to be passed to the format phase. The extract file has additional information written at the start of each record, for example the sort key for use in the format phase. This results in a WRXT being generated in the XLT after the column processing.  
 
 **&lt;Extract Work File Number&gt;** is a number between 0 and 999, referring to the the Work File Number in the DD name EXTRnnn. This will typically be specified with SOURCE=VIEW.  
 
