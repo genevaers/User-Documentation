@@ -80,4 +80,6 @@ General users can **create or modify logical files** if the group for login has 
 
 For information on defining all of the above in the workbench, see [Create LR, LF, PF metatdata.](./MetaData/CreateLRLFPFs.md)
 
+For information on how to define input and output in a view see [Create Views](./MetaData/CreateView.md) specifically **Specify view source** and **Output destinations** for each view type.
+
 See your **system** or **environment administrator** if you need more access to physical files, logical files or logical records in your environment, or more rights to create these items.

@@ -4,6 +4,8 @@
 
 Extract-Phase Record Logic is used to override the default WRITE for a view. If there are no WRITE statements in any column's Extract-Phase Column Logic, there must be at least one WRITE statement in the Extract-Phase Record Logic.
 
+How to edit the Extract-Phase Record Logic is described in [Create Extract-only view](../../AdvancedFeatures/MetaData/CreateExtractView.md#output-destinations).
+
 ## Language Constructs
 
 [COL.nnn](./LogicText/ColnnnStatementERL.md)  
