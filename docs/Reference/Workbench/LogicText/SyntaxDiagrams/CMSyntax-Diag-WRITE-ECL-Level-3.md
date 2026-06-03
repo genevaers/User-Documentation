@@ -6,10 +6,10 @@
              └─<i><b>&lt;Source&gt;</b></i>─┘   └─<i><b>&lt;Destination&gt;</b></i>─┘   └─<i><b>&lt;Exit&gt;</b></i>─┘ 
 </pre>
 
-The source, destination and exit are all optional and can be specified in any order.  
+The source, destination and exit are all optional and can be specified in any order, however it is recommended that source and destination are specified explicitly.    
 If no source is specified, then it will default based on the output format selected on the View Properties tab.  
-If no destination is specified, then it will default based on the output format selected on the View Properties tab.  
-See [Default WRITE Statements.](#default-write-statements)  
+If no destination is specified, then it will default to DEFAULT.  
+ 
 
 <pre>
 
@@ -17,7 +17,7 @@ See [Default WRITE Statements.](#default-write-statements)
                            ├──<b>DATA</b>───┤              
                            └──<b>VIEW</b>───┘
 
-                                     ┌─<b>DEFAULT</b>──────────────────────────────────┐
+                                     ┌──<b>DEFAULT</b>─────────────────────────────────┐
 <i><b>&lt;Destination&gt;</b></i> ►─┬─►<b>DEST</b>=────────┬────┼──<b>EXT</b>=───────┬─<i><b>&lt;Extract Work File Number&gt;</b></i>─┼─►◄
                 └─►<b>DESTINATION</b>=─┘    └──<b>EXTRACT</b>=───┘    
                                      └──<b>FILE</b>= {<i><b>&lt;Logical file&gt;</b></i>,<i><b>&lt;Physical file&gt;</b></i>}──┘

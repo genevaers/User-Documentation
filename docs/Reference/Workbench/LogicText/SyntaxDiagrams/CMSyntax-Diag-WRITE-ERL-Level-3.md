@@ -17,7 +17,7 @@ See [Default WRITE Statements.](#default-write-statements)
                            ├──<b>DATA</b>───┤              
                            └──<b>VIEW</b>───┘
 
-                                     ┌─<b>DEFAULT</b>──────────────────────────────────┐
+                                     ┌──<b>DEFAULT</b>─────────────────────────────────┐
 <i><b>&lt;Destination&gt;</b></i> ►─┬─►<b>DEST</b>=────────┬────┼──<b>EXT</b>=───────┬─<i><b>&lt;Extract Work File Number&gt;</b></i>─┼─►◄
                 └─►<b>DESTINATION</b>=─┘    └──<b>EXTRACT</b>=───┘    
                                      └──<b>FILE</b>= {<i><b>&lt;Logical file&gt;</b></i>,<i><b>&lt;Physical file&gt;</b></i>}──┘

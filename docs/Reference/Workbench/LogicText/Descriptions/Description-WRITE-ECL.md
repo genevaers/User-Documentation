@@ -24,8 +24,7 @@ The default extract work file number is defined on the Extract Phase tab of the 
 -   Pass output records to a **procedure or user-exit routine**  
 (USEREXIT=*User_Exit_name* or PROCEDURE=*Executable_name*).
 
-Only the EXTRACT work files are processed in the format phase. All other records written in the above choices are written to view output files and not processed any further after the extract phase.
+It is the EXTRACT work files that are processed in the format phase. All other records written in the above choices are written to view output files and not processed any further after the extract phase.
 
 These WRITE options provide great flexibility in view processing. 
 
-The syntax details of a WRITE statement in **Extract-Phase Column Logic** are shown below.
