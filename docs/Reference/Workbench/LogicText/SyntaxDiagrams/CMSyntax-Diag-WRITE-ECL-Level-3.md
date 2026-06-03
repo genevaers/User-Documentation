@@ -17,9 +17,10 @@ See [Default WRITE Statements.](#default-write-statements)
                            ├──<b>DATA</b>───┤              
                            └──<b>VIEW</b>───┘
 
-<i><b>&lt;Destination&gt;</b></i> ►─┬─►<b>DEST</b>=────────┬────┬──<b>EXT</b>=───────┬─<i><b>&lt;Extract Work File Number&gt;</b></i>───►◄
+                                     ┌─<b>DEFAULT</b>──────────────────────────────────┐
+<i><b>&lt;Destination&gt;</b></i> ►─┬─►<b>DEST</b>=────────┬────┼──<b>EXT</b>=───────┬─<i><b>&lt;Extract Work File Number&gt;</b></i>─┼─►◄
                 └─►<b>DESTINATION</b>=─┘    └──<b>EXTRACT</b>=───┘    
-                                     └──<b>FILE</b>= {<i><b>&lt;Logical file&gt;</b></i>,<i><b>&lt;Physical file&gt;</b></i>}─┘
+                                     └──<b>FILE</b>= {<i><b>&lt;Logical file&gt;</b></i>,<i><b>&lt;Physical file&gt;</b></i>}──┘
                                       
 
 <i><b>&lt;Exit&gt;</b></i>        ►─┬─►<b>PROC</b>=──────┬─────┬────{<i><b>&lt;Procedure&gt;</b></i>}────────────┬───────────────►◄
@@ -34,8 +35,10 @@ See [Default WRITE Statements.](#default-write-statements)
 **DATA** means write the column data up to this column. This results in a WRDT generated in the XLT.  
 **VIEW** means write the column data, up to this column, to an extract file to be passed to the format phase. The extract file has additional information written at the start of each record, for example the sort key for use in the format phase. This results in a WRXT being generated in the XLT.  
 
-**&lt;Extract Work File Number&gt;** is a number between 0 and 999, referring to the the Work File Number in the DD name EXTRnnn. This will typically be specified with SOURCE=VIEW.  
+The **DEFAULT** output destination for Extract-Phase only Views is the ddname **F*****nnnnnnn*** where ***nnnnnnn*** is the view ID. For example, if the view ID is **12183** the default ddname for Extract-Phase only Views is **F0012183**.  
 
-**&lt;Logical file&gt;**, **&lt;Physical file&gt;**, **&lt;Procedure&gt;** and **&lt;UserExit&gt;** are all the names of the components as defined in the Workbench.  
-The Logical file and Physical file can refer to a Disk file, a Pipe or a Token.  
-If a Procedure or UserExit is defined, the data (as defined by the SOURCE parameter) is passed a record at a time to the UserExit or Procedure for processing, then the result can be written to a file defined by FILE or EXTRACT. The String is optional and is passed to the Procedure or UserExit.
+***&lt;Extract Work File Number&gt;*** is a number between 0 and 999, referring to the the Work File Number in the DD name EXTRnnn. This will typically be specified with SOURCE=VIEW.  
+
+***&lt;Logical file&gt;***, ***&lt;Physical file&gt;***, ***&lt;Procedure&gt;*** and ***&lt;UserExit&gt;*** are all the names of the components as defined in the Workbench. The Logical file and Physical file can refer to a Disk file, a Pipe or a Token.  
+
+If a Procedure or UserExit is defined, the data (as defined by the SOURCE parameter) is passed a record at a time to the UserExit or Procedure for processing, then the result can be written to a file defined by FILE or EXTRACT. ***&lt;String&gt;*** is optional and is passed as a PARM to the Procedure or UserExit.
