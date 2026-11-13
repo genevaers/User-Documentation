@@ -12,3 +12,9 @@ docs/search-data.json
 Logs/*.*
 Temp/Expanded-Common/
 Temp/Expanded-Topics/
+
+# geneva_docs: generated output (rebuilt by build_geneva_pdf.ps1 / build_site.ps1)
+geneva_docs/pages/
+geneva_docs/site/
+geneva_docs/GenevaERS_User_Documentation.html
+geneva_docs/GenevaERS_User_Documentation.pdf
